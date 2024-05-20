@@ -1,4 +1,4 @@
---[[--[[
+--[[
 ░█████╗░████████╗░█████╗░███╗░░░███╗  ░░░░░░  ░█████╗░██╗░░░░░██╗███████╗███╗░░██╗████████╗
 ██╔══██╗╚══██╔══╝██╔══██╗████╗░████║  ░░░░░░  ██╔══██╗██║░░░░░██║██╔════╝████╗░██║╚══██╔══╝
 ███████║░░░██║░░░██║░░██║██╔████╔██║  █████╗  ██║░░╚═╝██║░░░░░██║█████╗░░██╔██╗██║░░░██║░░░
@@ -7,12 +7,10 @@
 ╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝  ░░░░░░  ░╚════╝░╚══════╝╚═╝╚══════╝╚═╝░░╚══╝░░░╚═╝░░░]]
 
 local ScreenGui = Instance.new("ScreenGui")
-local Collapse = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
 local Atom = Instance.new("Frame")
 local Home = Instance.new("Frame")
 local Start = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
 local ImageLabel_2 = Instance.new("ImageLabel")
@@ -22,12 +20,12 @@ local ImageLabel_3 = Instance.new("ImageLabel")
 local UIGradient = Instance.new("UIGradient")
 local Choise = Instance.new("Frame")
 local Buttons = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local ImageLabel_4 = Instance.new("ImageLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local Console = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local TextLabel_6 = Instance.new("TextLabel")
 local Frame = Instance.new("Frame")
 local TextLabel_7 = Instance.new("TextLabel")
@@ -59,23 +57,14 @@ local Frame_7 = Instance.new("Frame")
 local TextLabel_14 = Instance.new("TextLabel")
 local Button_2 = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
+local Collapse = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Collapse.Name = "Collapse"
-Collapse.Parent = ScreenGui
-Collapse.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Collapse.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Collapse.BorderSizePixel = 0
-Collapse.Position = UDim2.new(0, 0, 0.039751552, 0)
-Collapse.Size = UDim2.new(0, 60, 0, 60)
-Collapse.Image = "rbxassetid://17556661563"
-
-UICorner.CornerRadius = UDim.new(1, 0)
-UICorner.Parent = Collapse
+ScreenGui.ResetOnSpawn = false
 
 Atom.Name = "Atom"
 Atom.Parent = ScreenGui
@@ -106,7 +95,7 @@ Start.Text = ""
 Start.TextColor3 = Color3.fromRGB(0, 0, 0)
 Start.TextSize = 14.000
 
-UICorner_2.Parent = Start
+UICorner.Parent = Start
 
 TextLabel.Parent = Start
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -206,7 +195,7 @@ Buttons.Text = ""
 Buttons.TextColor3 = Color3.fromRGB(0, 0, 0)
 Buttons.TextSize = 14.000
 
-UICorner_3.Parent = Buttons
+UICorner_2.Parent = Buttons
 
 TextLabel_4.Parent = Buttons
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -260,7 +249,7 @@ Console.Text = ""
 Console.TextColor3 = Color3.fromRGB(0, 0, 0)
 Console.TextSize = 14.000
 
-UICorner_4.Parent = Console
+UICorner_3.Parent = Console
 
 TextLabel_6.Parent = Console
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -594,53 +583,21 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
+Collapse.Name = "Collapse"
+Collapse.Parent = ScreenGui
+Collapse.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Collapse.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Collapse.BorderSizePixel = 0
+Collapse.Position = UDim2.new(0, 0, 0.039751552, 0)
+Collapse.Size = UDim2.new(0, 60, 0, 60)
+Collapse.Image = "rbxassetid://17556661563"
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = Collapse
+
 -- Scripts:
 
-local function JVKFR_fake_script() -- Collapse.UiDrag 
-	local script = Instance.new('LocalScript', Collapse)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(JVKFR_fake_script)()
-local function XRNXSCY_fake_script() -- TextLabel_3.Name 
+local function GREXTB_fake_script() -- TextLabel_3.Name 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local Player = game.Players.LocalPlayer
@@ -648,8 +605,8 @@ local function XRNXSCY_fake_script() -- TextLabel_3.Name
 	
 	Label.Text = Player.DisplayName
 end
-coroutine.wrap(XRNXSCY_fake_script)()
-local function JVUDW_fake_script() -- UIGradient.Rotating 
+coroutine.wrap(GREXTB_fake_script)()
+local function XHTX_fake_script() -- UIGradient.Rotating 
 	local script = Instance.new('LocalScript', UIGradient)
 
 	local gradient = script.Parent
@@ -667,50 +624,8 @@ local function JVUDW_fake_script() -- UIGradient.Rotating
 	rotateGradient()
 	
 end
-coroutine.wrap(JVUDW_fake_script)()
-local function NBSKZ_fake_script() -- Atom.UIDrag 
-	local script = Instance.new('LocalScript', Atom)
-
-	-- Made by Real_IceyDev (@lceyDex) --
-	-- Simple UI dragger (PC Only/Any device that has a mouse) --
-	
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end
-coroutine.wrap(NBSKZ_fake_script)()
-local function NFAU_fake_script() -- Atom.Interface_Client 
+coroutine.wrap(XHTX_fake_script)()
+local function JRMJDTM_fake_script() -- Atom.Interface_Client 
 	local script = Instance.new('LocalScript', Atom)
 
 	local HomeFrame = script.Parent.Home
@@ -748,8 +663,8 @@ local function NFAU_fake_script() -- Atom.Interface_Client
 		SoftFrame.Visible = true
 	end)
 end
-coroutine.wrap(NFAU_fake_script)()
-local function FZGSIU_fake_script() -- Frame_4.Esp 
+coroutine.wrap(JRMJDTM_fake_script)()
+local function SABC_fake_script() -- Frame_4.Esp 
 	local script = Instance.new('LocalScript', Frame_4)
 
 	local EspEnabled = false
@@ -915,8 +830,8 @@ local function FZGSIU_fake_script() -- Frame_4.Esp
 	EspToggleButton.Text = "Enable"
 	
 end
-coroutine.wrap(FZGSIU_fake_script)()
-local function UCNWSC_fake_script() -- Frame_5.Walkspeed 
+coroutine.wrap(SABC_fake_script)()
+local function PLZWNEK_fake_script() -- Frame_5.Walkspeed 
 	local script = Instance.new('LocalScript', Frame_5)
 
 	local textbox = script.Parent.TextBox
@@ -949,8 +864,8 @@ local function UCNWSC_fake_script() -- Frame_5.Walkspeed
 	end)
 	
 end
-coroutine.wrap(UCNWSC_fake_script)()
-local function GLLDJB_fake_script() -- Frame_6.Jumpower 
+coroutine.wrap(PLZWNEK_fake_script)()
+local function HGKBED_fake_script() -- Frame_6.Jumpower 
 	local script = Instance.new('LocalScript', Frame_6)
 
 	local textbox = script.Parent.TextBox
@@ -983,68 +898,155 @@ local function GLLDJB_fake_script() -- Frame_6.Jumpower
 	end)
 	
 end
-coroutine.wrap(GLLDJB_fake_script)()
-local function YWVLS_fake_script() -- Frame_7.Noclip 
+coroutine.wrap(HGKBED_fake_script)()
+local function NMFVVS_fake_script() -- Frame_7.Noclip 
 	local script = Instance.new('LocalScript', Frame_7)
 
 	local player = game.Players.LocalPlayer
-	local userInput = game:GetService("UserInputService")
 	local runService = game:GetService("RunService")
 	
 	local button = script.Parent.Button
 	local noclipActive = false
+	local noclipPart = nil
 	
-	-- Function to enable noclip
 	local function enableNoclip()
 		noclipActive = true
-		button.Text = "Disable"
-		local character = player.Character
-		if character then
-			for _, part in pairs(character:GetChildren()) do
-				if part:IsA("BasePart") then
-					part.CanCollide = false
+		if not noclipPart then
+			local character = player.Character
+			if character then
+				local rootPart = character:FindFirstChild("HumanoidRootPart")
+				if rootPart then
+					noclipPart = Instance.new("Part")
+					noclipPart.Size = Vector3.new(2048, 16, 2048)
+					noclipPart.Position = rootPart.Position - Vector3.new(0, 20, 0)
+					noclipPart.Name = "SafePart"
+					noclipPart.Transparency = 0.9
+					noclipPart.Anchored = true
+					noclipPart.Locked = true
+					noclipPart.Parent = workspace
 				end
 			end
 		end
 	end
 	
-	-- Function to disable noclip
 	local function disableNoclip()
 		noclipActive = false
-		button.Text = "Enable"
-		local character = player.Character
-		if character then
-			for _, part in pairs(character:GetChildren()) do
-				if part:IsA("BasePart") then
-					part.CanCollide = true
-				end
-			end
+		if noclipPart then
+			noclipPart:Destroy()
+			noclipPart = nil
 		end
 	end
 	
-	-- Toggle noclip mode
-	local function toggleNoclip()
+	-- Обработчик для кнопки
+	button.MouseButton1Click:Connect(function()
+		noclipActive = not noclipActive
 		if noclipActive then
-			disableNoclip()
-		else
 			enableNoclip()
+			button.Text = "Disable"
+		else
+			disableNoclip()
+			button.Text = "Enable"
 		end
-	end
+	end)
 	
-	-- Connect the button click event
-	button.MouseButton1Click:Connect(toggleNoclip)
-	
-	-- Ensure noclip is updated if the player respawns
-	player.CharacterAdded:Connect(function(character)
-		if noclipActive then
-			wait(1) -- Wait a moment for the character to fully load
-			for _, part in pairs(character:GetChildren()) do
-				if part:IsA("BasePart") then
-					part.CanCollide = false
-				end
+	runService.Stepped:Connect(function()
+		local character = player.Character
+		if character and noclipActive then
+			for _, v in pairs(character:GetDescendants()) do
+				pcall(function()
+					if v:IsA("BasePart") then
+						v.CanCollide = false
+					end
+				end)
 			end
 		end
 	end)
 	
 end
-coroutine.wrap(YWVLS_fake_script)()
+coroutine.wrap(NMFVVS_fake_script)()
+local function MRZI_fake_script() -- Atom.UIDrag 
+	local script = Instance.new('LocalScript', Atom)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(MRZI_fake_script)()
+local function OQPQW_fake_script() -- Collapse.UiDrag 
+	local script = Instance.new('LocalScript', Collapse)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(OQPQW_fake_script)()
