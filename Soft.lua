@@ -38,6 +38,12 @@ local ImageLabel_5 = Instance.new("ImageLabel")
 local Soft = Instance.new("Frame")
 local ImageLabel_6 = Instance.new("ImageLabel")
 local ImageLabel_7 = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local Esp = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_11 = Instance.new("TextLabel")
+local Button = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
 local Collapse = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
@@ -54,6 +60,7 @@ Atom.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.BorderSizePixel = 0
 Atom.Position = UDim2.new(0.264185488, 0, 0.195031062, 0)
 Atom.Size = UDim2.new(0, 773, 0, 491)
+Atom.Visible = false
 
 Home.Name = "Home"
 Home.Parent = Atom
@@ -143,6 +150,7 @@ TextLabel_3.TextWrapped = true
 
 ImageLabel_3.Parent = Home
 ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
 ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel_3.BorderSizePixel = 0
 ImageLabel_3.Position = UDim2.new(4.0049315e-08, 0, 0, 0)
@@ -227,6 +235,7 @@ Console.Font = Enum.Font.SourceSans
 Console.Text = ""
 Console.TextColor3 = Color3.fromRGB(0, 0, 0)
 Console.TextSize = 14.000
+Console.Interactable = false
 
 UICorner_3.Parent = Console
 
@@ -323,6 +332,7 @@ Frame_3.Size = UDim2.new(0, 195, 0, 4)
 
 ImageLabel_5.Parent = Choise
 ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
 ImageLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel_5.BorderSizePixel = 0
 ImageLabel_5.Size = UDim2.new(0, 174, 0, 50)
@@ -358,6 +368,63 @@ ImageLabel_7.Size = UDim2.new(0, 174, 0, 50)
 ImageLabel_7.Image = "rbxassetid://17557058418"
 ImageLabel_7.ScaleType = Enum.ScaleType.Crop
 
+ScrollingFrame.Parent = Soft
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0446194224, 0, 0.0933609977, 0)
+ScrollingFrame.Size = UDim2.new(0, 693, 0, 406)
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+Esp.Name = "Esp"
+Esp.Parent = ScrollingFrame
+Esp.BackgroundColor3 = Color3.fromRGB(255, 85, 85)
+Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.0483405478, 0, 0, 0)
+Esp.Size = UDim2.new(0, 626, 0, 55)
+
+Frame_4.Parent = Esp
+Frame_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.00798722077, 0, 0.0668085292, 0)
+Frame_4.Size = UDim2.new(0, 617, 0, 47)
+
+TextLabel_11.Parent = Frame_4
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.0129659642, 0, 0.170212761, 0)
+TextLabel_11.Size = UDim2.new(0, 79, 0, 30)
+TextLabel_11.Font = Enum.Font.GothamBold
+TextLabel_11.Text = "ESP"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 85, 85)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+Button.Name = "Button"
+Button.Parent = Frame_4
+Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.675850868, 0, 0, 0)
+Button.Size = UDim2.new(0, 200, 0, 47)
+Button.Font = Enum.Font.GothamBold
+Button.Text = "Enable"
+Button.TextColor3 = Color3.fromRGB(255, 85, 85)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+
 Close.Name = "Close"
 Close.Parent = Atom
 Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -387,7 +454,7 @@ UICorner_4.Parent = Collapse
 
 -- Scripts:
 
-local function RZGF_fake_script() -- TextLabel_3.LocalScript 
+local function FGNBG_fake_script() -- TextLabel_3.Name 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local Player = game.Players.LocalPlayer
@@ -395,8 +462,8 @@ local function RZGF_fake_script() -- TextLabel_3.LocalScript
 	
 	Label.Text = Player.DisplayName
 end
-coroutine.wrap(RZGF_fake_script)()
-local function YRDTEJU_fake_script() -- UIGradient.LocalScript 
+coroutine.wrap(FGNBG_fake_script)()
+local function VCZDXK_fake_script() -- UIGradient.Rotating 
 	local script = Instance.new('LocalScript', UIGradient)
 
 	local gradient = script.Parent
@@ -414,8 +481,8 @@ local function YRDTEJU_fake_script() -- UIGradient.LocalScript
 	rotateGradient()
 	
 end
-coroutine.wrap(YRDTEJU_fake_script)()
-local function XFRZU_fake_script() -- Atom.UIDrag 
+coroutine.wrap(VCZDXK_fake_script)()
+local function WZGZFJ_fake_script() -- Atom.UIDrag 
 	local script = Instance.new('LocalScript', Atom)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -456,8 +523,8 @@ local function XFRZU_fake_script() -- Atom.UIDrag
 		end
 	end)
 end
-coroutine.wrap(XFRZU_fake_script)()
-local function RUFVZYC_fake_script() -- Atom.Interface_Client 
+coroutine.wrap(WZGZFJ_fake_script)()
+local function IUVD_fake_script() -- Atom.Interface_Client 
 	local script = Instance.new('LocalScript', Atom)
 
 	local HomeFrame = script.Parent.Home
@@ -488,46 +555,215 @@ local function RUFVZYC_fake_script() -- Atom.Interface_Client
 		SoftFrame.Visible = true
 	end)
 end
-coroutine.wrap(RUFVZYC_fake_script)()
-local function NGZDK_fake_script() -- Collapse.UIDrag 
-	local script = Instance.new('LocalScript', Collapse)
+coroutine.wrap(IUVD_fake_script)()
+local function ZFFTLBT_fake_script() -- Frame_4.ESP 
+	local script = Instance.new('LocalScript', Frame_4)
 
-	-- Made by Real_IceyDev (@lceyDex) --
-	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	local EspEnabled = false
 	
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
+	-- Получаем необходимые сервисы
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local Camera = game.Workspace.CurrentCamera
 	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	-- Получаем TextButton из вашего интерфейса
+	local EspToggleButton = script.Parent.Button
+	
+	-- Функция для создания BillboardGui
+	local function createBillboardGui()
+		local billboardGui = Instance.new("BillboardGui")
+		billboardGui.Size = UDim2.new(0, 100, 0, 50)
+		billboardGui.StudsOffset = Vector3.new(0, 3, 0)
+		billboardGui.AlwaysOnTop = true
+	
+		local playerNameLabel = Instance.new("TextLabel")
+		playerNameLabel.Name = "PlayerName"
+		playerNameLabel.Size = UDim2.new(1, 0, 0.5, 0)
+		playerNameLabel.BackgroundTransparency = 1
+		playerNameLabel.TextColor3 = Color3.new(1, 1, 1)
+		playerNameLabel.TextStrokeTransparency = 0.5
+		playerNameLabel.Font = Enum.Font.SourceSans
+		playerNameLabel.TextSize = 14
+		playerNameLabel.Parent = billboardGui
+	
+		local healthLabel = Instance.new("TextLabel")
+		healthLabel.Name = "Health"
+		healthLabel.Size = UDim2.new(1, 0, 0.5, 0)
+		healthLabel.Position = UDim2.new(0, 0, 0.5, 0)
+		healthLabel.BackgroundTransparency = 1
+		healthLabel.TextColor3 = Color3.new(0, 1, 0)
+		healthLabel.TextStrokeTransparency = 0.5
+		healthLabel.Font = Enum.Font.SourceSans
+		healthLabel.TextSize = 14
+		healthLabel.Parent = billboardGui
+	
+		return billboardGui
 	end
 	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
+	-- Функция для создания Highlight
+	local function createHighlight(player)
+		local highlight = Instance.new("Highlight")
+		highlight.Name = "ESPHighlight"
+		highlight.Adornee = player.Character
+		highlight.FillColor = Color3.new(1, 0, 0)
+		highlight.FillTransparency = 0.5
+		highlight.OutlineColor = Color3.new(1, 1, 1)
+		highlight.OutlineTransparency = 0
+		highlight.Parent = player.Character
+		return highlight
+	end
+	
+	-- Таблица для хранения ESP для каждого игрока
+	local espGUIs = {}
+	local highlights = {}
+	
+	-- Функция для создания и обновления ESP
+	local function createOrUpdateESP(player)
+		if not EspEnabled then return end
+		if not espGUIs[player] then
+			local billboardGui = createBillboardGui()
+			billboardGui.Adornee = player.Character:WaitForChild("HumanoidRootPart")
+			billboardGui.Parent = player.Character
+			espGUIs[player] = billboardGui
+	
+			local highlight = createHighlight(player)
+			highlights[player] = highlight
+		end
+	
+		local character = player.Character
+		if not character or not character:FindFirstChild("HumanoidRootPart") then
+			espGUIs[player].Enabled = false
+			return
+		end
+	
+		local humanoid = character:FindFirstChild("Humanoid")
+		if not humanoid then return end
+	
+		local rootPart = character:FindFirstChild("HumanoidRootPart")
+		if not rootPart then return end
+	
+		local distance = (Camera.CFrame.Position - rootPart.Position).Magnitude
+		local textSize = math.clamp(1000 / distance, 14, 36)
+		espGUIs[player].PlayerName.Text = player.Name .. " [" .. math.floor(distance) .. "m]"
+		espGUIs[player].PlayerName.TextSize = textSize
+	
+		local health = math.floor(humanoid.Health)
+		local maxHealth = math.floor(humanoid.MaxHealth)
+		espGUIs[player].Health.Text = "HP: " .. health .. "/" .. maxHealth
+		espGUIs[player].Health.TextSize = textSize
+	
+		if health <= 20 then
+			espGUIs[player].Health.TextColor3 = Color3.new(1, 0, 0) -- Красный
+		elseif health <= 50 then
+			espGUIs[player].Health.TextColor3 = Color3.new(1, 0.5, 0) -- Оранжевый
+		else
+			espGUIs[player].Health.TextColor3 = Color3.new(0, 1, 0) -- Зеленый
+		end
+	
+		espGUIs[player].Enabled = true
+	end
+	
+	-- Функция для включения/выключения ESP
+	local function toggleESP()
+		EspEnabled = not EspEnabled
+		EspToggleButton.Text = EspEnabled and "Disable" or "Enable"
+		if not EspEnabled then
+			for _, gui in pairs(espGUIs) do
+				if gui and gui.Parent then
+					gui:Destroy()
+				end
+			end
+			espGUIs = {}
+	
+			for _, highlight in pairs(highlights) do
+				if highlight and highlight.Parent then
+					highlight:Destroy()
+				end
+			end
+			highlights = {}
+		end
+	end
+	
+	-- Подключаемся к событиям
+	RunService.RenderStepped:Connect(function()
+		if EspEnabled then
+			for _, player in pairs(Players:GetPlayers()) do
+				if player ~= Players.LocalPlayer then
+					createOrUpdateESP(player)
+				end
+			end
+		end
+	end)
+	
+	Players.PlayerRemoving:Connect(function(player)
+		if espGUIs[player] then
+			espGUIs[player]:Destroy()
+			espGUIs[player] = nil
+		end
+	
+		if highlights[player] then
+			highlights[player]:Destroy()
+			highlights[player] = nil
+		end
+	end)
+	
+	Players.PlayerAdded:Connect(function(player)
+		player.CharacterAdded:Connect(function()
+			if EspEnabled then
+				createOrUpdateESP(player)
+			end
+		end)
+	end)
+	
+	-- Подключаем кнопку к функции toggleESP
+	EspToggleButton.MouseButton1Click:Connect(toggleESP)
+	
+	-- Инициализация текста кнопки
+	EspToggleButton.Text = "Enable"
+	
+end
+coroutine.wrap(ZFFTLBT_fake_script)()
+local function NURVQO_fake_script() -- Collapse.UiDrag 
+	local script = Instance.new('LocalScript', Collapse)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
 			dragStart = input.Position
-			startPos = frame.Position
+			startPos = gui.Position
+			
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
+					dragging = false
 				end
 			end)
 		end
 	end)
 	
-	UIS.InputChanged:Connect(function(input)
+	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
 		end
 	end)
 end
-coroutine.wrap(NGZDK_fake_script)()
+coroutine.wrap(NURVQO_fake_script)()
