@@ -45,9 +45,26 @@ local Esp = Instance.new("Frame")
 local Frame_4 = Instance.new("Frame")
 local TextLabel_11 = Instance.new("TextLabel")
 local Button = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local Walkspeed = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local Jumpower = Instance.new("Frame")
+local Frame_6 = Instance.new("Frame")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local Close = Instance.new("TextButton")
 local Collapse = Instance.new("ImageButton")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 
 StarterGui:SetCore("SendNotification", {
 	Title = "Atom Injected!";
@@ -60,6 +77,7 @@ StarterGui:SetCore("SendNotification", {
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 Atom.Name = "Atom"
 Atom.Parent = ScreenGui
@@ -243,7 +261,6 @@ Console.Font = Enum.Font.SourceSans
 Console.Text = ""
 Console.TextColor3 = Color3.fromRGB(0, 0, 0)
 Console.TextSize = 14.000
-Console.Interactable = false
 
 UICorner_3.Parent = Console
 
@@ -433,6 +450,121 @@ Button.TextScaled = true
 Button.TextSize = 14.000
 Button.TextWrapped = true
 
+UICorner_4.CornerRadius = UDim.new(0, 15)
+UICorner_4.Parent = Button
+
+UICorner_5.CornerRadius = UDim.new(0, 15)
+UICorner_5.Parent = Frame_4
+
+UICorner_6.CornerRadius = UDim.new(0, 15)
+UICorner_6.Parent = Esp
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = ScrollingFrame
+Walkspeed.BackgroundColor3 = Color3.fromRGB(255, 85, 85)
+Walkspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Walkspeed.BorderSizePixel = 0
+Walkspeed.Position = UDim2.new(0.0483405478, 0, 0, 0)
+Walkspeed.Size = UDim2.new(0, 626, 0, 55)
+
+Frame_5.Parent = Walkspeed
+Frame_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.00798722077, 0, 0.0668085292, 0)
+Frame_5.Size = UDim2.new(0, 617, 0, 47)
+
+TextLabel_12.Parent = Frame_5
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.0129659642, 0, 0.170212761, 0)
+TextLabel_12.Size = UDim2.new(0, 158, 0, 30)
+TextLabel_12.Font = Enum.Font.GothamBold
+TextLabel_12.Text = "WALKSPEED"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 85, 85)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+TextBox.Parent = Frame_5
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderColor3 = Color3.fromRGB(255, 85, 85)
+TextBox.BorderSizePixel = 2
+TextBox.Position = UDim2.new(0.719611049, 0, 0, 0)
+TextBox.Size = UDim2.new(0, 173, 0, 47)
+TextBox.Font = Enum.Font.GothamBold
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 85, 85)
+TextBox.PlaceholderText = "Value"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 85, 85)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 15)
+UICorner_7.Parent = TextBox
+
+UICorner_8.CornerRadius = UDim.new(0, 15)
+UICorner_8.Parent = Frame_5
+
+UICorner_9.CornerRadius = UDim.new(0, 15)
+UICorner_9.Parent = Walkspeed
+
+Jumpower.Name = "Jumpower"
+Jumpower.Parent = ScrollingFrame
+Jumpower.BackgroundColor3 = Color3.fromRGB(255, 85, 85)
+Jumpower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jumpower.BorderSizePixel = 0
+Jumpower.Position = UDim2.new(0.0483405478, 0, 0, 0)
+Jumpower.Size = UDim2.new(0, 626, 0, 55)
+
+Frame_6.Parent = Jumpower
+Frame_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0.00798722077, 0, 0.0668085292, 0)
+Frame_6.Size = UDim2.new(0, 617, 0, 47)
+
+TextLabel_13.Parent = Frame_6
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0.0129659642, 0, 0.170212761, 0)
+TextLabel_13.Size = UDim2.new(0, 158, 0, 30)
+TextLabel_13.Font = Enum.Font.GothamBold
+TextLabel_13.Text = "JUMPPOWER"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 85, 85)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+TextBox_2.Parent = Frame_6
+TextBox_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderColor3 = Color3.fromRGB(255, 85, 85)
+TextBox_2.BorderSizePixel = 2
+TextBox_2.Position = UDim2.new(0.719611049, 0, 0, 0)
+TextBox_2.Size = UDim2.new(0, 173, 0, 47)
+TextBox_2.Font = Enum.Font.GothamBold
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(255, 85, 85)
+TextBox_2.PlaceholderText = "Value"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 85, 85)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 15)
+UICorner_10.Parent = TextBox_2
+
+UICorner_11.CornerRadius = UDim.new(0, 15)
+UICorner_11.Parent = Frame_6
+
+UICorner_12.CornerRadius = UDim.new(0, 15)
+UICorner_12.Parent = Jumpower
+
 Close.Name = "Close"
 Close.Parent = Atom
 Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -457,12 +589,12 @@ Collapse.Position = UDim2.new(0, 0, 0.039751552, 0)
 Collapse.Size = UDim2.new(0, 60, 0, 60)
 Collapse.Image = "rbxassetid://17556661563"
 
-UICorner_4.CornerRadius = UDim.new(1, 0)
-UICorner_4.Parent = Collapse
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = Collapse
 
 -- Scripts:
 
-local function FGNBG_fake_script() -- TextLabel_3.Name 
+local function LKTU_fake_script() -- TextLabel_3.Name 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local Player = game.Players.LocalPlayer
@@ -470,8 +602,8 @@ local function FGNBG_fake_script() -- TextLabel_3.Name
 	
 	Label.Text = Player.DisplayName
 end
-coroutine.wrap(FGNBG_fake_script)()
-local function VCZDXK_fake_script() -- UIGradient.Rotating 
+coroutine.wrap(LKTU_fake_script)()
+local function UVTM_fake_script() -- UIGradient.Rotating 
 	local script = Instance.new('LocalScript', UIGradient)
 
 	local gradient = script.Parent
@@ -489,8 +621,8 @@ local function VCZDXK_fake_script() -- UIGradient.Rotating
 	rotateGradient()
 	
 end
-coroutine.wrap(VCZDXK_fake_script)()
-local function WZGZFJ_fake_script() -- Atom.UIDrag 
+coroutine.wrap(UVTM_fake_script)()
+local function NUNR_fake_script() -- Atom.UIDrag 
 	local script = Instance.new('LocalScript', Atom)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -531,8 +663,8 @@ local function WZGZFJ_fake_script() -- Atom.UIDrag
 		end
 	end)
 end
-coroutine.wrap(WZGZFJ_fake_script)()
-local function IUVD_fake_script() -- Atom.Interface_Client 
+coroutine.wrap(NUNR_fake_script)()
+local function CZPXPX_fake_script() -- Atom.Interface_Client 
 	local script = Instance.new('LocalScript', Atom)
 
 	local HomeFrame = script.Parent.Home
@@ -563,8 +695,8 @@ local function IUVD_fake_script() -- Atom.Interface_Client
 		SoftFrame.Visible = true
 	end)
 end
-coroutine.wrap(IUVD_fake_script)()
-local function ZFFTLBT_fake_script() -- Frame_4.ESP 
+coroutine.wrap(CZPXPX_fake_script)()
+local function YTCAR_fake_script() -- Frame_4.ESP 
 	local script = Instance.new('LocalScript', Frame_4)
 
 	local EspEnabled = false
@@ -730,8 +862,76 @@ local function ZFFTLBT_fake_script() -- Frame_4.ESP
 	EspToggleButton.Text = "Enable"
 	
 end
-coroutine.wrap(ZFFTLBT_fake_script)()
-local function NURVQO_fake_script() -- Collapse.UiDrag 
+coroutine.wrap(YTCAR_fake_script)()
+local function CPYGUS_fake_script() -- Frame_5.Walkspeed 
+	local script = Instance.new('LocalScript', Frame_5)
+
+	local textbox = script.Parent.TextBox
+	
+	-- Функция для изменения скорости персонажа
+	local function changeSpeed(player, speed)
+		-- Найдем персонажа игрока
+		local character = player.Character
+		if character then
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.WalkSpeed = speed
+			end
+		end
+	end
+	
+	-- Обработчик события FocusLost
+	textbox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local player = game.Players.LocalPlayer
+			local input = textbox.Text
+			local speed = tonumber(input)
+	
+			if speed then
+				changeSpeed(player, speed)
+			else
+				warn("Please enter a value!")
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(CPYGUS_fake_script)()
+local function TZLTGOP_fake_script() -- Frame_6.Jumpower 
+	local script = Instance.new('LocalScript', Frame_6)
+
+	local textbox = script.Parent.TextBox
+	-- Функция для изменения скорости персонажа
+	local function changeSpeed(player, speed)
+		-- Найдем персонажа игрока
+		local character = player.Character
+		if character then
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			humanoid.UseJumpPower = true
+			if humanoid then
+				humanoid.JumpPower = speed
+			end
+		end
+	end
+	
+	-- Обработчик события FocusLost
+	textbox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local player = game.Players.LocalPlayer
+			local input = textbox.Text
+			local speed = tonumber(input)
+	
+			if speed then
+				changeSpeed(player, speed)
+			else
+				warn("Please enter a value!")
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(TZLTGOP_fake_script)()
+local function FFGCUXK_fake_script() -- Collapse.UiDrag 
 	local script = Instance.new('LocalScript', Collapse)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -774,4 +974,4 @@ local function NURVQO_fake_script() -- Collapse.UiDrag
 		end
 	end)
 end
-coroutine.wrap(NURVQO_fake_script)()
+coroutine.wrap(FFGCUXK_fake_script)()
