@@ -1,4 +1,3 @@
-local StarterGui = game:GetService("StarterGui")
 local ScreenGui = Instance.new("ScreenGui")
 local Atom = Instance.new("Frame")
 local Home = Instance.new("Frame")
@@ -41,7 +40,7 @@ local Close = Instance.new("TextButton")
 local Collapse = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
 
-StarterGui:SetCore("SendNotification", {
+game.StarterGui:SetCore("SendNotification", {
 	Title = "Atom Injected!";
 	Text = "Enjoy the game!";
 	Icon = "rbxassetid://17556661563";
