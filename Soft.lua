@@ -1,4 +1,4 @@
---[[
+--[[--[[
 ░█████╗░████████╗░█████╗░███╗░░░███╗  ░░░░░░  ░█████╗░██╗░░░░░██╗███████╗███╗░░██╗████████╗
 ██╔══██╗╚══██╔══╝██╔══██╗████╗░████║  ░░░░░░  ██╔══██╗██║░░░░░██║██╔════╝████╗░██║╚══██╔══╝
 ███████║░░░██║░░░██║░░██║██╔████╔██║  █████╗  ██║░░╚═╝██║░░░░░██║█████╗░░██╔██╗██║░░░██║░░░
@@ -6,12 +6,13 @@
 ██║░░██║░░░██║░░░╚█████╔╝██║░╚═╝░██║  ░░░░░░  ╚█████╔╝███████╗██║███████╗██║░╚███║░░░██║░░░
 ╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝  ░░░░░░  ░╚════╝░╚══════╝╚═╝╚══════╝╚═╝░░╚══╝░░░╚═╝░░░]]
 
-local StarterGui = game:GetService("StarterGui")
 local ScreenGui = Instance.new("ScreenGui")
+local Collapse = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
 local Atom = Instance.new("Frame")
 local Home = Instance.new("Frame")
 local Start = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
 local ImageLabel_2 = Instance.new("ImageLabel")
@@ -21,12 +22,12 @@ local ImageLabel_3 = Instance.new("ImageLabel")
 local UIGradient = Instance.new("UIGradient")
 local Choise = Instance.new("Frame")
 local Buttons = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local ImageLabel_4 = Instance.new("ImageLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local Console = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local TextLabel_6 = Instance.new("TextLabel")
 local Frame = Instance.new("Frame")
 local TextLabel_7 = Instance.new("TextLabel")
@@ -45,39 +46,36 @@ local Esp = Instance.new("Frame")
 local Frame_4 = Instance.new("Frame")
 local TextLabel_11 = Instance.new("TextLabel")
 local Button = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local UICorner_5 = Instance.new("UICorner")
-local UICorner_6 = Instance.new("UICorner")
 local Walkspeed = Instance.new("Frame")
 local Frame_5 = Instance.new("Frame")
 local TextLabel_12 = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
-local UICorner_7 = Instance.new("UICorner")
-local UICorner_8 = Instance.new("UICorner")
-local UICorner_9 = Instance.new("UICorner")
 local Jumpower = Instance.new("Frame")
 local Frame_6 = Instance.new("Frame")
 local TextLabel_13 = Instance.new("TextLabel")
 local TextBox_2 = Instance.new("TextBox")
-local UICorner_10 = Instance.new("UICorner")
-local UICorner_11 = Instance.new("UICorner")
-local UICorner_12 = Instance.new("UICorner")
+local Noclip = Instance.new("Frame")
+local Frame_7 = Instance.new("Frame")
+local TextLabel_14 = Instance.new("TextLabel")
+local Button_2 = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
-local Collapse = Instance.new("ImageButton")
-local UICorner_13 = Instance.new("UICorner")
-
-StarterGui:SetCore("SendNotification", {
-	Title = "Atom Injected!";
-	Text = "Enjoy the game!";
-	Icon = "rbxassetid://17556661563";
-	Duration = "5";
-})
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
+
+Collapse.Name = "Collapse"
+Collapse.Parent = ScreenGui
+Collapse.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Collapse.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Collapse.BorderSizePixel = 0
+Collapse.Position = UDim2.new(0, 0, 0.039751552, 0)
+Collapse.Size = UDim2.new(0, 60, 0, 60)
+Collapse.Image = "rbxassetid://17556661563"
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = Collapse
 
 Atom.Name = "Atom"
 Atom.Parent = ScreenGui
@@ -108,7 +106,7 @@ Start.Text = ""
 Start.TextColor3 = Color3.fromRGB(0, 0, 0)
 Start.TextSize = 14.000
 
-UICorner.Parent = Start
+UICorner_2.Parent = Start
 
 TextLabel.Parent = Start
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -208,7 +206,7 @@ Buttons.Text = ""
 Buttons.TextColor3 = Color3.fromRGB(0, 0, 0)
 Buttons.TextSize = 14.000
 
-UICorner_2.Parent = Buttons
+UICorner_3.Parent = Buttons
 
 TextLabel_4.Parent = Buttons
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -262,7 +260,7 @@ Console.Text = ""
 Console.TextColor3 = Color3.fromRGB(0, 0, 0)
 Console.TextSize = 14.000
 
-UICorner_3.Parent = Console
+UICorner_4.Parent = Console
 
 TextLabel_6.Parent = Console
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -450,15 +448,6 @@ Button.TextScaled = true
 Button.TextSize = 14.000
 Button.TextWrapped = true
 
-UICorner_4.CornerRadius = UDim.new(0, 15)
-UICorner_4.Parent = Button
-
-UICorner_5.CornerRadius = UDim.new(0, 15)
-UICorner_5.Parent = Frame_4
-
-UICorner_6.CornerRadius = UDim.new(0, 15)
-UICorner_6.Parent = Esp
-
 Walkspeed.Name = "Walkspeed"
 Walkspeed.Parent = ScrollingFrame
 Walkspeed.BackgroundColor3 = Color3.fromRGB(255, 85, 85)
@@ -502,15 +491,6 @@ TextBox.TextColor3 = Color3.fromRGB(255, 85, 85)
 TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
-
-UICorner_7.CornerRadius = UDim.new(0, 15)
-UICorner_7.Parent = TextBox
-
-UICorner_8.CornerRadius = UDim.new(0, 15)
-UICorner_8.Parent = Frame_5
-
-UICorner_9.CornerRadius = UDim.new(0, 15)
-UICorner_9.Parent = Walkspeed
 
 Jumpower.Name = "Jumpower"
 Jumpower.Parent = ScrollingFrame
@@ -556,14 +536,48 @@ TextBox_2.TextScaled = true
 TextBox_2.TextSize = 14.000
 TextBox_2.TextWrapped = true
 
-UICorner_10.CornerRadius = UDim.new(0, 15)
-UICorner_10.Parent = TextBox_2
+Noclip.Name = "Noclip"
+Noclip.Parent = ScrollingFrame
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 85, 85)
+Noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.0483405478, 0, 0, 0)
+Noclip.Size = UDim2.new(0, 626, 0, 55)
 
-UICorner_11.CornerRadius = UDim.new(0, 15)
-UICorner_11.Parent = Frame_6
+Frame_7.Parent = Noclip
+Frame_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_7.BorderSizePixel = 0
+Frame_7.Position = UDim2.new(0.00798722077, 0, 0.0668085292, 0)
+Frame_7.Size = UDim2.new(0, 617, 0, 47)
 
-UICorner_12.CornerRadius = UDim.new(0, 15)
-UICorner_12.Parent = Jumpower
+TextLabel_14.Parent = Frame_7
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.0129659642, 0, 0.170212761, 0)
+TextLabel_14.Size = UDim2.new(0, 104, 0, 30)
+TextLabel_14.Font = Enum.Font.GothamBold
+TextLabel_14.Text = "NOCLIP"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 85, 85)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+Button_2.Name = "Button"
+Button_2.Parent = Frame_7
+Button_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.BorderSizePixel = 0
+Button_2.Position = UDim2.new(0.675850868, 0, 0, 0)
+Button_2.Size = UDim2.new(0, 200, 0, 47)
+Button_2.Font = Enum.Font.GothamBold
+Button_2.Text = "Enable"
+Button_2.TextColor3 = Color3.fromRGB(255, 85, 85)
+Button_2.TextScaled = true
+Button_2.TextSize = 14.000
+Button_2.TextWrapped = true
 
 Close.Name = "Close"
 Close.Parent = Atom
@@ -580,21 +594,53 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-Collapse.Name = "Collapse"
-Collapse.Parent = ScreenGui
-Collapse.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Collapse.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Collapse.BorderSizePixel = 0
-Collapse.Position = UDim2.new(0, 0, 0.039751552, 0)
-Collapse.Size = UDim2.new(0, 60, 0, 60)
-Collapse.Image = "rbxassetid://17556661563"
-
-UICorner_13.CornerRadius = UDim.new(1, 0)
-UICorner_13.Parent = Collapse
-
 -- Scripts:
 
-local function LKTU_fake_script() -- TextLabel_3.Name 
+local function JVKFR_fake_script() -- Collapse.UiDrag 
+	local script = Instance.new('LocalScript', Collapse)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(JVKFR_fake_script)()
+local function XRNXSCY_fake_script() -- TextLabel_3.Name 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local Player = game.Players.LocalPlayer
@@ -602,8 +648,8 @@ local function LKTU_fake_script() -- TextLabel_3.Name
 	
 	Label.Text = Player.DisplayName
 end
-coroutine.wrap(LKTU_fake_script)()
-local function UVTM_fake_script() -- UIGradient.Rotating 
+coroutine.wrap(XRNXSCY_fake_script)()
+local function JVUDW_fake_script() -- UIGradient.Rotating 
 	local script = Instance.new('LocalScript', UIGradient)
 
 	local gradient = script.Parent
@@ -621,8 +667,8 @@ local function UVTM_fake_script() -- UIGradient.Rotating
 	rotateGradient()
 	
 end
-coroutine.wrap(UVTM_fake_script)()
-local function NUNR_fake_script() -- Atom.UIDrag 
+coroutine.wrap(JVUDW_fake_script)()
+local function NBSKZ_fake_script() -- Atom.UIDrag 
 	local script = Instance.new('LocalScript', Atom)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -663,8 +709,8 @@ local function NUNR_fake_script() -- Atom.UIDrag
 		end
 	end)
 end
-coroutine.wrap(NUNR_fake_script)()
-local function CZPXPX_fake_script() -- Atom.Interface_Client 
+coroutine.wrap(NBSKZ_fake_script)()
+local function NFAU_fake_script() -- Atom.Interface_Client 
 	local script = Instance.new('LocalScript', Atom)
 
 	local HomeFrame = script.Parent.Home
@@ -675,7 +721,14 @@ local function CZPXPX_fake_script() -- Atom.Interface_Client
 	local Frame = script.Parent
 	local ButtonsChoise = ChoiseFrame.Buttons
 	local SoftFrame = script.Parent.Soft
+	local StarterGui = game:GetService("StarterGui")
 	
+	StarterGui:SetCore("SendNotification", {
+		Title = "Atom Injected!";
+		Text = "Enjoy the game!";
+		Icon = "rbxassetid://17556661563";
+		Duration = "5";
+	})
 	
 	StartButton.MouseButton1Click:Connect(function() -- Начало
 		HomeFrame.Visible = false
@@ -695,8 +748,8 @@ local function CZPXPX_fake_script() -- Atom.Interface_Client
 		SoftFrame.Visible = true
 	end)
 end
-coroutine.wrap(CZPXPX_fake_script)()
-local function YTCAR_fake_script() -- Frame_4.ESP 
+coroutine.wrap(NFAU_fake_script)()
+local function FZGSIU_fake_script() -- Frame_4.Esp 
 	local script = Instance.new('LocalScript', Frame_4)
 
 	local EspEnabled = false
@@ -862,8 +915,8 @@ local function YTCAR_fake_script() -- Frame_4.ESP
 	EspToggleButton.Text = "Enable"
 	
 end
-coroutine.wrap(YTCAR_fake_script)()
-local function CPYGUS_fake_script() -- Frame_5.Walkspeed 
+coroutine.wrap(FZGSIU_fake_script)()
+local function UCNWSC_fake_script() -- Frame_5.Walkspeed 
 	local script = Instance.new('LocalScript', Frame_5)
 
 	local textbox = script.Parent.TextBox
@@ -896,8 +949,8 @@ local function CPYGUS_fake_script() -- Frame_5.Walkspeed
 	end)
 	
 end
-coroutine.wrap(CPYGUS_fake_script)()
-local function TZLTGOP_fake_script() -- Frame_6.Jumpower 
+coroutine.wrap(UCNWSC_fake_script)()
+local function GLLDJB_fake_script() -- Frame_6.Jumpower 
 	local script = Instance.new('LocalScript', Frame_6)
 
 	local textbox = script.Parent.TextBox
@@ -930,48 +983,68 @@ local function TZLTGOP_fake_script() -- Frame_6.Jumpower
 	end)
 	
 end
-coroutine.wrap(TZLTGOP_fake_script)()
-local function FFGCUXK_fake_script() -- Collapse.UiDrag 
-	local script = Instance.new('LocalScript', Collapse)
+coroutine.wrap(GLLDJB_fake_script)()
+local function YWVLS_fake_script() -- Frame_7.Noclip 
+	local script = Instance.new('LocalScript', Frame_7)
 
-	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	local userInput = game:GetService("UserInputService")
+	local runService = game:GetService("RunService")
 	
-	local gui = script.Parent
+	local button = script.Parent.Button
+	local noclipActive = false
 	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	-- Function to enable noclip
+	local function enableNoclip()
+		noclipActive = true
+		button.Text = "Disable"
+		local character = player.Character
+		if character then
+			for _, part in pairs(character:GetChildren()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = false
+				end
+			end
+		end
 	end
 	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
+	-- Function to disable noclip
+	local function disableNoclip()
+		noclipActive = false
+		button.Text = "Enable"
+		local character = player.Character
+		if character then
+			for _, part in pairs(character:GetChildren()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = true
 				end
-			end)
+			end
+		end
+	end
+	
+	-- Toggle noclip mode
+	local function toggleNoclip()
+		if noclipActive then
+			disableNoclip()
+		else
+			enableNoclip()
+		end
+	end
+	
+	-- Connect the button click event
+	button.MouseButton1Click:Connect(toggleNoclip)
+	
+	-- Ensure noclip is updated if the player respawns
+	player.CharacterAdded:Connect(function(character)
+		if noclipActive then
+			wait(1) -- Wait a moment for the character to fully load
+			for _, part in pairs(character:GetChildren()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = false
+				end
+			end
 		end
 	end)
 	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
 end
-coroutine.wrap(FFGCUXK_fake_script)()
+coroutine.wrap(YWVLS_fake_script)()
