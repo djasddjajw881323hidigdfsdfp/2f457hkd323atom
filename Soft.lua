@@ -82,6 +82,7 @@ Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home.BorderSizePixel = 0
 Home.Position = UDim2.new(0.00646830536, 0, 0.00814663991, 0)
 Home.Size = UDim2.new(0, 762, 0, 482)
+Home.Visible = true
 
 Start.Name = "Start"
 Start.Parent = Home
@@ -469,7 +470,7 @@ TextLabel_12.TextWrapped = true
 TextBox.Parent = Frame_5
 TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.BorderColor3 = Color3.fromRGB(255, 85, 85)
-TextBox.BorderSizePixel = 2
+TextBox.BorderSizePixel = 4
 TextBox.Position = UDim2.new(0.719611049, 0, 0, 0)
 TextBox.Size = UDim2.new(0, 173, 0, 47)
 TextBox.Font = Enum.Font.GothamBold
@@ -513,7 +514,7 @@ TextLabel_13.TextWrapped = true
 TextBox_2.Parent = Frame_6
 TextBox_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_2.BorderColor3 = Color3.fromRGB(255, 85, 85)
-TextBox_2.BorderSizePixel = 2
+TextBox_2.BorderSizePixel = 4
 TextBox_2.Position = UDim2.new(0.719611049, 0, 0, 0)
 TextBox_2.Size = UDim2.new(0, 173, 0, 47)
 TextBox_2.Font = Enum.Font.GothamBold
@@ -586,6 +587,7 @@ Close.TextWrapped = true
 Collapse.Name = "Collapse"
 Collapse.Parent = ScreenGui
 Collapse.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Collapse.BackgroundTransparency = 0.500
 Collapse.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Collapse.BorderSizePixel = 0
 Collapse.Position = UDim2.new(0, 0, 0.039751552, 0)
@@ -597,7 +599,7 @@ UICorner_4.Parent = Collapse
 
 -- Scripts:
 
-local function GREXTB_fake_script() -- TextLabel_3.Name 
+local function CPXFGZ_fake_script() -- TextLabel_3.Name 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local Player = game.Players.LocalPlayer
@@ -605,8 +607,8 @@ local function GREXTB_fake_script() -- TextLabel_3.Name
 	
 	Label.Text = Player.DisplayName
 end
-coroutine.wrap(GREXTB_fake_script)()
-local function XHTX_fake_script() -- UIGradient.Rotating 
+coroutine.wrap(CPXFGZ_fake_script)()
+local function SGSH_fake_script() -- UIGradient.Rotating 
 	local script = Instance.new('LocalScript', UIGradient)
 
 	local gradient = script.Parent
@@ -624,8 +626,8 @@ local function XHTX_fake_script() -- UIGradient.Rotating
 	rotateGradient()
 	
 end
-coroutine.wrap(XHTX_fake_script)()
-local function JRMJDTM_fake_script() -- Atom.Interface_Client 
+coroutine.wrap(SGSH_fake_script)()
+local function RDRMX_fake_script() -- Atom.Interface_Client 
 	local script = Instance.new('LocalScript', Atom)
 
 	local HomeFrame = script.Parent.Home
@@ -663,8 +665,8 @@ local function JRMJDTM_fake_script() -- Atom.Interface_Client
 		SoftFrame.Visible = true
 	end)
 end
-coroutine.wrap(JRMJDTM_fake_script)()
-local function SABC_fake_script() -- Frame_4.Esp 
+coroutine.wrap(RDRMX_fake_script)()
+local function YDWHX_fake_script() -- Frame_4.Esp 
 	local script = Instance.new('LocalScript', Frame_4)
 
 	local EspEnabled = false
@@ -686,7 +688,7 @@ local function SABC_fake_script() -- Frame_4.Esp
 	
 		local playerNameLabel = Instance.new("TextLabel")
 		playerNameLabel.Name = "PlayerName"
-		playerNameLabel.Size = UDim2.new(1, 0, 0.5, 0)
+		playerNameLabel.Size = UDim2.new(1, 0, 0.33, 0)
 		playerNameLabel.BackgroundTransparency = 1
 		playerNameLabel.TextColor3 = Color3.new(1, 1, 1)
 		playerNameLabel.TextStrokeTransparency = 0.5
@@ -696,14 +698,25 @@ local function SABC_fake_script() -- Frame_4.Esp
 	
 		local healthLabel = Instance.new("TextLabel")
 		healthLabel.Name = "Health"
-		healthLabel.Size = UDim2.new(1, 0, 0.5, 0)
-		healthLabel.Position = UDim2.new(0, 0, 0.5, 0)
+		healthLabel.Size = UDim2.new(1, 0, 0.33, 0)
+		healthLabel.Position = UDim2.new(0, 0, 0.33, 0)
 		healthLabel.BackgroundTransparency = 1
 		healthLabel.TextColor3 = Color3.new(0, 1, 0)
 		healthLabel.TextStrokeTransparency = 0.5
 		healthLabel.Font = Enum.Font.SourceSans
 		healthLabel.TextSize = 14
 		healthLabel.Parent = billboardGui
+	
+		local fpsLabel = Instance.new("TextLabel")
+		fpsLabel.Name = "FPS"
+		fpsLabel.Size = UDim2.new(1, 0, 0.33, 0)
+		fpsLabel.Position = UDim2.new(0, 0, 0.66, 0)
+		fpsLabel.BackgroundTransparency = 1
+		fpsLabel.TextColor3 = Color3.new(1, 1, 1)
+		fpsLabel.TextStrokeTransparency = 0.5
+		fpsLabel.Font = Enum.Font.SourceSans
+		fpsLabel.TextSize = 30
+		fpsLabel.Parent = billboardGui
 	
 		return billboardGui
 	end
@@ -760,14 +773,23 @@ local function SABC_fake_script() -- Frame_4.Esp
 		espGUIs[player].Health.Text = "HP: " .. health .. "/" .. maxHealth
 		espGUIs[player].Health.TextSize = textSize
 	
-		if health <= 20 then
-			espGUIs[player].Health.TextColor3 = Color3.new(1, 0, 0) -- Красный
-		elseif health <= 50 then
-			espGUIs[player].Health.TextColor3 = Color3.new(1, 0.5, 0) -- Оранжевый
-		else
-			espGUIs[player].Health.TextColor3 = Color3.new(0, 1, 0) -- Зеленый
+		local fps = player:FindFirstChild("FPS")
+		if fps then
+			espGUIs[player].FPS.Text = "FPS: " .. fps.Value
+			espGUIs[player].FPS.TextSize = textSize
 		end
 	
+		local healthColor = Color3.new(0, 1, 0)
+		if health <= 20 then
+			healthColor = Color3.new(1, 0, 0) -- Красный
+		elseif health <= 50 then
+			healthColor = Color3.new(1, 0.5, 0) -- Оранжевый
+		else
+			healthColor = Color3.new(0, 1, 0) -- Зеленый
+		end
+	
+		espGUIs[player].Health.TextColor3 = healthColor
+		highlights[player].FillColor = healthColor
 		espGUIs[player].Enabled = true
 	end
 	
@@ -829,9 +851,33 @@ local function SABC_fake_script() -- Frame_4.Esp
 	-- Инициализация текста кнопки
 	EspToggleButton.Text = "Enable"
 	
+	-- Функция для расчета и обновления FPS
+	local function calculateAndDisplayFPS()
+		local fps = 0
+		local lastTick = tick()
+	
+		RunService.RenderStepped:Connect(function()
+			local currentTick = tick()
+			local deltaTime = currentTick - lastTick
+			lastTick = currentTick
+			fps = math.floor(1 / deltaTime)
+		end)
+	
+		while true do
+			wait(0.5)
+			for _, player in pairs(Players:GetPlayers()) do
+				if player ~= Players.LocalPlayer and espGUIs[player] then
+					espGUIs[player].FPS.Text = "FPS: " .. fps
+				end
+			end
+		end
+	end
+	
+	-- Запускаем расчет и обновление FPS
+	calculateAndDisplayFPS()
 end
-coroutine.wrap(SABC_fake_script)()
-local function PLZWNEK_fake_script() -- Frame_5.Walkspeed 
+coroutine.wrap(YDWHX_fake_script)()
+local function ASNZYVY_fake_script() -- Frame_5.Walkspeed 
 	local script = Instance.new('LocalScript', Frame_5)
 
 	local textbox = script.Parent.TextBox
@@ -864,8 +910,8 @@ local function PLZWNEK_fake_script() -- Frame_5.Walkspeed
 	end)
 	
 end
-coroutine.wrap(PLZWNEK_fake_script)()
-local function HGKBED_fake_script() -- Frame_6.Jumpower 
+coroutine.wrap(ASNZYVY_fake_script)()
+local function CHCDEBB_fake_script() -- Frame_6.Jumpower 
 	local script = Instance.new('LocalScript', Frame_6)
 
 	local textbox = script.Parent.TextBox
@@ -898,8 +944,8 @@ local function HGKBED_fake_script() -- Frame_6.Jumpower
 	end)
 	
 end
-coroutine.wrap(HGKBED_fake_script)()
-local function NMFVVS_fake_script() -- Frame_7.Noclip 
+coroutine.wrap(CHCDEBB_fake_script)()
+local function JLXXV_fake_script() -- Frame_7.Noclip 
 	local script = Instance.new('LocalScript', Frame_7)
 
 	local player = game.Players.LocalPlayer
@@ -918,9 +964,10 @@ local function NMFVVS_fake_script() -- Frame_7.Noclip
 				if rootPart then
 					noclipPart = Instance.new("Part")
 					noclipPart.Size = Vector3.new(2048, 16, 2048)
-					noclipPart.Position = rootPart.Position - Vector3.new(0, 20, 0)
+					noclipPart.Position = Vector3.new(rootPart.Position.X, rootPart.Position.Y - 20, rootPart.Position.Z)
 					noclipPart.Name = "SafePart"
-					noclipPart.Transparency = 0.9
+					noclipPart.BrickColor = BrickColor.Red()
+					noclipPart.Transparency = 0.6
 					noclipPart.Anchored = true
 					noclipPart.Locked = true
 					noclipPart.Parent = workspace
@@ -952,6 +999,11 @@ local function NMFVVS_fake_script() -- Frame_7.Noclip
 	runService.Stepped:Connect(function()
 		local character = player.Character
 		if character and noclipActive then
+			local rootPart = character:FindFirstChild("HumanoidRootPart")
+			if rootPart and noclipPart then
+				noclipPart.Position = Vector3.new(rootPart.Position.X, noclipPart.Position.Y, rootPart.Position.Z)
+			end
+	
 			for _, v in pairs(character:GetDescendants()) do
 				pcall(function()
 					if v:IsA("BasePart") then
@@ -963,8 +1015,8 @@ local function NMFVVS_fake_script() -- Frame_7.Noclip
 	end)
 	
 end
-coroutine.wrap(NMFVVS_fake_script)()
-local function MRZI_fake_script() -- Atom.UIDrag 
+coroutine.wrap(JLXXV_fake_script)()
+local function SFNYFH_fake_script() -- Atom.UIDrag 
 	local script = Instance.new('LocalScript', Atom)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -1005,8 +1057,8 @@ local function MRZI_fake_script() -- Atom.UIDrag
 		end
 	end)
 end
-coroutine.wrap(MRZI_fake_script)()
-local function OQPQW_fake_script() -- Collapse.UiDrag 
+coroutine.wrap(SFNYFH_fake_script)()
+local function UZGVNQ_fake_script() -- Collapse.UiDrag 
 	local script = Instance.new('LocalScript', Collapse)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1049,4 +1101,4 @@ local function OQPQW_fake_script() -- Collapse.UiDrag
 		end
 	end)
 end
-coroutine.wrap(OQPQW_fake_script)()
+coroutine.wrap(UZGVNQ_fake_script)()
