@@ -81,6 +81,7 @@ local Open = Instance.new("ImageButton")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 Mainframe.Name = "Mainframe"
 Mainframe.Parent = ScreenGui
