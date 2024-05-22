@@ -812,6 +812,10 @@ local function SQWK_fake_script() -- Walkspeed.Manager
 			if humanoid then
 				humanoid.WalkSpeed = speed
 			end
+			while true do
+				wait(0.1)
+				humanoid.WalkSpeed = speed
+			end
 		end
 	end
 	
@@ -844,6 +848,10 @@ local function CMNNZS_fake_script() -- JumpPower.Manager
 			local humanoid = character:FindFirstChildOfClass("Humanoid")
 			humanoid.UseJumpPower = true
 			if humanoid then
+				humanoid.JumpPower = speed
+			end
+			while true do
+				wait(0.1)
 				humanoid.JumpPower = speed
 			end
 		end
