@@ -81,7 +81,6 @@ local Open = Instance.new("ImageButton")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
 
 Mainframe.Name = "Mainframe"
 Mainframe.Parent = ScreenGui
@@ -616,7 +615,7 @@ TextLabel_11.BorderSizePixel = 0
 TextLabel_11.Position = UDim2.new(0.394628108, 0, 0.480620146, 0)
 TextLabel_11.Size = UDim2.new(0, 100, 0, 25)
 TextLabel_11.Font = Enum.Font.Code
-TextLabel_11.Text = "v0.2"
+TextLabel_11.Text = "v0.3"
 TextLabel_11.TextColor3 = Color3.fromRGB(100, 100, 100)
 TextLabel_11.TextScaled = true
 TextLabel_11.TextSize = 14.000
@@ -814,7 +813,7 @@ local function SQWK_fake_script() -- Walkspeed.Manager
 				humanoid.WalkSpeed = speed
 			end
 			while true do
-				wait(0.01)
+				wait(0.1)
 				humanoid.WalkSpeed = speed
 			end
 		end
@@ -852,7 +851,7 @@ local function CMNNZS_fake_script() -- JumpPower.Manager
 				humanoid.JumpPower = speed
 			end
 			while true do
-				wait(0.01)
+				wait(0.1)
 				humanoid.JumpPower = speed
 			end
 		end
@@ -1134,19 +1133,20 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 	local script = Instance.new('LocalScript', SoftButton_2)
 
 	local EspEnabled = false
-	
+
 	-- Получаем необходимые сервисы
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	local Camera = game.Workspace.CurrentCamera
-	
+	local LocalPlayer = Players.LocalPlayer
+
 	local Click = Instance.new("Sound", script)
 	Click.SoundId = "rbxassetid://535716488"
-	
+
 	-- Получаем TextButton из вашего интерфейса
 	local EspToggleButton = script.Parent.Button
 	local StatusText = script.Parent.Status.TextLabel
-	
+
 	-- Перекраска статуса
 	local function UpdateColorStatus()
 		if StatusText.Text == "+" then
@@ -1155,14 +1155,14 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 			StatusText.TextColor3 = Color3.fromRGB(255, 0 ,0)
 		end
 	end
-	
+
 	-- Функция для создания BillboardGui
 	local function createBillboardGui()
 		local billboardGui = Instance.new("BillboardGui")
 		billboardGui.Size = UDim2.new(0, 100, 0, 50)
 		billboardGui.StudsOffset = Vector3.new(0, 3, 0)
 		billboardGui.AlwaysOnTop = true
-	
+
 		local playerNameLabel = Instance.new("TextLabel")
 		playerNameLabel.Name = "PlayerName"
 		playerNameLabel.Size = UDim2.new(1, 0, 0.33, 0)
@@ -1172,7 +1172,7 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 		playerNameLabel.Font = Enum.Font.SourceSans
 		playerNameLabel.TextSize = 14
 		playerNameLabel.Parent = billboardGui
-	
+
 		local healthLabel = Instance.new("TextLabel")
 		healthLabel.Name = "Health"
 		healthLabel.Size = UDim2.new(1, 0, 0.33, 0)
@@ -1183,10 +1183,10 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 		healthLabel.Font = Enum.Font.SourceSans
 		healthLabel.TextSize = 14
 		healthLabel.Parent = billboardGui
-	
+
 		return billboardGui
 	end
-	
+
 	-- Функция для создания Highlight
 	local function createHighlight(player)
 		local highlight = Instance.new("Highlight")
@@ -1199,11 +1199,35 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 		highlight.Parent = player.Character
 		return highlight
 	end
-	
+
+	-- Функция для создания линии через GUI
+	local function createLineGui()
+		local lineGui = Instance.new("Frame")
+		lineGui.BackgroundColor3 = Color3.new(1, 1, 1)
+		lineGui.BorderSizePixel = 2
+		lineGui.AnchorPoint = Vector2.new(0.5, 0.5)
+		lineGui.Size = UDim2.new(0, 2, 0, 0)
+		lineGui.ZIndex = 2
+		lineGui.Parent = script.Parent.Parent.Parent.Parent.Parent.Parent
+		return lineGui
+	end
+
 	-- Таблица для хранения ESP для каждого игрока
 	local espGUIs = {}
 	local highlights = {}
-	
+	local lines = {}
+
+	-- Функция для обновления линии
+	local function updateLine(line, fromPos, toPos, color)
+		local direction = (toPos - fromPos).Unit
+		local distance = (toPos - fromPos).Magnitude
+
+		line.Position = UDim2.new(0, fromPos.X, 0, fromPos.Y)
+		line.Size = UDim2.new(0, 2, 0, distance)
+		line.Rotation = math.deg(math.atan2(direction.Y, direction.X)) + 90
+		line.BackgroundColor3 = color -- Устанавливаем цвет линии
+	end
+
 	-- Функция для создания и обновления ESP
 	local function createOrUpdateESP(player)
 		if not EspEnabled then return end
@@ -1212,33 +1236,41 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 			billboardGui.Adornee = player.Character:WaitForChild("HumanoidRootPart")
 			billboardGui.Parent = player.Character
 			espGUIs[player] = billboardGui
-	
+
 			local highlight = createHighlight(player)
 			highlights[player] = highlight
+
+			local line = createLineGui()
+			lines[player] = line
 		end
-	
+
 		local character = player.Character
 		if not character or not character:FindFirstChild("HumanoidRootPart") then
-			espGUIs[player].Enabled = false
+			if espGUIs[player] then
+				espGUIs[player].Enabled = false
+			end
+			if lines[player] then
+				lines[player].Visible = false
+			end
 			return
 		end
-	
+
 		local humanoid = character:FindFirstChild("Humanoid")
 		if not humanoid then return end
-	
+
 		local rootPart = character:FindFirstChild("HumanoidRootPart")
 		if not rootPart then return end
-	
+
 		local distance = (Camera.CFrame.Position - rootPart.Position).Magnitude
 		local textSize = math.clamp(1000 / distance, 14, 36)
 		espGUIs[player].PlayerName.Text = player.Name .. " [" .. math.floor(distance) .. "m]"
 		espGUIs[player].PlayerName.TextSize = textSize
-	
+
 		local health = math.floor(humanoid.Health)
 		local maxHealth = math.floor(humanoid.MaxHealth)
 		espGUIs[player].Health.Text = "HP: " .. health .. "/" .. maxHealth
 		espGUIs[player].Health.TextSize = textSize
-	
+
 		local healthColor = Color3.new(0, 1, 0)
 		if health <= 20 then
 			healthColor = Color3.new(1, 0, 0) -- Красный
@@ -1247,16 +1279,28 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 		else
 			healthColor = Color3.new(0, 1, 0) -- Зеленый
 		end
-	
+
 		espGUIs[player].Health.TextColor3 = healthColor
 		highlights[player].FillColor = healthColor
 		espGUIs[player].Enabled = true
+
+		if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+			local localRootPart = LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+			local screenPos1 = Camera:WorldToViewportPoint(localRootPart.Position)
+			local screenPos2 = Camera:WorldToViewportPoint(rootPart.Position)
+			local line = lines[player]
+			if line then
+				updateLine(line, Vector2.new(screenPos1.X, screenPos1.Y), Vector2.new(screenPos2.X, screenPos2.Y), healthColor)
+				line.Visible = true
+			end
+		end
 	end
-	
+
 	-- Функция для включения/выключения ESP
 	local function toggleESP()
 		Click:Play()
 		EspEnabled = not EspEnabled
+		EspActivated = EspEnabled -- Устанавливаем флаг активации ESP
 		StatusText.Text = EspEnabled and "-" or "+"
 		UpdateColorStatus()
 		if not EspEnabled then
@@ -1266,16 +1310,67 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 				end
 			end
 			espGUIs = {}
-	
 			for _, highlight in pairs(highlights) do
 				if highlight and highlight.Parent then
 					highlight:Destroy()
 				end
 			end
 			highlights = {}
+
+			for _, line in pairs(lines) do
+				if line and line.Parent then
+					line:Destroy()
+				end
+			end
+			lines = {}
 		end
 	end
-	
+
+	-- Функция для обновления ESP
+	local function updateESP()
+		while true do
+			if EspActivated then
+				for _, player in pairs(Players:GetPlayers()) do
+					if player ~= Players.LocalPlayer then
+						createOrUpdateESP(player)
+					end
+				end
+			end
+			wait(0.1)
+		end
+	end
+
+	-- Функция для обновления ESP после возрождения игрока или добавления новой модели в Workspace
+	local function checkPlayerModels()
+		local function onCharacterAdded(character)
+			if EspActivated then
+				local player = Players:GetPlayerFromCharacter(character)
+				if player then
+					createOrUpdateESP(player)
+				end
+			end
+		end
+
+		local function onDescendantAdded(descendant)
+			if descendant:IsA("Model") and descendant:FindFirstChild("Humanoid") then
+				local player = Players:GetPlayerFromCharacter(descendant)
+				if player then
+					createOrUpdateESP(player)
+				end
+			end
+		end
+
+		Players.PlayerAdded:Connect(function(player)
+			player.CharacterAdded:Connect(onCharacterAdded)
+		end)
+
+		game.Workspace.DescendantAdded:Connect(onDescendantAdded)
+	end
+
+	-- Запускаем функции для обновления ESP и проверки моделей игроков
+	spawn(updateESP)
+	spawn(checkPlayerModels)
+
 	-- Подключаемся к событиям
 	RunService.RenderStepped:Connect(function()
 		if EspEnabled then
@@ -1286,19 +1381,23 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 			end
 		end
 	end)
-	
+
 	Players.PlayerRemoving:Connect(function(player)
 		if espGUIs[player] then
 			espGUIs[player]:Destroy()
 			espGUIs[player] = nil
 		end
-	
 		if highlights[player] then
 			highlights[player]:Destroy()
 			highlights[player] = nil
 		end
+
+		if lines[player] then
+			lines[player]:Destroy()
+			lines[player] = nil
+		end
 	end)
-	
+
 	Players.PlayerAdded:Connect(function(player)
 		player.CharacterAdded:Connect(function()
 			if EspEnabled then
@@ -1306,12 +1405,13 @@ local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager
 			end
 		end)
 	end)
-	
+
 	-- Подключаем кнопку к функции toggleESP
 	EspToggleButton.MouseButton1Click:Connect(toggleESP)
-	
+
 	-- Инициализация текста кнопки
 	UpdateColorStatus()
+
 end
 coroutine.wrap(XXUFDB_fake_script)()
 local function OWBM_fake_script() -- SoftButton_3.ButtonManager 
