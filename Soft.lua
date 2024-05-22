@@ -1461,20 +1461,26 @@ local function IHVXQF_fake_script() -- ScreenGui.HotControl
 	local MainFrame = script.Parent.Mainframe
 	local Open = script.Parent.Open
 	
-	local Sound = Instance.new("Sound", script)
-	Sound.SoundId = "rbxassetid://7025035451"
+	local OpenSound = Instance.new("Sound", script)
+	OpenSound.SoundId = "rbxassetid://7025035451"
+	local CloseSound = Instance.new("Sound", script)
+	CloseSound.SoundId = "rbxassetid://7176828722"
 	
-	local function onRightShiftPressed(input, gameProcessed)
+	local function KeyboardPressed(input, gameProcessed)
 		if not gameProcessed then
 			if input.KeyCode == Enum.KeyCode.RightControl then
-				Sound:Play()
+				OpenSound:Play()
 	        MainFrame.Visible = true
-	        Open.Visible = false
+			Open.Visible = false
+			elseif input.KeyCode == Enum.KeyCode.Backspace then
+				CloseSound:Play()
+				MainFrame.Visible = false
+				Open.Visible = true
 			end
 		end
 	end
 	
-	UserInputService.InputBegan:Connect(onRightShiftPressed)
+	UserInputService.InputBegan:Connect(KeyboardPressed)
 	
 end
 coroutine.wrap(IHVXQF_fake_script)()
