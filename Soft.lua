@@ -81,7 +81,6 @@ local Open = Instance.new("ImageButton")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
 
 Mainframe.Name = "Mainframe"
 Mainframe.Parent = ScreenGui
@@ -431,6 +430,7 @@ Button_6.BackgroundTransparency = 1.000
 Button_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Button_6.BorderSizePixel = 0
 Button_6.Size = UDim2.new(0, 165, 0, 35)
+Button_6.Modal = true
 Button_6.Font = Enum.Font.Code
 Button_6.Text = ""
 Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -615,7 +615,7 @@ TextLabel_11.BorderSizePixel = 0
 TextLabel_11.Position = UDim2.new(0.394628108, 0, 0.480620146, 0)
 TextLabel_11.Size = UDim2.new(0, 100, 0, 25)
 TextLabel_11.Font = Enum.Font.Code
-TextLabel_11.Text = "v0.1"
+TextLabel_11.Text = "v0.2"
 TextLabel_11.TextColor3 = Color3.fromRGB(100, 100, 100)
 TextLabel_11.TextScaled = true
 TextLabel_11.TextSize = 14.000
@@ -798,7 +798,7 @@ Open.Image = "rbxassetid://17569346460"
 
 -- Scripts:
 
-local function TDXRNVN_fake_script() -- Walkspeed.Manager 
+local function SQWK_fake_script() -- Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Walkspeed)
 
 	local textbox = script.Parent.Status.TextBox
@@ -831,8 +831,8 @@ local function TDXRNVN_fake_script() -- Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(TDXRNVN_fake_script)()
-local function DDILUZ_fake_script() -- JumpPower.Manager 
+coroutine.wrap(SQWK_fake_script)()
+local function CMNNZS_fake_script() -- JumpPower.Manager 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	local textbox = script.Parent.Status.TextBox
@@ -865,8 +865,8 @@ local function DDILUZ_fake_script() -- JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(DDILUZ_fake_script)()
-local function CWVFPRN_fake_script() -- SoftButton.ButtonManager 
+coroutine.wrap(CMNNZS_fake_script)()
+local function HBIV_fake_script() -- SoftButton.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -971,8 +971,8 @@ local function CWVFPRN_fake_script() -- SoftButton.ButtonManager
 	end)
 	
 end
-coroutine.wrap(CWVFPRN_fake_script)()
-local function LGHMG_fake_script() -- Button_2.ButtonManager 
+coroutine.wrap(HBIV_fake_script)()
+local function CQSNXHT_fake_script() -- Button_2.ButtonManager 
 	local script = Instance.new('LocalScript', Button_2)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1007,8 +1007,8 @@ local function LGHMG_fake_script() -- Button_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(LGHMG_fake_script)()
-local function TJNRW_fake_script() -- Button_4.ButtonManager 
+coroutine.wrap(CQSNXHT_fake_script)()
+local function PJABVMX_fake_script() -- Button_4.ButtonManager 
 	local script = Instance.new('LocalScript', Button_4)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1043,8 +1043,8 @@ local function TJNRW_fake_script() -- Button_4.ButtonManager
 	end)
 	
 end
-coroutine.wrap(TJNRW_fake_script)()
-local function CTLRMS_fake_script() -- Close.ButtonManager 
+coroutine.wrap(PJABVMX_fake_script)()
+local function LJXA_fake_script() -- Close.ButtonManager 
 	local script = Instance.new('LocalScript', Close)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1076,8 +1076,8 @@ local function CTLRMS_fake_script() -- Close.ButtonManager
 	end)
 	
 end
-coroutine.wrap(CTLRMS_fake_script)()
-local function FNPX_fake_script() -- Mainframe.Dragging 
+coroutine.wrap(LJXA_fake_script)()
+local function KQHJM_fake_script() -- Mainframe.Dragging 
 	local script = Instance.new('LocalScript', Mainframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1120,8 +1120,8 @@ local function FNPX_fake_script() -- Mainframe.Dragging
 		end
 	end)
 end
-coroutine.wrap(FNPX_fake_script)()
-local function MTNPGUN_fake_script() -- SoftButton_2.ButtonManager 
+coroutine.wrap(KQHJM_fake_script)()
+local function XXUFDB_fake_script() -- SoftButton_2.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_2)
 
 	local EspEnabled = false
@@ -1304,8 +1304,8 @@ local function MTNPGUN_fake_script() -- SoftButton_2.ButtonManager
 	-- Инициализация текста кнопки
 	UpdateColorStatus()
 end
-coroutine.wrap(MTNPGUN_fake_script)()
-local function MQMR_fake_script() -- SoftButton_3.ButtonManager 
+coroutine.wrap(XXUFDB_fake_script)()
+local function OWBM_fake_script() -- SoftButton_3.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_3)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1345,21 +1345,21 @@ local function MQMR_fake_script() -- SoftButton_3.ButtonManager
 	
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
-coroutine.wrap(MQMR_fake_script)()
-local function HIUJ_fake_script() -- ScreenGui.Notification 
+coroutine.wrap(OWBM_fake_script)()
+local function QJNOFL_fake_script() -- ScreenGui.Notification 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local StarterGui = game:GetService("StarterGui")
 	local Player = game.Players.LocalPlayer
 	StarterGui:SetCore("SendNotification", {
 		Title = "Atom has loaded!";
-		Text = "Have a good game "..Player.DisplayName.."!";
+		Text = "Press RightCtrl to open menu!";
 		Icon = "rbxassetid://17569346460";
 		Duration = "5";
 	})
 end
-coroutine.wrap(HIUJ_fake_script)()
-local function DVMNF_fake_script() -- Button_9.ButtonManager 
+coroutine.wrap(QJNOFL_fake_script)()
+local function AUHB_fake_script() -- Button_9.ButtonManager 
 	local script = Instance.new('LocalScript', Button_9)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1387,21 +1387,21 @@ local function DVMNF_fake_script() -- Button_9.ButtonManager
 	end)
 	
 end
-coroutine.wrap(DVMNF_fake_script)()
-local function DYFDZT_fake_script() -- ValueButton.ValueManager 
+coroutine.wrap(AUHB_fake_script)()
+local function UWLN_fake_script() -- ValueButton.ValueManager 
 	local script = Instance.new('LocalScript', ValueButton)
 
 	
 end
-coroutine.wrap(DYFDZT_fake_script)()
-local function IJJDTK_fake_script() -- Open.Open 
+coroutine.wrap(UWLN_fake_script)()
+local function XYBDSFQ_fake_script() -- Open.Open 
 	local script = Instance.new('LocalScript', Open)
 
 	local MainFrame = script.Parent.Parent.Mainframe
 	local Button = script.Parent
 	
 	local Click = Instance.new("Sound", script)
-	Click.SoundId = "rbxassetid://535716488"
+	Click.SoundId = "rbxassetid://7025035451"
 	
 	Button.MouseButton1Click:Connect(function()
 		Click:Play()
@@ -1409,8 +1409,8 @@ local function IJJDTK_fake_script() -- Open.Open
 		Button.Visible = false
 	end)
 end
-coroutine.wrap(IJJDTK_fake_script)()
-local function LJZJUJ_fake_script() -- Open.Dragging 
+coroutine.wrap(XYBDSFQ_fake_script)()
+local function RUDWCGV_fake_script() -- Open.Dragging 
 	local script = Instance.new('LocalScript', Open)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1453,4 +1453,28 @@ local function LJZJUJ_fake_script() -- Open.Dragging
 		end
 	end)
 end
-coroutine.wrap(LJZJUJ_fake_script)()
+coroutine.wrap(RUDWCGV_fake_script)()
+local function IHVXQF_fake_script() -- ScreenGui.HotControl 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local UserInputService = game:GetService("UserInputService")
+	local MainFrame = script.Parent.Mainframe
+	local Open = script.Parent.Open
+	
+	local Sound = Instance.new("Sound", script)
+	Sound.SoundId = "rbxassetid://7025035451"
+	
+	local function onRightShiftPressed(input, gameProcessed)
+		if not gameProcessed then
+			if input.KeyCode == Enum.KeyCode.RightControl then
+				Sound:Play()
+	        MainFrame.Visible = true
+	        Open.Visible = false
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:Connect(onRightShiftPressed)
+	
+end
+coroutine.wrap(IHVXQF_fake_script)()
