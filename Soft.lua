@@ -814,7 +814,7 @@ local function SQWK_fake_script() -- Walkspeed.Manager
 				humanoid.WalkSpeed = speed
 			end
 			while true do
-				wait(0.1)
+				wait(0.01)
 				humanoid.WalkSpeed = speed
 			end
 		end
@@ -852,7 +852,7 @@ local function CMNNZS_fake_script() -- JumpPower.Manager
 				humanoid.JumpPower = speed
 			end
 			while true do
-				wait(0.1)
+				wait(0.01)
 				humanoid.JumpPower = speed
 			end
 		end
