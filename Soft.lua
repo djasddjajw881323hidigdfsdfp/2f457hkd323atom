@@ -83,11 +83,6 @@ local TextBox_3 = Instance.new("TextBox")
 local TextLabel_17 = Instance.new("TextLabel")
 local Open = Instance.new("ImageButton")
 
--- Test
-local Sound = instance.new("Sound")
-Sound.SoundID = "rbxassetid://17480968402"
-Sound:Play()
-
 --Properties:
 
 ScreenGui.Parent = game.ServerScriptService
