@@ -85,7 +85,7 @@ local Open = Instance.new("ImageButton")
 
 --Properties:
 
-ScreenGui.Parent = game.ServerScriptService
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Mainframe.Name = "Mainframe"
