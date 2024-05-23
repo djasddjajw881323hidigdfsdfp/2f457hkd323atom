@@ -85,7 +85,7 @@ local Open = Instance.new("ImageButton")
 
 --Properties:
 
-ScreenGui.Parent = game.StarterGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
@@ -869,7 +869,7 @@ Open.Image = "rbxassetid://17569346460"
 
 -- Scripts:
 
-local function ADJVGDQ_fake_script() -- Walkspeed.Manager 
+local function PYNDIU_fake_script() -- Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Walkspeed)
 
 	local textbox = script.Parent.Status.TextBox
@@ -906,8 +906,8 @@ local function ADJVGDQ_fake_script() -- Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(ADJVGDQ_fake_script)()
-local function RSWKTCZ_fake_script() -- JumpPower.Manager 
+coroutine.wrap(PYNDIU_fake_script)()
+local function IGTFX_fake_script() -- JumpPower.Manager 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	local textbox = script.Parent.Status.TextBox
@@ -944,8 +944,8 @@ local function RSWKTCZ_fake_script() -- JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(RSWKTCZ_fake_script)()
-local function UBYVFCJ_fake_script() -- Button.ButtonManager 
+coroutine.wrap(IGTFX_fake_script)()
+local function ILCELBY_fake_script() -- Button.ButtonManager 
 	local script = Instance.new('LocalScript', Button)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -980,8 +980,8 @@ local function UBYVFCJ_fake_script() -- Button.ButtonManager
 	end)
 	
 end
-coroutine.wrap(UBYVFCJ_fake_script)()
-local function HNYIV_fake_script() -- Button_3.ButtonManager 
+coroutine.wrap(ILCELBY_fake_script)()
+local function NPTQWS_fake_script() -- Button_3.ButtonManager 
 	local script = Instance.new('LocalScript', Button_3)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1016,8 +1016,8 @@ local function HNYIV_fake_script() -- Button_3.ButtonManager
 	end)
 	
 end
-coroutine.wrap(HNYIV_fake_script)()
-local function RHWH_fake_script() -- Close.ButtonManager 
+coroutine.wrap(NPTQWS_fake_script)()
+local function GALPSSQ_fake_script() -- Close.ButtonManager 
 	local script = Instance.new('LocalScript', Close)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1049,8 +1049,8 @@ local function RHWH_fake_script() -- Close.ButtonManager
 	end)
 	
 end
-coroutine.wrap(RHWH_fake_script)()
-local function IJLLBO_fake_script() -- Mainframe.Dragging 
+coroutine.wrap(GALPSSQ_fake_script)()
+local function CGVTY_fake_script() -- Mainframe.Dragging 
 	local script = Instance.new('LocalScript', Mainframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1093,8 +1093,8 @@ local function IJLLBO_fake_script() -- Mainframe.Dragging
 		end
 	end)
 end
-coroutine.wrap(IJLLBO_fake_script)()
-local function SUYAYKR_fake_script() -- SoftButton.ButtonManager 
+coroutine.wrap(CGVTY_fake_script)()
+local function WIGKB_fake_script() -- SoftButton.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton)
 
 	local EspEnabled = false
@@ -1379,8 +1379,8 @@ local function SUYAYKR_fake_script() -- SoftButton.ButtonManager
 	
 	
 end
-coroutine.wrap(SUYAYKR_fake_script)()
-local function FFWBRP_fake_script() -- SoftButton_2.ButtonManager 
+coroutine.wrap(WIGKB_fake_script)()
+local function PMNE_fake_script() -- SoftButton_2.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_2)
 
 	local Button = script.Parent.Button
@@ -1469,8 +1469,8 @@ local function FFWBRP_fake_script() -- SoftButton_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(FFWBRP_fake_script)()
-local function TEBJEX_fake_script() -- SoftButton_3.ButtonManager 
+coroutine.wrap(PMNE_fake_script)()
+local function CMUNJZ_fake_script() -- SoftButton_3.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_3)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1575,8 +1575,8 @@ local function TEBJEX_fake_script() -- SoftButton_3.ButtonManager
 	end)
 	
 end
-coroutine.wrap(TEBJEX_fake_script)()
-local function TXKGPA_fake_script() -- SoftButton_4.ButtonManager 
+coroutine.wrap(CMUNJZ_fake_script)()
+local function JUZHDB_fake_script() -- SoftButton_4.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_4)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1616,8 +1616,8 @@ local function TXKGPA_fake_script() -- SoftButton_4.ButtonManager
 	
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
-coroutine.wrap(TXKGPA_fake_script)()
-local function VFUMR_fake_script() -- ScreenGui.Notification 
+coroutine.wrap(JUZHDB_fake_script)()
+local function YOPZNMS_fake_script() -- ScreenGui.Notification 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1629,8 +1629,8 @@ local function VFUMR_fake_script() -- ScreenGui.Notification
 		Duration = "5";
 	})
 end
-coroutine.wrap(VFUMR_fake_script)()
-local function TJJEHD_fake_script() -- Button_10.ButtonManager 
+coroutine.wrap(YOPZNMS_fake_script)()
+local function JTLSKYD_fake_script() -- Button_10.ButtonManager 
 	local script = Instance.new('LocalScript', Button_10)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1658,14 +1658,14 @@ local function TJJEHD_fake_script() -- Button_10.ButtonManager
 	end)
 	
 end
-coroutine.wrap(TJJEHD_fake_script)()
-local function QJYM_fake_script() -- ValueButton.ValueManager 
+coroutine.wrap(JTLSKYD_fake_script)()
+local function XVKU_fake_script() -- ValueButton.ValueManager 
 	local script = Instance.new('LocalScript', ValueButton)
 
 	
 end
-coroutine.wrap(QJYM_fake_script)()
-local function CTYGR_fake_script() -- Open.Open 
+coroutine.wrap(XVKU_fake_script)()
+local function PRPG_fake_script() -- Open.Open 
 	local script = Instance.new('LocalScript', Open)
 
 	local MainFrame = script.Parent.Parent.Mainframe
@@ -1680,8 +1680,8 @@ local function CTYGR_fake_script() -- Open.Open
 		Button.Visible = false
 	end)
 end
-coroutine.wrap(CTYGR_fake_script)()
-local function ZGLS_fake_script() -- Open.Dragging 
+coroutine.wrap(PRPG_fake_script)()
+local function GWDVILO_fake_script() -- Open.Dragging 
 	local script = Instance.new('LocalScript', Open)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1724,8 +1724,8 @@ local function ZGLS_fake_script() -- Open.Dragging
 		end
 	end)
 end
-coroutine.wrap(ZGLS_fake_script)()
-local function FOBOMG_fake_script() -- ScreenGui.HotControl 
+coroutine.wrap(GWDVILO_fake_script)()
+local function QIESHBY_fake_script() -- ScreenGui.HotControl 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1754,4 +1754,4 @@ local function FOBOMG_fake_script() -- ScreenGui.HotControl
 	UserInputService.InputBegan:Connect(KeyboardPressed)
 	
 end
-coroutine.wrap(FOBOMG_fake_script)()
+coroutine.wrap(QIESHBY_fake_script)()
