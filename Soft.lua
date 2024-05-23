@@ -8,7 +8,7 @@
 -- The official engine for running the Atom reader.
 -- You may not use the source code without the author's permission.
 
-local ScreenGui = Instance.new("ScreenGui")
+local Atom = Instance.new("ScreenGui")
 local Mainframe = Instance.new("Frame")
 local Player = Instance.new("Frame")
 local Frame = Instance.new("Frame")
@@ -71,33 +71,52 @@ local TextLabel_13 = Instance.new("TextLabel")
 local Select = Instance.new("Frame")
 local Frame_3 = Instance.new("Frame")
 local ImageLabel_3 = Instance.new("ImageLabel")
-local Soft_3 = Instance.new("Frame")
+local Default = Instance.new("Frame")
+local Button_10 = Instance.new("Frame")
+local Decor_10 = Instance.new("Frame")
 local TextLabel_14 = Instance.new("TextLabel")
 local TextLabel_15 = Instance.new("TextLabel")
-local SoftButton_5 = Instance.new("Frame")
-local Decor_10 = Instance.new("Frame")
-local Button_10 = Instance.new("TextButton")
+local Error = Instance.new("Frame")
 local TextLabel_16 = Instance.new("TextLabel")
-local Status_7 = Instance.new("Frame")
 local TextLabel_17 = Instance.new("TextLabel")
-local Button_11 = Instance.new("Frame")
+local Unstable = Instance.new("Frame")
 local Decor_11 = Instance.new("Frame")
-local Button_12 = Instance.new("TextButton")
-local TextLabel_18 = Instance.new("TextLabel")
-local ValueButton = Instance.new("Frame")
+local Status_7 = Instance.new("TextLabel")
+local Error_2 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local Soft_3 = Instance.new("Frame")
+local Error_3 = Instance.new("Frame")
 local Decor_12 = Instance.new("Frame")
-local Status_8 = Instance.new("Frame")
-local TextBox_3 = Instance.new("TextBox")
+local Status_8 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
 local TextLabel_19 = Instance.new("TextLabel")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local SoftButton_5 = Instance.new("Frame")
+local Decor_13 = Instance.new("Frame")
+local Button_11 = Instance.new("TextButton")
+local TextLabel_20 = Instance.new("TextLabel")
+local Status_9 = Instance.new("Frame")
+local TextLabel_21 = Instance.new("TextLabel")
+local Button_12 = Instance.new("Frame")
+local Decor_14 = Instance.new("Frame")
+local Button_13 = Instance.new("TextButton")
+local TextLabel_22 = Instance.new("TextLabel")
+local ValueButton = Instance.new("Frame")
+local Decor_15 = Instance.new("Frame")
+local Status_10 = Instance.new("Frame")
+local TextBox_3 = Instance.new("TextBox")
+local TextLabel_23 = Instance.new("TextLabel")
 local Open = Instance.new("ImageButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Atom.Name = "Atom"
+Atom.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Atom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Mainframe.Name = "Mainframe"
-Mainframe.Parent = ScreenGui
+Mainframe.Parent = Atom
 Mainframe.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Mainframe.BorderColor3 = Color3.fromRGB(25, 25, 25)
 Mainframe.BorderSizePixel = 5
@@ -728,45 +747,234 @@ ImageLabel_3.Image = "rbxassetid://17569035650"
 ImageLabel_3.ImageTransparency = 0.900
 ImageLabel_3.ScaleType = Enum.ScaleType.Crop
 
-Soft_3.Name = "Soft"
-Soft_3.Parent = Frame_3
-Soft_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Soft_3.BackgroundTransparency = 1.000
-Soft_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Soft_3.BorderSizePixel = 0
-Soft_3.Position = UDim2.new(0.00102631806, 0, 0, 0)
-Soft_3.Size = UDim2.new(0, 484, 0, 645)
+Default.Name = "Default"
+Default.Parent = Frame_3
+Default.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Default.BackgroundTransparency = 1.000
+Default.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Default.BorderSizePixel = 0
+Default.Position = UDim2.new(0.00102631806, 0, 0, 0)
+Default.Size = UDim2.new(0, 484, 0, 645)
 
-TextLabel_14.Parent = Soft_3
+Button_10.Name = "Button"
+Button_10.Parent = Default
+Button_10.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Button_10.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Button_10.BorderSizePixel = 2
+Button_10.Position = UDim2.new(0.0669246688, 0, 0.420407832, 0)
+Button_10.Size = UDim2.new(0, 418, 0, 63)
+
+Decor_10.Name = "Decor"
+Decor_10.Parent = Button_10
+Decor_10.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Decor_10.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Decor_10.BorderSizePixel = 2
+Decor_10.Position = UDim2.new(0.0108452756, 0, 0.068382144, 0)
+Decor_10.Size = UDim2.new(0, 408, 0, 53)
+
+TextLabel_14.Parent = Button_10
 TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_14.BackgroundTransparency = 1.000
 TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Position = UDim2.new(0.169421494, 0, 0.424806207, 0)
-TextLabel_14.Size = UDim2.new(0, 323, 0, 50)
+TextLabel_14.Position = UDim2.new(0.0573740676, 0, 0.257405847, 0)
+TextLabel_14.Size = UDim2.new(0, 370, 0, 30)
 TextLabel_14.Font = Enum.Font.Code
-TextLabel_14.Text = "Welcome to Atom - Client"
-TextLabel_14.TextColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel_14.Text = "Welcome back, cheater!"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_14.TextScaled = true
 TextLabel_14.TextSize = 14.000
 TextLabel_14.TextWrapped = true
 
-TextLabel_15.Parent = Soft_3
+TextLabel_15.Parent = Default
 TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_15.BackgroundTransparency = 1.000
 TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_15.BorderSizePixel = 0
-TextLabel_15.Position = UDim2.new(0.394628108, 0, 0.480620146, 0)
-TextLabel_15.Size = UDim2.new(0, 100, 0, 25)
+TextLabel_15.Position = UDim2.new(0.148759946, 0, 0.531782925, 0)
+TextLabel_15.Size = UDim2.new(0, 334, 0, 31)
 TextLabel_15.Font = Enum.Font.Code
-TextLabel_15.Text = "v0.5"
+TextLabel_15.Text = "Atom - Client Version: 0.6"
 TextLabel_15.TextColor3 = Color3.fromRGB(100, 100, 100)
 TextLabel_15.TextScaled = true
 TextLabel_15.TextSize = 14.000
 TextLabel_15.TextWrapped = true
 
+Error.Name = "Error"
+Error.Parent = Frame_3
+Error.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Error.BackgroundTransparency = 1.000
+Error.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error.BorderSizePixel = 0
+Error.Position = UDim2.new(0.00102631806, 0, 0, 0)
+Error.Size = UDim2.new(0, 484, 0, 645)
+Error.Visible = false
+
+TextLabel_16.Parent = Error
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0.169421494, 0, 0.424806207, 0)
+TextLabel_16.Size = UDim2.new(0, 323, 0, 50)
+TextLabel_16.Font = Enum.Font.Code
+TextLabel_16.Text = "Welcome to Atom - Client"
+TextLabel_16.TextColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+TextLabel_17.Parent = Error
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0.394628108, 0, 0.480620146, 0)
+TextLabel_17.Size = UDim2.new(0, 100, 0, 25)
+TextLabel_17.Font = Enum.Font.Code
+TextLabel_17.Text = "v0.5"
+TextLabel_17.TextColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+Unstable.Name = "Unstable"
+Unstable.Parent = Mainframe
+Unstable.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Unstable.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Unstable.BorderSizePixel = 2
+Unstable.Position = UDim2.new(0.0562915839, 0, 0.900965631, 0)
+Unstable.Size = UDim2.new(0, 460, 0, 48)
+Unstable.Visible = false
+
+Decor_11.Name = "Decor"
+Decor_11.Parent = Unstable
+Decor_11.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Decor_11.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Decor_11.BorderSizePixel = 2
+Decor_11.Position = UDim2.new(0.0130191967, 0, 0.0783030167, 0)
+Decor_11.Size = UDim2.new(0, 447, 0, 40)
+
+Status_7.Name = "Status"
+Status_7.Parent = Unstable
+Status_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status_7.BackgroundTransparency = 1.000
+Status_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status_7.BorderSizePixel = 0
+Status_7.Position = UDim2.new(0.0130193299, 0, 0.0983556136, 0)
+Status_7.Size = UDim2.new(0, 446, 0, 37)
+Status_7.Font = Enum.Font.Code
+Status_7.Text = "The state of the application is unstable!"
+Status_7.TextColor3 = Color3.fromRGB(255, 255, 0)
+Status_7.TextScaled = true
+Status_7.TextSize = 14.000
+Status_7.TextWrapped = true
+
+Error_2.Name = "Error"
+Error_2.Parent = Mainframe
+Error_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Error_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Error_2.BorderSizePixel = 2
+Error_2.Position = UDim2.new(0.0154142585, 0, 0.0138504151, 0)
+Error_2.Size = UDim2.new(0, 502, 0, 703)
+Error_2.Visible = false
+
+Frame_4.Parent = Error_2
+Frame_4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Frame_4.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Frame_4.BorderSizePixel = 2
+Frame_4.Position = UDim2.new(0.014892213, 0, 0.00934462994, 0)
+Frame_4.Size = UDim2.new(0, 487, 0, 688)
+
+ImageLabel_4.Parent = Frame_4
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Size = UDim2.new(0, 486, 0, 688)
+ImageLabel_4.Image = "rbxassetid://14301977707"
+ImageLabel_4.ImageTransparency = 0.900
+ImageLabel_4.ScaleType = Enum.ScaleType.Crop
+
+Soft_3.Name = "Soft"
+Soft_3.Parent = Frame_4
+Soft_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Soft_3.BackgroundTransparency = 1.000
+Soft_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Soft_3.BorderSizePixel = 0
+Soft_3.Position = UDim2.new(0.00102631806, 0, 4.73140744e-08, 0)
+Soft_3.Size = UDim2.new(0, 484, 0, 644)
+
+Error_3.Name = "Error"
+Error_3.Parent = Soft_3
+Error_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Error_3.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Error_3.BorderSizePixel = 2
+Error_3.Position = UDim2.new(0.0232337136, 0, 0.426546991, 0)
+Error_3.Size = UDim2.new(0, 460, 0, 48)
+
+Decor_12.Name = "Decor"
+Decor_12.Parent = Error_3
+Decor_12.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Decor_12.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Decor_12.BorderSizePixel = 2
+Decor_12.Position = UDim2.new(0.0130191967, 0, 0.0783030167, 0)
+Decor_12.Size = UDim2.new(0, 447, 0, 40)
+
+Status_8.Name = "Status"
+Status_8.Parent = Error_3
+Status_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status_8.BackgroundTransparency = 1.000
+Status_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status_8.BorderSizePixel = 0
+Status_8.Position = UDim2.new(0.0130193299, 0, 0.0983556136, 0)
+Status_8.Size = UDim2.new(0, 446, 0, 37)
+Status_8.Font = Enum.Font.Code
+Status_8.Text = "The application is not available."
+Status_8.TextColor3 = Color3.fromRGB(255, 0, 0)
+Status_8.TextScaled = true
+Status_8.TextSize = 14.000
+Status_8.TextWrapped = true
+
+TextLabel_18.Parent = Soft_3
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0.021167472, 0, 0.520186365, 0)
+TextLabel_18.Size = UDim2.new(0, 459, 0, 36)
+TextLabel_18.Font = Enum.Font.Code
+TextLabel_18.Text = "We're already aware of the problem and we're trying to fix it."
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = Soft_3
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0.021167472, 0, 1.02329195, 0)
+TextLabel_19.Size = UDim2.new(0, 459, 0, 22)
+TextLabel_19.Font = Enum.Font.Code
+TextLabel_19.Text = "name - userid"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+ImageLabel_5.Parent = Frame_4
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.398357302, 0, 0.231104657, 0)
+ImageLabel_5.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_5.Image = "rbxassetid://17589526410"
+
 SoftButton_5.Name = "SoftButton"
-SoftButton_5.Parent = ScreenGui
+SoftButton_5.Parent = Atom
 SoftButton_5.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 SoftButton_5.BorderColor3 = Color3.fromRGB(25, 25, 25)
 SoftButton_5.BorderSizePixel = 2
@@ -774,111 +982,111 @@ SoftButton_5.Position = UDim2.new(0.0155564705, 0, 0.219806761, 0)
 SoftButton_5.Size = UDim2.new(0, 466, 0, 35)
 SoftButton_5.Visible = false
 
-Decor_10.Name = "Decor"
-Decor_10.Parent = SoftButton_5
-Decor_10.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Decor_10.BorderColor3 = Color3.fromRGB(35, 35, 35)
-Decor_10.BorderSizePixel = 2
-Decor_10.Position = UDim2.new(0, 0, 0.0285714287, 0)
-Decor_10.Size = UDim2.new(0, 421, 0, 32)
-
-Button_10.Name = "Button"
-Button_10.Parent = SoftButton_5
-Button_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_10.BackgroundTransparency = 1.000
-Button_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_10.BorderSizePixel = 0
-Button_10.Size = UDim2.new(0, 421, 0, 35)
-Button_10.Font = Enum.Font.Code
-Button_10.Text = ""
-Button_10.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_10.TextScaled = true
-Button_10.TextSize = 14.000
-Button_10.TextWrapped = true
-
-TextLabel_16.Parent = Button_10
-TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.BackgroundTransparency = 1.000
-TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_16.BorderSizePixel = 0
-TextLabel_16.Position = UDim2.new(0.0340106562, 0, 0.200000003, 0)
-TextLabel_16.Size = UDim2.new(0, 396, 0, 21)
-TextLabel_16.Font = Enum.Font.Code
-TextLabel_16.Text = "Button"
-TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.TextScaled = true
-TextLabel_16.TextSize = 14.000
-TextLabel_16.TextWrapped = true
-
-Status_7.Name = "Status"
-Status_7.Parent = SoftButton_5
-Status_7.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Status_7.BorderColor3 = Color3.fromRGB(35, 35, 35)
-Status_7.BorderSizePixel = 2
-Status_7.Position = UDim2.new(0.92236954, 0, 0.0571428575, 0)
-Status_7.Size = UDim2.new(0, 30, 0, 30)
-
-TextLabel_17.Parent = Status_7
-TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.BackgroundTransparency = 1.000
-TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_17.BorderSizePixel = 0
-TextLabel_17.Size = UDim2.new(0, 30, 0, 30)
-TextLabel_17.Font = Enum.Font.Code
-TextLabel_17.Text = "+"
-TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.TextScaled = true
-TextLabel_17.TextSize = 14.000
-TextLabel_17.TextWrapped = true
+Decor_13.Name = "Decor"
+Decor_13.Parent = SoftButton_5
+Decor_13.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Decor_13.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Decor_13.BorderSizePixel = 2
+Decor_13.Position = UDim2.new(0, 0, 0.0285714287, 0)
+Decor_13.Size = UDim2.new(0, 421, 0, 32)
 
 Button_11.Name = "Button"
-Button_11.Parent = ScreenGui
-Button_11.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Button_11.BorderColor3 = Color3.fromRGB(25, 25, 25)
-Button_11.BorderSizePixel = 2
-Button_11.Position = UDim2.new(0.0152718388, 0, 0.163043484, 0)
-Button_11.Size = UDim2.new(0, 165, 0, 35)
-Button_11.Visible = false
+Button_11.Parent = SoftButton_5
+Button_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_11.BackgroundTransparency = 1.000
+Button_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_11.BorderSizePixel = 0
+Button_11.Size = UDim2.new(0, 421, 0, 35)
+Button_11.Font = Enum.Font.Code
+Button_11.Text = ""
+Button_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_11.TextScaled = true
+Button_11.TextSize = 14.000
+Button_11.TextWrapped = true
 
-Decor_11.Name = "Decor"
-Decor_11.Parent = Button_11
-Decor_11.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Decor_11.BorderColor3 = Color3.fromRGB(35, 35, 35)
-Decor_11.BorderSizePixel = 2
-Decor_11.Position = UDim2.new(0.00606060587, 0, 0.0285714287, 0)
-Decor_11.Size = UDim2.new(0, 163, 0, 32)
+TextLabel_20.Parent = Button_11
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_20.Position = UDim2.new(0.0340106562, 0, 0.200000003, 0)
+TextLabel_20.Size = UDim2.new(0, 396, 0, 21)
+TextLabel_20.Font = Enum.Font.Code
+TextLabel_20.Text = "Button"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+Status_9.Name = "Status"
+Status_9.Parent = SoftButton_5
+Status_9.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Status_9.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Status_9.BorderSizePixel = 2
+Status_9.Position = UDim2.new(0.92236954, 0, 0.0571428575, 0)
+Status_9.Size = UDim2.new(0, 30, 0, 30)
+
+TextLabel_21.Parent = Status_9
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Size = UDim2.new(0, 30, 0, 30)
+TextLabel_21.Font = Enum.Font.Code
+TextLabel_21.Text = "+"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
 
 Button_12.Name = "Button"
-Button_12.Parent = Button_11
-Button_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_12.BackgroundTransparency = 1.000
-Button_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_12.BorderSizePixel = 0
-Button_12.Position = UDim2.new(0, 0, -0.0285714287, 0)
+Button_12.Parent = Atom
+Button_12.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Button_12.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Button_12.BorderSizePixel = 2
+Button_12.Position = UDim2.new(0.0152718388, 0, 0.163043484, 0)
 Button_12.Size = UDim2.new(0, 165, 0, 35)
-Button_12.Font = Enum.Font.Code
-Button_12.Text = ""
-Button_12.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_12.TextScaled = true
-Button_12.TextSize = 14.000
-Button_12.TextWrapped = true
+Button_12.Visible = false
 
-TextLabel_18.Parent = Button_12
-TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.BackgroundTransparency = 1.000
-TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_18.BorderSizePixel = 0
-TextLabel_18.Position = UDim2.new(0.0363636352, 0, 0.200000003, 0)
-TextLabel_18.Size = UDim2.new(0, 152, 0, 21)
-TextLabel_18.Font = Enum.Font.Code
-TextLabel_18.Text = "Button"
-TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.TextScaled = true
-TextLabel_18.TextSize = 14.000
-TextLabel_18.TextWrapped = true
+Decor_14.Name = "Decor"
+Decor_14.Parent = Button_12
+Decor_14.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Decor_14.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Decor_14.BorderSizePixel = 2
+Decor_14.Position = UDim2.new(0.00606060587, 0, 0.0285714287, 0)
+Decor_14.Size = UDim2.new(0, 163, 0, 32)
+
+Button_13.Name = "Button"
+Button_13.Parent = Button_12
+Button_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_13.BackgroundTransparency = 1.000
+Button_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_13.BorderSizePixel = 0
+Button_13.Position = UDim2.new(0, 0, -0.0285714287, 0)
+Button_13.Size = UDim2.new(0, 165, 0, 35)
+Button_13.Font = Enum.Font.Code
+Button_13.Text = ""
+Button_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_13.TextScaled = true
+Button_13.TextSize = 14.000
+Button_13.TextWrapped = true
+
+TextLabel_22.Parent = Button_13
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.0363636352, 0, 0.200000003, 0)
+TextLabel_22.Size = UDim2.new(0, 152, 0, 21)
+TextLabel_22.Font = Enum.Font.Code
+TextLabel_22.Text = "Button"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
 
 ValueButton.Name = "ValueButton"
-ValueButton.Parent = ScreenGui
+ValueButton.Parent = Atom
 ValueButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 ValueButton.BorderColor3 = Color3.fromRGB(25, 25, 25)
 ValueButton.BorderSizePixel = 2
@@ -886,23 +1094,23 @@ ValueButton.Position = UDim2.new(0.0155564705, 0, 0.275362313, 0)
 ValueButton.Size = UDim2.new(0, 466, 0, 35)
 ValueButton.Visible = false
 
-Decor_12.Name = "Decor"
-Decor_12.Parent = ValueButton
-Decor_12.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Decor_12.BorderColor3 = Color3.fromRGB(35, 35, 35)
-Decor_12.BorderSizePixel = 2
-Decor_12.Position = UDim2.new(0, 0, 0.0285714287, 0)
-Decor_12.Size = UDim2.new(0, 363, 0, 32)
+Decor_15.Name = "Decor"
+Decor_15.Parent = ValueButton
+Decor_15.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Decor_15.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Decor_15.BorderSizePixel = 2
+Decor_15.Position = UDim2.new(0, 0, 0.0285714287, 0)
+Decor_15.Size = UDim2.new(0, 363, 0, 32)
 
-Status_8.Name = "Status"
-Status_8.Parent = ValueButton
-Status_8.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Status_8.BorderColor3 = Color3.fromRGB(35, 35, 35)
-Status_8.BorderSizePixel = 2
-Status_8.Position = UDim2.new(0.797906041, 0, 0.0571428575, 0)
-Status_8.Size = UDim2.new(0, 88, 0, 30)
+Status_10.Name = "Status"
+Status_10.Parent = ValueButton
+Status_10.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Status_10.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Status_10.BorderSizePixel = 2
+Status_10.Position = UDim2.new(0.797906041, 0, 0.0571428575, 0)
+Status_10.Size = UDim2.new(0, 88, 0, 30)
 
-TextBox_3.Parent = Status_8
+TextBox_3.Parent = Status_10
 TextBox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_3.BackgroundTransparency = 1.000
 TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -917,22 +1125,22 @@ TextBox_3.TextScaled = true
 TextBox_3.TextSize = 14.000
 TextBox_3.TextWrapped = true
 
-TextLabel_19.Parent = ValueButton
-TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.BackgroundTransparency = 1.000
-TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_19.BorderSizePixel = 0
-TextLabel_19.Position = UDim2.new(0.0447402745, 0, 0.200000003, 0)
-TextLabel_19.Size = UDim2.new(0, 320, 0, 21)
-TextLabel_19.Font = Enum.Font.Code
-TextLabel_19.Text = "Enter a textbox"
-TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.TextScaled = true
-TextLabel_19.TextSize = 14.000
-TextLabel_19.TextWrapped = true
+TextLabel_23.Parent = ValueButton
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0.0447402745, 0, 0.200000003, 0)
+TextLabel_23.Size = UDim2.new(0, 320, 0, 21)
+TextLabel_23.Font = Enum.Font.Code
+TextLabel_23.Text = "Enter a textbox"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextScaled = true
+TextLabel_23.TextSize = 14.000
+TextLabel_23.TextWrapped = true
 
 Open.Name = "Open"
-Open.Parent = ScreenGui
+Open.Parent = Atom
 Open.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Open.BorderColor3 = Color3.fromRGB(35, 35, 35)
 Open.BorderSizePixel = 2
@@ -942,7 +1150,7 @@ Open.Image = "rbxassetid://17569346460"
 
 -- Scripts:
 
-local function SITH_fake_script() -- Walkspeed.Manager 
+local function IAZLZ_fake_script() -- Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Walkspeed)
 
 	local textbox = script.Parent.Status.TextBox
@@ -979,8 +1187,8 @@ local function SITH_fake_script() -- Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(SITH_fake_script)()
-local function PSRDY_fake_script() -- JumpPower.Manager 
+coroutine.wrap(IAZLZ_fake_script)()
+local function RFOLOX_fake_script() -- JumpPower.Manager 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	local textbox = script.Parent.Status.TextBox
@@ -1017,8 +1225,8 @@ local function PSRDY_fake_script() -- JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(PSRDY_fake_script)()
-local function WISCPK_fake_script() -- SoftButton.ButtonManager 
+coroutine.wrap(RFOLOX_fake_script)()
+local function NZHTWD_fake_script() -- SoftButton.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1063,8 +1271,8 @@ local function WISCPK_fake_script() -- SoftButton.ButtonManager
 	
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
-coroutine.wrap(WISCPK_fake_script)()
-local function FWDOOO_fake_script() -- Button_2.ButtonManager 
+coroutine.wrap(NZHTWD_fake_script)()
+local function CSMPCL_fake_script() -- Button_2.ButtonManager 
 	local script = Instance.new('LocalScript', Button_2)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1099,8 +1307,8 @@ local function FWDOOO_fake_script() -- Button_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(FWDOOO_fake_script)()
-local function RTXRK_fake_script() -- Button_4.ButtonManager 
+coroutine.wrap(CSMPCL_fake_script)()
+local function JXRGFE_fake_script() -- Button_4.ButtonManager 
 	local script = Instance.new('LocalScript', Button_4)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1135,8 +1343,8 @@ local function RTXRK_fake_script() -- Button_4.ButtonManager
 	end)
 	
 end
-coroutine.wrap(RTXRK_fake_script)()
-local function HOPOVL_fake_script() -- Close.ButtonManager 
+coroutine.wrap(JXRGFE_fake_script)()
+local function TVSFGP_fake_script() -- Close.ButtonManager 
 	local script = Instance.new('LocalScript', Close)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1168,8 +1376,8 @@ local function HOPOVL_fake_script() -- Close.ButtonManager
 	end)
 	
 end
-coroutine.wrap(HOPOVL_fake_script)()
-local function IPFJ_fake_script() -- Mainframe.Dragging 
+coroutine.wrap(TVSFGP_fake_script)()
+local function DFHQ_fake_script() -- Mainframe.Dragging 
 	local script = Instance.new('LocalScript', Mainframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1212,8 +1420,8 @@ local function IPFJ_fake_script() -- Mainframe.Dragging
 		end
 	end)
 end
-coroutine.wrap(IPFJ_fake_script)()
-local function VTIMQZ_fake_script() -- SoftButton_2.ButtonManager 
+coroutine.wrap(DFHQ_fake_script)()
+local function PJUX_fake_script() -- SoftButton_2.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_2)
 
 	local EspEnabled = false
@@ -1498,8 +1706,8 @@ local function VTIMQZ_fake_script() -- SoftButton_2.ButtonManager
 	
 	
 end
-coroutine.wrap(VTIMQZ_fake_script)()
-local function FWCQG_fake_script() -- SoftButton_3.ButtonManager 
+coroutine.wrap(PJUX_fake_script)()
+local function SQEJ_fake_script() -- SoftButton_3.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_3)
 
 	local Button = script.Parent.Button
@@ -1588,8 +1796,8 @@ local function FWCQG_fake_script() -- SoftButton_3.ButtonManager
 	end)
 	
 end
-coroutine.wrap(FWCQG_fake_script)()
-local function KFXDN_fake_script() -- SoftButton_4.ButtonManager 
+coroutine.wrap(SQEJ_fake_script)()
+local function LMVL_fake_script() -- SoftButton_4.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_4)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1694,8 +1902,41 @@ local function KFXDN_fake_script() -- SoftButton_4.ButtonManager
 	end)
 	
 end
-coroutine.wrap(KFXDN_fake_script)()
-local function WWTX_fake_script() -- SoftButton_5.ButtonManager 
+coroutine.wrap(LMVL_fake_script)()
+local function QBJDXI_fake_script() -- TextLabel_14.RamdomText 
+	local script = Instance.new('LocalScript', TextLabel_14)
+
+	local RandomValue = math.random(1, 5)
+	local ReadyValue = 0
+	local TextLabel = script.Parent
+	local Player = game.Players.LocalPlayer
+	
+	ReadyValue = RandomValue
+	
+	if ReadyValue == 1 then
+		TextLabel.Text = "Welcome back, "..Player.DisplayName.."! Ready to cheat?"
+	elseif ReadyValue == 2 then
+		TextLabel.Text = "Hello, "..Player.DisplayName.."! Cheats are ready!"
+	elseif ReadyValue == 3 then
+		TextLabel.Text = "Good to see you, "..Player.DisplayName.."! Let's roll!"
+	elseif ReadyValue == 4 then
+		TextLabel.Text = "Hey, "..Player.DisplayName.."! Ready to dominate?"
+	elseif ReadyValue == 5 then
+		TextLabel.Text = "Hi, "..Player.DisplayName.."! Cheat adventure awaits!"
+	end
+	
+end
+coroutine.wrap(QBJDXI_fake_script)()
+local function BPCTG_fake_script() -- TextLabel_19.Name 
+	local script = Instance.new('LocalScript', TextLabel_19)
+
+	local Player = game.Players.LocalPlayer
+	local Text = script.Parent
+	
+	Text.Text = Player.Name.." - "..Player.UserId
+end
+coroutine.wrap(BPCTG_fake_script)()
+local function XCVSAFR_fake_script() -- SoftButton_5.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_5)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1735,22 +1976,65 @@ local function WWTX_fake_script() -- SoftButton_5.ButtonManager
 	
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
-coroutine.wrap(WWTX_fake_script)()
-local function IXHCYB_fake_script() -- ScreenGui.Notification 
-	local script = Instance.new('LocalScript', ScreenGui)
+coroutine.wrap(XCVSAFR_fake_script)()
+local function CTWQ_fake_script() -- Atom.Status 
+	local script = Instance.new('LocalScript', Atom)
 
 	local StarterGui = game:GetService("StarterGui")
-	local Player = game.Players.LocalPlayer
-	StarterGui:SetCore("SendNotification", {
-		Title = "Atom has loaded!";
-		Text = "Press RightCtrl to open menu!";
-		Icon = "rbxassetid://17569346460";
-		Duration = "5";
-	})
+	
+	-- 1 - Адекватная работа, 2 - Нестабильная работа, 3 - Временно отключено.
+	local Status = 1
+	
+	local UnstableFrame = script.Parent.Mainframe.Unstable
+	local ErrorFrame = script.Parent.Mainframe.Error
+	
+	local UpperButtons = script.Parent.Mainframe.UpperButtons
+	local SelectFrame = script.Parent.Mainframe.Select
+	
+	function Notification()
+		if Status == 1 then
+			StarterGui:SetCore("SendNotification",  {
+				Title = "Atom has loaded!";
+				Text = "Press RightCtrl to open menu!";
+				Icon = "rbxassetid://17569346460";
+				Duration = 5;
+			})
+		elseif Status == 2 then
+			StarterGui:SetCore("SendNotification", {
+				Title = "The app is unstable!";
+				Text = "The app may break while you are using it!";
+				Icon = "rbxassetid://17589581346";
+				Duration = 5;
+			})
+		elseif Status == 3 then
+			StarterGui:SetCore("SendNotification", {
+				Title = "The application is not available!";
+				Text = "Try running the cheat later.";
+				Icon = "rbxassetid://17589526410";
+				Duration = 5;
+			})
+		end
+	end
+	
+	local function CheckStatus()
+		if Status == 1 then
+			Notification()
+		elseif Status == 2 then
+			UnstableFrame.Visible = true
+			Notification()
+		elseif Status == 3 then
+			Notification()
+			ErrorFrame.Visible = true
+			UpperButtons.Visible = false
+			SelectFrame.Visible = false
+		end
+	end
+	
+	CheckStatus()
 end
-coroutine.wrap(IXHCYB_fake_script)()
-local function IUEZ_fake_script() -- Button_11.ButtonManager 
-	local script = Instance.new('LocalScript', Button_11)
+coroutine.wrap(CTWQ_fake_script)()
+local function HNIZ_fake_script() -- Button_12.ButtonManager 
+	local script = Instance.new('LocalScript', Button_12)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
 	local Button = script.Parent.Button
@@ -1777,14 +2061,14 @@ local function IUEZ_fake_script() -- Button_11.ButtonManager
 	end)
 	
 end
-coroutine.wrap(IUEZ_fake_script)()
-local function LJBJTJ_fake_script() -- ValueButton.ValueManager 
+coroutine.wrap(HNIZ_fake_script)()
+local function AYKN_fake_script() -- ValueButton.ValueManager 
 	local script = Instance.new('LocalScript', ValueButton)
 
 	
 end
-coroutine.wrap(LJBJTJ_fake_script)()
-local function TVPHOPN_fake_script() -- Open.Open 
+coroutine.wrap(AYKN_fake_script)()
+local function TSRHNK_fake_script() -- Open.Open 
 	local script = Instance.new('LocalScript', Open)
 
 	local MainFrame = script.Parent.Parent.Mainframe
@@ -1799,8 +2083,8 @@ local function TVPHOPN_fake_script() -- Open.Open
 		Button.Visible = false
 	end)
 end
-coroutine.wrap(TVPHOPN_fake_script)()
-local function LYUNX_fake_script() -- Open.Dragging 
+coroutine.wrap(TSRHNK_fake_script)()
+local function HQDPPS_fake_script() -- Open.Dragging 
 	local script = Instance.new('LocalScript', Open)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1843,34 +2127,64 @@ local function LYUNX_fake_script() -- Open.Dragging
 		end
 	end)
 end
-coroutine.wrap(LYUNX_fake_script)()
-local function NIYWOO_fake_script() -- ScreenGui.HotControl 
-	local script = Instance.new('LocalScript', ScreenGui)
+coroutine.wrap(HQDPPS_fake_script)()
+local function BEJUM_fake_script() -- Atom.HotControl 
+	local script = Instance.new('LocalScript', Atom)
 
 	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
 	local MainFrame = script.Parent.Mainframe
 	local Open = script.Parent.Open
+	local Close = script.Parent.Mainframe.UpperButtons.Close.Button
+	
+	local Opened = false
 	
 	local Sound = Instance.new("Sound", script)
 	Sound.SoundId = "rbxassetid://7025035451"
 	local CloseSound = Instance.new("Sound", script)
 	CloseSound.SoundId = "rbxassetid://7176828722"
+	local Music = Instance.new("Sound", script)
+	Music.SoundId = "rbxassetid://1844804453"
+	Music.Looped = true
+	Music.Volume = 0.1
+	
+	local function StopMusic()
+		TweenService:Create(Music, TweenInfo.new(1), {Volume = 0}):Play()
+		wait(1)
+		Music:Stop()
+	end
 	
 	local function KeyboardPressed(input, gameProcessed)
 		if not gameProcessed then
 			if input.KeyCode == Enum.KeyCode.RightControl then
-			Sound:Play()
-	        MainFrame.Visible = true
-			Open.Visible = false
-			elseif input.KeyCode == Enum.KeyCode.Escape then
-				CloseSound:Play()
-				MainFrame.Visible = false
-				Open.Visible = true
+				if Opened == false then
+					Opened = true
+					Sound:Play()
+					Music:Play()
+					Music.Volume = 0.1
+					MainFrame.Visible = true
+					Open.Visible = false
+				else
+					CloseSound:Play()
+	                Opened = false
+					MainFrame.Visible = false
+					Open.Visible = true
+					StopMusic()
+			            end
+			    end
 			end
-		end
 	end
 	
+	Open.MouseButton1Click:Connect(function()
+		Opened = true
+		Music:Play()
+	end)
+	Close.MouseButton1Click:Connect(function()
+		Opened = false
+	    StopMusic()
+	end)
+		
 	UserInputService.InputBegan:Connect(KeyboardPressed)
 	
 end
-coroutine.wrap(NIYWOO_fake_script)()
+coroutine.wrap(BEJUM_fake_script)()
