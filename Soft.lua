@@ -1977,6 +1977,15 @@ local function DGGVTUX_fake_script() -- SoftButton_5.ButtonManager
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
 coroutine.wrap(DGGVTUX_fake_script)()
+
+--[[
+░██████╗████████╗░█████╗░████████╗██╗░░░██╗░██████╗
+██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║░░░██║██╔════╝
+╚█████╗░░░░██║░░░███████║░░░██║░░░██║░░░██║╚█████╗░
+░╚═══██╗░░░██║░░░██╔══██║░░░██║░░░██║░░░██║░╚═══██╗
+██████╔╝░░░██║░░░██║░░██║░░░██║░░░╚██████╔╝██████╔╝
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═════╝░]]
+
 local function ULQS_fake_script() -- Atom.Status 
 	local script = Instance.new('LocalScript', Atom)
 
@@ -2041,10 +2050,18 @@ local function ULQS_fake_script() -- Atom.Status
 		end
 	end
 	
+	--[[
+██████╗░░█████╗░███╗░░██╗███╗░░██╗███████╗██████╗░
+██╔══██╗██╔══██╗████╗░██║████╗░██║██╔════╝██╔══██╗
+██████╦╝███████║██╔██╗██║██╔██╗██║█████╗░░██║░░██║
+██╔══██╗██╔══██║██║╚████║██║╚████║██╔══╝░░██║░░██║
+██████╦╝██║░░██║██║░╚███║██║░╚███║███████╗██████╔╝
+╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚══╝╚══════╝╚═════╝░]]
+	
 	local function CheckStatus()
 	
 		local allowedPlayers = {
-			"meloy563",
+			""
 		}
 	
 		local function isPlayerAllowed(playerName)
