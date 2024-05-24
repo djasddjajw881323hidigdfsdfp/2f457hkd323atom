@@ -2044,8 +2044,7 @@ local function ULQS_fake_script() -- Atom.Status
 	local function CheckStatus()
 	
 		local allowedPlayers = {
-			"SHPROT_VBANKE4567",
-	
+			"meloy563",
 		}
 	
 		local function isPlayerAllowed(playerName)
