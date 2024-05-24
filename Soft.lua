@@ -564,7 +564,7 @@ TextLabel_8.BorderSizePixel = 0
 TextLabel_8.Position = UDim2.new(0.0340106562, 0, 0.200000003, 0)
 TextLabel_8.Size = UDim2.new(0, 396, 0, 21)
 TextLabel_8.Font = Enum.Font.Code
-TextLabel_8.Text = "ESP"
+TextLabel_8.Text = "AIM"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextScaled = true
 TextLabel_8.TextSize = 14.000
@@ -629,7 +629,7 @@ TextLabel_10.BorderSizePixel = 0
 TextLabel_10.Position = UDim2.new(0.0340106562, 0, 0.200000003, 0)
 TextLabel_10.Size = UDim2.new(0, 396, 0, 21)
 TextLabel_10.Font = Enum.Font.Code
-TextLabel_10.Text = "AIM"
+TextLabel_10.Text = "NOCLIP"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.TextScaled = true
 TextLabel_10.TextSize = 14.000
@@ -694,7 +694,7 @@ TextLabel_12.BorderSizePixel = 0
 TextLabel_12.Position = UDim2.new(0.0340106562, 0, 0.200000003, 0)
 TextLabel_12.Size = UDim2.new(0, 396, 0, 21)
 TextLabel_12.Font = Enum.Font.Code
-TextLabel_12.Text = "NOCLIP"
+TextLabel_12.Text = "ESP"
 TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_12.TextScaled = true
 TextLabel_12.TextSize = 14.000
@@ -1142,6 +1142,7 @@ TextLabel_23.TextWrapped = true
 Open.Name = "Open"
 Open.Parent = Atom
 Open.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Open.BackgroundTransparency = 0.500
 Open.BorderColor3 = Color3.fromRGB(35, 35, 35)
 Open.BorderSizePixel = 2
 Open.Position = UDim2.new(0, 0, 0.128019318, 0)
@@ -1150,7 +1151,7 @@ Open.Image = "rbxassetid://17569346460"
 
 -- Scripts:
 
-local function IAZLZ_fake_script() -- Walkspeed.Manager 
+local function AKPVBKC_fake_script() -- Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Walkspeed)
 
 	local textbox = script.Parent.Status.TextBox
@@ -1187,8 +1188,8 @@ local function IAZLZ_fake_script() -- Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(IAZLZ_fake_script)()
-local function RFOLOX_fake_script() -- JumpPower.Manager 
+coroutine.wrap(AKPVBKC_fake_script)()
+local function YCFRBF_fake_script() -- JumpPower.Manager 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	local textbox = script.Parent.Status.TextBox
@@ -1225,8 +1226,8 @@ local function RFOLOX_fake_script() -- JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(RFOLOX_fake_script)()
-local function NZHTWD_fake_script() -- SoftButton.ButtonManager 
+coroutine.wrap(YCFRBF_fake_script)()
+local function VXKQR_fake_script() -- SoftButton.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1271,8 +1272,8 @@ local function NZHTWD_fake_script() -- SoftButton.ButtonManager
 	
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
-coroutine.wrap(NZHTWD_fake_script)()
-local function CSMPCL_fake_script() -- Button_2.ButtonManager 
+coroutine.wrap(VXKQR_fake_script)()
+local function BWSVRY_fake_script() -- Button_2.ButtonManager 
 	local script = Instance.new('LocalScript', Button_2)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1307,8 +1308,8 @@ local function CSMPCL_fake_script() -- Button_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(CSMPCL_fake_script)()
-local function JXRGFE_fake_script() -- Button_4.ButtonManager 
+coroutine.wrap(BWSVRY_fake_script)()
+local function KCZCX_fake_script() -- Button_4.ButtonManager 
 	local script = Instance.new('LocalScript', Button_4)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1343,8 +1344,8 @@ local function JXRGFE_fake_script() -- Button_4.ButtonManager
 	end)
 	
 end
-coroutine.wrap(JXRGFE_fake_script)()
-local function TVSFGP_fake_script() -- Close.ButtonManager 
+coroutine.wrap(KCZCX_fake_script)()
+local function QOZI_fake_script() -- Close.ButtonManager 
 	local script = Instance.new('LocalScript', Close)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1376,8 +1377,8 @@ local function TVSFGP_fake_script() -- Close.ButtonManager
 	end)
 	
 end
-coroutine.wrap(TVSFGP_fake_script)()
-local function DFHQ_fake_script() -- Mainframe.Dragging 
+coroutine.wrap(QOZI_fake_script)()
+local function NJZFTUK_fake_script() -- Mainframe.Dragging 
 	local script = Instance.new('LocalScript', Mainframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1420,9 +1421,205 @@ local function DFHQ_fake_script() -- Mainframe.Dragging
 		end
 	end)
 end
-coroutine.wrap(DFHQ_fake_script)()
-local function PJUX_fake_script() -- SoftButton_2.ButtonManager 
+coroutine.wrap(NJZFTUK_fake_script)()
+local function LPXUFE_fake_script() -- SoftButton_2.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_2)
+
+	local Button = script.Parent.Button
+	local Decor = script.Parent.Decor
+	local StatusText = script.Parent.Status.TextLabel
+	local Activated = false
+	local Aiming = false
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://535716488"
+	
+	-- Function to find the nearest player
+	local function getNearestPlayer()
+		local players = game:GetService("Players")
+		local localPlayer = players.LocalPlayer
+		local nearestPlayer = nil
+		local shortestDistance = math.huge
+	
+		for _, player in ipairs(players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
+				if distance < shortestDistance then
+					nearestPlayer = player
+					shortestDistance = distance
+				end
+			end
+		end
+	
+		return nearestPlayer
+	end
+	
+	-- Function to aim at the nearest player
+	local function aimAtPlayer(player)
+		if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+			local camera = game.Workspace.CurrentCamera
+			camera.CFrame = CFrame.new(camera.CFrame.Position, player.Character.HumanoidRootPart.Position)
+		end
+	end
+	
+	-- Toggle aim
+	local function toggleAim()
+		Aiming = not Aiming
+		if Aiming then
+			local nearestPlayer = getNearestPlayer()
+			if nearestPlayer then
+				aimAtPlayer(nearestPlayer)
+			end
+		end
+	end
+	
+	-- Mouse hover effects
+	Button.MouseEnter:Connect(function()
+		Decor.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+		Decor.BorderColor3 = Color3.fromRGB(45, 45, 45)
+	end)
+	Button.MouseLeave:Connect(function()
+		Decor.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+		Decor.BorderColor3 = Color3.fromRGB(35, 35, 35)
+	end)
+	
+	-- Button click functionality
+	Button.MouseButton1Click:Connect(function()
+		Click:Play()
+		Activated = not Activated
+		if Activated then
+			StatusText.Text = "-"
+			StatusText.TextColor3 = Color3.fromRGB(255, 0, 0)
+		else
+			StatusText.Text = "+"
+			StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
+		end
+	
+		toggleAim()
+	end)
+	
+	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
+	
+	-- Aim update loop
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if Aiming then
+			local nearestPlayer = getNearestPlayer()
+			if nearestPlayer then
+				aimAtPlayer(nearestPlayer)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(LPXUFE_fake_script)()
+local function DFCM_fake_script() -- SoftButton_3.ButtonManager 
+	local script = Instance.new('LocalScript', SoftButton_3)
+
+	-- Default - 25, 25, 25; Hover - 35, 35, 35
+	local Button = script.Parent.Button
+	local Decor = script.Parent.Decor
+	local StatusText = script.Parent.Status.TextLabel
+	local Activated = false
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://535716488"
+	
+	-- Наведение
+	
+	Button.MouseEnter:Connect(function()
+		Decor.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+		Decor.BorderColor3 = Color3.fromRGB(45, 45, 45)
+	end)
+	Button.MouseLeave:Connect(function()
+		Decor.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+		Decor.BorderColor3 = Color3.fromRGB(35, 35, 35)
+	end)
+	
+	-- Функции 
+	
+	Button.MouseButton1Click:Connect(function()
+		Click:Play()
+		if Activated == false then
+			Activated = true
+			StatusText.Text = "-"
+			StatusText.TextColor3 = Color3.fromRGB(255, 0, 0)
+		else
+			Activated = false
+			StatusText.Text = "+"
+			StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
+		end
+	end)
+	
+	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
+	
+	-- Your added code
+	local player = game.Players.LocalPlayer
+	local runService = game:GetService("RunService")
+	
+	local noclipActive = false
+	local noclipPart = nil
+	
+	local function enableNoclip()
+		noclipActive = true
+		if not noclipPart then
+			local character = player.Character
+			if character then
+				local rootPart = character:FindFirstChild("HumanoidRootPart")
+				if rootPart then
+					noclipPart = Instance.new("Part")
+					noclipPart.Size = Vector3.new(2048, 16, 2048)
+					noclipPart.Position = Vector3.new(rootPart.Position.X, rootPart.Position.Y - 20, rootPart.Position.Z)
+					noclipPart.Name = "SafePart"
+					noclipPart.BrickColor = BrickColor.Red()
+					noclipPart.Transparency = 0.6
+					noclipPart.Anchored = true
+					noclipPart.Locked = true
+					noclipPart.Parent = workspace
+				end
+			end
+		end
+	end
+	
+	local function disableNoclip()
+		noclipActive = false
+		if noclipPart then
+			noclipPart:Destroy()
+			noclipPart = nil
+		end
+	end
+	
+	-- Обработчик для кнопки
+	Button.MouseButton1Click:Connect(function()
+		noclipActive = not noclipActive
+		if noclipActive then
+			enableNoclip()
+		else
+			disableNoclip()
+		end
+	end)
+	
+	runService.Stepped:Connect(function()
+		local character = player.Character
+		if character and noclipActive then
+			local rootPart = character:FindFirstChild("HumanoidRootPart")
+			if rootPart and noclipPart then
+				noclipPart.Position = Vector3.new(rootPart.Position.X, noclipPart.Position.Y, rootPart.Position.Z)
+			end
+	
+			for _, v in pairs(character:GetDescendants()) do
+				pcall(function()
+					if v:IsA("BasePart") then
+						v.CanCollide = false
+					end
+				end)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(DFCM_fake_script)()
+local function TSMF_fake_script() -- SoftButton_4.ButtonManager 
+	local script = Instance.new('LocalScript', SoftButton_4)
 
 	local EspEnabled = false
 	
@@ -1706,204 +1903,8 @@ local function PJUX_fake_script() -- SoftButton_2.ButtonManager
 	
 	
 end
-coroutine.wrap(PJUX_fake_script)()
-local function SQEJ_fake_script() -- SoftButton_3.ButtonManager 
-	local script = Instance.new('LocalScript', SoftButton_3)
-
-	local Button = script.Parent.Button
-	local Decor = script.Parent.Decor
-	local StatusText = script.Parent.Status.TextLabel
-	local Activated = false
-	local Aiming = false
-	
-	local Click = Instance.new("Sound", script)
-	Click.SoundId = "rbxassetid://535716488"
-	
-	-- Function to find the nearest player
-	local function getNearestPlayer()
-		local players = game:GetService("Players")
-		local localPlayer = players.LocalPlayer
-		local nearestPlayer = nil
-		local shortestDistance = math.huge
-	
-		for _, player in ipairs(players:GetPlayers()) do
-			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
-				if distance < shortestDistance then
-					nearestPlayer = player
-					shortestDistance = distance
-				end
-			end
-		end
-	
-		return nearestPlayer
-	end
-	
-	-- Function to aim at the nearest player
-	local function aimAtPlayer(player)
-		if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-			local camera = game.Workspace.CurrentCamera
-			camera.CFrame = CFrame.new(camera.CFrame.Position, player.Character.HumanoidRootPart.Position)
-		end
-	end
-	
-	-- Toggle aim
-	local function toggleAim()
-		Aiming = not Aiming
-		if Aiming then
-			local nearestPlayer = getNearestPlayer()
-			if nearestPlayer then
-				aimAtPlayer(nearestPlayer)
-			end
-		end
-	end
-	
-	-- Mouse hover effects
-	Button.MouseEnter:Connect(function()
-		Decor.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-		Decor.BorderColor3 = Color3.fromRGB(45, 45, 45)
-	end)
-	Button.MouseLeave:Connect(function()
-		Decor.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-		Decor.BorderColor3 = Color3.fromRGB(35, 35, 35)
-	end)
-	
-	-- Button click functionality
-	Button.MouseButton1Click:Connect(function()
-		Click:Play()
-		Activated = not Activated
-		if Activated then
-			StatusText.Text = "-"
-			StatusText.TextColor3 = Color3.fromRGB(255, 0, 0)
-		else
-			StatusText.Text = "+"
-			StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
-		end
-	
-		toggleAim()
-	end)
-	
-	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
-	
-	-- Aim update loop
-	game:GetService("RunService").RenderStepped:Connect(function()
-		if Aiming then
-			local nearestPlayer = getNearestPlayer()
-			if nearestPlayer then
-				aimAtPlayer(nearestPlayer)
-			end
-		end
-	end)
-	
-end
-coroutine.wrap(SQEJ_fake_script)()
-local function LMVL_fake_script() -- SoftButton_4.ButtonManager 
-	local script = Instance.new('LocalScript', SoftButton_4)
-
-	-- Default - 25, 25, 25; Hover - 35, 35, 35
-	local Button = script.Parent.Button
-	local Decor = script.Parent.Decor
-	local StatusText = script.Parent.Status.TextLabel
-	local Activated = false
-	
-	local Click = Instance.new("Sound", script)
-	Click.SoundId = "rbxassetid://535716488"
-	
-	-- Наведение
-	
-	Button.MouseEnter:Connect(function()
-		Decor.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-		Decor.BorderColor3 = Color3.fromRGB(45, 45, 45)
-	end)
-	Button.MouseLeave:Connect(function()
-		Decor.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-		Decor.BorderColor3 = Color3.fromRGB(35, 35, 35)
-	end)
-	
-	-- Функции 
-	
-	Button.MouseButton1Click:Connect(function()
-		Click:Play()
-		if Activated == false then
-			Activated = true
-			StatusText.Text = "-"
-			StatusText.TextColor3 = Color3.fromRGB(255, 0, 0)
-		else
-			Activated = false
-			StatusText.Text = "+"
-			StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
-		end
-	end)
-	
-	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
-	
-	-- Your added code
-	local player = game.Players.LocalPlayer
-	local runService = game:GetService("RunService")
-	
-	local noclipActive = false
-	local noclipPart = nil
-	
-	local function enableNoclip()
-		noclipActive = true
-		if not noclipPart then
-			local character = player.Character
-			if character then
-				local rootPart = character:FindFirstChild("HumanoidRootPart")
-				if rootPart then
-					noclipPart = Instance.new("Part")
-					noclipPart.Size = Vector3.new(2048, 16, 2048)
-					noclipPart.Position = Vector3.new(rootPart.Position.X, rootPart.Position.Y - 20, rootPart.Position.Z)
-					noclipPart.Name = "SafePart"
-					noclipPart.BrickColor = BrickColor.Red()
-					noclipPart.Transparency = 0.6
-					noclipPart.Anchored = true
-					noclipPart.Locked = true
-					noclipPart.Parent = workspace
-				end
-			end
-		end
-	end
-	
-	local function disableNoclip()
-		noclipActive = false
-		if noclipPart then
-			noclipPart:Destroy()
-			noclipPart = nil
-		end
-	end
-	
-	-- Обработчик для кнопки
-	Button.MouseButton1Click:Connect(function()
-		noclipActive = not noclipActive
-		if noclipActive then
-			enableNoclip()
-		else
-			disableNoclip()
-		end
-	end)
-	
-	runService.Stepped:Connect(function()
-		local character = player.Character
-		if character and noclipActive then
-			local rootPart = character:FindFirstChild("HumanoidRootPart")
-			if rootPart and noclipPart then
-				noclipPart.Position = Vector3.new(rootPart.Position.X, noclipPart.Position.Y, rootPart.Position.Z)
-			end
-	
-			for _, v in pairs(character:GetDescendants()) do
-				pcall(function()
-					if v:IsA("BasePart") then
-						v.CanCollide = false
-					end
-				end)
-			end
-		end
-	end)
-	
-end
-coroutine.wrap(LMVL_fake_script)()
-local function QBJDXI_fake_script() -- TextLabel_14.RamdomText 
+coroutine.wrap(TSMF_fake_script)()
+local function JPSPYF_fake_script() -- TextLabel_14.RamdomText 
 	local script = Instance.new('LocalScript', TextLabel_14)
 
 	local RandomValue = math.random(1, 5)
@@ -1926,8 +1927,8 @@ local function QBJDXI_fake_script() -- TextLabel_14.RamdomText
 	end
 	
 end
-coroutine.wrap(QBJDXI_fake_script)()
-local function BPCTG_fake_script() -- TextLabel_19.Name 
+coroutine.wrap(JPSPYF_fake_script)()
+local function MKYQYCR_fake_script() -- TextLabel_19.Name 
 	local script = Instance.new('LocalScript', TextLabel_19)
 
 	local Player = game.Players.LocalPlayer
@@ -1935,8 +1936,8 @@ local function BPCTG_fake_script() -- TextLabel_19.Name
 	
 	Text.Text = Player.Name.." - "..Player.UserId
 end
-coroutine.wrap(BPCTG_fake_script)()
-local function XCVSAFR_fake_script() -- SoftButton_5.ButtonManager 
+coroutine.wrap(MKYQYCR_fake_script)()
+local function DORFPOR_fake_script() -- SoftButton_5.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_5)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1976,8 +1977,8 @@ local function XCVSAFR_fake_script() -- SoftButton_5.ButtonManager
 	
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
-coroutine.wrap(XCVSAFR_fake_script)()
-local function CTWQ_fake_script() -- Atom.Status 
+coroutine.wrap(DORFPOR_fake_script)()
+local function MYLQL_fake_script() -- Atom.Status 
 	local script = Instance.new('LocalScript', Atom)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1991,6 +1992,8 @@ local function CTWQ_fake_script() -- Atom.Status
 	local UpperButtons = script.Parent.Mainframe.UpperButtons
 	local SelectFrame = script.Parent.Mainframe.Select
 	
+	local OpenButton = script.Parent.Open
+	
 	function Notification()
 		if Status == 1 then
 			StarterGui:SetCore("SendNotification",  {
@@ -1999,6 +2002,7 @@ local function CTWQ_fake_script() -- Atom.Status
 				Icon = "rbxassetid://17569346460";
 				Duration = 5;
 			})
+			OpenButton.Image = "rbxassetid://17569346460"
 		elseif Status == 2 then
 			StarterGui:SetCore("SendNotification", {
 				Title = "The app is unstable!";
@@ -2006,6 +2010,7 @@ local function CTWQ_fake_script() -- Atom.Status
 				Icon = "rbxassetid://17589581346";
 				Duration = 5;
 			})
+			OpenButton.Image = "rbxassetid://17589581346"
 		elseif Status == 3 then
 			StarterGui:SetCore("SendNotification", {
 				Title = "The application is not available!";
@@ -2013,6 +2018,7 @@ local function CTWQ_fake_script() -- Atom.Status
 				Icon = "rbxassetid://17589526410";
 				Duration = 5;
 			})
+			OpenButton.Image = "rbxassetid://17589526410"
 		end
 	end
 	
@@ -2032,8 +2038,8 @@ local function CTWQ_fake_script() -- Atom.Status
 	
 	CheckStatus()
 end
-coroutine.wrap(CTWQ_fake_script)()
-local function HNIZ_fake_script() -- Button_12.ButtonManager 
+coroutine.wrap(MYLQL_fake_script)()
+local function UPWXL_fake_script() -- Button_12.ButtonManager 
 	local script = Instance.new('LocalScript', Button_12)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -2061,14 +2067,14 @@ local function HNIZ_fake_script() -- Button_12.ButtonManager
 	end)
 	
 end
-coroutine.wrap(HNIZ_fake_script)()
-local function AYKN_fake_script() -- ValueButton.ValueManager 
+coroutine.wrap(UPWXL_fake_script)()
+local function UKFMN_fake_script() -- ValueButton.ValueManager 
 	local script = Instance.new('LocalScript', ValueButton)
 
 	
 end
-coroutine.wrap(AYKN_fake_script)()
-local function TSRHNK_fake_script() -- Open.Open 
+coroutine.wrap(UKFMN_fake_script)()
+local function ATXFLZ_fake_script() -- Open.Open 
 	local script = Instance.new('LocalScript', Open)
 
 	local MainFrame = script.Parent.Parent.Mainframe
@@ -2083,8 +2089,8 @@ local function TSRHNK_fake_script() -- Open.Open
 		Button.Visible = false
 	end)
 end
-coroutine.wrap(TSRHNK_fake_script)()
-local function HQDPPS_fake_script() -- Open.Dragging 
+coroutine.wrap(ATXFLZ_fake_script)()
+local function QCMZ_fake_script() -- Open.Dragging 
 	local script = Instance.new('LocalScript', Open)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2127,8 +2133,8 @@ local function HQDPPS_fake_script() -- Open.Dragging
 		end
 	end)
 end
-coroutine.wrap(HQDPPS_fake_script)()
-local function BEJUM_fake_script() -- Atom.HotControl 
+coroutine.wrap(QCMZ_fake_script)()
+local function EMEZCS_fake_script() -- Atom.HotControl 
 	local script = Instance.new('LocalScript', Atom)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2141,8 +2147,10 @@ local function BEJUM_fake_script() -- Atom.HotControl
 	
 	local Sound = Instance.new("Sound", script)
 	Sound.SoundId = "rbxassetid://7025035451"
+	
 	local CloseSound = Instance.new("Sound", script)
 	CloseSound.SoundId = "rbxassetid://7176828722"
+	
 	local Music = Instance.new("Sound", script)
 	Music.SoundId = "rbxassetid://1844804453"
 	Music.Looped = true
@@ -2187,4 +2195,4 @@ local function BEJUM_fake_script() -- Atom.HotControl
 	UserInputService.InputBegan:Connect(KeyboardPressed)
 	
 end
-coroutine.wrap(BEJUM_fake_script)()
+coroutine.wrap(EMEZCS_fake_script)()
