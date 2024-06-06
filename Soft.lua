@@ -2259,7 +2259,7 @@ local function HXIMFS_fake_script() -- ValueButton.ValueManager
 				local stop = false
 				while not stop do
 					stop = update()
-					wait(0.01)
+					wait(0.001)
 				end
 	
 				-- Восстанавливаем состояние и позицию после вращения
