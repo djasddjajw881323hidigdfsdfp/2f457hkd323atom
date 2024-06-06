@@ -2198,34 +2198,30 @@ local function ELYOTH_fake_script() -- SoftButton_4.ButtonManager
 	UpdateColorStatus()
 end
 coroutine.wrap(ELYOTH_fake_script)()
-local function ABEQ_fake_script() -- ValueButton.ValueManager 
-	local script = Instance.new('LocalScript', ValueButton)
+local TextBox = script.Parent.Status.TextBox
+local Players = game:GetService("Players")
 
-	local TextBox = script.Parent.Status.TextBox
-	local Players = game:GetService("Players")
-	
-	TextBox.FocusLost:Connect(function(enterPressed)
-		if enterPressed then
-			local playerName = TextBox.Text
-			local targetPlayer = Players:FindFirstChild(playerName)
-			local player = Players.LocalPlayer
-	
-			if targetPlayer and targetPlayer.Character and player.Character then
-				local targetChar = targetPlayer.Character
-				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-	
-				if humanoid then
-					-- Получаем позицию целевого игрока
-					local targetPos = targetChar.PrimaryPart.Position + Vector3.new(0, 5, 0)
-					-- Перемещаемся к целевой позиции
-					humanoid:MoveTo(targetPos)
-				end
-			else
-				print("Игрок с таким именем не найден")
-			end
-		end
-	end)
-end
+TextBox.FocusLost:Connect(function(enterPressed)
+    if enterPressed then
+        local playerName = TextBox.Text
+        local targetPlayer = Players:FindFirstChild(playerName)
+        local player = Players.LocalPlayer
+
+        if targetPlayer and targetPlayer.Character and player.Character then
+            local targetChar = targetPlayer.Character
+            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+
+            if humanoid then
+                -- Получаем позицию целевого игрока
+                local targetPos = targetChar.PrimaryPart.Position + Vector3.new(0, 5, 0)
+                -- Мгновенно телепортируемся к целевой позиции
+                player.Character:SetPrimaryPartCFrame(CFrame.new(targetPos))
+            end
+        else
+            print("Игрок с таким именем не найден")
+        end
+    end
+end)
 coroutine.wrap(ABEQ_fake_script)()
 local function QMJE_fake_script() -- TextLabel_17.RamdomText 
 	local script = Instance.new('LocalScript', TextLabel_17)
