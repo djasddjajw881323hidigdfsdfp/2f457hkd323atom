@@ -2814,7 +2814,7 @@ local function SDRJB_fake_script() -- Login.AccountModule
 	local AccountBase = { -- База данных аккаунтов пользователей
 		["Atom"] = {password = "A9234SAJD328KDFJASJD", role = "admin"},
 		["necto119"] = {password = "Fvbghn98", role = "user"},
-		["Juice"] = {password = "fjsf9324jfk234994923489", role = "admin"}
+		["Juice"] = {password = "fjsf9324jfk234994923489", role = "user"}
 	}
 	
 	local isLoggedIn = false  -- Флаг для отслеживания состояния входа пользователя
