@@ -1546,7 +1546,7 @@ TextLabel_29.TextWrapped = true
 
 -- Scripts:
 
-local function UVMMAM_fake_script() -- Walkspeed.Manager 
+local function MSLLLM_fake_script() -- Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Walkspeed)
 
 	local textbox = script.Parent.Status.TextBox
@@ -1583,8 +1583,8 @@ local function UVMMAM_fake_script() -- Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(UVMMAM_fake_script)()
-local function SUBVE_fake_script() -- JumpPower.Manager 
+coroutine.wrap(MSLLLM_fake_script)()
+local function OCVUI_fake_script() -- JumpPower.Manager 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	local textbox = script.Parent.Status.TextBox
@@ -1621,8 +1621,8 @@ local function SUBVE_fake_script() -- JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(SUBVE_fake_script)()
-local function PWEL_fake_script() -- FOV.Manager 
+coroutine.wrap(OCVUI_fake_script)()
+local function CRZL_fake_script() -- FOV.Manager 
 	local script = Instance.new('LocalScript', FOV)
 
 	local textbox = script.Parent.Status.TextBox
@@ -1660,8 +1660,8 @@ local function PWEL_fake_script() -- FOV.Manager
 	end)
 	
 end
-coroutine.wrap(PWEL_fake_script)()
-local function FESBKO_fake_script() -- Animation.Manager 
+coroutine.wrap(CRZL_fake_script)()
+local function DYLCCE_fake_script() -- Animation.Manager 
 	local script = Instance.new('LocalScript', Animation)
 
 	local textbox = script.Parent.Status.TextBox
@@ -1709,8 +1709,8 @@ local function FESBKO_fake_script() -- Animation.Manager
 		end
 	end)
 end
-coroutine.wrap(FESBKO_fake_script)()
-local function PJEBRLX_fake_script() -- SoftButton.ButtonManager 
+coroutine.wrap(DYLCCE_fake_script)()
+local function XNRCMTV_fake_script() -- SoftButton.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1755,8 +1755,8 @@ local function PJEBRLX_fake_script() -- SoftButton.ButtonManager
 	
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
-coroutine.wrap(PJEBRLX_fake_script)()
-local function IFMHQI_fake_script() -- Button_2.ButtonManager 
+coroutine.wrap(XNRCMTV_fake_script)()
+local function ZDHWIWQ_fake_script() -- Button_2.ButtonManager 
 	local script = Instance.new('LocalScript', Button_2)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1791,8 +1791,8 @@ local function IFMHQI_fake_script() -- Button_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(IFMHQI_fake_script)()
-local function LJNGSOO_fake_script() -- Button_4.ButtonManager 
+coroutine.wrap(ZDHWIWQ_fake_script)()
+local function HCEQTQI_fake_script() -- Button_4.ButtonManager 
 	local script = Instance.new('LocalScript', Button_4)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1827,8 +1827,8 @@ local function LJNGSOO_fake_script() -- Button_4.ButtonManager
 	end)
 	
 end
-coroutine.wrap(LJNGSOO_fake_script)()
-local function ZTJGKPC_fake_script() -- Close.ButtonManager 
+coroutine.wrap(HCEQTQI_fake_script)()
+local function HRKD_fake_script() -- Close.ButtonManager 
 	local script = Instance.new('LocalScript', Close)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -1858,8 +1858,8 @@ local function ZTJGKPC_fake_script() -- Close.ButtonManager
 	end)
 	
 end
-coroutine.wrap(ZTJGKPC_fake_script)()
-local function OVNW_fake_script() -- Mainframe.Dragging 
+coroutine.wrap(HRKD_fake_script)()
+local function JROCAFO_fake_script() -- Mainframe.Dragging 
 	local script = Instance.new('LocalScript', Mainframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1902,8 +1902,8 @@ local function OVNW_fake_script() -- Mainframe.Dragging
 		end
 	end)
 end
-coroutine.wrap(OVNW_fake_script)()
-local function ZSAEDA_fake_script() -- SoftButton_2.ButtonManager 
+coroutine.wrap(JROCAFO_fake_script)()
+local function POQWRUZ_fake_script() -- SoftButton_2.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_2)
 
 	local Button = script.Parent.Button
@@ -1992,8 +1992,8 @@ local function ZSAEDA_fake_script() -- SoftButton_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(ZSAEDA_fake_script)()
-local function HTGTCJJ_fake_script() -- SoftButton_3.ButtonManager 
+coroutine.wrap(POQWRUZ_fake_script)()
+local function JCAKL_fake_script() -- SoftButton_3.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_3)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -2098,8 +2098,8 @@ local function HTGTCJJ_fake_script() -- SoftButton_3.ButtonManager
 	end)
 	
 end
-coroutine.wrap(HTGTCJJ_fake_script)()
-local function DMLK_fake_script() -- SoftButton_4.ButtonManager 
+coroutine.wrap(JCAKL_fake_script)()
+local function BGBBTPG_fake_script() -- SoftButton_4.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_4)
 
 	local EspEnabled = false
@@ -2420,8 +2420,8 @@ local function DMLK_fake_script() -- SoftButton_4.ButtonManager
 	-- Инициализация текста кнопки
 	UpdateColorStatus()
 end
-coroutine.wrap(DMLK_fake_script)()
-local function UJCR_fake_script() -- ValueButton.ValueManager 
+coroutine.wrap(BGBBTPG_fake_script)()
+local function QSQWHMY_fake_script() -- ValueButton.ValueManager 
 	local script = Instance.new('LocalScript', ValueButton)
 
 	local TextBox = script.Parent.Status.TextBox
@@ -2450,8 +2450,8 @@ local function UJCR_fake_script() -- ValueButton.ValueManager
 	end)
 	
 end
-coroutine.wrap(UJCR_fake_script)()
-local function TBOMXSN_fake_script() -- TextLabel_17.RamdomText 
+coroutine.wrap(QSQWHMY_fake_script)()
+local function MBQVNQV_fake_script() -- TextLabel_17.RamdomText 
 	local script = Instance.new('LocalScript', TextLabel_17)
 
 	local RandomValue = math.random(1, 5)
@@ -2474,8 +2474,8 @@ local function TBOMXSN_fake_script() -- TextLabel_17.RamdomText
 	end
 	
 end
-coroutine.wrap(TBOMXSN_fake_script)()
-local function WFNQFSP_fake_script() -- TextLabel_22.Name 
+coroutine.wrap(MBQVNQV_fake_script)()
+local function AYZLW_fake_script() -- TextLabel_22.Name 
 	local script = Instance.new('LocalScript', TextLabel_22)
 
 	local Player = game.Players.LocalPlayer
@@ -2483,8 +2483,8 @@ local function WFNQFSP_fake_script() -- TextLabel_22.Name
 	
 	Text.Text = Player.Name.." - "..Player.UserId
 end
-coroutine.wrap(WFNQFSP_fake_script)()
-local function YVJEH_fake_script() -- SoftButton_5.ButtonManager 
+coroutine.wrap(AYZLW_fake_script)()
+local function EAZY_fake_script() -- SoftButton_5.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton_5)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -2524,8 +2524,8 @@ local function YVJEH_fake_script() -- SoftButton_5.ButtonManager
 	
 	StatusText.TextColor3 = Color3.fromRGB(0, 255, 0)
 end
-coroutine.wrap(YVJEH_fake_script)()
-local function HDTVGDQ_fake_script() -- Atom.Status 
+coroutine.wrap(EAZY_fake_script)()
+local function ESVJ_fake_script() -- Atom.Status 
 	local script = Instance.new('LocalScript', Atom)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2661,77 +2661,76 @@ local function HDTVGDQ_fake_script() -- Atom.Status
 		Music:Stop()
 	end
 	
-	-- Функция для проверки наличия элемента "Atom" в PlayerGui игрока
 	local function hasAtom(player)
 		return player:FindFirstChild("PlayerGui") and player.PlayerGui:FindFirstChild("Atom")
 	end
 	
-	-- Скрипт для создания BillboardGui и привязки его к игрокам, у которых есть "Atom" в PlayerGui
 	local function createBillboardForPlayersWithAtom()
 		local players = game:GetService("Players"):GetPlayers()
 		for _, player in ipairs(players) do
 			if hasAtom(player) then
-				local AtomBoard = Instance.new("BillboardGui")
-				local Frame = Instance.new("Frame")
-				local TextLabel = Instance.new("TextLabel")
-				local ImageLabel = Instance.new("ImageLabel")
-				local UICorner = Instance.new("UICorner")
-				
-				AtomBoard.Name = "AtomBoard"
-				AtomBoard.Parent = game.Workspace
-				AtomBoard.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-				AtomBoard.Active = true
-				AtomBoard.AlwaysOnTop = true
-				AtomBoard.LightInfluence = 1.000
-				AtomBoard.Size = UDim2.new(0, 200, 0, 50)
-				
-				Frame.Parent = AtomBoard
-				Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-				Frame.BackgroundTransparency = 0.9
-				Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-				Frame.BorderSizePixel = 0
-				Frame.Size = UDim2.new(0, 200, 0, 50)
-				
-				TextLabel.Parent = Frame
-				TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				TextLabel.BackgroundTransparency = 1.000
-				TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-				TextLabel.BorderSizePixel = 0
-				TextLabel.Position = UDim2.new(0, 50, 0, 0)
-				TextLabel.Size = UDim2.new(0, 150, 0, 50)
-				TextLabel.Font = Enum.Font.Code
-				TextLabel.Text = "Atom - Client"
-				TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-				TextLabel.TextScaled = true
-				TextLabel.TextSize = 14.000
-				TextLabel.TextWrapped = true
-				
-				ImageLabel.Parent = Frame
-				ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				ImageLabel.BackgroundTransparency = 1.000
-				ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-				ImageLabel.BorderSizePixel = 0
-				ImageLabel.Size = UDim2.new(0, 50, 0, 50)
-				ImageLabel.Image = "rbxassetid://17569346460"
-				
-				UICorner.Parent = Frame
-				AtomBoard.Parent = player.Character.Head -- Привяжите Billboard к голове игрока
+				if not player.Character.Head:FindFirstChild("AtomBoard") then
+					local AtomBoard = Instance.new("BillboardGui")
+					local Frame = Instance.new("Frame")
+					local TextLabel = Instance.new("TextLabel")
+					local ImageLabel = Instance.new("ImageLabel")
+					local UICorner = Instance.new("UICorner")
+					
+					AtomBoard.Name = "AtomBoard"
+					AtomBoard.Parent = player.Character.Head
+					AtomBoard.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+					AtomBoard.Active = true
+					AtomBoard.AlwaysOnTop = true
+					AtomBoard.LightInfluence = 1.000
+					AtomBoard.Size = UDim2.new(0, 200, 0, 50)
+					
+					Frame.Parent = AtomBoard
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.BackgroundTransparency = 0.9
+					Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.BorderSizePixel = 0
+					Frame.Size = UDim2.new(0, 200, 0, 50)
+					
+					TextLabel.Parent = Frame
+					TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TextLabel.BackgroundTransparency = 1.000
+					TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					TextLabel.BorderSizePixel = 0
+					TextLabel.Position = UDim2.new(0, 50, 0, 0)
+					TextLabel.Size = UDim2.new(0, 150, 0, 50)
+					TextLabel.Font = Enum.Font.Code
+					TextLabel.Text = "Atom - Client"
+					TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+					TextLabel.TextScaled = true
+					TextLabel.TextSize = 14.000
+					TextLabel.TextWrapped = true
+					
+					ImageLabel.Parent = Frame
+					ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					ImageLabel.BackgroundTransparency = 1.000
+					ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					ImageLabel.BorderSizePixel = 0
+					ImageLabel.Size = UDim2.new(0, 50, 0, 50)
+					ImageLabel.Image = "rbxassetid://17569346460"
+					
+					UICorner.Parent = Frame
+				end
+			else
+				if player:FindFirstChild("AtomBoard") then
+					player.AtomBoard:Destroy()
+				end
 			end
 		end
 	end
 	
-	-- Вызовите функцию для создания BillboardGui для игроков с "Atom" в PlayerGui
 	createBillboardForPlayersWithAtom()
 	
-	-- Затем вы можете создать службу, которая будет вызывать эту функцию с определенным интервалом, чтобы обновлять BillboardGui.
-	-- Например, используя метод Heartbeat:
-	game:GetService("RunService").Heartbeat:Connect(function()
-		
+	game:GetService("RunService").Stepped:Connect(function()
+		createBillboardForPlayersWithAtom()
 	end)
-	
 end
-coroutine.wrap(HDTVGDQ_fake_script)()
-local function LRVMRC_fake_script() -- Button_12.ButtonManager 
+coroutine.wrap(ESVJ_fake_script)()
+local function WONZ_fake_script() -- Button_12.ButtonManager 
 	local script = Instance.new('LocalScript', Button_12)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -2759,14 +2758,14 @@ local function LRVMRC_fake_script() -- Button_12.ButtonManager
 	end)
 	
 end
-coroutine.wrap(LRVMRC_fake_script)()
-local function DIUV_fake_script() -- ValueButton_2.ValueManager 
+coroutine.wrap(WONZ_fake_script)()
+local function FCPMZWG_fake_script() -- ValueButton_2.ValueManager 
 	local script = Instance.new('LocalScript', ValueButton_2)
 
 	
 end
-coroutine.wrap(DIUV_fake_script)()
-local function SRYMW_fake_script() -- Open.Open 
+coroutine.wrap(FCPMZWG_fake_script)()
+local function XTUIXG_fake_script() -- Open.Open 
 	local script = Instance.new('LocalScript', Open)
 
 	local MainFrame = script.Parent.Parent.Mainframe
@@ -2781,8 +2780,8 @@ local function SRYMW_fake_script() -- Open.Open
 		Button.Visible = false
 	end)
 end
-coroutine.wrap(SRYMW_fake_script)()
-local function ZHUIYW_fake_script() -- Open.Dragging 
+coroutine.wrap(XTUIXG_fake_script)()
+local function WQMG_fake_script() -- Open.Dragging 
 	local script = Instance.new('LocalScript', Open)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2825,8 +2824,8 @@ local function ZHUIYW_fake_script() -- Open.Dragging
 		end
 	end)
 end
-coroutine.wrap(ZHUIYW_fake_script)()
-local function OKDGABL_fake_script() -- Login.Dragging 
+coroutine.wrap(WQMG_fake_script)()
+local function EGKIVF_fake_script() -- Login.Dragging 
 	local script = Instance.new('LocalScript', Login)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2869,8 +2868,8 @@ local function OKDGABL_fake_script() -- Login.Dragging
 		end
 	end)
 end
-coroutine.wrap(OKDGABL_fake_script)()
-local function OIHZL_fake_script() -- Login.AccountModule 
+coroutine.wrap(EGKIVF_fake_script)()
+local function GEKBI_fake_script() -- Login.AccountModule 
 	local script = Instance.new('LocalScript', Login)
 
 	local LoginBox = script.Parent.Frame.Frame.Login.Frame.TextBox
@@ -3143,8 +3142,8 @@ local function OIHZL_fake_script() -- Login.AccountModule
 	end
 	
 end
-coroutine.wrap(OIHZL_fake_script)()
-local function BJODICU_fake_script() -- Button_14.ButtonManager 
+coroutine.wrap(GEKBI_fake_script)()
+local function CBAWEX_fake_script() -- Button_14.ButtonManager 
 	local script = Instance.new('LocalScript', Button_14)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -3172,4 +3171,4 @@ local function BJODICU_fake_script() -- Button_14.ButtonManager
 	end)
 	
 end
-coroutine.wrap(BJODICU_fake_script)()
+coroutine.wrap(CBAWEX_fake_script)()
