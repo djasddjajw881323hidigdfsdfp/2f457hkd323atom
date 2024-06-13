@@ -1,7 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local Atom = Instance.new("ScreenGui")
 local Mainframe = Instance.new("Frame")
