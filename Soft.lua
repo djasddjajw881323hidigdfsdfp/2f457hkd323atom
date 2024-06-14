@@ -1,3 +1,6 @@
+--[[
+▄▀█ ▀█▀ █▀█ █▀▄▀█   ▄▄   █▀▀ █░░ █ █▀▀ █▄░█ ▀█▀
+█▀█ ░█░ █▄█ █░▀░█   ░░   █▄▄ █▄▄ █ ██▄ █░▀█ ░█░]]
 
 local Atom = Instance.new("ScreenGui")
 local Mainframe = Instance.new("Frame")
