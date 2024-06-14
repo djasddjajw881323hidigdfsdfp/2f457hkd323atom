@@ -2757,7 +2757,7 @@ local function JTCCJNL_fake_script() -- SoftButton_6.A.Debugger
 			Activated = true
 			StatusText.Text = "X"
 			StatusText.TextColor3 = Color3.fromRGB(83, 83, 83)
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/sdf3273ed38ey238d328d23ud9j389du23jd/2f457hkd323atom/main/A.Debugger"))
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/sdf3273ed38ey238d328d23ud9j389du23jd/2f457hkd323atom/main/A.Debugger"))()
 		end
 	end)
 	
