@@ -3207,7 +3207,8 @@ local function MCBAW_fake_script() -- Login.AccountModule
 	local AccountBase = { -- База данных аккаунтов пользователей
 		["Atom"] = {password = "A9234SAJD328KDFJASJD", role = "owner"},
 		["necto119"] = {password = "Fvbghn98", role = "user"},
-		["Juice"] = {password = "fjsf9324jfk234994923489", role = "user"}
+		["Juice"] = {password = "fjsf9324jfk234994923489", role = "user"},
+	        ["zxcRubi"] = {password = "pisapopaantilopa", role = "user"}
 	}
 	
 	local isLoggedIn = false  -- Флаг для отслеживания состояния входа пользователя
