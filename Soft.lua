@@ -3211,8 +3211,9 @@ local function ZZUHM_fake_script() -- Login.Dragging
 end
 coroutine.wrap(ZZUHM_fake_script)()
 local function WUORCCX_fake_script() -- Login.AccountModule 
-	local script = Instance.new('LocalScript', Login)
-
+	local Script = Instance.new('LocalScript', Login)
+	Script.Name = "AccountModule"
+	
 	local LoginBox = script.Parent.Frame.Frame.Login.Frame.TextBox
 	local PasswordBox = script.Parent.Frame.Frame.Password.Frame.TextBox
 	local LoginButton = script.Parent.Button.Button
