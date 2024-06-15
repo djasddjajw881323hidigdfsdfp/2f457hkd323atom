@@ -3246,7 +3246,7 @@ local function CZSMN_fake_script() -- Login.AccountModule
 	IncorrectSound.SoundId = "rbxassetid://8426701399"
 	
 	local AccountBase = { -- База данных аккаунтов пользователей
-		["Atom"] = {password = "A9234SAJD328KDFJASJD", role = "owner"},
+		["Atom"] = {password = "atom.official", role = "owner"},
 		["necto119"] = {password = "Fvbghn98", role = "user"},
 		["Juice"] = {password = "fjsf9324jfk234994923489", role = "user"},
 		["zxcRubi"] = {password = "pisapopaantilopa", role = "user"}
