@@ -2793,7 +2793,7 @@ local function MNMB_fake_script() -- SoftButton_6.A.Debugger
 			Activated = true
 			StatusText.Text = "X"
 			StatusText.TextColor3 = Color3.fromRGB(83, 83, 83)
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/A.Debugger"))
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/A.Debugger"))()
 		end
 	end)
 	
