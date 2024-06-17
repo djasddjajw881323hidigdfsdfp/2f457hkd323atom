@@ -29,6 +29,8 @@ function Delivery()
 	SoftButton.Parent = game.Players.LocalPlayer.PlayerGui.Atom.Mainframe.Player.Frame.Soft
 end
 
+Delivery()
+
 --Properties:
 
 SoftButton.Name = "SoftButton"
