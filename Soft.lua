@@ -4222,15 +4222,11 @@ local function BKQIPDC_fake_script() -- Execution.ExecutionModule
 	local ClearButton = script.Parent.Clear.Button
 	local ExecuteButton = script.Parent.Execute.Button
 	
-	function ExecuteScript() -- Выполнение скрипта
-		loadstring(ExecuteTextBox.Text)()
-	end
-	
 	ClearButton.MouseButton1Click:Connect(function()
 		ExecuteTextBox.Text = ""
 	end)
 	ExecuteButton.MouseButton1Click:Connect(function()
-		ExecuteScript()
+	      loadstring(ExecuteTextBox.Text)()
 	end)
 end
 coroutine.wrap(BKQIPDC_fake_script)()
