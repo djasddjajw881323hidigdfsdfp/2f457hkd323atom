@@ -25,8 +25,12 @@ local Button_3 = Instance.new("TextButton")
 local TextLabel_5 = Instance.new("TextLabel")
 
 function Delivery()
-	Execution.Parent = game.Players.LocalPlayer.PlayerGui.Atom
+	local Position1 = game.Players.LocalPlayer.PlayerGui:FindFirstChild("Atom")
+	local Postion2 = Position1.Mainframe.Player.Frame:FindFirstChild("Soft")
+	if Position1 and Postion2 then
+	Execution.Parent = Position1
 	SoftButton.Parent = game.Players.LocalPlayer.PlayerGui.Atom.Mainframe.Player.Frame.Soft
+	end
 end
 
 Delivery()
@@ -285,7 +289,7 @@ TextLabel_5.TextWrapped = true
 
 local function HVTXCB_fake_script() -- SoftButton.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton)
-
+	
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
 	local Button = script.Parent.Button
 	local Decor = script.Parent.Decor
@@ -329,11 +333,11 @@ end
 coroutine.wrap(HVTXCB_fake_script)()
 local function JXAT_fake_script() -- Execution.Dragging 
 	local script = Instance.new('LocalScript', Execution)
-
-local UserInputService = game:GetService("UserInputService")
+	
+	local UserInputService = game:GetService("UserInputService")
 	script.Name = "Dragging"
 	
-local gui = script.Parent
+	local gui = script.Parent
 	
 	local dragging
 	local dragInput
@@ -374,7 +378,7 @@ end
 coroutine.wrap(JXAT_fake_script)()
 local function IYHQKCJ_fake_script() -- Execute.ButtonManager 
 	local script = Instance.new('LocalScript', Execute)
-
+	
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
 	Button = script.Parent.Button
 	Decor = script.Parent.Decor
@@ -403,12 +407,12 @@ end
 coroutine.wrap(IYHQKCJ_fake_script)()
 local function OKRPRVU_fake_script() -- Execution.UiStroke 
 	local script = Instance.new('LocalScript', Execution)
-
-local Create = Instance.new("UIStroke")
+	
+	local Create = Instance.new("UIStroke")
 	Create.Thickness = 2
 	Create.Parent = script.Parent
 	
-local colors = {
+	local colors = {
 		Color3.fromRGB(255, 0, 0),   -- Красный
 		Color3.fromRGB(255, 165, 0), -- Оранжевый
 		Color3.fromRGB(255, 255, 0), -- Желтый
@@ -418,7 +422,7 @@ local colors = {
 		Color3.fromRGB(128, 0, 128)  -- Фиолетовый
 	}
 	
-local tweenInfo = TweenInfo.new(
+	local tweenInfo = TweenInfo.new(
 		1, -- Длительность анимации в секундах
 		Enum.EasingStyle.Linear, -- Стиль интерполяции
 		Enum.EasingDirection.Out, -- Направление интерполяции
@@ -426,7 +430,7 @@ local tweenInfo = TweenInfo.new(
 		true -- Зацикленная анимация
 	)
 	
-local currentIndex = 1
+	local currentIndex = 1
 	
 	local function updateColor()
 		local nextIndex = currentIndex % #colors + 1
@@ -444,7 +448,7 @@ end
 coroutine.wrap(OKRPRVU_fake_script)()
 local function GRZI_fake_script() -- Clear.ButtonManager 
 	local script = Instance.new('LocalScript', Clear)
-
+	
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
 	Button = script.Parent.Button
 	Decor = script.Parent.Decor
@@ -473,10 +477,10 @@ end
 coroutine.wrap(GRZI_fake_script)()
 local function TKTP_fake_script() -- Execution.ExecutionModule 
 	local script = Instance.new('LocalScript', Execution)
-
-local ExecuteTextBox = script.Parent.Frame.Frame.Execution.Frame.TextBox
-local ClearButton = script.Parent.Clear.Button
-local ExecuteButton = script.Parent.Execute.Button
+	
+	local ExecuteTextBox = script.Parent.Frame.Frame.Execution.Frame.TextBox
+	local ClearButton = script.Parent.Clear.Button
+	local ExecuteButton = script.Parent.Execute.Button
 	
 	ClearButton.MouseButton1Click:Connect(function()
 		ExecuteTextBox.Text = ""
