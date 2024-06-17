@@ -4216,17 +4216,17 @@ local function AMFQCUE_fake_script() -- Clear.ButtonManager
 end
 coroutine.wrap(AMFQCUE_fake_script)()
 local function BKQIPDC_fake_script() -- Execution.ExecutionModule 
-	local script = Instance.new('LocalScript', Execution)
+	--local script = Instance.new('LocalScript', Execution)
 
-	local ExecuteTextBox = script.Parent.Frame.Frame.Execution.Frame.TextBox
-	local ClearButton = script.Parent.Clear.Button
-	local ExecuteButton = script.Parent.Execute.Button
+	--local ExecuteTextBox = script.Parent.Frame.Frame.Execution.Frame.TextBox
+	--local ClearButton = script.Parent.Clear.Button
+	--local ExecuteButton = script.Parent.Execute.Button
 	
-	ClearButton.MouseButton1Click:Connect(function()
-		ExecuteTextBox.Text = ""
-	end)
-	ExecuteButton.MouseButton1Click:Connect(function()
-	      loadstring(ExecuteTextBox.Text)()
-	end)
-end
+	--ClearButton.MouseButton1Click:Connect(function()
+		--ExecuteTextBox.Text = ""
+	--end)
+	--ExecuteButton.MouseButton1Click:Connect(function()
+	    -- loadstring(ExecuteTextBox.Text)()
+	--end)
+--end
 coroutine.wrap(BKQIPDC_fake_script)()
