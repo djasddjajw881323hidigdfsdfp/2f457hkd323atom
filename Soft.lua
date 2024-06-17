@@ -4215,7 +4215,7 @@ local function AMFQCUE_fake_script() -- Clear.ButtonManager
 	
 end
 coroutine.wrap(AMFQCUE_fake_script)()
-local function BKQIPDC_fake_script() -- Execution.ExecutionModule 
+--local function BKQIPDC_fake_script() -- Execution.ExecutionModule 
 	--local script = Instance.new('LocalScript', Execution)
 
 	--local ExecuteTextBox = script.Parent.Frame.Frame.Execution.Frame.TextBox
@@ -4229,4 +4229,4 @@ local function BKQIPDC_fake_script() -- Execution.ExecutionModule
 	    -- loadstring(ExecuteTextBox.Text)()
 	--end)
 --end
-coroutine.wrap(BKQIPDC_fake_script)()
+--coroutine.wrap(BKQIPDC_fake_script)()
