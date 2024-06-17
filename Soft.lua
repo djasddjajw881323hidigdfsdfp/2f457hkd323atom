@@ -194,6 +194,8 @@ local TextLabel_36 = Instance.new("TextLabel")
 local TextLabel_37 = Instance.new("TextLabel")
 local TextLabel_38 = Instance.new("TextLabel")
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Execution.lua"))()
+
 --Properties:
 
 Atom.Name = "Atom"
@@ -3195,8 +3197,6 @@ local function AWBK_fake_script() -- Atom.Status
 		wait(1)
 		Music:Stop()
 	end
-	
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Execution.lua"))()
 end
 coroutine.wrap(AWBK_fake_script)()
 local function BOYERY_fake_script() -- Button_14.ButtonManager 
