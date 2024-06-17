@@ -33,12 +33,10 @@ function Delivery()
 	end
 end
 
-Delivery()
-
 --Properties:
 
 SoftButton.Name = "SoftButton"
-SoftButton.Parent = game.ServerScriptService
+SoftButton.Parent = game.StarterGui
 SoftButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 SoftButton.BorderColor3 = Color3.fromRGB(25, 25, 25)
 SoftButton.BorderSizePixel = 2
@@ -103,7 +101,7 @@ TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
 Execution.Name = "Execution"
-Execution.Parent = game.ServerScriptService
+Execution.Parent = game.StarterGui
 Execution.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Execution.BorderColor3 = Color3.fromRGB(25, 25, 25)
 Execution.BorderSizePixel = 5
@@ -286,6 +284,8 @@ TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 
 -- Scripts:
+
+Delivery()
 
 local function HVTXCB_fake_script() -- SoftButton.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton)
