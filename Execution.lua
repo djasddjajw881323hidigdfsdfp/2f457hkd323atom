@@ -23,20 +23,13 @@ local Clear = Instance.new("Frame")
 local Decor_3 = Instance.new("Frame")
 local Button_3 = Instance.new("TextButton")
 local TextLabel_5 = Instance.new("TextLabel")
-
-function Delivery()
-	local Position1 = game.Players.LocalPlayer.PlayerGui:FindFirstChild("Atom")
-	local Postion2 = Position1.Mainframe.Player.Frame:FindFirstChild("Soft")
-	if Position1 and Postion2 then
-	Execution.Parent = Position1
-	SoftButton.Parent = game.Players.LocalPlayer.PlayerGui.Atom.Mainframe.Player.Frame.Soft
-	end
-end
+local Position1 = game.Players.LocalPlayer.PlayerGui:FindFirstChild("Atom")
+local Postion2 = Position1.Mainframe.Player.Frame:FindFirstChild("Soft")
 
 --Properties:
 
 SoftButton.Name = "SoftButton"
-SoftButton.Parent = game.StarterGui
+SoftButton.Parent = Postion2
 SoftButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 SoftButton.BorderColor3 = Color3.fromRGB(25, 25, 25)
 SoftButton.BorderSizePixel = 2
@@ -101,7 +94,7 @@ TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
 Execution.Name = "Execution"
-Execution.Parent = game.StarterGui
+Execution.Parent = Position1
 Execution.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Execution.BorderColor3 = Color3.fromRGB(25, 25, 25)
 Execution.BorderSizePixel = 5
@@ -284,8 +277,6 @@ TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 
 -- Scripts:
-
-Delivery()
 
 local function HVTXCB_fake_script() -- SoftButton.ButtonManager 
 	local script = Instance.new('LocalScript', SoftButton)
