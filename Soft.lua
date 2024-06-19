@@ -34,176 +34,198 @@
 　　　　　　 /　/　　l　　　 ＼　　　　　　　/　　　　　　　 {
 ]]
 
-local Atom = Instance.new("ScreenGui")
-local AtomFrame = Instance.new("Frame")
-local Panel = Instance.new("Frame")
-local Text = Instance.new("ImageLabel")
-local Account = Instance.new("Frame")
-local Avatar = Instance.new("ImageLabel")
-local UICorner = Instance.new("UICorner")
-local Role = Instance.new("TextLabel")
-local Username = Instance.new("TextLabel")
-local Version = Instance.new("ImageLabel")
-local Buttons = Instance.new("Frame")
-local UIListLayout = Instance.new("UIListLayout")
-local Title = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local Home = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local ImageLabel = Instance.new("ImageLabel")
-local UICorner_3 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local Button = Instance.new("TextButton")
-local Game = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local ImageLabel_2 = Instance.new("ImageLabel")
-local UICorner_5 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
-local Button_2 = Instance.new("TextButton")
-local Player = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
-local ImageLabel_3 = Instance.new("ImageLabel")
-local UICorner_7 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local Button_3 = Instance.new("TextButton")
-local Title_2 = Instance.new("Frame")
-local TextLabel_5 = Instance.new("TextLabel")
-local Execution = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
-local ImageLabel_4 = Instance.new("ImageLabel")
-local UICorner_9 = Instance.new("UICorner")
-local TextLabel_6 = Instance.new("TextLabel")
-local Button_4 = Instance.new("TextButton")
-local Debugger = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
-local ImageLabel_5 = Instance.new("ImageLabel")
-local UICorner_11 = Instance.new("UICorner")
-local TextLabel_7 = Instance.new("TextLabel")
-local Button_5 = Instance.new("TextButton")
-local Background = Instance.new("ImageLabel")
-local Main = Instance.new("Frame")
-local LoginPage = Instance.new("Frame")
-local Frame = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
-local Enter = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local Login = Instance.new("TextBox")
-local UICorner_14 = Instance.new("UICorner")
-local Password = Instance.new("TextBox")
-local UICorner_15 = Instance.new("UICorner")
-local TextLabel_8 = Instance.new("TextLabel")
-local TextLabel_9 = Instance.new("TextLabel")
-local ImageLabel_6 = Instance.new("ImageLabel")
-local TextLabel_10 = Instance.new("TextLabel")
-local MainFrame = Instance.new("Frame")
-local Frame_2 = Instance.new("Frame")
-local Delete = Instance.new("ImageButton")
-local UICorner_16 = Instance.new("UICorner")
-local TextLabel_11 = Instance.new("TextLabel")
-local Frame_3 = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
-local ImageLabel_7 = Instance.new("ImageLabel")
-local UICorner_18 = Instance.new("UICorner")
-local TextLabel_12 = Instance.new("TextLabel")
-local TextLabel_13 = Instance.new("TextLabel")
-local TextLabel_14 = Instance.new("TextLabel")
-local TextLabel_15 = Instance.new("TextLabel")
-local Rejoin = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
-local Leave = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
-local TextLabel_16 = Instance.new("TextLabel")
-local Yes = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
-local No = Instance.new("TextButton")
-local UICorner_22 = Instance.new("UICorner")
-local TextLabel_17 = Instance.new("TextLabel")
-local Execution_2 = Instance.new("Frame")
-local TextLabel_18 = Instance.new("TextLabel")
-local SctiptBox = Instance.new("TextBox")
-local UICorner_23 = Instance.new("UICorner")
-local Execute = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
-local Clear = Instance.new("TextButton")
-local UICorner_25 = Instance.new("UICorner")
-local Place = Instance.new("Frame")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayout_2 = Instance.new("UIListLayout")
-local FLY = Instance.new("Frame")
-local UICorner_26 = Instance.new("UICorner")
-local TextLabel_19 = Instance.new("TextLabel")
-local TextLabel_20 = Instance.new("TextLabel")
-local Status = Instance.new("Frame")
-local UICorner_27 = Instance.new("UICorner")
-local Disabled = Instance.new("Frame")
-local UICorner_28 = Instance.new("UICorner")
-local Enabled = Instance.new("Frame")
-local UICorner_29 = Instance.new("UICorner")
-local Button_6 = Instance.new("TextButton")
-local Speed = Instance.new("TextBox")
-local UICorner_30 = Instance.new("UICorner")
-local NOCLIP = Instance.new("Frame")
-local UICorner_31 = Instance.new("UICorner")
-local TextLabel_21 = Instance.new("TextLabel")
-local TextLabel_22 = Instance.new("TextLabel")
-local Status_2 = Instance.new("Frame")
-local UICorner_32 = Instance.new("UICorner")
-local Disabled_2 = Instance.new("Frame")
-local UICorner_33 = Instance.new("UICorner")
-local Enabled_2 = Instance.new("Frame")
-local UICorner_34 = Instance.new("UICorner")
-local Button_7 = Instance.new("TextButton")
-local AIM = Instance.new("Frame")
-local UICorner_35 = Instance.new("UICorner")
-local TextLabel_23 = Instance.new("TextLabel")
-local TextLabel_24 = Instance.new("TextLabel")
-local Status_3 = Instance.new("Frame")
-local UICorner_36 = Instance.new("UICorner")
-local Disabled_3 = Instance.new("Frame")
-local UICorner_37 = Instance.new("UICorner")
-local Enabled_3 = Instance.new("Frame")
-local UICorner_38 = Instance.new("UICorner")
-local Button_8 = Instance.new("TextButton")
-local ESP = Instance.new("Frame")
-local UICorner_39 = Instance.new("UICorner")
-local TextLabel_25 = Instance.new("TextLabel")
-local TextLabel_26 = Instance.new("TextLabel")
-local Status_4 = Instance.new("Frame")
-local UICorner_40 = Instance.new("UICorner")
-local Disabled_4 = Instance.new("Frame")
-local UICorner_41 = Instance.new("UICorner")
-local Enabled_4 = Instance.new("Frame")
-local UICorner_42 = Instance.new("UICorner")
-local Button_9 = Instance.new("TextButton")
-local TextLabel_27 = Instance.new("TextLabel")
-local Player_2 = Instance.new("Frame")
-local ScrollingFrame_2 = Instance.new("ScrollingFrame")
-local UIListLayout_3 = Instance.new("UIListLayout")
-local Walkspeed = Instance.new("Frame")
-local UICorner_43 = Instance.new("UICorner")
-local TextLabel_28 = Instance.new("TextLabel")
-local TextBox = Instance.new("TextBox")
-local UICorner_44 = Instance.new("UICorner")
-local TextLabel_29 = Instance.new("TextLabel")
-local JumpPower = Instance.new("Frame")
-local UICorner_45 = Instance.new("UICorner")
-local TextLabel_30 = Instance.new("TextLabel")
-local TextBox_2 = Instance.new("TextBox")
-local UICorner_46 = Instance.new("UICorner")
-local TextLabel_31 = Instance.new("TextLabel")
-local FOV = Instance.new("Frame")
-local UICorner_47 = Instance.new("UICorner")
-local TextLabel_32 = Instance.new("TextLabel")
-local TextBox_3 = Instance.new("TextBox")
-local UICorner_48 = Instance.new("UICorner")
-local TextLabel_33 = Instance.new("TextLabel")
-local Animation = Instance.new("Frame")
-local UICorner_49 = Instance.new("UICorner")
-local TextLabel_34 = Instance.new("TextLabel")
-local TextBox_4 = Instance.new("TextBox")
-local UICorner_50 = Instance.new("UICorner")
-local TextLabel_35 = Instance.new("TextLabel")
-local TextLabel_36 = Instance.new("TextLabel")
+
+ Atom = Instance.new("ScreenGui")
+ AtomFrame = Instance.new("Frame")
+ Panel = Instance.new("Frame")
+ Text = Instance.new("ImageLabel")
+ Account = Instance.new("Frame")
+ Avatar = Instance.new("ImageLabel")
+ UICorner = Instance.new("UICorner")
+ Role = Instance.new("TextLabel")
+ Username = Instance.new("TextLabel")
+ Version = Instance.new("ImageLabel")
+ Buttons = Instance.new("Frame")
+ UIListLayout = Instance.new("UIListLayout")
+ Title = Instance.new("Frame")
+ TextLabel = Instance.new("TextLabel")
+ Home = Instance.new("Frame")
+ UICorner_2 = Instance.new("UICorner")
+ ImageLabel = Instance.new("ImageLabel")
+ UICorner_3 = Instance.new("UICorner")
+ TextLabel_2 = Instance.new("TextLabel")
+ Button = Instance.new("TextButton")
+ Game = Instance.new("Frame")
+ UICorner_4 = Instance.new("UICorner")
+ ImageLabel_2 = Instance.new("ImageLabel")
+ UICorner_5 = Instance.new("UICorner")
+ TextLabel_3 = Instance.new("TextLabel")
+ Button_2 = Instance.new("TextButton")
+ Player = Instance.new("Frame")
+ UICorner_6 = Instance.new("UICorner")
+ ImageLabel_3 = Instance.new("ImageLabel")
+ UICorner_7 = Instance.new("UICorner")
+ TextLabel_4 = Instance.new("TextLabel")
+ Button_3 = Instance.new("TextButton")
+ Title_2 = Instance.new("Frame")
+ TextLabel_5 = Instance.new("TextLabel")
+ Execution = Instance.new("Frame")
+ UICorner_8 = Instance.new("UICorner")
+ ImageLabel_4 = Instance.new("ImageLabel")
+ UICorner_9 = Instance.new("UICorner")
+ TextLabel_6 = Instance.new("TextLabel")
+ Button_4 = Instance.new("TextButton")
+ Debugger = Instance.new("Frame")
+ UICorner_10 = Instance.new("UICorner")
+ ImageLabel_5 = Instance.new("ImageLabel")
+ UICorner_11 = Instance.new("UICorner")
+ TextLabel_7 = Instance.new("TextLabel")
+ Button_5 = Instance.new("TextButton")
+ Background = Instance.new("ImageLabel")
+ Main = Instance.new("Frame")
+ LoginPage = Instance.new("Frame")
+ Frame = Instance.new("Frame")
+ UICorner_12 = Instance.new("UICorner")
+ Enter = Instance.new("TextButton")
+ UICorner_13 = Instance.new("UICorner")
+ Login = Instance.new("TextBox")
+ UICorner_14 = Instance.new("UICorner")
+ Password = Instance.new("TextBox")
+ UICorner_15 = Instance.new("UICorner")
+ TextLabel_8 = Instance.new("TextLabel")
+ TextLabel_9 = Instance.new("TextLabel")
+ ImageLabel_6 = Instance.new("ImageLabel")
+ TextLabel_10 = Instance.new("TextLabel")
+ MainFrame = Instance.new("Frame")
+ Frame_2 = Instance.new("Frame")
+ Delete = Instance.new("ImageButton")
+ UICorner_16 = Instance.new("UICorner")
+ TextLabel_11 = Instance.new("TextLabel")
+ Frame_3 = Instance.new("Frame")
+ UICorner_17 = Instance.new("UICorner")
+ ImageLabel_7 = Instance.new("ImageLabel")
+ UICorner_18 = Instance.new("UICorner")
+ TextLabel_12 = Instance.new("TextLabel")
+ TextLabel_13 = Instance.new("TextLabel")
+ TextLabel_14 = Instance.new("TextLabel")
+ TextLabel_15 = Instance.new("TextLabel")
+ Rejoin = Instance.new("TextButton")
+ UICorner_19 = Instance.new("UICorner")
+ Leave = Instance.new("Frame")
+ UICorner_20 = Instance.new("UICorner")
+ TextLabel_16 = Instance.new("TextLabel")
+ Yes = Instance.new("TextButton")
+ UICorner_21 = Instance.new("UICorner")
+ No = Instance.new("TextButton")
+ UICorner_22 = Instance.new("UICorner")
+ TextLabel_17 = Instance.new("TextLabel")
+ Execution_2 = Instance.new("Frame")
+ TextLabel_18 = Instance.new("TextLabel")
+ SctiptBox = Instance.new("TextBox")
+ UICorner_23 = Instance.new("UICorner")
+ Execute = Instance.new("TextButton")
+ UICorner_24 = Instance.new("UICorner")
+ Clear = Instance.new("TextButton")
+ UICorner_25 = Instance.new("UICorner")
+ Place = Instance.new("Frame")
+ ScrollingFrame = Instance.new("ScrollingFrame")
+ UIListLayout_2 = Instance.new("UIListLayout")
+ FLY = Instance.new("Frame")
+ UICorner_26 = Instance.new("UICorner")
+ TextLabel_19 = Instance.new("TextLabel")
+ TextLabel_20 = Instance.new("TextLabel")
+ Status = Instance.new("Frame")
+ UICorner_27 = Instance.new("UICorner")
+ Disabled = Instance.new("Frame")
+ UICorner_28 = Instance.new("UICorner")
+ Enabled = Instance.new("Frame")
+ UICorner_29 = Instance.new("UICorner")
+ Button_6 = Instance.new("TextButton")
+ Speed = Instance.new("TextBox")
+ UICorner_30 = Instance.new("UICorner")
+ NOCLIP = Instance.new("Frame")
+ UICorner_31 = Instance.new("UICorner")
+ TextLabel_21 = Instance.new("TextLabel")
+ TextLabel_22 = Instance.new("TextLabel")
+ Status_2 = Instance.new("Frame")
+ UICorner_32 = Instance.new("UICorner")
+ Disabled_2 = Instance.new("Frame")
+ UICorner_33 = Instance.new("UICorner")
+ Enabled_2 = Instance.new("Frame")
+ UICorner_34 = Instance.new("UICorner")
+ Button_7 = Instance.new("TextButton")
+ AIM = Instance.new("Frame")
+ UICorner_35 = Instance.new("UICorner")
+ TextLabel_23 = Instance.new("TextLabel")
+ TextLabel_24 = Instance.new("TextLabel")
+ Status_3 = Instance.new("Frame")
+ UICorner_36 = Instance.new("UICorner")
+ Disabled_3 = Instance.new("Frame")
+ UICorner_37 = Instance.new("UICorner")
+ Enabled_3 = Instance.new("Frame")
+ UICorner_38 = Instance.new("UICorner")
+ Button_8 = Instance.new("TextButton")
+ ESP = Instance.new("Frame")
+ UICorner_39 = Instance.new("UICorner")
+ TextLabel_25 = Instance.new("TextLabel")
+ TextLabel_26 = Instance.new("TextLabel")
+ Status_4 = Instance.new("Frame")
+ UICorner_40 = Instance.new("UICorner")
+ Disabled_4 = Instance.new("Frame")
+ UICorner_41 = Instance.new("UICorner")
+ Enabled_4 = Instance.new("Frame")
+ UICorner_42 = Instance.new("UICorner")
+ Button_9 = Instance.new("TextButton")
+ TELEPORT = Instance.new("Frame")
+ UICorner_43 = Instance.new("UICorner")
+ TextLabel_27 = Instance.new("TextLabel")
+ TextLabel_28 = Instance.new("TextLabel")
+ TextBox = Instance.new("TextBox")
+ UICorner_44 = Instance.new("UICorner")
+ DORSALTELEPORT = Instance.new("Frame")
+ UICorner_45 = Instance.new("UICorner")
+ TextLabel_29 = Instance.new("TextLabel")
+ TextLabel_30 = Instance.new("TextLabel")
+ Status_5 = Instance.new("Frame")
+ UICorner_46 = Instance.new("UICorner")
+ Disabled_5 = Instance.new("Frame")
+ UICorner_47 = Instance.new("UICorner")
+ Enabled_5 = Instance.new("Frame")
+ UICorner_48 = Instance.new("UICorner")
+ Button_10 = Instance.new("TextButton")
+ PlrName = Instance.new("TextBox")
+ UICorner_49 = Instance.new("UICorner")
+ TextLabel_31 = Instance.new("TextLabel")
+ Player_2 = Instance.new("Frame")
+ ScrollingFrame_2 = Instance.new("ScrollingFrame")
+ UIListLayout_3 = Instance.new("UIListLayout")
+ Walkspeed = Instance.new("Frame")
+ UICorner_50 = Instance.new("UICorner")
+ TextLabel_32 = Instance.new("TextLabel")
+ TextBox_2 = Instance.new("TextBox")
+ UICorner_51 = Instance.new("UICorner")
+ TextLabel_33 = Instance.new("TextLabel")
+ JumpPower = Instance.new("Frame")
+ UICorner_52 = Instance.new("UICorner")
+ TextLabel_34 = Instance.new("TextLabel")
+ TextBox_3 = Instance.new("TextBox")
+ UICorner_53 = Instance.new("UICorner")
+ TextLabel_35 = Instance.new("TextLabel")
+ FOV = Instance.new("Frame")
+ UICorner_54 = Instance.new("UICorner")
+ TextLabel_36 = Instance.new("TextLabel")
+ TextBox_4 = Instance.new("TextBox")
+ UICorner_55 = Instance.new("UICorner")
+ TextLabel_37 = Instance.new("TextLabel")
+ Animation = Instance.new("Frame")
+ UICorner_56 = Instance.new("UICorner")
+ TextLabel_38 = Instance.new("TextLabel")
+ TextBox_5 = Instance.new("TextBox")
+ UICorner_57 = Instance.new("UICorner")
+ TextLabel_39 = Instance.new("TextLabel")
+ TextLabel_40 = Instance.new("TextLabel")
+
+--Properties:
 
 Atom.Name = "Atom"
 Atom.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -1393,20 +1415,174 @@ Button_9.Text = ""
 Button_9.TextColor3 = Color3.fromRGB(0, 0, 0)
 Button_9.TextSize = 14.000
 
-TextLabel_27.Parent = Place
+TELEPORT.Name = "TELEPORT"
+TELEPORT.Parent = ScrollingFrame
+TELEPORT.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TELEPORT.BorderSizePixel = 0
+TELEPORT.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_43.Parent = TELEPORT
+
+TextLabel_27.Parent = TELEPORT
 TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_27.BackgroundTransparency = 1.000
 TextLabel_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_27.BorderSizePixel = 0
-TextLabel_27.Position = UDim2.new(0.0122850118, 0, 0, 0)
-TextLabel_27.Size = UDim2.new(0, 519, 0, 44)
+TextLabel_27.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_27.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_27.Font = Enum.Font.SourceSansBold
-TextLabel_27.Text = "PlaceName"
+TextLabel_27.Text = "TELEPORT"
 TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_27.TextScaled = true
 TextLabel_27.TextSize = 14.000
 TextLabel_27.TextWrapped = true
-TextLabel_27.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_28.Parent = TELEPORT
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.BackgroundTransparency = 1.000
+TextLabel_28.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_28.BorderSizePixel = 0
+TextLabel_28.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_28.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_28.Font = Enum.Font.SourceSansBold
+TextLabel_28.Text = "Instantly teleports you to the player's position."
+TextLabel_28.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_28.TextScaled = true
+TextLabel_28.TextSize = 14.000
+TextLabel_28.TextWrapped = true
+
+TextBox.Parent = TELEPORT
+TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.719230771, 0, 0.239436626, 0)
+TextBox.Size = UDim2.new(0, 197, 0, 36)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox.PlaceholderText = "Name"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_44.Parent = TextBox
+
+DORSALTELEPORT.Name = "DORSALTELEPORT"
+DORSALTELEPORT.Parent = ScrollingFrame
+DORSALTELEPORT.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+DORSALTELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DORSALTELEPORT.BorderSizePixel = 0
+DORSALTELEPORT.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_45.Parent = DORSALTELEPORT
+
+TextLabel_29.Parent = DORSALTELEPORT
+TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.BackgroundTransparency = 1.000
+TextLabel_29.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_29.BorderSizePixel = 0
+TextLabel_29.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_29.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_29.Font = Enum.Font.SourceSansBold
+TextLabel_29.Text = "DORSAL TELEPORT"
+TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.TextScaled = true
+TextLabel_29.TextSize = 14.000
+TextLabel_29.TextWrapped = true
+
+TextLabel_30.Parent = DORSALTELEPORT
+TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.BackgroundTransparency = 1.000
+TextLabel_30.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_30.BorderSizePixel = 0
+TextLabel_30.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_30.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_30.Font = Enum.Font.SourceSansBold
+TextLabel_30.Text = "You will constantly teleport to the player behind you, may help in some games."
+TextLabel_30.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_30.TextScaled = true
+TextLabel_30.TextSize = 14.000
+TextLabel_30.TextWrapped = true
+
+Status_5.Name = "Status"
+Status_5.Parent = DORSALTELEPORT
+Status_5.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Status_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status_5.BorderSizePixel = 0
+Status_5.Position = UDim2.new(0.728205144, 0, 0.140845075, 0)
+Status_5.Size = UDim2.new(0, 100, 0, 50)
+
+UICorner_46.CornerRadius = UDim.new(1, 0)
+UICorner_46.Parent = Status_5
+
+Disabled_5.Name = "Disabled"
+Disabled_5.Parent = Status_5
+Disabled_5.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Disabled_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Disabled_5.BorderSizePixel = 0
+Disabled_5.Size = UDim2.new(0, 50, 0, 50)
+
+UICorner_47.CornerRadius = UDim.new(1, 0)
+UICorner_47.Parent = Disabled_5
+
+Enabled_5.Name = "Enabled"
+Enabled_5.Parent = Status_5
+Enabled_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Enabled_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enabled_5.BorderSizePixel = 0
+Enabled_5.Position = UDim2.new(0.5, 0, 0, 0)
+Enabled_5.Size = UDim2.new(0, 50, 0, 50)
+Enabled_5.Visible = false
+
+UICorner_48.CornerRadius = UDim.new(1, 0)
+UICorner_48.Parent = Enabled_5
+
+Button_10.Name = "Button"
+Button_10.Parent = Status_5
+Button_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_10.BackgroundTransparency = 1.000
+Button_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_10.BorderSizePixel = 0
+Button_10.Size = UDim2.new(0, 100, 0, 50)
+Button_10.Font = Enum.Font.SourceSans
+Button_10.Text = ""
+Button_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_10.TextSize = 14.000
+
+PlrName.Name = "PlrName"
+PlrName.Parent = DORSALTELEPORT
+PlrName.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PlrName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlrName.BorderSizePixel = 0
+PlrName.Position = UDim2.new(0.867948711, 0, 0.239436835, 0)
+PlrName.Size = UDim2.new(0, 88, 0, 36)
+PlrName.Font = Enum.Font.SourceSansBold
+PlrName.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+PlrName.PlaceholderText = "Name"
+PlrName.Text = ""
+PlrName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlrName.TextScaled = true
+PlrName.TextSize = 14.000
+PlrName.TextWrapped = true
+
+UICorner_49.Parent = PlrName
+
+TextLabel_31.Parent = Place
+TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.BackgroundTransparency = 1.000
+TextLabel_31.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_31.BorderSizePixel = 0
+TextLabel_31.Position = UDim2.new(0.0122850118, 0, 0, 0)
+TextLabel_31.Size = UDim2.new(0, 519, 0, 44)
+TextLabel_31.Font = Enum.Font.SourceSansBold
+TextLabel_31.Text = "PlaceName"
+TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.TextScaled = true
+TextLabel_31.TextSize = 14.000
+TextLabel_31.TextWrapped = true
+TextLabel_31.TextXAlignment = Enum.TextXAlignment.Left
 
 Player_2.Name = "Player"
 Player_2.Parent = Main
@@ -1438,77 +1614,23 @@ Walkspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Walkspeed.BorderSizePixel = 0
 Walkspeed.Size = UDim2.new(0, 780, 0, 71)
 
-UICorner_43.Parent = Walkspeed
+UICorner_50.Parent = Walkspeed
 
-TextLabel_28.Parent = Walkspeed
-TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_28.BackgroundTransparency = 1.000
-TextLabel_28.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_28.BorderSizePixel = 0
-TextLabel_28.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
-TextLabel_28.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_28.Font = Enum.Font.SourceSansBold
-TextLabel_28.Text = "Walkspeed"
-TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_28.TextScaled = true
-TextLabel_28.TextSize = 14.000
-TextLabel_28.TextWrapped = true
+TextLabel_32.Parent = Walkspeed
+TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.BackgroundTransparency = 1.000
+TextLabel_32.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_32.BorderSizePixel = 0
+TextLabel_32.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_32.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_32.Font = Enum.Font.SourceSansBold
+TextLabel_32.Text = "Walkspeed"
+TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.TextScaled = true
+TextLabel_32.TextSize = 14.000
+TextLabel_32.TextWrapped = true
 
-TextBox.Parent = Walkspeed
-TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
-TextBox.Size = UDim2.new(0, 200, 0, 50)
-TextBox.Font = Enum.Font.SourceSansBold
-TextBox.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
-TextBox.PlaceholderText = "Value"
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextScaled = true
-TextBox.TextSize = 14.000
-TextBox.TextWrapped = true
-
-UICorner_44.Parent = TextBox
-
-TextLabel_29.Parent = Walkspeed
-TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_29.BackgroundTransparency = 1.000
-TextLabel_29.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_29.BorderSizePixel = 0
-TextLabel_29.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
-TextLabel_29.Size = UDim2.new(0, 333, 0, 50)
-TextLabel_29.Font = Enum.Font.SourceSansBold
-TextLabel_29.Text = "Speed does not change during gameplay in many games"
-TextLabel_29.TextColor3 = Color3.fromRGB(50, 50, 50)
-TextLabel_29.TextScaled = true
-TextLabel_29.TextSize = 14.000
-TextLabel_29.TextWrapped = true
-
-JumpPower.Name = "JumpPower"
-JumpPower.Parent = ScrollingFrame_2
-JumpPower.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-JumpPower.BorderColor3 = Color3.fromRGB(0, 0, 0)
-JumpPower.BorderSizePixel = 0
-JumpPower.Size = UDim2.new(0, 780, 0, 71)
-
-UICorner_45.Parent = JumpPower
-
-TextLabel_30.Parent = JumpPower
-TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_30.BackgroundTransparency = 1.000
-TextLabel_30.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_30.BorderSizePixel = 0
-TextLabel_30.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
-TextLabel_30.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_30.Font = Enum.Font.SourceSansBold
-TextLabel_30.Text = "JumpPower"
-TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_30.TextScaled = true
-TextLabel_30.TextSize = 14.000
-TextLabel_30.TextWrapped = true
-
-TextBox_2.Parent = JumpPower
+TextBox_2.Parent = Walkspeed
 TextBox_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_2.BorderSizePixel = 0
@@ -1523,46 +1645,46 @@ TextBox_2.TextScaled = true
 TextBox_2.TextSize = 14.000
 TextBox_2.TextWrapped = true
 
-UICorner_46.Parent = TextBox_2
+UICorner_51.Parent = TextBox_2
 
-TextLabel_31.Parent = JumpPower
-TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_31.BackgroundTransparency = 1.000
-TextLabel_31.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_31.BorderSizePixel = 0
-TextLabel_31.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
-TextLabel_31.Size = UDim2.new(0, 333, 0, 50)
-TextLabel_31.Font = Enum.Font.SourceSansBold
-TextLabel_31.Text = "Jump strength may not change during gameplay in many games."
-TextLabel_31.TextColor3 = Color3.fromRGB(50, 50, 50)
-TextLabel_31.TextScaled = true
-TextLabel_31.TextSize = 14.000
-TextLabel_31.TextWrapped = true
+TextLabel_33.Parent = Walkspeed
+TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.BackgroundTransparency = 1.000
+TextLabel_33.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_33.BorderSizePixel = 0
+TextLabel_33.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_33.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_33.Font = Enum.Font.SourceSansBold
+TextLabel_33.Text = "Speed does not change during gameplay in many games"
+TextLabel_33.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_33.TextScaled = true
+TextLabel_33.TextSize = 14.000
+TextLabel_33.TextWrapped = true
 
-FOV.Name = "FOV"
-FOV.Parent = ScrollingFrame_2
-FOV.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-FOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
-FOV.BorderSizePixel = 0
-FOV.Size = UDim2.new(0, 780, 0, 71)
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = ScrollingFrame_2
+JumpPower.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+JumpPower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower.BorderSizePixel = 0
+JumpPower.Size = UDim2.new(0, 780, 0, 71)
 
-UICorner_47.Parent = FOV
+UICorner_52.Parent = JumpPower
 
-TextLabel_32.Parent = FOV
-TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_32.BackgroundTransparency = 1.000
-TextLabel_32.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_32.BorderSizePixel = 0
-TextLabel_32.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
-TextLabel_32.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_32.Font = Enum.Font.SourceSansBold
-TextLabel_32.Text = "Field of view"
-TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_32.TextScaled = true
-TextLabel_32.TextSize = 14.000
-TextLabel_32.TextWrapped = true
+TextLabel_34.Parent = JumpPower
+TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.BackgroundTransparency = 1.000
+TextLabel_34.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_34.BorderSizePixel = 0
+TextLabel_34.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_34.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_34.Font = Enum.Font.SourceSansBold
+TextLabel_34.Text = "JumpPower"
+TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.TextScaled = true
+TextLabel_34.TextSize = 14.000
+TextLabel_34.TextWrapped = true
 
-TextBox_3.Parent = FOV
+TextBox_3.Parent = JumpPower
 TextBox_3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_3.BorderSizePixel = 0
@@ -1577,21 +1699,75 @@ TextBox_3.TextScaled = true
 TextBox_3.TextSize = 14.000
 TextBox_3.TextWrapped = true
 
-UICorner_48.Parent = TextBox_3
+UICorner_53.Parent = TextBox_3
 
-TextLabel_33.Parent = FOV
-TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_33.BackgroundTransparency = 1.000
-TextLabel_33.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_33.BorderSizePixel = 0
-TextLabel_33.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
-TextLabel_33.Size = UDim2.new(0, 333, 0, 50)
-TextLabel_33.Font = Enum.Font.SourceSansBold
-TextLabel_33.Text = "The field of view may not change during play in many games."
-TextLabel_33.TextColor3 = Color3.fromRGB(50, 50, 50)
-TextLabel_33.TextScaled = true
-TextLabel_33.TextSize = 14.000
-TextLabel_33.TextWrapped = true
+TextLabel_35.Parent = JumpPower
+TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.BackgroundTransparency = 1.000
+TextLabel_35.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_35.BorderSizePixel = 0
+TextLabel_35.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_35.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_35.Font = Enum.Font.SourceSansBold
+TextLabel_35.Text = "Jump strength may not change during gameplay in many games."
+TextLabel_35.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_35.TextScaled = true
+TextLabel_35.TextSize = 14.000
+TextLabel_35.TextWrapped = true
+
+FOV.Name = "FOV"
+FOV.Parent = ScrollingFrame_2
+FOV.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+FOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FOV.BorderSizePixel = 0
+FOV.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_54.Parent = FOV
+
+TextLabel_36.Parent = FOV
+TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.BackgroundTransparency = 1.000
+TextLabel_36.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_36.BorderSizePixel = 0
+TextLabel_36.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_36.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_36.Font = Enum.Font.SourceSansBold
+TextLabel_36.Text = "Field of view"
+TextLabel_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.TextScaled = true
+TextLabel_36.TextSize = 14.000
+TextLabel_36.TextWrapped = true
+
+TextBox_4.Parent = FOV
+TextBox_4.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_4.BorderSizePixel = 0
+TextBox_4.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_4.Size = UDim2.new(0, 200, 0, 50)
+TextBox_4.Font = Enum.Font.SourceSansBold
+TextBox_4.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_4.PlaceholderText = "Value"
+TextBox_4.Text = ""
+TextBox_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_4.TextScaled = true
+TextBox_4.TextSize = 14.000
+TextBox_4.TextWrapped = true
+
+UICorner_55.Parent = TextBox_4
+
+TextLabel_37.Parent = FOV
+TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.BackgroundTransparency = 1.000
+TextLabel_37.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_37.BorderSizePixel = 0
+TextLabel_37.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_37.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_37.Font = Enum.Font.SourceSansBold
+TextLabel_37.Text = "The field of view may not change during play in many games."
+TextLabel_37.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_37.TextScaled = true
+TextLabel_37.TextSize = 14.000
+TextLabel_37.TextWrapped = true
 
 Animation.Name = "Animation"
 Animation.Parent = ScrollingFrame_2
@@ -1600,78 +1776,78 @@ Animation.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Animation.BorderSizePixel = 0
 Animation.Size = UDim2.new(0, 780, 0, 71)
 
-UICorner_49.Parent = Animation
+UICorner_56.Parent = Animation
 
-TextLabel_34.Parent = Animation
-TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_34.BackgroundTransparency = 1.000
-TextLabel_34.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_34.BorderSizePixel = 0
-TextLabel_34.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
-TextLabel_34.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_34.Font = Enum.Font.SourceSansBold
-TextLabel_34.Text = "Animation"
-TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_34.TextScaled = true
-TextLabel_34.TextSize = 14.000
-TextLabel_34.TextWrapped = true
+TextLabel_38.Parent = Animation
+TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.BackgroundTransparency = 1.000
+TextLabel_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_38.BorderSizePixel = 0
+TextLabel_38.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_38.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_38.Font = Enum.Font.SourceSansBold
+TextLabel_38.Text = "Animation"
+TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.TextScaled = true
+TextLabel_38.TextSize = 14.000
+TextLabel_38.TextWrapped = true
 
-TextBox_4.Parent = Animation
-TextBox_4.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextBox_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox_4.BorderSizePixel = 0
-TextBox_4.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
-TextBox_4.Size = UDim2.new(0, 200, 0, 50)
-TextBox_4.Font = Enum.Font.SourceSansBold
-TextBox_4.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
-TextBox_4.PlaceholderText = "ID"
-TextBox_4.Text = ""
-TextBox_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_4.TextScaled = true
-TextBox_4.TextSize = 14.000
-TextBox_4.TextWrapped = true
+TextBox_5.Parent = Animation
+TextBox_5.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_5.BorderSizePixel = 0
+TextBox_5.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_5.Size = UDim2.new(0, 200, 0, 50)
+TextBox_5.Font = Enum.Font.SourceSansBold
+TextBox_5.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_5.PlaceholderText = "ID"
+TextBox_5.Text = ""
+TextBox_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_5.TextScaled = true
+TextBox_5.TextSize = 14.000
+TextBox_5.TextWrapped = true
 
-UICorner_50.Parent = TextBox_4
+UICorner_57.Parent = TextBox_5
 
-TextLabel_35.Parent = Animation
-TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_35.BackgroundTransparency = 1.000
-TextLabel_35.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_35.BorderSizePixel = 0
-TextLabel_35.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
-TextLabel_35.Size = UDim2.new(0, 333, 0, 50)
-TextLabel_35.Font = Enum.Font.SourceSansBold
-TextLabel_35.Text = "Only enter ids in the playsets in which they are available."
-TextLabel_35.TextColor3 = Color3.fromRGB(50, 50, 50)
-TextLabel_35.TextScaled = true
-TextLabel_35.TextSize = 14.000
-TextLabel_35.TextWrapped = true
+TextLabel_39.Parent = Animation
+TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.BackgroundTransparency = 1.000
+TextLabel_39.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_39.BorderSizePixel = 0
+TextLabel_39.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_39.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_39.Font = Enum.Font.SourceSansBold
+TextLabel_39.Text = "Only enter ids in the playsets in which they are available."
+TextLabel_39.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_39.TextScaled = true
+TextLabel_39.TextSize = 14.000
+TextLabel_39.TextWrapped = true
 
-TextLabel_36.Parent = Player_2
-TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_36.BackgroundTransparency = 1.000
-TextLabel_36.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_36.BorderSizePixel = 0
-TextLabel_36.Position = UDim2.new(0.0122850118, 0, 0, 0)
-TextLabel_36.Size = UDim2.new(0, 229, 0, 44)
-TextLabel_36.Font = Enum.Font.SourceSansBold
-TextLabel_36.Text = "Player"
-TextLabel_36.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_36.TextScaled = true
-TextLabel_36.TextSize = 14.000
-TextLabel_36.TextWrapped = true
-TextLabel_36.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_40.Parent = Player_2
+TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.BackgroundTransparency = 1.000
+TextLabel_40.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_40.BorderSizePixel = 0
+TextLabel_40.Position = UDim2.new(0.0122850118, 0, 0, 0)
+TextLabel_40.Size = UDim2.new(0, 229, 0, 44)
+TextLabel_40.Font = Enum.Font.SourceSansBold
+TextLabel_40.Text = "Player"
+TextLabel_40.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.TextScaled = true
+TextLabel_40.TextSize = 14.000
+TextLabel_40.TextWrapped = true
+TextLabel_40.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function AMYBHA_fake_script() -- Avatar.Picture 
+local function FCJX_fake_script() -- Avatar.Picture 
 	local script = Instance.new('LocalScript', Avatar)
 
 	local ImageLabel = script.Parent
 	ImageLabel.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=1000&y=1000&userId="..game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(AMYBHA_fake_script)()
-local function QGGYIQE_fake_script() -- UIListLayout.LocalScript 
+coroutine.wrap(FCJX_fake_script)()
+local function WWXCTH_fake_script() -- UIListLayout.LocalScript 
 	local script = Instance.new('LocalScript', UIListLayout)
 
 	-- Atom Protection
@@ -1731,7 +1907,7 @@ local function QGGYIQE_fake_script() -- UIListLayout.LocalScript
 	
 	CheckFiles()
 end
-local function FHLFAU_fake_script() -- Home.CoreClient 
+local function CAAOV_fake_script() -- Home.CoreClient 
 	local script = Instance.new('LocalScript', Home)
 
 	local Button = script.Parent.Button
@@ -1754,8 +1930,8 @@ local function FHLFAU_fake_script() -- Home.CoreClient
 		MainFrame.Visible = true
 	end)
 end
-coroutine.wrap(FHLFAU_fake_script)()
-local function QWPJRAH_fake_script() -- Game.CoreClient 
+coroutine.wrap(CAAOV_fake_script)()
+local function MZBZKB_fake_script() -- Game.CoreClient 
 	local script = Instance.new('LocalScript', Game)
 
 	local Button = script.Parent.Button
@@ -1778,8 +1954,8 @@ local function QWPJRAH_fake_script() -- Game.CoreClient
 		MainFrame.Visible = false
 	end)
 end
-coroutine.wrap(QWPJRAH_fake_script)()
-local function SHQBVHT_fake_script() -- Player.CoreClient 
+coroutine.wrap(MZBZKB_fake_script)()
+local function NPOJUIR_fake_script() -- Player.CoreClient 
 	local script = Instance.new('LocalScript', Player)
 
 	local Button = script.Parent.Button
@@ -1802,8 +1978,8 @@ local function SHQBVHT_fake_script() -- Player.CoreClient
 		MainFrame.Visible = false
 	end)
 end
-coroutine.wrap(SHQBVHT_fake_script)()
-local function CIXKCH_fake_script() -- Execution.CoreClient 
+coroutine.wrap(NPOJUIR_fake_script)()
+local function MXPEGI_fake_script() -- Execution.CoreClient 
 	local script = Instance.new('LocalScript', Execution)
 
 	local Button = script.Parent.Button
@@ -1826,8 +2002,8 @@ local function CIXKCH_fake_script() -- Execution.CoreClient
 		MainFrame.Visible = false
 	end)
 end
-coroutine.wrap(CIXKCH_fake_script)()
-local function ZLZA_fake_script() -- Debugger.CoreClient 
+coroutine.wrap(MXPEGI_fake_script)()
+local function AOFLI_fake_script() -- Debugger.CoreClient 
 	local script = Instance.new('LocalScript', Debugger)
 
 	local Button = script.Parent.Button
@@ -1843,23 +2019,23 @@ local function ZLZA_fake_script() -- Debugger.CoreClient
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/A.Debugger"))()
 	end)
 end
-coroutine.wrap(ZLZA_fake_script)()
-local function VBCMJ_fake_script() -- Background.LocalScript 
+coroutine.wrap(AOFLI_fake_script)()
+local function OSMU_fake_script() -- Background.LocalScript 
 	local script = Instance.new('LocalScript', Background)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
 	local imageLabel = script.Parent
 	
 	local function setPlaceThumbnail(placeId)
-		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=420&height=420&format=png"
+		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
 		imageLabel.Image = thumbnailUrl
 	end
 	
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(VBCMJ_fake_script)()
-local function HHBYAK_fake_script() -- Frame.AccountModule 
+coroutine.wrap(OSMU_fake_script)()
+local function XBUGYU_fake_script() -- Frame.AccountModule 
 	local script = Instance.new('LocalScript', Frame)
 
 	local LoginBox = script.Parent.Login
@@ -1964,58 +2140,58 @@ local function HHBYAK_fake_script() -- Frame.AccountModule
 	-- Запуск защиты в отдельном потоке
 	spawn(ProtectFrame)
 end
-coroutine.wrap(HHBYAK_fake_script)()
-local function ONHLTK_fake_script() -- TextLabel_11.LocalScript 
+coroutine.wrap(XBUGYU_fake_script)()
+local function OVLF_fake_script() -- TextLabel_11.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_11)
 
 	local Text = script.Parent
 	Text.Text = "Atom - Client: "..game.Name
 end
-coroutine.wrap(ONHLTK_fake_script)()
-local function IEAIL_fake_script() -- ImageLabel_7.LocalScript 
+coroutine.wrap(OVLF_fake_script)()
+local function EWOWU_fake_script() -- ImageLabel_7.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_7)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
 	local imageLabel = script.Parent
 	
 	local function setPlaceThumbnail(placeId)
-		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=420&height=420&format=png"
+		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
 		imageLabel.Image = thumbnailUrl
 	end
 	
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(IEAIL_fake_script)()
-local function LHWTDU_fake_script() -- TextLabel_12.LocalScript 
+coroutine.wrap(EWOWU_fake_script)()
+local function ACYRMYZ_fake_script() -- TextLabel_12.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_12)
 
 	local Text = script.Parent
 	Text.Text = "Place: "..game.Name
 end
-coroutine.wrap(LHWTDU_fake_script)()
-local function QINAD_fake_script() -- TextLabel_13.LocalScript 
+coroutine.wrap(ACYRMYZ_fake_script)()
+local function AFVRS_fake_script() -- TextLabel_13.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_13)
 
 	local Text = script.Parent
 	Text.Text = "PlaceID: "..game.PlaceId
 end
-coroutine.wrap(QINAD_fake_script)()
-local function ZPDHSDY_fake_script() -- TextLabel_14.LocalScript 
+coroutine.wrap(AFVRS_fake_script)()
+local function UFYL_fake_script() -- TextLabel_14.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_14)
 
 	local Text = script.Parent
 	Text.Text = "CreatorID: "..game.CreatorId
 end
-coroutine.wrap(ZPDHSDY_fake_script)()
-local function KCYXLIB_fake_script() -- TextLabel_15.LocalScript 
+coroutine.wrap(UFYL_fake_script)()
+local function EOBO_fake_script() -- TextLabel_15.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_15)
 
 	local Text = script.Parent
 	Text.Text = "Place: "..game.Name
 end
-coroutine.wrap(KCYXLIB_fake_script)()
-local function GSNGAYR_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(EOBO_fake_script)()
+local function GPWUYKA_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	local TeleportService = game:GetService("TeleportService")
@@ -2027,8 +2203,8 @@ local function GSNGAYR_fake_script() -- Rejoin.LocalScript
 		TeleportService:Teleport(PlaceID, Player)
 	end)
 end
-coroutine.wrap(GSNGAYR_fake_script)()
-local function BDXQDM_fake_script() -- Leave.Dragging 
+coroutine.wrap(GPWUYKA_fake_script)()
+local function SKQI_fake_script() -- Leave.Dragging 
 	local script = Instance.new('LocalScript', Leave)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2072,8 +2248,8 @@ local function BDXQDM_fake_script() -- Leave.Dragging
 		end
 	end)
 end
-coroutine.wrap(BDXQDM_fake_script)()
-local function QZPJKXU_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(SKQI_fake_script)()
+local function VSECONE_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local DeleteButton = script.Parent.Delete
@@ -2094,8 +2270,8 @@ local function QZPJKXU_fake_script() -- MainFrame.LocalScript
 		SureFrame.Visible = false
 	end)
 end
-coroutine.wrap(QZPJKXU_fake_script)()
-local function ZPWT_fake_script() -- Execution_2.LocalScript 
+coroutine.wrap(VSECONE_fake_script)()
+local function ALGLO_fake_script() -- Execution_2.LocalScript 
 	local script = Instance.new('LocalScript', Execution_2)
 
 	local TextBox = script.Parent.SctiptBox
@@ -2113,8 +2289,8 @@ local function ZPWT_fake_script() -- Execution_2.LocalScript
 	    Executescript()
 	end)
 end
-coroutine.wrap(ZPWT_fake_script)()
-local function EFHYP_fake_script() -- FLY.ButtonManager 
+coroutine.wrap(ALGLO_fake_script)()
+local function EXLTCIT_fake_script() -- FLY.ButtonManager 
 	local script = Instance.new('LocalScript', FLY)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2227,8 +2403,8 @@ local function EFHYP_fake_script() -- FLY.ButtonManager
 	end)
 	
 end
-coroutine.wrap(EFHYP_fake_script)()
-local function HUZV_fake_script() -- NOCLIP.ButtonManager 
+coroutine.wrap(EXLTCIT_fake_script)()
+local function SDUIY_fake_script() -- NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', NOCLIP)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -2321,8 +2497,8 @@ local function HUZV_fake_script() -- NOCLIP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(HUZV_fake_script)()
-local function WNYERN_fake_script() -- AIM.ButtonManager 
+coroutine.wrap(SDUIY_fake_script)()
+local function BCSE_fake_script() -- AIM.ButtonManager 
 	local script = Instance.new('LocalScript', AIM)
 
 	local Button = script.Parent.Status.Button
@@ -2392,8 +2568,8 @@ local function WNYERN_fake_script() -- AIM.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(WNYERN_fake_script)()
-local function JPPPB_fake_script() -- ESP.ButtonManager 
+coroutine.wrap(BCSE_fake_script)()
+local function IBHOOH_fake_script() -- ESP.ButtonManager 
 	local script = Instance.new('LocalScript', ESP)
 
 	local EspEnabled = false
@@ -2702,15 +2878,102 @@ local function JPPPB_fake_script() -- ESP.ButtonManager
 	-- Подключаем кнопку к функции toggleESP
 	EspToggleButton.MouseButton1Click:Connect(toggleESP)
 end
-coroutine.wrap(JPPPB_fake_script)()
-local function OQHR_fake_script() -- TextLabel_27.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_27)
+coroutine.wrap(IBHOOH_fake_script)()
+local function AFDP_fake_script() -- TELEPORT.ValueManager 
+	local script = Instance.new('LocalScript', TELEPORT)
+
+	local TextBox = script.Parent.TextBox
+	local Players = game:GetService("Players")
+	
+	TextBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local playerName = TextBox.Text
+			local targetPlayer = Players:FindFirstChild(playerName)
+			local player = Players.LocalPlayer
+	
+			if targetPlayer and targetPlayer.Character and player.Character then
+				local targetChar = targetPlayer.Character
+				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+	
+				if humanoid then
+					-- Получаем позицию целевого игрока
+					local targetPos = targetChar.PrimaryPart.Position + Vector3.new(0, 5, 0)
+					-- Мгновенно телепортируемся к целевой позиции
+					player.Character:SetPrimaryPartCFrame(CFrame.new(targetPos))
+				end
+			else
+				print("Игрок с таким именем не найден")
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(AFDP_fake_script)()
+local function UGBGA_fake_script() -- DORSALTELEPORT.ButtonManager 
+	local script = Instance.new('LocalScript', DORSALTELEPORT)
+
+	local StarterGui = game:GetService("StarterGui")
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	
+	local Button = script.Parent.Status.Button
+	local TextBox = script.Parent.PlrName
+	local Activated = false
+	
+	local Enabled = script.Parent.Status.Enabled
+	local Disabled = script.Parent.Status.Disabled
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://6052548458"
+	
+	-- Функция для обновления позиции игрока
+	local function updatePosition()
+		local playerName = TextBox.Text
+		local targetPlayer = Players:FindFirstChild(playerName)
+		
+		if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+			local targetRootPart = targetPlayer.Character.HumanoidRootPart
+			local localPlayer = Players.LocalPlayer
+			local localRootPart = localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+			
+			if localRootPart then
+				local targetPosition = targetRootPart.Position - targetRootPart.CFrame.LookVector * 2.5 -- за спиной на расстоянии 5 студий
+				localRootPart.CFrame = CFrame.new(targetPosition)
+			end
+		end
+	end
+	
+	-- Подключение кнопки
+	Button.MouseButton1Click:Connect(function()
+		Click:Play()
+		if Activated == false then
+			Activated = true
+			Enabled.Visible = true
+			Disabled.Visible = false
+		else
+			Activated = false
+			Enabled.Visible = false
+			Disabled.Visible = true
+		end
+	end)
+	
+	-- Главный цикл
+	RunService.RenderStepped:Connect(function()
+		if Activated then
+			wait(0.1)
+			updatePosition()
+		end
+	end)
+end
+coroutine.wrap(UGBGA_fake_script)()
+local function YOQCP_fake_script() -- TextLabel_31.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_31)
 
 	local Text = script.Parent
 	Text.Text = game.Name
 end
-coroutine.wrap(OQHR_fake_script)()
-local function QFXAVFK_fake_script() -- Walkspeed.Manager 
+coroutine.wrap(YOQCP_fake_script)()
+local function UXMSL_fake_script() -- Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Walkspeed)
 
 	local textbox = script.Parent.TextBox
@@ -2747,8 +3010,8 @@ local function QFXAVFK_fake_script() -- Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(QFXAVFK_fake_script)()
-local function GKSTOV_fake_script() -- JumpPower.Manager 
+coroutine.wrap(UXMSL_fake_script)()
+local function CBPL_fake_script() -- JumpPower.Manager 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	local textbox = script.Parent.TextBox
@@ -2785,8 +3048,8 @@ local function GKSTOV_fake_script() -- JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(GKSTOV_fake_script)()
-local function PVNQ_fake_script() -- FOV.Manager 
+coroutine.wrap(CBPL_fake_script)()
+local function VHFO_fake_script() -- FOV.Manager 
 	local script = Instance.new('LocalScript', FOV)
 
 	local textbox = script.Parent.TextBox
@@ -2824,8 +3087,8 @@ local function PVNQ_fake_script() -- FOV.Manager
 	end)
 	
 end
-coroutine.wrap(PVNQ_fake_script)()
-local function INAOSX_fake_script() -- Animation.Manager 
+coroutine.wrap(VHFO_fake_script)()
+local function EKDFM_fake_script() -- Animation.Manager 
 	local script = Instance.new('LocalScript', Animation)
 
 	local textbox = script.Parent.TextBox
@@ -2873,8 +3136,8 @@ local function INAOSX_fake_script() -- Animation.Manager
 		end
 	end)
 end
-coroutine.wrap(INAOSX_fake_script)()
-local function CVJILCO_fake_script() -- AtomFrame.Dragging 
+coroutine.wrap(EKDFM_fake_script)()
+local function AKKN_fake_script() -- AtomFrame.Dragging 
 	local script = Instance.new('LocalScript', AtomFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2918,8 +3181,8 @@ local function CVJILCO_fake_script() -- AtomFrame.Dragging
 		end
 	end)
 end
-coroutine.wrap(CVJILCO_fake_script)()
-local function RXYPXP_fake_script() -- AtomFrame.Atom.Core 
+coroutine.wrap(AKKN_fake_script)()
+local function JNMRM_fake_script() -- AtomFrame.Atom.Core 
 	local script = Instance.new('LocalScript', AtomFrame)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2953,5 +3216,5 @@ local function RXYPXP_fake_script() -- AtomFrame.Atom.Core
 	end)
 	
 end
-coroutine.wrap(RXYPXP_fake_script)()
-coroutine.wrap(QGGYIQE_fake_script)()
+coroutine.wrap(JNMRM_fake_script)()
+coroutine.wrap(WWXCTH_fake_script)()
