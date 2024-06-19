@@ -2717,7 +2717,7 @@ local function VUEUNQ_fake_script() -- Atom.Frame.AccountModule
 	local AccountBase = { -- База данных аккаунтов пользователей
 		["Atom"] = {password = "atom.official", role = "owner"},
 		["necto119"] = {password = "Fvbghn98", role = "user"},
-		["Juice"] = {password = "fjsf9324jfk234994923489", role = "user"},
+		["Juice"] = {password = "juice22", role = "user"},
 		["zxcRubi"] = {password = "pisapopaantilopa", role = "user"},
 		["zuck"] = {password = "1233", role = "user"},
 		["maga02"] = {password = "1509", role = "user"}
