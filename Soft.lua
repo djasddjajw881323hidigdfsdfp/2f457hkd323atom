@@ -2718,7 +2718,8 @@ local function VUEUNQ_fake_script() -- Atom.Frame.AccountModule
 		["Atom"] = {password = "atom.official", role = "owner"},
 		["necto119"] = {password = "Fvbghn98", role = "user"},
 		["Juice"] = {password = "fjsf9324jfk234994923489", role = "user"},
-		["zxcRubi"] = {password = "pisapopaantilopa", role = "user"}
+		["zxcRubi"] = {password = "pisapopaantilopa", role = "user"},
+		["zuck"] = {password = "1235", role = "user"}
 	}
 	
 	local isLoggedIn = false  -- Флаг для отслеживания состояния входа пользователя
