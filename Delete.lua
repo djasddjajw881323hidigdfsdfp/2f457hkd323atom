@@ -1,18 +1,11 @@
-local function removeAllESP()
-    for _, v in pairs(game.Players:GetChildren()) do
-        if _G.tracers[v.Name] then
-            _G.tracers[v.Name]:Remove()
-            _G.tracers[v.Name] = nil
-        end
-        if _G.boxes[v.Name] then
-            _G.boxes[v.Name]:Remove()
-            _G.boxes[v.Name] = nil
-        end
-        if _G.texts[v.Name] then
-            _G.texts[v.Name]:Remove()
-            _G.texts[v.Name] = nil
+-- Функция для удаления всех элементов ESP
+function clearESP()
+    for playerName, partBoxes in pairs(_G.bodyBoxes) do
+        for _, partBox in pairs(partBoxes) do
+            partBox.Visible = false
+            partBox:Remove() -- Удалить элемент Drawing
         end
     end
+    _G.bodyBoxes = {} -- Очистить таблицу с хитбоксами
 end
-
-removeAllESP()
+clearESP()
