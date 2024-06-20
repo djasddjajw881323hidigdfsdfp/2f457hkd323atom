@@ -12,11 +12,11 @@ local function createESP(v)
     local Tracer = Drawing.new("Line")
     Tracer.Visible = false
     Tracer.Color = Color3.new(1, 1, 1)
-    Tracer.Thickness = 2 -- Измените толщину линии
+    Tracer.Thickness = 2
     Tracer.Transparency = 1
     _G.tracers[v.Name] = Tracer
 
-    -- Создание квадрата
+    -- Создание квадрата (хитбокса)
     local Box = Drawing.new("Quad")
     Box.Visible = false
     Box.Color = Color3.new(1, 0, 0)
@@ -24,7 +24,7 @@ local function createESP(v)
     Box.Transparency = 1
     _G.boxes[v.Name] = Box
 
-    -- Создание текста с HP
+    -- Создание текста с HP и именем игрока
     local Text = Drawing.new("Text")
     Text.Visible = false
     Text.Color = Color3.new(1, 1, 1)
@@ -36,8 +36,7 @@ local function createESP(v)
             if v.Character and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("HumanoidRootPart") and v ~= lplr and v.Character.Humanoid.Health > 0 then
                 local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
                 local RootPart = v.Character.HumanoidRootPart
-                local Head = v.Character:FindFirstChild("Head")
-                local HRPSize = Vector3.new(5, 7.5, 5) -- Увеличенный хитбокс
+                local HRPSize = Vector3.new(10, 15, 10) -- Увеличенный хитбокс
 
                 if OnScreen then
                     -- Обновление трассера
@@ -49,7 +48,7 @@ local function createESP(v)
                         Tracer.Visible = true
                     end
 
-                    -- Обновление квадрата
+                    -- Обновление квадрата (хитбокса)
                     local TopLeft = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(HRPSize.X / 2, HRPSize.Y / 2, 0)).Position)
                     local TopRight = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(-HRPSize.X / 2, HRPSize.Y / 2, 0)).Position)
                     local BottomLeft = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(HRPSize.X / 2, -HRPSize.Y / 2, 0)).Position)
@@ -61,9 +60,9 @@ local function createESP(v)
                     Box.PointD = Vector2.new(BottomRight.X, BottomRight.Y)
                     Box.Visible = true
 
-                    -- Обновление текста
+                    -- Обновление текста с HP и именем игрока
                     Text.Position = Vector2.new(Vector.X, Vector.Y - 30)
-                    Text.Text = "["..tostring(math.floor(v.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(v.Character.Humanoid.MaxHealth)).."]"
+                    Text.Text = v.Name .. "\n["..tostring(math.floor(v.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(v.Character.Humanoid.MaxHealth)).."]"
                     Text.Visible = true
                 else
                     Tracer.Visible = false
