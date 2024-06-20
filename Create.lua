@@ -3,66 +3,77 @@ local camera = game:GetService("Workspace").CurrentCamera
 
 _G.TeamCheck = false -- Используйте true или false для переключения проверки команды
 
-_G.bodyBoxes = {}
+_G.tracers = {}
+_G.boxes = {}
+_G.texts = {}
 
 local function createESP(v)
-    local partBoxes = {}
-    local humanoid = v.Character:WaitForChild("Humanoid")
-    local bodyParts = {}
+    -- Создание линии-трассера
+    local Tracer = Drawing.new("Line")
+    Tracer.Visible = false
+    Tracer.Color = Color3.new(1, 1, 1)
+    Tracer.Thickness = 2 -- Измените толщину линии
+    Tracer.Transparency = 0.9
+    _G.tracers[v.Name] = Tracer
 
-    if v.Character:FindFirstChild("Head") then
-        table.insert(bodyParts, v.Character.Head)
-    end
+    -- Создание квадрата
+    local Box = Drawing.new("Quad")
+    Box.Visible = false
+    Box.Color = Color3.new(1, 0, 0)
+    Box.Thickness = 2
+    Box.Transparency = 0.9
+    _G.boxes[v.Name] = Box
 
-    for _, part in ipairs(v.Character:GetChildren()) do
-        if part:IsA("Part") and humanoid:GetBodyPartRigType(part.Name) == Enum.HumanoidRigType.R6 then
-            table.insert(bodyParts, part)
-        end
-    end
-
-    for _, part in ipairs(bodyParts) do
-        local PartBox = Drawing.new("Quad")
-        PartBox.Visible = false
-        PartBox.Color = Color3.new(1, 0, 0)
-        PartBox.Thickness = 2
-        PartBox.Transparency = 1
-        partBoxes[part.Name] = PartBox
-    end
-
-    _G.bodyBoxes[v.Name] = partBoxes
+    -- Создание текста с HP
+    local Text = Drawing.new("Text")
+    Text.Visible = false
+    Text.Color = Color3.new(1, 1, 1)
+    Text.Size = 20
+    _G.texts[v.Name] = Text
 
     local function updateESP()
         while true do
-            if v.Character and v.Character:FindFirstChild("Humanoid") and v ~= lplr and v.Character.Humanoid.Health > 0 then
-                for partName, partBox in pairs(partBoxes) do
-                    local Part = v.Character:FindFirstChild(partName)
-                    if Part then
-                        local PartVector, PartOnScreen = camera:worldToViewportPoint(Part.Position)
-                        local PartSize = Part.Size * 1.5
+            if v.Character and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("HumanoidRootPart") and v ~= lplr and v.Character.Humanoid.Health > 0 then
+                local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+                local RootPart = v.Character.HumanoidRootPart
+                local Head = v.Character:FindFirstChild("Head")
+                local HRPSize = Vector3.new(8, 12, 0) -- Увеличенный хитбокс (шире и выше)
 
-                        if PartOnScreen then
-                            -- Обновление квадрата для части тела
-                            local TopLeft = camera:worldToViewportPoint(Part.Position + Part.CFrame.UpVector * (PartSize.Y / 2) - Part.CFrame.RightVector * (PartSize.X / 2))
-                            local TopRight = camera:worldToViewportPoint(Part.Position + Part.CFrame.UpVector * (PartSize.Y / 2) + Part.CFrame.RightVector * (PartSize.X / 2))
-                            local BottomLeft = camera:worldToViewportPoint(Part.Position - Part.CFrame.UpVector * (PartSize.Y / 2) - Part.CFrame.RightVector * (PartSize.X / 2))
-                            local BottomRight = camera:worldToViewportPoint(Part.Position - Part.CFrame.UpVector * (PartSize.Y / 2) + Part.CFrame.RightVector * (PartSize.X / 2))
-
-                            partBox.PointA = Vector2.new(TopRight.X, TopRight.Y)
-                            partBox.PointB = Vector2.new(TopLeft.X, TopLeft.Y)
-                            partBox.PointC = Vector2.new(BottomLeft.X, BottomLeft.Y)
-                            partBox.PointD = Vector2.new(BottomRight.X, BottomRight.Y)
-                            partBox.Visible = true
-                        else
-                            partBox.Visible = false
-                        end
+                if OnScreen then
+                    -- Обновление трассера
+                    Tracer.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y)
+                    Tracer.To = Vector2.new(Vector.X, Vector.Y)
+                    if _G.TeamCheck and v.TeamColor == lplr.TeamColor then
+                        Tracer.Visible = false
                     else
-                        partBox.Visible = false
+                        Tracer.Visible = true
                     end
+
+                    -- Обновление квадрата
+                    local TopLeft = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(HRPSize.X / 2, HRPSize.Y / 2, 0)).Position)
+                    local TopRight = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(-HRPSize.X / 2, HRPSize.Y / 2, 0)).Position)
+                    local BottomLeft = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(HRPSize.X / 2, -HRPSize.Y / 2, 0)).Position)
+                    local BottomRight = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(-HRPSize.X / 2, -HRPSize.Y / 2, 0)).Position)
+
+                    Box.PointA = Vector2.new(TopRight.X, TopRight.Y)
+                    Box.PointB = Vector2.new(TopLeft.X, TopLeft.Y)
+                    Box.PointC = Vector2.new(BottomLeft.X, BottomLeft.Y)
+                    Box.PointD = Vector2.new(BottomRight.X, BottomRight.Y)
+                    Box.Visible = true
+
+                    -- Обновление текста
+                    Text.Position = Vector2.new(Vector.X, Vector.Y - 30)
+                    Text.Text = "["..tostring(math.floor(v.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(v.Character.Humanoid.MaxHealth)).."]"
+                    Text.Visible = true
+                else
+                    Tracer.Visible = false
+                    Box.Visible = false
+                    Text.Visible = false
                 end
             else
-                for _, partBox in pairs(partBoxes) do
-                    partBox.Visible = false
-                end
+                Tracer.Visible = false
+                Box.Visible = false
+                Text.Visible = false
             end
             game:GetService("RunService").RenderStepped:Wait()
         end
