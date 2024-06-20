@@ -1,9 +1,5 @@
 local function removeAllESP()
     for _, v in pairs(game.Players:GetChildren()) do
-        if _G.tracers[v.Name] then
-            _G.tracers[v.Name]:Remove()
-            _G.tracers[v.Name] = nil
-        end
         if _G.boxes[v.Name] then
             _G.boxes[v.Name]:Remove()
             _G.boxes[v.Name] = nil
