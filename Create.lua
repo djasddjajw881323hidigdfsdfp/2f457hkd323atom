@@ -37,7 +37,7 @@ local function createESP(v)
                 local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
                 local RootPart = v.Character.HumanoidRootPart
                 local Head = v.Character:FindFirstChild("Head")
-                local HRPSize = Vector3.new(4, 7, 0) -- Увеличенный хитбокс
+                local HRPSize = Vector3.new(5, 10, 0) -- Увеличенный хитбокс
 
                 if OnScreen then
                     -- Обновление трассера
