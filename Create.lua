@@ -20,7 +20,7 @@ local function createESP(v)
     local Box = Drawing.new("Quad")
     Box.Visible = false
     Box.Color = Color3.fromRGB(255, 255, 255)
-    Box.Thickness = 1
+    Box.Thickness = 2
     Box.Transparency = 1
     _G.boxes[v.Name] = Box
 
