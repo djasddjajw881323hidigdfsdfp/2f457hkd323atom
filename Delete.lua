@@ -1,20 +1,16 @@
-local tracers = {}
-local boxes = {}
-local texts = {}
-
 local function removeAllESP()
     for _, v in pairs(game.Players:GetChildren()) do
-        if tracers[v.Name] then
-            tracers[v.Name]:Remove()
-            tracers[v.Name] = nil
+        if _G.tracers[v.Name] then
+            _G.tracers[v.Name]:Remove()
+            _G.tracers[v.Name] = nil
         end
-        if boxes[v.Name] then
-            boxes[v.Name]:Remove()
-            boxes[v.Name] = nil
+        if _G.boxes[v.Name] then
+            _G.boxes[v.Name]:Remove()
+            _G.boxes[v.Name] = nil
         end
-        if texts[v.Name] then
-            texts[v.Name]:Remove()
-            texts[v.Name] = nil
+        if _G.texts[v.Name] then
+            _G.texts[v.Name]:Remove()
+            _G.texts[v.Name] = nil
         end
     end
 end
