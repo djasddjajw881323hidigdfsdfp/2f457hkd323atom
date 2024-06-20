@@ -37,7 +37,7 @@ local function createESP(v)
                 local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
                 local RootPart = v.Character.HumanoidRootPart
                 local Head = v.Character:FindFirstChild("Head")
-                local HRPSize = Vector3.new(4, 7, 0) -- Увеличенный хитбокс
+                local HRPSize = Vector3.new(5, 10, 0) -- Увеличенный хитбокс
 
                 if OnScreen then
                     -- Обновление трассера
@@ -63,7 +63,7 @@ local function createESP(v)
 
                     -- Обновление текста
                     Text.Position = Vector2.new(Vector.X, Vector.Y - 30)
-                    Text.Text = tostring(math.floor(v.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(v.Character.Humanoid.MaxHealth))
+                    Text.Text = "["..tostring(math.floor(v.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(v.Character.Humanoid.MaxHealth)).."]"
                     Text.Visible = true
                 else
                     Tracer.Visible = false
