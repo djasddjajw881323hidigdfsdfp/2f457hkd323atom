@@ -1,78 +1,71 @@
-local lplr = game.Players.LocalPlayer
-local camera = game:GetService("Workspace").CurrentCamera
+local players = game:GetService("Players")
+local camera = game.Workspace.CurrentCamera
 
-_G.TeamCheck = false -- Используйте true или false для переключения проверки команды
+function createESP(player)
+    local tracer = game:GetService("Drawing").new("Line")
+    tracer.Color = Color3.new(1, 1, 1)
+    tracer.Thickness = 2
+    tracer.Transparency = 1
+    tracer.Visible = false
+    tracer.Name = player.Name .. "_tracer"
 
-_G.tracers = {}
-_G.boxes = {}
-_G.texts = {}
+    local box = game:GetService("Drawing").new("Quad")
+    box.Color = Color3.new(1, 0, 0)
+    box.Thickness = 2
+    box.Transparency = 1
+    box.Visible = false
+    box.Name = player.Name .. "_box"
 
-local function createESP(v)
-    -- Создание линии-трассера
-    local Tracer = Drawing.new("Line")
-    Tracer.Visible = false
-    Tracer.Color = Color3.new(1, 1, 1)
-    Tracer.Thickness = 2
-    Tracer.Transparency = 1
-    _G.tracers[v.Name] = Tracer
+    local text = game:GetService("Drawing").new("Text")
+    text.Color = Color3.new(1, 1, 1)
+    text.Size = 20
+    text.Visible = false
+    text.Name = player.Name .. "_text"
 
-    -- Создание квадрата (хитбокса)
-    local Box = Drawing.new("Quad")
-    Box.Visible = false
-    Box.Color = Color3.new(1, 0, 0)
-    Box.Thickness = 2
-    Box.Transparency = 1
-    _G.boxes[v.Name] = Box
-
-    -- Создание текста с HP и именем игрока
-    local Text = Drawing.new("Text")
-    Text.Visible = false
-    Text.Color = Color3.new(1, 1, 1)
-    Text.Size = 20
-    _G.texts[v.Name] = Text
-
-    local function updateESP()
+    function updateESP()
         while true do
-            if v.Character and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("HumanoidRootPart") and v ~= lplr and v.Character.Humanoid.Health > 0 then
-                local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
-                local RootPart = v.Character.HumanoidRootPart
-                local HRPSize = Vector3.new(10, 15, 10) -- Увеличенный хитбокс
+            if player.Character and player.Character:FindFirstChild("Humanoid") and player.Character:FindFirstChild("HumanoidRootPart") and player.Character.Humanoid.Health > 0 then
+                local rootPart = player.Character.HumanoidRootPart
+                local hrpSize = Vector3.new(10, 15, 10) -- Увеличенный хитбокс
 
-                if OnScreen then
+                local vector, onScreen = camera:WorldToViewportPoint(rootPart.Position)
+
+                if onScreen then
                     -- Обновление трассера
-                    Tracer.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y)
-                    Tracer.To = Vector2.new(Vector.X, Vector.Y)
-                    if _G.TeamCheck and v.TeamColor == lplr.TeamColor then
-                        Tracer.Visible = false
+                    tracer.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y)
+                    tracer.To = Vector2.new(vector.X, vector.Y)
+
+                    if player.TeamColor == players.LocalPlayer.TeamColor then
+                        tracer.Visible = false
                     else
-                        Tracer.Visible = true
+                        tracer.Visible = true
                     end
 
                     -- Обновление квадрата (хитбокса)
-                    local TopLeft = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(HRPSize.X / 2, HRPSize.Y / 2, 0)).Position)
-                    local TopRight = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(-HRPSize.X / 2, HRPSize.Y / 2, 0)).Position)
-                    local BottomLeft = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(HRPSize.X / 2, -HRPSize.Y / 2, 0)).Position)
-                    local BottomRight = camera:worldToViewportPoint((RootPart.CFrame * CFrame.new(-HRPSize.X / 2, -HRPSize.Y / 2, 0)).Position)
+                    local topLeft = camera:WorldToViewportPoint((rootPart.CFrame * CFrame.new(hrpSize.X / 2, hrpSize.Y / 2, 0)).Position)
+                    local topRight = camera:WorldToViewportPoint((rootPart.CFrame * CFrame.new(-hrpSize.X / 2, hrpSize.Y / 2, 0)).Position)
+                    local bottomLeft = camera:WorldToViewportPoint((rootPart.CFrame * CFrame.new(hrpSize.X / 2, -hrpSize.Y / 2, 0)).Position)
+                    local bottomRight = camera:WorldToViewportPoint((rootPart.CFrame * CFrame.new(-hrpSize.X / 2, -hrpSize.Y / 2, 0)).Position)
 
-                    Box.PointA = Vector2.new(TopRight.X, TopRight.Y)
-                    Box.PointB = Vector2.new(TopLeft.X, TopLeft.Y)
-                    Box.PointC = Vector2.new(BottomLeft.X, BottomLeft.Y)
-                    Box.PointD = Vector2.new(BottomRight.X, BottomRight.Y)
-                    Box.Visible = true
+                    box.PointA = Vector2.new(topRight.X, topRight.Y)
+                    box.PointB = Vector2.new(topLeft.X, topLeft.Y)
+                    box.PointC = Vector2.new(bottomLeft.X, bottomLeft.Y)
+                    box.PointD = Vector2.new(bottomRight.X, bottomRight.Y)
+                    box.Visible = true
 
                     -- Обновление текста с HP и именем игрока
-                    Text.Position = Vector2.new(Vector.X, Vector.Y - 30)
-                    Text.Text = v.Name .. "\n["..tostring(math.floor(v.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(v.Character.Humanoid.MaxHealth)).."]"
-                    Text.Visible = true
+                    text.Position = Vector2.new(vector.X, vector.Y - 30)
+                    text.Text = player.Name .. "\n[" .. tostring(math.floor(player.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(player.Character.Humanoid.MaxHealth)) .. "]"
+                    text.Visible = true
                 else
-                    Tracer.Visible = false
-                    Box.Visible = false
-                    Text.Visible = false
+                    tracer.Visible = false
+                    box.Visible = false
+                    text.Visible = false
                 end
             else
-                Tracer.Visible = false
-                Box.Visible = false
-                Text.Visible = false
+                tracer.Visible = false
+                box.Visible = false
+                text.Visible = false
             end
             game:GetService("RunService").RenderStepped:Wait()
         end
@@ -80,10 +73,10 @@ local function createESP(v)
     coroutine.wrap(updateESP)()
 end
 
-for _, v in pairs(game.Players:GetPlayers()) do
-    createESP(v)
+for _, player in ipairs(players:GetPlayers()) do
+    createESP(player)
 end
 
-game.Players.PlayerAdded:Connect(function(v)
-    createESP(v)
+players.PlayerAdded:Connect(function(player)
+    createESP(player)
 end)
