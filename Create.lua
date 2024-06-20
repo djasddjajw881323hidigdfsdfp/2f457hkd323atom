@@ -12,8 +12,8 @@ local function createESP(v)
     local Tracer = Drawing.new("Line")
     Tracer.Visible = false
     Tracer.Color = Color3.fromRGB(255, 255, 255)
-    Tracer.Thickness = 2 -- Измените толщину линии
-    Tracer.Transparency = 0
+    Tracer.Thickness = 1 -- Измените толщину линии
+    Tracer.Transparency = 1
     _G.tracers[v.Name] = Tracer
 
     -- Создание квадрата
@@ -21,7 +21,7 @@ local function createESP(v)
     Box.Visible = false
     Box.Color = Color3.fromRGB(255, 255, 255)
     Box.Thickness = 1
-    Box.Transparency = 0
+    Box.Transparency = 1
     _G.boxes[v.Name] = Box
 
     -- Создание текста с HP
