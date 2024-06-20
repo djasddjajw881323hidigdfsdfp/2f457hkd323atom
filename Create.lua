@@ -20,7 +20,7 @@ local function createESP(v)
     local Box = Drawing.new("Quad")
     Box.Visible = false
     Box.Color = Color3.new(1, 0, 0)
-    Box.Thickness = 2
+    Box.Thickness = 1
     Box.Transparency = 1
     _G.boxes[v.Name] = Box
 
@@ -37,7 +37,7 @@ local function createESP(v)
                 local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
                 local RootPart = v.Character.HumanoidRootPart
                 local Head = v.Character:FindFirstChild("Head")
-                local HRPSize = Vector3.new(5, 10, 0) -- Увеличенный хитбокс
+                local HRPSize = Vector3.new(5, 5, 0) -- Размер квадрата
 
                 if OnScreen then
                     -- Обновление трассера
