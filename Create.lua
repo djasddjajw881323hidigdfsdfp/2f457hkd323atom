@@ -3,9 +3,9 @@ local camera = game:GetService("Workspace").CurrentCamera
 
 _G.TeamCheck = false -- Используйте true или false для переключения проверки команды
 
-local tracers = {}
-local boxes = {}
-local texts = {}
+_G.tracers = {}
+_G.boxes = {}
+_G.texts = {}
 
 local function createESP(v)
     -- Создание линии-трассера
@@ -14,7 +14,7 @@ local function createESP(v)
     Tracer.Color = Color3.new(1, 1, 1)
     Tracer.Thickness = 2 -- Измените толщину линии
     Tracer.Transparency = 1
-    tracers[v.Name] = Tracer
+    _G.tracers[v.Name] = Tracer
 
     -- Создание квадрата
     local Box = Drawing.new("Quad")
@@ -22,14 +22,14 @@ local function createESP(v)
     Box.Color = Color3.new(1, 0, 0)
     Box.Thickness = 1
     Box.Transparency = 1
-    boxes[v.Name] = Box
+    _G.boxes[v.Name] = Box
 
     -- Создание текста с HP
     local Text = Drawing.new("Text")
     Text.Visible = false
     Text.Color = Color3.new(1, 1, 1)
     Text.Size = 20
-    texts[v.Name] = Text
+    _G.texts[v.Name] = Text
 
     local function updateESP()
         while true do
