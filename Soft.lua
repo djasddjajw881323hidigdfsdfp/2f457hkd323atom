@@ -83,182 +83,183 @@ local Atom = {
 	Rejoin = Instance.new("TextButton"),
 	UICorner_21 = Instance.new("UICorner"),
 	Leave = Instance.new("Frame"),
-	UICorner_22 = Instance.new("UICorner"),
 	TextLabel_18 = Instance.new("TextLabel"),
 	Yes = Instance.new("TextButton"),
-	UICorner_23 = Instance.new("UICorner"),
+	UICorner_22 = Instance.new("UICorner"),
 	No = Instance.new("TextButton"),
-	UICorner_24 = Instance.new("UICorner"),
+	UICorner_23 = Instance.new("UICorner"),
 	TextLabel_19 = Instance.new("TextLabel"),
+	Frame_4 = Instance.new("Frame"),
+	Background_2 = Instance.new("ImageLabel"),
 	Execution_2 = Instance.new("Frame"),
 	TextLabel_20 = Instance.new("TextLabel"),
 	SctiptBox = Instance.new("TextBox"),
-	UICorner_25 = Instance.new("UICorner"),
+	UICorner_24 = Instance.new("UICorner"),
 	Execute = Instance.new("TextButton"),
-	UICorner_26 = Instance.new("UICorner"),
+	UICorner_25 = Instance.new("UICorner"),
 	Clear = Instance.new("TextButton"),
-	UICorner_27 = Instance.new("UICorner"),
+	UICorner_26 = Instance.new("UICorner"),
 	Place = Instance.new("Frame"),
 	ScrollingFrame = Instance.new("ScrollingFrame"),
 	UIListLayout_2 = Instance.new("UIListLayout"),
 	FLY = Instance.new("Frame"),
-	UICorner_28 = Instance.new("UICorner"),
+	UICorner_27 = Instance.new("UICorner"),
 	TextLabel_21 = Instance.new("TextLabel"),
 	TextLabel_22 = Instance.new("TextLabel"),
 	Status = Instance.new("Frame"),
-	UICorner_29 = Instance.new("UICorner"),
+	UICorner_28 = Instance.new("UICorner"),
 	Disabled = Instance.new("Frame"),
-	UICorner_30 = Instance.new("UICorner"),
+	UICorner_29 = Instance.new("UICorner"),
 	Enabled = Instance.new("Frame"),
-	UICorner_31 = Instance.new("UICorner"),
+	UICorner_30 = Instance.new("UICorner"),
 	Button_7 = Instance.new("TextButton"),
 	Speed = Instance.new("TextBox"),
-	UICorner_32 = Instance.new("UICorner"),
+	UICorner_31 = Instance.new("UICorner"),
 	NOCLIP = Instance.new("Frame"),
-	UICorner_33 = Instance.new("UICorner"),
+	UICorner_32 = Instance.new("UICorner"),
 	TextLabel_23 = Instance.new("TextLabel"),
 	TextLabel_24 = Instance.new("TextLabel"),
 	Status_2 = Instance.new("Frame"),
-	UICorner_34 = Instance.new("UICorner"),
+	UICorner_33 = Instance.new("UICorner"),
 	Disabled_2 = Instance.new("Frame"),
-	UICorner_35 = Instance.new("UICorner"),
+	UICorner_34 = Instance.new("UICorner"),
 	Enabled_2 = Instance.new("Frame"),
-	UICorner_36 = Instance.new("UICorner"),
+	UICorner_35 = Instance.new("UICorner"),
 	Button_8 = Instance.new("TextButton"),
 	AIM = Instance.new("Frame"),
-	UICorner_37 = Instance.new("UICorner"),
+	UICorner_36 = Instance.new("UICorner"),
 	TextLabel_25 = Instance.new("TextLabel"),
 	TextLabel_26 = Instance.new("TextLabel"),
 	Status_3 = Instance.new("Frame"),
-	UICorner_38 = Instance.new("UICorner"),
+	UICorner_37 = Instance.new("UICorner"),
 	Disabled_3 = Instance.new("Frame"),
-	UICorner_39 = Instance.new("UICorner"),
+	UICorner_38 = Instance.new("UICorner"),
 	Enabled_3 = Instance.new("Frame"),
-	UICorner_40 = Instance.new("UICorner"),
+	UICorner_39 = Instance.new("UICorner"),
 	Button_9 = Instance.new("TextButton"),
 	ESP = Instance.new("Frame"),
-	UICorner_41 = Instance.new("UICorner"),
+	UICorner_40 = Instance.new("UICorner"),
 	TextLabel_27 = Instance.new("TextLabel"),
 	TextLabel_28 = Instance.new("TextLabel"),
 	Status_4 = Instance.new("Frame"),
-	UICorner_42 = Instance.new("UICorner"),
+	UICorner_41 = Instance.new("UICorner"),
 	Disabled_4 = Instance.new("Frame"),
-	UICorner_43 = Instance.new("UICorner"),
+	UICorner_42 = Instance.new("UICorner"),
 	Enabled_4 = Instance.new("Frame"),
-	UICorner_44 = Instance.new("UICorner"),
+	UICorner_43 = Instance.new("UICorner"),
 	Button_10 = Instance.new("TextButton"),
 	TELEPORT = Instance.new("Frame"),
-	UICorner_45 = Instance.new("UICorner"),
+	UICorner_44 = Instance.new("UICorner"),
 	TextLabel_29 = Instance.new("TextLabel"),
 	TextLabel_30 = Instance.new("TextLabel"),
 	TextBox = Instance.new("TextBox"),
-	UICorner_46 = Instance.new("UICorner"),
+	UICorner_45 = Instance.new("UICorner"),
 	DORSALTELEPORT = Instance.new("Frame"),
-	UICorner_47 = Instance.new("UICorner"),
+	UICorner_46 = Instance.new("UICorner"),
 	TextLabel_31 = Instance.new("TextLabel"),
 	TextLabel_32 = Instance.new("TextLabel"),
 	Status_5 = Instance.new("Frame"),
-	UICorner_48 = Instance.new("UICorner"),
+	UICorner_47 = Instance.new("UICorner"),
 	Disabled_5 = Instance.new("Frame"),
-	UICorner_49 = Instance.new("UICorner"),
+	UICorner_48 = Instance.new("UICorner"),
 	Enabled_5 = Instance.new("Frame"),
-	UICorner_50 = Instance.new("UICorner"),
+	UICorner_49 = Instance.new("UICorner"),
 	Button_11 = Instance.new("TextButton"),
 	PlrName = Instance.new("TextBox"),
-	UICorner_51 = Instance.new("UICorner"),
+	UICorner_50 = Instance.new("UICorner"),
 	TextLabel_33 = Instance.new("TextLabel"),
 	Player_2 = Instance.new("Frame"),
 	ScrollingFrame_2 = Instance.new("ScrollingFrame"),
 	UIListLayout_3 = Instance.new("UIListLayout"),
 	Walkspeed = Instance.new("Frame"),
-	UICorner_52 = Instance.new("UICorner"),
+	UICorner_51 = Instance.new("UICorner"),
 	TextLabel_34 = Instance.new("TextLabel"),
 	TextBox_2 = Instance.new("TextBox"),
-	UICorner_53 = Instance.new("UICorner"),
+	UICorner_52 = Instance.new("UICorner"),
 	TextLabel_35 = Instance.new("TextLabel"),
 	JumpPower = Instance.new("Frame"),
-	UICorner_54 = Instance.new("UICorner"),
+	UICorner_53 = Instance.new("UICorner"),
 	TextLabel_36 = Instance.new("TextLabel"),
 	TextBox_3 = Instance.new("TextBox"),
-	UICorner_55 = Instance.new("UICorner"),
+	UICorner_54 = Instance.new("UICorner"),
 	TextLabel_37 = Instance.new("TextLabel"),
 	FOV = Instance.new("Frame"),
-	UICorner_56 = Instance.new("UICorner"),
+	UICorner_55 = Instance.new("UICorner"),
 	TextLabel_38 = Instance.new("TextLabel"),
 	TextBox_4 = Instance.new("TextBox"),
-	UICorner_57 = Instance.new("UICorner"),
+	UICorner_56 = Instance.new("UICorner"),
 	TextLabel_39 = Instance.new("TextLabel"),
 	Animation = Instance.new("Frame"),
-	UICorner_58 = Instance.new("UICorner"),
+	UICorner_57 = Instance.new("UICorner"),
 	TextLabel_40 = Instance.new("TextLabel"),
 	TextBox_5 = Instance.new("TextBox"),
-	UICorner_59 = Instance.new("UICorner"),
+	UICorner_58 = Instance.new("UICorner"),
 	TextLabel_41 = Instance.new("TextLabel"),
 	TextLabel_42 = Instance.new("TextLabel"),
 	Config_2 = Instance.new("Frame"),
 	ScrollingFrame_3 = Instance.new("ScrollingFrame"),
 	UIListLayout_4 = Instance.new("UIListLayout"),
 	ConfigText = Instance.new("Frame"),
-	UICorner_60 = Instance.new("UICorner"),
+	UICorner_59 = Instance.new("UICorner"),
 	TextLabel_43 = Instance.new("TextLabel"),
 	TextLabel_44 = Instance.new("TextLabel"),
 	FLY_2 = Instance.new("Frame"),
-	UICorner_61 = Instance.new("UICorner"),
+	UICorner_60 = Instance.new("UICorner"),
 	TextLabel_45 = Instance.new("TextLabel"),
 	TextBox_6 = Instance.new("TextBox"),
-	UICorner_62 = Instance.new("UICorner"),
+	UICorner_61 = Instance.new("UICorner"),
 	TextLabel_46 = Instance.new("TextLabel"),
 	AIM_2 = Instance.new("Frame"),
-	UICorner_63 = Instance.new("UICorner"),
+	UICorner_62 = Instance.new("UICorner"),
 	TextLabel_47 = Instance.new("TextLabel"),
 	TextBox_7 = Instance.new("TextBox"),
-	UICorner_64 = Instance.new("UICorner"),
+	UICorner_63 = Instance.new("UICorner"),
 	TextLabel_48 = Instance.new("TextLabel"),
 	NOCLIP_2 = Instance.new("Frame"),
-	UICorner_65 = Instance.new("UICorner"),
+	UICorner_64 = Instance.new("UICorner"),
 	TextLabel_49 = Instance.new("TextLabel"),
 	TextBox_8 = Instance.new("TextBox"),
-	UICorner_66 = Instance.new("UICorner"),
+	UICorner_65 = Instance.new("UICorner"),
 	TextLabel_50 = Instance.new("TextLabel"),
 	ESP_2 = Instance.new("Frame"),
-	UICorner_67 = Instance.new("UICorner"),
+	UICorner_66 = Instance.new("UICorner"),
 	TextLabel_51 = Instance.new("TextLabel"),
 	TextBox_9 = Instance.new("TextBox"),
-	UICorner_68 = Instance.new("UICorner"),
+	UICorner_67 = Instance.new("UICorner"),
 	TextLabel_52 = Instance.new("TextLabel"),
 	TELEPORT_2 = Instance.new("Frame"),
-	UICorner_69 = Instance.new("UICorner"),
+	UICorner_68 = Instance.new("UICorner"),
 	TextLabel_53 = Instance.new("TextLabel"),
 	TextBox_10 = Instance.new("TextBox"),
-	UICorner_70 = Instance.new("UICorner"),
+	UICorner_69 = Instance.new("UICorner"),
 	TextLabel_54 = Instance.new("TextLabel"),
 	DORSALTELEPORT_2 = Instance.new("Frame"),
-	UICorner_71 = Instance.new("UICorner"),
+	UICorner_70 = Instance.new("UICorner"),
 	TextLabel_55 = Instance.new("TextLabel"),
 	TextBox_11 = Instance.new("TextBox"),
-	UICorner_72 = Instance.new("UICorner"),
+	UICorner_71 = Instance.new("UICorner"),
 	TextLabel_56 = Instance.new("TextLabel"),
 	WALKSPEED = Instance.new("Frame"),
-	UICorner_73 = Instance.new("UICorner"),
+	UICorner_72 = Instance.new("UICorner"),
 	TextLabel_57 = Instance.new("TextLabel"),
 	TextBox_12 = Instance.new("TextBox"),
-	UICorner_74 = Instance.new("UICorner"),
+	UICorner_73 = Instance.new("UICorner"),
 	TextLabel_58 = Instance.new("TextLabel"),
 	JUMPPOWER = Instance.new("Frame"),
-	UICorner_75 = Instance.new("UICorner"),
+	UICorner_74 = Instance.new("UICorner"),
 	TextLabel_59 = Instance.new("TextLabel"),
 	TextBox_13 = Instance.new("TextBox"),
-	UICorner_76 = Instance.new("UICorner"),
+	UICorner_75 = Instance.new("UICorner"),
 	TextLabel_60 = Instance.new("TextLabel"),
 	ConfigText_2 = Instance.new("Frame"),
-	UICorner_77 = Instance.new("UICorner"),
+	UICorner_76 = Instance.new("UICorner"),
 	TextLabel_61 = Instance.new("TextLabel"),
 	TextLabel_62 = Instance.new("TextLabel"),
 	MenuBlur = Instance.new("Frame"),
-	UICorner_78 = Instance.new("UICorner"),
+	UICorner_77 = Instance.new("UICorner"),
 	TextLabel_63 = Instance.new("TextLabel"),
 	TextBox_14 = Instance.new("TextBox"),
-	UICorner_79 = Instance.new("UICorner"),
+	UICorner_78 = Instance.new("UICorner"),
 	TextLabel_64 = Instance.new("TextLabel"),
 	TextLabel_65 = Instance.new("TextLabel"),
 }
@@ -1008,18 +1009,17 @@ Atom.Leave.Parent = Atom.MainFrame
 Atom.Leave.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 Atom.Leave.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Leave.BorderSizePixel = 0
-Atom.Leave.Position = UDim2.new(0.131449625, 0, 0.226037189, 0)
-Atom.Leave.Size = UDim2.new(0, 600, 0, 352)
+Atom.Leave.Position = UDim2.new(0.270270258, 0, 0.226037189, 0)
+Atom.Leave.Size = UDim2.new(0, 487, 0, 352)
 Atom.Leave.Visible = false
-
-Atom.UICorner_22.Parent = Atom.Leave
 
 Atom.TextLabel_18.Parent = Atom.Leave
 Atom.TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Atom.TextLabel_18.BackgroundTransparency = 1.000
 Atom.TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.TextLabel_18.BorderSizePixel = 0
-Atom.TextLabel_18.Size = UDim2.new(0, 600, 0, 31)
+Atom.TextLabel_18.Position = UDim2.new(-0.23819302, 0, 0, 0)
+Atom.TextLabel_18.Size = UDim2.new(0, 603, 0, 31)
 Atom.TextLabel_18.Font = Enum.Font.SourceSansBold
 Atom.TextLabel_18.Text = "You're going to leave Atom - Client, are you sure?"
 Atom.TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1032,7 +1032,7 @@ Atom.Yes.Parent = Atom.Leave
 Atom.Yes.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Atom.Yes.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Yes.BorderSizePixel = 0
-Atom.Yes.Position = UDim2.new(0.158333331, 0, 0.809659064, 0)
+Atom.Yes.Position = UDim2.new(-0.0367385261, 0, 0.798295438, 0)
 Atom.Yes.Size = UDim2.new(0, 201, 0, 52)
 Atom.Yes.Font = Enum.Font.SourceSansBold
 Atom.Yes.Text = "Yes"
@@ -1041,14 +1041,14 @@ Atom.Yes.TextScaled = true
 Atom.Yes.TextSize = 14.000
 Atom.Yes.TextWrapped = true
 
-Atom.UICorner_23.Parent = Atom.Yes
+Atom.UICorner_22.Parent = Atom.Yes
 
 Atom.No.Name = "No"
 Atom.No.Parent = Atom.Leave
 Atom.No.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Atom.No.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.No.BorderSizePixel = 0
-Atom.No.Position = UDim2.new(0.508333325, 0, 0.809659064, 0)
+Atom.No.Position = UDim2.new(0.395397007, 0, 0.798295438, 0)
 Atom.No.Size = UDim2.new(0, 201, 0, 52)
 Atom.No.Font = Enum.Font.SourceSansBold
 Atom.No.Text = "No"
@@ -1057,21 +1057,43 @@ Atom.No.TextScaled = true
 Atom.No.TextSize = 14.000
 Atom.No.TextWrapped = true
 
-Atom.UICorner_24.Parent = Atom.No
+Atom.UICorner_23.Parent = Atom.No
 
 Atom.TextLabel_19.Parent = Atom.Leave
 Atom.TextLabel_19.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 Atom.TextLabel_19.BackgroundTransparency = 1.000
 Atom.TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.TextLabel_19.BorderSizePixel = 0
-Atom.TextLabel_19.Position = UDim2.new(0.00166666671, 0, 0.113636367, 0)
+Atom.TextLabel_19.Position = UDim2.new(-0.23036623, 0, 0.105113633, 0)
 Atom.TextLabel_19.Size = UDim2.new(0, 600, 0, 227)
 Atom.TextLabel_19.Font = Enum.Font.SourceSansBold
 Atom.TextLabel_19.Text = "If you click yes, the cheat will be deleted from the game and you will have to enter with a new activation."
-Atom.TextLabel_19.TextColor3 = Color3.fromRGB(50, 50, 50)
+Atom.TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 Atom.TextLabel_19.TextScaled = true
 Atom.TextLabel_19.TextSize = 14.000
 Atom.TextLabel_19.TextWrapped = true
+
+Atom.Frame_4.Parent = Atom.Leave
+Atom.Frame_4.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Atom.Frame_4.BackgroundTransparency = 0.200
+Atom.Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.Frame_4.BorderSizePixel = 0
+Atom.Frame_4.Position = UDim2.new(-0.23819302, 0, 0, 0)
+Atom.Frame_4.Size = UDim2.new(0, 116, 0, 352)
+Atom.Frame_4.ZIndex = 0
+
+Atom.Background_2.Name = "Background"
+Atom.Background_2.Parent = Atom.Frame_4
+Atom.Background_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Atom.Background_2.BackgroundTransparency = 1.000
+Atom.Background_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.Background_2.BorderSizePixel = 0
+Atom.Background_2.Position = UDim2.new(-0.000921841303, 0, 0, 0)
+Atom.Background_2.Size = UDim2.new(1.00092173, 0, 1, 0)
+Atom.Background_2.ZIndex = 0
+Atom.Background_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Atom.Background_2.ImageTransparency = 0.800
+Atom.Background_2.ScaleType = Enum.ScaleType.Crop
 
 Atom.Execution_2.Name = "Execution"
 Atom.Execution_2.Parent = Atom.Main
@@ -1113,7 +1135,7 @@ Atom.SctiptBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 Atom.SctiptBox.TextSize = 50.000
 Atom.SctiptBox.TextWrapped = true
 
-Atom.UICorner_25.Parent = Atom.SctiptBox
+Atom.UICorner_24.Parent = Atom.SctiptBox
 
 Atom.Execute.Name = "Execute"
 Atom.Execute.Parent = Atom.Execution_2
@@ -1129,7 +1151,7 @@ Atom.Execute.TextScaled = true
 Atom.Execute.TextSize = 14.000
 Atom.Execute.TextWrapped = true
 
-Atom.UICorner_26.Parent = Atom.Execute
+Atom.UICorner_25.Parent = Atom.Execute
 
 Atom.Clear.Name = "Clear"
 Atom.Clear.Parent = Atom.Execution_2
@@ -1145,7 +1167,7 @@ Atom.Clear.TextScaled = true
 Atom.Clear.TextSize = 14.000
 Atom.Clear.TextWrapped = true
 
-Atom.UICorner_27.Parent = Atom.Clear
+Atom.UICorner_26.Parent = Atom.Clear
 
 Atom.Place.Name = "Place"
 Atom.Place.Parent = Atom.Main
@@ -1177,7 +1199,7 @@ Atom.FLY.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.FLY.BorderSizePixel = 0
 Atom.FLY.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_28.Parent = Atom.FLY
+Atom.UICorner_27.Parent = Atom.FLY
 
 Atom.TextLabel_21.Parent = Atom.FLY
 Atom.TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1215,8 +1237,8 @@ Atom.Status.BorderSizePixel = 0
 Atom.Status.Position = UDim2.new(0.728205144, 0, 0.140845075, 0)
 Atom.Status.Size = UDim2.new(0, 100, 0, 50)
 
-Atom.UICorner_29.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_29.Parent = Atom.Status
+Atom.UICorner_28.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_28.Parent = Atom.Status
 
 Atom.Disabled.Name = "Disabled"
 Atom.Disabled.Parent = Atom.Status
@@ -1225,8 +1247,8 @@ Atom.Disabled.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Disabled.BorderSizePixel = 0
 Atom.Disabled.Size = UDim2.new(0, 50, 0, 50)
 
-Atom.UICorner_30.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_30.Parent = Atom.Disabled
+Atom.UICorner_29.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_29.Parent = Atom.Disabled
 
 Atom.Enabled.Name = "Enabled"
 Atom.Enabled.Parent = Atom.Status
@@ -1237,8 +1259,8 @@ Atom.Enabled.Position = UDim2.new(0.5, 0, 0, 0)
 Atom.Enabled.Size = UDim2.new(0, 50, 0, 50)
 Atom.Enabled.Visible = false
 
-Atom.UICorner_31.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_31.Parent = Atom.Enabled
+Atom.UICorner_30.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_30.Parent = Atom.Enabled
 
 Atom.Button_7.Name = "Button"
 Atom.Button_7.Parent = Atom.Status
@@ -1268,7 +1290,7 @@ Atom.Speed.TextScaled = true
 Atom.Speed.TextSize = 14.000
 Atom.Speed.TextWrapped = true
 
-Atom.UICorner_32.Parent = Atom.Speed
+Atom.UICorner_31.Parent = Atom.Speed
 
 Atom.NOCLIP.Name = "NOCLIP"
 Atom.NOCLIP.Parent = Atom.ScrollingFrame
@@ -1277,7 +1299,7 @@ Atom.NOCLIP.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.NOCLIP.BorderSizePixel = 0
 Atom.NOCLIP.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_33.Parent = Atom.NOCLIP
+Atom.UICorner_32.Parent = Atom.NOCLIP
 
 Atom.TextLabel_23.Parent = Atom.NOCLIP
 Atom.TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1315,8 +1337,8 @@ Atom.Status_2.BorderSizePixel = 0
 Atom.Status_2.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Atom.Status_2.Size = UDim2.new(0, 100, 0, 50)
 
-Atom.UICorner_34.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_34.Parent = Atom.Status_2
+Atom.UICorner_33.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_33.Parent = Atom.Status_2
 
 Atom.Disabled_2.Name = "Disabled"
 Atom.Disabled_2.Parent = Atom.Status_2
@@ -1325,8 +1347,8 @@ Atom.Disabled_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Disabled_2.BorderSizePixel = 0
 Atom.Disabled_2.Size = UDim2.new(0, 50, 0, 50)
 
-Atom.UICorner_35.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_35.Parent = Atom.Disabled_2
+Atom.UICorner_34.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_34.Parent = Atom.Disabled_2
 
 Atom.Enabled_2.Name = "Enabled"
 Atom.Enabled_2.Parent = Atom.Status_2
@@ -1337,8 +1359,8 @@ Atom.Enabled_2.Position = UDim2.new(0.5, 0, 0, 0)
 Atom.Enabled_2.Size = UDim2.new(0, 50, 0, 50)
 Atom.Enabled_2.Visible = false
 
-Atom.UICorner_36.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_36.Parent = Atom.Enabled_2
+Atom.UICorner_35.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_35.Parent = Atom.Enabled_2
 
 Atom.Button_8.Name = "Button"
 Atom.Button_8.Parent = Atom.Status_2
@@ -1359,7 +1381,7 @@ Atom.AIM.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.AIM.BorderSizePixel = 0
 Atom.AIM.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_37.Parent = Atom.AIM
+Atom.UICorner_36.Parent = Atom.AIM
 
 Atom.TextLabel_25.Parent = Atom.AIM
 Atom.TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1397,8 +1419,8 @@ Atom.Status_3.BorderSizePixel = 0
 Atom.Status_3.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Atom.Status_3.Size = UDim2.new(0, 100, 0, 50)
 
-Atom.UICorner_38.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_38.Parent = Atom.Status_3
+Atom.UICorner_37.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_37.Parent = Atom.Status_3
 
 Atom.Disabled_3.Name = "Disabled"
 Atom.Disabled_3.Parent = Atom.Status_3
@@ -1407,8 +1429,8 @@ Atom.Disabled_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Disabled_3.BorderSizePixel = 0
 Atom.Disabled_3.Size = UDim2.new(0, 50, 0, 50)
 
-Atom.UICorner_39.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_39.Parent = Atom.Disabled_3
+Atom.UICorner_38.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_38.Parent = Atom.Disabled_3
 
 Atom.Enabled_3.Name = "Enabled"
 Atom.Enabled_3.Parent = Atom.Status_3
@@ -1419,8 +1441,8 @@ Atom.Enabled_3.Position = UDim2.new(0.5, 0, 0, 0)
 Atom.Enabled_3.Size = UDim2.new(0, 50, 0, 50)
 Atom.Enabled_3.Visible = false
 
-Atom.UICorner_40.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_40.Parent = Atom.Enabled_3
+Atom.UICorner_39.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_39.Parent = Atom.Enabled_3
 
 Atom.Button_9.Name = "Button"
 Atom.Button_9.Parent = Atom.Status_3
@@ -1441,7 +1463,7 @@ Atom.ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.ESP.BorderSizePixel = 0
 Atom.ESP.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_41.Parent = Atom.ESP
+Atom.UICorner_40.Parent = Atom.ESP
 
 Atom.TextLabel_27.Parent = Atom.ESP
 Atom.TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1479,8 +1501,8 @@ Atom.Status_4.BorderSizePixel = 0
 Atom.Status_4.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Atom.Status_4.Size = UDim2.new(0, 100, 0, 50)
 
-Atom.UICorner_42.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_42.Parent = Atom.Status_4
+Atom.UICorner_41.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_41.Parent = Atom.Status_4
 
 Atom.Disabled_4.Name = "Disabled"
 Atom.Disabled_4.Parent = Atom.Status_4
@@ -1489,8 +1511,8 @@ Atom.Disabled_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Disabled_4.BorderSizePixel = 0
 Atom.Disabled_4.Size = UDim2.new(0, 50, 0, 50)
 
-Atom.UICorner_43.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_43.Parent = Atom.Disabled_4
+Atom.UICorner_42.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_42.Parent = Atom.Disabled_4
 
 Atom.Enabled_4.Name = "Enabled"
 Atom.Enabled_4.Parent = Atom.Status_4
@@ -1501,8 +1523,8 @@ Atom.Enabled_4.Position = UDim2.new(0.5, 0, 0, 0)
 Atom.Enabled_4.Size = UDim2.new(0, 50, 0, 50)
 Atom.Enabled_4.Visible = false
 
-Atom.UICorner_44.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_44.Parent = Atom.Enabled_4
+Atom.UICorner_43.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_43.Parent = Atom.Enabled_4
 
 Atom.Button_10.Name = "Button"
 Atom.Button_10.Parent = Atom.Status_4
@@ -1523,7 +1545,7 @@ Atom.TELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.TELEPORT.BorderSizePixel = 0
 Atom.TELEPORT.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_45.Parent = Atom.TELEPORT
+Atom.UICorner_44.Parent = Atom.TELEPORT
 
 Atom.TextLabel_29.Parent = Atom.TELEPORT
 Atom.TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1568,7 +1590,7 @@ Atom.TextBox.TextScaled = true
 Atom.TextBox.TextSize = 14.000
 Atom.TextBox.TextWrapped = true
 
-Atom.UICorner_46.Parent = Atom.TextBox
+Atom.UICorner_45.Parent = Atom.TextBox
 
 Atom.DORSALTELEPORT.Name = "DORSALTELEPORT"
 Atom.DORSALTELEPORT.Parent = Atom.ScrollingFrame
@@ -1577,7 +1599,7 @@ Atom.DORSALTELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.DORSALTELEPORT.BorderSizePixel = 0
 Atom.DORSALTELEPORT.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_47.Parent = Atom.DORSALTELEPORT
+Atom.UICorner_46.Parent = Atom.DORSALTELEPORT
 
 Atom.TextLabel_31.Parent = Atom.DORSALTELEPORT
 Atom.TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1615,8 +1637,8 @@ Atom.Status_5.BorderSizePixel = 0
 Atom.Status_5.Position = UDim2.new(0.728205144, 0, 0.140845075, 0)
 Atom.Status_5.Size = UDim2.new(0, 100, 0, 50)
 
-Atom.UICorner_48.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_48.Parent = Atom.Status_5
+Atom.UICorner_47.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_47.Parent = Atom.Status_5
 
 Atom.Disabled_5.Name = "Disabled"
 Atom.Disabled_5.Parent = Atom.Status_5
@@ -1625,8 +1647,8 @@ Atom.Disabled_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Disabled_5.BorderSizePixel = 0
 Atom.Disabled_5.Size = UDim2.new(0, 50, 0, 50)
 
-Atom.UICorner_49.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_49.Parent = Atom.Disabled_5
+Atom.UICorner_48.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_48.Parent = Atom.Disabled_5
 
 Atom.Enabled_5.Name = "Enabled"
 Atom.Enabled_5.Parent = Atom.Status_5
@@ -1637,8 +1659,8 @@ Atom.Enabled_5.Position = UDim2.new(0.5, 0, 0, 0)
 Atom.Enabled_5.Size = UDim2.new(0, 50, 0, 50)
 Atom.Enabled_5.Visible = false
 
-Atom.UICorner_50.CornerRadius = UDim.new(1, 0)
-Atom.UICorner_50.Parent = Atom.Enabled_5
+Atom.UICorner_49.CornerRadius = UDim.new(1, 0)
+Atom.UICorner_49.Parent = Atom.Enabled_5
 
 Atom.Button_11.Name = "Button"
 Atom.Button_11.Parent = Atom.Status_5
@@ -1668,7 +1690,7 @@ Atom.PlrName.TextScaled = true
 Atom.PlrName.TextSize = 14.000
 Atom.PlrName.TextWrapped = true
 
-Atom.UICorner_51.Parent = Atom.PlrName
+Atom.UICorner_50.Parent = Atom.PlrName
 
 Atom.TextLabel_33.Parent = Atom.Place
 Atom.TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1715,7 +1737,7 @@ Atom.Walkspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Walkspeed.BorderSizePixel = 0
 Atom.Walkspeed.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_52.Parent = Atom.Walkspeed
+Atom.UICorner_51.Parent = Atom.Walkspeed
 
 Atom.TextLabel_34.Parent = Atom.Walkspeed
 Atom.TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1746,7 +1768,7 @@ Atom.TextBox_2.TextScaled = true
 Atom.TextBox_2.TextSize = 14.000
 Atom.TextBox_2.TextWrapped = true
 
-Atom.UICorner_53.Parent = Atom.TextBox_2
+Atom.UICorner_52.Parent = Atom.TextBox_2
 
 Atom.TextLabel_35.Parent = Atom.Walkspeed
 Atom.TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1769,7 +1791,7 @@ Atom.JumpPower.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.JumpPower.BorderSizePixel = 0
 Atom.JumpPower.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_54.Parent = Atom.JumpPower
+Atom.UICorner_53.Parent = Atom.JumpPower
 
 Atom.TextLabel_36.Parent = Atom.JumpPower
 Atom.TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1800,7 +1822,7 @@ Atom.TextBox_3.TextScaled = true
 Atom.TextBox_3.TextSize = 14.000
 Atom.TextBox_3.TextWrapped = true
 
-Atom.UICorner_55.Parent = Atom.TextBox_3
+Atom.UICorner_54.Parent = Atom.TextBox_3
 
 Atom.TextLabel_37.Parent = Atom.JumpPower
 Atom.TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1823,7 +1845,7 @@ Atom.FOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.FOV.BorderSizePixel = 0
 Atom.FOV.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_56.Parent = Atom.FOV
+Atom.UICorner_55.Parent = Atom.FOV
 
 Atom.TextLabel_38.Parent = Atom.FOV
 Atom.TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1854,7 +1876,7 @@ Atom.TextBox_4.TextScaled = true
 Atom.TextBox_4.TextSize = 14.000
 Atom.TextBox_4.TextWrapped = true
 
-Atom.UICorner_57.Parent = Atom.TextBox_4
+Atom.UICorner_56.Parent = Atom.TextBox_4
 
 Atom.TextLabel_39.Parent = Atom.FOV
 Atom.TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1877,7 +1899,7 @@ Atom.Animation.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.Animation.BorderSizePixel = 0
 Atom.Animation.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_58.Parent = Atom.Animation
+Atom.UICorner_57.Parent = Atom.Animation
 
 Atom.TextLabel_40.Parent = Atom.Animation
 Atom.TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1908,7 +1930,7 @@ Atom.TextBox_5.TextScaled = true
 Atom.TextBox_5.TextSize = 14.000
 Atom.TextBox_5.TextWrapped = true
 
-Atom.UICorner_59.Parent = Atom.TextBox_5
+Atom.UICorner_58.Parent = Atom.TextBox_5
 
 Atom.TextLabel_41.Parent = Atom.Animation
 Atom.TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1969,7 +1991,7 @@ Atom.ConfigText.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.ConfigText.BorderSizePixel = 0
 Atom.ConfigText.Size = UDim2.new(0, 780, 0, 47)
 
-Atom.UICorner_60.Parent = Atom.ConfigText
+Atom.UICorner_59.Parent = Atom.ConfigText
 
 Atom.TextLabel_43.Parent = Atom.ConfigText
 Atom.TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2006,7 +2028,7 @@ Atom.FLY_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.FLY_2.BorderSizePixel = 0
 Atom.FLY_2.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_61.Parent = Atom.FLY_2
+Atom.UICorner_60.Parent = Atom.FLY_2
 
 Atom.TextLabel_45.Parent = Atom.FLY_2
 Atom.TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2037,7 +2059,7 @@ Atom.TextBox_6.TextScaled = true
 Atom.TextBox_6.TextSize = 14.000
 Atom.TextBox_6.TextWrapped = true
 
-Atom.UICorner_62.Parent = Atom.TextBox_6
+Atom.UICorner_61.Parent = Atom.TextBox_6
 
 Atom.TextLabel_46.Parent = Atom.FLY_2
 Atom.TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2060,7 +2082,7 @@ Atom.AIM_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.AIM_2.BorderSizePixel = 0
 Atom.AIM_2.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_63.Parent = Atom.AIM_2
+Atom.UICorner_62.Parent = Atom.AIM_2
 
 Atom.TextLabel_47.Parent = Atom.AIM_2
 Atom.TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2091,7 +2113,7 @@ Atom.TextBox_7.TextScaled = true
 Atom.TextBox_7.TextSize = 14.000
 Atom.TextBox_7.TextWrapped = true
 
-Atom.UICorner_64.Parent = Atom.TextBox_7
+Atom.UICorner_63.Parent = Atom.TextBox_7
 
 Atom.TextLabel_48.Parent = Atom.AIM_2
 Atom.TextLabel_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2114,7 +2136,7 @@ Atom.NOCLIP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.NOCLIP_2.BorderSizePixel = 0
 Atom.NOCLIP_2.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_65.Parent = Atom.NOCLIP_2
+Atom.UICorner_64.Parent = Atom.NOCLIP_2
 
 Atom.TextLabel_49.Parent = Atom.NOCLIP_2
 Atom.TextLabel_49.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2145,7 +2167,7 @@ Atom.TextBox_8.TextScaled = true
 Atom.TextBox_8.TextSize = 14.000
 Atom.TextBox_8.TextWrapped = true
 
-Atom.UICorner_66.Parent = Atom.TextBox_8
+Atom.UICorner_65.Parent = Atom.TextBox_8
 
 Atom.TextLabel_50.Parent = Atom.NOCLIP_2
 Atom.TextLabel_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2168,7 +2190,7 @@ Atom.ESP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.ESP_2.BorderSizePixel = 0
 Atom.ESP_2.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_67.Parent = Atom.ESP_2
+Atom.UICorner_66.Parent = Atom.ESP_2
 
 Atom.TextLabel_51.Parent = Atom.ESP_2
 Atom.TextLabel_51.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2199,7 +2221,7 @@ Atom.TextBox_9.TextScaled = true
 Atom.TextBox_9.TextSize = 14.000
 Atom.TextBox_9.TextWrapped = true
 
-Atom.UICorner_68.Parent = Atom.TextBox_9
+Atom.UICorner_67.Parent = Atom.TextBox_9
 
 Atom.TextLabel_52.Parent = Atom.ESP_2
 Atom.TextLabel_52.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2222,7 +2244,7 @@ Atom.TELEPORT_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.TELEPORT_2.BorderSizePixel = 0
 Atom.TELEPORT_2.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_69.Parent = Atom.TELEPORT_2
+Atom.UICorner_68.Parent = Atom.TELEPORT_2
 
 Atom.TextLabel_53.Parent = Atom.TELEPORT_2
 Atom.TextLabel_53.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2253,7 +2275,7 @@ Atom.TextBox_10.TextScaled = true
 Atom.TextBox_10.TextSize = 14.000
 Atom.TextBox_10.TextWrapped = true
 
-Atom.UICorner_70.Parent = Atom.TextBox_10
+Atom.UICorner_69.Parent = Atom.TextBox_10
 
 Atom.TextLabel_54.Parent = Atom.TELEPORT_2
 Atom.TextLabel_54.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2276,7 +2298,7 @@ Atom.DORSALTELEPORT_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.DORSALTELEPORT_2.BorderSizePixel = 0
 Atom.DORSALTELEPORT_2.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_71.Parent = Atom.DORSALTELEPORT_2
+Atom.UICorner_70.Parent = Atom.DORSALTELEPORT_2
 
 Atom.TextLabel_55.Parent = Atom.DORSALTELEPORT_2
 Atom.TextLabel_55.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2307,7 +2329,7 @@ Atom.TextBox_11.TextScaled = true
 Atom.TextBox_11.TextSize = 14.000
 Atom.TextBox_11.TextWrapped = true
 
-Atom.UICorner_72.Parent = Atom.TextBox_11
+Atom.UICorner_71.Parent = Atom.TextBox_11
 
 Atom.TextLabel_56.Parent = Atom.DORSALTELEPORT_2
 Atom.TextLabel_56.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2330,7 +2352,7 @@ Atom.WALKSPEED.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.WALKSPEED.BorderSizePixel = 0
 Atom.WALKSPEED.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_73.Parent = Atom.WALKSPEED
+Atom.UICorner_72.Parent = Atom.WALKSPEED
 
 Atom.TextLabel_57.Parent = Atom.WALKSPEED
 Atom.TextLabel_57.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2361,7 +2383,7 @@ Atom.TextBox_12.TextScaled = true
 Atom.TextBox_12.TextSize = 14.000
 Atom.TextBox_12.TextWrapped = true
 
-Atom.UICorner_74.Parent = Atom.TextBox_12
+Atom.UICorner_73.Parent = Atom.TextBox_12
 
 Atom.TextLabel_58.Parent = Atom.WALKSPEED
 Atom.TextLabel_58.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2384,7 +2406,7 @@ Atom.JUMPPOWER.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.JUMPPOWER.BorderSizePixel = 0
 Atom.JUMPPOWER.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_75.Parent = Atom.JUMPPOWER
+Atom.UICorner_74.Parent = Atom.JUMPPOWER
 
 Atom.TextLabel_59.Parent = Atom.JUMPPOWER
 Atom.TextLabel_59.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2415,7 +2437,7 @@ Atom.TextBox_13.TextScaled = true
 Atom.TextBox_13.TextSize = 14.000
 Atom.TextBox_13.TextWrapped = true
 
-Atom.UICorner_76.Parent = Atom.TextBox_13
+Atom.UICorner_75.Parent = Atom.TextBox_13
 
 Atom.TextLabel_60.Parent = Atom.JUMPPOWER
 Atom.TextLabel_60.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2438,7 +2460,7 @@ Atom.ConfigText_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.ConfigText_2.BorderSizePixel = 0
 Atom.ConfigText_2.Size = UDim2.new(0, 780, 0, 47)
 
-Atom.UICorner_77.Parent = Atom.ConfigText_2
+Atom.UICorner_76.Parent = Atom.ConfigText_2
 
 Atom.TextLabel_61.Parent = Atom.ConfigText_2
 Atom.TextLabel_61.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2475,7 +2497,7 @@ Atom.MenuBlur.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Atom.MenuBlur.BorderSizePixel = 0
 Atom.MenuBlur.Size = UDim2.new(0, 780, 0, 71)
 
-Atom.UICorner_78.Parent = Atom.MenuBlur
+Atom.UICorner_77.Parent = Atom.MenuBlur
 
 Atom.TextLabel_63.Parent = Atom.MenuBlur
 Atom.TextLabel_63.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2506,7 +2528,7 @@ Atom.TextBox_14.TextScaled = true
 Atom.TextBox_14.TextSize = 14.000
 Atom.TextBox_14.TextWrapped = true
 
-Atom.UICorner_79.Parent = Atom.TextBox_14
+Atom.UICorner_78.Parent = Atom.TextBox_14
 
 Atom.TextLabel_64.Parent = Atom.MenuBlur
 Atom.TextLabel_64.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2539,14 +2561,14 @@ Atom.TextLabel_65.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function ENBKD_fake_script() -- Atom.Avatar.Picture 
+local function RDRCOI_fake_script() -- Atom.Avatar.Picture 
 	local script = Instance.new('LocalScript', Atom.Avatar)
 
 	local ImageLabel = script.Parent
 	ImageLabel.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=1000&y=1000&userId="..game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(ENBKD_fake_script)()
-local function WHOOISO_fake_script() -- Atom.UIListLayout.LocalScript 
+coroutine.wrap(RDRCOI_fake_script)()
+local function ZDHYG_fake_script() -- Atom.UIListLayout.LocalScript 
 	local script = Instance.new('LocalScript', Atom.UIListLayout)
 
 	-- Atom Protection
@@ -2627,7 +2649,7 @@ local function WHOOISO_fake_script() -- Atom.UIListLayout.LocalScript
 	
 	CheckFiles()
 end
-local function DGXOF_fake_script() -- Atom.Home.CoreClient 
+local function QUIVXKE_fake_script() -- Atom.Home.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Home)
 
 	local Button = script.Parent.Button
@@ -2652,8 +2674,8 @@ local function DGXOF_fake_script() -- Atom.Home.CoreClient
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(DGXOF_fake_script)()
-local function ZAEVNBJ_fake_script() -- Atom.Game.CoreClient 
+coroutine.wrap(QUIVXKE_fake_script)()
+local function KGHG_fake_script() -- Atom.Game.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Game)
 
 	local Button = script.Parent.Button
@@ -2678,8 +2700,8 @@ local function ZAEVNBJ_fake_script() -- Atom.Game.CoreClient
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(ZAEVNBJ_fake_script)()
-local function WEYFYYN_fake_script() -- Atom.Player.CoreClient 
+coroutine.wrap(KGHG_fake_script)()
+local function FHHJ_fake_script() -- Atom.Player.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Player)
 
 	local Button = script.Parent.Button
@@ -2704,8 +2726,8 @@ local function WEYFYYN_fake_script() -- Atom.Player.CoreClient
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(WEYFYYN_fake_script)()
-local function TWKRPS_fake_script() -- Atom.Execution.CoreClient 
+coroutine.wrap(FHHJ_fake_script)()
+local function BTYXYQ_fake_script() -- Atom.Execution.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Execution)
 
 	local Button = script.Parent.Button
@@ -2730,8 +2752,8 @@ local function TWKRPS_fake_script() -- Atom.Execution.CoreClient
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(TWKRPS_fake_script)()
-local function UHVW_fake_script() -- Atom.Debugger.CoreClient 
+coroutine.wrap(BTYXYQ_fake_script)()
+local function VHQYOH_fake_script() -- Atom.Debugger.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Debugger)
 
 	local Button = script.Parent.Button
@@ -2747,8 +2769,8 @@ local function UHVW_fake_script() -- Atom.Debugger.CoreClient
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/A.Debugger"))()
 	end)
 end
-coroutine.wrap(UHVW_fake_script)()
-local function YUFFAE_fake_script() -- Atom.Config.CoreClient 
+coroutine.wrap(VHQYOH_fake_script)()
+local function JLPED_fake_script() -- Atom.Config.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Config)
 
 	local Button = script.Parent.Button
@@ -2773,8 +2795,8 @@ local function YUFFAE_fake_script() -- Atom.Config.CoreClient
 		ConfigFrame.Visible = true
 	end)
 end
-coroutine.wrap(YUFFAE_fake_script)()
-local function JMWQGWO_fake_script() -- Atom.Background.LocalScript 
+coroutine.wrap(JLPED_fake_script)()
+local function BHRNMER_fake_script() -- Atom.Background.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Background)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -2788,8 +2810,8 @@ local function JMWQGWO_fake_script() -- Atom.Background.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(JMWQGWO_fake_script)()
-local function YXFCGCL_fake_script() -- Atom.Frame.AccountModule 
+coroutine.wrap(BHRNMER_fake_script)()
+local function BBSVMJZ_fake_script() -- Atom.Frame.AccountModule 
 	local script = Instance.new('LocalScript', Atom.Frame)
 
 	local LoginBox = script.Parent.Login
@@ -2895,15 +2917,15 @@ local function YXFCGCL_fake_script() -- Atom.Frame.AccountModule
 	-- Запуск защиты в отдельном потоке
 	spawn(ProtectFrame)
 end
-coroutine.wrap(YXFCGCL_fake_script)()
-local function DIAPORT_fake_script() -- Atom.TextLabel_13.LocalScript 
+coroutine.wrap(BBSVMJZ_fake_script)()
+local function NQMKNR_fake_script() -- Atom.TextLabel_13.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_13)
 
 	local Text = script.Parent
 	Text.Text = "Atom - Client: "..game.Name
 end
-coroutine.wrap(DIAPORT_fake_script)()
-local function DGMV_fake_script() -- Atom.ImageLabel_8.LocalScript 
+coroutine.wrap(NQMKNR_fake_script)()
+local function YQRT_fake_script() -- Atom.ImageLabel_8.LocalScript 
 	local script = Instance.new('LocalScript', Atom.ImageLabel_8)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -2917,29 +2939,29 @@ local function DGMV_fake_script() -- Atom.ImageLabel_8.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(DGMV_fake_script)()
-local function AUDZ_fake_script() -- Atom.TextLabel_14.LocalScript 
+coroutine.wrap(YQRT_fake_script)()
+local function WXRPCEM_fake_script() -- Atom.TextLabel_14.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_14)
 
 	local Text = script.Parent
 	Text.Text = "Place: "..game.Name
 end
-coroutine.wrap(AUDZ_fake_script)()
-local function CIRFK_fake_script() -- Atom.TextLabel_15.LocalScript 
+coroutine.wrap(WXRPCEM_fake_script)()
+local function HUEJU_fake_script() -- Atom.TextLabel_15.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_15)
 
 	local Text = script.Parent
 	Text.Text = "PlaceID: "..game.PlaceId
 end
-coroutine.wrap(CIRFK_fake_script)()
-local function GTCH_fake_script() -- Atom.TextLabel_16.LocalScript 
+coroutine.wrap(HUEJU_fake_script)()
+local function DVXAXTD_fake_script() -- Atom.TextLabel_16.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_16)
 
 	local Text = script.Parent
 	Text.Text = "CreatorID: "..game.CreatorId
 end
-coroutine.wrap(GTCH_fake_script)()
-local function TMCKT_fake_script() -- Atom.Rejoin.LocalScript 
+coroutine.wrap(DVXAXTD_fake_script)()
+local function OBVBWJZ_fake_script() -- Atom.Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Rejoin)
 
 	local TeleportService = game:GetService("TeleportService")
@@ -2951,8 +2973,8 @@ local function TMCKT_fake_script() -- Atom.Rejoin.LocalScript
 		TeleportService:Teleport(PlaceID, Player)
 	end)
 end
-coroutine.wrap(TMCKT_fake_script)()
-local function HRVPBH_fake_script() -- Atom.Leave.Dragging 
+coroutine.wrap(OBVBWJZ_fake_script)()
+local function FACELMT_fake_script() -- Atom.Leave.Dragging 
 	local script = Instance.new('LocalScript', Atom.Leave)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2996,8 +3018,23 @@ local function HRVPBH_fake_script() -- Atom.Leave.Dragging
 		end
 	end)
 end
-coroutine.wrap(HRVPBH_fake_script)()
-local function CPHR_fake_script() -- Atom.MainFrame.LocalScript 
+coroutine.wrap(FACELMT_fake_script)()
+local function RCLLLO_fake_script() -- Atom.Background_2.LocalScript 
+	local script = Instance.new('LocalScript', Atom.Background_2)
+
+	local placeId = game.PlaceId  -- замените на ID вашего плейса
+	local imageLabel = script.Parent
+	
+	local function setPlaceThumbnail(placeId)
+		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
+		imageLabel.Image = thumbnailUrl
+	end
+	
+	setPlaceThumbnail(placeId)
+	
+end
+coroutine.wrap(RCLLLO_fake_script)()
+local function EQDOZA_fake_script() -- Atom.MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', Atom.MainFrame)
 
 	local DeleteButton = script.Parent.Delete
@@ -3018,8 +3055,8 @@ local function CPHR_fake_script() -- Atom.MainFrame.LocalScript
 		SureFrame.Visible = false
 	end)
 end
-coroutine.wrap(CPHR_fake_script)()
-local function NPZCY_fake_script() -- Atom.Execution_2.LocalScript 
+coroutine.wrap(EQDOZA_fake_script)()
+local function ANDW_fake_script() -- Atom.Execution_2.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Execution_2)
 
 	local TextBox = script.Parent.SctiptBox
@@ -3037,8 +3074,8 @@ local function NPZCY_fake_script() -- Atom.Execution_2.LocalScript
 	    Executescript()
 	end)
 end
-coroutine.wrap(NPZCY_fake_script)()
-local function BVOOZA_fake_script() -- Atom.FLY.ButtonManager 
+coroutine.wrap(ANDW_fake_script)()
+local function XJUBWK_fake_script() -- Atom.FLY.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.FLY)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -3174,8 +3211,8 @@ local function BVOOZA_fake_script() -- Atom.FLY.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(BVOOZA_fake_script)()
-local function CFSL_fake_script() -- Atom.NOCLIP.ButtonManager 
+coroutine.wrap(XJUBWK_fake_script)()
+local function ZRYLSRB_fake_script() -- Atom.NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.NOCLIP)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -3289,8 +3326,8 @@ local function CFSL_fake_script() -- Atom.NOCLIP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(CFSL_fake_script)()
-local function NYNCH_fake_script() -- Atom.AIM.ButtonManager 
+coroutine.wrap(ZRYLSRB_fake_script)()
+local function GUHPVLJ_fake_script() -- Atom.AIM.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.AIM)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -3382,8 +3419,8 @@ local function NYNCH_fake_script() -- Atom.AIM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(NYNCH_fake_script)()
-local function RLRLQZC_fake_script() -- Atom.ESP.ButtonManager 
+coroutine.wrap(GUHPVLJ_fake_script)()
+local function ICBUPSJ_fake_script() -- Atom.ESP.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.ESP)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -3431,8 +3468,8 @@ local function RLRLQZC_fake_script() -- Atom.ESP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(RLRLQZC_fake_script)()
-local function HXUWE_fake_script() -- Atom.TELEPORT.ValueManager 
+coroutine.wrap(ICBUPSJ_fake_script)()
+local function ZOJKFOG_fake_script() -- Atom.TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', Atom.TELEPORT)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -3481,8 +3518,8 @@ local function HXUWE_fake_script() -- Atom.TELEPORT.ValueManager
 		end        
 	end)
 end
-coroutine.wrap(HXUWE_fake_script)()
-local function EPMQ_fake_script() -- Atom.DORSALTELEPORT.ButtonManager 
+coroutine.wrap(ZOJKFOG_fake_script)()
+local function MRMTHV_fake_script() -- Atom.DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.DORSALTELEPORT)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -3557,15 +3594,15 @@ local function EPMQ_fake_script() -- Atom.DORSALTELEPORT.ButtonManager
 	end)
 	
 end
-coroutine.wrap(EPMQ_fake_script)()
-local function RSBBU_fake_script() -- Atom.TextLabel_33.LocalScript 
+coroutine.wrap(MRMTHV_fake_script)()
+local function AXJZX_fake_script() -- Atom.TextLabel_33.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_33)
 
 	local Text = script.Parent
 	Text.Text = game.Name
 end
-coroutine.wrap(RSBBU_fake_script)()
-local function QMUK_fake_script() -- Atom.Walkspeed.Manager 
+coroutine.wrap(AXJZX_fake_script)()
+local function YWQY_fake_script() -- Atom.Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Atom.Walkspeed)
 
 	local textbox = script.Parent.TextBox
@@ -3616,8 +3653,8 @@ local function QMUK_fake_script() -- Atom.Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(QMUK_fake_script)()
-local function GXPRIEO_fake_script() -- Atom.JumpPower.Manager 
+coroutine.wrap(YWQY_fake_script)()
+local function AEDQUV_fake_script() -- Atom.JumpPower.Manager 
 	local script = Instance.new('LocalScript', Atom.JumpPower)
 
 	local textbox = script.Parent.TextBox
@@ -3668,8 +3705,8 @@ local function GXPRIEO_fake_script() -- Atom.JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(GXPRIEO_fake_script)()
-local function SUNYSC_fake_script() -- Atom.FOV.Manager 
+coroutine.wrap(AEDQUV_fake_script)()
+local function NYGJP_fake_script() -- Atom.FOV.Manager 
 	local script = Instance.new('LocalScript', Atom.FOV)
 
 	local textbox = script.Parent.TextBox
@@ -3707,8 +3744,8 @@ local function SUNYSC_fake_script() -- Atom.FOV.Manager
 	end)
 	
 end
-coroutine.wrap(SUNYSC_fake_script)()
-local function AWDHKKS_fake_script() -- Atom.Animation.Manager 
+coroutine.wrap(NYGJP_fake_script)()
+local function NEIH_fake_script() -- Atom.Animation.Manager 
 	local script = Instance.new('LocalScript', Atom.Animation)
 
 	local textbox = script.Parent.TextBox
@@ -3756,8 +3793,8 @@ local function AWDHKKS_fake_script() -- Atom.Animation.Manager
 		end
 	end)
 end
-coroutine.wrap(AWDHKKS_fake_script)()
-local function OCLYC_fake_script() -- Atom.FLY_2.Manager 
+coroutine.wrap(NEIH_fake_script)()
+local function GJDRVY_fake_script() -- Atom.FLY_2.Manager 
 	local script = Instance.new('LocalScript', Atom.FLY_2)
 
 	local Textbox = script.Parent.TextBox
@@ -3771,8 +3808,8 @@ local function OCLYC_fake_script() -- Atom.FLY_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(OCLYC_fake_script)()
-local function MBCK_fake_script() -- Atom.AIM_2.Manager 
+coroutine.wrap(GJDRVY_fake_script)()
+local function UYIKGG_fake_script() -- Atom.AIM_2.Manager 
 	local script = Instance.new('LocalScript', Atom.AIM_2)
 
 	local Textbox = script.Parent.TextBox
@@ -3786,8 +3823,8 @@ local function MBCK_fake_script() -- Atom.AIM_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(MBCK_fake_script)()
-local function OANSLJW_fake_script() -- Atom.NOCLIP_2.Manager 
+coroutine.wrap(UYIKGG_fake_script)()
+local function ICMWDI_fake_script() -- Atom.NOCLIP_2.Manager 
 	local script = Instance.new('LocalScript', Atom.NOCLIP_2)
 
 	local Textbox = script.Parent.TextBox
@@ -3801,8 +3838,8 @@ local function OANSLJW_fake_script() -- Atom.NOCLIP_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(OANSLJW_fake_script)()
-local function WQWLZB_fake_script() -- Atom.ESP_2.Manager 
+coroutine.wrap(ICMWDI_fake_script)()
+local function XBVDWF_fake_script() -- Atom.ESP_2.Manager 
 	local script = Instance.new('LocalScript', Atom.ESP_2)
 
 	local Textbox = script.Parent.TextBox
@@ -3816,8 +3853,8 @@ local function WQWLZB_fake_script() -- Atom.ESP_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(WQWLZB_fake_script)()
-local function MNVXPQW_fake_script() -- Atom.TELEPORT_2.Manager 
+coroutine.wrap(XBVDWF_fake_script)()
+local function NJNH_fake_script() -- Atom.TELEPORT_2.Manager 
 	local script = Instance.new('LocalScript', Atom.TELEPORT_2)
 
 	local Textbox = script.Parent.TextBox
@@ -3831,8 +3868,8 @@ local function MNVXPQW_fake_script() -- Atom.TELEPORT_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(MNVXPQW_fake_script)()
-local function DYNBQ_fake_script() -- Atom.DORSALTELEPORT_2.Manager 
+coroutine.wrap(NJNH_fake_script)()
+local function FGKATTL_fake_script() -- Atom.DORSALTELEPORT_2.Manager 
 	local script = Instance.new('LocalScript', Atom.DORSALTELEPORT_2)
 
 	local Textbox = script.Parent.TextBox
@@ -3846,8 +3883,8 @@ local function DYNBQ_fake_script() -- Atom.DORSALTELEPORT_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(DYNBQ_fake_script)()
-local function POCMHSJ_fake_script() -- Atom.WALKSPEED.Manager 
+coroutine.wrap(FGKATTL_fake_script)()
+local function TZQMNJ_fake_script() -- Atom.WALKSPEED.Manager 
 	local script = Instance.new('LocalScript', Atom.WALKSPEED)
 
 	local Textbox = script.Parent.TextBox
@@ -3863,8 +3900,8 @@ local function POCMHSJ_fake_script() -- Atom.WALKSPEED.Manager
 	
 	
 end
-coroutine.wrap(POCMHSJ_fake_script)()
-local function AERM_fake_script() -- Atom.JUMPPOWER.Manager 
+coroutine.wrap(TZQMNJ_fake_script)()
+local function BNVZHC_fake_script() -- Atom.JUMPPOWER.Manager 
 	local script = Instance.new('LocalScript', Atom.JUMPPOWER)
 
 	local Textbox = script.Parent.TextBox
@@ -3878,8 +3915,8 @@ local function AERM_fake_script() -- Atom.JUMPPOWER.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(AERM_fake_script)()
-local function QLPSNT_fake_script() -- Atom.MenuBlur.Manager 
+coroutine.wrap(BNVZHC_fake_script)()
+local function DBRR_fake_script() -- Atom.MenuBlur.Manager 
 	local script = Instance.new('LocalScript', Atom.MenuBlur)
 
 	local Textbox = script.Parent.TextBox
@@ -3893,8 +3930,8 @@ local function QLPSNT_fake_script() -- Atom.MenuBlur.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(QLPSNT_fake_script)()
-local function CMTAGDS_fake_script() -- Atom.AtomFrame.Dragging 
+coroutine.wrap(DBRR_fake_script)()
+local function BSPHT_fake_script() -- Atom.AtomFrame.Dragging 
 	local script = Instance.new('LocalScript', Atom.AtomFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -3938,8 +3975,8 @@ local function CMTAGDS_fake_script() -- Atom.AtomFrame.Dragging
 		end
 	end)
 end
-coroutine.wrap(CMTAGDS_fake_script)()
-local function FPOJ_fake_script() -- Atom.AtomFrame.Atom.Core 
+coroutine.wrap(BSPHT_fake_script)()
+local function UTSCBTB_fake_script() -- Atom.AtomFrame.Atom.Core 
 	local script = Instance.new('LocalScript', Atom.AtomFrame)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -3973,5 +4010,5 @@ local function FPOJ_fake_script() -- Atom.AtomFrame.Atom.Core
 	end)
 	
 end
-coroutine.wrap(FPOJ_fake_script)()
-coroutine.wrap(WHOOISO_fake_script)()
+coroutine.wrap(UTSCBTB_fake_script)()
+coroutine.wrap(ZDHYG_fake_script)()
