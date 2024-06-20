@@ -63,7 +63,7 @@ local function createESP(v)
 
                     -- Обновление текста
                     Text.Position = Vector2.new(Vector.X, Vector.Y - 30)
-                    Text.Text = tostring(math.floor(v.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(v.Character.Humanoid.MaxHealth))
+                    Text.Text = "["..tostring(math.floor(v.Character.Humanoid.Health)) .. " / " .. tostring(math.floor(v.Character.Humanoid.MaxHealth)).."]"
                     Text.Visible = true
                 else
                     Tracer.Visible = false
