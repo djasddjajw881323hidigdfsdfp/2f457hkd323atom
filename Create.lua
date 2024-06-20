@@ -19,7 +19,7 @@ local function createESP(v)
     -- Создание квадрата
     local Box = Drawing.new("Quad")
     Box.Visible = false
-    Box.Color = Color3.new(1, 0, 0)
+    Box.Color = Color3.new(1, 1, 1)
     Box.Thickness = 1
     Box.Transparency = 1
     _G.boxes[v.Name] = Box
