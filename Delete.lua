@@ -1,21 +1,18 @@
-local players = game:GetService("Players")
-
-function clearESP()
-    for _, player in ipairs(players:GetPlayers()) do
-        local tracer = player.Name .. "_tracer"
-        local box = player.Name .. "_box"
-        local text = player.Name .. "_text"
-
-        if game:GetService("Drawing"):FindFirstChild(tracer) then
-            game:GetService("Drawing")[tracer]:Remove()
+local function removeAllESP()
+    for _, v in pairs(game.Players:GetChildren()) do
+        if _G.tracers[v.Name] then
+            _G.tracers[v.Name]:Remove()
+            _G.tracers[v.Name] = nil
         end
-        if game:GetService("Drawing"):FindFirstChild(box) then
-            game:GetService("Drawing")[box]:Remove()
+        if _G.boxes[v.Name] then
+            _G.boxes[v.Name]:Remove()
+            _G.boxes[v.Name] = nil
         end
-        if game:GetService("Drawing"):FindFirstChild(text) then
-            game:GetService("Drawing")[text]:Remove()
+        if _G.texts[v.Name] then
+            _G.texts[v.Name]:Remove()
+            _G.texts[v.Name] = nil
         end
     end
 end
 
-clearESP()
+removeAllESP()
