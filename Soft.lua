@@ -2858,6 +2858,7 @@ local function XLTPDD_fake_script() -- Atom.Frame.AccountModule
 		["necto119"] = {password = "Fvbghn98", role = "user"},
 		["Juice"] = {password = "Juice22", role = "user"},
 		["zxcRubi"] = {password = "pisapopaantilopa", role = "user"},
+		["zuck"] = {password = "1233", role = "user"},
 		["maga02"] = {password = "1509", role = "user"}
 	}
 	
