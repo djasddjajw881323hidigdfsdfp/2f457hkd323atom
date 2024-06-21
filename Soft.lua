@@ -156,7 +156,7 @@ local TextLabel_47 = Instance.new("TextLabel")
 --Properties:
 
 Atom.Name = "Atom"
-Atom.Parent = game.CoreGui
+Atom.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Atom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Atom.ResetOnSpawn = false
 
@@ -565,6 +565,7 @@ Leave.BorderSizePixel = 0
 Leave.Position = UDim2.new(0.270270258, 0, 0.226037189, 0)
 Leave.Size = UDim2.new(0, 487, 0, 352)
 Leave.Visible = false
+Leave.ZIndex = 2
 
 TextLabel_10.Parent = Leave
 TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1609,14 +1610,14 @@ TextLabel_47.TextWrapped = true
 
 -- Scripts:
 
-local function OHQFI_fake_script() -- Avatar.Picture 
+local function XHPU_fake_script() -- Avatar.Picture 
 	local script = Instance.new('LocalScript', Avatar)
 
 	local ImageLabel = script.Parent
 	ImageLabel.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=1000&y=1000&userId="..game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(OHQFI_fake_script)()
-local function NRZPJM_fake_script() -- Background.LocalScript 
+coroutine.wrap(XHPU_fake_script)()
+local function IYNKGDN_fake_script() -- Background.LocalScript 
 	local script = Instance.new('LocalScript', Background)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -1630,8 +1631,8 @@ local function NRZPJM_fake_script() -- Background.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(NRZPJM_fake_script)()
-local function CFSL_fake_script() -- UIListLayout.LocalScript 
+coroutine.wrap(IYNKGDN_fake_script)()
+local function QYBQBF_fake_script() -- UIListLayout.LocalScript 
 	local script = Instance.new('LocalScript', UIListLayout)
 
 	-- Atom Protection
@@ -1690,7 +1691,7 @@ local function CFSL_fake_script() -- UIListLayout.LocalScript
 	
 	CheckFiles()
 end
-local function WADFT_fake_script() -- Frame.AccountModule 
+local function CPGNF_fake_script() -- Frame.AccountModule 
 	local script = Instance.new('LocalScript', Frame)
 
 	local LoginBox = script.Parent.Login
@@ -1828,15 +1829,15 @@ local function WADFT_fake_script() -- Frame.AccountModule
 	-- Запуск защиты в отдельном потоке
 	spawn(ProtectFrame)
 end
-coroutine.wrap(WADFT_fake_script)()
-local function JLAZQD_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(CPGNF_fake_script)()
+local function GJABFN_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local Text = script.Parent
 	Text.Text = "Atom - Client: "..game.Name
 end
-coroutine.wrap(JLAZQD_fake_script)()
-local function XNUFECR_fake_script() -- ImageLabel_2.LocalScript 
+coroutine.wrap(GJABFN_fake_script)()
+local function TIOJU_fake_script() -- ImageLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_2)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -1850,29 +1851,29 @@ local function XNUFECR_fake_script() -- ImageLabel_2.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(XNUFECR_fake_script)()
-local function JHEJQVL_fake_script() -- TextLabel_6.LocalScript 
+coroutine.wrap(TIOJU_fake_script)()
+local function GQQC_fake_script() -- TextLabel_6.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_6)
 
 	local Text = script.Parent
 	Text.Text = "Place: "..game.Name
 end
-coroutine.wrap(JHEJQVL_fake_script)()
-local function KXEKW_fake_script() -- TextLabel_7.LocalScript 
+coroutine.wrap(GQQC_fake_script)()
+local function QAPJBT_fake_script() -- TextLabel_7.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_7)
 
 	local Text = script.Parent
 	Text.Text = "PlaceID: "..game.PlaceId
 end
-coroutine.wrap(KXEKW_fake_script)()
-local function XFNVGUE_fake_script() -- TextLabel_8.LocalScript 
+coroutine.wrap(QAPJBT_fake_script)()
+local function RTQZ_fake_script() -- TextLabel_8.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_8)
 
 	local Text = script.Parent
 	Text.Text = "CreatorID: "..game.CreatorId
 end
-coroutine.wrap(XFNVGUE_fake_script)()
-local function UQXR_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(RTQZ_fake_script)()
+local function DJRNRNC_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	local TeleportService = game:GetService("TeleportService")
@@ -1884,8 +1885,8 @@ local function UQXR_fake_script() -- Rejoin.LocalScript
 		TeleportService:Teleport(PlaceID, Player)
 	end)
 end
-coroutine.wrap(UQXR_fake_script)()
-local function BYKPIAN_fake_script() -- Background_2.LocalScript 
+coroutine.wrap(DJRNRNC_fake_script)()
+local function LBHUKF_fake_script() -- Background_2.LocalScript 
 	local script = Instance.new('LocalScript', Background_2)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -1899,8 +1900,8 @@ local function BYKPIAN_fake_script() -- Background_2.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(BYKPIAN_fake_script)()
-local function QINFEN_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(LBHUKF_fake_script)()
+local function POPENZ_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local DeleteButton = script.Parent.Delete
@@ -1921,8 +1922,8 @@ local function QINFEN_fake_script() -- MainFrame.LocalScript
 		SureFrame.Visible = false
 	end)
 end
-coroutine.wrap(QINFEN_fake_script)()
-local function TVZYJE_fake_script() -- Frame2.LocalScript 
+coroutine.wrap(POPENZ_fake_script)()
+local function DLXQDY_fake_script() -- Frame2.LocalScript 
 	local script = Instance.new('LocalScript', Frame2)
 
 	local Button = script.Parent.TextButton
@@ -1930,8 +1931,8 @@ local function TVZYJE_fake_script() -- Frame2.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
 	end)
 end
-coroutine.wrap(TVZYJE_fake_script)()
-local function DOADVQ_fake_script() -- FLY.Manager 
+coroutine.wrap(DLXQDY_fake_script)()
+local function FSHESZ_fake_script() -- FLY.Manager 
 	local script = Instance.new('LocalScript', FLY)
 
 	local Textbox = script.Parent.TextBox
@@ -1945,8 +1946,8 @@ local function DOADVQ_fake_script() -- FLY.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(DOADVQ_fake_script)()
-local function CKZZ_fake_script() -- AIM.Manager 
+coroutine.wrap(FSHESZ_fake_script)()
+local function SKXEDD_fake_script() -- AIM.Manager 
 	local script = Instance.new('LocalScript', AIM)
 
 	local Textbox = script.Parent.TextBox
@@ -1960,8 +1961,8 @@ local function CKZZ_fake_script() -- AIM.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(CKZZ_fake_script)()
-local function LKAHPO_fake_script() -- ESP.Manager 
+coroutine.wrap(SKXEDD_fake_script)()
+local function YGOUTOY_fake_script() -- ESP.Manager 
 	local script = Instance.new('LocalScript', ESP)
 
 	local Textbox = script.Parent.TextBox
@@ -1975,8 +1976,8 @@ local function LKAHPO_fake_script() -- ESP.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(LKAHPO_fake_script)()
-local function EBQPSWR_fake_script() -- NOCLIP.Manager 
+coroutine.wrap(YGOUTOY_fake_script)()
+local function ZMQPL_fake_script() -- NOCLIP.Manager 
 	local script = Instance.new('LocalScript', NOCLIP)
 
 	local Textbox = script.Parent.TextBox
@@ -1990,8 +1991,8 @@ local function EBQPSWR_fake_script() -- NOCLIP.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(EBQPSWR_fake_script)()
-local function FKDXFF_fake_script() -- NOANCHOR.Manager 
+coroutine.wrap(ZMQPL_fake_script)()
+local function WZJZ_fake_script() -- NOANCHOR.Manager 
 	local script = Instance.new('LocalScript', NOANCHOR)
 
 	local Textbox = script.Parent.TextBox
@@ -2005,8 +2006,8 @@ local function FKDXFF_fake_script() -- NOANCHOR.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(FKDXFF_fake_script)()
-local function EHGSD_fake_script() -- PLATFORM.Manager 
+coroutine.wrap(WZJZ_fake_script)()
+local function YKDIN_fake_script() -- PLATFORM.Manager 
 	local script = Instance.new('LocalScript', PLATFORM)
 
 	local Textbox = script.Parent.TextBox
@@ -2020,8 +2021,8 @@ local function EHGSD_fake_script() -- PLATFORM.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(EHGSD_fake_script)()
-local function RVDWQ_fake_script() -- DORSALTELEPORT.Manager 
+coroutine.wrap(YKDIN_fake_script)()
+local function BYKB_fake_script() -- DORSALTELEPORT.Manager 
 	local script = Instance.new('LocalScript', DORSALTELEPORT)
 
 	local Textbox = script.Parent.TextBox
@@ -2035,8 +2036,8 @@ local function RVDWQ_fake_script() -- DORSALTELEPORT.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(RVDWQ_fake_script)()
-local function JWWRUPL_fake_script() -- TELEPORT.Manager 
+coroutine.wrap(BYKB_fake_script)()
+local function KFKTCI_fake_script() -- TELEPORT.Manager 
 	local script = Instance.new('LocalScript', TELEPORT)
 
 	local Textbox = script.Parent.TextBox
@@ -2050,8 +2051,8 @@ local function JWWRUPL_fake_script() -- TELEPORT.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(JWWRUPL_fake_script)()
-local function OSES_fake_script() -- WALKSPEED.Manager 
+coroutine.wrap(KFKTCI_fake_script)()
+local function ZWRJKRP_fake_script() -- WALKSPEED.Manager 
 	local script = Instance.new('LocalScript', WALKSPEED)
 
 	local Textbox = script.Parent.TextBox
@@ -2067,8 +2068,8 @@ local function OSES_fake_script() -- WALKSPEED.Manager
 	
 	
 end
-coroutine.wrap(OSES_fake_script)()
-local function AHUPTB_fake_script() -- JUMPPOWER.Manager 
+coroutine.wrap(ZWRJKRP_fake_script)()
+local function SPYHR_fake_script() -- JUMPPOWER.Manager 
 	local script = Instance.new('LocalScript', JUMPPOWER)
 
 	local Textbox = script.Parent.TextBox
@@ -2082,8 +2083,8 @@ local function AHUPTB_fake_script() -- JUMPPOWER.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(AHUPTB_fake_script)()
-local function NQYT_fake_script() -- AtomFrame.Dragging 
+coroutine.wrap(SPYHR_fake_script)()
+local function VRYLO_fake_script() -- AtomFrame.Dragging 
 	local script = Instance.new('LocalScript', AtomFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2127,8 +2128,8 @@ local function NQYT_fake_script() -- AtomFrame.Dragging
 		end
 	end)
 end
-coroutine.wrap(NQYT_fake_script)()
-local function LERDF_fake_script() -- AtomFrame.Atom.Core 
+coroutine.wrap(VRYLO_fake_script)()
+local function EQUIQHU_fake_script() -- AtomFrame.Atom.Core 
 	local script = Instance.new('LocalScript', AtomFrame)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2166,8 +2167,8 @@ local function LERDF_fake_script() -- AtomFrame.Atom.Core
 	end)
 	
 end
-coroutine.wrap(LERDF_fake_script)()
-local function EVYBI_fake_script() -- Background_3.LocalScript 
+coroutine.wrap(EQUIQHU_fake_script)()
+local function YUAPHQ_fake_script() -- Background_3.LocalScript 
 	local script = Instance.new('LocalScript', Background_3)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -2181,5 +2182,5 @@ local function EVYBI_fake_script() -- Background_3.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(EVYBI_fake_script)()
-coroutine.wrap(CFSL_fake_script)()
+coroutine.wrap(YUAPHQ_fake_script)()
+coroutine.wrap(QYBQBF_fake_script)()
