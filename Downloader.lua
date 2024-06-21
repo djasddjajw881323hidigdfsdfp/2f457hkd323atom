@@ -3942,13 +3942,12 @@ Gui.Home.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
 Gui.Game.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
-Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-wait(0.1)
 Gui.Execution.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
 Gui.Debugger.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
 Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 
 coroutine.wrap(NADSURY_fake_script)()
 coroutine.wrap(SDPQCR_fake_script)()
