@@ -493,7 +493,6 @@ Gui.Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gui.Button.TextSize = 14.000
 
 Gui.Config.Name = "Config"
-Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Config.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Gui.Config.BackgroundTransparency = 1.000
 Gui.Config.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -541,7 +540,6 @@ Gui.Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gui.Button_2.TextSize = 14.000
 
 Gui.Debugger.Name = "Debugger"
-Gui.Debugger.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Debugger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Gui.Debugger.BackgroundTransparency = 1.000
 Gui.Debugger.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -589,7 +587,6 @@ Gui.Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gui.Button_3.TextSize = 14.000
 
 Gui.Execution.Name = "Execution"
-Gui.Execution.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Execution.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Gui.Execution.BackgroundTransparency = 1.000
 Gui.Execution.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -731,7 +728,6 @@ Gui.Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gui.Button_6.TextSize = 14.000
 
 Gui.Player.Name = "Player"
-Gui.Player.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Gui.Player.BackgroundTransparency = 1.000
 Gui.Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -3933,7 +3929,22 @@ end
 local DeleteTheFile = game.CoreGui.Atom["Atom.Frame"].Main.MainFrame.Frame2
 DeleteTheFile:Destroy()
 
-
+wait(0.1)
+Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.1)
+Gui.Home.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.1)
+Gui.Game.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.1)
+Gui.Player.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.1)
+Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.1)
+Gui.Execution.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.1)
+Gui.Debugger.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.1)
+Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 
 wait(1)
 
