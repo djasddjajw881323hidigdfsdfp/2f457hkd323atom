@@ -88,7 +88,7 @@ local TextLabel_24 = Instance.new("TextLabel")
 --Properties:
 
 Atom.Name = "Atom"
-Atom.Parent = game.CoreGui
+Atom.Parent = game.Players.LocalPlayer.PlayerGui
 Atom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Atom.ResetOnSpawn = false
 
