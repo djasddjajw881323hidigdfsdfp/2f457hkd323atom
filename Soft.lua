@@ -88,7 +88,7 @@ local TextLabel_24 = Instance.new("TextLabel")
 --Properties:
 
 Atom.Name = "Atom"
-Atom.Parent = game.Players.LocalPlayer.PlayerGui
+Atom.Parent = game.CoreGui
 Atom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Atom.ResetOnSpawn = false
 
@@ -204,6 +204,7 @@ Buttons.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Buttons.BorderSizePixel = 0
 Buttons.Position = UDim2.new(0, 0, 0.164520741, 0)
 Buttons.Size = UDim2.new(0, 221, 0, 526)
+Buttons.Visible = false
 
 UIListLayout.Parent = Buttons
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -961,9 +962,6 @@ local function ZYNB_fake_script() -- UIListLayout.LocalScript
 			local File1 = Atom.Main:FindFirstChild("LoginPage")
 			local File2 = Atom.Main.LoginPage.Frame:FindFirstChild("AccountModule")
 			local File3 = Atom.Panel:FindFirstChild("Buttons")
-			local File4 = Atom.Main.Player
-			local File5 = Atom.Main.Place
-			local File6 = Atom.Main.Config
 			local Blur = game.Lighting:FindFirstChild("AtomBlur")
 			
 			if not File1 then
@@ -987,36 +985,6 @@ local function ZYNB_fake_script() -- UIListLayout.LocalScript
 				Atom:Destroy()
 				break
 			elseif File3.Visible and LoginedValue.Value == false then
-				warn("You tried to bypass the authorization system by item configure.")
-				Blur:Destroy()
-				Atom:Destroy()
-				break
-			elseif not File4 then
-				warn("You tried to bypass the authorization system by item deletion.")
-				Blur:Destroy()
-				Atom:Destroy()
-				break
-			elseif File4.Visible and LoginedValue.Value == false then
-				warn("You tried to bypass the authorization system by item configure.")
-				Blur:Destroy()
-				Atom:Destroy()
-				break
-			elseif not File5 then
-				warn("You tried to bypass the authorization system by item deletion.")
-				Blur:Destroy()
-				Atom:Destroy()
-				break
-			elseif File5.Visible and LoginedValue.Value == false then
-				warn("You tried to bypass the authorization system by item configure.")
-				Blur:Destroy()
-				Atom:Destroy()
-				break
-			elseif not File6 then
-				warn("You tried to bypass the authorization system by item deletion.")
-				Blur:Destroy()
-				Atom:Destroy()
-				break
-			elseif File6.Visible and LoginedValue.Value == false then
 				warn("You tried to bypass the authorization system by item configure.")
 				Blur:Destroy()
 				Atom:Destroy()
