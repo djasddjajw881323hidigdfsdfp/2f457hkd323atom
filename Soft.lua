@@ -338,6 +338,15 @@ local Atom = {
 	UICorner_101 = Instance.new("UICorner"),
 	TextLabel_76 = Instance.new("TextLabel"),
 	TextLabel_77 = Instance.new("TextLabel"),
+	Warning = Instance.new("Frame"),
+	TextLabel_78 = Instance.new("TextLabel"),
+	Yes_2 = Instance.new("TextButton"),
+	UICorner_102 = Instance.new("UICorner"),
+	No_2 = Instance.new("TextButton"),
+	UICorner_103 = Instance.new("UICorner"),
+	TextLabel_79 = Instance.new("TextLabel"),
+	Frame_7 = Instance.new("Frame"),
+	Background_5 = Instance.new("ImageLabel"),
 }
 
 --Properties:
@@ -3258,16 +3267,107 @@ Atom.TextLabel_77.TextSize = 14.000
 Atom.TextLabel_77.TextWrapped = true
 Atom.TextLabel_77.TextXAlignment = Enum.TextXAlignment.Left
 
+Atom.Warning.Name = "Warning"
+Atom.Warning.Parent = Atom.AtomFrame
+Atom.Warning.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Atom.Warning.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.Warning.BorderSizePixel = 0
+Atom.Warning.Position = UDim2.new(0.371523887, 0, 0.226037189, 0)
+Atom.Warning.Size = UDim2.new(0, 487, 0, 352)
+Atom.Warning.Visible = false
+
+Atom.TextLabel_78.Parent = Atom.Warning
+Atom.TextLabel_78.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Atom.TextLabel_78.BackgroundTransparency = 1.000
+Atom.TextLabel_78.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.TextLabel_78.BorderSizePixel = 0
+Atom.TextLabel_78.Position = UDim2.new(-0.23819302, 0, 0, 0)
+Atom.TextLabel_78.Size = UDim2.new(0, 603, 0, 31)
+Atom.TextLabel_78.Font = Enum.Font.SourceSansBold
+Atom.TextLabel_78.Text = "You want to open A.Debugger"
+Atom.TextLabel_78.TextColor3 = Color3.fromRGB(255, 255, 255)
+Atom.TextLabel_78.TextScaled = true
+Atom.TextLabel_78.TextSize = 14.000
+Atom.TextLabel_78.TextWrapped = true
+
+Atom.Yes_2.Name = "Yes"
+Atom.Yes_2.Parent = Atom.Warning
+Atom.Yes_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Atom.Yes_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.Yes_2.BorderSizePixel = 0
+Atom.Yes_2.Position = UDim2.new(-0.0367385261, 0, 0.798295438, 0)
+Atom.Yes_2.Size = UDim2.new(0, 201, 0, 52)
+Atom.Yes_2.Font = Enum.Font.SourceSansBold
+Atom.Yes_2.Text = "Yes"
+Atom.Yes_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Atom.Yes_2.TextScaled = true
+Atom.Yes_2.TextSize = 14.000
+Atom.Yes_2.TextWrapped = true
+
+Atom.UICorner_102.Parent = Atom.Yes_2
+
+Atom.No_2.Name = "No"
+Atom.No_2.Parent = Atom.Warning
+Atom.No_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Atom.No_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.No_2.BorderSizePixel = 0
+Atom.No_2.Position = UDim2.new(0.395397007, 0, 0.798295438, 0)
+Atom.No_2.Size = UDim2.new(0, 201, 0, 52)
+Atom.No_2.Font = Enum.Font.SourceSansBold
+Atom.No_2.Text = "No"
+Atom.No_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Atom.No_2.TextScaled = true
+Atom.No_2.TextSize = 14.000
+Atom.No_2.TextWrapped = true
+
+Atom.UICorner_103.Parent = Atom.No_2
+
+Atom.TextLabel_79.Parent = Atom.Warning
+Atom.TextLabel_79.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Atom.TextLabel_79.BackgroundTransparency = 1.000
+Atom.TextLabel_79.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.TextLabel_79.BorderSizePixel = 0
+Atom.TextLabel_79.Position = UDim2.new(-0.23036623, 0, 0.105113633, 0)
+Atom.TextLabel_79.Size = UDim2.new(0, 600, 0, 227)
+Atom.TextLabel_79.Font = Enum.Font.SourceSansBold
+Atom.TextLabel_79.Text = "Are you sure you want to open it, you may have clicked it by accident."
+Atom.TextLabel_79.TextColor3 = Color3.fromRGB(255, 255, 255)
+Atom.TextLabel_79.TextScaled = true
+Atom.TextLabel_79.TextSize = 14.000
+Atom.TextLabel_79.TextWrapped = true
+
+Atom.Frame_7.Parent = Atom.Warning
+Atom.Frame_7.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Atom.Frame_7.BackgroundTransparency = 0.200
+Atom.Frame_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.Frame_7.BorderSizePixel = 0
+Atom.Frame_7.Position = UDim2.new(-0.23819302, 0, 0, 0)
+Atom.Frame_7.Size = UDim2.new(0, 116, 0, 352)
+Atom.Frame_7.ZIndex = 0
+
+Atom.Background_5.Name = "Background"
+Atom.Background_5.Parent = Atom.Frame_7
+Atom.Background_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Atom.Background_5.BackgroundTransparency = 1.000
+Atom.Background_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Atom.Background_5.BorderSizePixel = 0
+Atom.Background_5.Position = UDim2.new(-0.000921841303, 0, 0, 0)
+Atom.Background_5.Size = UDim2.new(1.00092173, 0, 1, 0)
+Atom.Background_5.ZIndex = 0
+Atom.Background_5.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Atom.Background_5.ImageTransparency = 0.800
+Atom.Background_5.ScaleType = Enum.ScaleType.Crop
+
 -- Scripts:
 
-local function RZCN_fake_script() -- Atom.Avatar.Picture 
+local function KXJPIPZ_fake_script() -- Atom.Avatar.Picture 
 	local script = Instance.new('LocalScript', Atom.Avatar)
 
 	local ImageLabel = script.Parent
 	ImageLabel.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=1000&y=1000&userId="..game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(RZCN_fake_script)()
-local function WFPOJEO_fake_script() -- Atom.UIListLayout.LocalScript 
+coroutine.wrap(KXJPIPZ_fake_script)()
+local function ABHBLLD_fake_script() -- Atom.UIListLayout.LocalScript 
 	local script = Instance.new('LocalScript', Atom.UIListLayout)
 
 	-- Atom Protection
@@ -3348,7 +3448,7 @@ local function WFPOJEO_fake_script() -- Atom.UIListLayout.LocalScript
 	
 	CheckFiles()
 end
-local function LTFTXNI_fake_script() -- Atom.Home.CoreClient 
+local function MOMNXIJ_fake_script() -- Atom.Home.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Home)
 
 	local Button = script.Parent.Button
@@ -3373,8 +3473,8 @@ local function LTFTXNI_fake_script() -- Atom.Home.CoreClient
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(LTFTXNI_fake_script)()
-local function NMGDYM_fake_script() -- Atom.Game.CoreClient 
+coroutine.wrap(MOMNXIJ_fake_script)()
+local function VJGNDUQ_fake_script() -- Atom.Game.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Game)
 
 	local Button = script.Parent.Button
@@ -3399,8 +3499,8 @@ local function NMGDYM_fake_script() -- Atom.Game.CoreClient
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(NMGDYM_fake_script)()
-local function VWXP_fake_script() -- Atom.Player.CoreClient 
+coroutine.wrap(VJGNDUQ_fake_script)()
+local function YBNDWUA_fake_script() -- Atom.Player.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Player)
 
 	local Button = script.Parent.Button
@@ -3425,8 +3525,8 @@ local function VWXP_fake_script() -- Atom.Player.CoreClient
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(VWXP_fake_script)()
-local function QBGUA_fake_script() -- Atom.Execution.CoreClient 
+coroutine.wrap(YBNDWUA_fake_script)()
+local function KLDSLDQ_fake_script() -- Atom.Execution.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Execution)
 
 	local Button = script.Parent.Button
@@ -3451,11 +3551,15 @@ local function QBGUA_fake_script() -- Atom.Execution.CoreClient
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(QBGUA_fake_script)()
-local function EAXD_fake_script() -- Atom.Debugger.CoreClient 
+coroutine.wrap(KLDSLDQ_fake_script)()
+local function NHMWLH_fake_script() -- Atom.Debugger.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Debugger)
 
 	local Button = script.Parent.Button
+	local WarningFrame = script.Parent.Parent.Parent.Parent.Warning
+	local YesButton = WarningFrame.Yes
+	local NoButton = WarningFrame.No
+	
 	local Background = script.Parent
 	
 	Button.MouseEnter:Connect(function()
@@ -3465,11 +3569,17 @@ local function EAXD_fake_script() -- Atom.Debugger.CoreClient
 		Background.BackgroundTransparency = 1
 	end)
 	Button.MouseButton1Click:Connect(function()
+		WarningFrame.Visible = true
+	end)
+	YesButton.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/A.Debugger"))()
 	end)
+	NoButton.MouseButton1Click:Connect(function()
+		WarningFrame.Visible = false
+	end)
 end
-coroutine.wrap(EAXD_fake_script)()
-local function LDYRU_fake_script() -- Atom.Config.CoreClient 
+coroutine.wrap(NHMWLH_fake_script)()
+local function IBRAZX_fake_script() -- Atom.Config.CoreClient 
 	local script = Instance.new('LocalScript', Atom.Config)
 
 	local Button = script.Parent.Button
@@ -3494,8 +3604,8 @@ local function LDYRU_fake_script() -- Atom.Config.CoreClient
 		ConfigFrame.Visible = true
 	end)
 end
-coroutine.wrap(LDYRU_fake_script)()
-local function PZOTHY_fake_script() -- Atom.Background.LocalScript 
+coroutine.wrap(IBRAZX_fake_script)()
+local function OQNURL_fake_script() -- Atom.Background.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Background)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -3509,8 +3619,8 @@ local function PZOTHY_fake_script() -- Atom.Background.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(PZOTHY_fake_script)()
-local function YVQIK_fake_script() -- Atom.Frame.AccountModule 
+coroutine.wrap(OQNURL_fake_script)()
+local function APHV_fake_script() -- Atom.Frame.AccountModule 
 	local script = Instance.new('LocalScript', Atom.Frame)
 
 	local LoginBox = script.Parent.Login
@@ -3648,15 +3758,15 @@ local function YVQIK_fake_script() -- Atom.Frame.AccountModule
 	-- Запуск защиты в отдельном потоке
 	spawn(ProtectFrame)
 end
-coroutine.wrap(YVQIK_fake_script)()
-local function SYZE_fake_script() -- Atom.TextLabel_13.LocalScript 
+coroutine.wrap(APHV_fake_script)()
+local function EBFL_fake_script() -- Atom.TextLabel_13.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_13)
 
 	local Text = script.Parent
 	Text.Text = "Atom - Client: "..game.Name
 end
-coroutine.wrap(SYZE_fake_script)()
-local function RKYEEN_fake_script() -- Atom.ImageLabel_8.LocalScript 
+coroutine.wrap(EBFL_fake_script)()
+local function CXDEOG_fake_script() -- Atom.ImageLabel_8.LocalScript 
 	local script = Instance.new('LocalScript', Atom.ImageLabel_8)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -3670,29 +3780,29 @@ local function RKYEEN_fake_script() -- Atom.ImageLabel_8.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(RKYEEN_fake_script)()
-local function VAEYYIK_fake_script() -- Atom.TextLabel_14.LocalScript 
+coroutine.wrap(CXDEOG_fake_script)()
+local function YDUKX_fake_script() -- Atom.TextLabel_14.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_14)
 
 	local Text = script.Parent
 	Text.Text = "Place: "..game.Name
 end
-coroutine.wrap(VAEYYIK_fake_script)()
-local function WRLQ_fake_script() -- Atom.TextLabel_15.LocalScript 
+coroutine.wrap(YDUKX_fake_script)()
+local function JLFEOU_fake_script() -- Atom.TextLabel_15.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_15)
 
 	local Text = script.Parent
 	Text.Text = "PlaceID: "..game.PlaceId
 end
-coroutine.wrap(WRLQ_fake_script)()
-local function LHDUUAI_fake_script() -- Atom.TextLabel_16.LocalScript 
+coroutine.wrap(JLFEOU_fake_script)()
+local function NYRLUI_fake_script() -- Atom.TextLabel_16.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_16)
 
 	local Text = script.Parent
 	Text.Text = "CreatorID: "..game.CreatorId
 end
-coroutine.wrap(LHDUUAI_fake_script)()
-local function LUAE_fake_script() -- Atom.Rejoin.LocalScript 
+coroutine.wrap(NYRLUI_fake_script)()
+local function KGAERAK_fake_script() -- Atom.Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Rejoin)
 
 	local TeleportService = game:GetService("TeleportService")
@@ -3704,8 +3814,8 @@ local function LUAE_fake_script() -- Atom.Rejoin.LocalScript
 		TeleportService:Teleport(PlaceID, Player)
 	end)
 end
-coroutine.wrap(LUAE_fake_script)()
-local function PWQOF_fake_script() -- Atom.Background_2.LocalScript 
+coroutine.wrap(KGAERAK_fake_script)()
+local function PZOI_fake_script() -- Atom.Background_2.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Background_2)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -3719,8 +3829,8 @@ local function PWQOF_fake_script() -- Atom.Background_2.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(PWQOF_fake_script)()
-local function EKVVBS_fake_script() -- Atom.MainFrame.LocalScript 
+coroutine.wrap(PZOI_fake_script)()
+local function KJRXYI_fake_script() -- Atom.MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', Atom.MainFrame)
 
 	local DeleteButton = script.Parent.Delete
@@ -3741,8 +3851,8 @@ local function EKVVBS_fake_script() -- Atom.MainFrame.LocalScript
 		SureFrame.Visible = false
 	end)
 end
-coroutine.wrap(EKVVBS_fake_script)()
-local function PXHVP_fake_script() -- Atom.Execution_2.LocalScript 
+coroutine.wrap(KJRXYI_fake_script)()
+local function MOYFM_fake_script() -- Atom.Execution_2.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Execution_2)
 
 	local TextBox = script.Parent.SctiptBox
@@ -3760,8 +3870,8 @@ local function PXHVP_fake_script() -- Atom.Execution_2.LocalScript
 	    Executescript()
 	end)
 end
-coroutine.wrap(PXHVP_fake_script)()
-local function TVKKF_fake_script() -- Atom.FLY.ButtonManager 
+coroutine.wrap(MOYFM_fake_script)()
+local function MBDXYC_fake_script() -- Atom.FLY.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.FLY)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -3897,8 +4007,8 @@ local function TVKKF_fake_script() -- Atom.FLY.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(TVKKF_fake_script)()
-local function IUGSES_fake_script() -- Atom.AIM.ButtonManager 
+coroutine.wrap(MBDXYC_fake_script)()
+local function CSIGS_fake_script() -- Atom.AIM.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.AIM)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -3990,8 +4100,8 @@ local function IUGSES_fake_script() -- Atom.AIM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(IUGSES_fake_script)()
-local function IENZMK_fake_script() -- Atom.ESP.ButtonManager 
+coroutine.wrap(CSIGS_fake_script)()
+local function QBSWK_fake_script() -- Atom.ESP.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.ESP)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -4039,8 +4149,8 @@ local function IENZMK_fake_script() -- Atom.ESP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(IENZMK_fake_script)()
-local function MYCEJFI_fake_script() -- Atom.NOCLIP.ButtonManager 
+coroutine.wrap(QBSWK_fake_script)()
+local function LOTVRG_fake_script() -- Atom.NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.NOCLIP)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -4138,8 +4248,8 @@ local function MYCEJFI_fake_script() -- Atom.NOCLIP.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(MYCEJFI_fake_script)()
-local function CTHKAP_fake_script() -- Atom.NOANCHOR.ButtonManager 
+coroutine.wrap(LOTVRG_fake_script)()
+local function BKGFR_fake_script() -- Atom.NOANCHOR.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.NOANCHOR)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -4235,8 +4345,8 @@ local function CTHKAP_fake_script() -- Atom.NOANCHOR.ButtonManager
 	end)
 	
 end
-coroutine.wrap(CTHKAP_fake_script)()
-local function POQPTC_fake_script() -- Atom.PLATFORM.ButtonManager 
+coroutine.wrap(BKGFR_fake_script)()
+local function JPYRK_fake_script() -- Atom.PLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.PLATFORM)
 
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
@@ -4342,8 +4452,8 @@ local function POQPTC_fake_script() -- Atom.PLATFORM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(POQPTC_fake_script)()
-local function TCLTA_fake_script() -- Atom.TELEPORT.ValueManager 
+coroutine.wrap(JPYRK_fake_script)()
+local function ZPLS_fake_script() -- Atom.TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', Atom.TELEPORT)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -4404,8 +4514,8 @@ local function TCLTA_fake_script() -- Atom.TELEPORT.ValueManager
 	end)
 	
 end
-coroutine.wrap(TCLTA_fake_script)()
-local function AEOANF_fake_script() -- Atom.DORSALTELEPORT.ButtonManager 
+coroutine.wrap(ZPLS_fake_script)()
+local function LRKTO_fake_script() -- Atom.DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.DORSALTELEPORT)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -4489,15 +4599,15 @@ local function AEOANF_fake_script() -- Atom.DORSALTELEPORT.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(AEOANF_fake_script)()
-local function LATINO_fake_script() -- Atom.TextLabel_37.LocalScript 
+coroutine.wrap(LRKTO_fake_script)()
+local function DDEPMHL_fake_script() -- Atom.TextLabel_37.LocalScript 
 	local script = Instance.new('LocalScript', Atom.TextLabel_37)
 
 	local Text = script.Parent
 	Text.Text = game.Name
 end
-coroutine.wrap(LATINO_fake_script)()
-local function ZXZWA_fake_script() -- Atom.Background_3.LocalScript 
+coroutine.wrap(DDEPMHL_fake_script)()
+local function LNEFUYO_fake_script() -- Atom.Background_3.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Background_3)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -4511,8 +4621,8 @@ local function ZXZWA_fake_script() -- Atom.Background_3.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(ZXZWA_fake_script)()
-local function BOZJDYY_fake_script() -- Atom.Dorsal.LocalScript 
+coroutine.wrap(LNEFUYO_fake_script)()
+local function JTPN_fake_script() -- Atom.Dorsal.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Dorsal)
 
 	local Players = game:GetService("Players")
@@ -4578,8 +4688,8 @@ local function BOZJDYY_fake_script() -- Atom.Dorsal.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(BOZJDYY_fake_script)()
-local function ILLGELY_fake_script() -- Atom.Background_4.LocalScript 
+coroutine.wrap(JTPN_fake_script)()
+local function PTIMZOP_fake_script() -- Atom.Background_4.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Background_4)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -4593,8 +4703,8 @@ local function ILLGELY_fake_script() -- Atom.Background_4.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(ILLGELY_fake_script)()
-local function JSMZM_fake_script() -- Atom.Teleport_2.LocalScript 
+coroutine.wrap(PTIMZOP_fake_script)()
+local function HVVKRL_fake_script() -- Atom.Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Atom.Teleport_2)
 
 	local Players = game:GetService("Players")
@@ -4660,8 +4770,8 @@ local function JSMZM_fake_script() -- Atom.Teleport_2.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(JSMZM_fake_script)()
-local function JVOEXTK_fake_script() -- Atom.Walkspeed.Manager 
+coroutine.wrap(HVVKRL_fake_script)()
+local function JDJYAPB_fake_script() -- Atom.Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Atom.Walkspeed)
 
 	local textbox = script.Parent.TextBox
@@ -4721,8 +4831,8 @@ local function JVOEXTK_fake_script() -- Atom.Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(JVOEXTK_fake_script)()
-local function IYBD_fake_script() -- Atom.JumpPower.Manager 
+coroutine.wrap(JDJYAPB_fake_script)()
+local function FWYPST_fake_script() -- Atom.JumpPower.Manager 
 	local script = Instance.new('LocalScript', Atom.JumpPower)
 
 	local textbox = script.Parent.TextBox
@@ -4783,8 +4893,8 @@ local function IYBD_fake_script() -- Atom.JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(IYBD_fake_script)()
-local function TTAJJC_fake_script() -- Atom.FOV.Manager 
+coroutine.wrap(FWYPST_fake_script)()
+local function GTVI_fake_script() -- Atom.FOV.Manager 
 	local script = Instance.new('LocalScript', Atom.FOV)
 
 	local textbox = script.Parent.TextBox
@@ -4822,8 +4932,8 @@ local function TTAJJC_fake_script() -- Atom.FOV.Manager
 	end)
 	
 end
-coroutine.wrap(TTAJJC_fake_script)()
-local function VNMUDXM_fake_script() -- Atom.Animation.Manager 
+coroutine.wrap(GTVI_fake_script)()
+local function BUSN_fake_script() -- Atom.Animation.Manager 
 	local script = Instance.new('LocalScript', Atom.Animation)
 
 	local textbox = script.Parent.TextBox
@@ -4871,8 +4981,8 @@ local function VNMUDXM_fake_script() -- Atom.Animation.Manager
 		end
 	end)
 end
-coroutine.wrap(VNMUDXM_fake_script)()
-local function CARILR_fake_script() -- Atom.AntiAFK.ButtonManager 
+coroutine.wrap(BUSN_fake_script)()
+local function HLOYU_fake_script() -- Atom.AntiAFK.ButtonManager 
 	local script = Instance.new('LocalScript', Atom.AntiAFK)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -4907,8 +5017,8 @@ local function CARILR_fake_script() -- Atom.AntiAFK.ButtonManager
 	--end)
 	
 end
-coroutine.wrap(CARILR_fake_script)()
-local function KVDV_fake_script() -- Atom.FLY_2.Manager 
+coroutine.wrap(HLOYU_fake_script)()
+local function CBGBM_fake_script() -- Atom.FLY_2.Manager 
 	local script = Instance.new('LocalScript', Atom.FLY_2)
 
 	local Textbox = script.Parent.TextBox
@@ -4922,8 +5032,8 @@ local function KVDV_fake_script() -- Atom.FLY_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(KVDV_fake_script)()
-local function AJOBTWA_fake_script() -- Atom.AIM_2.Manager 
+coroutine.wrap(CBGBM_fake_script)()
+local function JSRP_fake_script() -- Atom.AIM_2.Manager 
 	local script = Instance.new('LocalScript', Atom.AIM_2)
 
 	local Textbox = script.Parent.TextBox
@@ -4937,8 +5047,8 @@ local function AJOBTWA_fake_script() -- Atom.AIM_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(AJOBTWA_fake_script)()
-local function IDUHNT_fake_script() -- Atom.ESP_2.Manager 
+coroutine.wrap(JSRP_fake_script)()
+local function DBALZ_fake_script() -- Atom.ESP_2.Manager 
 	local script = Instance.new('LocalScript', Atom.ESP_2)
 
 	local Textbox = script.Parent.TextBox
@@ -4952,8 +5062,8 @@ local function IDUHNT_fake_script() -- Atom.ESP_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(IDUHNT_fake_script)()
-local function KQHUJHI_fake_script() -- Atom.NOCLIP_2.Manager 
+coroutine.wrap(DBALZ_fake_script)()
+local function OCQHNRC_fake_script() -- Atom.NOCLIP_2.Manager 
 	local script = Instance.new('LocalScript', Atom.NOCLIP_2)
 
 	local Textbox = script.Parent.TextBox
@@ -4967,8 +5077,8 @@ local function KQHUJHI_fake_script() -- Atom.NOCLIP_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(KQHUJHI_fake_script)()
-local function FKIJSC_fake_script() -- Atom.NOANCHOR_2.Manager 
+coroutine.wrap(OCQHNRC_fake_script)()
+local function KKWBCN_fake_script() -- Atom.NOANCHOR_2.Manager 
 	local script = Instance.new('LocalScript', Atom.NOANCHOR_2)
 
 	local Textbox = script.Parent.TextBox
@@ -4982,8 +5092,8 @@ local function FKIJSC_fake_script() -- Atom.NOANCHOR_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(FKIJSC_fake_script)()
-local function NZYZUL_fake_script() -- Atom.PLATFORM_2.Manager 
+coroutine.wrap(KKWBCN_fake_script)()
+local function ZHST_fake_script() -- Atom.PLATFORM_2.Manager 
 	local script = Instance.new('LocalScript', Atom.PLATFORM_2)
 
 	local Textbox = script.Parent.TextBox
@@ -4997,8 +5107,8 @@ local function NZYZUL_fake_script() -- Atom.PLATFORM_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(NZYZUL_fake_script)()
-local function USZJX_fake_script() -- Atom.DORSALTELEPORT_2.Manager 
+coroutine.wrap(ZHST_fake_script)()
+local function ZKURBK_fake_script() -- Atom.DORSALTELEPORT_2.Manager 
 	local script = Instance.new('LocalScript', Atom.DORSALTELEPORT_2)
 
 	local Textbox = script.Parent.TextBox
@@ -5012,8 +5122,8 @@ local function USZJX_fake_script() -- Atom.DORSALTELEPORT_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(USZJX_fake_script)()
-local function JNOYOD_fake_script() -- Atom.TELEPORT_2.Manager 
+coroutine.wrap(ZKURBK_fake_script)()
+local function LYTKUAY_fake_script() -- Atom.TELEPORT_2.Manager 
 	local script = Instance.new('LocalScript', Atom.TELEPORT_2)
 
 	local Textbox = script.Parent.TextBox
@@ -5027,8 +5137,8 @@ local function JNOYOD_fake_script() -- Atom.TELEPORT_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(JNOYOD_fake_script)()
-local function FTXN_fake_script() -- Atom.WALKSPEED.Manager 
+coroutine.wrap(LYTKUAY_fake_script)()
+local function STAIG_fake_script() -- Atom.WALKSPEED.Manager 
 	local script = Instance.new('LocalScript', Atom.WALKSPEED)
 
 	local Textbox = script.Parent.TextBox
@@ -5044,8 +5154,8 @@ local function FTXN_fake_script() -- Atom.WALKSPEED.Manager
 	
 	
 end
-coroutine.wrap(FTXN_fake_script)()
-local function KDOLGQ_fake_script() -- Atom.JUMPPOWER.Manager 
+coroutine.wrap(STAIG_fake_script)()
+local function MXUMC_fake_script() -- Atom.JUMPPOWER.Manager 
 	local script = Instance.new('LocalScript', Atom.JUMPPOWER)
 
 	local Textbox = script.Parent.TextBox
@@ -5059,8 +5169,8 @@ local function KDOLGQ_fake_script() -- Atom.JUMPPOWER.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(KDOLGQ_fake_script)()
-local function KUDWET_fake_script() -- Atom.MenuBlur.Manager 
+coroutine.wrap(MXUMC_fake_script)()
+local function JNGHW_fake_script() -- Atom.MenuBlur.Manager 
 	local script = Instance.new('LocalScript', Atom.MenuBlur)
 
 	local Textbox = script.Parent.TextBox
@@ -5074,8 +5184,8 @@ local function KUDWET_fake_script() -- Atom.MenuBlur.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(KUDWET_fake_script)()
-local function APKE_fake_script() -- Atom.AtomFrame.Dragging 
+coroutine.wrap(JNGHW_fake_script)()
+local function XRHTCGW_fake_script() -- Atom.AtomFrame.Dragging 
 	local script = Instance.new('LocalScript', Atom.AtomFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -5119,8 +5229,8 @@ local function APKE_fake_script() -- Atom.AtomFrame.Dragging
 		end
 	end)
 end
-coroutine.wrap(APKE_fake_script)()
-local function YJRXR_fake_script() -- Atom.AtomFrame.Atom.Core 
+coroutine.wrap(XRHTCGW_fake_script)()
+local function SAMICD_fake_script() -- Atom.AtomFrame.Atom.Core 
 	local script = Instance.new('LocalScript', Atom.AtomFrame)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -5154,5 +5264,20 @@ local function YJRXR_fake_script() -- Atom.AtomFrame.Atom.Core
 	end)
 	
 end
-coroutine.wrap(YJRXR_fake_script)()
-coroutine.wrap(WFPOJEO_fake_script)()
+coroutine.wrap(SAMICD_fake_script)()
+local function MZDV_fake_script() -- Atom.Background_5.LocalScript 
+	local script = Instance.new('LocalScript', Atom.Background_5)
+
+	local placeId = game.PlaceId  -- замените на ID вашего плейса
+	local imageLabel = script.Parent
+	
+	local function setPlaceThumbnail(placeId)
+		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
+		imageLabel.Image = thumbnailUrl
+	end
+	
+	setPlaceThumbnail(placeId)
+	
+end
+coroutine.wrap(MZDV_fake_script)()
+coroutine.wrap(ABHBLLD_fake_script)()
