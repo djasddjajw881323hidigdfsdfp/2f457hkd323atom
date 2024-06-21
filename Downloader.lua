@@ -637,7 +637,6 @@ Gui.Button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gui.Button_4.TextSize = 14.000
 
 Gui.Game.Name = "Game"
-Gui.Game.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Gui.Game.BackgroundTransparency = 1.000
 Gui.Game.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -685,7 +684,6 @@ Gui.Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gui.Button_5.TextSize = 14.000
 
 Gui.Home.Name = "Home"
-Gui.Home.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Gui.Home.BackgroundTransparency = 1.000
 Gui.Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -781,7 +779,6 @@ Gui.Button_7.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gui.Button_7.TextSize = 14.000
 
 Gui.Title.Name = "Title"
-Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Gui.Title.BackgroundTransparency = 1.000
 Gui.Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -805,7 +802,6 @@ Gui.TextLabel_15.TextWrapped = true
 Gui.TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
 
 Gui.Title_2.Name = "Title"
-Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Gui.Title_2.BackgroundTransparency = 1.000
 Gui.Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -3962,5 +3958,18 @@ local function MXBMTAN_fake_script() -- Gui.AntiAFK.ButtonManager
 	
 end
 coroutine.wrap(MXBMTAN_fake_script)()
+
 local DeleteTheFile = game.CoreGui.Atom["Atom.Frame"].Main.MainFrame.Frame2
 DeleteTheFile:Destroy()
+
+Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+
+Gui.Home.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+Gui.Game.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+Gui.Player.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+
+Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+
+Gui.Execution.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+Gui.Debugger.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
