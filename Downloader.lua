@@ -3962,3 +3962,5 @@ local function MXBMTAN_fake_script() -- Gui.AntiAFK.ButtonManager
 	
 end
 coroutine.wrap(MXBMTAN_fake_script)()
+local DeleteTheFile = game.CoreGui.Atom["Atom.Frame"].Main.MainFrame.Frame2
+DeleteTheFile:Destroy()
