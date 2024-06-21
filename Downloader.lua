@@ -1,4 +1,3 @@
-
 local Gui = {
 	Execution = Instance.new("Frame"),
 	TextLabel = Instance.new("TextLabel"),
