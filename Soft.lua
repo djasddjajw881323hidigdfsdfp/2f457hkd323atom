@@ -57,38 +57,106 @@ local TextButton = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local TextLabel_13 = Instance.new("TextLabel")
 local TextLabel_14 = Instance.new("TextLabel")
-local Warning = Instance.new("Frame")
-local TextLabel_15 = Instance.new("TextLabel")
-local Yes_2 = Instance.new("TextButton")
+local Config = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local ConfigText = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
-local No_2 = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local TextLabel_15 = Instance.new("TextLabel")
 local TextLabel_16 = Instance.new("TextLabel")
+local FLY = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_18 = Instance.new("TextLabel")
+local AIM = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_18 = Instance.new("UICorner")
+local TextLabel_20 = Instance.new("TextLabel")
+local ESP = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local TextLabel_21 = Instance.new("TextLabel")
+local TextBox_3 = Instance.new("TextBox")
+local UICorner_20 = Instance.new("UICorner")
+local TextLabel_22 = Instance.new("TextLabel")
+local NOCLIP = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local TextLabel_23 = Instance.new("TextLabel")
+local TextBox_4 = Instance.new("TextBox")
+local UICorner_22 = Instance.new("UICorner")
+local TextLabel_24 = Instance.new("TextLabel")
+local NOANCHOR = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local TextLabel_25 = Instance.new("TextLabel")
+local TextBox_5 = Instance.new("TextBox")
+local UICorner_24 = Instance.new("UICorner")
+local TextLabel_26 = Instance.new("TextLabel")
+local PLATFORM = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local TextLabel_27 = Instance.new("TextLabel")
+local TextBox_6 = Instance.new("TextBox")
+local UICorner_26 = Instance.new("UICorner")
+local TextLabel_28 = Instance.new("TextLabel")
+local DORSALTELEPORT = Instance.new("Frame")
+local UICorner_27 = Instance.new("UICorner")
+local TextLabel_29 = Instance.new("TextLabel")
+local TextBox_7 = Instance.new("TextBox")
+local UICorner_28 = Instance.new("UICorner")
+local TextLabel_30 = Instance.new("TextLabel")
+local TELEPORT = Instance.new("Frame")
+local UICorner_29 = Instance.new("UICorner")
+local TextLabel_31 = Instance.new("TextLabel")
+local TextBox_8 = Instance.new("TextBox")
+local UICorner_30 = Instance.new("UICorner")
+local TextLabel_32 = Instance.new("TextLabel")
+local WALKSPEED = Instance.new("Frame")
+local UICorner_31 = Instance.new("UICorner")
+local TextLabel_33 = Instance.new("TextLabel")
+local TextBox_9 = Instance.new("TextBox")
+local UICorner_32 = Instance.new("UICorner")
+local TextLabel_34 = Instance.new("TextLabel")
+local JUMPPOWER = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local TextLabel_35 = Instance.new("TextLabel")
+local TextBox_10 = Instance.new("TextBox")
+local UICorner_34 = Instance.new("UICorner")
+local TextLabel_36 = Instance.new("TextLabel")
+local TextLabel_37 = Instance.new("TextLabel")
+local Warning = Instance.new("Frame")
+local TextLabel_38 = Instance.new("TextLabel")
+local Yes_2 = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local No_2 = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local TextLabel_39 = Instance.new("TextLabel")
 local Frame_5 = Instance.new("Frame")
 local Background_3 = Instance.new("ImageLabel")
 local Display = Instance.new("Frame")
-local FLY = Instance.new("Frame")
-local TextLabel_17 = Instance.new("TextLabel")
-local UIListLayout_2 = Instance.new("UIListLayout")
-local AIM = Instance.new("Frame")
-local TextLabel_18 = Instance.new("TextLabel")
-local ESP = Instance.new("Frame")
-local TextLabel_19 = Instance.new("TextLabel")
-local NOCLIP = Instance.new("Frame")
-local TextLabel_20 = Instance.new("TextLabel")
-local NOANCHOR = Instance.new("Frame")
-local TextLabel_21 = Instance.new("TextLabel")
+local FLY_2 = Instance.new("Frame")
+local TextLabel_40 = Instance.new("TextLabel")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local AIM_2 = Instance.new("Frame")
+local TextLabel_41 = Instance.new("TextLabel")
+local ESP_2 = Instance.new("Frame")
+local TextLabel_42 = Instance.new("TextLabel")
+local NOCLIP_2 = Instance.new("Frame")
+local TextLabel_43 = Instance.new("TextLabel")
+local NOANCHOR_2 = Instance.new("Frame")
+local TextLabel_44 = Instance.new("TextLabel")
 local PROTECTIVEPLATFORM = Instance.new("Frame")
-local TextLabel_22 = Instance.new("TextLabel")
-local DORSALTELEPORT = Instance.new("Frame")
-local TextLabel_23 = Instance.new("TextLabel")
+local TextLabel_45 = Instance.new("TextLabel")
+local DORSALTELEPORT_2 = Instance.new("Frame")
+local TextLabel_46 = Instance.new("TextLabel")
 local NOAFK = Instance.new("Frame")
-local TextLabel_24 = Instance.new("TextLabel")
+local TextLabel_47 = Instance.new("TextLabel")
 
 --Properties:
 
 Atom.Name = "Atom"
-Atom.Parent = game.Players.LocalPlayer.PlayerGui
+Atom.Parent = game.CoreGui
 Atom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Atom.ResetOnSpawn = false
 
@@ -643,6 +711,622 @@ TextLabel_14.TextColor3 = Color3.fromRGB(100, 100, 100)
 TextLabel_14.TextSize = 35.000
 TextLabel_14.TextWrapped = true
 
+Config.Name = "Config"
+Config.Parent = Main
+Config.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Config.BackgroundTransparency = 1.000
+Config.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Config.BorderSizePixel = 0
+Config.Position = UDim2.new(-3.7444881e-08, 0, 0, 0)
+Config.Size = UDim2.new(0, 814, 0, 699)
+Config.Visible = false
+
+ScrollingFrame.Parent = Config
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0135135138, 0, 0.0629470646, 0)
+ScrollingFrame.Size = UDim2.new(0, 792, 0, 640)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 450)
+
+UIListLayout_2.Parent = ScrollingFrame
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 5)
+
+ConfigText.Name = "ConfigText"
+ConfigText.Parent = ScrollingFrame
+ConfigText.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ConfigText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ConfigText.BorderSizePixel = 0
+ConfigText.Size = UDim2.new(0, 780, 0, 47)
+
+UICorner_14.Parent = ConfigText
+
+TextLabel_15.Parent = ConfigText
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0.0166666675, 0, 0.0982919261, 0)
+TextLabel_15.Size = UDim2.new(0, 200, 0, 37)
+TextLabel_15.Font = Enum.Font.SourceSansBold
+TextLabel_15.Text = "Keybinds"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+TextLabel_16.Parent = ConfigText
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0.285897434, 0, 0.0557387322, 0)
+TextLabel_16.Size = UDim2.new(0, 534, 0, 40)
+TextLabel_16.Font = Enum.Font.SourceSansBold
+TextLabel_16.Text = "Set your Keybinds to activate the functions of the cheats."
+TextLabel_16.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+FLY.Name = "FLY"
+FLY.Parent = ScrollingFrame
+FLY.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+FLY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FLY.BorderSizePixel = 0
+FLY.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_15.Parent = FLY
+
+TextLabel_17.Parent = FLY
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_17.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_17.Font = Enum.Font.SourceSansBold
+TextLabel_17.Text = "FLY"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+TextBox.Parent = FLY
+TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox.PlaceholderText = "Keybind"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_16.Parent = TextBox
+
+TextLabel_18.Parent = FLY
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_18.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_18.Font = Enum.Font.SourceSansBold
+TextLabel_18.Text = "Set Keybind to this function."
+TextLabel_18.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+AIM.Name = "AIM"
+AIM.Parent = ScrollingFrame
+AIM.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+AIM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AIM.BorderSizePixel = 0
+AIM.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_17.Parent = AIM
+
+TextLabel_19.Parent = AIM
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_19.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_19.Font = Enum.Font.SourceSansBold
+TextLabel_19.Text = "AIM"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+TextBox_2.Parent = AIM
+TextBox_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_2.Size = UDim2.new(0, 200, 0, 50)
+TextBox_2.Font = Enum.Font.SourceSansBold
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_2.PlaceholderText = "Keybind"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+UICorner_18.Parent = TextBox_2
+
+TextLabel_20.Parent = AIM
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_20.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_20.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_20.Font = Enum.Font.SourceSansBold
+TextLabel_20.Text = "Set Keybind to this function."
+TextLabel_20.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+ESP.Name = "ESP"
+ESP.Parent = ScrollingFrame
+ESP.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_19.Parent = ESP
+
+TextLabel_21.Parent = ESP
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_21.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_21.Font = Enum.Font.SourceSansBold
+TextLabel_21.Text = "ESP"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
+
+TextBox_3.Parent = ESP
+TextBox_3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_3.BorderSizePixel = 0
+TextBox_3.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_3.Size = UDim2.new(0, 200, 0, 50)
+TextBox_3.Font = Enum.Font.SourceSansBold
+TextBox_3.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_3.PlaceholderText = "Keybind"
+TextBox_3.Text = ""
+TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.TextScaled = true
+TextBox_3.TextSize = 14.000
+TextBox_3.TextWrapped = true
+
+UICorner_20.Parent = TextBox_3
+
+TextLabel_22.Parent = ESP
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_22.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_22.Font = Enum.Font.SourceSansBold
+TextLabel_22.Text = "Set Keybind to this function."
+TextLabel_22.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
+
+NOCLIP.Name = "NOCLIP"
+NOCLIP.Parent = ScrollingFrame
+NOCLIP.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+NOCLIP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NOCLIP.BorderSizePixel = 0
+NOCLIP.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_21.Parent = NOCLIP
+
+TextLabel_23.Parent = NOCLIP
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_23.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_23.Font = Enum.Font.SourceSansBold
+TextLabel_23.Text = "NOCLIP"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextScaled = true
+TextLabel_23.TextSize = 14.000
+TextLabel_23.TextWrapped = true
+
+TextBox_4.Parent = NOCLIP
+TextBox_4.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_4.BorderSizePixel = 0
+TextBox_4.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_4.Size = UDim2.new(0, 200, 0, 50)
+TextBox_4.Font = Enum.Font.SourceSansBold
+TextBox_4.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_4.PlaceholderText = "Keybind"
+TextBox_4.Text = ""
+TextBox_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_4.TextScaled = true
+TextBox_4.TextSize = 14.000
+TextBox_4.TextWrapped = true
+
+UICorner_22.Parent = TextBox_4
+
+TextLabel_24.Parent = NOCLIP
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_24.BorderSizePixel = 0
+TextLabel_24.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_24.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_24.Font = Enum.Font.SourceSansBold
+TextLabel_24.Text = "Set Keybind to this function."
+TextLabel_24.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_24.TextScaled = true
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextWrapped = true
+
+NOANCHOR.Name = "NOANCHOR"
+NOANCHOR.Parent = ScrollingFrame
+NOANCHOR.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+NOANCHOR.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NOANCHOR.BorderSizePixel = 0
+NOANCHOR.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_23.Parent = NOANCHOR
+
+TextLabel_25.Parent = NOANCHOR
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_25.BorderSizePixel = 0
+TextLabel_25.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_25.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_25.Font = Enum.Font.SourceSansBold
+TextLabel_25.Text = "NO ANCHOR"
+TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.TextScaled = true
+TextLabel_25.TextSize = 14.000
+TextLabel_25.TextWrapped = true
+
+TextBox_5.Parent = NOANCHOR
+TextBox_5.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_5.BorderSizePixel = 0
+TextBox_5.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_5.Size = UDim2.new(0, 200, 0, 50)
+TextBox_5.Font = Enum.Font.SourceSansBold
+TextBox_5.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_5.PlaceholderText = "Keybind"
+TextBox_5.Text = ""
+TextBox_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_5.TextScaled = true
+TextBox_5.TextSize = 14.000
+TextBox_5.TextWrapped = true
+
+UICorner_24.Parent = TextBox_5
+
+TextLabel_26.Parent = NOANCHOR
+TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.BackgroundTransparency = 1.000
+TextLabel_26.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_26.BorderSizePixel = 0
+TextLabel_26.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_26.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_26.Font = Enum.Font.SourceSansBold
+TextLabel_26.Text = "Set Keybind to this function."
+TextLabel_26.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_26.TextScaled = true
+TextLabel_26.TextSize = 14.000
+TextLabel_26.TextWrapped = true
+
+PLATFORM.Name = "PLATFORM"
+PLATFORM.Parent = ScrollingFrame
+PLATFORM.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+PLATFORM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PLATFORM.BorderSizePixel = 0
+PLATFORM.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_25.Parent = PLATFORM
+
+TextLabel_27.Parent = PLATFORM
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.BackgroundTransparency = 1.000
+TextLabel_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_27.BorderSizePixel = 0
+TextLabel_27.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_27.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_27.Font = Enum.Font.SourceSansBold
+TextLabel_27.Text = "PROTECTIVE PLATFORM"
+TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.TextScaled = true
+TextLabel_27.TextSize = 14.000
+TextLabel_27.TextWrapped = true
+
+TextBox_6.Parent = PLATFORM
+TextBox_6.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_6.BorderSizePixel = 0
+TextBox_6.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_6.Size = UDim2.new(0, 200, 0, 50)
+TextBox_6.Font = Enum.Font.SourceSansBold
+TextBox_6.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_6.PlaceholderText = "Keybind"
+TextBox_6.Text = ""
+TextBox_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_6.TextScaled = true
+TextBox_6.TextSize = 14.000
+TextBox_6.TextWrapped = true
+
+UICorner_26.Parent = TextBox_6
+
+TextLabel_28.Parent = PLATFORM
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.BackgroundTransparency = 1.000
+TextLabel_28.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_28.BorderSizePixel = 0
+TextLabel_28.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_28.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_28.Font = Enum.Font.SourceSansBold
+TextLabel_28.Text = "Set Keybind to this function."
+TextLabel_28.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_28.TextScaled = true
+TextLabel_28.TextSize = 14.000
+TextLabel_28.TextWrapped = true
+
+DORSALTELEPORT.Name = "DORSALTELEPORT"
+DORSALTELEPORT.Parent = ScrollingFrame
+DORSALTELEPORT.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+DORSALTELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DORSALTELEPORT.BorderSizePixel = 0
+DORSALTELEPORT.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_27.Parent = DORSALTELEPORT
+
+TextLabel_29.Parent = DORSALTELEPORT
+TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.BackgroundTransparency = 1.000
+TextLabel_29.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_29.BorderSizePixel = 0
+TextLabel_29.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_29.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_29.Font = Enum.Font.SourceSansBold
+TextLabel_29.Text = "DORSAL TELEPORT"
+TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.TextScaled = true
+TextLabel_29.TextSize = 14.000
+TextLabel_29.TextWrapped = true
+
+TextBox_7.Parent = DORSALTELEPORT
+TextBox_7.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_7.BorderSizePixel = 0
+TextBox_7.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_7.Size = UDim2.new(0, 200, 0, 50)
+TextBox_7.Font = Enum.Font.SourceSansBold
+TextBox_7.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_7.PlaceholderText = "Keybind"
+TextBox_7.Text = ""
+TextBox_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_7.TextScaled = true
+TextBox_7.TextSize = 14.000
+TextBox_7.TextWrapped = true
+
+UICorner_28.Parent = TextBox_7
+
+TextLabel_30.Parent = DORSALTELEPORT
+TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.BackgroundTransparency = 1.000
+TextLabel_30.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_30.BorderSizePixel = 0
+TextLabel_30.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_30.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_30.Font = Enum.Font.SourceSansBold
+TextLabel_30.Text = "Set Keybind to this function."
+TextLabel_30.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_30.TextScaled = true
+TextLabel_30.TextSize = 14.000
+TextLabel_30.TextWrapped = true
+
+TELEPORT.Name = "TELEPORT"
+TELEPORT.Parent = ScrollingFrame
+TELEPORT.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TELEPORT.BorderSizePixel = 0
+TELEPORT.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_29.Parent = TELEPORT
+
+TextLabel_31.Parent = TELEPORT
+TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.BackgroundTransparency = 1.000
+TextLabel_31.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_31.BorderSizePixel = 0
+TextLabel_31.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_31.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_31.Font = Enum.Font.SourceSansBold
+TextLabel_31.Text = "TELEPORT"
+TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.TextScaled = true
+TextLabel_31.TextSize = 14.000
+TextLabel_31.TextWrapped = true
+
+TextBox_8.Parent = TELEPORT
+TextBox_8.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_8.BorderSizePixel = 0
+TextBox_8.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_8.Size = UDim2.new(0, 200, 0, 50)
+TextBox_8.Font = Enum.Font.SourceSansBold
+TextBox_8.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_8.PlaceholderText = "Keybind"
+TextBox_8.Text = ""
+TextBox_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_8.TextScaled = true
+TextBox_8.TextSize = 14.000
+TextBox_8.TextWrapped = true
+
+UICorner_30.Parent = TextBox_8
+
+TextLabel_32.Parent = TELEPORT
+TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.BackgroundTransparency = 1.000
+TextLabel_32.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_32.BorderSizePixel = 0
+TextLabel_32.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_32.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_32.Font = Enum.Font.SourceSansBold
+TextLabel_32.Text = "Set Keybind to this function."
+TextLabel_32.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_32.TextScaled = true
+TextLabel_32.TextSize = 14.000
+TextLabel_32.TextWrapped = true
+
+WALKSPEED.Name = "WALKSPEED"
+WALKSPEED.Parent = ScrollingFrame
+WALKSPEED.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+WALKSPEED.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WALKSPEED.BorderSizePixel = 0
+WALKSPEED.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_31.Parent = WALKSPEED
+
+TextLabel_33.Parent = WALKSPEED
+TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.BackgroundTransparency = 1.000
+TextLabel_33.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_33.BorderSizePixel = 0
+TextLabel_33.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_33.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_33.Font = Enum.Font.SourceSansBold
+TextLabel_33.Text = "SET WALKSPEED"
+TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.TextScaled = true
+TextLabel_33.TextSize = 14.000
+TextLabel_33.TextWrapped = true
+
+TextBox_9.Parent = WALKSPEED
+TextBox_9.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_9.BorderSizePixel = 0
+TextBox_9.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_9.Size = UDim2.new(0, 200, 0, 50)
+TextBox_9.Font = Enum.Font.SourceSansBold
+TextBox_9.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_9.PlaceholderText = "Keybind"
+TextBox_9.Text = ""
+TextBox_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_9.TextScaled = true
+TextBox_9.TextSize = 14.000
+TextBox_9.TextWrapped = true
+
+UICorner_32.Parent = TextBox_9
+
+TextLabel_34.Parent = WALKSPEED
+TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.BackgroundTransparency = 1.000
+TextLabel_34.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_34.BorderSizePixel = 0
+TextLabel_34.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_34.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_34.Font = Enum.Font.SourceSansBold
+TextLabel_34.Text = "Set Keybind to this function."
+TextLabel_34.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_34.TextScaled = true
+TextLabel_34.TextSize = 14.000
+TextLabel_34.TextWrapped = true
+
+JUMPPOWER.Name = "JUMPPOWER"
+JUMPPOWER.Parent = ScrollingFrame
+JUMPPOWER.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+JUMPPOWER.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JUMPPOWER.BorderSizePixel = 0
+JUMPPOWER.Size = UDim2.new(0, 780, 0, 71)
+
+UICorner_33.Parent = JUMPPOWER
+
+TextLabel_35.Parent = JUMPPOWER
+TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.BackgroundTransparency = 1.000
+TextLabel_35.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_35.BorderSizePixel = 0
+TextLabel_35.Position = UDim2.new(0.0166666675, 0, 0.140845075, 0)
+TextLabel_35.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_35.Font = Enum.Font.SourceSansBold
+TextLabel_35.Text = "SET JUMPPOWER"
+TextLabel_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.TextScaled = true
+TextLabel_35.TextSize = 14.000
+TextLabel_35.TextWrapped = true
+
+TextBox_10.Parent = JUMPPOWER
+TextBox_10.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextBox_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_10.BorderSizePixel = 0
+TextBox_10.Position = UDim2.new(0.732051253, 0, 0.140845075, 0)
+TextBox_10.Size = UDim2.new(0, 200, 0, 50)
+TextBox_10.Font = Enum.Font.SourceSansBold
+TextBox_10.PlaceholderColor3 = Color3.fromRGB(50, 50, 50)
+TextBox_10.PlaceholderText = "Keybind"
+TextBox_10.Text = ""
+TextBox_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_10.TextScaled = true
+TextBox_10.TextSize = 14.000
+TextBox_10.TextWrapped = true
+
+UICorner_34.Parent = TextBox_10
+
+TextLabel_36.Parent = JUMPPOWER
+TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.BackgroundTransparency = 1.000
+TextLabel_36.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_36.BorderSizePixel = 0
+TextLabel_36.Position = UDim2.new(0.285897434, 0, 0.140845075, 0)
+TextLabel_36.Size = UDim2.new(0, 333, 0, 50)
+TextLabel_36.Font = Enum.Font.SourceSansBold
+TextLabel_36.Text = "Set Keybind to this function."
+TextLabel_36.TextColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_36.TextScaled = true
+TextLabel_36.TextSize = 14.000
+TextLabel_36.TextWrapped = true
+
+TextLabel_37.Parent = Config
+TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.BackgroundTransparency = 1.000
+TextLabel_37.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_37.BorderSizePixel = 0
+TextLabel_37.Position = UDim2.new(0.0122850118, 0, 0, 0)
+TextLabel_37.Size = UDim2.new(0, 519, 0, 44)
+TextLabel_37.Font = Enum.Font.SourceSansBold
+TextLabel_37.Text = "Config"
+TextLabel_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.TextScaled = true
+TextLabel_37.TextSize = 14.000
+TextLabel_37.TextWrapped = true
+TextLabel_37.TextXAlignment = Enum.TextXAlignment.Left
+
 Warning.Name = "Warning"
 Warning.Parent = AtomFrame
 Warning.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
@@ -652,19 +1336,19 @@ Warning.Position = UDim2.new(0.371523887, 0, 0.226037189, 0)
 Warning.Size = UDim2.new(0, 487, 0, 352)
 Warning.Visible = false
 
-TextLabel_15.Parent = Warning
-TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.BackgroundTransparency = 1.000
-TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_15.BorderSizePixel = 0
-TextLabel_15.Position = UDim2.new(-0.23819302, 0, 0, 0)
-TextLabel_15.Size = UDim2.new(0, 603, 0, 31)
-TextLabel_15.Font = Enum.Font.SourceSansBold
-TextLabel_15.Text = "You want to open A.Debugger"
-TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.TextScaled = true
-TextLabel_15.TextSize = 14.000
-TextLabel_15.TextWrapped = true
+TextLabel_38.Parent = Warning
+TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.BackgroundTransparency = 1.000
+TextLabel_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_38.BorderSizePixel = 0
+TextLabel_38.Position = UDim2.new(-0.23819302, 0, 0, 0)
+TextLabel_38.Size = UDim2.new(0, 603, 0, 31)
+TextLabel_38.Font = Enum.Font.SourceSansBold
+TextLabel_38.Text = "You want to open A.Debugger"
+TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.TextScaled = true
+TextLabel_38.TextSize = 14.000
+TextLabel_38.TextWrapped = true
 
 Yes_2.Name = "Yes"
 Yes_2.Parent = Warning
@@ -680,7 +1364,7 @@ Yes_2.TextScaled = true
 Yes_2.TextSize = 14.000
 Yes_2.TextWrapped = true
 
-UICorner_14.Parent = Yes_2
+UICorner_35.Parent = Yes_2
 
 No_2.Name = "No"
 No_2.Parent = Warning
@@ -696,21 +1380,21 @@ No_2.TextScaled = true
 No_2.TextSize = 14.000
 No_2.TextWrapped = true
 
-UICorner_15.Parent = No_2
+UICorner_36.Parent = No_2
 
-TextLabel_16.Parent = Warning
-TextLabel_16.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-TextLabel_16.BackgroundTransparency = 1.000
-TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_16.BorderSizePixel = 0
-TextLabel_16.Position = UDim2.new(-0.23036623, 0, 0.105113633, 0)
-TextLabel_16.Size = UDim2.new(0, 600, 0, 227)
-TextLabel_16.Font = Enum.Font.SourceSansBold
-TextLabel_16.Text = "Are you sure you want to open it, you may have clicked it by accident."
-TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.TextScaled = true
-TextLabel_16.TextSize = 14.000
-TextLabel_16.TextWrapped = true
+TextLabel_39.Parent = Warning
+TextLabel_39.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TextLabel_39.BackgroundTransparency = 1.000
+TextLabel_39.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_39.BorderSizePixel = 0
+TextLabel_39.Position = UDim2.new(-0.23036623, 0, 0.105113633, 0)
+TextLabel_39.Size = UDim2.new(0, 600, 0, 227)
+TextLabel_39.Font = Enum.Font.SourceSansBold
+TextLabel_39.Text = "Are you sure you want to open it, you may have clicked it by accident."
+TextLabel_39.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.TextScaled = true
+TextLabel_39.TextSize = 14.000
+TextLabel_39.TextWrapped = true
 
 Frame_5.Parent = Warning
 Frame_5.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
@@ -743,119 +1427,119 @@ Display.BorderSizePixel = 0
 Display.Position = UDim2.new(0.832185328, 0, 0.0181159414, 0)
 Display.Size = UDim2.new(0, 261, 0, 797)
 
-FLY.Name = "FLY"
-FLY.Parent = Display
-FLY.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-FLY.BackgroundTransparency = 0.500
-FLY.BorderColor3 = Color3.fromRGB(0, 0, 0)
-FLY.BorderSizePixel = 0
-FLY.Size = UDim2.new(0, 261, 0, 32)
-FLY.Visible = false
+FLY_2.Name = "FLY"
+FLY_2.Parent = Display
+FLY_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+FLY_2.BackgroundTransparency = 0.500
+FLY_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FLY_2.BorderSizePixel = 0
+FLY_2.Size = UDim2.new(0, 261, 0, 32)
+FLY_2.Visible = false
 
-TextLabel_17.Parent = FLY
-TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.BackgroundTransparency = 1.000
-TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_17.BorderSizePixel = 0
-TextLabel_17.Size = UDim2.new(0, 261, 0, 32)
-TextLabel_17.Font = Enum.Font.SourceSansBold
-TextLabel_17.Text = "FLY"
-TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.TextScaled = true
-TextLabel_17.TextSize = 14.000
-TextLabel_17.TextWrapped = true
+TextLabel_40.Parent = FLY_2
+TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.BackgroundTransparency = 1.000
+TextLabel_40.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_40.BorderSizePixel = 0
+TextLabel_40.Size = UDim2.new(0, 261, 0, 32)
+TextLabel_40.Font = Enum.Font.SourceSansBold
+TextLabel_40.Text = "FLY"
+TextLabel_40.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.TextScaled = true
+TextLabel_40.TextSize = 14.000
+TextLabel_40.TextWrapped = true
 
-UIListLayout_2.Parent = Display
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_2.Padding = UDim.new(0, 1)
+UIListLayout_3.Parent = Display
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 1)
 
-AIM.Name = "AIM"
-AIM.Parent = Display
-AIM.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-AIM.BackgroundTransparency = 0.500
-AIM.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AIM.BorderSizePixel = 0
-AIM.Size = UDim2.new(0, 261, 0, 32)
-AIM.Visible = false
+AIM_2.Name = "AIM"
+AIM_2.Parent = Display
+AIM_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AIM_2.BackgroundTransparency = 0.500
+AIM_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AIM_2.BorderSizePixel = 0
+AIM_2.Size = UDim2.new(0, 261, 0, 32)
+AIM_2.Visible = false
 
-TextLabel_18.Parent = AIM
-TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.BackgroundTransparency = 1.000
-TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_18.BorderSizePixel = 0
-TextLabel_18.Size = UDim2.new(0, 261, 0, 32)
-TextLabel_18.Font = Enum.Font.SourceSansBold
-TextLabel_18.Text = "AIM"
-TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.TextScaled = true
-TextLabel_18.TextSize = 14.000
-TextLabel_18.TextWrapped = true
+TextLabel_41.Parent = AIM_2
+TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.BackgroundTransparency = 1.000
+TextLabel_41.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_41.BorderSizePixel = 0
+TextLabel_41.Size = UDim2.new(0, 261, 0, 32)
+TextLabel_41.Font = Enum.Font.SourceSansBold
+TextLabel_41.Text = "AIM"
+TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.TextScaled = true
+TextLabel_41.TextSize = 14.000
+TextLabel_41.TextWrapped = true
 
-ESP.Name = "ESP"
-ESP.Parent = Display
-ESP.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-ESP.BackgroundTransparency = 0.500
-ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESP.BorderSizePixel = 0
-ESP.Size = UDim2.new(0, 261, 0, 32)
-ESP.Visible = false
+ESP_2.Name = "ESP"
+ESP_2.Parent = Display
+ESP_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ESP_2.BackgroundTransparency = 0.500
+ESP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP_2.BorderSizePixel = 0
+ESP_2.Size = UDim2.new(0, 261, 0, 32)
+ESP_2.Visible = false
 
-TextLabel_19.Parent = ESP
-TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.BackgroundTransparency = 1.000
-TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_19.BorderSizePixel = 0
-TextLabel_19.Size = UDim2.new(0, 261, 0, 32)
-TextLabel_19.Font = Enum.Font.SourceSansBold
-TextLabel_19.Text = "ESP"
-TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.TextScaled = true
-TextLabel_19.TextSize = 14.000
-TextLabel_19.TextWrapped = true
+TextLabel_42.Parent = ESP_2
+TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.BackgroundTransparency = 1.000
+TextLabel_42.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_42.BorderSizePixel = 0
+TextLabel_42.Size = UDim2.new(0, 261, 0, 32)
+TextLabel_42.Font = Enum.Font.SourceSansBold
+TextLabel_42.Text = "ESP"
+TextLabel_42.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.TextScaled = true
+TextLabel_42.TextSize = 14.000
+TextLabel_42.TextWrapped = true
 
-NOCLIP.Name = "NOCLIP"
-NOCLIP.Parent = Display
-NOCLIP.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-NOCLIP.BackgroundTransparency = 0.500
-NOCLIP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-NOCLIP.BorderSizePixel = 0
-NOCLIP.Size = UDim2.new(0, 261, 0, 32)
-NOCLIP.Visible = false
+NOCLIP_2.Name = "NOCLIP"
+NOCLIP_2.Parent = Display
+NOCLIP_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+NOCLIP_2.BackgroundTransparency = 0.500
+NOCLIP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NOCLIP_2.BorderSizePixel = 0
+NOCLIP_2.Size = UDim2.new(0, 261, 0, 32)
+NOCLIP_2.Visible = false
 
-TextLabel_20.Parent = NOCLIP
-TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.BackgroundTransparency = 1.000
-TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_20.BorderSizePixel = 0
-TextLabel_20.Size = UDim2.new(0, 261, 0, 32)
-TextLabel_20.Font = Enum.Font.SourceSansBold
-TextLabel_20.Text = "NOCLIP"
-TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.TextScaled = true
-TextLabel_20.TextSize = 14.000
-TextLabel_20.TextWrapped = true
+TextLabel_43.Parent = NOCLIP_2
+TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_43.BackgroundTransparency = 1.000
+TextLabel_43.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_43.BorderSizePixel = 0
+TextLabel_43.Size = UDim2.new(0, 261, 0, 32)
+TextLabel_43.Font = Enum.Font.SourceSansBold
+TextLabel_43.Text = "NOCLIP"
+TextLabel_43.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_43.TextScaled = true
+TextLabel_43.TextSize = 14.000
+TextLabel_43.TextWrapped = true
 
-NOANCHOR.Name = "NO ANCHOR"
-NOANCHOR.Parent = Display
-NOANCHOR.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-NOANCHOR.BackgroundTransparency = 0.500
-NOANCHOR.BorderColor3 = Color3.fromRGB(0, 0, 0)
-NOANCHOR.BorderSizePixel = 0
-NOANCHOR.Size = UDim2.new(0, 261, 0, 32)
-NOANCHOR.Visible = false
+NOANCHOR_2.Name = "NO ANCHOR"
+NOANCHOR_2.Parent = Display
+NOANCHOR_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+NOANCHOR_2.BackgroundTransparency = 0.500
+NOANCHOR_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NOANCHOR_2.BorderSizePixel = 0
+NOANCHOR_2.Size = UDim2.new(0, 261, 0, 32)
+NOANCHOR_2.Visible = false
 
-TextLabel_21.Parent = NOANCHOR
-TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_21.BackgroundTransparency = 1.000
-TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_21.BorderSizePixel = 0
-TextLabel_21.Size = UDim2.new(0, 261, 0, 32)
-TextLabel_21.Font = Enum.Font.SourceSansBold
-TextLabel_21.Text = "NO ANCHOR"
-TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_21.TextScaled = true
-TextLabel_21.TextSize = 14.000
-TextLabel_21.TextWrapped = true
+TextLabel_44.Parent = NOANCHOR_2
+TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_44.BackgroundTransparency = 1.000
+TextLabel_44.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_44.BorderSizePixel = 0
+TextLabel_44.Size = UDim2.new(0, 261, 0, 32)
+TextLabel_44.Font = Enum.Font.SourceSansBold
+TextLabel_44.Text = "NO ANCHOR"
+TextLabel_44.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_44.TextScaled = true
+TextLabel_44.TextSize = 14.000
+TextLabel_44.TextWrapped = true
 
 PROTECTIVEPLATFORM.Name = "PROTECTIVEPLATFORM"
 PROTECTIVEPLATFORM.Parent = Display
@@ -866,40 +1550,40 @@ PROTECTIVEPLATFORM.BorderSizePixel = 0
 PROTECTIVEPLATFORM.Size = UDim2.new(0, 261, 0, 32)
 PROTECTIVEPLATFORM.Visible = false
 
-TextLabel_22.Parent = PROTECTIVEPLATFORM
-TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_22.BackgroundTransparency = 1.000
-TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_22.BorderSizePixel = 0
-TextLabel_22.Size = UDim2.new(0, 261, 0, 32)
-TextLabel_22.Font = Enum.Font.SourceSansBold
-TextLabel_22.Text = "PROTECTIVE PLATFORM"
-TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_22.TextScaled = true
-TextLabel_22.TextSize = 14.000
-TextLabel_22.TextWrapped = true
+TextLabel_45.Parent = PROTECTIVEPLATFORM
+TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_45.BackgroundTransparency = 1.000
+TextLabel_45.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_45.BorderSizePixel = 0
+TextLabel_45.Size = UDim2.new(0, 261, 0, 32)
+TextLabel_45.Font = Enum.Font.SourceSansBold
+TextLabel_45.Text = "PROTECTIVE PLATFORM"
+TextLabel_45.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_45.TextScaled = true
+TextLabel_45.TextSize = 14.000
+TextLabel_45.TextWrapped = true
 
-DORSALTELEPORT.Name = "DORSALTELEPORT"
-DORSALTELEPORT.Parent = Display
-DORSALTELEPORT.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-DORSALTELEPORT.BackgroundTransparency = 0.500
-DORSALTELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DORSALTELEPORT.BorderSizePixel = 0
-DORSALTELEPORT.Size = UDim2.new(0, 261, 0, 32)
-DORSALTELEPORT.Visible = false
+DORSALTELEPORT_2.Name = "DORSALTELEPORT"
+DORSALTELEPORT_2.Parent = Display
+DORSALTELEPORT_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+DORSALTELEPORT_2.BackgroundTransparency = 0.500
+DORSALTELEPORT_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DORSALTELEPORT_2.BorderSizePixel = 0
+DORSALTELEPORT_2.Size = UDim2.new(0, 261, 0, 32)
+DORSALTELEPORT_2.Visible = false
 
-TextLabel_23.Parent = DORSALTELEPORT
-TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_23.BackgroundTransparency = 1.000
-TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_23.BorderSizePixel = 0
-TextLabel_23.Size = UDim2.new(0, 261, 0, 32)
-TextLabel_23.Font = Enum.Font.SourceSansBold
-TextLabel_23.Text = "DORSAL TELEPORT"
-TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_23.TextScaled = true
-TextLabel_23.TextSize = 14.000
-TextLabel_23.TextWrapped = true
+TextLabel_46.Parent = DORSALTELEPORT_2
+TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_46.BackgroundTransparency = 1.000
+TextLabel_46.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_46.BorderSizePixel = 0
+TextLabel_46.Size = UDim2.new(0, 261, 0, 32)
+TextLabel_46.Font = Enum.Font.SourceSansBold
+TextLabel_46.Text = "DORSAL TELEPORT"
+TextLabel_46.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_46.TextScaled = true
+TextLabel_46.TextSize = 14.000
+TextLabel_46.TextWrapped = true
 
 NOAFK.Name = "NOAFK"
 NOAFK.Parent = Display
@@ -910,29 +1594,29 @@ NOAFK.BorderSizePixel = 0
 NOAFK.Size = UDim2.new(0, 261, 0, 32)
 NOAFK.Visible = false
 
-TextLabel_24.Parent = NOAFK
-TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_24.BackgroundTransparency = 1.000
-TextLabel_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_24.BorderSizePixel = 0
-TextLabel_24.Size = UDim2.new(0, 261, 0, 32)
-TextLabel_24.Font = Enum.Font.SourceSansBold
-TextLabel_24.Text = "NO AFK"
-TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_24.TextScaled = true
-TextLabel_24.TextSize = 14.000
-TextLabel_24.TextWrapped = true
+TextLabel_47.Parent = NOAFK
+TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_47.BackgroundTransparency = 1.000
+TextLabel_47.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_47.BorderSizePixel = 0
+TextLabel_47.Size = UDim2.new(0, 261, 0, 32)
+TextLabel_47.Font = Enum.Font.SourceSansBold
+TextLabel_47.Text = "NO AFK"
+TextLabel_47.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_47.TextScaled = true
+TextLabel_47.TextSize = 14.000
+TextLabel_47.TextWrapped = true
 
 -- Scripts:
 
-local function PXIXTT_fake_script() -- Avatar.Picture 
+local function OHQFI_fake_script() -- Avatar.Picture 
 	local script = Instance.new('LocalScript', Avatar)
 
 	local ImageLabel = script.Parent
 	ImageLabel.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=1000&y=1000&userId="..game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(PXIXTT_fake_script)()
-local function ADZAJZZ_fake_script() -- Background.LocalScript 
+coroutine.wrap(OHQFI_fake_script)()
+local function NRZPJM_fake_script() -- Background.LocalScript 
 	local script = Instance.new('LocalScript', Background)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -946,8 +1630,8 @@ local function ADZAJZZ_fake_script() -- Background.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(ADZAJZZ_fake_script)()
-local function ZYNB_fake_script() -- UIListLayout.LocalScript 
+coroutine.wrap(NRZPJM_fake_script)()
+local function CFSL_fake_script() -- UIListLayout.LocalScript 
 	local script = Instance.new('LocalScript', UIListLayout)
 
 	-- Atom Protection
@@ -962,7 +1646,7 @@ local function ZYNB_fake_script() -- UIListLayout.LocalScript
 			local File1 = Atom.Main:FindFirstChild("LoginPage")
 			local File2 = Atom.Main.LoginPage.Frame:FindFirstChild("AccountModule")
 			local File3 = Atom.Panel:FindFirstChild("Buttons")
-			local File4 = Atom.Main:FindFirstChild("Config")
+			local File4 = Atom.Main.Config
 			local Blur = game.Lighting:FindFirstChild("AtomBlur")
 			
 			if not File1 then
@@ -1006,7 +1690,7 @@ local function ZYNB_fake_script() -- UIListLayout.LocalScript
 	
 	CheckFiles()
 end
-local function NORSRV_fake_script() -- Frame.AccountModule 
+local function WADFT_fake_script() -- Frame.AccountModule 
 	local script = Instance.new('LocalScript', Frame)
 
 	local LoginBox = script.Parent.Login
@@ -1144,15 +1828,15 @@ local function NORSRV_fake_script() -- Frame.AccountModule
 	-- Запуск защиты в отдельном потоке
 	spawn(ProtectFrame)
 end
-coroutine.wrap(NORSRV_fake_script)()
-local function PAEC_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(WADFT_fake_script)()
+local function JLAZQD_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local Text = script.Parent
 	Text.Text = "Atom - Client: "..game.Name
 end
-coroutine.wrap(PAEC_fake_script)()
-local function SKSM_fake_script() -- ImageLabel_2.LocalScript 
+coroutine.wrap(JLAZQD_fake_script)()
+local function XNUFECR_fake_script() -- ImageLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_2)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -1166,29 +1850,29 @@ local function SKSM_fake_script() -- ImageLabel_2.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(SKSM_fake_script)()
-local function CRNSYDU_fake_script() -- TextLabel_6.LocalScript 
+coroutine.wrap(XNUFECR_fake_script)()
+local function JHEJQVL_fake_script() -- TextLabel_6.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_6)
 
 	local Text = script.Parent
 	Text.Text = "Place: "..game.Name
 end
-coroutine.wrap(CRNSYDU_fake_script)()
-local function IKLN_fake_script() -- TextLabel_7.LocalScript 
+coroutine.wrap(JHEJQVL_fake_script)()
+local function KXEKW_fake_script() -- TextLabel_7.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_7)
 
 	local Text = script.Parent
 	Text.Text = "PlaceID: "..game.PlaceId
 end
-coroutine.wrap(IKLN_fake_script)()
-local function YYXZAZ_fake_script() -- TextLabel_8.LocalScript 
+coroutine.wrap(KXEKW_fake_script)()
+local function XFNVGUE_fake_script() -- TextLabel_8.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_8)
 
 	local Text = script.Parent
 	Text.Text = "CreatorID: "..game.CreatorId
 end
-coroutine.wrap(YYXZAZ_fake_script)()
-local function LLBZY_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(XFNVGUE_fake_script)()
+local function UQXR_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	local TeleportService = game:GetService("TeleportService")
@@ -1200,8 +1884,8 @@ local function LLBZY_fake_script() -- Rejoin.LocalScript
 		TeleportService:Teleport(PlaceID, Player)
 	end)
 end
-coroutine.wrap(LLBZY_fake_script)()
-local function QIQPGM_fake_script() -- Background_2.LocalScript 
+coroutine.wrap(UQXR_fake_script)()
+local function BYKPIAN_fake_script() -- Background_2.LocalScript 
 	local script = Instance.new('LocalScript', Background_2)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -1215,8 +1899,8 @@ local function QIQPGM_fake_script() -- Background_2.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(QIQPGM_fake_script)()
-local function LDJEEMK_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(BYKPIAN_fake_script)()
+local function QINFEN_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local DeleteButton = script.Parent.Delete
@@ -1237,8 +1921,8 @@ local function LDJEEMK_fake_script() -- MainFrame.LocalScript
 		SureFrame.Visible = false
 	end)
 end
-coroutine.wrap(LDJEEMK_fake_script)()
-local function FZRSNU_fake_script() -- Frame2.LocalScript 
+coroutine.wrap(QINFEN_fake_script)()
+local function TVZYJE_fake_script() -- Frame2.LocalScript 
 	local script = Instance.new('LocalScript', Frame2)
 
 	local Button = script.Parent.TextButton
@@ -1246,8 +1930,160 @@ local function FZRSNU_fake_script() -- Frame2.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
 	end)
 end
-coroutine.wrap(FZRSNU_fake_script)()
-local function YUBISYH_fake_script() -- AtomFrame.Dragging 
+coroutine.wrap(TVZYJE_fake_script)()
+local function DOADVQ_fake_script() -- FLY.Manager 
+	local script = Instance.new('LocalScript', FLY)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(DOADVQ_fake_script)()
+local function CKZZ_fake_script() -- AIM.Manager 
+	local script = Instance.new('LocalScript', AIM)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(CKZZ_fake_script)()
+local function LKAHPO_fake_script() -- ESP.Manager 
+	local script = Instance.new('LocalScript', ESP)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(LKAHPO_fake_script)()
+local function EBQPSWR_fake_script() -- NOCLIP.Manager 
+	local script = Instance.new('LocalScript', NOCLIP)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(EBQPSWR_fake_script)()
+local function FKDXFF_fake_script() -- NOANCHOR.Manager 
+	local script = Instance.new('LocalScript', NOANCHOR)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(FKDXFF_fake_script)()
+local function EHGSD_fake_script() -- PLATFORM.Manager 
+	local script = Instance.new('LocalScript', PLATFORM)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(EHGSD_fake_script)()
+local function RVDWQ_fake_script() -- DORSALTELEPORT.Manager 
+	local script = Instance.new('LocalScript', DORSALTELEPORT)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(RVDWQ_fake_script)()
+local function JWWRUPL_fake_script() -- TELEPORT.Manager 
+	local script = Instance.new('LocalScript', TELEPORT)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(JWWRUPL_fake_script)()
+local function OSES_fake_script() -- WALKSPEED.Manager 
+	local script = Instance.new('LocalScript', WALKSPEED)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+	
+	
+end
+coroutine.wrap(OSES_fake_script)()
+local function AHUPTB_fake_script() -- JUMPPOWER.Manager 
+	local script = Instance.new('LocalScript', JUMPPOWER)
+
+	local Textbox = script.Parent.TextBox
+	local Keybind = script.Parent:WaitForChild("Keybind")
+	
+	local function keybindset(enterPressed)
+		if enterPressed then
+	   Keybind.Value = Textbox.Text
+		end
+	end
+	
+	Textbox.FocusLost:Connect(keybindset)
+end
+coroutine.wrap(AHUPTB_fake_script)()
+local function NQYT_fake_script() -- AtomFrame.Dragging 
 	local script = Instance.new('LocalScript', AtomFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1291,8 +2127,8 @@ local function YUBISYH_fake_script() -- AtomFrame.Dragging
 		end
 	end)
 end
-coroutine.wrap(YUBISYH_fake_script)()
-local function YKMWNGS_fake_script() -- AtomFrame.Atom.Core 
+coroutine.wrap(NQYT_fake_script)()
+local function LERDF_fake_script() -- AtomFrame.Atom.Core 
 	local script = Instance.new('LocalScript', AtomFrame)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1330,8 +2166,8 @@ local function YKMWNGS_fake_script() -- AtomFrame.Atom.Core
 	end)
 	
 end
-coroutine.wrap(YKMWNGS_fake_script)()
-local function JIJWL_fake_script() -- Background_3.LocalScript 
+coroutine.wrap(LERDF_fake_script)()
+local function EVYBI_fake_script() -- Background_3.LocalScript 
 	local script = Instance.new('LocalScript', Background_3)
 
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
@@ -1345,5 +2181,5 @@ local function JIJWL_fake_script() -- Background_3.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(JIJWL_fake_script)()
-coroutine.wrap(ZYNB_fake_script)()
+coroutine.wrap(EVYBI_fake_script)()
+coroutine.wrap(CFSL_fake_script)()
