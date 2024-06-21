@@ -3959,6 +3959,9 @@ local function MXBMTAN_fake_script() -- Gui.AntiAFK.ButtonManager
 end
 coroutine.wrap(MXBMTAN_fake_script)()
 
+local DeleteTheFile = game.CoreGui.Atom["Atom.Frame"].Main.MainFrame.Frame2
+DeleteTheFile:Destroy()
+
 Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 
 Gui.Home.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
@@ -3970,6 +3973,3 @@ Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Execution.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Debugger.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-
-local DeleteTheFile = game.CoreGui.Atom["Atom.Frame"].Main.MainFrame.Frame2
-DeleteTheFile:Destroy()
