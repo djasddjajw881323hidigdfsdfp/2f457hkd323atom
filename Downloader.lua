@@ -3963,13 +3963,17 @@ local DeleteTheFile = game.CoreGui.Atom["Atom.Frame"].Main.MainFrame.Frame2
 DeleteTheFile:Destroy()
 
 Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-
+wait(0.001)
 Gui.Home.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.001)
 Gui.Game.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.001)
 Gui.Player.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-
+wait(0.001)
 Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-
+wait(0.001)
 Gui.Execution.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.001)
 Gui.Debugger.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.001)
 Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
