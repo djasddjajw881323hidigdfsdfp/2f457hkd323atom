@@ -1027,7 +1027,6 @@ local function ZYNB_fake_script() -- UIListLayout.LocalScript
 	
 	CheckFiles()
 end
-coroutine.wrap(ZYNB_fake_script)()
 local function NORSRV_fake_script() -- Frame.AccountModule 
 	local script = Instance.new('LocalScript', Frame)
 
@@ -1368,3 +1367,4 @@ local function JIJWL_fake_script() -- Background_3.LocalScript
 	
 end
 coroutine.wrap(JIJWL_fake_script)()
+coroutine.wrap(ZYNB_fake_script)()
