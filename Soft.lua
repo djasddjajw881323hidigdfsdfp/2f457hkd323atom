@@ -1,3 +1,4 @@
+
 local Atom = {
 	Atom = Instance.new("ScreenGui"),
 	AtomFrame = Instance.new("Frame"),
@@ -351,7 +352,7 @@ local Atom = {
 --Properties:
 
 Atom.Atom.Name = "Atom"
-Atom.Atom.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Atom.Atom.Parent = game.CoreGui
 Atom.Atom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Atom.Atom.ResetOnSpawn = false
 
