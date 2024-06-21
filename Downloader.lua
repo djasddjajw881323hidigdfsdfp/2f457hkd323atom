@@ -3935,19 +3935,21 @@ DeleteTheFile:Destroy()
 
 wait(1)
 Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-wait(0.1)
+wait(1)
 Gui.Player.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-wait(0.1)
+wait(1)
 Gui.Home.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-wait(0.1)
+wait(1)
 Gui.Game.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-wait(0.1)
+wait(1)
 Gui.Execution.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-wait(0.1)
+wait(1)
 Gui.Debugger.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-wait(0.1)
+wait(1)
 Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+
+wait(1)
 
 coroutine.wrap(NADSURY_fake_script)()
 coroutine.wrap(SDPQCR_fake_script)()
