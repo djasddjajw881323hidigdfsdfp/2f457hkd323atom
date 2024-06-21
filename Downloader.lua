@@ -3936,11 +3936,11 @@ DeleteTheFile:Destroy()
 wait(1)
 Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
+Gui.Player.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+wait(0.1)
 Gui.Home.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
 Gui.Game.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
-wait(0.1)
-Gui.Player.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
 Gui.Title_2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
