@@ -1,4 +1,3 @@
-
 local Atom = {
 	Atom = Instance.new("ScreenGui"),
 	AtomFrame = Instance.new("Frame"),
