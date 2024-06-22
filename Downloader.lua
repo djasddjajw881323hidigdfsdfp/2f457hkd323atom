@@ -3926,9 +3926,6 @@ local function MXBMTAN_fake_script() -- Gui.AntiAFK.ButtonManager
 	
 end
 
-local DeleteTheFile = game.CoreGui.Atom["Atom.Frame"].Main.MainFrame.Frame2
-DeleteTheFile:Destroy()
-
 wait(0.1)
 Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
