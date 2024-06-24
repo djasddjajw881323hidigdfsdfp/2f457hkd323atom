@@ -4830,8 +4830,8 @@ coroutine.wrap(PYRXY_fake_script)()
 
 wait(1)
 
-Gui.Config.Parent = game.StarterGui.Atom["Atom.Frame"].Main
+Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 wait(0.1)
-Gui.PlaceFr.Parent = game.StarterGui.Atom["Atom.Frame"].Main
+Gui.PlaceFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 wait(0.1)
-Gui.PlayerFr.Parent = game.StarterGui.Atom["Atom.Frame"].Main
+Gui.PlayerFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
