@@ -4803,7 +4803,7 @@ local function ApplyDownload()
 	Downloader.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	wait(1)
 	Downloader.Downloader:Destroy()
-	wait(0.1)
+	wait(1)
 	coroutine.wrap(DEQIXO_fake_script)()
 	coroutine.wrap(LUTAP_fake_script)()
 	coroutine.wrap(LQVNA_fake_script)()
