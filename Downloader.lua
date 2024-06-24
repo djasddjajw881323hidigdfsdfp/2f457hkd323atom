@@ -3356,7 +3356,6 @@ local function VSOESQ_fake_script() -- Gui.FLY_2.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(VSOESQ_fake_script)()
 local function TOVIED_fake_script() -- Gui.AIM_2.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.AIM_2)
 
@@ -3455,7 +3454,6 @@ local function TOVIED_fake_script() -- Gui.AIM_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(TOVIED_fake_script)()
 local function QZUW_fake_script() -- Gui.ESP_2.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.ESP_2)
 
@@ -3510,7 +3508,6 @@ local function QZUW_fake_script() -- Gui.ESP_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(QZUW_fake_script)()
 local function SSYKB_fake_script() -- Gui.NOCLIP_2.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.NOCLIP_2)
 
@@ -3615,7 +3612,6 @@ local function SSYKB_fake_script() -- Gui.NOCLIP_2.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(SSYKB_fake_script)()
 local function NUNFLBV_fake_script() -- Gui.NOANCHOR_2.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.NOANCHOR_2)
 
@@ -3718,7 +3714,6 @@ local function NUNFLBV_fake_script() -- Gui.NOANCHOR_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(NUNFLBV_fake_script)()
 local function DRQQVN_fake_script() -- Gui.PLATFORM_2.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.PLATFORM_2)
 
@@ -3831,7 +3826,6 @@ local function DRQQVN_fake_script() -- Gui.PLATFORM_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(DRQQVN_fake_script)()
 local function KOCIGO_fake_script() -- Gui.TELEPORT_2.ValueManager 
 	local script = Instance.new('LocalScript', Gui.TELEPORT_2)
 
@@ -3893,7 +3887,6 @@ local function KOCIGO_fake_script() -- Gui.TELEPORT_2.ValueManager
 	end)
 	
 end
-coroutine.wrap(KOCIGO_fake_script)()
 local function ZDFJ_fake_script() -- Gui.DORSALTELEPORT_2.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.DORSALTELEPORT_2)
 
@@ -3984,7 +3977,6 @@ local function ZDFJ_fake_script() -- Gui.DORSALTELEPORT_2.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(ZDFJ_fake_script)()
 local function CNPQM_fake_script() -- Gui.CLICKTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.CLICKTELEPORT)
 
@@ -4072,7 +4064,6 @@ local function CNPQM_fake_script() -- Gui.CLICKTELEPORT.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(CNPQM_fake_script)()
 local function OJVWDYP_fake_script() -- Gui.FLING_2.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.FLING_2)
 
@@ -4194,14 +4185,12 @@ local function OJVWDYP_fake_script() -- Gui.FLING_2.ButtonManager
 	end)
 	
 end
-coroutine.wrap(OJVWDYP_fake_script)()
 local function GUKNE_fake_script() -- Gui.TextLabel_56.LocalScript 
 	local script = Instance.new('LocalScript', Gui.TextLabel_56)
 
 	local Text = script.Parent
 	Text.Text = game.Name
 end
-coroutine.wrap(GUKNE_fake_script)()
 local function KNTIL_fake_script() -- Gui.Background.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Background)
 
@@ -4216,7 +4205,6 @@ local function KNTIL_fake_script() -- Gui.Background.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(KNTIL_fake_script)()
 local function HELPC_fake_script() -- Gui.Dorsal.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Dorsal)
 
@@ -4283,7 +4271,6 @@ local function HELPC_fake_script() -- Gui.Dorsal.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(HELPC_fake_script)()
 local function DYRIEM_fake_script() -- Gui.Background_2.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Background_2)
 
@@ -4298,7 +4285,6 @@ local function DYRIEM_fake_script() -- Gui.Background_2.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(DYRIEM_fake_script)()
 local function XCGUNR_fake_script() -- Gui.Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Teleport_2)
 
@@ -4365,7 +4351,6 @@ local function XCGUNR_fake_script() -- Gui.Teleport_2.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(XCGUNR_fake_script)()
 local function PJUF_fake_script() -- Gui.Background_3.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Background_3)
 
@@ -4380,7 +4365,6 @@ local function PJUF_fake_script() -- Gui.Background_3.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(PJUF_fake_script)()
 local function RUYCGQ_fake_script() -- Gui.Fling.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Fling)
 
@@ -4448,7 +4432,6 @@ local function RUYCGQ_fake_script() -- Gui.Fling.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(RUYCGQ_fake_script)()
 local function KYMTHV_fake_script() -- Gui.Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Gui.Walkspeed)
 
@@ -4509,7 +4492,6 @@ local function KYMTHV_fake_script() -- Gui.Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(KYMTHV_fake_script)()
 local function GQVRUDB_fake_script() -- Gui.JumpPower.Manager 
 	local script = Instance.new('LocalScript', Gui.JumpPower)
 
@@ -4571,7 +4553,6 @@ local function GQVRUDB_fake_script() -- Gui.JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(GQVRUDB_fake_script)()
 local function OUMJUHM_fake_script() -- Gui.FOV.Manager 
 	local script = Instance.new('LocalScript', Gui.FOV)
 
@@ -4610,7 +4591,6 @@ local function OUMJUHM_fake_script() -- Gui.FOV.Manager
 	end)
 	
 end
-coroutine.wrap(OUMJUHM_fake_script)()
 local function UCMBXPN_fake_script() -- Gui.Animation.Manager 
 	local script = Instance.new('LocalScript', Gui.Animation)
 
@@ -4659,7 +4639,6 @@ local function UCMBXPN_fake_script() -- Gui.Animation.Manager
 		end
 	end)
 end
-coroutine.wrap(UCMBXPN_fake_script)()
 local function JRWFGE_fake_script() -- Gui.AntiAFK.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.AntiAFK)
 
@@ -4722,7 +4701,6 @@ local function JRWFGE_fake_script() -- Gui.AntiAFK.ButtonManager
 	end)
 	
 end
-coroutine.wrap(JRWFGE_fake_script)()
 local function PYRXY_fake_script() -- Gui.CustomAvatar.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.CustomAvatar)
 
@@ -4826,7 +4804,6 @@ local function PYRXY_fake_script() -- Gui.CustomAvatar.ButtonManager
 	end)
 	
 end
-coroutine.wrap(PYRXY_fake_script)()
 
 wait(1)
 
@@ -4835,3 +4812,29 @@ wait(0.1)
 Gui.PlaceFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 wait(0.1)
 Gui.PlayerFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
+
+wait(1)
+
+coroutine.wrap(VSOESQ_fake_script)()
+coroutine.wrap(TOVIED_fake_script)()
+coroutine.wrap(QZUW_fake_script)()
+coroutine.wrap(SSYKB_fake_script)()
+coroutine.wrap(NUNFLBV_fake_script)()
+coroutine.wrap(DRQQVN_fake_script)()
+coroutine.wrap(KOCIGO_fake_script)()
+coroutine.wrap(ZDFJ_fake_script)()
+coroutine.wrap(CNPQM_fake_script)()
+coroutine.wrap(OJVWDYP_fake_script)()
+coroutine.wrap(GUKNE_fake_script)()
+coroutine.wrap(KNTIL_fake_script)()
+coroutine.wrap(HELPC_fake_script)()
+coroutine.wrap(DYRIEM_fake_script)()
+coroutine.wrap(XCGUNR_fake_script)()
+coroutine.wrap(PJUF_fake_script)()
+coroutine.wrap(RUYCGQ_fake_script)()
+coroutine.wrap(KYMTHV_fake_script)()
+coroutine.wrap(GQVRUDB_fake_script)()
+coroutine.wrap(OUMJUHM_fake_script)()
+coroutine.wrap(UCMBXPN_fake_script)()
+coroutine.wrap(JRWFGE_fake_script)()
+coroutine.wrap(PYRXY_fake_script)()
