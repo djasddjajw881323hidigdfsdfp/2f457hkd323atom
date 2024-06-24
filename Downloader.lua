@@ -3761,7 +3761,7 @@ Gui.Title2.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
 Gui.Debugger.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
-Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
+--Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 
 wait(1)
 
