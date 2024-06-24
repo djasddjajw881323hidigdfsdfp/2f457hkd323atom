@@ -2276,7 +2276,6 @@ local function QBHSHC_fake_script() -- Gui.FLY.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(QBHSHC_fake_script)()
 local function OXWLPAU_fake_script() -- Gui.AIM.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.AIM)
 
@@ -2375,7 +2374,6 @@ local function OXWLPAU_fake_script() -- Gui.AIM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(OXWLPAU_fake_script)()
 local function HXQN_fake_script() -- Gui.ESP.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.ESP)
 
@@ -2430,7 +2428,6 @@ local function HXQN_fake_script() -- Gui.ESP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(HXQN_fake_script)()
 local function PABSR_fake_script() -- Gui.NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.NOCLIP)
 
@@ -2535,7 +2532,6 @@ local function PABSR_fake_script() -- Gui.NOCLIP.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(PABSR_fake_script)()
 local function SKIXU_fake_script() -- Gui.NOANCHOR.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.NOANCHOR)
 
@@ -2638,7 +2634,6 @@ local function SKIXU_fake_script() -- Gui.NOANCHOR.ButtonManager
 	end)
 	
 end
-coroutine.wrap(SKIXU_fake_script)()
 local function YPYG_fake_script() -- Gui.PLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.PLATFORM)
 
@@ -2751,7 +2746,6 @@ local function YPYG_fake_script() -- Gui.PLATFORM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(YPYG_fake_script)()
 local function IVJPFCY_fake_script() -- Gui.TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', Gui.TELEPORT)
 
@@ -2813,7 +2807,6 @@ local function IVJPFCY_fake_script() -- Gui.TELEPORT.ValueManager
 	end)
 	
 end
-coroutine.wrap(IVJPFCY_fake_script)()
 local function PMPPH_fake_script() -- Gui.DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.DORSALTELEPORT)
 
@@ -2904,7 +2897,6 @@ local function PMPPH_fake_script() -- Gui.DORSALTELEPORT.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(PMPPH_fake_script)()
 local function XZHRW_fake_script() -- Gui.CLICKTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.CLICKTELEPORT)
 
@@ -2992,7 +2984,6 @@ local function XZHRW_fake_script() -- Gui.CLICKTELEPORT.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(XZHRW_fake_script)()
 local function WDHHXR_fake_script() -- Gui.FLING.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.FLING)
 
@@ -3114,14 +3105,12 @@ local function WDHHXR_fake_script() -- Gui.FLING.ButtonManager
 	end)
 	
 end
-coroutine.wrap(WDHHXR_fake_script)()
 local function WHHPO_fake_script() -- Gui.TextLabel_21.LocalScript 
 	local script = Instance.new('LocalScript', Gui.TextLabel_21)
 
 	local Text = script.Parent
 	Text.Text = game.Name
 end
-coroutine.wrap(WHHPO_fake_script)()
 local function XRGSUOG_fake_script() -- Gui.Background.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Background)
 
@@ -3136,7 +3125,6 @@ local function XRGSUOG_fake_script() -- Gui.Background.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(XRGSUOG_fake_script)()
 local function HXCLK_fake_script() -- Gui.Dorsal.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Dorsal)
 
@@ -3203,7 +3191,6 @@ local function HXCLK_fake_script() -- Gui.Dorsal.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(HXCLK_fake_script)()
 local function AAGZIKJ_fake_script() -- Gui.Background_2.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Background_2)
 
@@ -3218,7 +3205,6 @@ local function AAGZIKJ_fake_script() -- Gui.Background_2.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(AAGZIKJ_fake_script)()
 local function LFNCIE_fake_script() -- Gui.Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Teleport_2)
 
@@ -3300,7 +3286,6 @@ local function MTVXBF_fake_script() -- Gui.Background_3.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(MTVXBF_fake_script)()
 local function VFYFJDF_fake_script() -- Gui.Fling.LocalScript 
 	local script = Instance.new('LocalScript', Gui.Fling)
 
@@ -3368,7 +3353,6 @@ local function VFYFJDF_fake_script() -- Gui.Fling.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(VFYFJDF_fake_script)()
 local function OOREJR_fake_script() -- Gui.Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Gui.Walkspeed)
 
@@ -3429,7 +3413,6 @@ local function OOREJR_fake_script() -- Gui.Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(OOREJR_fake_script)()
 local function IPIHPH_fake_script() -- Gui.JumpPower.Manager 
 	local script = Instance.new('LocalScript', Gui.JumpPower)
 
@@ -3530,7 +3513,6 @@ local function OKWLK_fake_script() -- Gui.FOV.Manager
 	end)
 	
 end
-coroutine.wrap(OKWLK_fake_script)()
 local function ZSND_fake_script() -- Gui.Animation.Manager 
 	local script = Instance.new('LocalScript', Gui.Animation)
 
@@ -3579,7 +3561,6 @@ local function ZSND_fake_script() -- Gui.Animation.Manager
 		end
 	end)
 end
-coroutine.wrap(ZSND_fake_script)()
 local function DLLRGER_fake_script() -- Gui.AntiAFK.ButtonManager 
 	local script = Instance.new('LocalScript', Gui.AntiAFK)
 
@@ -3642,7 +3623,6 @@ local function DLLRGER_fake_script() -- Gui.AntiAFK.ButtonManager
 	end)
 	
 end
-coroutine.wrap(DLLRGER_fake_script)()
 local function VPXOO_fake_script() -- Gui.Config.CoreClient 
 	local script = Instance.new('LocalScript', Gui.Config)
 
@@ -3650,7 +3630,6 @@ local function VPXOO_fake_script() -- Gui.Config.CoreClient
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.Player
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.Place
-	local Execution = script.Parent.Parent.Parent.Parent.Main.Execution
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
 	
@@ -3663,12 +3642,10 @@ local function VPXOO_fake_script() -- Gui.Config.CoreClient
 	Button.MouseButton1Click:Connect(function()
 		PlayerFrame.Visible = false
 		GameFrame.Visible = false
-		Execution.Visible = false
 		MainFrame.Visible = false
 		ConfigFrame.Visible = true
 	end)
 end
-coroutine.wrap(VPXOO_fake_script)()
 local function XIOOQJ_fake_script() -- Gui.Debugger.CoreClient 
 	local script = Instance.new('LocalScript', Gui.Debugger)
 
@@ -3696,7 +3673,6 @@ local function XIOOQJ_fake_script() -- Gui.Debugger.CoreClient
 		WarningFrame.Visible = false
 	end)
 end
-coroutine.wrap(XIOOQJ_fake_script)()
 local function YTIS_fake_script() -- Gui.Game.CoreClient 
 	local script = Instance.new('LocalScript', Gui.Game)
 
@@ -3704,7 +3680,6 @@ local function YTIS_fake_script() -- Gui.Game.CoreClient
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.Player
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.Place
-	local Execution = script.Parent.Parent.Parent.Parent.Main.Execution
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
 	
@@ -3717,12 +3692,10 @@ local function YTIS_fake_script() -- Gui.Game.CoreClient
 	Button.MouseButton1Click:Connect(function()
 		PlayerFrame.Visible = false
 		GameFrame.Visible = true
-		Execution.Visible = false
 		MainFrame.Visible = false
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(YTIS_fake_script)()
 local function NXORBW_fake_script() -- Gui.Home.CoreClient 
 	local script = Instance.new('LocalScript', Gui.Home)
 
@@ -3731,7 +3704,6 @@ local function NXORBW_fake_script() -- Gui.Home.CoreClient
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.Player
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.Place
-	local Execution = script.Parent.Parent.Parent.Parent.Main.Execution
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
 	
 	Button.MouseEnter:Connect(function()
@@ -3743,12 +3715,10 @@ local function NXORBW_fake_script() -- Gui.Home.CoreClient
 	Button.MouseButton1Click:Connect(function()
 		PlayerFrame.Visible = false
 		GameFrame.Visible = false
-		Execution.Visible = false
 		MainFrame.Visible = true
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(NXORBW_fake_script)()
 local function HUDP_fake_script() -- Gui.Player.CoreClient 
 	local script = Instance.new('LocalScript', Gui.Player)
 
@@ -3756,7 +3726,6 @@ local function HUDP_fake_script() -- Gui.Player.CoreClient
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.Player
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.Place
-	local Execution = script.Parent.Parent.Parent.Parent.Main.Execution
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
 	
@@ -3769,12 +3738,10 @@ local function HUDP_fake_script() -- Gui.Player.CoreClient
 	Button.MouseButton1Click:Connect(function()
 		PlayerFrame.Visible = true
 		GameFrame.Visible = false
-		Execution.Visible = false
 		MainFrame.Visible = false
 		ConfigFrame.Visible = false
 	end)
 end
-coroutine.wrap(HUDP_fake_script)()
 
 wait(1)
 
@@ -3797,3 +3764,28 @@ wait(0.1)
 Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 
 wait(1)
+
+coroutine.wrap(QBHSHC_fake_script)()
+coroutine.wrap(OXWLPAU_fake_script)()
+coroutine.wrap(HXQN_fake_script)()
+coroutine.wrap(PABSR_fake_script)()
+coroutine.wrap(SKIXU_fake_script)()
+coroutine.wrap(YPYG_fake_script)()
+coroutine.wrap(IVJPFCY_fake_script)()
+coroutine.wrap(PMPPH_fake_script)()
+coroutine.wrap(XZHRW_fake_script)()
+coroutine.wrap(WDHHXR_fake_script)()
+coroutine.wrap(XRGSUOG_fake_script)()
+coroutine.wrap(HXCLK_fake_script)()
+coroutine.wrap(AAGZIKJ_fake_script)()
+coroutine.wrap(MTVXBF_fake_script)()
+coroutine.wrap(VFYFJDF_fake_script)()
+coroutine.wrap(OOREJR_fake_script)()
+coroutine.wrap(OKWLK_fake_script)()
+coroutine.wrap(ZSND_fake_script)()
+coroutine.wrap(DLLRGER_fake_script)()
+coroutine.wrap(VPXOO_fake_script)()
+coroutine.wrap(YTIS_fake_script)()
+coroutine.wrap(XIOOQJ_fake_script)()
+coroutine.wrap(NXORBW_fake_script)()
+coroutine.wrap(HUDP_fake_script)()
