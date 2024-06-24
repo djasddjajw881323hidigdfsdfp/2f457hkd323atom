@@ -1384,7 +1384,6 @@ local function ETAWTZ_fake_script() -- Avatar.Picture
 	local ImageLabel = script.Parent
 	ImageLabel.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=1000&y=1000&userId="..game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(ETAWTZ_fake_script)()
 local function SKCCDTB_fake_script() -- Background.LocalScript 
 	local script = Instance.new('LocalScript', Background)
 
@@ -1399,7 +1398,6 @@ local function SKCCDTB_fake_script() -- Background.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(SKCCDTB_fake_script)()
 local function PVHMDTG_fake_script() -- UIListLayout.LocalScript 
 	local script = Instance.new('LocalScript', UIListLayout)
 
@@ -1588,6 +1586,215 @@ local function JAYP_fake_script() -- Updates.CoreClient
 		})
 	end)
 end
+local function HDZJ_fake_script() -- TextLabel_13.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_13)
+
+	local Text = script.Parent
+	Text.Text = "Atom - Client: "..game.Name
+end
+local function YSAMJX_fake_script() -- ImageLabel_8.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel_8)
+
+	local placeId = game.PlaceId  -- замените на ID вашего плейса
+	local imageLabel = script.Parent
+	
+	local function setPlaceThumbnail(placeId)
+		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
+		imageLabel.Image = thumbnailUrl
+	end
+	
+	setPlaceThumbnail(placeId)
+	
+end
+local function JQBNP_fake_script() -- TextLabel_14.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_14)
+
+	local Text = script.Parent
+	Text.Text = "Place: "..game.Name
+end
+local function YRPFTUI_fake_script() -- TextLabel_15.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_15)
+
+	local Text = script.Parent
+	Text.Text = "PlaceID: "..game.PlaceId
+end
+local function QIHVV_fake_script() -- TextLabel_16.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_16)
+
+	local Text = script.Parent
+	Text.Text = "CreatorID: "..game.CreatorId
+end
+local function YSKCZW_fake_script() -- Rejoin.LocalScript 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	local TeleportService = game:GetService("TeleportService")
+	local PlaceID = game.PlaceId
+	local Button = script.Parent
+	local Player = game.Players.LocalPlayer
+	
+	Button.MouseButton1Click:Connect(function()
+		TeleportService:Teleport(PlaceID, Player)
+	end)
+end
+local function GMFYWKS_fake_script() -- Background_2.LocalScript 
+	local script = Instance.new('LocalScript', Background_2)
+
+	local placeId = game.PlaceId  -- замените на ID вашего плейса
+	local imageLabel = script.Parent
+	
+	local function setPlaceThumbnail(placeId)
+		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
+		imageLabel.Image = thumbnailUrl
+	end
+	
+	setPlaceThumbnail(placeId)
+	
+end
+local function NTHAS_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local DeleteButton = script.Parent.Delete
+	local SureFrame = script.Parent.Leave
+	
+	local Yes = script.Parent.Leave.Yes
+	local No = script.Parent.Leave.No
+	
+	DeleteButton.MouseButton1Click:Connect(function()
+		SureFrame.Visible = true
+	end)
+	
+	Yes.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+		game.Lighting:WaitForChild("AtomBlur"):Destroy()
+	end)
+	No.MouseButton1Click:Connect(function()
+		SureFrame.Visible = false
+	end)
+end
+local function BWASLFS_fake_script() -- AtomFrame.Dragging 
+	local script = Instance.new('LocalScript', AtomFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	script.Name = "Dragging"
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+local function CZPET_fake_script() -- AtomFrame.Atom.Core 
+	local script = Instance.new('LocalScript', AtomFrame)
+
+	local StarterGui = game:GetService("StarterGui")
+	local UserInputService = game:GetService("UserInputService")
+	local AtomFrame = script.Parent
+	local Opened = false
+	
+	local Blur = Instance.new("BlurEffect", game.Lighting)
+	Blur.Size = 20
+	Blur.Enabled = false
+	Blur.Name = "AtomBlur"
+	
+	local AtomKeybind = Instance.new("StringValue", script.Parent)
+	AtomKeybind.Name = "AtomKeybind"
+	AtomKeybind.Value = "RightControl"
+	
+	StarterGui:SetCore("SendNotification", {
+		Title = "Atom - Client",
+		Text = "Press RightCtrl to open or close the Atom interface.",
+		Duration = 5
+	})
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if input.KeyCode == Enum.KeyCode[AtomKeybind.Value] then
+			if Opened == false then
+				AtomFrame.Visible = true
+				Opened = true
+				Blur.Enabled = true
+			else
+				AtomFrame.Visible = false
+				Opened = false
+				Blur.Enabled = false
+			end
+		end
+	end)
+	
+end
+local function VTIWPG_fake_script() -- Background_3.LocalScript 
+	local script = Instance.new('LocalScript', Background_3)
+
+	local placeId = game.PlaceId  -- замените на ID вашего плейса
+	local imageLabel = script.Parent
+	
+	local function setPlaceThumbnail(placeId)
+		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
+		imageLabel.Image = thumbnailUrl
+	end
+	
+	setPlaceThumbnail(placeId)
+	
+end
+local function IYYRFG_fake_script() -- Function.ButtonManager 
+	local script = Instance.new('LocalScript', Function)
+
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	
+	local Button = script.Parent.Status.Button
+	local Activated = false
+	
+	local Disabled = script.Parent.Status.Disabled
+	local Enabled = script.Parent.Status.Enabled
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://6052548458"
+	
+	Button.MouseButton1Click:Connect(function()
+		Click:Play()
+		if Activated == false then
+			Activated = true
+			Disabled.Visible = false
+			Enabled.Visible = true
+		elseif Activated == true then
+			Activated = false
+			Disabled.Visible = true
+			Enabled.Visible = false
+		end
+	end)
+end
 local function Startscripts()
 	wait(3)
 	coroutine.wrap(JAYP_fake_script)()
@@ -1596,10 +1803,25 @@ local function Startscripts()
 	coroutine.wrap(EKTXSKT_fake_script)()
 	coroutine.wrap(WUSISS_fake_script)()
 	coroutine.wrap(WGZJ_fake_script)()
+	coroutine.wrap(HDZJ_fake_script)()
+	coroutine.wrap(YSAMJX_fake_script)()
+	coroutine.wrap(JQBNP_fake_script)()
+	coroutine.wrap(YRPFTUI_fake_script)()
+	coroutine.wrap(QIHVV_fake_script)()
+	coroutine.wrap(YSKCZW_fake_script)()
+	coroutine.wrap(GMFYWKS_fake_script)()
+	coroutine.wrap(NTHAS_fake_script)()
+	coroutine.wrap(BWASLFS_fake_script)()
+	coroutine.wrap(CZPET_fake_script)()
+	coroutine.wrap(VTIWPG_fake_script)()
+	--
+	coroutine.wrap(SKCCDTB_fake_script)()
+	coroutine.wrap(ETAWTZ_fake_script)()
 end
+
 local function SQPC_fake_script() -- Frame.AccountModule 
 	local script = Instance.new('LocalScript', Frame)
-
+	
 	local LoginBox = script.Parent.Login
 	local PasswordBox = script.Parent.Password
 	local LoginButton = script.Parent.Enter
@@ -1736,225 +1958,5 @@ local function SQPC_fake_script() -- Frame.AccountModule
 	spawn(ProtectFrame)
 end
 coroutine.wrap(SQPC_fake_script)()
-local function HDZJ_fake_script() -- TextLabel_13.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_13)
-
-	local Text = script.Parent
-	Text.Text = "Atom - Client: "..game.Name
-end
-coroutine.wrap(HDZJ_fake_script)()
-local function YSAMJX_fake_script() -- ImageLabel_8.LocalScript 
-	local script = Instance.new('LocalScript', ImageLabel_8)
-
-	local placeId = game.PlaceId  -- замените на ID вашего плейса
-	local imageLabel = script.Parent
-	
-	local function setPlaceThumbnail(placeId)
-		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
-		imageLabel.Image = thumbnailUrl
-	end
-	
-	setPlaceThumbnail(placeId)
-	
-end
-coroutine.wrap(YSAMJX_fake_script)()
-local function JQBNP_fake_script() -- TextLabel_14.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_14)
-
-	local Text = script.Parent
-	Text.Text = "Place: "..game.Name
-end
-coroutine.wrap(JQBNP_fake_script)()
-local function YRPFTUI_fake_script() -- TextLabel_15.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_15)
-
-	local Text = script.Parent
-	Text.Text = "PlaceID: "..game.PlaceId
-end
-coroutine.wrap(YRPFTUI_fake_script)()
-local function QIHVV_fake_script() -- TextLabel_16.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_16)
-
-	local Text = script.Parent
-	Text.Text = "CreatorID: "..game.CreatorId
-end
-coroutine.wrap(QIHVV_fake_script)()
-local function YSKCZW_fake_script() -- Rejoin.LocalScript 
-	local script = Instance.new('LocalScript', Rejoin)
-
-	local TeleportService = game:GetService("TeleportService")
-	local PlaceID = game.PlaceId
-	local Button = script.Parent
-	local Player = game.Players.LocalPlayer
-	
-	Button.MouseButton1Click:Connect(function()
-		TeleportService:Teleport(PlaceID, Player)
-	end)
-end
-coroutine.wrap(YSKCZW_fake_script)()
-local function GMFYWKS_fake_script() -- Background_2.LocalScript 
-	local script = Instance.new('LocalScript', Background_2)
-
-	local placeId = game.PlaceId  -- замените на ID вашего плейса
-	local imageLabel = script.Parent
-	
-	local function setPlaceThumbnail(placeId)
-		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
-		imageLabel.Image = thumbnailUrl
-	end
-	
-	setPlaceThumbnail(placeId)
-	
-end
-coroutine.wrap(GMFYWKS_fake_script)()
-local function NTHAS_fake_script() -- MainFrame.LocalScript 
-	local script = Instance.new('LocalScript', MainFrame)
-
-	local DeleteButton = script.Parent.Delete
-	local SureFrame = script.Parent.Leave
-	
-	local Yes = script.Parent.Leave.Yes
-	local No = script.Parent.Leave.No
-	
-	DeleteButton.MouseButton1Click:Connect(function()
-		SureFrame.Visible = true
-	end)
-	
-	Yes.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent:Destroy()
-		game.Lighting:WaitForChild("AtomBlur"):Destroy()
-	end)
-	No.MouseButton1Click:Connect(function()
-		SureFrame.Visible = false
-	end)
-end
-coroutine.wrap(NTHAS_fake_script)()
-local function BWASLFS_fake_script() -- AtomFrame.Dragging 
-	local script = Instance.new('LocalScript', AtomFrame)
-
-	local UserInputService = game:GetService("UserInputService")
-	script.Name = "Dragging"
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(BWASLFS_fake_script)()
-local function CZPET_fake_script() -- AtomFrame.Atom.Core 
-	local script = Instance.new('LocalScript', AtomFrame)
-
-	local StarterGui = game:GetService("StarterGui")
-	local UserInputService = game:GetService("UserInputService")
-	local AtomFrame = script.Parent
-	local Opened = false
-	
-	local Blur = Instance.new("BlurEffect", game.Lighting)
-	Blur.Size = 20
-	Blur.Enabled = false
-	Blur.Name = "AtomBlur"
-	
-	local AtomKeybind = Instance.new("StringValue", script.Parent)
-	AtomKeybind.Name = "AtomKeybind"
-	AtomKeybind.Value = "RightControl"
-	
-	StarterGui:SetCore("SendNotification", {
-		Title = "Atom - Client",
-		Text = "Press RightCtrl to open or close the Atom interface.",
-		Duration = 5
-	})
-	
-	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode == Enum.KeyCode[AtomKeybind.Value] then
-			if Opened == false then
-				AtomFrame.Visible = true
-				Opened = true
-				Blur.Enabled = true
-			else
-				AtomFrame.Visible = false
-				Opened = false
-				Blur.Enabled = false
-			end
-		end
-	end)
-	
-end
-coroutine.wrap(CZPET_fake_script)()
-local function VTIWPG_fake_script() -- Background_3.LocalScript 
-	local script = Instance.new('LocalScript', Background_3)
-
-	local placeId = game.PlaceId  -- замените на ID вашего плейса
-	local imageLabel = script.Parent
-	
-	local function setPlaceThumbnail(placeId)
-		local thumbnailUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. placeId .. "&width=1000&height=1000&format=png"
-		imageLabel.Image = thumbnailUrl
-	end
-	
-	setPlaceThumbnail(placeId)
-	
-end
-coroutine.wrap(VTIWPG_fake_script)()
-local function IYYRFG_fake_script() -- Function.ButtonManager 
-	local script = Instance.new('LocalScript', Function)
-
-	local UserInputService = game:GetService("UserInputService")
-	local player = game.Players.LocalPlayer
-	
-	local Button = script.Parent.Status.Button
-	local Activated = false
-	
-	local Disabled = script.Parent.Status.Disabled
-	local Enabled = script.Parent.Status.Enabled
-	
-	local Click = Instance.new("Sound", script)
-	Click.SoundId = "rbxassetid://6052548458"
-	
-	Button.MouseButton1Click:Connect(function()
-		Click:Play()
-		if Activated == false then
-			Activated = true
-			Disabled.Visible = false
-			Enabled.Visible = true
-		elseif Activated == true then
-			Activated = false
-			Disabled.Visible = true
-			Enabled.Visible = false
-		end
-	end)
-end
 coroutine.wrap(IYYRFG_fake_script)()
 coroutine.wrap(PVHMDTG_fake_script)()
