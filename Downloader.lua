@@ -2142,7 +2142,6 @@ local function WQNCV_fake_script() -- Gui.Config.CoreClient
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.Player
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.Place
-	local Execution = script.Parent.Parent.Parent.Parent.Main.Execution
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
 	
@@ -2155,7 +2154,6 @@ local function WQNCV_fake_script() -- Gui.Config.CoreClient
 	Button.MouseButton1Click:Connect(function()
 		PlayerFrame.Visible = false
 		GameFrame.Visible = false
-		Execution.Visible = false
 		MainFrame.Visible = false
 		ConfigFrame.Visible = true
 	end)
@@ -2194,7 +2192,6 @@ local function MAIZCQM_fake_script() -- Gui.Game.CoreClient
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.Player
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.Place
-	local Execution = script.Parent.Parent.Parent.Parent.Main.Execution
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
 	
@@ -2207,7 +2204,6 @@ local function MAIZCQM_fake_script() -- Gui.Game.CoreClient
 	Button.MouseButton1Click:Connect(function()
 		PlayerFrame.Visible = false
 		GameFrame.Visible = true
-		Execution.Visible = false
 		MainFrame.Visible = false
 		ConfigFrame.Visible = false
 	end)
@@ -2220,7 +2216,6 @@ local function UTWIQ_fake_script() -- Gui.Home.CoreClient
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.Player
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.Place
-	local Execution = script.Parent.Parent.Parent.Parent.Main.Execution
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
 	
 	Button.MouseEnter:Connect(function()
@@ -2232,7 +2227,6 @@ local function UTWIQ_fake_script() -- Gui.Home.CoreClient
 	Button.MouseButton1Click:Connect(function()
 		PlayerFrame.Visible = false
 		GameFrame.Visible = false
-		Execution.Visible = false
 		MainFrame.Visible = true
 		ConfigFrame.Visible = false
 	end)
@@ -2244,7 +2238,6 @@ local function EXPTJU_fake_script() -- Gui.Player.CoreClient
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.Player
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.Place
-	local Execution = script.Parent.Parent.Parent.Parent.Main.Execution
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
 	
@@ -2257,7 +2250,6 @@ local function EXPTJU_fake_script() -- Gui.Player.CoreClient
 	Button.MouseButton1Click:Connect(function()
 		PlayerFrame.Visible = true
 		GameFrame.Visible = false
-		Execution.Visible = false
 		MainFrame.Visible = false
 		ConfigFrame.Visible = false
 	end)
