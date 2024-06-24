@@ -2966,6 +2966,14 @@ Gui.TextLabel_72.TextSize = 14.000
 Gui.TextLabel_72.TextWrapped = true
 Gui.TextLabel_72.TextXAlignment = Enum.TextXAlignment.Left
 
+wait(1)
+
+Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Main
+wait(0.1)
+Gui.PlaceFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
+wait(0.1)
+Gui.PlayerFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
+
 -- Scripts:
 
 local function TWICB_fake_script() -- Gui.FLY.Manager 
@@ -4804,14 +4812,6 @@ local function PYRXY_fake_script() -- Gui.CustomAvatar.ButtonManager
 	end)
 	
 end
-
-wait(1)
-
-Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Main
-wait(0.1)
-Gui.PlaceFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
-wait(0.1)
-Gui.PlayerFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 
 wait(1)
 
