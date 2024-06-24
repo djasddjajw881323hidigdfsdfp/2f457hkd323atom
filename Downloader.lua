@@ -3750,8 +3750,10 @@ local function WLDVPQ_fake_script() -- Gui.Fling.LocalScript
 	
 end
 
-wait(1)
-
+wait(0.1)
+Gui.Game.Parent = game.CoreGui.Atom["Atom.Frane"].Main
+wait(0.1)
+Gui.Place.Parent = game.CoreGui.Atom["Atom.Frane"].Main
 wait(0.1)
 Gui.Title.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 wait(0.1)
