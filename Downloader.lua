@@ -3765,7 +3765,7 @@ Gui.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 
 wait(1)
 
-coroutine.wrap(QBHSHC_fake_script)()
+--[[coroutine.wrap(QBHSHC_fake_script)()
 coroutine.wrap(OXWLPAU_fake_script)()
 coroutine.wrap(HXQN_fake_script)()
 coroutine.wrap(PABSR_fake_script)()
@@ -3788,4 +3788,4 @@ coroutine.wrap(VPXOO_fake_script)()
 coroutine.wrap(YTIS_fake_script)()
 coroutine.wrap(XIOOQJ_fake_script)()
 coroutine.wrap(NXORBW_fake_script)()
-coroutine.wrap(HUDP_fake_script)()
+coroutine.wrap(HUDP_fake_script)()]]
