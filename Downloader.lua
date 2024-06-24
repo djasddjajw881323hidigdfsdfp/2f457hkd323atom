@@ -3118,7 +3118,6 @@ local function DWGQG_fake_script() -- Downloader.FLY.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(DWGQG_fake_script)()
 local function JSOKBJ_fake_script() -- Downloader.AIM.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.AIM)
 
@@ -3217,7 +3216,6 @@ local function JSOKBJ_fake_script() -- Downloader.AIM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(JSOKBJ_fake_script)()
 local function LIIWX_fake_script() -- Downloader.ESP.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.ESP)
 
@@ -3272,7 +3270,6 @@ local function LIIWX_fake_script() -- Downloader.ESP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(LIIWX_fake_script)()
 local function TFBDSYY_fake_script() -- Downloader.NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.NOCLIP)
 
@@ -3377,7 +3374,6 @@ local function TFBDSYY_fake_script() -- Downloader.NOCLIP.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(TFBDSYY_fake_script)()
 local function DBDT_fake_script() -- Downloader.NOANCHOR.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.NOANCHOR)
 
@@ -3480,7 +3476,6 @@ local function DBDT_fake_script() -- Downloader.NOANCHOR.ButtonManager
 	end)
 	
 end
-coroutine.wrap(DBDT_fake_script)()
 local function AITUFVG_fake_script() -- Downloader.PLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.PLATFORM)
 
@@ -3593,7 +3588,6 @@ local function AITUFVG_fake_script() -- Downloader.PLATFORM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(AITUFVG_fake_script)()
 local function XJDIFE_fake_script() -- Downloader.TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', Downloader.TELEPORT)
 
@@ -3655,7 +3649,6 @@ local function XJDIFE_fake_script() -- Downloader.TELEPORT.ValueManager
 	end)
 	
 end
-coroutine.wrap(XJDIFE_fake_script)()
 local function VQGXRNB_fake_script() -- Downloader.DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.DORSALTELEPORT)
 
@@ -3746,7 +3739,6 @@ local function VQGXRNB_fake_script() -- Downloader.DORSALTELEPORT.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(VQGXRNB_fake_script)()
 local function SUVIOW_fake_script() -- Downloader.CLICKTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.CLICKTELEPORT)
 
@@ -3834,7 +3826,6 @@ local function SUVIOW_fake_script() -- Downloader.CLICKTELEPORT.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(SUVIOW_fake_script)()
 local function ZZDFPWJ_fake_script() -- Downloader.FLING.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.FLING)
 
@@ -3956,14 +3947,12 @@ local function ZZDFPWJ_fake_script() -- Downloader.FLING.ButtonManager
 	end)
 	
 end
-coroutine.wrap(ZZDFPWJ_fake_script)()
 local function LLHBDUC_fake_script() -- Downloader.TextLabel_21.LocalScript 
 	local script = Instance.new('LocalScript', Downloader.TextLabel_21)
 
 	local Text = script.Parent
 	Text.Text = game.Name
 end
-coroutine.wrap(LLHBDUC_fake_script)()
 local function UJLBPPQ_fake_script() -- Downloader.Background.LocalScript 
 	local script = Instance.new('LocalScript', Downloader.Background)
 
@@ -3978,7 +3967,6 @@ local function UJLBPPQ_fake_script() -- Downloader.Background.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(UJLBPPQ_fake_script)()
 local function ISLB_fake_script() -- Downloader.Dorsal.LocalScript 
 	local script = Instance.new('LocalScript', Downloader.Dorsal)
 
@@ -4045,7 +4033,6 @@ local function ISLB_fake_script() -- Downloader.Dorsal.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(ISLB_fake_script)()
 local function DEQIXO_fake_script() -- Downloader.Background_2.LocalScript 
 	local script = Instance.new('LocalScript', Downloader.Background_2)
 
@@ -4060,7 +4047,6 @@ local function DEQIXO_fake_script() -- Downloader.Background_2.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(DEQIXO_fake_script)()
 local function LUTAP_fake_script() -- Downloader.Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Downloader.Teleport_2)
 
@@ -4127,7 +4113,6 @@ local function LUTAP_fake_script() -- Downloader.Teleport_2.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(LUTAP_fake_script)()
 local function LQVNA_fake_script() -- Downloader.Background_3.LocalScript 
 	local script = Instance.new('LocalScript', Downloader.Background_3)
 
@@ -4142,7 +4127,6 @@ local function LQVNA_fake_script() -- Downloader.Background_3.LocalScript
 	setPlaceThumbnail(placeId)
 	
 end
-coroutine.wrap(LQVNA_fake_script)()
 local function JRXE_fake_script() -- Downloader.Fling.LocalScript 
 	local script = Instance.new('LocalScript', Downloader.Fling)
 
@@ -4210,7 +4194,6 @@ local function JRXE_fake_script() -- Downloader.Fling.LocalScript
 	updatePlayerList()
 	
 end
-coroutine.wrap(JRXE_fake_script)()
 local function SDMBGU_fake_script() -- Downloader.Walkspeed.Manager 
 	local script = Instance.new('LocalScript', Downloader.Walkspeed)
 
@@ -4271,7 +4254,6 @@ local function SDMBGU_fake_script() -- Downloader.Walkspeed.Manager
 	end)
 	
 end
-coroutine.wrap(SDMBGU_fake_script)()
 local function ZATW_fake_script() -- Downloader.JumpPower.Manager 
 	local script = Instance.new('LocalScript', Downloader.JumpPower)
 
@@ -4333,7 +4315,6 @@ local function ZATW_fake_script() -- Downloader.JumpPower.Manager
 	end)
 	
 end
-coroutine.wrap(ZATW_fake_script)()
 local function SLNRUGO_fake_script() -- Downloader.FOV.Manager 
 	local script = Instance.new('LocalScript', Downloader.FOV)
 
@@ -4372,7 +4353,6 @@ local function SLNRUGO_fake_script() -- Downloader.FOV.Manager
 	end)
 	
 end
-coroutine.wrap(SLNRUGO_fake_script)()
 local function WDFX_fake_script() -- Downloader.Animation.Manager 
 	local script = Instance.new('LocalScript', Downloader.Animation)
 
@@ -4421,7 +4401,6 @@ local function WDFX_fake_script() -- Downloader.Animation.Manager
 		end
 	end)
 end
-coroutine.wrap(WDFX_fake_script)()
 local function AIDWI_fake_script() -- Downloader.AntiAFK.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.AntiAFK)
 
@@ -4484,7 +4463,6 @@ local function AIDWI_fake_script() -- Downloader.AntiAFK.ButtonManager
 	end)
 	
 end
-coroutine.wrap(AIDWI_fake_script)()
 local function WKXZQ_fake_script() -- Downloader.CustomAvatar.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.CustomAvatar)
 
@@ -4588,7 +4566,6 @@ local function WKXZQ_fake_script() -- Downloader.CustomAvatar.ButtonManager
 	end)
 	
 end
-coroutine.wrap(WKXZQ_fake_script)()
 local function PKQLL_fake_script() -- Downloader.FLY_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.FLY_2)
 
@@ -4603,7 +4580,6 @@ local function PKQLL_fake_script() -- Downloader.FLY_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(PKQLL_fake_script)()
 local function NDTHPN_fake_script() -- Downloader.AIM_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.AIM_2)
 
@@ -4618,7 +4594,6 @@ local function NDTHPN_fake_script() -- Downloader.AIM_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(NDTHPN_fake_script)()
 local function TQOJ_fake_script() -- Downloader.ESP_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.ESP_2)
 
@@ -4633,7 +4608,6 @@ local function TQOJ_fake_script() -- Downloader.ESP_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(TQOJ_fake_script)()
 local function ATKD_fake_script() -- Downloader.NOCLIP_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.NOCLIP_2)
 
@@ -4648,7 +4622,6 @@ local function ATKD_fake_script() -- Downloader.NOCLIP_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(ATKD_fake_script)()
 local function ZWGV_fake_script() -- Downloader.NOANCHOR_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.NOANCHOR_2)
 
@@ -4663,7 +4636,6 @@ local function ZWGV_fake_script() -- Downloader.NOANCHOR_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(ZWGV_fake_script)()
 local function XPUEAPO_fake_script() -- Downloader.PLATFORM_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.PLATFORM_2)
 
@@ -4678,7 +4650,6 @@ local function XPUEAPO_fake_script() -- Downloader.PLATFORM_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(XPUEAPO_fake_script)()
 local function EENKXC_fake_script() -- Downloader.DORSALTELEPORT_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.DORSALTELEPORT_2)
 
@@ -4693,7 +4664,6 @@ local function EENKXC_fake_script() -- Downloader.DORSALTELEPORT_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(EENKXC_fake_script)()
 local function SDLTZU_fake_script() -- Downloader.TELEPORT_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.TELEPORT_2)
 
@@ -4708,7 +4678,6 @@ local function SDLTZU_fake_script() -- Downloader.TELEPORT_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(SDLTZU_fake_script)()
 local function NZFLC_fake_script() -- Downloader.WALKSPEED.Manager 
 	local script = Instance.new('LocalScript', Downloader.WALKSPEED)
 
@@ -4725,7 +4694,6 @@ local function NZFLC_fake_script() -- Downloader.WALKSPEED.Manager
 	
 	
 end
-coroutine.wrap(NZFLC_fake_script)()
 local function AGHMGLU_fake_script() -- Downloader.JUMPPOWER.Manager 
 	local script = Instance.new('LocalScript', Downloader.JUMPPOWER)
 
@@ -4740,7 +4708,6 @@ local function AGHMGLU_fake_script() -- Downloader.JUMPPOWER.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(AGHMGLU_fake_script)()
 local function UMWXPV_fake_script() -- Downloader.CLICKTELEPOT.Manager 
 	local script = Instance.new('LocalScript', Downloader.CLICKTELEPOT)
 
@@ -4755,7 +4722,6 @@ local function UMWXPV_fake_script() -- Downloader.CLICKTELEPOT.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(UMWXPV_fake_script)()
 local function RWHJS_fake_script() -- Downloader.FLING_2.Manager 
 	local script = Instance.new('LocalScript', Downloader.FLING_2)
 
@@ -4770,7 +4736,6 @@ local function RWHJS_fake_script() -- Downloader.FLING_2.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(RWHJS_fake_script)()
 local function HJZLJB_fake_script() -- Downloader.Client.Manager 
 	local script = Instance.new('LocalScript', Downloader.Client)
 
@@ -4785,7 +4750,6 @@ local function HJZLJB_fake_script() -- Downloader.Client.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(HJZLJB_fake_script)()
 local function SHUW_fake_script() -- Downloader.MenuBlur.Manager 
 	local script = Instance.new('LocalScript', Downloader.MenuBlur)
 
@@ -4800,7 +4764,6 @@ local function SHUW_fake_script() -- Downloader.MenuBlur.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(SHUW_fake_script)()
 local function OTBATLY_fake_script() -- Downloader.FUNCTIONS.ButtonManager 
 	local script = Instance.new('LocalScript', Downloader.FUNCTIONS)
 
@@ -4834,12 +4797,37 @@ local function OTBATLY_fake_script() -- Downloader.FUNCTIONS.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(OTBATLY_fake_script)()
 local function ApplyDownload()
 	Downloader.PlaceFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	Downloader.PlayerFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	Downloader.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	wait(1)
 	Downloader.Downloader:Destroy()
+	wait(0.1)
+	coroutine.wrap(DEQIXO_fake_script)()
+	coroutine.wrap(LUTAP_fake_script)()
+	coroutine.wrap(LQVNA_fake_script)()
+	coroutine.wrap(JRXE_fake_script)()
+	coroutine.wrap(SDMBGU_fake_script)()
+	coroutine.wrap(ZATW_fake_script)()
+	coroutine.wrap(SLNRUGO_fake_script)()
+	coroutine.wrap(WDFX_fake_script)()
+	coroutine.wrap(AIDWI_fake_script)()
+	coroutine.wrap(WKXZQ_fake_script)()
+	coroutine.wrap(PKQLL_fake_script)()
+	coroutine.wrap(NDTHPN_fake_script)()
+	coroutine.wrap(TQOJ_fake_script)()
+	coroutine.wrap(ATKD_fake_script)()
+	coroutine.wrap(ZWGV_fake_script)()
+	coroutine.wrap(XPUEAPO_fake_script)()
+	coroutine.wrap(EENKXC_fake_script)()
+	coroutine.wrap(SDLTZU_fake_script)()
+	coroutine.wrap(NZFLC_fake_script)()
+	coroutine.wrap(AGHMGLU_fake_script)()
+	coroutine.wrap(UMWXPV_fake_script)()
+	coroutine.wrap(RWHJS_fake_script)()
+	coroutine.wrap(HJZLJB_fake_script)()
+	coroutine.wrap(SHUW_fake_script)()
+	coroutine.wrap(OTBATLY_fake_script)()
 end
 coroutine.wrap(ApplyDownload)()
