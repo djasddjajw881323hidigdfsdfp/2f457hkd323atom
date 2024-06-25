@@ -1734,7 +1734,7 @@ local function CZPET_fake_script() -- AtomFrame.Atom.Core
 	
 	StarterGui:SetCore("SendNotification", {
 		Title = "Atom - Client",
-		Text = "Press RightCtrl to open or close the Atom interface.",
+		Text = "Press RightAlt to open or close the Atom interface.",
 		Duration = 5
 	})
 	
