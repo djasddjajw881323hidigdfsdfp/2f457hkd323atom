@@ -4802,8 +4802,6 @@ local function ApplyDownload()
 	Downloader.PlayerFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	Downloader.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	wait(1)
-	Downloader.Downloader:Destroy()
-	wait(2)
 	coroutine.wrap(DEQIXO_fake_script)()
 	coroutine.wrap(LUTAP_fake_script)()
 	coroutine.wrap(LQVNA_fake_script)()
@@ -4843,5 +4841,7 @@ local function ApplyDownload()
 	coroutine.wrap(PKQLL_fake_script)()
 	coroutine.wrap(LIIWX_fake_script)()
 	coroutine.wrap(TQOJ_fake_script)()
+	wait(1)
+	Downloader.Downloader:Destroy()
 end
 coroutine.wrap(ApplyDownload)()
