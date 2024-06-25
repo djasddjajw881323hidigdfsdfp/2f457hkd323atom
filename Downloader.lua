@@ -4842,5 +4842,6 @@ local function ApplyDownload()
 	coroutine.wrap(ZZDFPWJ_fake_script)()
 	coroutine.wrap(SDMBGU_fake_script)()
 	coroutine.wrap(ZATW_fake_script)()
+	coroutine.wrap(ISLB_fake_script)()
 end
 coroutine.wrap(ApplyDownload)()
