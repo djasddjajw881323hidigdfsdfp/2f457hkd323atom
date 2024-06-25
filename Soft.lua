@@ -1730,7 +1730,7 @@ local function CZPET_fake_script() -- AtomFrame.Atom.Core
 	
 	local AtomKeybind = Instance.new("StringValue", script.Parent)
 	AtomKeybind.Name = "AtomKeybind"
-	AtomKeybind.Value = "RightControl"
+	AtomKeybind.Value = "RightAlt"
 	
 	StarterGui:SetCore("SendNotification", {
 		Title = "Atom - Client",
