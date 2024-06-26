@@ -587,6 +587,7 @@ Enter.Text = "Sign in"
 Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
 Enter.TextSize = 40.000
 Enter.TextWrapped = true
+Enter.Modal = true
 
 UICorner_15.Parent = Enter
 
