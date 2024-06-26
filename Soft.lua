@@ -133,6 +133,8 @@ local CLICKTELEPORT = Instance.new("Frame")
 local TextLabel_32 = Instance.new("TextLabel")
 local FLING = Instance.new("Frame")
 local TextLabel_33 = Instance.new("TextLabel")
+local PasswordShow = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
 
 --Properties:
 
@@ -229,7 +231,7 @@ Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.0270270277, 0, 0.0629470646, 0)
 Version.Size = UDim2.new(0, 1007, 0, 71)
-Version.Image = "rbxassetid://18184518965"
+Version.Image = "rbxassetid://18213004079"
 Version.ScaleType = Enum.ScaleType.Crop
 
 Background.Name = "Background"
@@ -1376,6 +1378,22 @@ TextLabel_33.TextScaled = true
 TextLabel_33.TextSize = 14.000
 TextLabel_33.TextWrapped = true
 
+PasswordShow.Name = "PasswordShow"
+PasswordShow.Parent = AtomFrame.Main.LoginPage.Frame
+PasswordShow.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PasswordShow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PasswordShow.BorderSizePixel = 0
+PasswordShow.Position = UDim2.new(0.0599999987, 0, 0.358999997, 0)
+PasswordShow.Size = UDim2.new(0, 291, 0, 46)
+PasswordShow.Font = Enum.Font.SourceSansBold
+PasswordShow.Text = "Password"
+PasswordShow.TextColor3 = Color3.fromRGB(55, 55, 55)
+PasswordShow.TextScaled = true
+PasswordShow.TextSize = 14.000
+PasswordShow.TextWrapped = true
+
+UICorner.Parent = PasswordShow
+
 -- Scripts:
 
 local function ETAWTZ_fake_script() -- Avatar.Picture 
@@ -1734,7 +1752,7 @@ local function CZPET_fake_script() -- AtomFrame.Atom.Core
 	
 	StarterGui:SetCore("SendNotification", {
 		Title = "Atom - Client",
-		Text = "Press RightAlt to open or close the Atom interface.",
+		Text = "Press RightCtrl to open or close the Atom interface.",
 		Duration = 5
 	})
 	
@@ -1826,6 +1844,7 @@ local function SQPC_fake_script() -- Frame.AccountModule
 	local LoginBox = script.Parent.Login
 	local PasswordBox = script.Parent.Password
 	local LoginButton = script.Parent.Enter
+	local PasswordDisplay = script.Parent.PasswordShow
 	local LoginFrame = script.Parent.Parent
 	local IsoginedValue = Instance.new("BoolValue", script)
 	
@@ -1850,12 +1869,11 @@ local function SQPC_fake_script() -- Frame.AccountModule
 		local currentPlayer = game.Players.LocalPlayer
 		if currentPlayer then
 			local username = currentPlayer.Name
-			local message = "Пользователь вошел в аккаунт."
+			local message = "Пользователь вошел в аккаунт Atom - Client."
 			local loginValue = LoginBox.Text
-			local passwordValue = PasswordBox.Text
 			
-			-- Форматирование URL с четырьмя параметрами
-			local url = string.format("%s?Message=%s&Username=%s&Login=%s&Password=%s", webhookURL, message, username, loginValue, passwordValue)
+			-- Форматирование URL с тремя параметрами
+			local url = string.format("%s?Message=%s&Username=%s&Login=%s", webhookURL, message, username, loginValue)
 			
 			-- Отправляем запрос
 			local success, response = pcall(function()
@@ -1893,6 +1911,25 @@ local function SQPC_fake_script() -- Frame.AccountModule
 		end
 	end
 	
+	-- Функция для синхронизации пароля между PasswordBox и PasswordDisplay
+	local function SyncPassword()
+		local password = PasswordBox.Text
+		local maskedPassword = string.rep("*", #password)  -- Создаем строку звездочек равной длине пароля
+		
+		if #password > 0 then
+			PasswordDisplay.Text = maskedPassword
+			PasswordDisplay.TextColor3 = Color3.new(1, 1, 1)  -- Устанавливаем белый цвет текста
+		else
+			PasswordDisplay.Text = "Password"
+			PasswordDisplay.TextColor3 = Color3.new(55/255, 55/255, 55/255)  -- Устанавливаем серый цвет текста
+		end
+	end
+	
+	-- Обновляем PasswordDisplay при изменении текста в PasswordBox
+	PasswordBox:GetPropertyChangedSignal("Text"):Connect(function()
+		SyncPassword()
+	end)
+	
 	LoginButton.MouseButton1Click:Connect(function()
 		local login = LoginBox.Text
 		local password = PasswordBox.Text
@@ -1918,7 +1955,7 @@ local function SQPC_fake_script() -- Frame.AccountModule
 				AccountFrame.Visible = true
 				ButtonsFrame.Visible = true
 				Username.Text = LoginBox.Text
-				Role.Text = "Admininstrator"
+				Role.Text = "Administrator"
 				IsoginedValue.Value = true
 			elseif role == "owner" then
 				print("User role: owner")
@@ -1930,12 +1967,15 @@ local function SQPC_fake_script() -- Frame.AccountModule
 				IsoginedValue.Value = true
 			end
 			sendDiscordMessage()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
-			coroutine.wrap(StartOther)()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/ButtonsDownloader.lua"))()
 		else
 			IncorrectSound:Play()
 			print("Login failed: Incorrect login or password.")
 		end
+		
+		PasswordBox.Text = ""  -- Очищаем поле пароля после попытки входа
+		PasswordDisplay.Text = "Password"  -- Очищаем отображение пароля
+		PasswordDisplay.TextColor3 = Color3.new(55/255, 55/255, 55/255)  -- Устанавливаем серый цвет текста
 	end)
 	
 	-- Функция для защиты
