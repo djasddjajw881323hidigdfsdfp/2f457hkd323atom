@@ -133,6 +133,8 @@ local CLICKTELEPORT = Instance.new("Frame")
 local TextLabel_32 = Instance.new("TextLabel")
 local FLING = Instance.new("Frame")
 local TextLabel_33 = Instance.new("TextLabel")
+local PasswordShow = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
 
 --Properties:
 
@@ -1375,6 +1377,22 @@ TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_33.TextScaled = true
 TextLabel_33.TextSize = 14.000
 TextLabel_33.TextWrapped = true
+
+PasswordShow.Name = "PasswordShow"
+PasswordShow.Parent = Frame
+PasswordShow.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PasswordShow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PasswordShow.BorderSizePixel = 0
+PasswordShow.Position = UDim2.new(0.0599999987, 0, 0.358999997, 0)
+PasswordShow.Size = UDim2.new(0, 291, 0, 46)
+PasswordShow.Font = Enum.Font.SourceSansBold
+PasswordShow.Text = "Password"
+PasswordShow.TextColor3 = Color3.fromRGB(55, 55, 55)
+PasswordShow.TextScaled = true
+PasswordShow.TextSize = 14.000
+PasswordShow.TextWrapped = true
+
+UICorner.Parent = PasswordShow
 
 -- Scripts:
 
