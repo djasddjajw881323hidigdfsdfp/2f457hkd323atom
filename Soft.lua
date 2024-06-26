@@ -133,8 +133,6 @@ local CLICKTELEPORT = Instance.new("Frame")
 local TextLabel_32 = Instance.new("TextLabel")
 local FLING = Instance.new("Frame")
 local TextLabel_33 = Instance.new("TextLabel")
-local PasswordShow = Instance.new("TextLabel")
-local UICorner = Instance.new("UICorner")
 
 --Properties:
 
@@ -1378,33 +1376,17 @@ TextLabel_33.TextScaled = true
 TextLabel_33.TextSize = 14.000
 TextLabel_33.TextWrapped = true
 
-PasswordShow.Name = "PasswordShow"
-PasswordShow.Parent = AtomFrame.Main.LoginPage.Frame
-PasswordShow.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-PasswordShow.BorderColor3 = Color3.fromRGB(0, 0, 0)
-PasswordShow.BorderSizePixel = 0
-PasswordShow.Position = UDim2.new(0.0599999987, 0, 0.358999997, 0)
-PasswordShow.Size = UDim2.new(0, 291, 0, 46)
-PasswordShow.Font = Enum.Font.SourceSansBold
-PasswordShow.Text = "Password"
-PasswordShow.TextColor3 = Color3.fromRGB(55, 55, 55)
-PasswordShow.TextScaled = true
-PasswordShow.TextSize = 14.000
-PasswordShow.TextWrapped = true
-
-UICorner.Parent = PasswordShow
-
 -- Scripts:
 
 local function ETAWTZ_fake_script() -- Avatar.Picture 
 	local script = Instance.new('LocalScript', Avatar)
-
+	
 	local ImageLabel = script.Parent
 	ImageLabel.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=1000&y=1000&userId="..game.Players.LocalPlayer.UserId
 end
 local function SKCCDTB_fake_script() -- Background.LocalScript 
 	local script = Instance.new('LocalScript', Background)
-
+	
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
 	local imageLabel = script.Parent
 	
@@ -1418,7 +1400,7 @@ local function SKCCDTB_fake_script() -- Background.LocalScript
 end
 local function PVHMDTG_fake_script() -- UIListLayout.LocalScript 
 	local script = Instance.new('LocalScript', UIListLayout)
-
+	
 	-- Atom Protection
 	local Atom = script.Parent.Parent.Parent.Parent
 	script.Name = "UiListLayder"
@@ -1466,7 +1448,7 @@ local function PVHMDTG_fake_script() -- UIListLayout.LocalScript
 end
 local function WGZJ_fake_script() -- Home.CoreClient 
 	local script = Instance.new('LocalScript', Home)
-
+	
 	local Button = script.Parent.Button
 	local Background = script.Parent
 	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
@@ -1489,7 +1471,7 @@ local function WGZJ_fake_script() -- Home.CoreClient
 end
 local function WUSISS_fake_script() -- Game.CoreClient 
 	local script = Instance.new('LocalScript', Game)
-
+	
 	local Button = script.Parent.Button
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.PlayerFr
@@ -1512,7 +1494,7 @@ local function WUSISS_fake_script() -- Game.CoreClient
 end
 local function EKTXSKT_fake_script() -- Player.CoreClient 
 	local script = Instance.new('LocalScript', Player)
-
+	
 	local Button = script.Parent.Button
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.PlayerFr
@@ -1535,7 +1517,7 @@ local function EKTXSKT_fake_script() -- Player.CoreClient
 end
 local function APHL_fake_script() -- Debugger.CoreClient 
 	local script = Instance.new('LocalScript', Debugger)
-
+	
 	local Button = script.Parent.Button
 	local WarningFrame = script.Parent.Parent.Parent.Parent.Warning
 	local YesButton = WarningFrame.Yes
@@ -1562,7 +1544,7 @@ local function APHL_fake_script() -- Debugger.CoreClient
 end
 local function LJDKUI_fake_script() -- Config.CoreClient 
 	local script = Instance.new('LocalScript', Config)
-
+	
 	local Button = script.Parent.Button
 	local Background = script.Parent
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.PlayerFr
@@ -1585,7 +1567,7 @@ local function LJDKUI_fake_script() -- Config.CoreClient
 end
 local function JAYP_fake_script() -- Updates.CoreClient 
 	local script = Instance.new('LocalScript', Updates)
-
+	
 	local Button = script.Parent.Button
 	local Background = script.Parent
 	local StarterGui = game:GetService("StarterGui")
@@ -1606,13 +1588,13 @@ local function JAYP_fake_script() -- Updates.CoreClient
 end
 local function HDZJ_fake_script() -- TextLabel_13.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_13)
-
+	
 	local Text = script.Parent
 	Text.Text = "Atom - Client: "..game.Name
 end
 local function YSAMJX_fake_script() -- ImageLabel_8.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_8)
-
+	
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
 	local imageLabel = script.Parent
 	
@@ -1626,25 +1608,25 @@ local function YSAMJX_fake_script() -- ImageLabel_8.LocalScript
 end
 local function JQBNP_fake_script() -- TextLabel_14.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_14)
-
+	
 	local Text = script.Parent
 	Text.Text = "Place: "..game.Name
 end
 local function YRPFTUI_fake_script() -- TextLabel_15.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_15)
-
+	
 	local Text = script.Parent
 	Text.Text = "PlaceID: "..game.PlaceId
 end
 local function QIHVV_fake_script() -- TextLabel_16.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_16)
-
+	
 	local Text = script.Parent
 	Text.Text = "CreatorID: "..game.CreatorId
 end
 local function YSKCZW_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
-
+	
 	local TeleportService = game:GetService("TeleportService")
 	local PlaceID = game.PlaceId
 	local Button = script.Parent
@@ -1656,7 +1638,7 @@ local function YSKCZW_fake_script() -- Rejoin.LocalScript
 end
 local function GMFYWKS_fake_script() -- Background_2.LocalScript 
 	local script = Instance.new('LocalScript', Background_2)
-
+	
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
 	local imageLabel = script.Parent
 	
@@ -1670,7 +1652,7 @@ local function GMFYWKS_fake_script() -- Background_2.LocalScript
 end
 local function NTHAS_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
-
+	
 	local DeleteButton = script.Parent.Delete
 	local SureFrame = script.Parent.Leave
 	
@@ -1691,7 +1673,7 @@ local function NTHAS_fake_script() -- MainFrame.LocalScript
 end
 local function BWASLFS_fake_script() -- AtomFrame.Dragging 
 	local script = Instance.new('LocalScript', AtomFrame)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	script.Name = "Dragging"
 	
@@ -1735,7 +1717,7 @@ local function BWASLFS_fake_script() -- AtomFrame.Dragging
 end
 local function CZPET_fake_script() -- AtomFrame.Atom.Core 
 	local script = Instance.new('LocalScript', AtomFrame)
-
+	
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local AtomFrame = script.Parent
@@ -1752,7 +1734,7 @@ local function CZPET_fake_script() -- AtomFrame.Atom.Core
 	
 	StarterGui:SetCore("SendNotification", {
 		Title = "Atom - Client",
-		Text = "Press RightCtrl to open or close the Atom interface.",
+		Text = "Press RightAlt to open or close the Atom interface.",
 		Duration = 5
 	})
 	
@@ -1773,7 +1755,7 @@ local function CZPET_fake_script() -- AtomFrame.Atom.Core
 end
 local function VTIWPG_fake_script() -- Background_3.LocalScript 
 	local script = Instance.new('LocalScript', Background_3)
-
+	
 	local placeId = game.PlaceId  -- замените на ID вашего плейса
 	local imageLabel = script.Parent
 	
@@ -1787,7 +1769,7 @@ local function VTIWPG_fake_script() -- Background_3.LocalScript
 end
 local function IYYRFG_fake_script() -- Function.ButtonManager 
 	local script = Instance.new('LocalScript', Function)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	local player = game.Players.LocalPlayer
 	
@@ -1940,6 +1922,7 @@ local function SQPC_fake_script() -- Frame.AccountModule
 				IsoginedValue.Value = true
 			end
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
+			coroutine.wrap(StartOther)()
 		else
 			IncorrectSound:Play()
 			print("Login failed: Incorrect login or password.")
@@ -1969,6 +1952,7 @@ local function SQPC_fake_script() -- Frame.AccountModule
 	
 	-- Запуск защиты в отдельном потоке
 	spawn(ProtectFrame)
+	
 end
 coroutine.wrap(SQPC_fake_script)()
 coroutine.wrap(IYYRFG_fake_script)()
