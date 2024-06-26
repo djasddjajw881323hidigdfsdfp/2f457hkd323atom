@@ -231,7 +231,7 @@ Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.0270270277, 0, 0.0629470646, 0)
 Version.Size = UDim2.new(0, 1007, 0, 71)
-Version.Image = "rbxassetid://18213004079"
+Version.Image = "rbxassetid://18224152090"
 Version.ScaleType = Enum.ScaleType.Crop
 
 Background.Name = "Background"
