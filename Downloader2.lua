@@ -381,8 +381,6 @@ local function SLUWG_fake_script() -- Audio.CoreClient
 	end)
 end
 
-wait(1)
-
 AudioPlayer.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 Audio.Parent = game.CoreGui.Atom["Atom.Frame"].Panel.Buttons
 
@@ -390,5 +388,7 @@ wait(1)
 
 coroutine.wrap(SLUWG_fake_script)()
 coroutine.wrap(LEGWYA_fake_script)()
+
+wait(1)
 
 Downloader2:Destroy()
