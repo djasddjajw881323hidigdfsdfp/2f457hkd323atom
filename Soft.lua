@@ -331,6 +331,7 @@ Button.Font = Enum.Font.SourceSans
 Button.Text = ""
 Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 Button.TextSize = 14.000
+Button.Modal = true
 
 Game.Name = "Game"
 Game.Parent = Buttons
