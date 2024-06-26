@@ -4798,11 +4798,12 @@ local function OTBATLY_fake_script() -- Downloader.FUNCTIONS.ButtonManager
 	end)
 end
 local function ApplyDownload()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader2.lua"))()
 	Downloader.PlaceFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	Downloader.PlayerFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	Downloader.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	wait(0.1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader2.lua"))()
+	wait(1)
 	coroutine.wrap(DEQIXO_fake_script)()
 	coroutine.wrap(LUTAP_fake_script)()
 	coroutine.wrap(LQVNA_fake_script)()
