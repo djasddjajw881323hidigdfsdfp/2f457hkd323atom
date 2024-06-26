@@ -45,7 +45,6 @@ local ImageLabel_5 = Instance.new("ImageLabel")
 local UICorner_11 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
 local Button_5 = Instance.new("TextButton")
-local Updates = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
 local ImageLabel_6 = Instance.new("ImageLabel")
 local UICorner_13 = Instance.new("UICorner")
@@ -548,54 +547,6 @@ Button_5.Font = Enum.Font.SourceSans
 Button_5.Text = ""
 Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 Button_5.TextSize = 14.000
-
-Updates.Name = "Updates"
-Updates.Parent = Buttons
-Updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Updates.BackgroundTransparency = 1.000
-Updates.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Updates.BorderSizePixel = 0
-Updates.Size = UDim2.new(0, 214, 0, 42)
-
-UICorner_12.Parent = Updates
-
-ImageLabel_6.Parent = Updates
-ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_6.BackgroundTransparency = 1.000
-ImageLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_6.BorderSizePixel = 0
-ImageLabel_6.Position = UDim2.new(0.0093457941, 0, 0.0476190485, 0)
-ImageLabel_6.Size = UDim2.new(0, 35, 0, 35)
-ImageLabel_6.Image = "rbxassetid://18186036078"
-ImageLabel_6.ScaleType = Enum.ScaleType.Crop
-
-UICorner_13.Parent = ImageLabel_6
-
-TextLabel_8.Parent = Updates
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Position = UDim2.new(0.200934574, 0, 0.166666672, 0)
-TextLabel_8.Size = UDim2.new(0, 168, 0, 26)
-TextLabel_8.Font = Enum.Font.SourceSansBold
-TextLabel_8.Text = "Updates"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 30.000
-TextLabel_8.TextWrapped = true
-TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
-
-Button_6.Name = "Button"
-Button_6.Parent = Updates
-Button_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_6.BackgroundTransparency = 1.000
-Button_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_6.BorderSizePixel = 0
-Button_6.Size = UDim2.new(0, 218, 0, 38)
-Button_6.Font = Enum.Font.SourceSans
-Button_6.Text = ""
-Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_6.TextSize = 14.000
 
 Main.Name = "Main"
 Main.Parent = AtomFrame
@@ -1473,6 +1424,7 @@ local function WGZJ_fake_script() -- Home.CoreClient
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.PlayerFr
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.PlaceFr
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
+	local SoundFrame = script.Parent.Parent.Parent.Parent.Main.AudioPlayer
 	
 	Button.MouseEnter:Connect(function()
 		Background.BackgroundTransparency = 0.9
@@ -1485,6 +1437,7 @@ local function WGZJ_fake_script() -- Home.CoreClient
 		GameFrame.Visible = false
 		MainFrame.Visible = true
 		ConfigFrame.Visible = false
+		SoundFrame.Visible = false
 	end)
 end
 local function WUSISS_fake_script() -- Game.CoreClient 
@@ -1492,10 +1445,11 @@ local function WUSISS_fake_script() -- Game.CoreClient
 	
 	local Button = script.Parent.Button
 	local Background = script.Parent
+	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.PlayerFr
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.PlaceFr
-	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
+	local SoundFrame = script.Parent.Parent.Parent.Parent.Main.AudioPlayer
 	
 	Button.MouseEnter:Connect(function()
 		Background.BackgroundTransparency = 0.9
@@ -1508,6 +1462,7 @@ local function WUSISS_fake_script() -- Game.CoreClient
 		GameFrame.Visible = true
 		MainFrame.Visible = false
 		ConfigFrame.Visible = false
+		SoundFrame.Visible = false
 	end)
 end
 local function EKTXSKT_fake_script() -- Player.CoreClient 
@@ -1515,10 +1470,11 @@ local function EKTXSKT_fake_script() -- Player.CoreClient
 	
 	local Button = script.Parent.Button
 	local Background = script.Parent
+	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.PlayerFr
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.PlaceFr
-	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
+	local SoundFrame = script.Parent.Parent.Parent.Parent.Main.AudioPlayer
 	
 	Button.MouseEnter:Connect(function()
 		Background.BackgroundTransparency = 0.9
@@ -1531,6 +1487,7 @@ local function EKTXSKT_fake_script() -- Player.CoreClient
 		GameFrame.Visible = false
 		MainFrame.Visible = false
 		ConfigFrame.Visible = false
+		SoundFrame.Visible = false
 	end)
 end
 local function APHL_fake_script() -- Debugger.CoreClient 
@@ -1565,10 +1522,11 @@ local function LJDKUI_fake_script() -- Config.CoreClient
 	
 	local Button = script.Parent.Button
 	local Background = script.Parent
+	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local PlayerFrame = script.Parent.Parent.Parent.Parent.Main.PlayerFr
 	local GameFrame = script.Parent.Parent.Parent.Parent.Main.PlaceFr
-	local MainFrame = script.Parent.Parent.Parent.Parent.Main.MainFrame
 	local ConfigFrame = script.Parent.Parent.Parent.Parent.Main.Config
+	local SoundFrame = script.Parent.Parent.Parent.Parent.Main.AudioPlayer
 	
 	Button.MouseEnter:Connect(function()
 		Background.BackgroundTransparency = 0.9
@@ -1581,27 +1539,7 @@ local function LJDKUI_fake_script() -- Config.CoreClient
 		GameFrame.Visible = false
 		MainFrame.Visible = false
 		ConfigFrame.Visible = true
-	end)
-end
-local function JAYP_fake_script() -- Updates.CoreClient 
-	local script = Instance.new('LocalScript', Updates)
-	
-	local Button = script.Parent.Button
-	local Background = script.Parent
-	local StarterGui = game:GetService("StarterGui")
-	
-	Button.MouseEnter:Connect(function()
-		Background.BackgroundTransparency = 0.9
-	end)
-	Button.MouseLeave:Connect(function()
-		Background.BackgroundTransparency = 1
-	end)
-	Button.MouseButton1Click:Connect(function()
-		StarterGui:SetCore("SendNotification", {
-			Title = "Atom - Client Updates",
-			Text = "You already have the latest version",
-			Duration = 5,
-		})
+		SoundFrame.Visible = false
 	end)
 end
 local function HDZJ_fake_script() -- TextLabel_13.LocalScript 
@@ -1814,7 +1752,6 @@ local function IYYRFG_fake_script() -- Function.ButtonManager
 	end)
 end
 local function Startscripts()
-	coroutine.wrap(JAYP_fake_script)()
 	coroutine.wrap(APHL_fake_script)()
 	coroutine.wrap(HDZJ_fake_script)()
 	coroutine.wrap(YSAMJX_fake_script)()
