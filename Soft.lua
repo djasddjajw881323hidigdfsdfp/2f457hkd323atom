@@ -1863,33 +1863,6 @@ local function SQPC_fake_script() -- Frame.AccountModule
 	local Username = AccountFrame.Username
 	local Role = AccountFrame.Role
 	
-	local webhookURL = "https://webhook.site/5477b085-6abf-4369-988c-3da251453cb8"
-	
-	function sendDiscordMessage()
-		local currentPlayer = game.Players.LocalPlayer
-		if currentPlayer then
-			local username = currentPlayer.Name
-			local message = "Пользователь вошел в аккаунт Atom - Client."
-			local loginValue = LoginBox.Text
-			
-			-- Форматирование URL с тремя параметрами
-			local url = string.format("%s?Message=%s&Username=%s&Login=%s", webhookURL, message, username, loginValue)
-			
-			-- Отправляем запрос
-			local success, response = pcall(function()
-				return game:HttpGet(url, true)
-			end)
-			
-			-- Проверяем успешность запроса
-			if success then
-			else
-				print(response)
-			end
-		else
-			print("nil")
-		end
-	end
-	
 	local AccountBase = { -- База данных аккаунтов пользователей
 		["Atom"] = {password = "version22", role = "owner"},
 		["necto119"] = {password = "Fvbghn98", role = "user"},
@@ -1966,7 +1939,6 @@ local function SQPC_fake_script() -- Frame.AccountModule
 				Role.Text = "Owner"
 				IsoginedValue.Value = true
 			end
-			sendDiscordMessage()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader.lua"))()
 		else
 			IncorrectSound:Play()
