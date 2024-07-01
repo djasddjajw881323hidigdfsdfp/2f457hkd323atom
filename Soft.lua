@@ -1808,7 +1808,8 @@ local function SQPC_fake_script() -- Frame.AccountModule
 		["Juice"] = {password = "Juice22", role = "user"},
 		["zxcRubi"] = {password = "pisapopaantilopa", role = "user"},
 		["zuck"] = {password = "1233", role = "user"},
-		["maga02"] = {password = "1509", role = "user"}
+		["maga02"] = {password = "1509", role = "user"},
+		["THL_Eblanbl"] = {password = "666mik666", role = "user"}						
 	}
 	
 	local isLoggedIn = false  -- Флаг для отслеживания состояния входа пользователя
