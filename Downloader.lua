@@ -3144,7 +3144,7 @@ local function JSOKBJ_fake_script() -- Downloader.AIM.ButtonManager
 		
 		for _, player in ipairs(players:GetPlayers()) do
 			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
+				local distance = (player.Character.Head.Position - localPlayer.Character.Head.Position).magnitude
 				if distance < shortestDistance then
 					nearestPlayer = player
 					shortestDistance = distance
@@ -3187,7 +3187,7 @@ local function JSOKBJ_fake_script() -- Downloader.AIM.ButtonManager
 			if Aiming and TargetPlayer then -- Если AIM включен и есть целевой игрок, то наводимся на него
 				if TargetPlayer.Character and TargetPlayer.Character:FindFirstChild("HumanoidRootPart") then
 					local camera = game.Workspace.CurrentCamera
-					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.HumanoidRootPart.Position)
+					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.Head.Position)
 				end
 			end
 		end
@@ -4804,6 +4804,7 @@ local function ApplyDownload()
 	wait(0.1)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader2.lua"))()
 	wait(1)
+	coroutine.wrap(DEQIXO_fake_script)()
 	coroutine.wrap(LUTAP_fake_script)()
 	coroutine.wrap(LQVNA_fake_script)()
 	coroutine.wrap(JRXE_fake_script)()
@@ -4842,7 +4843,6 @@ local function ApplyDownload()
 	coroutine.wrap(PKQLL_fake_script)()
 	coroutine.wrap(LIIWX_fake_script)()
 	coroutine.wrap(TQOJ_fake_script)()
-	coroutine.wrap(DEQIXO_fake_script)()
 	wait(1)
 	Downloader.Downloader:Destroy()
 end
