@@ -1197,6 +1197,7 @@ local function RATLUE_fake_script() -- Widget.AccountModule
 			
 			for username, account in pairs(AccountBase) do
 				if account.ip == ip then
+					wait(1)
 					local role = account.role
 					print("Quick login successful for " .. username .. "!")
 					CorrectSound:Play()
