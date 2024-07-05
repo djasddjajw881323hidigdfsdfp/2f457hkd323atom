@@ -1336,7 +1336,7 @@ UICorner_51.Parent = Select_6
 
 local function HDKQPCJ_fake_script() -- Fling.LocalScript 
 	local script = Instance.new('LocalScript', Fling)
-
+	
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
@@ -1410,7 +1410,7 @@ end
 coroutine.wrap(HDKQPCJ_fake_script)()
 local function QCLVMLF_fake_script() -- FLY.ButtonManager 
 	local script = Instance.new('LocalScript', FLY)
-
+	
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
@@ -1547,7 +1547,7 @@ end
 coroutine.wrap(QCLVMLF_fake_script)()
 local function TSINDPQ_fake_script() -- NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', NOCLIP)
-
+	
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
@@ -1646,7 +1646,7 @@ end
 coroutine.wrap(TSINDPQ_fake_script)()
 local function GGVYG_fake_script() -- NOANCHOR.ButtonManager 
 	local script = Instance.new('LocalScript', NOANCHOR)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
 	local Activated = false
@@ -1743,7 +1743,7 @@ end
 coroutine.wrap(GGVYG_fake_script)()
 local function LPCCPV_fake_script() -- PROTECTPLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', PROTECTPLATFORM)
-
+	
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
@@ -1763,12 +1763,10 @@ local function LPCCPV_fake_script() -- PROTECTPLATFORM.ButtonManager
 			Activated = true
 			Enabled.Visible = true
 			Disabled.Visible = false
-			Display.Visible = true
 		else
 			Activated = false
 			Enabled.Visible = false
 			Disabled.Visible = true
-			Display.Visible = false
 		end
 	end)
 	
@@ -1852,7 +1850,7 @@ end
 coroutine.wrap(LPCCPV_fake_script)()
 local function HRFFAJC_fake_script() -- TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', TELEPORT)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	local Players = game:GetService("Players")
 	
@@ -1920,7 +1918,7 @@ end
 coroutine.wrap(HRFFAJC_fake_script)()
 local function OQIX_fake_script() -- DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', DORSALTELEPORT)
-
+	
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -2011,7 +2009,7 @@ end
 coroutine.wrap(OQIX_fake_script)()
 local function LBUH_fake_script() -- CLICKTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', CLICKTELEPORT)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
 	local Activated = false
@@ -2093,7 +2091,7 @@ end
 coroutine.wrap(LBUH_fake_script)()
 local function FDRSMUJ_fake_script() -- FLING.ButtonManager 
 	local script = Instance.new('LocalScript', FLING)
-
+	
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -2209,7 +2207,7 @@ end
 coroutine.wrap(FDRSMUJ_fake_script)()
 local function SHXKKP_fake_script() -- XRAY.ButtonManager 
 	local script = Instance.new('LocalScript', XRAY)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	local Players = game:GetService("Players")
 	local Button = script.Parent.Status.Button
@@ -2270,7 +2268,7 @@ end
 coroutine.wrap(SHXKKP_fake_script)()
 local function MBCIU_fake_script() -- Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Teleport_2)
-
+	
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
@@ -2344,7 +2342,7 @@ end
 coroutine.wrap(MBCIU_fake_script)()
 local function LZFN_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
-
+	
 	local ClickSound = Instance.new("Sound", script)
 	ClickSound.SoundId = "rbxassetid://6324790483"
 	local Button = script.Parent
@@ -2358,7 +2356,7 @@ end
 coroutine.wrap(LZFN_fake_script)()
 local function OWOAMKH_fake_script() -- DorsalTeleport.LocalScript 
 	local script = Instance.new('LocalScript', DorsalTeleport)
-
+	
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
