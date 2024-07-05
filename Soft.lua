@@ -1086,8 +1086,6 @@ local function RATLUE_fake_script() -- Widget.AccountModule
 	
 	local function downloadpath()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Legit.lua"))()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Config.lua"))()
 	end
 	
 	-- Функция проверки учетных данных и IP-адреса
