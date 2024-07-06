@@ -1169,151 +1169,155 @@ local function UQLKSO_fake_script() -- AIM.ButtonManager
 end
 coroutine.wrap(UQLKSO_fake_script)()
 local function YZGINA_fake_script() -- ESP.ButtonManager 
-	local script = Instance.new('LocalScript', ESP)
-	
-	-- Получение сервисов
-	local Players = game:GetService("Players")
-	local UserInputService = game:GetService("UserInputService")
-	local RunService = game:GetService("RunService")
-	
-	-- Получение локального игрока и его персонажа
-	local player = Players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	
-	local Button = script.Parent.Status.Button
-	local Activated = false
-	
-	local Disabled = script.Parent.Status.Disabled
-	local Enabled = script.Parent.Status.Enabled
-	
-	local Click = Instance.new("Sound", script)
-	Click.SoundId = "rbxassetid://6052548458"
-	
-	Button.MouseButton1Click:Connect(function()
-		Click:Play()
-		Activated = not Activated
-		Disabled.Visible = not Activated
-		Enabled.Visible = Activated
-	end)
-	
-	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
-	Keybind.Name = "Keybind_Esp"
-	
-	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
-			Click:Play()
-			Activated = not Activated
-			Enabled.Visible = Activated
-			Disabled.Visible = not Activated
-		end        
-	end)
-	
-	local function createESP(targetPlayer)
-		if targetPlayer == player then return end
-		
-		local character = targetPlayer.Character or targetPlayer.CharacterAdded:Wait()
-		local head = character:WaitForChild("Head", 5) or character:WaitForChild("HumanoidRootPart", 5)
-		if not head then return end
-		
-		local highlight = Instance.new("Highlight")
-		highlight.Adornee = character
-		highlight.Parent = character
-		highlight.FillColor = Color3.new(1, 1, 1) -- Белый цвет
-		
-		local billBoard = Instance.new("BillboardGui", character)
-		billBoard.Adornee = head
-		billBoard.Size = UDim2.new(0, 200, 0, 100)
-		billBoard.StudsOffset = Vector3.new(0, 3, 0)
-		billBoard.AlwaysOnTop = true
-		
-		local nameLabel = Instance.new("TextLabel", billBoard)
-		nameLabel.Size = UDim2.new(1, 0, 0.33, 0)
-		nameLabel.Text = targetPlayer.Name
-		nameLabel.BackgroundTransparency = 1
-		nameLabel.TextColor3 = Color3.new(1, 1, 1)
-		nameLabel.TextStrokeTransparency = 0
-		nameLabel.Font = Enum.Font.SourceSans
-		nameLabel.TextScaled = true
-		
-		local distanceLabel = Instance.new("TextLabel", billBoard)
-		distanceLabel.Size = UDim2.new(1, 0, 0.33, 0)
-		distanceLabel.Position = UDim2.new(0, 0, 0.33, 0)
-		distanceLabel.BackgroundTransparency = 1
-		distanceLabel.TextColor3 = Color3.new(1, 1, 1)
-		distanceLabel.TextStrokeTransparency = 0
-		distanceLabel.Font = Enum.Font.SourceSans
-		distanceLabel.TextScaled = true
-		
-		local healthLabel = Instance.new("TextLabel", billBoard)
-		healthLabel.Size = UDim2.new(1, 0, 0.33, 0)
-		healthLabel.Position = UDim2.new(0, 0, 0.66, 0)
-		healthLabel.BackgroundTransparency = 1
-		healthLabel.TextColor3 = Color3.new(1, 1, 1)
-		healthLabel.TextStrokeTransparency = 0
-		healthLabel.Font = Enum.Font.SourceSans
-		healthLabel.TextScaled = true
-		
-		local function updateESP()
-			while billBoard.Parent do
-				if targetPlayer.Character and targetPlayer.Character:FindFirstChild("Humanoid") then
-					local distance = (player.Character:WaitForChild("HumanoidRootPart").Position - targetPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude
-					distanceLabel.Text = string.format("Distance: %.0f", distance)
-					healthLabel.Text = string.format("Health: %.0f", targetPlayer.Character.Humanoid.Health)
-				end
-				RunService.RenderStepped:Wait()
-			end
-		end
-		
-		spawn(updateESP)
-	end
-	
-	local function removeESP(targetPlayer)
-		if targetPlayer.Character:FindFirstChild("Highlight") then
-			targetPlayer.Character.Highlight:Destroy()
-		end
-		if targetPlayer.Character:FindFirstChild("BillboardGui") then
-			targetPlayer.Character.BillboardGui:Destroy()
-		end
-	end
-	
-	local function onPlayerAdded(targetPlayer)
-		targetPlayer.CharacterAdded:Connect(function()
-			if Activated then
-				createESP(targetPlayer)
-			end
-		end)
-	end
-	
-	local function onPlayerRemoving(targetPlayer)
-		if targetPlayer == player then return end
-		removeESP(targetPlayer)
-	end
-	
-	Players.PlayerAdded:Connect(onPlayerAdded)
-	Players.PlayerRemoving:Connect(onPlayerRemoving)
-	
-	for _, targetPlayer in ipairs(Players:GetPlayers()) do
-		if targetPlayer ~= player then
-			onPlayerAdded(targetPlayer)
-			if targetPlayer.Character then
-				createESP(targetPlayer)
-			end
-		end
-	end
-	
-	-- Следить за активацией ESP
-	RunService.RenderStepped:Connect(function()
-		for _, targetPlayer in ipairs(Players:GetPlayers()) do
-			if targetPlayer ~= player and targetPlayer.Character then
-				if Activated and not targetPlayer.Character:FindFirstChild("Highlight") then
-					createESP(targetPlayer)
-				elseif not Activated and targetPlayer.Character:FindFirstChild("Highlight") then
-					removeESP(targetPlayer)
-				end
-			end
-		end
-	end)
-	
+local script = Instance.new('LocalScript', ESP)
+
+-- Получение сервисов
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+
+-- Получение локального игрока и его персонажа
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+local Button = script.Parent.Status.Button
+local Activated = false
+
+local Disabled = script.Parent.Status.Disabled
+local Enabled = script.Parent.Status.Enabled
+
+local Click = Instance.new("Sound", script)
+Click.SoundId = "rbxassetid://6052548458"
+
+Button.MouseButton1Click:Connect(function()
+    Click:Play()
+    Activated = not Activated
+    Disabled.Visible = not Activated
+    Enabled.Visible = Activated
+end)
+
+local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
+Keybind.Name = "Keybind_Esp"
+
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+    if input.KeyCode.Name == Keybind.Value then
+        Click:Play()
+        Activated = not Activated
+        Enabled.Visible = Activated
+        Disabled.Visible = not Activated
+    end        
+end)
+
+local function createESP(targetPlayer)
+    if targetPlayer == player then return end
+
+    local character = targetPlayer.Character or targetPlayer.CharacterAdded:Wait()
+    local head = character:WaitForChild("Head", 5) or character:WaitForChild("HumanoidRootPart", 5)
+    if not head then return end
+
+    if character:FindFirstChild("Highlight") or character:FindFirstChild("BillboardGui") then
+        return -- Если ESP уже существует, выходим из функции
+    end
+
+    local highlight = Instance.new("Highlight")
+    highlight.Adornee = character
+    highlight.Parent = character
+    highlight.FillColor = Color3.new(1, 1, 1) -- Белый цвет
+
+    local billBoard = Instance.new("BillboardGui", character)
+    billBoard.Adornee = head
+    billBoard.Size = UDim2.new(0, 200, 0, 100)
+    billBoard.StudsOffset = Vector3.new(0, 3, 0)
+    billBoard.AlwaysOnTop = true
+
+    local nameLabel = Instance.new("TextLabel", billBoard)
+    nameLabel.Size = UDim2.new(1, 0, 0.33, 0)
+    nameLabel.Text = targetPlayer.Name
+    nameLabel.BackgroundTransparency = 1
+    nameLabel.TextColor3 = Color3.new(1, 1, 1)
+    nameLabel.TextStrokeTransparency = 0
+    nameLabel.Font = Enum.Font.SourceSans
+    nameLabel.TextScaled = true
+
+    local distanceLabel = Instance.new("TextLabel", billBoard)
+    distanceLabel.Size = UDim2.new(1, 0, 0.33, 0)
+    distanceLabel.Position = UDim2.new(0, 0, 0.33, 0)
+    distanceLabel.BackgroundTransparency = 1
+    distanceLabel.TextColor3 = Color3.new(1, 1, 1)
+    distanceLabel.TextStrokeTransparency = 0
+    distanceLabel.Font = Enum.Font.SourceSans
+    distanceLabel.TextScaled = true
+
+    local healthLabel = Instance.new("TextLabel", billBoard)
+    healthLabel.Size = UDim2.new(1, 0, 0.33, 0)
+    healthLabel.Position = UDim2.new(0, 0, 0.66, 0)
+    healthLabel.BackgroundTransparency = 1
+    healthLabel.TextColor3 = Color3.new(1, 1, 1)
+    healthLabel.TextStrokeTransparency = 0
+    healthLabel.Font = Enum.Font.SourceSans
+    healthLabel.TextScaled = true
+
+    local function updateESP()
+        while billBoard.Parent do
+            if targetPlayer.Character and targetPlayer.Character:FindFirstChild("Humanoid") then
+                local distance = (player.Character:WaitForChild("HumanoidRootPart").Position - targetPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude
+                distanceLabel.Text = string.format("Distance: %.0f", distance)
+                healthLabel.Text = string.format("Health: %.0f", targetPlayer.Character.Humanoid.Health)
+            end
+            RunService.RenderStepped:Wait()
+        end
+    end
+
+    spawn(updateESP)
+end
+
+local function removeESP(targetPlayer)
+    if targetPlayer.Character:FindFirstChild("Highlight") then
+        targetPlayer.Character.Highlight:Destroy()
+    end
+    if targetPlayer.Character:FindFirstChild("BillboardGui") then
+        targetPlayer.Character.BillboardGui:Destroy()
+    end
+end
+
+local function onPlayerAdded(targetPlayer)
+    targetPlayer.CharacterAdded:Connect(function()
+        if Activated then
+            createESP(targetPlayer)
+        end
+    end)
+end
+
+local function onPlayerRemoving(targetPlayer)
+    if targetPlayer == player then return end
+    removeESP(targetPlayer)
+end
+
+Players.PlayerAdded:Connect(onPlayerAdded)
+Players.PlayerRemoving:Connect(onPlayerRemoving)
+
+for _, targetPlayer in ipairs(Players:GetPlayers()) do
+    if targetPlayer ~= player then
+        onPlayerAdded(targetPlayer)
+        if targetPlayer.Character then
+            createESP(targetPlayer)
+        end
+    end
+end
+
+-- Следить за активацией ESP
+RunService.RenderStepped:Connect(function()
+    for _, targetPlayer in ipairs(Players:GetPlayers()) do
+        if targetPlayer ~= player and targetPlayer.Character then
+            if Activated and not targetPlayer.Character:FindFirstChild("Highlight") then
+                createESP(targetPlayer)
+            elseif not Activated and targetPlayer.Character:FindFirstChild("Highlight") then
+                removeESP(targetPlayer)
+            end
+        end
+    end
+end)
+
 end
 coroutine.wrap(YZGINA_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
