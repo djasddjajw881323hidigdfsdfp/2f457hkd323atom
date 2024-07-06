@@ -1071,6 +1071,7 @@ ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 8, 0)
 UIListLayout_3.Parent = ScrollingFrame_3
 UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 2)
 
 Search_2.Name = "Search"
 Search_2.Parent = Teleport_2
@@ -1241,6 +1242,7 @@ ScrollingFrame_4.CanvasSize = UDim2.new(0, 0, 8, 0)
 UIListLayout_4.Parent = ScrollingFrame_4
 UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0, 2)
 
 Search_3.Name = "Search"
 Search_3.Parent = DorsalTeleport
@@ -1335,7 +1337,7 @@ UICorner_51.Parent = Select_6
 
 local function CPCUEL_fake_script() -- Fling.LocalScript 
 	local script = Instance.new('LocalScript', Fling)
-
+	
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
@@ -1409,7 +1411,7 @@ end
 coroutine.wrap(CPCUEL_fake_script)()
 local function WCJJORA_fake_script() -- FLY.ButtonManager 
 	local script = Instance.new('LocalScript', FLY)
-
+	
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
@@ -1546,7 +1548,7 @@ end
 coroutine.wrap(WCJJORA_fake_script)()
 local function FJPXG_fake_script() -- NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', NOCLIP)
-
+	
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
@@ -1645,7 +1647,7 @@ end
 coroutine.wrap(FJPXG_fake_script)()
 local function MRIX_fake_script() -- NOANCHOR.ButtonManager 
 	local script = Instance.new('LocalScript', NOANCHOR)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
 	local Activated = false
@@ -1742,7 +1744,7 @@ end
 coroutine.wrap(MRIX_fake_script)()
 local function OHIMD_fake_script() -- PROTECTPLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', PROTECTPLATFORM)
-
+	
 	-- Default - 25, 25, 25; Hover - 35, 35, 35
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
@@ -1851,7 +1853,7 @@ end
 coroutine.wrap(OHIMD_fake_script)()
 local function VRZCZ_fake_script() -- TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', TELEPORT)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	local Players = game:GetService("Players")
 	
@@ -1919,7 +1921,7 @@ end
 coroutine.wrap(VRZCZ_fake_script)()
 local function WQJQ_fake_script() -- DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', DORSALTELEPORT)
-
+	
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -2010,7 +2012,7 @@ end
 coroutine.wrap(WQJQ_fake_script)()
 local function BGUOSOE_fake_script() -- CLICKTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', CLICKTELEPORT)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
 	local Activated = false
@@ -2092,7 +2094,7 @@ end
 coroutine.wrap(BGUOSOE_fake_script)()
 local function NNEAKSS_fake_script() -- FLING.ButtonManager 
 	local script = Instance.new('LocalScript', FLING)
-
+	
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -2208,78 +2210,78 @@ end
 coroutine.wrap(NNEAKSS_fake_script)()
 local function GSDSEO_fake_script() -- XRAY.ButtonManager 
 	local script = Instance.new('LocalScript', XRAY)
-
-local UserInputService = game:GetService("UserInputService")
-local Players = game:GetService("Players")
-local Button = script.Parent.Status.Button
-local Activated = false
-
-local Enabled = script.Parent.Status.Enabled
-local Disabled = script.Parent.Status.Disabled
-
-local Click = Instance.new("Sound", script)
-Click.SoundId = "rbxassetid://6052548458"
-
-local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
-Keybind.Name = "Keybind_Xray"
-
--- Таблица для хранения исходных значений прозрачности
-local originalTransparency = {}
-
--- Функция для изменения прозрачности объектов
-local function setTransparency(value)
-    for _, descendant in pairs(workspace:GetDescendants()) do
-        if descendant:IsA("BasePart") then
-            local isPlayerModel = false
-            for _, player in pairs(Players:GetPlayers()) do
-                if descendant:IsDescendantOf(player.Character) then
-                    isPlayerModel = true
-                    break
-                end
-            end
-            if not isPlayerModel then
-                if value == nil then
-                    if originalTransparency[descendant] ~= nil then
-                        descendant.Transparency = originalTransparency[descendant]
-                    end
-                else
-                    originalTransparency[descendant] = descendant.Transparency
-                    descendant.Transparency = value
-                end
-            end
-        end
-    end
-end
-
--- Функции для обработки нажатий
-local function toggleXRay()
-    Click:Play()
-    if Activated == false then
-        Activated = true
-        Enabled.Visible = true
-        Disabled.Visible = false
-        setTransparency(0.9)
-    else
-        Activated = false
-        Enabled.Visible = false
-        Disabled.Visible = true
-        setTransparency(nil)
-    end
-end
-
-Button.MouseButton1Click:Connect(toggleXRay)
-
-UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-    if input.KeyCode.Name == Keybind.Value then
-        toggleXRay()
-    end        
-end)
-
+	
+	local UserInputService = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	local Button = script.Parent.Status.Button
+	local Activated = false
+	
+	local Enabled = script.Parent.Status.Enabled
+	local Disabled = script.Parent.Status.Disabled
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://6052548458"
+	
+	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
+	Keybind.Name = "Keybind_Xray"
+	
+	-- Таблица для хранения исходных значений прозрачности
+	local originalTransparency = {}
+	
+	-- Функция для изменения прозрачности объектов
+	local function setTransparency(value)
+		for _, descendant in pairs(workspace:GetDescendants()) do
+			if descendant:IsA("BasePart") then
+				local isPlayerModel = false
+				for _, player in pairs(Players:GetPlayers()) do
+					if descendant:IsDescendantOf(player.Character) then
+						isPlayerModel = true
+						break
+					end
+				end
+				if not isPlayerModel then
+					if value == nil then
+						if originalTransparency[descendant] ~= nil then
+							descendant.Transparency = originalTransparency[descendant]
+						end
+					else
+						originalTransparency[descendant] = descendant.Transparency
+						descendant.Transparency = value
+					end
+				end
+			end
+		end
+	end
+	
+	-- Функции для обработки нажатий
+	local function toggleXRay()
+		Click:Play()
+		if Activated == false then
+			Activated = true
+			Enabled.Visible = true
+			Disabled.Visible = false
+			setTransparency(0.9)
+		else
+			Activated = false
+			Enabled.Visible = false
+			Disabled.Visible = true
+			setTransparency(nil)
+		end
+	end
+	
+	Button.MouseButton1Click:Connect(toggleXRay)
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if input.KeyCode.Name == Keybind.Value then
+			toggleXRay()
+		end        
+	end)
+	
 end
 coroutine.wrap(GSDSEO_fake_script)()
 local function UFMUB_fake_script() -- Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Teleport_2)
-
+	
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
@@ -2353,7 +2355,7 @@ end
 coroutine.wrap(UFMUB_fake_script)()
 local function LGGLJY_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
-
+	
 	local ClickSound = Instance.new("Sound", script)
 	ClickSound.SoundId = "rbxassetid://6324790483"
 	local Button = script.Parent
@@ -2367,7 +2369,7 @@ end
 coroutine.wrap(LGGLJY_fake_script)()
 local function LMHYJPW_fake_script() -- DorsalTeleport.LocalScript 
 	local script = Instance.new('LocalScript', DorsalTeleport)
-
+	
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
