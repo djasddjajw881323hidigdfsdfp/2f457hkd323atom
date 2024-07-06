@@ -1162,7 +1162,7 @@ Select_5.TextWrapped = true
 UICorner_46.Parent = Select_5
 
 Back.Name = "Back"
-Back.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Rage
+Back.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
 Back.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
 Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Back.BorderSizePixel = 0
@@ -1191,7 +1191,7 @@ TextLabel_19.TextScaled = true
 TextLabel_19.TextSize = 14.000
 TextLabel_19.TextWrapped = true
 
-TextLabel_20.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Rage
+TextLabel_20.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
 TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.BackgroundTransparency = 1.000
 TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1205,7 +1205,7 @@ TextLabel_20.TextScaled = true
 TextLabel_20.TextSize = 14.000
 TextLabel_20.TextWrapped = true
 
-TextLabel_21.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Rage
+TextLabel_21.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
 TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.BackgroundTransparency = 1.000
 TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1220,7 +1220,7 @@ TextLabel_21.TextSize = 14.000
 TextLabel_21.TextWrapped = true
 
 DorsalTeleport.Name = "DorsalTeleport"
-DorsalTeleport.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Rage
+DorsalTeleport.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
 DorsalTeleport.BackgroundColor3 = Color3.fromRGB(19, 20, 25)
 DorsalTeleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
 DorsalTeleport.BorderSizePixel = 0
