@@ -1099,7 +1099,7 @@ local function UQLKSO_fake_script() -- AIM.ButtonManager
 		
 		for _, player in ipairs(players:GetPlayers()) do
 			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
+				local distance = (player.Character.Head.Position - localPlayer.Character.Head.Position).magnitude
 				if distance < shortestDistance then
 					nearestPlayer = player
 					shortestDistance = distance
@@ -1140,7 +1140,7 @@ local function UQLKSO_fake_script() -- AIM.ButtonManager
 			if Aiming and TargetPlayer then -- Если AIM включен и есть целевой игрок, то наводимся на него
 				if TargetPlayer.Character and TargetPlayer.Character:FindFirstChild("HumanoidRootPart") then
 					local camera = game.Workspace.CurrentCamera
-					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.HumanoidRootPart.Position)
+					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.Head.Position)
 				end
 			end
 		end
@@ -1170,7 +1170,7 @@ end
 coroutine.wrap(UQLKSO_fake_script)()
 local function YZGINA_fake_script() -- ESP.ButtonManager 
 	local script = Instance.new('LocalScript', ESP)
-
+	
 	-- Получение сервисов
 	local Players = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
@@ -1211,13 +1211,17 @@ local function YZGINA_fake_script() -- ESP.ButtonManager
 	local function createESP(targetPlayer)
 		if targetPlayer == player then return end
 		
+		local character = targetPlayer.Character or targetPlayer.CharacterAdded:Wait()
+		local head = character:WaitForChild("Head", 5) or character:WaitForChild("HumanoidRootPart", 5)
+		if not head then return end
+		
 		local highlight = Instance.new("Highlight")
-		highlight.Adornee = targetPlayer.Character
-		highlight.Parent = targetPlayer.Character
+		highlight.Adornee = character
+		highlight.Parent = character
 		highlight.FillColor = Color3.new(1, 1, 1) -- Белый цвет
 		
-		local billBoard = Instance.new("BillboardGui", targetPlayer.Character)
-		billBoard.Adornee = targetPlayer.Character.Head
+		local billBoard = Instance.new("BillboardGui", character)
+		billBoard.Adornee = head
 		billBoard.Size = UDim2.new(0, 200, 0, 100)
 		billBoard.StudsOffset = Vector3.new(0, 3, 0)
 		billBoard.AlwaysOnTop = true
@@ -1252,7 +1256,7 @@ local function YZGINA_fake_script() -- ESP.ButtonManager
 		local function updateESP()
 			while billBoard.Parent do
 				if targetPlayer.Character and targetPlayer.Character:FindFirstChild("Humanoid") then
-					local distance = (player.Character.Head.Position - targetPlayer.Character.Head.Position).Magnitude
+					local distance = (player.Character:WaitForChild("HumanoidRootPart").Position - targetPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude
 					distanceLabel.Text = string.format("Distance: %.0f", distance)
 					healthLabel.Text = string.format("Health: %.0f", targetPlayer.Character.Humanoid.Health)
 				end
