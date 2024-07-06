@@ -2209,62 +2209,72 @@ coroutine.wrap(NNEAKSS_fake_script)()
 local function GSDSEO_fake_script() -- XRAY.ButtonManager 
 	local script = Instance.new('LocalScript', XRAY)
 
-	local UserInputService = game:GetService("UserInputService")
-	local Players = game:GetService("Players")
-	local Button = script.Parent.Status.Button
-	local Activated = false
-	
-	local Enabled = script.Parent.Status.Enabled
-	local Disabled = script.Parent.Status.Disabled
-	
-	local Click = Instance.new("Sound", script)
-	Click.SoundId = "rbxassetid://6052548458"
-	
-	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
-	Keybind.Name = "Keybind_Xray"
-	
-	-- Функция для изменения прозрачности объектов
-	local function setTransparency(value)
-		for _, descendant in pairs(workspace:GetDescendants()) do
-			if descendant:IsA("BasePart") then
-				local isPlayerModel = false
-				for _, player in pairs(Players:GetPlayers()) do
-					if descendant:IsDescendantOf(player.Character) then
-						isPlayerModel = true
-						break
-					end
-				end
-				if not isPlayerModel then
-					descendant.Transparency = value
-				end
-			end
-		end
-	end
-	
-	-- Функции для обработки нажатий
-	local function toggleXRay()
-		Click:Play()
-		if Activated == false then
-			Activated = true
-			Enabled.Visible = true
-			Disabled.Visible = false
-			setTransparency(0.9)
-		else
-			Activated = false
-			Enabled.Visible = false
-			Disabled.Visible = true
-			setTransparency(0)
-		end
-	end
-	
-	Button.MouseButton1Click:Connect(toggleXRay)
-	
-	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
-			toggleXRay()
-		end		
-	end)
-	
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local Button = script.Parent.Status.Button
+local Activated = false
+
+local Enabled = script.Parent.Status.Enabled
+local Disabled = script.Parent.Status.Disabled
+
+local Click = Instance.new("Sound", script)
+Click.SoundId = "rbxassetid://6052548458"
+
+local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
+Keybind.Name = "Keybind_Xray"
+
+-- Таблица для хранения исходных значений прозрачности
+local originalTransparency = {}
+
+-- Функция для изменения прозрачности объектов
+local function setTransparency(value)
+    for _, descendant in pairs(workspace:GetDescendants()) do
+        if descendant:IsA("BasePart") then
+            local isPlayerModel = false
+            for _, player in pairs(Players:GetPlayers()) do
+                if descendant:IsDescendantOf(player.Character) then
+                    isPlayerModel = true
+                    break
+                end
+            end
+            if not isPlayerModel then
+                if value == nil then
+                    if originalTransparency[descendant] ~= nil then
+                        descendant.Transparency = originalTransparency[descendant]
+                    end
+                else
+                    originalTransparency[descendant] = descendant.Transparency
+                    descendant.Transparency = value
+                end
+            end
+        end
+    end
+end
+
+-- Функции для обработки нажатий
+local function toggleXRay()
+    Click:Play()
+    if Activated == false then
+        Activated = true
+        Enabled.Visible = true
+        Disabled.Visible = false
+        setTransparency(0.9)
+    else
+        Activated = false
+        Enabled.Visible = false
+        Disabled.Visible = true
+        setTransparency(nil)
+    end
+end
+
+Button.MouseButton1Click:Connect(toggleXRay)
+
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+    if input.KeyCode.Name == Keybind.Value then
+        toggleXRay()
+    end        
+end)
+
 end
 coroutine.wrap(GSDSEO_fake_script)()
 local function UFMUB_fake_script() -- Teleport_2.LocalScript 
