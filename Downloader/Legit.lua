@@ -1140,7 +1140,7 @@ local function UQLKSO_fake_script() -- AIM.ButtonManager
 			if Aiming and TargetPlayer then -- Если AIM включен и есть целевой игрок, то наводимся на него
 				if TargetPlayer.Character and TargetPlayer.Character:FindFirstChild("HumanoidRootPart") then
 					local camera = game.Workspace.CurrentCamera
-					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.HumanoidRootPart.Position)
+					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.Head.Position)
 				end
 			end
 		end
