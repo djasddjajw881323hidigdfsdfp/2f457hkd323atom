@@ -1098,8 +1098,8 @@ local function UQLKSO_fake_script() -- AIM.ButtonManager
 		local shortestDistance = math.huge
 		
 		for _, player in ipairs(players:GetPlayers()) do
-			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") or player.Character:FindFirstChild("Head") then
+				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.Head.Position).magnitude
 				if distance < shortestDistance then
 					nearestPlayer = player
 					shortestDistance = distance
