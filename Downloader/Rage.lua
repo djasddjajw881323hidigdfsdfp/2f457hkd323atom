@@ -121,9 +121,7 @@ local UIListLayout_3 = Instance.new("UIListLayout")
 local Search_2 = Instance.new("TextBox")
 local UICorner_43 = Instance.new("UICorner")
 local PlayerTemplate_2 = Instance.new("Frame")
-local UICorner_44 = Instance.new("UICorner")
 local PlayerAvatar_2 = Instance.new("ImageLabel")
-local UICorner_45 = Instance.new("UICorner")
 local DisplayName_2 = Instance.new("TextLabel")
 local OriginalName_2 = Instance.new("TextLabel")
 local Select_5 = Instance.new("TextButton")
@@ -139,7 +137,6 @@ local UIListLayout_4 = Instance.new("UIListLayout")
 local Search_3 = Instance.new("TextBox")
 local UICorner_48 = Instance.new("UICorner")
 local PlayerTemplate_3 = Instance.new("Frame")
-local UICorner_49 = Instance.new("UICorner")
 local PlayerAvatar_3 = Instance.new("ImageLabel")
 local UICorner_50 = Instance.new("UICorner")
 local DisplayName_3 = Instance.new("TextLabel")
@@ -1100,8 +1097,6 @@ PlayerTemplate_2.Position = UDim2.new(-0.0271739122, 0, 1.81652254e-07, 0)
 PlayerTemplate_2.Size = UDim2.new(0, 187, 0, 39)
 PlayerTemplate_2.Visible = false
 
-UICorner_44.Parent = PlayerTemplate_2
-
 PlayerAvatar_2.Name = "PlayerAvatar"
 PlayerAvatar_2.Parent = PlayerTemplate_2
 PlayerAvatar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1111,8 +1106,6 @@ PlayerAvatar_2.BorderSizePixel = 0
 PlayerAvatar_2.Position = UDim2.new(0.0385886282, 0, 0.114926852, 0)
 PlayerAvatar_2.Size = UDim2.new(0, 30, 0, 30)
 PlayerAvatar_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-UICorner_45.Parent = PlayerAvatar_2
 
 DisplayName_2.Name = "DisplayName"
 DisplayName_2.Parent = PlayerTemplate_2
@@ -1270,8 +1263,6 @@ PlayerTemplate_3.BorderSizePixel = 0
 PlayerTemplate_3.Position = UDim2.new(-0.0271739122, 0, 1.81652254e-07, 0)
 PlayerTemplate_3.Size = UDim2.new(0, 187, 0, 39)
 PlayerTemplate_3.Visible = false
-
-UICorner_49.Parent = PlayerTemplate_3
 
 PlayerAvatar_3.Name = "PlayerAvatar"
 PlayerAvatar_3.Parent = PlayerTemplate_3
