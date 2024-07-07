@@ -44,34 +44,31 @@ local UIGradient_7 = Instance.new("UIGradient")
 local TextLabel_13 = Instance.new("TextLabel")
 local ImageLabel_5 = Instance.new("ImageLabel")
 local ImageLabel_6 = Instance.new("ImageLabel")
-local Delete = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local TextLabel_14 = Instance.new("TextLabel")
 local Login = Instance.new("Frame")
 local Widget = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local UIGradient_8 = Instance.new("UIGradient")
 local Login_2 = Instance.new("TextBox")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local Password = Instance.new("TextBox")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local Enter_4 = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
-local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
 local ImageLabel_7 = Instance.new("ImageLabel")
 local PasswordDisplay = Instance.new("TextLabel")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_15 = Instance.new("TextLabel")
 local TextLabel_16 = Instance.new("TextLabel")
 local TextLabel_17 = Instance.new("TextLabel")
 local TextLabel_18 = Instance.new("TextLabel")
-local TextLabel_19 = Instance.new("TextLabel")
 local ImageLabel_8 = Instance.new("ImageLabel")
 local ImageLabel_9 = Instance.new("ImageLabel")
-local TextLabel_20 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
 local UIGradient_10 = Instance.new("UIGradient")
+local TextLabel_20 = Instance.new("TextLabel")
 local TextLabel_21 = Instance.new("TextLabel")
-local TextLabel_22 = Instance.new("TextLabel")
 local Files = Instance.new("Folder")
 local Legit_2 = Instance.new("Frame")
 local Rage_2 = Instance.new("Frame")
@@ -81,7 +78,7 @@ local ConfigValues = Instance.new("Folder")
 --Properties:
 
 AtomKillwave.Name = "AtomKillwave"
-AtomKillwave.Parent = game.CoreGui
+AtomKillwave.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 AtomKillwave.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 AtomKillwave.ResetOnSpawn = false
 
@@ -503,36 +500,6 @@ ImageLabel_6.Position = UDim2.new(0.80769217, 0, 0.0226537213, 0)
 ImageLabel_6.Size = UDim2.new(0, 45, 0, 45)
 ImageLabel_6.Image = "rbxassetid://18326363548"
 
-Delete.Name = "Delete"
-Delete.Parent = Cheat_Page
-Delete.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
-Delete.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Delete.BorderSizePixel = 0
-Delete.Position = UDim2.new(0.843544841, 0, 0.0106571941, 0)
-Delete.Size = UDim2.new(0, 136, 0, 50)
-Delete.Font = Enum.Font.SourceSansBold
-Delete.Text = ""
-Delete.TextColor3 = Color3.fromRGB(255, 255, 255)
-Delete.TextSize = 14.000
-Delete.TextWrapped = true
-
-UICorner_7.CornerRadius = UDim.new(1, 0)
-UICorner_7.Parent = Delete
-
-TextLabel_14.Parent = Delete
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
-TextLabel_14.Size = UDim2.new(0, 108, 0, 33)
-TextLabel_14.Font = Enum.Font.SourceSansBold
-TextLabel_14.Text = "Удалить"
-TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.TextScaled = true
-TextLabel_14.TextSize = 14.000
-TextLabel_14.TextWrapped = true
-
 Login.Name = "Login"
 Login.Parent = MainPage
 Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -550,7 +517,7 @@ Widget.BorderSizePixel = 0
 Widget.Position = UDim2.new(0.339168489, 0, 0.175843701, 0)
 Widget.Size = UDim2.new(0, 293, 0, 365)
 
-UICorner_8.Parent = Widget
+UICorner_7.Parent = Widget
 
 UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_8.Rotation = 45
@@ -572,7 +539,7 @@ Login_2.TextScaled = true
 Login_2.TextSize = 14.000
 Login_2.TextWrapped = true
 
-UICorner_9.Parent = Login_2
+UICorner_8.Parent = Login_2
 
 Password.Name = "Password"
 Password.Parent = Widget
@@ -591,7 +558,7 @@ Password.TextSize = 14.000
 Password.TextTransparency = 1.000
 Password.TextWrapped = true
 
-UICorner_10.Parent = Password
+UICorner_9.Parent = Password
 
 Enter_4.Name = "Enter"
 Enter_4.Parent = Widget
@@ -605,25 +572,25 @@ Enter_4.Text = ""
 Enter_4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Enter_4.TextSize = 14.000
 
-UICorner_11.Parent = Enter_4
+UICorner_10.Parent = Enter_4
 
 UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(236, 236, 236))}
 UIGradient_9.Rotation = 115
 UIGradient_9.Parent = Enter_4
 
-TextLabel_15.Parent = Enter_4
-TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.BackgroundTransparency = 1.000
-TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_15.BorderSizePixel = 0
-TextLabel_15.Position = UDim2.new(0.027559055, 0, 0.119999997, 0)
-TextLabel_15.Size = UDim2.new(0, 247, 0, 37)
-TextLabel_15.Font = Enum.Font.SourceSansBold
-TextLabel_15.Text = "Войти"
-TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.TextScaled = true
-TextLabel_15.TextSize = 14.000
-TextLabel_15.TextWrapped = true
+TextLabel_14.Parent = Enter_4
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.027559055, 0, 0.119999997, 0)
+TextLabel_14.Size = UDim2.new(0, 247, 0, 37)
+TextLabel_14.Font = Enum.Font.SourceSansBold
+TextLabel_14.Text = "Войти"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
 
 ImageLabel_7.Parent = Enter_4
 ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -648,18 +615,32 @@ PasswordDisplay.TextScaled = true
 PasswordDisplay.TextSize = 14.000
 PasswordDisplay.TextWrapped = true
 
-UICorner_12.Parent = PasswordDisplay
+UICorner_11.Parent = PasswordDisplay
+
+TextLabel_15.Parent = Widget
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(-0.1331058, 0, -0.139726028, 0)
+TextLabel_15.Size = UDim2.new(0, 370, 0, 41)
+TextLabel_15.Font = Enum.Font.SourceSansBold
+TextLabel_15.Text = "Авторизуйтесь"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
 
 TextLabel_16.Parent = Widget
 TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_16.BackgroundTransparency = 1.000
 TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_16.BorderSizePixel = 0
-TextLabel_16.Position = UDim2.new(-0.1331058, 0, -0.139726028, 0)
-TextLabel_16.Size = UDim2.new(0, 370, 0, 41)
+TextLabel_16.Position = UDim2.new(0.0477815717, 0, 0.0328767113, 0)
+TextLabel_16.Size = UDim2.new(0, 261, 0, 31)
 TextLabel_16.Font = Enum.Font.SourceSansBold
-TextLabel_16.Text = "Авторизуйтесь"
-TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.Text = "Имя пользователя"
+TextLabel_16.TextColor3 = Color3.fromRGB(57, 61, 71)
 TextLabel_16.TextScaled = true
 TextLabel_16.TextSize = 14.000
 TextLabel_16.TextWrapped = true
@@ -669,10 +650,10 @@ TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.BackgroundTransparency = 1.000
 TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_17.BorderSizePixel = 0
-TextLabel_17.Position = UDim2.new(0.0477815717, 0, 0.0328767113, 0)
+TextLabel_17.Position = UDim2.new(0.0511945374, 0, 0.271232873, 0)
 TextLabel_17.Size = UDim2.new(0, 261, 0, 31)
 TextLabel_17.Font = Enum.Font.SourceSansBold
-TextLabel_17.Text = "Имя пользователя"
+TextLabel_17.Text = "Пароль"
 TextLabel_17.TextColor3 = Color3.fromRGB(57, 61, 71)
 TextLabel_17.TextScaled = true
 TextLabel_17.TextSize = 14.000
@@ -691,20 +672,6 @@ TextLabel_18.TextColor3 = Color3.fromRGB(57, 61, 71)
 TextLabel_18.TextScaled = true
 TextLabel_18.TextSize = 14.000
 TextLabel_18.TextWrapped = true
-
-TextLabel_19.Parent = Widget
-TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.BackgroundTransparency = 1.000
-TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_19.BorderSizePixel = 0
-TextLabel_19.Position = UDim2.new(0.0511945374, 0, 0.271232873, 0)
-TextLabel_19.Size = UDim2.new(0, 261, 0, 31)
-TextLabel_19.Font = Enum.Font.SourceSansBold
-TextLabel_19.Text = "Пароль"
-TextLabel_19.TextColor3 = Color3.fromRGB(57, 61, 71)
-TextLabel_19.TextScaled = true
-TextLabel_19.TextSize = 14.000
-TextLabel_19.TextWrapped = true
 
 ImageLabel_8.Parent = Login
 ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -734,51 +701,51 @@ ImageLabel_9.ImageColor3 = Color3.fromRGB(57, 68, 104)
 ImageLabel_9.ImageTransparency = 0.900
 ImageLabel_9.ScaleType = Enum.ScaleType.Crop
 
+TextLabel_19.Parent = Login
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0.00875273533, 0, 0.0142095918, 0)
+TextLabel_19.Size = UDim2.new(0, 96, 0, 71)
+TextLabel_19.Font = Enum.Font.SourceSansBold
+TextLabel_19.Text = "AK"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextSize = 95.000
+TextLabel_19.TextWrapped = true
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(119, 160, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Rotation = -45
+UIGradient_10.Parent = TextLabel_19
+
 TextLabel_20.Parent = Login
 TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.BackgroundTransparency = 1.000
 TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_20.BorderSizePixel = 0
-TextLabel_20.Position = UDim2.new(0.00875273533, 0, 0.0142095918, 0)
-TextLabel_20.Size = UDim2.new(0, 96, 0, 71)
+TextLabel_20.Position = UDim2.new(0.121444203, 0, 0.0284191836, 0)
+TextLabel_20.Size = UDim2.new(0, 111, 0, 54)
 TextLabel_20.Font = Enum.Font.SourceSansBold
-TextLabel_20.Text = "AK"
+TextLabel_20.Text = "ATOM KILLWAVE"
 TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.TextSize = 95.000
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
 TextLabel_20.TextWrapped = true
-
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(119, 160, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_10.Rotation = -45
-UIGradient_10.Parent = TextLabel_20
+TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
 
 TextLabel_21.Parent = Login
 TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.BackgroundTransparency = 1.000
 TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_21.BorderSizePixel = 0
-TextLabel_21.Position = UDim2.new(0.121444203, 0, 0.0284191836, 0)
-TextLabel_21.Size = UDim2.new(0, 111, 0, 54)
+TextLabel_21.Position = UDim2.new(0.0240700226, 0, 0.891651869, 0)
+TextLabel_21.Size = UDim2.new(0, 866, 0, 48)
 TextLabel_21.Font = Enum.Font.SourceSansBold
-TextLabel_21.Text = "ATOM KILLWAVE"
-TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.Text = "Получить аккаунт можно покупая его у оригинального поставщика"
+TextLabel_21.TextColor3 = Color3.fromRGB(25, 27, 34)
 TextLabel_21.TextScaled = true
 TextLabel_21.TextSize = 14.000
 TextLabel_21.TextWrapped = true
-TextLabel_21.TextXAlignment = Enum.TextXAlignment.Left
-
-TextLabel_22.Parent = Login
-TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_22.BackgroundTransparency = 1.000
-TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_22.BorderSizePixel = 0
-TextLabel_22.Position = UDim2.new(0.0240700226, 0, 0.891651869, 0)
-TextLabel_22.Size = UDim2.new(0, 866, 0, 48)
-TextLabel_22.Font = Enum.Font.SourceSansBold
-TextLabel_22.Text = "Получить аккаунт можно покупая его у оригинального поставщика"
-TextLabel_22.TextColor3 = Color3.fromRGB(25, 27, 34)
-TextLabel_22.TextScaled = true
-TextLabel_22.TextSize = 14.000
-TextLabel_22.TextWrapped = true
 
 Files.Name = "Files"
 Files.Parent = MainPage
@@ -818,7 +785,7 @@ ConfigValues.Parent = MainPage
 
 -- Scripts:
 
-local function VRTKER_fake_script() -- Legit.MiscScript 
+local function ZIYUNT_fake_script() -- Legit.MiscScript 
 	local script = Instance.new('LocalScript', Legit)
 
 	local Frame = script.Parent
@@ -891,8 +858,8 @@ local function VRTKER_fake_script() -- Legit.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(VRTKER_fake_script)()
-local function BHLJCQG_fake_script() -- Rage.MiscScript 
+coroutine.wrap(ZIYUNT_fake_script)()
+local function FHEX_fake_script() -- Rage.MiscScript 
 	local script = Instance.new('LocalScript', Rage)
 
 	local Frame = script.Parent
@@ -965,8 +932,8 @@ local function BHLJCQG_fake_script() -- Rage.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(BHLJCQG_fake_script)()
-local function TOVH_fake_script() -- Config.MiscScript 
+coroutine.wrap(FHEX_fake_script)()
+local function HWWEXII_fake_script() -- Config.MiscScript 
 	local script = Instance.new('LocalScript', Config)
 
 	local Frame = script.Parent
@@ -1039,18 +1006,8 @@ local function TOVH_fake_script() -- Config.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(TOVH_fake_script)()
-local function CLIGMFO_fake_script() -- Delete.LocalScript 
-	local script = Instance.new('LocalScript', Delete)
-
-	local Button = script.Parent
-	Button.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent:Destroy()
-		game.Lighting.AtomBlur:Destroy()
-	end)
-end
-coroutine.wrap(CLIGMFO_fake_script)()
-local function VJSZVOH_fake_script() -- Widget.AccountModule 
+coroutine.wrap(HWWEXII_fake_script)()
+local function LOYWW_fake_script() -- Widget.AccountModule 
 	local script = Instance.new('LocalScript', Widget)
 
 	local HttpService = game:GetService("HttpService")
@@ -1112,7 +1069,7 @@ local function VJSZVOH_fake_script() -- Widget.AccountModule
 			PasswordDisplay.Text = maskedPassword
 			PasswordDisplay.TextColor3 = Color3.fromRGB(255, 255, 255)  -- Устанавливаем белый цвет текста
 		else
-			PasswordDisplay.Text = "Password"
+			PasswordDisplay.Text = "Пароль"
 			PasswordDisplay.TextColor3 = Color3.fromRGB(54, 57, 71)  -- Устанавливаем серый цвет текста
 		end
 	end
@@ -1161,7 +1118,7 @@ local function VJSZVOH_fake_script() -- Widget.AccountModule
 		end
 		
 		PasswordBox.Text = ""  -- Очищаем поле пароля после попытки входа
-		PasswordDisplay.Text = "Password"  -- Очищаем отображение пароля
+		PasswordDisplay.Text = "Пароль"  -- Очищаем отображение пароля
 		PasswordDisplay.TextColor3 = Color3.fromRGB(54, 57, 71)  -- Устанавливаем серый цвет текста
 	end)
 	
@@ -1217,8 +1174,8 @@ local function VJSZVOH_fake_script() -- Widget.AccountModule
 	-- Выполнить быстрый вход при загрузке скрипта
 	QuickLogin()
 end
-coroutine.wrap(VJSZVOH_fake_script)()
-local function WGLOD_fake_script() -- MainPage.Atom.Core 
+coroutine.wrap(LOYWW_fake_script)()
+local function HSBMP_fake_script() -- MainPage.Atom.Core 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1256,8 +1213,8 @@ local function WGLOD_fake_script() -- MainPage.Atom.Core
 	end)
 	
 end
-coroutine.wrap(WGLOD_fake_script)()
-local function UTUZU_fake_script() -- MainPage.Dragging 
+coroutine.wrap(HSBMP_fake_script)()
+local function IBQWN_fake_script() -- MainPage.Dragging 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1301,4 +1258,4 @@ local function UTUZU_fake_script() -- MainPage.Dragging
 		end
 	end)
 end
-coroutine.wrap(UTUZU_fake_script)()
+coroutine.wrap(IBQWN_fake_script)()
