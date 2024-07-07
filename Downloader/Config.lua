@@ -110,7 +110,7 @@ local UICorner_35 = Instance.new("UICorner")
 --Properties:
 
 AutoBind.Name = "AutoBind"
-AutoBind.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Config
+AutoBind.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
 AutoBind.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
 AutoBind.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AutoBind.BorderSizePixel = 0
@@ -140,7 +140,7 @@ TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
 Back.Name = "Back"
-Back.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Config
+Back.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
 Back.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
 Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Back.BorderSizePixel = 0
@@ -170,7 +170,7 @@ TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
 Reset.Name = "Reset"
-Reset.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Config
+Reset.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
 Reset.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
 Reset.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Reset.BorderSizePixel = 0
@@ -199,7 +199,7 @@ TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-TextLabel_4.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Config
+TextLabel_4.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -213,7 +213,7 @@ TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextWrapped = true
 
-TextLabel_5.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Config
+TextLabel_5.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -227,7 +227,7 @@ TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 
-ScrollingFrame.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Config
+ScrollingFrame.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
