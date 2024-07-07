@@ -4,145 +4,137 @@ local UIListLayout = Instance.new("UIListLayout")
 local Search = Instance.new("TextBox")
 local UICorner = Instance.new("UICorner")
 local PlayerTemplate = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
 local PlayerAvatar = Instance.new("ImageLabel")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local DisplayName = Instance.new("TextLabel")
 local OriginalName = Instance.new("TextLabel")
 local Select = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local FLY = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local Status = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local Disabled = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local Enabled = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local Button = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local Speed = Instance.new("TextBox")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local NOCLIP = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local Status_2 = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local Disabled_2 = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local Enabled_2 = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local Button_2 = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local NOANCHOR = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local Status_3 = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local Disabled_3 = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local Enabled_3 = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local Button_3 = Instance.new("TextButton")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
 local PROTECTPLATFORM = Instance.new("Frame")
-local UICorner_18 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local Status_4 = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local Disabled_4 = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
 local Enabled_4 = Instance.new("Frame")
-local UICorner_21 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local Button_4 = Instance.new("TextButton")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TELEPORT = Instance.new("Frame")
-local UICorner_22 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local TextLabel_9 = Instance.new("TextLabel")
 local TextLabel_10 = Instance.new("TextLabel")
 local Select_2 = Instance.new("TextButton")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local Teleport = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local DORSALTELEPORT = Instance.new("Frame")
-local UICorner_25 = Instance.new("UICorner")
+local UICorner_24 = Instance.new("UICorner")
 local TextLabel_11 = Instance.new("TextLabel")
 local TextLabel_12 = Instance.new("TextLabel")
 local Select_3 = Instance.new("TextButton")
-local UICorner_26 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
 local Status_5 = Instance.new("Frame")
-local UICorner_27 = Instance.new("UICorner")
+local UICorner_26 = Instance.new("UICorner")
 local Disabled_5 = Instance.new("Frame")
-local UICorner_28 = Instance.new("UICorner")
+local UICorner_27 = Instance.new("UICorner")
 local Enabled_5 = Instance.new("Frame")
-local UICorner_29 = Instance.new("UICorner")
+local UICorner_28 = Instance.new("UICorner")
 local Button_5 = Instance.new("TextButton")
 local CLICKTELEPORT = Instance.new("Frame")
-local UICorner_30 = Instance.new("UICorner")
+local UICorner_29 = Instance.new("UICorner")
 local Status_6 = Instance.new("Frame")
-local UICorner_31 = Instance.new("UICorner")
+local UICorner_30 = Instance.new("UICorner")
 local Disabled_6 = Instance.new("Frame")
-local UICorner_32 = Instance.new("UICorner")
+local UICorner_31 = Instance.new("UICorner")
 local Enabled_6 = Instance.new("Frame")
-local UICorner_33 = Instance.new("UICorner")
+local UICorner_32 = Instance.new("UICorner")
 local Button_6 = Instance.new("TextButton")
 local TextLabel_13 = Instance.new("TextLabel")
 local TextLabel_14 = Instance.new("TextLabel")
 local FLING = Instance.new("Frame")
-local UICorner_34 = Instance.new("UICorner")
+local UICorner_33 = Instance.new("UICorner")
 local TextLabel_15 = Instance.new("TextLabel")
 local TextLabel_16 = Instance.new("TextLabel")
 local Select_4 = Instance.new("TextButton")
-local UICorner_35 = Instance.new("UICorner")
+local UICorner_34 = Instance.new("UICorner")
 local Status_7 = Instance.new("Frame")
-local UICorner_36 = Instance.new("UICorner")
+local UICorner_35 = Instance.new("UICorner")
 local Disabled_7 = Instance.new("Frame")
-local UICorner_37 = Instance.new("UICorner")
+local UICorner_36 = Instance.new("UICorner")
 local Enabled_7 = Instance.new("Frame")
-local UICorner_38 = Instance.new("UICorner")
+local UICorner_37 = Instance.new("UICorner")
 local Button_7 = Instance.new("TextButton")
-local XRAY = Instance.new("Frame")
-local UICorner_39 = Instance.new("UICorner")
-local Status_8 = Instance.new("Frame")
-local UICorner_40 = Instance.new("UICorner")
-local Disabled_8 = Instance.new("Frame")
-local UICorner_41 = Instance.new("UICorner")
-local Enabled_8 = Instance.new("Frame")
-local UICorner_42 = Instance.new("UICorner")
-local Button_8 = Instance.new("TextButton")
-local TextLabel_17 = Instance.new("TextLabel")
-local TextLabel_18 = Instance.new("TextLabel")
 local Teleport_2 = Instance.new("Frame")
 local ScrollingFrame_3 = Instance.new("ScrollingFrame")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local Search_2 = Instance.new("TextBox")
-local UICorner_43 = Instance.new("UICorner")
+local UICorner_38 = Instance.new("UICorner")
 local PlayerTemplate_2 = Instance.new("Frame")
 local PlayerAvatar_2 = Instance.new("ImageLabel")
+local UICorner_39 = Instance.new("UICorner")
 local DisplayName_2 = Instance.new("TextLabel")
 local OriginalName_2 = Instance.new("TextLabel")
 local Select_5 = Instance.new("TextButton")
-local UICorner_46 = Instance.new("UICorner")
+local UICorner_40 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
 local Back = Instance.new("TextButton")
-local UICorner_47 = Instance.new("UICorner")
+local UICorner_41 = Instance.new("UICorner")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
 local TextLabel_19 = Instance.new("TextLabel")
-local TextLabel_20 = Instance.new("TextLabel")
-local TextLabel_21 = Instance.new("TextLabel")
 local DorsalTeleport = Instance.new("Frame")
 local ScrollingFrame_4 = Instance.new("ScrollingFrame")
 local UIListLayout_4 = Instance.new("UIListLayout")
 local Search_3 = Instance.new("TextBox")
-local UICorner_48 = Instance.new("UICorner")
+local UICorner_42 = Instance.new("UICorner")
 local PlayerTemplate_3 = Instance.new("Frame")
 local PlayerAvatar_3 = Instance.new("ImageLabel")
-local UICorner_50 = Instance.new("UICorner")
+local UICorner_43 = Instance.new("UICorner")
 local DisplayName_3 = Instance.new("TextLabel")
 local OriginalName_3 = Instance.new("TextLabel")
 local Select_6 = Instance.new("TextButton")
-local UICorner_51 = Instance.new("UICorner")
+local UICorner_44 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
 
 --Properties:
 
@@ -196,8 +188,6 @@ PlayerTemplate.Position = UDim2.new(-0.0271739122, 0, 1.81652254e-07, 0)
 PlayerTemplate.Size = UDim2.new(0, 187, 0, 39)
 PlayerTemplate.Visible = false
 
-UICorner_2.Parent = PlayerTemplate
-
 PlayerAvatar.Name = "PlayerAvatar"
 PlayerAvatar.Parent = PlayerTemplate
 PlayerAvatar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -208,7 +198,7 @@ PlayerAvatar.Position = UDim2.new(0.0385886282, 0, 0.114926852, 0)
 PlayerAvatar.Size = UDim2.new(0, 30, 0, 30)
 PlayerAvatar.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UICorner_3.Parent = PlayerAvatar
+UICorner_2.Parent = PlayerAvatar
 
 DisplayName.Name = "DisplayName"
 DisplayName.Parent = PlayerTemplate
@@ -256,7 +246,11 @@ Select.TextScaled = true
 Select.TextSize = 14.000
 Select.TextWrapped = true
 
-UICorner_4.Parent = Select
+UICorner_3.Parent = Select
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Rotation = -45
+UIGradient.Parent = PlayerTemplate
 
 ScrollingFrame_2.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
 ScrollingFrame_2.Active = true
@@ -266,6 +260,7 @@ ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame_2.BorderSizePixel = 0
 ScrollingFrame_2.Position = UDim2.new(0.0153172864, 0, 0.120781526, 0)
 ScrollingFrame_2.Size = UDim2.new(0, 885, 0, 461)
+ScrollingFrame_2.CanvasPosition = Vector2.new(0, 300)
 
 UIListLayout_2.Parent = ScrollingFrame_2
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
@@ -278,7 +273,7 @@ FLY.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FLY.BorderSizePixel = 0
 FLY.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_5.Parent = FLY
+UICorner_4.Parent = FLY
 
 Status.Name = "Status"
 Status.Parent = FLY
@@ -288,8 +283,8 @@ Status.BorderSizePixel = 0
 Status.Position = UDim2.new(0.773232102, 0, 0.093225874, 0)
 Status.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_6.CornerRadius = UDim.new(1, 0)
-UICorner_6.Parent = Status
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = Status
 
 Disabled.Name = "Disabled"
 Disabled.Parent = Status
@@ -298,8 +293,8 @@ Disabled.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled.BorderSizePixel = 0
 Disabled.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_7.CornerRadius = UDim.new(1, 0)
-UICorner_7.Parent = Disabled
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = Disabled
 
 Enabled.Name = "Enabled"
 Enabled.Parent = Status
@@ -310,8 +305,8 @@ Enabled.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled.Size = UDim2.new(0, 50, 0, 50)
 Enabled.Visible = false
 
-UICorner_8.CornerRadius = UDim.new(1, 0)
-UICorner_8.Parent = Enabled
+UICorner_7.CornerRadius = UDim.new(1, 0)
+UICorner_7.Parent = Enabled
 
 Button.Name = "Button"
 Button.Parent = Status
@@ -369,7 +364,7 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 
-UICorner_9.Parent = Speed
+UICorner_8.Parent = Speed
 
 NOCLIP.Name = "NOCLIP"
 NOCLIP.Parent = ScrollingFrame_2
@@ -378,7 +373,7 @@ NOCLIP.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NOCLIP.BorderSizePixel = 0
 NOCLIP.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_10.Parent = NOCLIP
+UICorner_9.Parent = NOCLIP
 
 Status_2.Name = "Status"
 Status_2.Parent = NOCLIP
@@ -388,8 +383,8 @@ Status_2.BorderSizePixel = 0
 Status_2.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status_2.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_11.CornerRadius = UDim.new(1, 0)
-UICorner_11.Parent = Status_2
+UICorner_10.CornerRadius = UDim.new(1, 0)
+UICorner_10.Parent = Status_2
 
 Disabled_2.Name = "Disabled"
 Disabled_2.Parent = Status_2
@@ -398,8 +393,8 @@ Disabled_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_2.BorderSizePixel = 0
 Disabled_2.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_12.CornerRadius = UDim.new(1, 0)
-UICorner_12.Parent = Disabled_2
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = Disabled_2
 
 Enabled_2.Name = "Enabled"
 Enabled_2.Parent = Status_2
@@ -410,8 +405,8 @@ Enabled_2.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_2.Size = UDim2.new(0, 50, 0, 50)
 Enabled_2.Visible = false
 
-UICorner_13.CornerRadius = UDim.new(1, 0)
-UICorner_13.Parent = Enabled_2
+UICorner_12.CornerRadius = UDim.new(1, 0)
+UICorner_12.Parent = Enabled_2
 
 Button_2.Name = "Button"
 Button_2.Parent = Status_2
@@ -460,7 +455,7 @@ NOANCHOR.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NOANCHOR.BorderSizePixel = 0
 NOANCHOR.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_14.Parent = NOANCHOR
+UICorner_13.Parent = NOANCHOR
 
 Status_3.Name = "Status"
 Status_3.Parent = NOANCHOR
@@ -470,8 +465,8 @@ Status_3.BorderSizePixel = 0
 Status_3.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status_3.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_15.CornerRadius = UDim.new(1, 0)
-UICorner_15.Parent = Status_3
+UICorner_14.CornerRadius = UDim.new(1, 0)
+UICorner_14.Parent = Status_3
 
 Disabled_3.Name = "Disabled"
 Disabled_3.Parent = Status_3
@@ -480,8 +475,8 @@ Disabled_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_3.BorderSizePixel = 0
 Disabled_3.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_16.CornerRadius = UDim.new(1, 0)
-UICorner_16.Parent = Disabled_3
+UICorner_15.CornerRadius = UDim.new(1, 0)
+UICorner_15.Parent = Disabled_3
 
 Enabled_3.Name = "Enabled"
 Enabled_3.Parent = Status_3
@@ -492,8 +487,8 @@ Enabled_3.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_3.Size = UDim2.new(0, 50, 0, 50)
 Enabled_3.Visible = false
 
-UICorner_17.CornerRadius = UDim.new(1, 0)
-UICorner_17.Parent = Enabled_3
+UICorner_16.CornerRadius = UDim.new(1, 0)
+UICorner_16.Parent = Enabled_3
 
 Button_3.Name = "Button"
 Button_3.Parent = Status_3
@@ -542,7 +537,7 @@ PROTECTPLATFORM.BorderColor3 = Color3.fromRGB(0, 0, 0)
 PROTECTPLATFORM.BorderSizePixel = 0
 PROTECTPLATFORM.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_18.Parent = PROTECTPLATFORM
+UICorner_17.Parent = PROTECTPLATFORM
 
 Status_4.Name = "Status"
 Status_4.Parent = PROTECTPLATFORM
@@ -552,8 +547,8 @@ Status_4.BorderSizePixel = 0
 Status_4.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status_4.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_19.CornerRadius = UDim.new(1, 0)
-UICorner_19.Parent = Status_4
+UICorner_18.CornerRadius = UDim.new(1, 0)
+UICorner_18.Parent = Status_4
 
 Disabled_4.Name = "Disabled"
 Disabled_4.Parent = Status_4
@@ -562,8 +557,8 @@ Disabled_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_4.BorderSizePixel = 0
 Disabled_4.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_20.CornerRadius = UDim.new(1, 0)
-UICorner_20.Parent = Disabled_4
+UICorner_19.CornerRadius = UDim.new(1, 0)
+UICorner_19.Parent = Disabled_4
 
 Enabled_4.Name = "Enabled"
 Enabled_4.Parent = Status_4
@@ -574,8 +569,8 @@ Enabled_4.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_4.Size = UDim2.new(0, 50, 0, 50)
 Enabled_4.Visible = false
 
-UICorner_21.CornerRadius = UDim.new(1, 0)
-UICorner_21.Parent = Enabled_4
+UICorner_20.CornerRadius = UDim.new(1, 0)
+UICorner_20.Parent = Enabled_4
 
 Button_4.Name = "Button"
 Button_4.Parent = Status_4
@@ -624,7 +619,7 @@ TELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TELEPORT.BorderSizePixel = 0
 TELEPORT.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_22.Parent = TELEPORT
+UICorner_21.Parent = TELEPORT
 
 TextLabel_9.Parent = TELEPORT
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -668,7 +663,7 @@ Select_2.TextScaled = true
 Select_2.TextSize = 14.000
 Select_2.TextWrapped = true
 
-UICorner_23.Parent = Select_2
+UICorner_22.Parent = Select_2
 
 Teleport.Name = "Teleport"
 Teleport.Parent = TELEPORT
@@ -684,7 +679,7 @@ Teleport.TextScaled = true
 Teleport.TextSize = 14.000
 Teleport.TextWrapped = true
 
-UICorner_24.Parent = Teleport
+UICorner_23.Parent = Teleport
 
 DORSALTELEPORT.Name = "DORSALTELEPORT"
 DORSALTELEPORT.Parent = ScrollingFrame_2
@@ -693,7 +688,7 @@ DORSALTELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
 DORSALTELEPORT.BorderSizePixel = 0
 DORSALTELEPORT.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_25.Parent = DORSALTELEPORT
+UICorner_24.Parent = DORSALTELEPORT
 
 TextLabel_11.Parent = DORSALTELEPORT
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -737,7 +732,7 @@ Select_3.TextScaled = true
 Select_3.TextSize = 14.000
 Select_3.TextWrapped = true
 
-UICorner_26.Parent = Select_3
+UICorner_25.Parent = Select_3
 
 Status_5.Name = "Status"
 Status_5.Parent = DORSALTELEPORT
@@ -747,8 +742,8 @@ Status_5.BorderSizePixel = 0
 Status_5.Position = UDim2.new(0.879345119, 0, 0.093225874, 0)
 Status_5.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_27.CornerRadius = UDim.new(1, 0)
-UICorner_27.Parent = Status_5
+UICorner_26.CornerRadius = UDim.new(1, 0)
+UICorner_26.Parent = Status_5
 
 Disabled_5.Name = "Disabled"
 Disabled_5.Parent = Status_5
@@ -757,8 +752,8 @@ Disabled_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_5.BorderSizePixel = 0
 Disabled_5.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_28.CornerRadius = UDim.new(1, 0)
-UICorner_28.Parent = Disabled_5
+UICorner_27.CornerRadius = UDim.new(1, 0)
+UICorner_27.Parent = Disabled_5
 
 Enabled_5.Name = "Enabled"
 Enabled_5.Parent = Status_5
@@ -769,8 +764,8 @@ Enabled_5.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_5.Size = UDim2.new(0, 50, 0, 50)
 Enabled_5.Visible = false
 
-UICorner_29.CornerRadius = UDim.new(1, 0)
-UICorner_29.Parent = Enabled_5
+UICorner_28.CornerRadius = UDim.new(1, 0)
+UICorner_28.Parent = Enabled_5
 
 Button_5.Name = "Button"
 Button_5.Parent = Status_5
@@ -791,7 +786,7 @@ CLICKTELEPORT.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CLICKTELEPORT.BorderSizePixel = 0
 CLICKTELEPORT.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_30.Parent = CLICKTELEPORT
+UICorner_29.Parent = CLICKTELEPORT
 
 Status_6.Name = "Status"
 Status_6.Parent = CLICKTELEPORT
@@ -801,8 +796,8 @@ Status_6.BorderSizePixel = 0
 Status_6.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status_6.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_31.CornerRadius = UDim.new(1, 0)
-UICorner_31.Parent = Status_6
+UICorner_30.CornerRadius = UDim.new(1, 0)
+UICorner_30.Parent = Status_6
 
 Disabled_6.Name = "Disabled"
 Disabled_6.Parent = Status_6
@@ -811,8 +806,8 @@ Disabled_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_6.BorderSizePixel = 0
 Disabled_6.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_32.CornerRadius = UDim.new(1, 0)
-UICorner_32.Parent = Disabled_6
+UICorner_31.CornerRadius = UDim.new(1, 0)
+UICorner_31.Parent = Disabled_6
 
 Enabled_6.Name = "Enabled"
 Enabled_6.Parent = Status_6
@@ -823,8 +818,8 @@ Enabled_6.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_6.Size = UDim2.new(0, 50, 0, 50)
 Enabled_6.Visible = false
 
-UICorner_33.CornerRadius = UDim.new(1, 0)
-UICorner_33.Parent = Enabled_6
+UICorner_32.CornerRadius = UDim.new(1, 0)
+UICorner_32.Parent = Enabled_6
 
 Button_6.Name = "Button"
 Button_6.Parent = Status_6
@@ -873,7 +868,7 @@ FLING.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FLING.BorderSizePixel = 0
 FLING.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_34.Parent = FLING
+UICorner_33.Parent = FLING
 
 TextLabel_15.Parent = FLING
 TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -917,7 +912,7 @@ Select_4.TextScaled = true
 Select_4.TextSize = 14.000
 Select_4.TextWrapped = true
 
-UICorner_35.Parent = Select_4
+UICorner_34.Parent = Select_4
 
 Status_7.Name = "Status"
 Status_7.Parent = FLING
@@ -927,8 +922,8 @@ Status_7.BorderSizePixel = 0
 Status_7.Position = UDim2.new(0.879345119, 0, 0.093225874, 0)
 Status_7.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_36.CornerRadius = UDim.new(1, 0)
-UICorner_36.Parent = Status_7
+UICorner_35.CornerRadius = UDim.new(1, 0)
+UICorner_35.Parent = Status_7
 
 Disabled_7.Name = "Disabled"
 Disabled_7.Parent = Status_7
@@ -937,8 +932,8 @@ Disabled_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_7.BorderSizePixel = 0
 Disabled_7.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_37.CornerRadius = UDim.new(1, 0)
-UICorner_37.Parent = Disabled_7
+UICorner_36.CornerRadius = UDim.new(1, 0)
+UICorner_36.Parent = Disabled_7
 
 Enabled_7.Name = "Enabled"
 Enabled_7.Parent = Status_7
@@ -949,8 +944,8 @@ Enabled_7.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_7.Size = UDim2.new(0, 50, 0, 50)
 Enabled_7.Visible = false
 
-UICorner_38.CornerRadius = UDim.new(1, 0)
-UICorner_38.Parent = Enabled_7
+UICorner_37.CornerRadius = UDim.new(1, 0)
+UICorner_37.Parent = Enabled_7
 
 Button_7.Name = "Button"
 Button_7.Parent = Status_7
@@ -963,88 +958,6 @@ Button_7.Font = Enum.Font.SourceSans
 Button_7.Text = ""
 Button_7.TextColor3 = Color3.fromRGB(0, 0, 0)
 Button_7.TextSize = 14.000
-
-XRAY.Name = "XRAY"
-XRAY.Parent = ScrollingFrame_2
-XRAY.BackgroundColor3 = Color3.fromRGB(25, 27, 33)
-XRAY.BorderColor3 = Color3.fromRGB(0, 0, 0)
-XRAY.BorderSizePixel = 0
-XRAY.Size = UDim2.new(0, 867, 0, 63)
-
-UICorner_39.Parent = XRAY
-
-Status_8.Name = "Status"
-Status_8.Parent = XRAY
-Status_8.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
-Status_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Status_8.BorderSizePixel = 0
-Status_8.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
-Status_8.Size = UDim2.new(0, 100, 0, 50)
-
-UICorner_40.CornerRadius = UDim.new(1, 0)
-UICorner_40.Parent = Status_8
-
-Disabled_8.Name = "Disabled"
-Disabled_8.Parent = Status_8
-Disabled_8.BackgroundColor3 = Color3.fromRGB(46, 50, 61)
-Disabled_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Disabled_8.BorderSizePixel = 0
-Disabled_8.Size = UDim2.new(0, 50, 0, 50)
-
-UICorner_41.CornerRadius = UDim.new(1, 0)
-UICorner_41.Parent = Disabled_8
-
-Enabled_8.Name = "Enabled"
-Enabled_8.Parent = Status_8
-Enabled_8.BackgroundColor3 = Color3.fromRGB(126, 136, 166)
-Enabled_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Enabled_8.BorderSizePixel = 0
-Enabled_8.Position = UDim2.new(0.5, 0, 0, 0)
-Enabled_8.Size = UDim2.new(0, 50, 0, 50)
-Enabled_8.Visible = false
-
-UICorner_42.CornerRadius = UDim.new(1, 0)
-UICorner_42.Parent = Enabled_8
-
-Button_8.Name = "Button"
-Button_8.Parent = Status_8
-Button_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_8.BackgroundTransparency = 1.000
-Button_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_8.BorderSizePixel = 0
-Button_8.Size = UDim2.new(0, 100, 0, 50)
-Button_8.Font = Enum.Font.SourceSans
-Button_8.Text = ""
-Button_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_8.TextSize = 14.000
-
-TextLabel_17.Parent = XRAY
-TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.BackgroundTransparency = 1.000
-TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_17.BorderSizePixel = 0
-TextLabel_17.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_17.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_17.Font = Enum.Font.SourceSansBold
-TextLabel_17.Text = "[Хорошее зрение]"
-TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.TextScaled = true
-TextLabel_17.TextSize = 14.000
-TextLabel_17.TextWrapped = true
-
-TextLabel_18.Parent = XRAY
-TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.BackgroundTransparency = 1.000
-TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_18.BorderSizePixel = 0
-TextLabel_18.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_18.Size = UDim2.new(0, 453, 0, 32)
-TextLabel_18.Font = Enum.Font.SourceSansBold
-TextLabel_18.Text = "Весь мир станет для вас прозрачным"
-TextLabel_18.TextColor3 = Color3.fromRGB(53, 56, 70)
-TextLabel_18.TextScaled = true
-TextLabel_18.TextSize = 14.000
-TextLabel_18.TextWrapped = true
 
 Teleport_2.Name = "Teleport"
 Teleport_2.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
@@ -1068,7 +981,6 @@ ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 8, 0)
 UIListLayout_3.Parent = ScrollingFrame_3
 UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_3.Padding = UDim.new(0, 2)
 
 Search_2.Name = "Search"
 Search_2.Parent = Teleport_2
@@ -1086,7 +998,7 @@ Search_2.TextScaled = true
 Search_2.TextSize = 14.000
 Search_2.TextWrapped = true
 
-UICorner_43.Parent = Search_2
+UICorner_38.Parent = Search_2
 
 PlayerTemplate_2.Name = "PlayerTemplate"
 PlayerTemplate_2.Parent = Teleport_2
@@ -1106,6 +1018,8 @@ PlayerAvatar_2.BorderSizePixel = 0
 PlayerAvatar_2.Position = UDim2.new(0.0385886282, 0, 0.114926852, 0)
 PlayerAvatar_2.Size = UDim2.new(0, 30, 0, 30)
 PlayerAvatar_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_39.Parent = PlayerAvatar_2
 
 DisplayName_2.Name = "DisplayName"
 DisplayName_2.Parent = PlayerTemplate_2
@@ -1153,7 +1067,11 @@ Select_5.TextScaled = true
 Select_5.TextSize = 14.000
 Select_5.TextWrapped = true
 
-UICorner_46.Parent = Select_5
+UICorner_40.Parent = Select_5
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Rotation = -45
+UIGradient_2.Parent = PlayerTemplate_2
 
 Back.Name = "Back"
 Back.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
@@ -1168,50 +1086,50 @@ Back.TextColor3 = Color3.fromRGB(255, 255, 255)
 Back.TextSize = 14.000
 Back.TextWrapped = true
 
-UICorner_47.CornerRadius = UDim.new(1, 0)
-UICorner_47.Parent = Back
+UICorner_41.CornerRadius = UDim.new(1, 0)
+UICorner_41.Parent = Back
 
-TextLabel_19.Parent = Back
+TextLabel_17.Parent = Back
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
+TextLabel_17.Size = UDim2.new(0, 108, 0, 33)
+TextLabel_17.Font = Enum.Font.SourceSansBold
+TextLabel_17.Text = "Назад"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+TextLabel_18.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0.00875273533, 0, 0, 0)
+TextLabel_18.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_18.Font = Enum.Font.SourceSansBold
+TextLabel_18.Text = "Жесткая игра"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
 TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.BackgroundTransparency = 1.000
 TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_19.BorderSizePixel = 0
-TextLabel_19.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
-TextLabel_19.Size = UDim2.new(0, 108, 0, 33)
+TextLabel_19.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
+TextLabel_19.Size = UDim2.new(0, 914, 0, 43)
 TextLabel_19.Font = Enum.Font.SourceSansBold
-TextLabel_19.Text = "Назад"
-TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.Text = "При таком геймплее в некоторых плейсах легко заработать бан."
+TextLabel_19.TextColor3 = Color3.fromRGB(36, 38, 48)
 TextLabel_19.TextScaled = true
 TextLabel_19.TextSize = 14.000
 TextLabel_19.TextWrapped = true
-
-TextLabel_20.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
-TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.BackgroundTransparency = 1.000
-TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_20.BorderSizePixel = 0
-TextLabel_20.Position = UDim2.new(0.00875273533, 0, 0, 0)
-TextLabel_20.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_20.Font = Enum.Font.SourceSansBold
-TextLabel_20.Text = "Жесткая игра"
-TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.TextScaled = true
-TextLabel_20.TextSize = 14.000
-TextLabel_20.TextWrapped = true
-
-TextLabel_21.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
-TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_21.BackgroundTransparency = 1.000
-TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_21.BorderSizePixel = 0
-TextLabel_21.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
-TextLabel_21.Size = UDim2.new(0, 914, 0, 43)
-TextLabel_21.Font = Enum.Font.SourceSansBold
-TextLabel_21.Text = "При таком геймплее в некоторых плейсах легко заработать бан."
-TextLabel_21.TextColor3 = Color3.fromRGB(36, 38, 48)
-TextLabel_21.TextScaled = true
-TextLabel_21.TextSize = 14.000
-TextLabel_21.TextWrapped = true
 
 DorsalTeleport.Name = "DorsalTeleport"
 DorsalTeleport.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Rage
@@ -1235,7 +1153,6 @@ ScrollingFrame_4.CanvasSize = UDim2.new(0, 0, 8, 0)
 UIListLayout_4.Parent = ScrollingFrame_4
 UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_4.Padding = UDim.new(0, 2)
 
 Search_3.Name = "Search"
 Search_3.Parent = DorsalTeleport
@@ -1253,7 +1170,7 @@ Search_3.TextScaled = true
 Search_3.TextSize = 14.000
 Search_3.TextWrapped = true
 
-UICorner_48.Parent = Search_3
+UICorner_42.Parent = Search_3
 
 PlayerTemplate_3.Name = "PlayerTemplate"
 PlayerTemplate_3.Parent = DorsalTeleport
@@ -1274,7 +1191,7 @@ PlayerAvatar_3.Position = UDim2.new(0.0385886282, 0, 0.114926852, 0)
 PlayerAvatar_3.Size = UDim2.new(0, 30, 0, 30)
 PlayerAvatar_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UICorner_50.Parent = PlayerAvatar_3
+UICorner_43.Parent = PlayerAvatar_3
 
 DisplayName_3.Name = "DisplayName"
 DisplayName_3.Parent = PlayerTemplate_3
@@ -1302,7 +1219,7 @@ OriginalName_3.Position = UDim2.new(0.252702832, 0, 0.494505674, 0)
 OriginalName_3.Size = UDim2.new(0, 116, 0, 18)
 OriginalName_3.Font = Enum.Font.SourceSansBold
 OriginalName_3.Text = "@originalname"
-OriginalName_3.TextColor3 = Color3.fromRGB(100, 100, 100)
+OriginalName_3.TextColor3 = Color3.fromRGB(44, 50, 59)
 OriginalName_3.TextScaled = true
 OriginalName_3.TextSize = 14.000
 OriginalName_3.TextWrapped = true
@@ -1322,13 +1239,17 @@ Select_6.TextScaled = true
 Select_6.TextSize = 14.000
 Select_6.TextWrapped = true
 
-UICorner_51.Parent = Select_6
+UICorner_44.Parent = Select_6
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Rotation = -45
+UIGradient_3.Parent = PlayerTemplate_3
 
 -- Scripts:
 
-local function CPCUEL_fake_script() -- Fling.LocalScript 
+local function FUEB_fake_script() -- Fling.LocalScript 
 	local script = Instance.new('LocalScript', Fling)
-	
+
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
@@ -1339,7 +1260,6 @@ local function CPCUEL_fake_script() -- Fling.LocalScript
 	local Click = Instance.new("Sound", script)
 	Click.SoundId = "rbxassetid://1548304764"
 	
-	-- Переменные для элементов в шаблоне игрока
 	local function createPlayerFrame(player)
 		local playerFrame = PlayerTemplate:Clone()
 		playerFrame.Name = player.Name
@@ -1347,13 +1267,40 @@ local function CPCUEL_fake_script() -- Fling.LocalScript
 		playerFrame.OriginalName.Text = "@"..player.Name
 		playerFrame.PlayerAvatar.Image = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100)
 		
-		-- Обработчик для кнопки Select
-		local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
-		selectButton.MouseButton1Click:Connect(function()
-			SelectValue.Value = player.Name
-			Frame.Visible = false
-			Click:Play()
-		end)
+		-- Проверяем, является ли игрок текущим пользователем (вами)
+		local isLocalPlayer = player == Players.LocalPlayer
+		
+		-- Если игрок текущий, скрываем кнопку Select и делаем его имя серым цветом
+		if isLocalPlayer then
+			playerFrame.Select.Visible = false
+			playerFrame.DisplayName.TextColor3 = Color3.new(0.5, 0.5, 0.5) -- Серый цвет
+		else
+			-- Проверяем, является ли игрок другом текущего пользователя
+			local isFriend = false
+			local localPlayer = Players.LocalPlayer
+			if localPlayer then
+				local friends = localPlayer:GetFriendsAsync()
+				for _, friend in ipairs(friends) do
+					if friend.Id == player.UserId then
+						isFriend = true
+						break
+					end
+				end
+			end
+			
+			-- Если игрок друг, делаем его имя зеленым
+			if isFriend then
+				playerFrame.DisplayName.TextColor3 = Color3.new(0, 1, 0) -- Зеленый цвет
+			end
+			
+			-- Обработчик для кнопки Select
+			local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
+			selectButton.MouseButton1Click:Connect(function()
+				SelectValue.Value = player.Name
+				Frame.Visible = false
+				Click:Play()
+			end)
+		end
 		
 		playerFrame.Visible = true
 		playerFrame.Parent = PlayerListFrame
@@ -1399,10 +1346,10 @@ local function CPCUEL_fake_script() -- Fling.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(CPCUEL_fake_script)()
-local function WCJJORA_fake_script() -- FLY.ButtonManager 
+coroutine.wrap(FUEB_fake_script)()
+local function AVPED_fake_script() -- FLY.ButtonManager 
 	local script = Instance.new('LocalScript', FLY)
-	
+
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
@@ -1513,34 +1460,55 @@ local function WCJJORA_fake_script() -- FLY.ButtonManager
 		end
 	end)
 	
-	
 	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
 	Keybind.Name = "Keybind_Fly"
 	
-	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
-			Click:Play()
-			if Activated == false then
-				Activated = true
-				Enabled.Visible = true
-				Disabled.Visible = false
-				Active = true
-				Fly()
-			else
-				Activated = false
-				Enabled.Visible = false
-				Disabled.Visible = true
-				Active = false
-				Fly()
-			end
-		end		
-	end)
-end
-coroutine.wrap(WCJJORA_fake_script)()
-local function FJPXG_fake_script() -- NOCLIP.ButtonManager 
-	local script = Instance.new('LocalScript', NOCLIP)
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
 	
-	-- Default - 25, 25, 25; Hover - 35, 35, 35
+	-- Функция для обработки ввода
+	local function onKeyPress(input, gameProcessedEvent)
+		-- Проверяем, обработано ли событие игрой
+		if gameProcessedEvent then
+			return
+		end
+		
+		-- Используем нашу функцию для проверки текстового поля
+		if isTextBoxFocused() then
+			return
+		end
+		
+		-- Проверяем, является ли ввод с клавиатуры
+		if input.UserInputType == Enum.UserInputType.Keyboard then
+			if Keybind.Value ~= "" and input.KeyCode == Enum.KeyCode[Keybind.Value] then
+				Click:Play()
+				if Activated == false then
+					Activated = true
+					Enabled.Visible = true
+					Disabled.Visible = false
+					Active = true
+					Fly()
+				else
+					Activated = false
+					Enabled.Visible = false
+					Disabled.Visible = true
+					Active = false
+					Fly()
+				end
+			end
+		end
+	end
+	
+	-- Подписка на событие ввода с клавиатуры
+	UserInputService.InputBegan:Connect(onKeyPress)
+	
+end
+coroutine.wrap(AVPED_fake_script)()
+local function GCIT_fake_script() -- NOCLIP.ButtonManager 
+	local script = Instance.new('LocalScript', NOCLIP)
+
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
 	local Activated = false
@@ -1587,6 +1555,11 @@ local function FJPXG_fake_script() -- NOCLIP.ButtonManager
 		noclipActive = false
 	end
 	
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
 	-- Обработчик для кнопки
 	Button.MouseButton1Click:Connect(function()
 		noclipActive = not noclipActive
@@ -1619,6 +1592,12 @@ local function FJPXG_fake_script() -- NOCLIP.ButtonManager
 	Keybind.Name = "Keybind_Noclip"
 	
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
+		-- Проверяем, была ли нажата клавиша, указанная в Keybind
 		if input.KeyCode.Name == Keybind.Value then
 			Click:Play()
 			if Activated == false then
@@ -1634,11 +1613,12 @@ local function FJPXG_fake_script() -- NOCLIP.ButtonManager
 			end
 		end		
 	end)
-end
-coroutine.wrap(FJPXG_fake_script)()
-local function MRIX_fake_script() -- NOANCHOR.ButtonManager 
-	local script = Instance.new('LocalScript', NOANCHOR)
 	
+end
+coroutine.wrap(GCIT_fake_script)()
+local function SGKIN_fake_script() -- NOANCHOR.ButtonManager 
+	local script = Instance.new('LocalScript', NOANCHOR)
+
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
 	local Activated = false
@@ -1714,8 +1694,19 @@ local function MRIX_fake_script() -- NOANCHOR.ButtonManager
 	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
 	Keybind.Name = "Keybind_NoAnchor"
 	
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
+		-- Проверяем, установлен ли Keybind и совпадает ли нажатая клавиша
+		if Keybind.Value ~= "" and input.KeyCode.Name == Keybind.Value then
 			Click:Play()
 			if Activated == false then
 				Activated = true
@@ -1732,11 +1723,10 @@ local function MRIX_fake_script() -- NOANCHOR.ButtonManager
 	end)
 	
 end
-coroutine.wrap(MRIX_fake_script)()
-local function OHIMD_fake_script() -- PROTECTPLATFORM.ButtonManager 
+coroutine.wrap(SGKIN_fake_script)()
+local function YYES_fake_script() -- PROTECTPLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', PROTECTPLATFORM)
-	
-	-- Default - 25, 25, 25; Hover - 35, 35, 35
+
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
 	local Activated = false
@@ -1755,12 +1745,10 @@ local function OHIMD_fake_script() -- PROTECTPLATFORM.ButtonManager
 			Activated = true
 			Enabled.Visible = true
 			Disabled.Visible = false
-			Display.Visible = true
 		else
 			Activated = false
 			Enabled.Visible = false
 			Disabled.Visible = true
-			Display.Visible = false
 		end
 	end)
 	
@@ -1800,8 +1788,18 @@ local function OHIMD_fake_script() -- PROTECTPLATFORM.ButtonManager
 		end
 	end
 	
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
 	-- Обработчик для кнопки
 	Button.MouseButton1Click:Connect(function()
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
 		platformActive = not platformActive
 		if platformActive then
 			enablePlatform()
@@ -1824,7 +1822,13 @@ local function OHIMD_fake_script() -- PROTECTPLATFORM.ButtonManager
 	Keybind.Name = "Keybind_Platform"
 	
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
+		-- Проверяем, установлен ли Keybind и совпадает ли нажатая клавиша
+		if Keybind.Value ~= "" and input.KeyCode.Name == Keybind.Value then
 			Click:Play()
 			if Activated == false then
 				Activated = true
@@ -1837,14 +1841,14 @@ local function OHIMD_fake_script() -- PROTECTPLATFORM.ButtonManager
 				Disabled.Visible = true
 				disablePlatform()
 			end
-		end		
+		end        
 	end)
 	
 end
-coroutine.wrap(OHIMD_fake_script)()
-local function VRZCZ_fake_script() -- TELEPORT.ValueManager 
+coroutine.wrap(YYES_fake_script)()
+local function LLBDGZH_fake_script() -- TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', TELEPORT)
-	
+
 	local UserInputService = game:GetService("UserInputService")
 	local Players = game:GetService("Players")
 	
@@ -1883,12 +1887,28 @@ local function VRZCZ_fake_script() -- TELEPORT.ValueManager
 		end
 	end
 	
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
 	TeleportButton.MouseButton1Click:Connect(function()
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
 		Click:Play()
 		local playerName = PlayerValue.Value
 		teleportToPlayer(playerName)
 	end)
+	
 	SelectButton.MouseButton1Click:Connect(function()
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
 		Click:Play()
 		SelectFrame.Visible = not SelectFrame.Visible
 		if SelectFrame2.Visible then
@@ -1900,19 +1920,25 @@ local function VRZCZ_fake_script() -- TELEPORT.ValueManager
 	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
 	Keybind.Name = "Keybind_Teleport"
 	
-	-- Обработчик нажатия клавиши
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
+		-- Проверяем, установлен ли Keybind и совпадает ли нажатая клавиша
+		if Keybind.Value ~= "" and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+			Click:Play()
 			local playerName = PlayerValue.Value
 			teleportToPlayer(playerName)
 		end        
 	end)
 	
 end
-coroutine.wrap(VRZCZ_fake_script)()
-local function WQJQ_fake_script() -- DORSALTELEPORT.ButtonManager 
+coroutine.wrap(LLBDGZH_fake_script)()
+local function XENTQA_fake_script() -- DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', DORSALTELEPORT)
-	
+
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -1939,14 +1965,10 @@ local function WQJQ_fake_script() -- DORSALTELEPORT.ButtonManager
 	local SelectFrame2 = script.Parent.Parent.Parent.Teleport
 	local SelectFrame3 = script.Parent.Parent.Parent.Fling
 	
-	OpenFrameButton.MouseButton1Click:Connect(function()
-		Click:Play()
-		SelectFrame.Visible = not SelectFrame.Visible
-		if SelectFrame2.Visible then
-			SelectFrame2.Visible = false
-			SelectFrame3.Visible = false
-		end
-	end)
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
 	
 	-- Функция для обновления позиции игрока
 	local function updatePosition()
@@ -1967,6 +1989,11 @@ local function WQJQ_fake_script() -- DORSALTELEPORT.ButtonManager
 	
 	-- Подключение кнопки
 	Button.MouseButton1Click:Connect(function()
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
 		Click:Play()
 		Activated = not Activated
 		if Activated then
@@ -1980,7 +2007,13 @@ local function WQJQ_fake_script() -- DORSALTELEPORT.ButtonManager
 	
 	-- Обработка нажатия клавиши
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
+		-- Проверяем, установлен ли Keybind и совпадает ли нажатая клавиша
+		if Keybind.Value ~= "" and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
 			Click:Play()
 			Activated = not Activated
 			if Activated then
@@ -1999,11 +2032,27 @@ local function WQJQ_fake_script() -- DORSALTELEPORT.ButtonManager
 			updatePosition()
 		end
 	end)
-end
-coroutine.wrap(WQJQ_fake_script)()
-local function BGUOSOE_fake_script() -- CLICKTELEPORT.ButtonManager 
-	local script = Instance.new('LocalScript', CLICKTELEPORT)
 	
+	-- Обработчик кнопки открытия окна
+	OpenFrameButton.MouseButton1Click:Connect(function()
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
+		Click:Play()
+		SelectFrame.Visible = not SelectFrame.Visible
+		if SelectFrame2.Visible then
+			SelectFrame2.Visible = false
+			SelectFrame3.Visible = false
+		end
+	end)
+	
+end
+coroutine.wrap(XENTQA_fake_script)()
+local function LZWA_fake_script() -- CLICKTELEPORT.ButtonManager 
+	local script = Instance.new('LocalScript', CLICKTELEPORT)
+
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
 	local Activated = false
@@ -2027,26 +2076,34 @@ local function BGUOSOE_fake_script() -- CLICKTELEPORT.ButtonManager
 		end
 	end
 	
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
 	-- Слушатель для кнопки
 	Button.MouseButton1Click:Connect(function()
-		if not isToggleLocked then
-			Click:Play()
-			isToggleLocked = true  -- Блокируем обработку клика включения/выключения
-			if Activated then
-				Activated = false
-				Enabled.Visible = false
-				Disabled.Visible = true
-			else
-				Activated = true
-				Enabled.Visible = true
-				Disabled.Visible = false
-			end
-			clickCount = 0  -- Сбрасываем счетчик кликов после изменения состояния
-			Teleport()  -- Вызываем телепортацию с задержкой
-			delay(0.5, function()
-				isToggleLocked = false  -- Разблокируем обработку клика включения/выключения после задержки
-			end)
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() or isToggleLocked then
+			return
 		end
+		
+		Click:Play()
+		isToggleLocked = true  -- Блокируем обработку клика включения/выключения
+		if Activated then
+			Activated = false
+			Enabled.Visible = false
+			Disabled.Visible = true
+		else
+			Activated = true
+			Enabled.Visible = true
+			Disabled.Visible = false
+		end
+		clickCount = 0  -- Сбрасываем счетчик кликов после изменения состояния
+		Teleport()  -- Вызываем телепортацию с задержкой
+		delay(0.5, function()
+			isToggleLocked = false  -- Разблокируем обработку клика включения/выключения после задержки
+		end)
 	end)
 	
 	-- Создание строки для клавиши
@@ -2055,8 +2112,15 @@ local function BGUOSOE_fake_script() -- CLICKTELEPORT.ButtonManager
 	
 	-- Слушатель для клавиши
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
+		-- Проверяем, установлен ли Keybind и совпадает ли нажатая клавиша
+		if Keybind.Value ~= "" and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
 			Click:Play()
+			isToggleLocked = true  -- Блокируем обработку клика включения/выключения
 			if Activated then
 				Activated = false
 				Enabled.Visible = false
@@ -2076,16 +2140,22 @@ local function BGUOSOE_fake_script() -- CLICKTELEPORT.ButtonManager
 	
 	-- Слушатель для телепортации по клику мыши
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		-- Проверяем, активно ли текстовое поле
+		if isTextBoxFocused() then
+			return
+		end
+		
 		if Activated and input.UserInputType == Enum.UserInputType.MouseButton1 then
 			clickCount = clickCount + 1  -- Увеличиваем счетчик кликов при активной функции и клике мыши
 			Teleport()  -- Вызываем телепортацию только при включенной функции и клике мыши
 		end
 	end)
-end
-coroutine.wrap(BGUOSOE_fake_script)()
-local function NNEAKSS_fake_script() -- FLING.ButtonManager 
-	local script = Instance.new('LocalScript', FLING)
 	
+end
+coroutine.wrap(LZWA_fake_script)()
+local function RWFYMBT_fake_script() -- FLING.ButtonManager 
+	local script = Instance.new('LocalScript', FLING)
+
 	local StarterGui = game:GetService("StarterGui")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -2110,15 +2180,24 @@ local function NNEAKSS_fake_script() -- FLING.ButtonManager
 	local OpenFrameButton = script.Parent.Select
 	local SelectFrame = script.Parent.Parent.Parent.Fling
 	
+	
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
+	
 	OpenFrameButton.MouseButton1Click:Connect(function()
-		Click:Play()
-		SelectFrame.Visible = not SelectFrame.Visible
+		if not isTextBoxFocused() then
+			Click:Play()
+			SelectFrame.Visible = not SelectFrame.Visible
+		end
 	end)
 	
 	-- Функция для обновления позиции игрока
 	local function updatePosition()
 		local playerName = CurrentPlayerValue.Value
-		local targetPlayer = playerName
+		local targetPlayer = Players:FindFirstChild(playerName)
 		
 		if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
 			local targetRootPart = targetPlayer.Character.HumanoidRootPart
@@ -2129,7 +2208,6 @@ local function NNEAKSS_fake_script() -- FLING.ButtonManager
 				local targetPosition = targetRootPart.Position - targetRootPart.CFrame.LookVector * 2.5 -- за спиной на расстоянии 2.5 студии
 				localRootPart.CFrame = CFrame.new(targetPosition)
 			end
-		else
 		end
 	end
 	
@@ -2162,21 +2240,23 @@ local function NNEAKSS_fake_script() -- FLING.ButtonManager
 	
 	-- Подключение кнопки
 	Button.MouseButton1Click:Connect(function()
-		Click:Play()
-		Activated = not Activated
-		if Activated then
-			Enabled.Visible = true
-			Disabled.Visible = false
-			flingPlayer()
-		else
-			Enabled.Visible = false
-			Disabled.Visible = true
+		if not isTextBoxFocused() then
+			Click:Play()
+			Activated = not Activated
+			if Activated then
+				Enabled.Visible = true
+				Disabled.Visible = false
+				flingPlayer()
+			else
+				Enabled.Visible = false
+				Disabled.Visible = true
+			end
 		end
 	end)
 	
 	-- Обработка нажатия клавиши
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+		if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
 			Click:Play()
 			Activated = not Activated
 			if Activated then
@@ -2198,81 +2278,10 @@ local function NNEAKSS_fake_script() -- FLING.ButtonManager
 	end)
 	
 end
-coroutine.wrap(NNEAKSS_fake_script)()
-local function GSDSEO_fake_script() -- XRAY.ButtonManager 
-	local script = Instance.new('LocalScript', XRAY)
-	
-	local UserInputService = game:GetService("UserInputService")
-	local Players = game:GetService("Players")
-	local Button = script.Parent.Status.Button
-	local Activated = false
-	
-	local Enabled = script.Parent.Status.Enabled
-	local Disabled = script.Parent.Status.Disabled
-	
-	local Click = Instance.new("Sound", script)
-	Click.SoundId = "rbxassetid://6052548458"
-	
-	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
-	Keybind.Name = "Keybind_Xray"
-	
-	-- Таблица для хранения исходных значений прозрачности
-	local originalTransparency = {}
-	
-	-- Функция для изменения прозрачности объектов
-	local function setTransparency(value)
-		for _, descendant in pairs(workspace:GetDescendants()) do
-			if descendant:IsA("BasePart") then
-				local isPlayerModel = false
-				for _, player in pairs(Players:GetPlayers()) do
-					if descendant:IsDescendantOf(player.Character) then
-						isPlayerModel = true
-						break
-					end
-				end
-				if not isPlayerModel then
-					if value == nil then
-						if originalTransparency[descendant] ~= nil then
-							descendant.Transparency = originalTransparency[descendant]
-						end
-					else
-						originalTransparency[descendant] = descendant.Transparency
-						descendant.Transparency = value
-					end
-				end
-			end
-		end
-	end
-	
-	-- Функции для обработки нажатий
-	local function toggleXRay()
-		Click:Play()
-		if Activated == false then
-			Activated = true
-			Enabled.Visible = true
-			Disabled.Visible = false
-			setTransparency(0.9)
-		else
-			Activated = false
-			Enabled.Visible = false
-			Disabled.Visible = true
-			setTransparency(nil)
-		end
-	end
-	
-	Button.MouseButton1Click:Connect(toggleXRay)
-	
-	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
-			toggleXRay()
-		end        
-	end)
-	
-end
-coroutine.wrap(GSDSEO_fake_script)()
-local function UFMUB_fake_script() -- Teleport_2.LocalScript 
+coroutine.wrap(RWFYMBT_fake_script)()
+local function AZFAIY_fake_script() -- Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Teleport_2)
-	
+
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
@@ -2283,7 +2292,6 @@ local function UFMUB_fake_script() -- Teleport_2.LocalScript
 	local Click = Instance.new("Sound", script)
 	Click.SoundId = "rbxassetid://1548304764"
 	
-	-- Переменные для элементов в шаблоне игрока
 	local function createPlayerFrame(player)
 		local playerFrame = PlayerTemplate:Clone()
 		playerFrame.Name = player.Name
@@ -2291,13 +2299,40 @@ local function UFMUB_fake_script() -- Teleport_2.LocalScript
 		playerFrame.OriginalName.Text = "@"..player.Name
 		playerFrame.PlayerAvatar.Image = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100)
 		
-		-- Обработчик для кнопки Select
-		local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
-		selectButton.MouseButton1Click:Connect(function()
-			SelectValue.Value = player.Name
-			Frame.Visible = false
-			Click:Play()
-		end)
+		-- Проверяем, является ли игрок текущим пользователем (вами)
+		local isLocalPlayer = player == Players.LocalPlayer
+		
+		-- Если игрок текущий, скрываем кнопку Select и делаем его имя серым цветом
+		if isLocalPlayer then
+			playerFrame.Select.Visible = false
+			playerFrame.DisplayName.TextColor3 = Color3.new(0.5, 0.5, 0.5) -- Серый цвет
+		else
+			-- Проверяем, является ли игрок другом текущего пользователя
+			local isFriend = false
+			local localPlayer = Players.LocalPlayer
+			if localPlayer then
+				local friends = localPlayer:GetFriendsAsync()
+				for _, friend in ipairs(friends) do
+					if friend.Id == player.UserId then
+						isFriend = true
+						break
+					end
+				end
+			end
+			
+			-- Если игрок друг, делаем его имя зеленым
+			if isFriend then
+				playerFrame.DisplayName.TextColor3 = Color3.new(0, 1, 0) -- Зеленый цвет
+			end
+			
+			-- Обработчик для кнопки Select
+			local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
+			selectButton.MouseButton1Click:Connect(function()
+				SelectValue.Value = player.Name
+				Frame.Visible = false
+				Click:Play()
+			end)
+		end
 		
 		playerFrame.Visible = true
 		playerFrame.Parent = PlayerListFrame
@@ -2343,10 +2378,10 @@ local function UFMUB_fake_script() -- Teleport_2.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(UFMUB_fake_script)()
-local function LGGLJY_fake_script() -- Back.LocalScript 
+coroutine.wrap(AZFAIY_fake_script)()
+local function CUTOB_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
-	
+
 	local ClickSound = Instance.new("Sound", script)
 	ClickSound.SoundId = "rbxassetid://6324790483"
 	local Button = script.Parent
@@ -2357,10 +2392,10 @@ local function LGGLJY_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(LGGLJY_fake_script)()
-local function LMHYJPW_fake_script() -- DorsalTeleport.LocalScript 
+coroutine.wrap(CUTOB_fake_script)()
+local function XWPO_fake_script() -- DorsalTeleport.LocalScript 
 	local script = Instance.new('LocalScript', DorsalTeleport)
-	
+
 	local Players = game:GetService("Players")
 	local PlayerTemplate = script.Parent.PlayerTemplate
 	local PlayerListFrame = script.Parent.ScrollingFrame -- Указываем родительский фрейм, где будет отображаться список игроков
@@ -2371,7 +2406,6 @@ local function LMHYJPW_fake_script() -- DorsalTeleport.LocalScript
 	local Click = Instance.new("Sound", script)
 	Click.SoundId = "rbxassetid://1548304764"
 	
-	-- Переменные для элементов в шаблоне игрока
 	local function createPlayerFrame(player)
 		local playerFrame = PlayerTemplate:Clone()
 		playerFrame.Name = player.Name
@@ -2379,13 +2413,40 @@ local function LMHYJPW_fake_script() -- DorsalTeleport.LocalScript
 		playerFrame.OriginalName.Text = "@"..player.Name
 		playerFrame.PlayerAvatar.Image = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100)
 		
-		-- Обработчик для кнопки Select
-		local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
-		selectButton.MouseButton1Click:Connect(function()
-			SelectValue.Value = player.Name
-			Frame.Visible = false
-			Click:Play()
-		end)
+		-- Проверяем, является ли игрок текущим пользователем (вами)
+		local isLocalPlayer = player == Players.LocalPlayer
+		
+		-- Если игрок текущий, скрываем кнопку Select и делаем его имя серым цветом
+		if isLocalPlayer then
+			playerFrame.Select.Visible = false
+			playerFrame.DisplayName.TextColor3 = Color3.new(0.5, 0.5, 0.5) -- Серый цвет
+		else
+			-- Проверяем, является ли игрок другом текущего пользователя
+			local isFriend = false
+			local localPlayer = Players.LocalPlayer
+			if localPlayer then
+				local friends = localPlayer:GetFriendsAsync()
+				for _, friend in ipairs(friends) do
+					if friend.Id == player.UserId then
+						isFriend = true
+						break
+					end
+				end
+			end
+			
+			-- Если игрок друг, делаем его имя зеленым
+			if isFriend then
+				playerFrame.DisplayName.TextColor3 = Color3.new(0, 1, 0) -- Зеленый цвет
+			end
+			
+			-- Обработчик для кнопки Select
+			local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
+			selectButton.MouseButton1Click:Connect(function()
+				SelectValue.Value = player.Name
+				Frame.Visible = false
+				Click:Play()
+			end)
+		end
 		
 		playerFrame.Visible = true
 		playerFrame.Parent = PlayerListFrame
@@ -2431,5 +2492,5 @@ local function LMHYJPW_fake_script() -- DorsalTeleport.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(LMHYJPW_fake_script)()
+coroutine.wrap(XWPO_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Config.lua"))()
