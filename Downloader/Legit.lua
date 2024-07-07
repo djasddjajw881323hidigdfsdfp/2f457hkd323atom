@@ -73,6 +73,17 @@ local UICorner_25 = Instance.new("UICorner")
 local Button_4 = Instance.new("TextButton")
 local TextLabel_18 = Instance.new("TextLabel")
 local TextLabel_19 = Instance.new("TextLabel")
+local XRAY = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local Status_5 = Instance.new("Frame")
+local UICorner_27 = Instance.new("UICorner")
+local Disabled_5 = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local Enabled_5 = Instance.new("Frame")
+local UICorner_29 = Instance.new("UICorner")
+local Button_5 = Instance.new("TextButton")
+local TextLabel_20 = Instance.new("TextLabel")
+local TextLabel_21 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -111,11 +122,11 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.00875273533, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
+TextLabel_2.Size = UDim2.new(0, 914, 0, 43)
 TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "Безпалевная игра"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Text = "Меняйте настройки безпалевной игры очень аккуратно! Можно легко спалиться."
+TextLabel_2.TextColor3 = Color3.fromRGB(36, 38, 48)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
@@ -125,11 +136,11 @@ TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
-TextLabel_3.Size = UDim2.new(0, 914, 0, 43)
+TextLabel_3.Position = UDim2.new(0.00875273533, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Меняйте настройки безпалевной игры очень аккуратно! Можно легко спалиться."
-TextLabel_3.TextColor3 = Color3.fromRGB(36, 38, 48)
+TextLabel_3.Text = "Безпалевная игра"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
@@ -691,9 +702,91 @@ TextLabel_19.TextScaled = true
 TextLabel_19.TextSize = 14.000
 TextLabel_19.TextWrapped = true
 
+XRAY.Name = "XRAY"
+XRAY.Parent = ScrollingFrame
+XRAY.BackgroundColor3 = Color3.fromRGB(25, 27, 33)
+XRAY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+XRAY.BorderSizePixel = 0
+XRAY.Size = UDim2.new(0, 867, 0, 63)
+
+UICorner_26.Parent = XRAY
+
+Status_5.Name = "Status"
+Status_5.Parent = XRAY
+Status_5.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
+Status_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status_5.BorderSizePixel = 0
+Status_5.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
+Status_5.Size = UDim2.new(0, 100, 0, 50)
+
+UICorner_27.CornerRadius = UDim.new(1, 0)
+UICorner_27.Parent = Status_5
+
+Disabled_5.Name = "Disabled"
+Disabled_5.Parent = Status_5
+Disabled_5.BackgroundColor3 = Color3.fromRGB(46, 50, 61)
+Disabled_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Disabled_5.BorderSizePixel = 0
+Disabled_5.Size = UDim2.new(0, 50, 0, 50)
+
+UICorner_28.CornerRadius = UDim.new(1, 0)
+UICorner_28.Parent = Disabled_5
+
+Enabled_5.Name = "Enabled"
+Enabled_5.Parent = Status_5
+Enabled_5.BackgroundColor3 = Color3.fromRGB(126, 136, 166)
+Enabled_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enabled_5.BorderSizePixel = 0
+Enabled_5.Position = UDim2.new(0.5, 0, 0, 0)
+Enabled_5.Size = UDim2.new(0, 50, 0, 50)
+Enabled_5.Visible = false
+
+UICorner_29.CornerRadius = UDim.new(1, 0)
+UICorner_29.Parent = Enabled_5
+
+Button_5.Name = "Button"
+Button_5.Parent = Status_5
+Button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_5.BackgroundTransparency = 1.000
+Button_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_5.BorderSizePixel = 0
+Button_5.Size = UDim2.new(0, 100, 0, 50)
+Button_5.Font = Enum.Font.SourceSans
+Button_5.Text = ""
+Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_5.TextSize = 14.000
+
+TextLabel_20.Parent = XRAY
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_20.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_20.Size = UDim2.new(0, 194, 0, 32)
+TextLabel_20.Font = Enum.Font.SourceSansBold
+TextLabel_20.Text = "[Хорошее зрение]"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+TextLabel_21.Parent = XRAY
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_21.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_21.Font = Enum.Font.SourceSansBold
+TextLabel_21.Text = "Весь мир станет для вас прозрачным"
+TextLabel_21.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
+
 -- Scripts:
 
-local function IEZXJIF_fake_script() -- Back.LocalScript 
+local function IXJXN_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -706,8 +799,8 @@ local function IEZXJIF_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(IEZXJIF_fake_script)()
-local function GGUEEF_fake_script() -- Speed.Manager 
+coroutine.wrap(IXJXN_fake_script)()
+local function AALC_fake_script() -- Speed.Manager 
 	local script = Instance.new('LocalScript', Speed)
 
 	local textbox = script.Parent.TextBox
@@ -734,6 +827,11 @@ local function GGUEEF_fake_script() -- Speed.Manager
 		end
 	end
 	
+	-- Проверка, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() == textbox
+	end
+	
 	-- Обработчик события FocusLost
 	textbox.FocusLost:Connect(function(enterPressed)
 		if enterPressed then
@@ -744,7 +842,7 @@ local function GGUEEF_fake_script() -- Speed.Manager
 			if speed then
 				changeSpeed(player, speed)
 			else
-				warn("Please enter a value!")
+				warn("Please enter a valid number!")
 			end
 		end
 	end)
@@ -752,8 +850,9 @@ local function GGUEEF_fake_script() -- Speed.Manager
 	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
 	Keybind.Name = "Keybind_Speed"
 	
+	-- Обработка нажатия клавиши
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
+		if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
 			local player = game.Players.LocalPlayer
 			local input = textbox.Text
 			local speed = tonumber(input)
@@ -761,14 +860,14 @@ local function GGUEEF_fake_script() -- Speed.Manager
 			if speed then
 				changeSpeed(player, speed)
 			else
-				warn("Please enter a value!")
+				warn("Please enter a valid number!")
 			end
 		end		
 	end)
 	
 end
-coroutine.wrap(GGUEEF_fake_script)()
-local function ABJMUX_fake_script() -- Jump.Manager 
+coroutine.wrap(AALC_fake_script)()
+local function VIDN_fake_script() -- Jump.Manager 
 	local script = Instance.new('LocalScript', Jump)
 
 	local textbox = script.Parent.TextBox
@@ -796,8 +895,13 @@ local function ABJMUX_fake_script() -- Jump.Manager
 		end
 	end
 	
+	-- Проверка, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() == textbox
+	end
+	
 	-- Обработчик события FocusLost
-	textbox.FocusLost:Connect(function(enterPressed)
+	textbox.FocusLost:Connect(function(enterPressed)	
 		if enterPressed then
 			local player = game.Players.LocalPlayer
 			local input = textbox.Text
@@ -806,7 +910,7 @@ local function ABJMUX_fake_script() -- Jump.Manager
 			if power then
 				changeJumpPower(player, power)
 			else
-				warn("Please enter a value!")
+				warn("Please enter a valid number!")
 			end
 		end
 	end)
@@ -814,8 +918,9 @@ local function ABJMUX_fake_script() -- Jump.Manager
 	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
 	Keybind.Name = "Keybind_Jump"
 	
+	-- Обработка нажатия клавиши
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
+		if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
 			local player = game.Players.LocalPlayer
 			local input = textbox.Text
 			local power = tonumber(input)
@@ -823,14 +928,14 @@ local function ABJMUX_fake_script() -- Jump.Manager
 			if power then
 				changeJumpPower(player, power)
 			else
-				warn("Please enter a value!")
+				warn("Please enter a valid number!")
 			end
-		end
+		end		
 	end)
 	
 end
-coroutine.wrap(ABJMUX_fake_script)()
-local function AFFV_fake_script() -- Fov.Manager 
+coroutine.wrap(VIDN_fake_script)()
+local function FREWTGJ_fake_script() -- Fov.Manager 
 	local script = Instance.new('LocalScript', Fov)
 
 	local textbox = script.Parent.TextBox
@@ -868,8 +973,8 @@ local function AFFV_fake_script() -- Fov.Manager
 	end)
 	
 end
-coroutine.wrap(AFFV_fake_script)()
-local function IKDHQT_fake_script() -- Animation.Manager 
+coroutine.wrap(FREWTGJ_fake_script)()
+local function OJEQKM_fake_script() -- Animation.Manager 
 	local script = Instance.new('LocalScript', Animation)
 
 	local textbox = script.Parent.TextBox
@@ -907,8 +1012,8 @@ local function IKDHQT_fake_script() -- Animation.Manager
 	end)
 	
 end
-coroutine.wrap(IKDHQT_fake_script)()
-local function FPBW_fake_script() -- NoAfk.ButtonManager 
+coroutine.wrap(OJEQKM_fake_script)()
+local function XETNUM_fake_script() -- NoAfk.ButtonManager 
 	local script = Instance.new('LocalScript', NoAfk)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -970,8 +1075,8 @@ local function FPBW_fake_script() -- NoAfk.ButtonManager
 	end)
 	
 end
-coroutine.wrap(FPBW_fake_script)()
-local function UNIXILN_fake_script() -- AtomAvatar.ButtonManager 
+coroutine.wrap(XETNUM_fake_script)()
+local function WRVVS_fake_script() -- AtomAvatar.ButtonManager 
 	local script = Instance.new('LocalScript', AtomAvatar)
 
 	-- Получение сервисов
@@ -1074,8 +1179,8 @@ local function UNIXILN_fake_script() -- AtomAvatar.ButtonManager
 	end)
 	
 end
-coroutine.wrap(UNIXILN_fake_script)()
-local function UQLKSO_fake_script() -- AIM.ButtonManager 
+coroutine.wrap(WRVVS_fake_script)()
+local function TLKV_fake_script() -- AIM.ButtonManager 
 	local script = Instance.new('LocalScript', AIM)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1099,7 +1204,7 @@ local function UQLKSO_fake_script() -- AIM.ButtonManager
 		
 		for _, player in ipairs(players:GetPlayers()) do
 			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-				local distance = (player.Character.Head.Position - localPlayer.Character.Head.Position).magnitude
+				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
 				if distance < shortestDistance then
 					nearestPlayer = player
 					shortestDistance = distance
@@ -1120,18 +1225,44 @@ local function UQLKSO_fake_script() -- AIM.ButtonManager
 		end
 	end
 	
+	-- Проверка, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
 	-- Button click functionality
 	Button.MouseButton1Click:Connect(function()
-		Click:Play()
-		Activated = not Activated
-		if Activated then
-			Enabled.Visible = true
-			Disabled.Visible = false
-		else
-			Enabled.Visible = false
-			Disabled.Visible = true
+		if not isTextBoxFocused() then
+			Click:Play()
+			Activated = not Activated
+			if Activated then
+				Enabled.Visible = true
+				Disabled.Visible = false
+			else
+				Enabled.Visible = false
+				Disabled.Visible = true
+			end
+			toggleAim()
 		end
-		toggleAim()
+	end)
+	
+	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
+	Keybind.Name = "Keybind_Aim"
+	
+	-- Обработка нажатия клавиши
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+			Click:Play()
+			Activated = not Activated
+			if Activated then
+				Enabled.Visible = true
+				Disabled.Visible = false
+			else
+				Enabled.Visible = false
+				Disabled.Visible = true
+			end
+			toggleAim()
+		end        
 	end)
 	
 	-- Aim update loop
@@ -1140,184 +1271,231 @@ local function UQLKSO_fake_script() -- AIM.ButtonManager
 			if Aiming and TargetPlayer then -- Если AIM включен и есть целевой игрок, то наводимся на него
 				if TargetPlayer.Character and TargetPlayer.Character:FindFirstChild("HumanoidRootPart") then
 					local camera = game.Workspace.CurrentCamera
-					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.Head.Position)
+					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.HumanoidRootPart.Position)
 				end
 			end
 		end
 	end)
 	
-	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
-	Keybind.Name = "Keybind_Aim"
+end
+coroutine.wrap(TLKV_fake_script)()
+local function SQZEUWV_fake_script() -- ESP.ButtonManager 
+	local script = Instance.new('LocalScript', ESP)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
 	
+	local Button = script.Parent.Status.Button
+	local Activated = false
+	
+	local Disabled = script.Parent.Status.Disabled
+	local Enabled = script.Parent.Status.Enabled
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://6052548458"
+	
+	-- Проверка, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
+	-- Функция для обработки нажатий кнопки
+	local function toggleESP()
+		if not isTextBoxFocused() then
+			Click:Play()
+			Activated = not Activated
+			Enabled.Visible = Activated
+			Disabled.Visible = not Activated
+		end
+	end
+	
+	Button.MouseButton1Click:Connect(toggleESP)
+	
+	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
+	Keybind.Name = "Keybind_Esp"
+	
+	-- Обработка нажатия клавиши
 	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if input.KeyCode.Name == Keybind.Value then
+		if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+			toggleESP()
+		end        
+	end)
+	
+	-- Функция для создания ESP
+	local function createESP(targetPlayer)
+		if targetPlayer == Players.LocalPlayer then return end
+		
+		local highlight = Instance.new("Highlight")
+		highlight.Adornee = targetPlayer.Character
+		highlight.Parent = targetPlayer.Character
+		highlight.FillColor = Color3.new(1, 1, 1) -- Белый цвет
+		
+		local billBoard = Instance.new("BillboardGui", targetPlayer.Character)
+		billBoard.Adornee = targetPlayer.Character.Head
+		billBoard.Size = UDim2.new(0, 200, 0, 100)
+		billBoard.StudsOffset = Vector3.new(0, 3, 0)
+		billBoard.AlwaysOnTop = true
+		
+		local nameLabel = Instance.new("TextLabel", billBoard)
+		nameLabel.Size = UDim2.new(1, 0, 0.33, 0)
+		nameLabel.Text = targetPlayer.Name
+		nameLabel.BackgroundTransparency = 1
+		nameLabel.TextColor3 = Color3.new(1, 1, 1)
+		nameLabel.TextStrokeTransparency = 0
+		nameLabel.Font = Enum.Font.SourceSans
+		nameLabel.TextScaled = true
+		
+		local distanceLabel = Instance.new("TextLabel", billBoard)
+		distanceLabel.Size = UDim2.new(1, 0, 0.33, 0)
+		distanceLabel.Position = UDim2.new(0, 0, 0.33, 0)
+		distanceLabel.BackgroundTransparency = 1
+		distanceLabel.TextColor3 = Color3.new(1, 1, 1)
+		distanceLabel.TextStrokeTransparency = 0
+		distanceLabel.Font = Enum.Font.SourceSans
+		distanceLabel.TextScaled = true
+		
+		local healthLabel = Instance.new("TextLabel", billBoard)
+		healthLabel.Size = UDim2.new(1, 0, 0.33, 0)
+		healthLabel.Position = UDim2.new(0, 0, 0.66, 0)
+		healthLabel.BackgroundTransparency = 1
+		healthLabel.TextColor3 = Color3.new(1, 1, 1)
+		healthLabel.TextStrokeTransparency = 0
+		healthLabel.Font = Enum.Font.SourceSans
+		healthLabel.TextScaled = true
+		
+		local function updateESP()
+			while billBoard.Parent do
+				if targetPlayer.Character and targetPlayer.Character:FindFirstChild("Humanoid") then
+					local distance = (Players.LocalPlayer.Character.Head.Position - targetPlayer.Character.Head.Position).Magnitude
+					distanceLabel.Text = string.format("Distance: %.0f", distance)
+					healthLabel.Text = string.format("Health: %.0f", targetPlayer.Character.Humanoid.Health)
+				end
+				RunService.RenderStepped:Wait()
+			end
+		end
+		
+		spawn(updateESP)
+	end
+	
+	-- Функция для удаления ESP
+	local function removeESP(targetPlayer)
+		if targetPlayer.Character:FindFirstChild("Highlight") then
+			targetPlayer.Character.Highlight:Destroy()
+		end
+		if targetPlayer.Character:FindFirstChild("BillboardGui") then
+			targetPlayer.Character.BillboardGui:Destroy()
+		end
+	end
+	
+	-- Обработчики событий при добавлении и удалении игроков
+	local function onPlayerAdded(targetPlayer)
+		targetPlayer.CharacterAdded:Connect(function()
+			if Activated then
+				createESP(targetPlayer)
+			end
+		end)
+	end
+	
+	local function onPlayerRemoving(targetPlayer)
+		if targetPlayer == Players.LocalPlayer then return end
+		removeESP(targetPlayer)
+	end
+	
+	Players.PlayerAdded:Connect(onPlayerAdded)
+	Players.PlayerRemoving:Connect(onPlayerRemoving)
+	
+	-- Использование RenderStepped для отслеживания активации ESP
+	RunService.RenderStepped:Connect(function()
+		for _, targetPlayer in ipairs(Players:GetPlayers()) do
+			if targetPlayer ~= Players.LocalPlayer and targetPlayer.Character then
+				if Activated and not targetPlayer.Character:FindFirstChild("Highlight") then
+					createESP(targetPlayer)
+				elseif not Activated and targetPlayer.Character:FindFirstChild("Highlight") then
+					removeESP(targetPlayer)
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(SQZEUWV_fake_script)()
+local function UQAENV_fake_script() -- XRAY.ButtonManager 
+	local script = Instance.new('LocalScript', XRAY)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	local Button = script.Parent.Status.Button
+	local Activated = false
+	
+	local Enabled = script.Parent.Status.Enabled
+	local Disabled = script.Parent.Status.Disabled
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://6052548458"
+	
+	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
+	Keybind.Name = "Keybind_Xray"
+	
+	-- Таблица для хранения исходных значений прозрачности
+	local originalTransparency = {}
+	
+	-- Функция для изменения прозрачности объектов
+	local function setTransparency(value)
+		for _, descendant in pairs(workspace:GetDescendants()) do
+			if descendant:IsA("BasePart") then
+				local isPlayerModel = false
+				for _, player in pairs(Players:GetPlayers()) do
+					if descendant:IsDescendantOf(player.Character) then
+						isPlayerModel = true
+						break
+					end
+				end
+				if not isPlayerModel then
+					if value == nil then
+						if originalTransparency[descendant] ~= nil then
+							descendant.Transparency = originalTransparency[descendant]
+						end
+					else
+						originalTransparency[descendant] = descendant.Transparency
+						descendant.Transparency = value
+					end
+				end
+			end
+		end
+	end
+	
+	-- Функция для проверки, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
+	-- Функции для обработки нажатий
+	local function toggleXRay()
+		if not isTextBoxFocused() then
 			Click:Play()
 			if Activated == false then
 				Activated = true
 				Enabled.Visible = true
 				Disabled.Visible = false
-	            toggleAim()
+				setTransparency(0.9)
 			else
 				Activated = false
 				Enabled.Visible = false
 				Disabled.Visible = true
-				toggleAim()
+				setTransparency(nil)
 			end
-		end		
+		end
+	end
+	
+	Button.MouseButton1Click:Connect(toggleXRay)
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+			toggleXRay()
+		end        
 	end)
 	
 end
-coroutine.wrap(UQLKSO_fake_script)()
-local function YZGINA_fake_script() -- ESP.ButtonManager 
-local script = Instance.new('LocalScript', ESP)
-
--- Получение сервисов
-local Players = game:GetService("Players")
-local UserInputService = game:GetService("UserInputService")
-local RunService = game:GetService("RunService")
-
--- Получение локального игрока и его персонажа
-local player = Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
-local Button = script.Parent.Status.Button
-local Activated = false
-
-local Disabled = script.Parent.Status.Disabled
-local Enabled = script.Parent.Status.Enabled
-
-local Click = Instance.new("Sound", script)
-Click.SoundId = "rbxassetid://6052548458"
-
-Button.MouseButton1Click:Connect(function()
-    Click:Play()
-    Activated = not Activated
-    Disabled.Visible = not Activated
-    Enabled.Visible = Activated
-end)
-
-local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
-Keybind.Name = "Keybind_Esp"
-
-UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-    if input.KeyCode.Name == Keybind.Value then
-        Click:Play()
-        Activated = not Activated
-        Enabled.Visible = Activated
-        Disabled.Visible = not Activated
-    end        
-end)
-
-local function createESP(targetPlayer)
-    if targetPlayer == player then return end
-
-    local character = targetPlayer.Character or targetPlayer.CharacterAdded:Wait()
-    local head = character:WaitForChild("Head", 5) or character:WaitForChild("HumanoidRootPart", 5)
-    if not head then return end
-
-    if character:FindFirstChild("Highlight") or character:FindFirstChild("BillboardGui") then
-        return -- Если ESP уже существует, выходим из функции
-    end
-
-    local highlight = Instance.new("Highlight")
-    highlight.Adornee = character
-    highlight.Parent = character
-    highlight.FillColor = Color3.new(1, 1, 1) -- Белый цвет
-
-    local billBoard = Instance.new("BillboardGui", character)
-    billBoard.Adornee = head
-    billBoard.Size = UDim2.new(0, 200, 0, 100)
-    billBoard.StudsOffset = Vector3.new(0, 3, 0)
-    billBoard.AlwaysOnTop = true
-
-    local nameLabel = Instance.new("TextLabel", billBoard)
-    nameLabel.Size = UDim2.new(1, 0, 0.33, 0)
-    nameLabel.Text = targetPlayer.Name
-    nameLabel.BackgroundTransparency = 1
-    nameLabel.TextColor3 = Color3.new(1, 1, 1)
-    nameLabel.TextStrokeTransparency = 0
-    nameLabel.Font = Enum.Font.SourceSans
-    nameLabel.TextScaled = true
-
-    local distanceLabel = Instance.new("TextLabel", billBoard)
-    distanceLabel.Size = UDim2.new(1, 0, 0.33, 0)
-    distanceLabel.Position = UDim2.new(0, 0, 0.33, 0)
-    distanceLabel.BackgroundTransparency = 1
-    distanceLabel.TextColor3 = Color3.new(1, 1, 1)
-    distanceLabel.TextStrokeTransparency = 0
-    distanceLabel.Font = Enum.Font.SourceSans
-    distanceLabel.TextScaled = true
-
-    local healthLabel = Instance.new("TextLabel", billBoard)
-    healthLabel.Size = UDim2.new(1, 0, 0.33, 0)
-    healthLabel.Position = UDim2.new(0, 0, 0.66, 0)
-    healthLabel.BackgroundTransparency = 1
-    healthLabel.TextColor3 = Color3.new(1, 1, 1)
-    healthLabel.TextStrokeTransparency = 0
-    healthLabel.Font = Enum.Font.SourceSans
-    healthLabel.TextScaled = true
-
-    local function updateESP()
-        while billBoard.Parent do
-            if targetPlayer.Character and targetPlayer.Character:FindFirstChild("Humanoid") then
-                local distance = (player.Character:WaitForChild("HumanoidRootPart").Position - targetPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude
-                distanceLabel.Text = string.format("Distance: %.0f", distance)
-                healthLabel.Text = string.format("Health: %.0f", targetPlayer.Character.Humanoid.Health)
-            end
-            RunService.RenderStepped:Wait()
-        end
-    end
-
-    spawn(updateESP)
-end
-
-local function removeESP(targetPlayer)
-    if targetPlayer.Character:FindFirstChild("Highlight") then
-        targetPlayer.Character.Highlight:Destroy()
-    end
-    if targetPlayer.Character:FindFirstChild("BillboardGui") then
-        targetPlayer.Character.BillboardGui:Destroy()
-    end
-end
-
-local function onPlayerAdded(targetPlayer)
-    targetPlayer.CharacterAdded:Connect(function()
-        if Activated then
-            createESP(targetPlayer)
-        end
-    end)
-end
-
-local function onPlayerRemoving(targetPlayer)
-    if targetPlayer == player then return end
-    removeESP(targetPlayer)
-end
-
-Players.PlayerAdded:Connect(onPlayerAdded)
-Players.PlayerRemoving:Connect(onPlayerRemoving)
-
-for _, targetPlayer in ipairs(Players:GetPlayers()) do
-    if targetPlayer ~= player then
-        onPlayerAdded(targetPlayer)
-        if targetPlayer.Character then
-            createESP(targetPlayer)
-        end
-    end
-end
-
--- Следить за активацией ESP
-RunService.RenderStepped:Connect(function()
-    for _, targetPlayer in ipairs(Players:GetPlayers()) do
-        if targetPlayer ~= player and targetPlayer.Character then
-            if Activated and not targetPlayer.Character:FindFirstChild("Highlight") then
-                createESP(targetPlayer)
-            elseif not Activated and targetPlayer.Character:FindFirstChild("Highlight") then
-                removeESP(targetPlayer)
-            end
-        end
-    end
-end)
-
-end
-coroutine.wrap(YZGINA_fake_script)()
+coroutine.wrap(UQAENV_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
