@@ -44,36 +44,69 @@ local UIGradient_7 = Instance.new("UIGradient")
 local TextLabel_13 = Instance.new("TextLabel")
 local ImageLabel_5 = Instance.new("ImageLabel")
 local ImageLabel_6 = Instance.new("ImageLabel")
+local DevMode = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_14 = Instance.new("TextLabel")
 local Login = Instance.new("Frame")
 local Widget = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local UIGradient_8 = Instance.new("UIGradient")
 local Login_2 = Instance.new("TextBox")
-local UICorner_8 = Instance.new("UICorner")
-local Password = Instance.new("TextBox")
 local UICorner_9 = Instance.new("UICorner")
-local Enter_4 = Instance.new("TextButton")
+local Password = Instance.new("TextBox")
 local UICorner_10 = Instance.new("UICorner")
+local Enter_4 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
-local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
 local ImageLabel_7 = Instance.new("ImageLabel")
 local PasswordDisplay = Instance.new("TextLabel")
-local UICorner_11 = Instance.new("UICorner")
-local TextLabel_15 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
 local TextLabel_16 = Instance.new("TextLabel")
 local TextLabel_17 = Instance.new("TextLabel")
 local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
 local ImageLabel_8 = Instance.new("ImageLabel")
 local ImageLabel_9 = Instance.new("ImageLabel")
-local TextLabel_19 = Instance.new("TextLabel")
-local UIGradient_10 = Instance.new("UIGradient")
 local TextLabel_20 = Instance.new("TextLabel")
+local UIGradient_10 = Instance.new("UIGradient")
 local TextLabel_21 = Instance.new("TextLabel")
+local TextLabel_22 = Instance.new("TextLabel")
 local Files = Instance.new("Folder")
 local Legit_2 = Instance.new("Frame")
 local Rage_2 = Instance.new("Frame")
 local Config_2 = Instance.new("Frame")
 local ConfigValues = Instance.new("Folder")
+local Console = Instance.new("Frame")
+local ImageLabel_10 = Instance.new("ImageLabel")
+local ImageLabel_11 = Instance.new("ImageLabel")
+local TextLabel_23 = Instance.new("TextLabel")
+local UIGradient_11 = Instance.new("UIGradient")
+local TextLabel_24 = Instance.new("TextLabel")
+local TextLabel_25 = Instance.new("TextLabel")
+local Widget_2 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local UIGradient_12 = Instance.new("UIGradient")
+local CommandBar = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local Send = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_13 = Instance.new("UIGradient")
+local ImageLabel_12 = Instance.new("ImageLabel")
+local TextLabel_26 = Instance.new("TextLabel")
+local Commands = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local CommandTemplate = Instance.new("Frame")
+local UIGradient_14 = Instance.new("UIGradient")
+local TimeText = Instance.new("TextLabel")
+local CommandText = Instance.new("TextLabel")
+local ErrorButton = Instance.new("ImageButton")
+local UICorner_16 = Instance.new("UICorner")
+local UIGradient_15 = Instance.new("UIGradient")
+local Back = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel_27 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -106,11 +139,12 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.00875273533, 0, 0.0142095918, 0)
-TextLabel.Size = UDim2.new(0, 96, 0, 71)
+TextLabel.Position = UDim2.new(0.00547045935, 0, -0.0124333929, 0)
+TextLabel.Size = UDim2.new(0, 100, 0, 100)
 TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.Text = "AK"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
 TextLabel.TextSize = 95.000
 TextLabel.TextWrapped = true
 
@@ -500,6 +534,37 @@ ImageLabel_6.Position = UDim2.new(0.80769217, 0, 0.0226537213, 0)
 ImageLabel_6.Size = UDim2.new(0, 45, 0, 45)
 ImageLabel_6.Image = "rbxassetid://18326363548"
 
+DevMode.Name = "DevMode"
+DevMode.Parent = Cheat_Page
+DevMode.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
+DevMode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DevMode.BorderSizePixel = 0
+DevMode.Position = UDim2.new(0.843544841, 0, 0.0106571941, 0)
+DevMode.Size = UDim2.new(0, 136, 0, 50)
+DevMode.Visible = false
+DevMode.Font = Enum.Font.SourceSansBold
+DevMode.Text = ""
+DevMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+DevMode.TextSize = 14.000
+DevMode.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(1, 0)
+UICorner_7.Parent = DevMode
+
+TextLabel_14.Parent = DevMode
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
+TextLabel_14.Size = UDim2.new(0, 108, 0, 33)
+TextLabel_14.Font = Enum.Font.SourceSansBold
+TextLabel_14.Text = "Откладка"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
 Login.Name = "Login"
 Login.Parent = MainPage
 Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -517,7 +582,7 @@ Widget.BorderSizePixel = 0
 Widget.Position = UDim2.new(0.339168489, 0, 0.175843701, 0)
 Widget.Size = UDim2.new(0, 293, 0, 365)
 
-UICorner_7.Parent = Widget
+UICorner_8.Parent = Widget
 
 UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_8.Rotation = 45
@@ -539,7 +604,7 @@ Login_2.TextScaled = true
 Login_2.TextSize = 14.000
 Login_2.TextWrapped = true
 
-UICorner_8.Parent = Login_2
+UICorner_9.Parent = Login_2
 
 Password.Name = "Password"
 Password.Parent = Widget
@@ -558,7 +623,7 @@ Password.TextSize = 14.000
 Password.TextTransparency = 1.000
 Password.TextWrapped = true
 
-UICorner_9.Parent = Password
+UICorner_10.Parent = Password
 
 Enter_4.Name = "Enter"
 Enter_4.Parent = Widget
@@ -572,25 +637,25 @@ Enter_4.Text = ""
 Enter_4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Enter_4.TextSize = 14.000
 
-UICorner_10.Parent = Enter_4
+UICorner_11.Parent = Enter_4
 
 UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(236, 236, 236))}
 UIGradient_9.Rotation = 115
 UIGradient_9.Parent = Enter_4
 
-TextLabel_14.Parent = Enter_4
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Position = UDim2.new(0.027559055, 0, 0.119999997, 0)
-TextLabel_14.Size = UDim2.new(0, 247, 0, 37)
-TextLabel_14.Font = Enum.Font.SourceSansBold
-TextLabel_14.Text = "Войти"
-TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.TextScaled = true
-TextLabel_14.TextSize = 14.000
-TextLabel_14.TextWrapped = true
+TextLabel_15.Parent = Enter_4
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0.027559055, 0, 0.119999997, 0)
+TextLabel_15.Size = UDim2.new(0, 247, 0, 37)
+TextLabel_15.Font = Enum.Font.SourceSansBold
+TextLabel_15.Text = "Войти"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
 
 ImageLabel_7.Parent = Enter_4
 ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -615,32 +680,18 @@ PasswordDisplay.TextScaled = true
 PasswordDisplay.TextSize = 14.000
 PasswordDisplay.TextWrapped = true
 
-UICorner_11.Parent = PasswordDisplay
-
-TextLabel_15.Parent = Widget
-TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.BackgroundTransparency = 1.000
-TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_15.BorderSizePixel = 0
-TextLabel_15.Position = UDim2.new(-0.1331058, 0, -0.139726028, 0)
-TextLabel_15.Size = UDim2.new(0, 370, 0, 41)
-TextLabel_15.Font = Enum.Font.SourceSansBold
-TextLabel_15.Text = "Авторизуйтесь"
-TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.TextScaled = true
-TextLabel_15.TextSize = 14.000
-TextLabel_15.TextWrapped = true
+UICorner_12.Parent = PasswordDisplay
 
 TextLabel_16.Parent = Widget
 TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_16.BackgroundTransparency = 1.000
 TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_16.BorderSizePixel = 0
-TextLabel_16.Position = UDim2.new(0.0477815717, 0, 0.0328767113, 0)
-TextLabel_16.Size = UDim2.new(0, 261, 0, 31)
+TextLabel_16.Position = UDim2.new(-0.1331058, 0, -0.139726028, 0)
+TextLabel_16.Size = UDim2.new(0, 370, 0, 41)
 TextLabel_16.Font = Enum.Font.SourceSansBold
-TextLabel_16.Text = "Имя пользователя"
-TextLabel_16.TextColor3 = Color3.fromRGB(57, 61, 71)
+TextLabel_16.Text = "Авторизуйтесь"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_16.TextScaled = true
 TextLabel_16.TextSize = 14.000
 TextLabel_16.TextWrapped = true
@@ -650,10 +701,10 @@ TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.BackgroundTransparency = 1.000
 TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_17.BorderSizePixel = 0
-TextLabel_17.Position = UDim2.new(0.0511945374, 0, 0.271232873, 0)
+TextLabel_17.Position = UDim2.new(0.0477815717, 0, 0.0328767113, 0)
 TextLabel_17.Size = UDim2.new(0, 261, 0, 31)
 TextLabel_17.Font = Enum.Font.SourceSansBold
-TextLabel_17.Text = "Пароль"
+TextLabel_17.Text = "Имя пользователя"
 TextLabel_17.TextColor3 = Color3.fromRGB(57, 61, 71)
 TextLabel_17.TextScaled = true
 TextLabel_17.TextSize = 14.000
@@ -664,14 +715,28 @@ TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_18.BackgroundTransparency = 1.000
 TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_18.BorderSizePixel = 0
-TextLabel_18.Position = UDim2.new(0.0682593882, 0, 0.539726019, 0)
-TextLabel_18.Size = UDim2.new(0, 254, 0, 95)
+TextLabel_18.Position = UDim2.new(0.0511945374, 0, 0.271232873, 0)
+TextLabel_18.Size = UDim2.new(0, 261, 0, 31)
 TextLabel_18.Font = Enum.Font.SourceSansBold
-TextLabel_18.Text = "Оригинальные поставщики никогда не попросят у вас логин и пароль."
+TextLabel_18.Text = "Пароль"
 TextLabel_18.TextColor3 = Color3.fromRGB(57, 61, 71)
 TextLabel_18.TextScaled = true
 TextLabel_18.TextSize = 14.000
 TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = Widget
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0.0682593882, 0, 0.539726019, 0)
+TextLabel_19.Size = UDim2.new(0, 254, 0, 95)
+TextLabel_19.Font = Enum.Font.SourceSansBold
+TextLabel_19.Text = "Оригинальные поставщики никогда не попросят у вас логин и пароль."
+TextLabel_19.TextColor3 = Color3.fromRGB(57, 61, 71)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
 
 ImageLabel_8.Parent = Login
 ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -701,51 +766,51 @@ ImageLabel_9.ImageColor3 = Color3.fromRGB(57, 68, 104)
 ImageLabel_9.ImageTransparency = 0.900
 ImageLabel_9.ScaleType = Enum.ScaleType.Crop
 
-TextLabel_19.Parent = Login
-TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.BackgroundTransparency = 1.000
-TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_19.BorderSizePixel = 0
-TextLabel_19.Position = UDim2.new(0.00875273533, 0, 0.0142095918, 0)
-TextLabel_19.Size = UDim2.new(0, 96, 0, 71)
-TextLabel_19.Font = Enum.Font.SourceSansBold
-TextLabel_19.Text = "AK"
-TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.TextSize = 95.000
-TextLabel_19.TextWrapped = true
-
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(119, 160, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_10.Rotation = -45
-UIGradient_10.Parent = TextLabel_19
-
 TextLabel_20.Parent = Login
 TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.BackgroundTransparency = 1.000
 TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_20.BorderSizePixel = 0
-TextLabel_20.Position = UDim2.new(0.121444203, 0, 0.0284191836, 0)
-TextLabel_20.Size = UDim2.new(0, 111, 0, 54)
+TextLabel_20.Position = UDim2.new(0.00875273533, 0, 0.0142095918, 0)
+TextLabel_20.Size = UDim2.new(0, 96, 0, 71)
 TextLabel_20.Font = Enum.Font.SourceSansBold
-TextLabel_20.Text = "ATOM KILLWAVE"
+TextLabel_20.Text = "AK"
 TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.TextScaled = true
-TextLabel_20.TextSize = 14.000
+TextLabel_20.TextSize = 95.000
 TextLabel_20.TextWrapped = true
-TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(119, 160, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Rotation = -45
+UIGradient_10.Parent = TextLabel_20
 
 TextLabel_21.Parent = Login
 TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.BackgroundTransparency = 1.000
 TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_21.BorderSizePixel = 0
-TextLabel_21.Position = UDim2.new(0.0240700226, 0, 0.891651869, 0)
-TextLabel_21.Size = UDim2.new(0, 866, 0, 48)
+TextLabel_21.Position = UDim2.new(0.121444203, 0, 0.0284191836, 0)
+TextLabel_21.Size = UDim2.new(0, 111, 0, 54)
 TextLabel_21.Font = Enum.Font.SourceSansBold
-TextLabel_21.Text = "Получить аккаунт можно покупая его у оригинального поставщика"
-TextLabel_21.TextColor3 = Color3.fromRGB(25, 27, 34)
+TextLabel_21.Text = "ATOM KILLWAVE"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.TextScaled = true
 TextLabel_21.TextSize = 14.000
 TextLabel_21.TextWrapped = true
+TextLabel_21.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_22.Parent = Login
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.0240700226, 0, 0.891651869, 0)
+TextLabel_22.Size = UDim2.new(0, 866, 0, 48)
+TextLabel_22.Font = Enum.Font.SourceSansBold
+TextLabel_22.Text = "Получить аккаунт можно покупая его у оригинального поставщика"
+TextLabel_22.TextColor3 = Color3.fromRGB(25, 27, 34)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
 
 Files.Name = "Files"
 Files.Parent = MainPage
@@ -783,9 +848,282 @@ Config_2.Visible = false
 ConfigValues.Name = "ConfigValues"
 ConfigValues.Parent = MainPage
 
+Console.Name = "Console"
+Console.Parent = MainPage
+Console.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Console.BackgroundTransparency = 1.000
+Console.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Console.BorderSizePixel = 0
+Console.Position = UDim2.new(-3.33890355e-08, 0, 0, 0)
+Console.Size = UDim2.new(0, 914, 0, 563)
+Console.Visible = false
+
+ImageLabel_10.Parent = Console
+ImageLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_10.BackgroundTransparency = 1.000
+ImageLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_10.BorderSizePixel = 0
+ImageLabel_10.Position = UDim2.new(0.0251641814, 0, 0.241563052, 0)
+ImageLabel_10.Rotation = 5.000
+ImageLabel_10.Size = UDim2.new(0, 255, 0, 255)
+ImageLabel_10.ZIndex = 2
+ImageLabel_10.Image = "rbxassetid://17569346460"
+ImageLabel_10.ImageColor3 = Color3.fromRGB(57, 68, 104)
+ImageLabel_10.ImageTransparency = 0.900
+ImageLabel_10.ScaleType = Enum.ScaleType.Crop
+
+ImageLabel_11.Parent = Console
+ImageLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_11.BackgroundTransparency = 1.000
+ImageLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_11.BorderSizePixel = 0
+ImageLabel_11.Position = UDim2.new(0.693654239, 0, 0.241563052, 0)
+ImageLabel_11.Rotation = -5.000
+ImageLabel_11.Size = UDim2.new(0, 255, 0, 255)
+ImageLabel_11.ZIndex = 2
+ImageLabel_11.Image = "rbxassetid://18389444924"
+ImageLabel_11.ImageColor3 = Color3.fromRGB(57, 68, 104)
+ImageLabel_11.ImageTransparency = 0.900
+ImageLabel_11.ScaleType = Enum.ScaleType.Crop
+
+TextLabel_23.Parent = Console
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0.00875273533, 0, 0.0142095918, 0)
+TextLabel_23.Size = UDim2.new(0, 96, 0, 71)
+TextLabel_23.Font = Enum.Font.SourceSansBold
+TextLabel_23.Text = "DV"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextSize = 95.000
+TextLabel_23.TextWrapped = true
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(119, 160, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_11.Rotation = -45
+UIGradient_11.Parent = TextLabel_23
+
+TextLabel_24.Parent = Console
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_24.BorderSizePixel = 0
+TextLabel_24.Position = UDim2.new(0.121444203, 0, 0.0284191836, 0)
+TextLabel_24.Size = UDim2.new(0, 111, 0, 54)
+TextLabel_24.Font = Enum.Font.SourceSansBold
+TextLabel_24.Text = "Developer Mode"
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextScaled = true
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextWrapped = true
+TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_25.Parent = Console
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_25.BorderSizePixel = 0
+TextLabel_25.Position = UDim2.new(0.0240700226, 0, 0.891651869, 0)
+TextLabel_25.Size = UDim2.new(0, 866, 0, 48)
+TextLabel_25.Font = Enum.Font.SourceSansBold
+TextLabel_25.Text = "В режиме разработчика можно исполнять дополнительные команды"
+TextLabel_25.TextColor3 = Color3.fromRGB(25, 27, 34)
+TextLabel_25.TextScaled = true
+TextLabel_25.TextSize = 14.000
+TextLabel_25.TextWrapped = true
+
+Widget_2.Name = "Widget"
+Widget_2.Parent = Console
+Widget_2.BackgroundColor3 = Color3.fromRGB(29, 30, 38)
+Widget_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Widget_2.BorderSizePixel = 0
+Widget_2.Position = UDim2.new(0.0218818374, 0, 0.808170497, 0)
+Widget_2.Size = UDim2.new(0, 868, 0, 47)
+
+UICorner_13.Parent = Widget_2
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_12.Rotation = 45
+UIGradient_12.Parent = Widget_2
+
+CommandBar.Name = "CommandBar"
+CommandBar.Parent = Widget_2
+CommandBar.BackgroundColor3 = Color3.fromRGB(36, 38, 48)
+CommandBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CommandBar.BorderSizePixel = 0
+CommandBar.Position = UDim2.new(0.00976309367, 0, 0.155522779, 0)
+CommandBar.Size = UDim2.new(0, 806, 0, 32)
+CommandBar.ClearTextOnFocus = false
+CommandBar.Font = Enum.Font.SourceSansBold
+CommandBar.PlaceholderColor3 = Color3.fromRGB(54, 57, 71)
+CommandBar.PlaceholderText = "Команда"
+CommandBar.Text = ""
+CommandBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+CommandBar.TextScaled = true
+CommandBar.TextSize = 14.000
+CommandBar.TextWrapped = true
+
+UICorner_14.Parent = CommandBar
+
+Send.Name = "Send"
+Send.Parent = Widget_2
+Send.BackgroundColor3 = Color3.fromRGB(36, 38, 48)
+Send.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Send.BorderSizePixel = 0
+Send.Position = UDim2.new(0.947291613, 0, 0.119789936, 0)
+Send.Size = UDim2.new(0, 35, 0, 35)
+Send.Font = Enum.Font.SourceSans
+Send.Text = ""
+Send.TextColor3 = Color3.fromRGB(0, 0, 0)
+Send.TextSize = 14.000
+
+UICorner_15.Parent = Send
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(236, 236, 236))}
+UIGradient_13.Rotation = 115
+UIGradient_13.Parent = Send
+
+ImageLabel_12.Parent = Send
+ImageLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_12.BackgroundTransparency = 1.000
+ImageLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_12.BorderSizePixel = 0
+ImageLabel_12.Size = UDim2.new(0, 35, 0, 35)
+ImageLabel_12.ZIndex = 3
+ImageLabel_12.Image = "rbxassetid://18388891680"
+ImageLabel_12.ScaleType = Enum.ScaleType.Crop
+
+TextLabel_26.Parent = Widget_2
+TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.BackgroundTransparency = 1.000
+TextLabel_26.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_26.BorderSizePixel = 0
+TextLabel_26.Position = UDim2.new(-0.0144304549, 0, -0.669250488, 0)
+TextLabel_26.Size = UDim2.new(0, 261, 0, 31)
+TextLabel_26.Font = Enum.Font.SourceSansBold
+TextLabel_26.Text = "Коммандная строка"
+TextLabel_26.TextColor3 = Color3.fromRGB(57, 61, 71)
+TextLabel_26.TextScaled = true
+TextLabel_26.TextSize = 14.000
+TextLabel_26.TextWrapped = true
+
+Commands.Name = "Commands"
+Commands.Parent = Console
+Commands.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Commands.BackgroundTransparency = 1.000
+Commands.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Commands.BorderSizePixel = 0
+Commands.Position = UDim2.new(0.0240700226, 0, 0.14031972, 0)
+Commands.Size = UDim2.new(0, 866, 0, 344)
+Commands.ZIndex = 3
+
+ScrollingFrame.Parent = Commands
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Size = UDim2.new(0, 892, 0, 344)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 150)
+
+UIListLayout_2.Parent = ScrollingFrame
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 1)
+
+CommandTemplate.Name = "CommandTemplate"
+CommandTemplate.Parent = Commands
+CommandTemplate.BackgroundColor3 = Color3.fromRGB(29, 30, 38)
+CommandTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CommandTemplate.BorderSizePixel = 0
+CommandTemplate.Size = UDim2.new(0, 866, 0, 40)
+CommandTemplate.Visible = false
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_14.Rotation = -45
+UIGradient_14.Parent = CommandTemplate
+
+TimeText.Name = "TimeText"
+TimeText.Parent = CommandTemplate
+TimeText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TimeText.BackgroundTransparency = 1.000
+TimeText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TimeText.BorderSizePixel = 0
+TimeText.Position = UDim2.new(0.0173210166, 0, 0.174999997, 0)
+TimeText.Size = UDim2.new(0, 122, 0, 26)
+TimeText.Font = Enum.Font.SourceSansBold
+TimeText.Text = "time"
+TimeText.TextColor3 = Color3.fromRGB(36, 37, 47)
+TimeText.TextScaled = true
+TimeText.TextSize = 14.000
+TimeText.TextWrapped = true
+TimeText.TextXAlignment = Enum.TextXAlignment.Left
+
+CommandText.Name = "CommandText"
+CommandText.Parent = CommandTemplate
+CommandText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CommandText.BackgroundTransparency = 1.000
+CommandText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CommandText.BorderSizePixel = 0
+CommandText.Position = UDim2.new(0.169745952, 0, 0.174999997, 0)
+CommandText.Size = UDim2.new(0, 708, 0, 26)
+CommandText.Font = Enum.Font.SourceSansBold
+CommandText.Text = "Выполненная команда"
+CommandText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CommandText.TextScaled = true
+CommandText.TextSize = 14.000
+CommandText.TextWrapped = true
+CommandText.TextXAlignment = Enum.TextXAlignment.Left
+
+ErrorButton.Name = "ErrorButton"
+ErrorButton.Parent = CommandTemplate
+ErrorButton.BackgroundColor3 = Color3.fromRGB(38, 40, 50)
+ErrorButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ErrorButton.BorderSizePixel = 0
+ErrorButton.Position = UDim2.new(0.952655911, 0, 0.125, 0)
+ErrorButton.Size = UDim2.new(0, 30, 0, 30)
+ErrorButton.Visible = false
+ErrorButton.Image = "rbxassetid://18389256366"
+ErrorButton.ScaleType = Enum.ScaleType.Crop
+
+UICorner_16.Parent = ErrorButton
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_15.Rotation = -45
+UIGradient_15.Parent = ErrorButton
+
+Back.Name = "Back"
+Back.Parent = Console
+Back.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
+Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Back.BorderSizePixel = 0
+Back.Position = UDim2.new(0.843544841, 0, 0.0106571941, 0)
+Back.Size = UDim2.new(0, 136, 0, 50)
+Back.Font = Enum.Font.SourceSansBold
+Back.Text = ""
+Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back.TextSize = 14.000
+Back.TextWrapped = true
+
+UICorner_17.CornerRadius = UDim.new(1, 0)
+UICorner_17.Parent = Back
+
+TextLabel_27.Parent = Back
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.BackgroundTransparency = 1.000
+TextLabel_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_27.BorderSizePixel = 0
+TextLabel_27.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
+TextLabel_27.Size = UDim2.new(0, 108, 0, 33)
+TextLabel_27.Font = Enum.Font.SourceSansBold
+TextLabel_27.Text = "Назад"
+TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.TextScaled = true
+TextLabel_27.TextSize = 14.000
+TextLabel_27.TextWrapped = true
+
 -- Scripts:
 
-local function ZIYUNT_fake_script() -- Legit.MiscScript 
+local function FOUAAWK_fake_script() -- Legit.MiscScript 
 	local script = Instance.new('LocalScript', Legit)
 
 	local Frame = script.Parent
@@ -858,8 +1196,8 @@ local function ZIYUNT_fake_script() -- Legit.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(ZIYUNT_fake_script)()
-local function FHEX_fake_script() -- Rage.MiscScript 
+coroutine.wrap(FOUAAWK_fake_script)()
+local function NIKRUQ_fake_script() -- Rage.MiscScript 
 	local script = Instance.new('LocalScript', Rage)
 
 	local Frame = script.Parent
@@ -932,8 +1270,8 @@ local function FHEX_fake_script() -- Rage.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(FHEX_fake_script)()
-local function HWWEXII_fake_script() -- Config.MiscScript 
+coroutine.wrap(NIKRUQ_fake_script)()
+local function RDUZW_fake_script() -- Config.MiscScript 
 	local script = Instance.new('LocalScript', Config)
 
 	local Frame = script.Parent
@@ -1006,8 +1344,23 @@ local function HWWEXII_fake_script() -- Config.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(HWWEXII_fake_script)()
-local function LOYWW_fake_script() -- Widget.AccountModule 
+coroutine.wrap(RDUZW_fake_script)()
+local function YLBYC_fake_script() -- DevMode.LocalScript 
+	local script = Instance.new('LocalScript', DevMode)
+
+	local ClickSound = Instance.new("Sound", script)
+	ClickSound.SoundId = "rbxassetid://6324790483"
+	local Button = script.Parent
+	local Cheat_Page = script.Parent.Parent
+	local Console = script.Parent.Parent.Parent.Console
+	Button.MouseButton1Click:Connect(function()
+		ClickSound:Play()
+		Cheat_Page.Visible = false
+		Console.Visible = true
+	end)
+end
+coroutine.wrap(YLBYC_fake_script)()
+local function JYSCCJR_fake_script() -- Widget.AccountModule 
 	local script = Instance.new('LocalScript', Widget)
 
 	local HttpService = game:GetService("HttpService")
@@ -1021,6 +1374,7 @@ local function LOYWW_fake_script() -- Widget.AccountModule
 	
 	script.Name = "AccountModule"
 	local Frame = script.Parent.Parent.Parent.Cheat_Page
+	local Console = script.Parent.Parent.Parent.Console
 	
 	local CorrectSound = Instance.new("Sound", script)
 	CorrectSound.SoundId = "rbxassetid://1584394759"
@@ -1136,6 +1490,15 @@ local function LOYWW_fake_script() -- Widget.AccountModule
 				warn("You tried to bypass the authorization system by item configure.")
 				script.Parent.Parent.Parent.Parent.Parent:Destroy()
 			end
+			if Console.Visible and not isLoggedIn then  -- Проверяем видимость и флаг входа
+				Console.Visible = false
+				warn("You tried to bypass the authorization system by item configure.")
+				script.Parent.Parent.Parent.Parent.Parent:Destroy()
+			end
+			if IsoginedValue.Value == true and not isLoggedIn then
+				warn("You tried to bypass the authorization system by item configure.")
+				script.Parent.Parent.Parent.Parent.Parent:Destroy()
+			end
 		end
 	end
 	
@@ -1174,8 +1537,8 @@ local function LOYWW_fake_script() -- Widget.AccountModule
 	-- Выполнить быстрый вход при загрузке скрипта
 	QuickLogin()
 end
-coroutine.wrap(LOYWW_fake_script)()
-local function HSBMP_fake_script() -- MainPage.Atom.Core 
+coroutine.wrap(JYSCCJR_fake_script)()
+local function FOYI_fake_script() -- MainPage.Atom.Core 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1213,8 +1576,8 @@ local function HSBMP_fake_script() -- MainPage.Atom.Core
 	end)
 	
 end
-coroutine.wrap(HSBMP_fake_script)()
-local function IBQWN_fake_script() -- MainPage.Dragging 
+coroutine.wrap(FOYI_fake_script)()
+local function UKWFY_fake_script() -- MainPage.Dragging 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1258,4 +1621,124 @@ local function IBQWN_fake_script() -- MainPage.Dragging
 		end
 	end)
 end
-coroutine.wrap(IBQWN_fake_script)()
+coroutine.wrap(UKWFY_fake_script)()
+local function BUJQ_fake_script() -- Console.ConsoleManager 
+	local script = Instance.new('LocalScript', Console)
+
+	-- Переменные
+	local textBox = script.Parent.Widget.CommandBar
+	local sendButton = script.Parent.Widget.Send
+	local scrollingFrame = script.Parent.Commands.ScrollingFrame
+	local commandTemplate = script.Parent.Commands.CommandTemplate
+	
+	-- Функция для получения текущего времени с миллисекундами
+	local function getCurrentTime()
+		local currentTime = os.time()
+		local milliseconds = currentTime % 1 * 1000
+		return os.date("%X") .. string.format(".%03d", milliseconds)
+	end
+	
+	-- Функция для выполнения команды
+	local function executeCommand(commandText)
+		-- Добавление команды в ScrollingFrame
+		local newCommand = commandTemplate:Clone()
+		newCommand.Parent = scrollingFrame
+		newCommand.Visible = true
+		newCommand.CommandText.Text = commandText
+		newCommand.TimeText.Text = getCurrentTime()
+		
+		-- Автоматическое прокручивание вниз
+		scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, scrollingFrame.UIListLayout.AbsoluteContentSize.Y)
+		scrollingFrame.CanvasPosition = Vector2.new(0, scrollingFrame.UIListLayout.AbsoluteContentSize.Y)
+		
+		-- Функция для плавного изменения цвета текста
+		local function animateColor(label, fromColor, toColor, duration)
+			local tweenService = game:GetService("TweenService")
+			local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+			local goal = {TextColor3 = toColor}
+			local tween = tweenService:Create(label, tweenInfo, goal)
+			tween:Play()
+		end
+		
+		-- Выполнение команды (в данном случае print)
+		local success, errorMessage = pcall(function()
+			-- Пример выполнения команды, здесь только print
+			local func = loadstring(commandText)
+			if func then
+				func()
+			end
+		end)
+		
+		if success then
+			-- Успешное выполнение: мигнуть зеленым, затем плавно измениться на белый
+			newCommand.CommandText.TextColor3 = Color3.new(0, 1, 0)  -- Зеленый
+			wait(0.1)
+			animateColor(newCommand.CommandText, Color3.new(0, 1, 0), Color3.new(1, 1, 1), 0.5)
+		else
+			-- Ошибка выполнения: мигать красным и белым
+			local function blinkError()
+				while true do
+					animateColor(newCommand.CommandText, Color3.new(1, 1, 1), Color3.new(1, 0, 0), 0.5)
+					wait(0.5)
+					animateColor(newCommand.CommandText, Color3.new(1, 0, 0), Color3.new(1, 1, 1), 0.5)
+					wait(0.5)
+				end
+			end
+			spawn(blinkError)
+			warn("Ошибка выполнения команды: " .. errorMessage)
+			
+			-- Отобразить кнопку "Глянуть ошибку" и установить обработчик для показа ошибки
+			newCommand.ErrorButton.Visible = true
+			local isShowingError = false
+			
+			newCommand.ErrorButton.MouseButton1Click:Connect(function()
+				if isShowingError then
+					newCommand.CommandText.Text = commandText
+					isShowingError = false
+				else
+					newCommand.CommandText.Text = "Ошибка выполнения команды: " .. errorMessage
+					isShowingError = true
+				end
+			end)
+		end
+	end
+	
+	-- Функция для обработки нажатия на кнопку "Send"
+	local function onSendButtonClicked()
+		local commandText = textBox.Text
+		if commandText and commandText ~= "" then
+			executeCommand(commandText)
+			textBox.Text = ""
+		end
+	end
+	
+	-- Обработка нажатия на Enter в TextBox
+	textBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			onSendButtonClicked()
+		end
+	end)
+	
+	-- Обработка нажатия на кнопку "Send"
+	sendButton.MouseButton1Click:Connect(onSendButtonClicked)
+	
+	-- Пример использования функции executeCommand
+	-- executeCommand("Hello, World!")
+	
+end
+coroutine.wrap(BUJQ_fake_script)()
+local function TBGEW_fake_script() -- Back.LocalScript 
+	local script = Instance.new('LocalScript', Back)
+
+	local ClickSound = Instance.new("Sound", script)
+	ClickSound.SoundId = "rbxassetid://6324790483"
+	local Button = script.Parent
+	local Cheat_Page = script.Parent.Parent.Parent.Cheat_Page
+	local Console = script.Parent.Parent
+	Button.MouseButton1Click:Connect(function()
+		ClickSound:Play()
+		Cheat_Page.Visible = true
+		Console.Visible = false
+	end)
+end
+coroutine.wrap(TBGEW_fake_script)()
