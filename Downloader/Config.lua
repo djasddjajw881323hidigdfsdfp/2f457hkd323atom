@@ -1565,7 +1565,7 @@ local function UQDZG_fake_script() -- DEV.ButtonManager
 				Text = "Вы можете повторно активировать его в настройках.",
 				Duration = 5
 			})
-			ConsoleButton.Visible = true
+			ConsoleButton.Visible = false
 		end
 	end)
 end
