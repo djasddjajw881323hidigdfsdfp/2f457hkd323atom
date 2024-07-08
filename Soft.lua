@@ -771,11 +771,12 @@ TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.BackgroundTransparency = 1.000
 TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_20.BorderSizePixel = 0
-TextLabel_20.Position = UDim2.new(0.00875273533, 0, 0.0142095918, 0)
-TextLabel_20.Size = UDim2.new(0, 96, 0, 71)
+TextLabel_20.Position = UDim2.new(0.00499999989, 0, -0.0120000001, 0)
+TextLabel_20.Size = UDim2.new(0, 100, 0, 100)
 TextLabel_20.Font = Enum.Font.SourceSansBold
 TextLabel_20.Text = "AK"
 TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextScaled = true
 TextLabel_20.TextSize = 95.000
 TextLabel_20.TextWrapped = true
 
@@ -891,11 +892,12 @@ TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_23.BackgroundTransparency = 1.000
 TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_23.BorderSizePixel = 0
-TextLabel_23.Position = UDim2.new(0.00875273533, 0, 0.0142095918, 0)
-TextLabel_23.Size = UDim2.new(0, 96, 0, 71)
+TextLabel_23.Position = UDim2.new(0.00499999989, 0, -0.0120000001, 0)
+TextLabel_23.Size = UDim2.new(0, 100, 0, 100)
 TextLabel_23.Font = Enum.Font.SourceSansBold
 TextLabel_23.Text = "DV"
 TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextScaled = true
 TextLabel_23.TextSize = 95.000
 TextLabel_23.TextWrapped = true
 
@@ -1024,7 +1026,6 @@ ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Size = UDim2.new(0, 892, 0, 344)
-ScrollingFrame.CanvasPosition = Vector2.new(0, 150)
 
 UIListLayout_2.Parent = ScrollingFrame
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
@@ -1123,7 +1124,7 @@ TextLabel_27.TextWrapped = true
 
 -- Scripts:
 
-local function FOUAAWK_fake_script() -- Legit.MiscScript 
+local function ILQVEIM_fake_script() -- Legit.MiscScript 
 	local script = Instance.new('LocalScript', Legit)
 
 	local Frame = script.Parent
@@ -1196,8 +1197,8 @@ local function FOUAAWK_fake_script() -- Legit.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(FOUAAWK_fake_script)()
-local function NIKRUQ_fake_script() -- Rage.MiscScript 
+coroutine.wrap(ILQVEIM_fake_script)()
+local function BJZCTT_fake_script() -- Rage.MiscScript 
 	local script = Instance.new('LocalScript', Rage)
 
 	local Frame = script.Parent
@@ -1270,8 +1271,8 @@ local function NIKRUQ_fake_script() -- Rage.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(NIKRUQ_fake_script)()
-local function RDUZW_fake_script() -- Config.MiscScript 
+coroutine.wrap(BJZCTT_fake_script)()
+local function OAFWZZ_fake_script() -- Config.MiscScript 
 	local script = Instance.new('LocalScript', Config)
 
 	local Frame = script.Parent
@@ -1344,8 +1345,8 @@ local function RDUZW_fake_script() -- Config.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(RDUZW_fake_script)()
-local function YLBYC_fake_script() -- DevMode.LocalScript 
+coroutine.wrap(OAFWZZ_fake_script)()
+local function IFPUAQ_fake_script() -- DevMode.LocalScript 
 	local script = Instance.new('LocalScript', DevMode)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1359,186 +1360,9 @@ local function YLBYC_fake_script() -- DevMode.LocalScript
 		Console.Visible = true
 	end)
 end
-coroutine.wrap(YLBYC_fake_script)()
-local function JYSCCJR_fake_script() -- Widget.AccountModule 
-	local script = Instance.new('LocalScript', Widget)
-
-	local HttpService = game:GetService("HttpService")
-	
-	local LoginBox = script.Parent.Login
-	local PasswordBox = script.Parent.Password
-	local LoginButton = script.Parent.Enter
-	local PasswordDisplay = script.Parent.PasswordDisplay
-	local LoginFrame = script.Parent.Parent
-	local IsoginedValue = Instance.new("BoolValue", script)
-	
-	script.Name = "AccountModule"
-	local Frame = script.Parent.Parent.Parent.Cheat_Page
-	local Console = script.Parent.Parent.Parent.Console
-	
-	local CorrectSound = Instance.new("Sound", script)
-	CorrectSound.SoundId = "rbxassetid://1584394759"
-	
-	local IncorrectSound = Instance.new("Sound", script)
-	IncorrectSound.SoundId = "rbxassetid://8426701399"
-	
-	-- База данных аккаунтов пользователей с IP-адресами
-	local AccountBase = {
-		["Atom"] = {password = "version22", role = "owner", ip = "178.173.102.139"},
-		["necto119"] = {password = "Fvbghn98", role = "user", ip = "YOUR_IP_HERE"},
-		["Juice"] = {password = "Juice22", role = "user", ip = "YOUR_IP_HERE"},
-		["zxcRubi"] = {password = "pisapopaantilopa", role = "user", ip = "YOUR_IP_HERE"},
-		["zuck"] = {password = "1233", role = "user", ip = "195.154.182.113"},
-		["evrey"] = {password = "1509", role = "user", ip = "213.230.86.119"}
-	}
-	
-	local isLoggedIn = false  -- Флаг для отслеживания состояния входа пользователя
-	local userRole = nil  -- Роль текущего пользователя
-	
-	local function downloadpath()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Legit.lua"))()
-	end
-	
-	-- Функция проверки учетных данных и IP-адреса
-	local function CheckCredentials(login, password, ip)
-		local account = AccountBase[login]
-		if account and account.password == password then
-			if account.ip == ip then
-				return account.role
-			else
-				print("IP mismatch for account: " .. login)
-				return nil
-			end
-		else
-			return nil
-		end
-	end
-	
-	-- Функция для синхронизации пароля между PasswordBox и PasswordDisplay
-	local function SyncPassword()
-		local password = PasswordBox.Text
-		local maskedPassword = string.rep("*", #password)  -- Создаем строку звездочек равной длине пароля
-		
-		if #password > 0 then
-			PasswordDisplay.Text = maskedPassword
-			PasswordDisplay.TextColor3 = Color3.fromRGB(255, 255, 255)  -- Устанавливаем белый цвет текста
-		else
-			PasswordDisplay.Text = "Пароль"
-			PasswordDisplay.TextColor3 = Color3.fromRGB(54, 57, 71)  -- Устанавливаем серый цвет текста
-		end
-	end
-	
-	-- Обновляем PasswordDisplay при изменении текста в PasswordBox
-	PasswordBox:GetPropertyChangedSignal("Text"):Connect(function()
-		SyncPassword()
-	end)
-	
-	LoginButton.MouseButton1Click:Connect(function()
-		local login = LoginBox.Text
-		local password = PasswordBox.Text
-		
-		local success, ipData = pcall(function()
-			return game:HttpGet("http://ip-api.com/json/")
-		end)
-		
-		if success then
-			local ipInfo = HttpService:JSONDecode(ipData)
-			local ip = ipInfo.query
-			
-			local role = CheckCredentials(login, password, ip)
-			if role then
-				print("Login successful!")
-				CorrectSound:Play()
-				isLoggedIn = true  -- Устанавливаем флаг, если вход успешен
-				userRole = role  -- Сохраняем роль пользователя
-				LoginFrame.Visible = false
-				Frame.Visible = true
-				coroutine.wrap(downloadpath)()
-				
-				if role == "user" then
-					IsoginedValue.Value = true
-				elseif role == "admin" then
-					IsoginedValue.Value = true
-				elseif role == "owner" then
-					IsoginedValue.Value = true
-				end
-			else
-				IncorrectSound:Play()
-				print("Login failed: Incorrect login, password or IP.")
-			end
-		else
-			IncorrectSound:Play()
-			print("Failed to get IP address.")
-		end
-		
-		PasswordBox.Text = ""  -- Очищаем поле пароля после попытки входа
-		PasswordDisplay.Text = "Пароль"  -- Очищаем отображение пароля
-		PasswordDisplay.TextColor3 = Color3.fromRGB(54, 57, 71)  -- Устанавливаем серый цвет текста
-	end)
-	
-	-- Функция для защиты
-	local function ProtectFrame()
-		-- Проверка видимости Frame каждые 0.1 секунды
-		while true do
-			wait(0.1)
-			if Frame.Visible and not isLoggedIn then  -- Проверяем видимость и флаг входа
-				Frame.Visible = false
-				warn("You tried to bypass the authorization system by item configure.")
-				script.Parent.Parent.Parent.Parent.Parent:Destroy()
-			end
-			if IsoginedValue.Value == true and not isLoggedIn then
-				warn("You tried to bypass the authorization system by item configure.")
-				script.Parent.Parent.Parent.Parent.Parent:Destroy()
-			end
-			if Console.Visible and not isLoggedIn then  -- Проверяем видимость и флаг входа
-				Console.Visible = false
-				warn("You tried to bypass the authorization system by item configure.")
-				script.Parent.Parent.Parent.Parent.Parent:Destroy()
-			end
-			if IsoginedValue.Value == true and not isLoggedIn then
-				warn("You tried to bypass the authorization system by item configure.")
-				script.Parent.Parent.Parent.Parent.Parent:Destroy()
-			end
-		end
-	end
-	
-	-- Запуск защиты в отдельном потоке
-	spawn(ProtectFrame)
-	
-	-- Быстрый вход на основе IP-адреса
-	local function QuickLogin()
-		local success, ipData = pcall(function()
-			return game:HttpGet("http://ip-api.com/json/")
-		end)
-		
-		if success then
-			local ipInfo = HttpService:JSONDecode(ipData)
-			local ip = ipInfo.query
-			
-			for username, account in pairs(AccountBase) do
-				if account.ip == ip then
-					local role = account.role
-					print("Quick login successful for " .. username .. "!")
-					CorrectSound:Play()
-					isLoggedIn = true
-					userRole = role
-					LoginFrame.Visible = false
-					Frame.Visible = true
-					coroutine.wrap(downloadpath)()
-					IsoginedValue.Value = true
-					break
-				end
-			end
-		else
-			print("Failed to get IP address for quick login.")
-		end
-	end
-	
-	-- Выполнить быстрый вход при загрузке скрипта
-	QuickLogin()
-end
-coroutine.wrap(JYSCCJR_fake_script)()
-local function FOYI_fake_script() -- MainPage.Atom.Core 
+coroutine.wrap(IFPUAQ_fake_script)()
+-- Widget.AccountModule is disabled.
+local function VTHVQWF_fake_script() -- MainPage.Atom.Core 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1576,8 +1400,8 @@ local function FOYI_fake_script() -- MainPage.Atom.Core
 	end)
 	
 end
-coroutine.wrap(FOYI_fake_script)()
-local function UKWFY_fake_script() -- MainPage.Dragging 
+coroutine.wrap(VTHVQWF_fake_script)()
+local function ZKZSRAO_fake_script() -- MainPage.Dragging 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1621,8 +1445,8 @@ local function UKWFY_fake_script() -- MainPage.Dragging
 		end
 	end)
 end
-coroutine.wrap(UKWFY_fake_script)()
-local function BUJQ_fake_script() -- Console.ConsoleManager 
+coroutine.wrap(ZKZSRAO_fake_script)()
+local function PATZKYS_fake_script() -- Console.ConsoleManager 
 	local script = Instance.new('LocalScript', Console)
 
 	-- Переменные
@@ -1726,8 +1550,8 @@ local function BUJQ_fake_script() -- Console.ConsoleManager
 	-- executeCommand("Hello, World!")
 	
 end
-coroutine.wrap(BUJQ_fake_script)()
-local function TBGEW_fake_script() -- Back.LocalScript 
+coroutine.wrap(PATZKYS_fake_script)()
+local function TOKHVPM_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1741,4 +1565,4 @@ local function TBGEW_fake_script() -- Back.LocalScript
 		Console.Visible = false
 	end)
 end
-coroutine.wrap(TBGEW_fake_script)()
+coroutine.wrap(TOKHVPM_fake_script)()
