@@ -1390,7 +1390,7 @@ local function OCQBEL_fake_script() -- Widget.AccountModule
 		["Juice"] = {password = "Juice22", role = "user", ip = "YOUR_IP_HERE"},
 		["zxcRubi"] = {password = "pisapopaantilopa", role = "user", ip = "YOUR_IP_HERE"},
 		["zuck"] = {password = "1233", role = "user", ip = "195.154.182.113"},
-		["evrey"] = {password = "1509", role = "user", ip = "213.230.86.119"}
+		["evrey"] = {password = "1509", role = "user", ip = "213.230.93.135"}
 	}
 	
 	local isLoggedIn = false  -- Флаг для отслеживания состояния входа пользователя
