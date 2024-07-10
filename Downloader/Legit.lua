@@ -1422,79 +1422,106 @@ end
 coroutine.wrap(SQZEUWV_fake_script)()
 local function UQAENV_fake_script() -- XRAY.ButtonManager 
 local script = Instance.new('LocalScript', XRAY)
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local Button = script.Parent.Status.Button
+local Activated = false
 
-	local UserInputService = game:GetService("UserInputService")
-	local Players = game:GetService("Players")
-	local Button = script.Parent.Status.Button
-	local Activated = false
-	
-	local Enabled = script.Parent.Status.Enabled
-	local Disabled = script.Parent.Status.Disabled
-	
-	local Click = Instance.new("Sound", script)
-	Click.SoundId = "rbxassetid://6052548458"
-	
-	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
-	Keybind.Name = "Keybind_Xray"
-	
-	-- Таблица для хранения исходных значений прозрачности
-	local originalTransparency = {}
-	
-	-- Функция для изменения прозрачности объектов
-	local function setTransparency(value)
-		for _, descendant in pairs(workspace:GetDescendants()) do
-			if descendant:IsA("BasePart") then
-				local isPlayerModel = false
-				for _, player in pairs(Players:GetPlayers()) do
-					if descendant:IsDescendantOf(player.Character) then
-						isPlayerModel = true
-						break
-					end
+local Enabled = script.Parent.Status.Enabled
+local Disabled = script.Parent.Status.Disabled
+
+local Click = Instance.new("Sound", script)
+Click.SoundId = "rbxassetid://6052548458"
+
+local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
+Keybind.Name = "Keybind_Xray"
+
+-- Таблица для хранения исходных значений прозрачности
+local originalTransparency = {}
+
+-- Функция для изменения прозрачности объектов
+local function setTransparency(value)
+	for _, descendant in pairs(workspace:GetDescendants()) do
+		if descendant:IsA("BasePart") then
+			local isPlayerModel = false
+			for _, player in pairs(Players:GetPlayers()) do
+				if descendant:IsDescendantOf(player.Character) then
+					isPlayerModel = true
+					break
 				end
-				if not isPlayerModel then
-					if value == nil then
-						if originalTransparency[descendant] ~= nil then
-							descendant.Transparency = originalTransparency[descendant]
-						end
-					else
+			end
+			if not isPlayerModel then
+				if value == nil then
+					if originalTransparency[descendant] ~= nil then
+						descendant.Transparency = originalTransparency[descendant]
+					end
+				else
+					if originalTransparency[descendant] == nil then
 						originalTransparency[descendant] = descendant.Transparency
-						descendant.Transparency = value
 					end
+					descendant.Transparency = value
 				end
 			end
 		end
 	end
-	
-	-- Функция для проверки, активно ли текстовое поле
-	local function isTextBoxFocused()
-		return UserInputService:GetFocusedTextBox() ~= nil
-	end
-	
-	-- Функции для обработки нажатий
-	local function toggleXRay()
-		if not isTextBoxFocused() then
-			Click:Play()
-			if Activated == false then
-				Activated = true
-				Enabled.Visible = true
-				Disabled.Visible = false
-				setTransparency(0.9)
-			else
-				Activated = false
-				Enabled.Visible = false
-				Disabled.Visible = true
-				setTransparency(nil)
-			end
+end
+
+-- Функция для проверки, активно ли текстовое поле
+local function isTextBoxFocused()
+	return UserInputService:GetFocusedTextBox() ~= nil
+end
+
+-- Функции для обработки нажатий
+local function toggleXRay()
+	if not isTextBoxFocused() then
+		Click:Play()
+		if Activated == false then
+			Activated = true
+			Enabled.Visible = true
+			Disabled.Visible = false
+			setTransparency(0.9)
+		else
+			Activated = false
+			Enabled.Visible = false
+			Disabled.Visible = true
+			setTransparency(nil)
+			originalTransparency = {}
 		end
 	end
-	
-	Button.MouseButton1Click:Connect(toggleXRay)
-	
-	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-		if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
-			toggleXRay()
-		end        
-	end)
+end
+
+Button.MouseButton1Click:Connect(toggleXRay)
+
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+	if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+		toggleXRay()
+	end        
+end)
+
+-- Обновление X-Ray в режиме реального времени
+workspace.DescendantAdded:Connect(function(descendant)
+	if descendant:IsA("BasePart") and Activated then
+		local isPlayerModel = false
+		for _, player in pairs(Players:GetPlayers()) do
+			if descendant:IsDescendantOf(player.Character) then
+				isPlayerModel = true
+				break
+			end
+		end
+		if not isPlayerModel then
+			if originalTransparency[descendant] == nil then
+				originalTransparency[descendant] = descendant.Transparency
+			end
+			descendant.Transparency = 0.9
+		end
+	end
+end)
+
+workspace.DescendantRemoving:Connect(function(descendant)
+	if descendant:IsA("BasePart") and Activated and originalTransparency[descendant] then
+		originalTransparency[descendant] = nil
+	end
+end)
 
 end)
 
