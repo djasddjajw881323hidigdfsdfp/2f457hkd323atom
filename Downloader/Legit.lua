@@ -1421,7 +1421,8 @@ local function SQZEUWV_fake_script() -- ESP.ButtonManager
 end
 coroutine.wrap(SQZEUWV_fake_script)()
 local function UQAENV_fake_script() -- XRAY.ButtonManager 
-	local UserInputService = game:GetService("UserInputService")
+local script = Instance.new('LocalScript', XRAY)
+local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local Button = script.Parent.Status.Button
 local Activated = false
