@@ -111,7 +111,7 @@ local TextLabel_27 = Instance.new("TextLabel")
 --Properties:
 
 AtomKillwave.Name = "AtomKillwave"
-AtomKillwave.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AtomKillwave.Parent = game.CoreGui
 AtomKillwave.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 AtomKillwave.ResetOnSpawn = false
 
@@ -1124,7 +1124,7 @@ TextLabel_27.TextWrapped = true
 
 -- Scripts:
 
-local function CVKB_fake_script() -- Legit.MiscScript 
+local function DORFZ_fake_script() -- Legit.MiscScript 
 	local script = Instance.new('LocalScript', Legit)
 
 	local Frame = script.Parent
@@ -1197,8 +1197,8 @@ local function CVKB_fake_script() -- Legit.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(CVKB_fake_script)()
-local function DAHATWX_fake_script() -- Rage.MiscScript 
+coroutine.wrap(DORFZ_fake_script)()
+local function RSYZYF_fake_script() -- Rage.MiscScript 
 	local script = Instance.new('LocalScript', Rage)
 
 	local Frame = script.Parent
@@ -1271,8 +1271,8 @@ local function DAHATWX_fake_script() -- Rage.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(DAHATWX_fake_script)()
-local function SWSXAVO_fake_script() -- Config.MiscScript 
+coroutine.wrap(RSYZYF_fake_script)()
+local function EZNW_fake_script() -- Config.MiscScript 
 	local script = Instance.new('LocalScript', Config)
 
 	local Frame = script.Parent
@@ -1345,8 +1345,8 @@ local function SWSXAVO_fake_script() -- Config.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(SWSXAVO_fake_script)()
-local function WZWTL_fake_script() -- DevMode.LocalScript 
+coroutine.wrap(EZNW_fake_script)()
+local function VNHA_fake_script() -- DevMode.LocalScript 
 	local script = Instance.new('LocalScript', DevMode)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1360,24 +1360,24 @@ local function WZWTL_fake_script() -- DevMode.LocalScript
 		Console.Visible = true
 	end)
 end
-coroutine.wrap(WZWTL_fake_script)()
-local function OWGMYRU_fake_script() -- Widget.AccountModule 
+coroutine.wrap(VNHA_fake_script)()
+local function BRXNS_fake_script() -- Widget.AccountModule 
 	local script = Instance.new('LocalScript', Widget)
 
 	local HttpService = game:GetService("HttpService")
 	
-	local LoginBox = script.Parent.Login
-	local PasswordBox = script.Parent.Password
-	local LoginButton = script.Parent.Enter
-	local PasswordDisplay = script.Parent.PasswordDisplay
+	local LoginBox = script.Parent:FindFirstChild("Login")
+	local PasswordBox = script.Parent:FindFirstChild("Password")
+	local LoginButton = script.Parent:FindFirstChild("Enter")
+	local PasswordDisplay = script.Parent:FindFirstChild("PasswordDisplay")
 	local LoginFrame = script.Parent.Parent
 	local IsoginedValue = Instance.new("BoolValue", script)
-	local Cheat_Page = script.Parent.Parent.Parent.Cheat_Page
+	local Cheat_Page = script.Parent.Parent.Parent:FindFirstChild("Cheat_Page")
 	
 	local Accepted = false
 	script.Name = "AccountModule"
 	
-	local Console = script.Parent.Parent.Parent.Console
+	local Console = script.Parent.Parent.Parent:FindFirstChild("Console")
 	
 	local CorrectSound = Instance.new("Sound", script)
 	CorrectSound.SoundId = "rbxassetid://1584394759"
@@ -1455,7 +1455,9 @@ local function OWGMYRU_fake_script() -- Widget.AccountModule
 				isLoggedIn = true  -- Устанавливаем флаг, если вход успешен
 				userRole = role  -- Сохраняем роль пользователя
 				LoginFrame.Visible = false
-				Cheat_Page.Visible = true
+				if Cheat_Page then
+					Cheat_Page.Visible = true
+				end
 				coroutine.wrap(downloadpath)()
 				
 				if role == "user" then
@@ -1490,18 +1492,22 @@ local function OWGMYRU_fake_script() -- Widget.AccountModule
 		-- Проверка видимости Frame каждые 0.1 секунды
 		while true do
 			wait(0.1)
-			if Cheat_Page.Visible and not isLoggedIn then  -- Проверяем видимость и флаг входа
+			if Cheat_Page and Cheat_Page.Visible and not isLoggedIn then  -- Проверяем видимость и флаг входа
 				Cheat_Page.Visible = false
-				Console.Visible = false
+				if Console then
+					Console.Visible = false
+				end
 				LoginFrame.Visible = true
 				ShowWarning()
 			end
 			if IsoginedValue.Value == true and not isLoggedIn then
 				ShowWarning()
 			end
-			if Console.Visible and not isLoggedIn then  -- Проверяем видимость и флаг входа
+			if Console and Console.Visible and not isLoggedIn then  -- Проверяем видимость и флаг входа
 				Console.Visible = false
-				Cheat_Page.Visible = false
+				if Cheat_Page then
+					Cheat_Page.Visible = false
+				end
 				LoginFrame.Visible = true
 				ShowWarning()
 			end
@@ -1510,8 +1516,12 @@ local function OWGMYRU_fake_script() -- Widget.AccountModule
 			end
 			if not LoginFrame.Visible and not isLoggedIn then
 				LoginFrame.Visible = true
-				Cheat_Page.Visible = false
-				Console.Visible = false
+				if Cheat_Page then
+					Cheat_Page.Visible = false
+				end
+				if Console then
+					Console.Visible = false
+				end
 				ShowWarning()
 			end
 		end
@@ -1538,7 +1548,9 @@ local function OWGMYRU_fake_script() -- Widget.AccountModule
 					isLoggedIn = true
 					userRole = role
 					LoginFrame.Visible = false
-					Cheat_Page.Visible = true
+					if Cheat_Page then
+						Cheat_Page.Visible = true
+					end
 					coroutine.wrap(downloadpath)()
 					IsoginedValue.Value = true
 					break
@@ -1553,8 +1565,8 @@ local function OWGMYRU_fake_script() -- Widget.AccountModule
 	QuickLogin()
 	
 end
-coroutine.wrap(OWGMYRU_fake_script)()
-local function IZXB_fake_script() -- MainPage.Atom.Core 
+coroutine.wrap(BRXNS_fake_script)()
+local function WWQOLUL_fake_script() -- MainPage.Atom.Core 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1592,8 +1604,8 @@ local function IZXB_fake_script() -- MainPage.Atom.Core
 	end)
 	
 end
-coroutine.wrap(IZXB_fake_script)()
-local function XAQA_fake_script() -- MainPage.Dragging 
+coroutine.wrap(WWQOLUL_fake_script)()
+local function CUVGXBI_fake_script() -- MainPage.Dragging 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1637,8 +1649,8 @@ local function XAQA_fake_script() -- MainPage.Dragging
 		end
 	end)
 end
-coroutine.wrap(XAQA_fake_script)()
-local function IIQFSC_fake_script() -- Console.ConsoleManager 
+coroutine.wrap(CUVGXBI_fake_script)()
+local function IRXMVH_fake_script() -- Console.ConsoleManager 
 	local script = Instance.new('LocalScript', Console)
 
 	-- Переменные
@@ -1742,8 +1754,8 @@ local function IIQFSC_fake_script() -- Console.ConsoleManager
 	-- executeCommand("Hello, World!")
 	
 end
-coroutine.wrap(IIQFSC_fake_script)()
-local function BZNYJXN_fake_script() -- Back.LocalScript 
+coroutine.wrap(IRXMVH_fake_script)()
+local function BCRI_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1757,4 +1769,4 @@ local function BZNYJXN_fake_script() -- Back.LocalScript
 		Console.Visible = false
 	end)
 end
-coroutine.wrap(BZNYJXN_fake_script)()
+coroutine.wrap(BCRI_fake_script)()
