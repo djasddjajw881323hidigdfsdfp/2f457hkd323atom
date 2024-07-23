@@ -88,7 +88,7 @@ local TextLabel_21 = Instance.new("TextLabel")
 --Properties:
 
 Back.Name = "Back"
-Back.Parent = game.CoreGui
+Back.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
 Back.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
 Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Back.BorderSizePixel = 0
@@ -117,7 +117,7 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-TextLabel_2.Parent = game.CoreGui
+TextLabel_2.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -131,7 +131,7 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-TextLabel_3.Parent = game.CoreGui
+TextLabel_3.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -145,7 +145,7 @@ TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-ScrollingFrame.Parent = game.CoreGui
+ScrollingFrame.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
@@ -363,7 +363,6 @@ TextBox_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_4.BorderSizePixel = 0
 TextBox_4.Position = UDim2.new(0.782006919, 0, 0.158730164, 0)
 TextBox_4.Size = UDim2.new(0, 176, 0, 41)
-TextBox_4.ClearTextOnFocus = false
 TextBox_4.Font = Enum.Font.SourceSansBold
 TextBox_4.PlaceholderColor3 = Color3.fromRGB(58, 61, 76)
 TextBox_4.PlaceholderText = "Значение"
@@ -787,7 +786,7 @@ TextLabel_21.TextWrapped = true
 
 -- Scripts:
 
-local function NWKTH_fake_script() -- Back.LocalScript 
+local function IXJXN_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -800,8 +799,8 @@ local function NWKTH_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(NWKTH_fake_script)()
-local function IXIIQH_fake_script() -- Speed.Manager 
+coroutine.wrap(IXJXN_fake_script)()
+local function AALC_fake_script() -- Speed.Manager 
 	local script = Instance.new('LocalScript', Speed)
 
 	local textbox = script.Parent.TextBox
@@ -867,8 +866,8 @@ local function IXIIQH_fake_script() -- Speed.Manager
 	end)
 	
 end
-coroutine.wrap(IXIIQH_fake_script)()
-local function ZWVWLW_fake_script() -- Jump.Manager 
+coroutine.wrap(AALC_fake_script)()
+local function VIDN_fake_script() -- Jump.Manager 
 	local script = Instance.new('LocalScript', Jump)
 
 	local textbox = script.Parent.TextBox
@@ -935,8 +934,8 @@ local function ZWVWLW_fake_script() -- Jump.Manager
 	end)
 	
 end
-coroutine.wrap(ZWVWLW_fake_script)()
-local function RUGWXB_fake_script() -- Fov.Manager 
+coroutine.wrap(VIDN_fake_script)()
+local function FREWTGJ_fake_script() -- Fov.Manager 
 	local script = Instance.new('LocalScript', Fov)
 
 	local textbox = script.Parent.TextBox
@@ -974,8 +973,8 @@ local function RUGWXB_fake_script() -- Fov.Manager
 	end)
 	
 end
-coroutine.wrap(RUGWXB_fake_script)()
-local function MBOVIHU_fake_script() -- Animation.Manager 
+coroutine.wrap(FREWTGJ_fake_script)()
+local function OJEQKM_fake_script() -- Animation.Manager 
 	local script = Instance.new('LocalScript', Animation)
 
 	local textbox = script.Parent.TextBox
@@ -1022,9 +1021,10 @@ local function MBOVIHU_fake_script() -- Animation.Manager
 			end
 		end
 	end)
+	
 end
-coroutine.wrap(MBOVIHU_fake_script)()
-local function NLYXG_fake_script() -- NoAfk.ButtonManager 
+coroutine.wrap(OJEQKM_fake_script)()
+local function XETNUM_fake_script() -- NoAfk.ButtonManager 
 	local script = Instance.new('LocalScript', NoAfk)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1086,8 +1086,8 @@ local function NLYXG_fake_script() -- NoAfk.ButtonManager
 	end)
 	
 end
-coroutine.wrap(NLYXG_fake_script)()
-local function SCCHMV_fake_script() -- AtomAvatar.ButtonManager 
+coroutine.wrap(XETNUM_fake_script)()
+local function WRVVS_fake_script() -- AtomAvatar.ButtonManager 
 	local script = Instance.new('LocalScript', AtomAvatar)
 
 	-- Получение сервисов
@@ -1190,8 +1190,8 @@ local function SCCHMV_fake_script() -- AtomAvatar.ButtonManager
 	end)
 	
 end
-coroutine.wrap(SCCHMV_fake_script)()
-local function UOAEZ_fake_script() -- AIM.ButtonManager 
+coroutine.wrap(WRVVS_fake_script)()
+local function TLKV_fake_script() -- AIM.ButtonManager 
 	local script = Instance.new('LocalScript', AIM)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1215,7 +1215,7 @@ local function UOAEZ_fake_script() -- AIM.ButtonManager
 		
 		for _, player in ipairs(players:GetPlayers()) do
 			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
+				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.Head.Position).magnitude
 				if distance < shortestDistance then
 					nearestPlayer = player
 					shortestDistance = distance
@@ -1282,15 +1282,15 @@ local function UOAEZ_fake_script() -- AIM.ButtonManager
 			if Aiming and TargetPlayer then -- Если AIM включен и есть целевой игрок, то наводимся на него
 				if TargetPlayer.Character and TargetPlayer.Character:FindFirstChild("HumanoidRootPart") then
 					local camera = game.Workspace.CurrentCamera
-					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.HumanoidRootPart.Position)
+					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.Head.Position)
 				end
 			end
 		end
 	end)
 	
 end
-coroutine.wrap(UOAEZ_fake_script)()
-local function JAKQY_fake_script() -- ESP.ButtonManager 
+coroutine.wrap(TLKV_fake_script)()
+local function SQZEUWV_fake_script() -- ESP.ButtonManager 
 	local script = Instance.new('LocalScript', ESP)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1430,8 +1430,8 @@ local function JAKQY_fake_script() -- ESP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(JAKQY_fake_script)()
-local function CGFR_fake_script() -- XRAY.ButtonManager 
+coroutine.wrap(SQZEUWV_fake_script)()
+local function UQAENV_fake_script() -- XRAY.ButtonManager 
 	local script = Instance.new('LocalScript', XRAY)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1508,5 +1508,5 @@ local function CGFR_fake_script() -- XRAY.ButtonManager
 	end)
 	
 end
-coroutine.wrap(CGFR_fake_script)()
+coroutine.wrap(UQAENV_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
