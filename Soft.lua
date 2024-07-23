@@ -101,12 +101,18 @@ local CommandTemplate = Instance.new("Frame")
 local UIGradient_14 = Instance.new("UIGradient")
 local TimeText = Instance.new("TextLabel")
 local CommandText = Instance.new("TextLabel")
-local ErrorButton = Instance.new("ImageButton")
+local CopyButton = Instance.new("ImageButton")
 local UICorner_16 = Instance.new("UICorner")
 local UIGradient_15 = Instance.new("UIGradient")
-local Back = Instance.new("TextButton")
+local ErrorButton = Instance.new("ImageButton")
 local UICorner_17 = Instance.new("UICorner")
+local UIGradient_16 = Instance.new("UIGradient")
+local Back = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
 local TextLabel_27 = Instance.new("TextLabel")
+local Exploer = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local TextLabel_28 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -1075,22 +1081,38 @@ CommandText.TextSize = 14.000
 CommandText.TextWrapped = true
 CommandText.TextXAlignment = Enum.TextXAlignment.Left
 
+CopyButton.Name = "CopyButton"
+CopyButton.Parent = CommandTemplate
+CopyButton.BackgroundColor3 = Color3.fromRGB(38, 40, 50)
+CopyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CopyButton.BorderSizePixel = 0
+CopyButton.Position = UDim2.new(0.952655911, 0, 0.125, 0)
+CopyButton.Size = UDim2.new(0, 30, 0, 30)
+CopyButton.Image = "rbxassetid://18615984199"
+CopyButton.ScaleType = Enum.ScaleType.Crop
+
+UICorner_16.Parent = CopyButton
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_15.Rotation = -45
+UIGradient_15.Parent = CopyButton
+
 ErrorButton.Name = "ErrorButton"
 ErrorButton.Parent = CommandTemplate
 ErrorButton.BackgroundColor3 = Color3.fromRGB(38, 40, 50)
 ErrorButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ErrorButton.BorderSizePixel = 0
-ErrorButton.Position = UDim2.new(0.952655911, 0, 0.125, 0)
+ErrorButton.Position = UDim2.new(0.912240207, 0, 0.125, 0)
 ErrorButton.Size = UDim2.new(0, 30, 0, 30)
 ErrorButton.Visible = false
 ErrorButton.Image = "rbxassetid://18389256366"
 ErrorButton.ScaleType = Enum.ScaleType.Crop
 
-UICorner_16.Parent = ErrorButton
+UICorner_17.Parent = ErrorButton
 
-UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_15.Rotation = -45
-UIGradient_15.Parent = ErrorButton
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_16.Rotation = -45
+UIGradient_16.Parent = ErrorButton
 
 Back.Name = "Back"
 Back.Parent = Console
@@ -1105,8 +1127,8 @@ Back.TextColor3 = Color3.fromRGB(255, 255, 255)
 Back.TextSize = 14.000
 Back.TextWrapped = true
 
-UICorner_17.CornerRadius = UDim.new(1, 0)
-UICorner_17.Parent = Back
+UICorner_18.CornerRadius = UDim.new(1, 0)
+UICorner_18.Parent = Back
 
 TextLabel_27.Parent = Back
 TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1122,9 +1144,39 @@ TextLabel_27.TextScaled = true
 TextLabel_27.TextSize = 14.000
 TextLabel_27.TextWrapped = true
 
+Exploer.Name = "Exploer"
+Exploer.Parent = Console
+Exploer.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
+Exploer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exploer.BorderSizePixel = 0
+Exploer.Position = UDim2.new(0.687089741, 0, 0.0106571941, 0)
+Exploer.Size = UDim2.new(0, 136, 0, 50)
+Exploer.Font = Enum.Font.SourceSansBold
+Exploer.Text = ""
+Exploer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exploer.TextSize = 14.000
+Exploer.TextWrapped = true
+
+UICorner_19.CornerRadius = UDim.new(1, 0)
+UICorner_19.Parent = Exploer
+
+TextLabel_28.Parent = Exploer
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.BackgroundTransparency = 1.000
+TextLabel_28.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_28.BorderSizePixel = 0
+TextLabel_28.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
+TextLabel_28.Size = UDim2.new(0, 108, 0, 33)
+TextLabel_28.Font = Enum.Font.SourceSansBold
+TextLabel_28.Text = "Explorer"
+TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.TextScaled = true
+TextLabel_28.TextSize = 14.000
+TextLabel_28.TextWrapped = true
+
 -- Scripts:
 
-local function DORFZ_fake_script() -- Legit.MiscScript 
+local function ZKWRZ_fake_script() -- Legit.MiscScript 
 	local script = Instance.new('LocalScript', Legit)
 
 	local Frame = script.Parent
@@ -1197,8 +1249,8 @@ local function DORFZ_fake_script() -- Legit.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(DORFZ_fake_script)()
-local function RSYZYF_fake_script() -- Rage.MiscScript 
+coroutine.wrap(ZKWRZ_fake_script)()
+local function IPSOEAC_fake_script() -- Rage.MiscScript 
 	local script = Instance.new('LocalScript', Rage)
 
 	local Frame = script.Parent
@@ -1271,8 +1323,8 @@ local function RSYZYF_fake_script() -- Rage.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(RSYZYF_fake_script)()
-local function EZNW_fake_script() -- Config.MiscScript 
+coroutine.wrap(IPSOEAC_fake_script)()
+local function IGCGY_fake_script() -- Config.MiscScript 
 	local script = Instance.new('LocalScript', Config)
 
 	local Frame = script.Parent
@@ -1345,8 +1397,8 @@ local function EZNW_fake_script() -- Config.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(EZNW_fake_script)()
-local function VNHA_fake_script() -- DevMode.LocalScript 
+coroutine.wrap(IGCGY_fake_script)()
+local function MIXL_fake_script() -- DevMode.LocalScript 
 	local script = Instance.new('LocalScript', DevMode)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1360,8 +1412,8 @@ local function VNHA_fake_script() -- DevMode.LocalScript
 		Console.Visible = true
 	end)
 end
-coroutine.wrap(VNHA_fake_script)()
-local function BRXNS_fake_script() -- Widget.AccountModule 
+coroutine.wrap(MIXL_fake_script)()
+local function LWHDRI_fake_script() -- Widget.AccountModule 
 	local script = Instance.new('LocalScript', Widget)
 
 	local HttpService = game:GetService("HttpService")
@@ -1565,8 +1617,8 @@ local function BRXNS_fake_script() -- Widget.AccountModule
 	QuickLogin()
 	
 end
-coroutine.wrap(BRXNS_fake_script)()
-local function WWQOLUL_fake_script() -- MainPage.Atom.Core 
+coroutine.wrap(LWHDRI_fake_script)()
+local function FLJCBE_fake_script() -- MainPage.Atom.Core 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1604,8 +1656,8 @@ local function WWQOLUL_fake_script() -- MainPage.Atom.Core
 	end)
 	
 end
-coroutine.wrap(WWQOLUL_fake_script)()
-local function CUVGXBI_fake_script() -- MainPage.Dragging 
+coroutine.wrap(FLJCBE_fake_script)()
+local function XHYVK_fake_script() -- MainPage.Dragging 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1649,8 +1701,8 @@ local function CUVGXBI_fake_script() -- MainPage.Dragging
 		end
 	end)
 end
-coroutine.wrap(CUVGXBI_fake_script)()
-local function IRXMVH_fake_script() -- Console.ConsoleManager 
+coroutine.wrap(XHYVK_fake_script)()
+local function XRJLMH_fake_script() -- Console.ConsoleManager 
 	local script = Instance.new('LocalScript', Console)
 
 	-- Переменные
@@ -1729,6 +1781,16 @@ local function IRXMVH_fake_script() -- Console.ConsoleManager
 				end
 			end)
 		end
+		
+		-- Добавление функциональности копирования команды
+		newCommand.CopyButton.Visible = true
+		newCommand.CopyButton.MouseButton1Click:Connect(function()
+			if setclipboard then
+				setclipboard(commandText)
+			else
+				warn("Clipboard function is not available")
+			end
+		end)
 	end
 	
 	-- Функция для обработки нажатия на кнопку "Send"
@@ -1754,8 +1816,8 @@ local function IRXMVH_fake_script() -- Console.ConsoleManager
 	-- executeCommand("Hello, World!")
 	
 end
-coroutine.wrap(IRXMVH_fake_script)()
-local function BCRI_fake_script() -- Back.LocalScript 
+coroutine.wrap(XRJLMH_fake_script)()
+local function ZBHM_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1769,4 +1831,16 @@ local function BCRI_fake_script() -- Back.LocalScript
 		Console.Visible = false
 	end)
 end
-coroutine.wrap(BCRI_fake_script)()
+coroutine.wrap(ZBHM_fake_script)()
+local function AYYQUVP_fake_script() -- Exploer.LocalScript 
+	local script = Instance.new('LocalScript', Exploer)
+
+	local ClickSound = Instance.new("Sound", script)
+	ClickSound.SoundId = "rbxassetid://6324790483"
+	local Button = script.Parent
+	Button.MouseButton1Click:Connect(function()
+		ClickSound:Play()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Files/Explorer.lua"))()
+	end)
+end
+coroutine.wrap(AYYQUVP_fake_script)()
