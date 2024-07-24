@@ -84,6 +84,17 @@ local UICorner_29 = Instance.new("UICorner")
 local Button_5 = Instance.new("TextButton")
 local TextLabel_20 = Instance.new("TextLabel")
 local TextLabel_21 = Instance.new("TextLabel")
+local JUMPS = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local Status_6 = Instance.new("Frame")
+local UICorner_31 = Instance.new("UICorner")
+local Disabled_6 = Instance.new("Frame")
+local UICorner_32 = Instance.new("UICorner")
+local Enabled_6 = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local Button_6 = Instance.new("TextButton")
+local TextLabel_22 = Instance.new("TextLabel")
+local TextLabel_23 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -122,11 +133,11 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
-TextLabel_2.Size = UDim2.new(0, 914, 0, 43)
+TextLabel_2.Position = UDim2.new(0.00875273533, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "Меняйте настройки безпалевной игры очень аккуратно! Можно легко спалиться."
-TextLabel_2.TextColor3 = Color3.fromRGB(36, 38, 48)
+TextLabel_2.Text = "Безпалевная игра"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
@@ -136,11 +147,11 @@ TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.00875273533, 0, 0, 0)
-TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
+TextLabel_3.Size = UDim2.new(0, 914, 0, 43)
 TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Безпалевная игра"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.Text = "Меняйте настройки безпалевной игры очень аккуратно! Можно легко спалиться."
+TextLabel_3.TextColor3 = Color3.fromRGB(36, 38, 48)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
@@ -153,6 +164,8 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.0153172864, 0, 0.120781526, 0)
 ScrollingFrame.Size = UDim2.new(0, 885, 0, 461)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 90)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1, 90)
 
 UIListLayout.Parent = ScrollingFrame
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -363,9 +376,10 @@ TextBox_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_4.BorderSizePixel = 0
 TextBox_4.Position = UDim2.new(0.782006919, 0, 0.158730164, 0)
 TextBox_4.Size = UDim2.new(0, 176, 0, 41)
+TextBox_4.ClearTextOnFocus = false
 TextBox_4.Font = Enum.Font.SourceSansBold
 TextBox_4.PlaceholderColor3 = Color3.fromRGB(58, 61, 76)
-TextBox_4.PlaceholderText = "Значение"
+TextBox_4.PlaceholderText = "Идентификатор"
 TextBox_4.Text = ""
 TextBox_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_4.TextScaled = true
@@ -784,9 +798,91 @@ TextLabel_21.TextScaled = true
 TextLabel_21.TextSize = 14.000
 TextLabel_21.TextWrapped = true
 
+JUMPS.Name = "JUMPS"
+JUMPS.Parent = ScrollingFrame
+JUMPS.BackgroundColor3 = Color3.fromRGB(25, 27, 33)
+JUMPS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JUMPS.BorderSizePixel = 0
+JUMPS.Size = UDim2.new(0, 867, 0, 63)
+
+UICorner_30.Parent = JUMPS
+
+Status_6.Name = "Status"
+Status_6.Parent = JUMPS
+Status_6.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
+Status_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status_6.BorderSizePixel = 0
+Status_6.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
+Status_6.Size = UDim2.new(0, 100, 0, 50)
+
+UICorner_31.CornerRadius = UDim.new(1, 0)
+UICorner_31.Parent = Status_6
+
+Disabled_6.Name = "Disabled"
+Disabled_6.Parent = Status_6
+Disabled_6.BackgroundColor3 = Color3.fromRGB(46, 50, 61)
+Disabled_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Disabled_6.BorderSizePixel = 0
+Disabled_6.Size = UDim2.new(0, 50, 0, 50)
+
+UICorner_32.CornerRadius = UDim.new(1, 0)
+UICorner_32.Parent = Disabled_6
+
+Enabled_6.Name = "Enabled"
+Enabled_6.Parent = Status_6
+Enabled_6.BackgroundColor3 = Color3.fromRGB(126, 136, 166)
+Enabled_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enabled_6.BorderSizePixel = 0
+Enabled_6.Position = UDim2.new(0.5, 0, 0, 0)
+Enabled_6.Size = UDim2.new(0, 50, 0, 50)
+Enabled_6.Visible = false
+
+UICorner_33.CornerRadius = UDim.new(1, 0)
+UICorner_33.Parent = Enabled_6
+
+Button_6.Name = "Button"
+Button_6.Parent = Status_6
+Button_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_6.BackgroundTransparency = 1.000
+Button_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_6.BorderSizePixel = 0
+Button_6.Size = UDim2.new(0, 100, 0, 50)
+Button_6.Font = Enum.Font.SourceSans
+Button_6.Text = ""
+Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_6.TextSize = 14.000
+
+TextLabel_22.Parent = JUMPS
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_22.Size = UDim2.new(0, 194, 0, 32)
+TextLabel_22.Font = Enum.Font.SourceSansBold
+TextLabel_22.Text = "[Максимальные прыжки]"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
+
+TextLabel_23.Parent = JUMPS
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_23.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_23.Font = Enum.Font.SourceSansBold
+TextLabel_23.Text = "Прыгайте столько, сколько вам надо"
+TextLabel_23.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_23.TextScaled = true
+TextLabel_23.TextSize = 14.000
+TextLabel_23.TextWrapped = true
+
 -- Scripts:
 
-local function IXJXN_fake_script() -- Back.LocalScript 
+local function BOIFCX_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -799,8 +895,8 @@ local function IXJXN_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(IXJXN_fake_script)()
-local function AALC_fake_script() -- Speed.Manager 
+coroutine.wrap(BOIFCX_fake_script)()
+local function RFGZC_fake_script() -- Speed.Manager 
 	local script = Instance.new('LocalScript', Speed)
 
 	local textbox = script.Parent.TextBox
@@ -866,8 +962,8 @@ local function AALC_fake_script() -- Speed.Manager
 	end)
 	
 end
-coroutine.wrap(AALC_fake_script)()
-local function VIDN_fake_script() -- Jump.Manager 
+coroutine.wrap(RFGZC_fake_script)()
+local function THSVGS_fake_script() -- Jump.Manager 
 	local script = Instance.new('LocalScript', Jump)
 
 	local textbox = script.Parent.TextBox
@@ -934,8 +1030,8 @@ local function VIDN_fake_script() -- Jump.Manager
 	end)
 	
 end
-coroutine.wrap(VIDN_fake_script)()
-local function FREWTGJ_fake_script() -- Fov.Manager 
+coroutine.wrap(THSVGS_fake_script)()
+local function IVEB_fake_script() -- Fov.Manager 
 	local script = Instance.new('LocalScript', Fov)
 
 	local textbox = script.Parent.TextBox
@@ -973,8 +1069,8 @@ local function FREWTGJ_fake_script() -- Fov.Manager
 	end)
 	
 end
-coroutine.wrap(FREWTGJ_fake_script)()
-local function OJEQKM_fake_script() -- Animation.Manager 
+coroutine.wrap(IVEB_fake_script)()
+local function TNJAPS_fake_script() -- Animation.Manager 
 	local script = Instance.new('LocalScript', Animation)
 
 	local textbox = script.Parent.TextBox
@@ -1021,10 +1117,9 @@ local function OJEQKM_fake_script() -- Animation.Manager
 			end
 		end
 	end)
-	
 end
-coroutine.wrap(OJEQKM_fake_script)()
-local function XETNUM_fake_script() -- NoAfk.ButtonManager 
+coroutine.wrap(TNJAPS_fake_script)()
+local function WMJLUJS_fake_script() -- NoAfk.ButtonManager 
 	local script = Instance.new('LocalScript', NoAfk)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1086,8 +1181,8 @@ local function XETNUM_fake_script() -- NoAfk.ButtonManager
 	end)
 	
 end
-coroutine.wrap(XETNUM_fake_script)()
-local function WRVVS_fake_script() -- AtomAvatar.ButtonManager 
+coroutine.wrap(WMJLUJS_fake_script)()
+local function VTLZUTH_fake_script() -- AtomAvatar.ButtonManager 
 	local script = Instance.new('LocalScript', AtomAvatar)
 
 	-- Получение сервисов
@@ -1190,8 +1285,8 @@ local function WRVVS_fake_script() -- AtomAvatar.ButtonManager
 	end)
 	
 end
-coroutine.wrap(WRVVS_fake_script)()
-local function TLKV_fake_script() -- AIM.ButtonManager 
+coroutine.wrap(VTLZUTH_fake_script)()
+local function NRUI_fake_script() -- AIM.ButtonManager 
 	local script = Instance.new('LocalScript', AIM)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1215,7 +1310,7 @@ local function TLKV_fake_script() -- AIM.ButtonManager
 		
 		for _, player in ipairs(players:GetPlayers()) do
 			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.Head.Position).magnitude
+				local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
 				if distance < shortestDistance then
 					nearestPlayer = player
 					shortestDistance = distance
@@ -1282,15 +1377,15 @@ local function TLKV_fake_script() -- AIM.ButtonManager
 			if Aiming and TargetPlayer then -- Если AIM включен и есть целевой игрок, то наводимся на него
 				if TargetPlayer.Character and TargetPlayer.Character:FindFirstChild("HumanoidRootPart") then
 					local camera = game.Workspace.CurrentCamera
-					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.Head.Position)
+					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.HumanoidRootPart.Position)
 				end
 			end
 		end
 	end)
 	
 end
-coroutine.wrap(TLKV_fake_script)()
-local function SQZEUWV_fake_script() -- ESP.ButtonManager 
+coroutine.wrap(NRUI_fake_script)()
+local function ADWAXX_fake_script() -- ESP.ButtonManager 
 	local script = Instance.new('LocalScript', ESP)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1430,8 +1525,8 @@ local function SQZEUWV_fake_script() -- ESP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(SQZEUWV_fake_script)()
-local function UQAENV_fake_script() -- XRAY.ButtonManager 
+coroutine.wrap(ADWAXX_fake_script)()
+local function PRCCU_fake_script() -- XRAY.ButtonManager 
 	local script = Instance.new('LocalScript', XRAY)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1508,5 +1603,76 @@ local function UQAENV_fake_script() -- XRAY.ButtonManager
 	end)
 	
 end
-coroutine.wrap(UQAENV_fake_script)()
+coroutine.wrap(PRCCU_fake_script)()
+local function LPDAR_fake_script() -- JUMPS.ButtonManager 
+	local script = Instance.new('LocalScript', JUMPS)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	local Button = script.Parent.Status.Button
+	local Activated = false
+	
+	local Enabled = script.Parent.Status.Enabled
+	local Disabled = script.Parent.Status.Disabled
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://6052548458"
+	
+	local Keybind = Instance.new("StringValue", script.Parent.Parent.Parent.Parent.Parent.ConfigValues)
+	Keybind.Name = "Keybind_InfinityJumps"
+	
+	_G.infinjump = false
+	
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+				Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+				Humanoid:ChangeState("Jumping")
+				wait(0.1)
+				Humanoid:ChangeState("Seated")
+			end
+		end
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+	Click:Play()
+	if Activated == false then
+		Enabled.Visible = true
+		Disabled.Visible = false
+		--
+		Activated = true
+		_G.infinjump = true
+	else
+		Enabled.Visible = false
+		Disabled.Visible = true
+		--
+		Activated = false
+		_G.infinjump = false
+	   end
+	end)
+	
+	-- Проверка, активно ли текстовое поле
+	local function isTextBoxFocused()
+		return UserInputService:GetFocusedTextBox() ~= nil
+	end
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if not isTextBoxFocused() and input.KeyCode.Name == Keybind.Value and not gameProcessedEvent then
+			Click:Play()
+			Activated = not Activated
+			if Activated then
+				Enabled.Visible = true
+				Disabled.Visible = false
+				_G.infinjump = true
+			else
+				Enabled.Visible = false
+				Disabled.Visible = true
+				_G.infinjump = false
+			end
+		end        
+	end)
+end
+coroutine.wrap(LPDAR_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
