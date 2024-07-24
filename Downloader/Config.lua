@@ -118,29 +118,40 @@ local UICorner_40 = Instance.new("UICorner")
 local Button = Instance.new("TextButton")
 local TextLabel_36 = Instance.new("TextLabel")
 local TextLabel_37 = Instance.new("TextLabel")
-local TITILE2 = Instance.new("Frame")
+local OPTIMIZATION = Instance.new("Frame")
 local UICorner_41 = Instance.new("UICorner")
-local TextLabel_38 = Instance.new("TextLabel")
-local AutoBind = Instance.new("TextButton")
+local Status_2 = Instance.new("Frame")
 local UICorner_42 = Instance.new("UICorner")
-local TextLabel_39 = Instance.new("TextLabel")
-local Back = Instance.new("TextButton")
+local Disabled_2 = Instance.new("Frame")
 local UICorner_43 = Instance.new("UICorner")
-local TextLabel_40 = Instance.new("TextLabel")
-local Reset = Instance.new("TextButton")
+local Enabled_2 = Instance.new("Frame")
 local UICorner_44 = Instance.new("UICorner")
+local Button_2 = Instance.new("TextButton")
+local TextLabel_38 = Instance.new("TextLabel")
+local TextLabel_39 = Instance.new("TextLabel")
+local TITILE2 = Instance.new("Frame")
+local UICorner_45 = Instance.new("UICorner")
+local TextLabel_40 = Instance.new("TextLabel")
+local AutoBind = Instance.new("TextButton")
+local UICorner_46 = Instance.new("UICorner")
 local TextLabel_41 = Instance.new("TextLabel")
+local Back = Instance.new("TextButton")
+local UICorner_47 = Instance.new("UICorner")
 local TextLabel_42 = Instance.new("TextLabel")
+local Reset = Instance.new("TextButton")
+local UICorner_48 = Instance.new("UICorner")
 local TextLabel_43 = Instance.new("TextLabel")
+local TextLabel_44 = Instance.new("TextLabel")
+local TextLabel_45 = Instance.new("TextLabel")
 local Font = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local Template = Instance.new("TextBox")
-local UICorner_45 = Instance.new("UICorner")
+local UICorner_49 = Instance.new("UICorner")
 local FontTemplate = Instance.new("Frame")
 local FontName = Instance.new("TextLabel")
 local Select = Instance.new("TextButton")
-local UICorner_46 = Instance.new("UICorner")
+local UICorner_50 = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
 
 --Properties:
@@ -153,7 +164,7 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.0153172864, 0, 0.120781526, 0)
 ScrollingFrame.Size = UDim2.new(0, 885, 0, 461)
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 150)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 220)
 
 UIListLayout.Parent = ScrollingFrame
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -1190,6 +1201,88 @@ TextLabel_37.TextScaled = true
 TextLabel_37.TextSize = 14.000
 TextLabel_37.TextWrapped = true
 
+OPTIMIZATION.Name = "OPTIMIZATION"
+OPTIMIZATION.Parent = ScrollingFrame
+OPTIMIZATION.BackgroundColor3 = Color3.fromRGB(25, 27, 33)
+OPTIMIZATION.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OPTIMIZATION.BorderSizePixel = 0
+OPTIMIZATION.Size = UDim2.new(0, 867, 0, 63)
+
+UICorner_41.Parent = OPTIMIZATION
+
+Status_2.Name = "Status"
+Status_2.Parent = OPTIMIZATION
+Status_2.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
+Status_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status_2.BorderSizePixel = 0
+Status_2.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
+Status_2.Size = UDim2.new(0, 100, 0, 50)
+
+UICorner_42.CornerRadius = UDim.new(1, 0)
+UICorner_42.Parent = Status_2
+
+Disabled_2.Name = "Disabled"
+Disabled_2.Parent = Status_2
+Disabled_2.BackgroundColor3 = Color3.fromRGB(46, 50, 61)
+Disabled_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Disabled_2.BorderSizePixel = 0
+Disabled_2.Size = UDim2.new(0, 50, 0, 50)
+
+UICorner_43.CornerRadius = UDim.new(1, 0)
+UICorner_43.Parent = Disabled_2
+
+Enabled_2.Name = "Enabled"
+Enabled_2.Parent = Status_2
+Enabled_2.BackgroundColor3 = Color3.fromRGB(126, 136, 166)
+Enabled_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enabled_2.BorderSizePixel = 0
+Enabled_2.Position = UDim2.new(0.5, 0, 0, 0)
+Enabled_2.Size = UDim2.new(0, 50, 0, 50)
+Enabled_2.Visible = false
+
+UICorner_44.CornerRadius = UDim.new(1, 0)
+UICorner_44.Parent = Enabled_2
+
+Button_2.Name = "Button"
+Button_2.Parent = Status_2
+Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.BackgroundTransparency = 1.000
+Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.BorderSizePixel = 0
+Button_2.Size = UDim2.new(0, 100, 0, 50)
+Button_2.Font = Enum.Font.SourceSans
+Button_2.Text = ""
+Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.TextSize = 14.000
+
+TextLabel_38.Parent = OPTIMIZATION
+TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.BackgroundTransparency = 1.000
+TextLabel_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_38.BorderSizePixel = 0
+TextLabel_38.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_38.Size = UDim2.new(0, 194, 0, 32)
+TextLabel_38.Font = Enum.Font.SourceSansBold
+TextLabel_38.Text = "[Бешенная скорость]"
+TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.TextScaled = true
+TextLabel_38.TextSize = 14.000
+TextLabel_38.TextWrapped = true
+
+TextLabel_39.Parent = OPTIMIZATION
+TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.BackgroundTransparency = 1.000
+TextLabel_39.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_39.BorderSizePixel = 0
+TextLabel_39.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_39.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_39.Font = Enum.Font.SourceSansBold
+TextLabel_39.Text = "Выжимает все соки игры для производительности"
+TextLabel_39.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_39.TextScaled = true
+TextLabel_39.TextSize = 14.000
+TextLabel_39.TextWrapped = true
+
 TITILE2.Name = "TITILE2"
 TITILE2.Parent = ScrollingFrame
 TITILE2.BackgroundColor3 = Color3.fromRGB(25, 27, 33)
@@ -1198,21 +1291,21 @@ TITILE2.BorderSizePixel = 0
 TITILE2.Position = UDim2.new(0, 0, 0.895878553, 0)
 TITILE2.Size = UDim2.new(0, 867, 0, 40)
 
-UICorner_41.Parent = TITILE2
+UICorner_45.Parent = TITILE2
 
-TextLabel_38.Parent = TITILE2
-TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_38.BackgroundTransparency = 1.000
-TextLabel_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_38.BorderSizePixel = 0
-TextLabel_38.Position = UDim2.new(0.246828139, 0, 0.0880950913, 0)
-TextLabel_38.Size = UDim2.new(0, 453, 0, 32)
-TextLabel_38.Font = Enum.Font.SourceSansBold
-TextLabel_38.Text = "[Версия: 2.05]"
-TextLabel_38.TextColor3 = Color3.fromRGB(53, 56, 70)
-TextLabel_38.TextScaled = true
-TextLabel_38.TextSize = 14.000
-TextLabel_38.TextWrapped = true
+TextLabel_40.Parent = TITILE2
+TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.BackgroundTransparency = 1.000
+TextLabel_40.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_40.BorderSizePixel = 0
+TextLabel_40.Position = UDim2.new(0.246828139, 0, 0.0880950913, 0)
+TextLabel_40.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_40.Font = Enum.Font.SourceSansBold
+TextLabel_40.Text = "[Версия: 2.06] - [A skinned cookie]"
+TextLabel_40.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_40.TextScaled = true
+TextLabel_40.TextSize = 14.000
+TextLabel_40.TextWrapped = true
 
 AutoBind.Name = "AutoBind"
 AutoBind.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
@@ -1227,22 +1320,22 @@ AutoBind.TextColor3 = Color3.fromRGB(255, 255, 255)
 AutoBind.TextSize = 14.000
 AutoBind.TextWrapped = true
 
-UICorner_42.CornerRadius = UDim.new(1, 0)
-UICorner_42.Parent = AutoBind
+UICorner_46.CornerRadius = UDim.new(1, 0)
+UICorner_46.Parent = AutoBind
 
-TextLabel_39.Parent = AutoBind
-TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_39.BackgroundTransparency = 1.000
-TextLabel_39.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_39.BorderSizePixel = 0
-TextLabel_39.Position = UDim2.new(0.128790826, 0, 0.159999996, 0)
-TextLabel_39.Size = UDim2.new(0, 108, 0, 33)
-TextLabel_39.Font = Enum.Font.SourceSansBold
-TextLabel_39.Text = "Авто-бинд"
-TextLabel_39.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_39.TextScaled = true
-TextLabel_39.TextSize = 14.000
-TextLabel_39.TextWrapped = true
+TextLabel_41.Parent = AutoBind
+TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.BackgroundTransparency = 1.000
+TextLabel_41.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_41.BorderSizePixel = 0
+TextLabel_41.Position = UDim2.new(0.128790826, 0, 0.159999996, 0)
+TextLabel_41.Size = UDim2.new(0, 108, 0, 33)
+TextLabel_41.Font = Enum.Font.SourceSansBold
+TextLabel_41.Text = "Авто-бинд"
+TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.TextScaled = true
+TextLabel_41.TextSize = 14.000
+TextLabel_41.TextWrapped = true
 
 Back.Name = "Back"
 Back.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
@@ -1257,22 +1350,22 @@ Back.TextColor3 = Color3.fromRGB(255, 255, 255)
 Back.TextSize = 14.000
 Back.TextWrapped = true
 
-UICorner_43.CornerRadius = UDim.new(1, 0)
-UICorner_43.Parent = Back
+UICorner_47.CornerRadius = UDim.new(1, 0)
+UICorner_47.Parent = Back
 
-TextLabel_40.Parent = Back
-TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_40.BackgroundTransparency = 1.000
-TextLabel_40.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_40.BorderSizePixel = 0
-TextLabel_40.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
-TextLabel_40.Size = UDim2.new(0, 108, 0, 33)
-TextLabel_40.Font = Enum.Font.SourceSansBold
-TextLabel_40.Text = "Назад"
-TextLabel_40.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_40.TextScaled = true
-TextLabel_40.TextSize = 14.000
-TextLabel_40.TextWrapped = true
+TextLabel_42.Parent = Back
+TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.BackgroundTransparency = 1.000
+TextLabel_42.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_42.BorderSizePixel = 0
+TextLabel_42.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
+TextLabel_42.Size = UDim2.new(0, 108, 0, 33)
+TextLabel_42.Font = Enum.Font.SourceSansBold
+TextLabel_42.Text = "Назад"
+TextLabel_42.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.TextScaled = true
+TextLabel_42.TextSize = 14.000
+TextLabel_42.TextWrapped = true
 
 Reset.Name = "Reset"
 Reset.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
@@ -1287,50 +1380,50 @@ Reset.TextColor3 = Color3.fromRGB(255, 255, 255)
 Reset.TextSize = 14.000
 Reset.TextWrapped = true
 
-UICorner_44.CornerRadius = UDim.new(1, 0)
-UICorner_44.Parent = Reset
+UICorner_48.CornerRadius = UDim.new(1, 0)
+UICorner_48.Parent = Reset
 
-TextLabel_41.Parent = Reset
-TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_41.BackgroundTransparency = 1.000
-TextLabel_41.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_41.BorderSizePixel = 0
-TextLabel_41.Position = UDim2.new(0.128790826, 0, 0.159999996, 0)
-TextLabel_41.Size = UDim2.new(0, 108, 0, 33)
-TextLabel_41.Font = Enum.Font.SourceSansBold
-TextLabel_41.Text = "Сбросить все"
-TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_41.TextScaled = true
-TextLabel_41.TextSize = 14.000
-TextLabel_41.TextWrapped = true
-
-TextLabel_42.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
-TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_42.BackgroundTransparency = 1.000
-TextLabel_42.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_42.BorderSizePixel = 0
-TextLabel_42.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
-TextLabel_42.Size = UDim2.new(0, 914, 0, 43)
-TextLabel_42.Font = Enum.Font.SourceSansBold
-TextLabel_42.Text = "Ставь клавиши на функции как вам нужно! Можно использовать авто-бинд"
-TextLabel_42.TextColor3 = Color3.fromRGB(36, 38, 48)
-TextLabel_42.TextScaled = true
-TextLabel_42.TextSize = 14.000
-TextLabel_42.TextWrapped = true
-
-TextLabel_43.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
+TextLabel_43.Parent = Reset
 TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_43.BackgroundTransparency = 1.000
 TextLabel_43.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_43.BorderSizePixel = 0
-TextLabel_43.Position = UDim2.new(0.00875273533, 0, 0, 0)
-TextLabel_43.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_43.Position = UDim2.new(0.128790826, 0, 0.159999996, 0)
+TextLabel_43.Size = UDim2.new(0, 108, 0, 33)
 TextLabel_43.Font = Enum.Font.SourceSansBold
-TextLabel_43.Text = "Конфигурация"
+TextLabel_43.Text = "Сбросить все"
 TextLabel_43.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_43.TextScaled = true
 TextLabel_43.TextSize = 14.000
 TextLabel_43.TextWrapped = true
+
+TextLabel_44.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
+TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_44.BackgroundTransparency = 1.000
+TextLabel_44.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_44.BorderSizePixel = 0
+TextLabel_44.Position = UDim2.new(0.00875273533, 0, 0, 0)
+TextLabel_44.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_44.Font = Enum.Font.SourceSansBold
+TextLabel_44.Text = "Конфигурация"
+TextLabel_44.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_44.TextScaled = true
+TextLabel_44.TextSize = 14.000
+TextLabel_44.TextWrapped = true
+
+TextLabel_45.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
+TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_45.BackgroundTransparency = 1.000
+TextLabel_45.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_45.BorderSizePixel = 0
+TextLabel_45.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
+TextLabel_45.Size = UDim2.new(0, 914, 0, 43)
+TextLabel_45.Font = Enum.Font.SourceSansBold
+TextLabel_45.Text = "Ставь клавиши на функции как вам нужно! Можно использовать авто-бинд"
+TextLabel_45.TextColor3 = Color3.fromRGB(36, 38, 48)
+TextLabel_45.TextScaled = true
+TextLabel_45.TextSize = 14.000
+TextLabel_45.TextWrapped = true
 
 Font.Name = "Font"
 Font.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
@@ -1371,7 +1464,7 @@ Template.TextScaled = true
 Template.TextSize = 14.000
 Template.TextWrapped = true
 
-UICorner_45.Parent = Template
+UICorner_49.Parent = Template
 
 FontTemplate.Name = "FontTemplate"
 FontTemplate.Parent = Font
@@ -1412,7 +1505,7 @@ Select.TextScaled = true
 Select.TextSize = 14.000
 Select.TextWrapped = true
 
-UICorner_46.Parent = Select
+UICorner_50.Parent = Select
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(209, 209, 209)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient.Rotation = -45
@@ -1420,7 +1513,7 @@ UIGradient.Parent = FontTemplate
 
 -- Scripts:
 
-local function RTJFN_fake_script() -- FLY.Manager 
+local function YWLRLY_fake_script() -- FLY.Manager 
 	local script = Instance.new('LocalScript', FLY)
 
 	local Textbox = script.Parent.TextBox
@@ -1434,8 +1527,8 @@ local function RTJFN_fake_script() -- FLY.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(RTJFN_fake_script)()
-local function RYTRG_fake_script() -- AIM.Manager 
+coroutine.wrap(YWLRLY_fake_script)()
+local function PBJHI_fake_script() -- AIM.Manager 
 	local script = Instance.new('LocalScript', AIM)
 
 	local Textbox = script.Parent.TextBox
@@ -1449,8 +1542,8 @@ local function RYTRG_fake_script() -- AIM.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(RYTRG_fake_script)()
-local function CEPIH_fake_script() -- ESP.Manager 
+coroutine.wrap(PBJHI_fake_script)()
+local function HKXDKNE_fake_script() -- ESP.Manager 
 	local script = Instance.new('LocalScript', ESP)
 
 	local Textbox = script.Parent.TextBox
@@ -1464,8 +1557,8 @@ local function CEPIH_fake_script() -- ESP.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(CEPIH_fake_script)()
-local function FUXXYT_fake_script() -- NOANCHOR.Manager 
+coroutine.wrap(HKXDKNE_fake_script)()
+local function TRPZX_fake_script() -- NOANCHOR.Manager 
 	local script = Instance.new('LocalScript', NOANCHOR)
 
 	local Textbox = script.Parent.TextBox
@@ -1479,8 +1572,8 @@ local function FUXXYT_fake_script() -- NOANCHOR.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(FUXXYT_fake_script)()
-local function NGDQPKL_fake_script() -- NOCOLLISION.Manager 
+coroutine.wrap(TRPZX_fake_script)()
+local function FVLUBY_fake_script() -- NOCOLLISION.Manager 
 	local script = Instance.new('LocalScript', NOCOLLISION)
 
 	local Textbox = script.Parent.TextBox
@@ -1494,8 +1587,8 @@ local function NGDQPKL_fake_script() -- NOCOLLISION.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(NGDQPKL_fake_script)()
-local function RWZI_fake_script() -- PLATFORM.Manager 
+coroutine.wrap(FVLUBY_fake_script)()
+local function WCPSAR_fake_script() -- PLATFORM.Manager 
 	local script = Instance.new('LocalScript', PLATFORM)
 
 	local Textbox = script.Parent.TextBox
@@ -1509,8 +1602,8 @@ local function RWZI_fake_script() -- PLATFORM.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(RWZI_fake_script)()
-local function HEHWND_fake_script() -- TELEPORT.Manager 
+coroutine.wrap(WCPSAR_fake_script)()
+local function LKFT_fake_script() -- TELEPORT.Manager 
 	local script = Instance.new('LocalScript', TELEPORT)
 
 	local Textbox = script.Parent.TextBox
@@ -1524,8 +1617,8 @@ local function HEHWND_fake_script() -- TELEPORT.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(HEHWND_fake_script)()
-local function TXNU_fake_script() -- DORSALTELEPORT.Manager 
+coroutine.wrap(LKFT_fake_script)()
+local function LQBEDZ_fake_script() -- DORSALTELEPORT.Manager 
 	local script = Instance.new('LocalScript', DORSALTELEPORT)
 
 	local Textbox = script.Parent.TextBox
@@ -1539,8 +1632,8 @@ local function TXNU_fake_script() -- DORSALTELEPORT.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(TXNU_fake_script)()
-local function YCGH_fake_script() -- CLICKTELEPORT.Manager 
+coroutine.wrap(LQBEDZ_fake_script)()
+local function LHDL_fake_script() -- CLICKTELEPORT.Manager 
 	local script = Instance.new('LocalScript', CLICKTELEPORT)
 
 	local Textbox = script.Parent.TextBox
@@ -1554,8 +1647,8 @@ local function YCGH_fake_script() -- CLICKTELEPORT.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(YCGH_fake_script)()
-local function JAPG_fake_script() -- FLING.Manager 
+coroutine.wrap(LHDL_fake_script)()
+local function RGJHHU_fake_script() -- FLING.Manager 
 	local script = Instance.new('LocalScript', FLING)
 
 	local Textbox = script.Parent.TextBox
@@ -1569,8 +1662,8 @@ local function JAPG_fake_script() -- FLING.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(JAPG_fake_script)()
-local function EREX_fake_script() -- XRAY.Manager 
+coroutine.wrap(RGJHHU_fake_script)()
+local function VJTPT_fake_script() -- XRAY.Manager 
 	local script = Instance.new('LocalScript', XRAY)
 
 	local Textbox = script.Parent.TextBox
@@ -1584,8 +1677,8 @@ local function EREX_fake_script() -- XRAY.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(EREX_fake_script)()
-local function SAZUOX_fake_script() -- SPEED.Manager 
+coroutine.wrap(VJTPT_fake_script)()
+local function YNOTW_fake_script() -- SPEED.Manager 
 	local script = Instance.new('LocalScript', SPEED)
 
 	local Textbox = script.Parent.TextBox
@@ -1599,8 +1692,8 @@ local function SAZUOX_fake_script() -- SPEED.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(SAZUOX_fake_script)()
-local function CBAKOG_fake_script() -- JUMP.Manager 
+coroutine.wrap(YNOTW_fake_script)()
+local function QPGHZ_fake_script() -- JUMP.Manager 
 	local script = Instance.new('LocalScript', JUMP)
 
 	local Textbox = script.Parent.TextBox
@@ -1614,8 +1707,8 @@ local function CBAKOG_fake_script() -- JUMP.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(CBAKOG_fake_script)()
-local function RWVGMPS_fake_script() -- JUMPS.Manager 
+coroutine.wrap(QPGHZ_fake_script)()
+local function CLXBTVE_fake_script() -- JUMPS.Manager 
 	local script = Instance.new('LocalScript', JUMPS)
 
 	local Textbox = script.Parent.TextBox
@@ -1629,8 +1722,8 @@ local function RWVGMPS_fake_script() -- JUMPS.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(RWVGMPS_fake_script)()
-local function OJEDH_fake_script() -- FONT.FontManager 
+coroutine.wrap(CLXBTVE_fake_script)()
+local function MIUNR_fake_script() -- FONT.FontManager 
 	local script = Instance.new('LocalScript', FONT)
 
 	local FontSelect = script.Parent.Parent.Parent.Font
@@ -1652,8 +1745,8 @@ local function OJEDH_fake_script() -- FONT.FontManager
 		end
 	end)
 end
-coroutine.wrap(OJEDH_fake_script)()
-local function ZNCTTRA_fake_script() -- MENUBLUR.Manager 
+coroutine.wrap(MIUNR_fake_script)()
+local function TJTO_fake_script() -- MENUBLUR.Manager 
 	local script = Instance.new('LocalScript', MENUBLUR)
 
 	local Textbox = script.Parent.TextBox
@@ -1667,8 +1760,8 @@ local function ZNCTTRA_fake_script() -- MENUBLUR.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(ZNCTTRA_fake_script)()
-local function USSPHGL_fake_script() -- CLIENT.Manager 
+coroutine.wrap(TJTO_fake_script)()
+local function MSMFW_fake_script() -- CLIENT.Manager 
 	local script = Instance.new('LocalScript', CLIENT)
 
 	local Textbox = script.Parent.TextBox
@@ -1682,15 +1775,13 @@ local function USSPHGL_fake_script() -- CLIENT.Manager
 	
 	Textbox.FocusLost:Connect(keybindset)
 end
-coroutine.wrap(USSPHGL_fake_script)()
-local function YJLMHEW_fake_script() -- DEV.ButtonManager 
+coroutine.wrap(MSMFW_fake_script)()
+local function MXFAAF_fake_script() -- DEV.ButtonManager 
 	local script = Instance.new('LocalScript', DEV)
 
 	local Button = script.Parent.Status.Button
 	local StarterGui = game:GetService("StarterGui")
 	local Activated = false
-	local Aiming = false
-	local TargetPlayer = nil -- Переменная для хранения игрока, на которого произведен клик
 	
 	local Disabled = script.Parent.Status.Disabled
 	local Enabled = script.Parent.Status.Enabled
@@ -1724,8 +1815,87 @@ local function YJLMHEW_fake_script() -- DEV.ButtonManager
 		end
 	end)
 end
-coroutine.wrap(YJLMHEW_fake_script)()
-local function IUYB_fake_script() -- AutoBind.Manager 
+coroutine.wrap(MXFAAF_fake_script)()
+local function FATN_fake_script() -- OPTIMIZATION.ButtonManager 
+	local script = Instance.new('LocalScript', OPTIMIZATION)
+
+	local Button = script.Parent.Status.Button
+	local StarterGui = game:GetService("StarterGui")
+	local Lighting = game:GetService("Lighting")
+	local Activated = false
+	
+	local Disabled = script.Parent.Status.Disabled
+	local Enabled = script.Parent.Status.Enabled
+	
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://6052548458"
+	
+	-- Сохранение текущих настроек для восстановления
+	local originalSettings = {
+		Ambient = Lighting.Ambient,
+		OutdoorAmbient = Lighting.OutdoorAmbient,
+		GlobalShadows = Lighting.GlobalShadows,
+		Brightness = Lighting.Brightness,
+		TimeOfDay = Lighting.TimeOfDay,
+		FogEnd = Lighting.FogEnd,
+	}
+	
+	function toggleoptimization()
+		if not Activated then
+			Activated = true
+			print("Активация")
+			
+			-- Отключение теней и настройка освещения
+			Lighting.Ambient = Color3.new(0, 0, 0)
+			Lighting.OutdoorAmbient = Color3.new(0, 0, 0)
+			Lighting.GlobalShadows = false
+			Lighting.Brightness = 1
+			Lighting.TimeOfDay = "12:00:00"
+			Lighting.FogEnd = 100000
+			
+			-- Отключение текстур (здесь нужно удалить все текстуры, если таковые имеются)
+			for _, object in pairs(workspace:GetDescendants()) do
+				if object:IsA("Texture") or object:IsA("Decal") then
+					object.Transparency = 1
+				end
+			end
+			
+		else
+			Activated = false
+			print("Деактивация")
+			
+			-- Восстановление настроек
+			Lighting.Ambient = originalSettings.Ambient
+			Lighting.OutdoorAmbient = originalSettings.OutdoorAmbient
+			Lighting.GlobalShadows = originalSettings.GlobalShadows
+			Lighting.Brightness = originalSettings.Brightness
+			Lighting.TimeOfDay = originalSettings.TimeOfDay
+			Lighting.FogEnd = originalSettings.FogEnd
+			
+			-- Восстановление текстур
+			for _, object in pairs(workspace:GetDescendants()) do
+				if object:IsA("Texture") or object:IsA("Decal") then
+					object.Transparency = 0
+				end
+			end
+		end
+	end
+	
+	Button.MouseButton1Click:Connect(function()
+		Click:Play()
+		if not Activated then
+			Enabled.Visible = true
+			Disabled.Visible = false
+		else
+			Enabled.Visible = false
+			Disabled.Visible = true
+		end
+		toggleoptimization()
+	end)
+	
+end
+coroutine.wrap(FATN_fake_script)()
+local function BTRPCJ_fake_script() -- AutoBind.Manager 
 	local script = Instance.new('LocalScript', AutoBind)
 
 	ClickSound = Instance.new("Sound", script)
@@ -1839,8 +2009,8 @@ local function IUYB_fake_script() -- AutoBind.Manager
 	Button.MouseButton1Click:Connect(ChangeKeybinds) -- Вызов функции
 	ResetButton.MouseButton1Click:Connect(Reset) -- Вызов Функции
 end
-coroutine.wrap(IUYB_fake_script)()
-local function OCIQ_fake_script() -- Back.LocalScript 
+coroutine.wrap(BTRPCJ_fake_script)()
+local function QQSNBK_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1853,8 +2023,8 @@ local function OCIQ_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(OCIQ_fake_script)()
-local function CAHBAF_fake_script() -- Font.FontManager 
+coroutine.wrap(QQSNBK_fake_script)()
+local function LEKXNG_fake_script() -- Font.FontManager 
 	local script = Instance.new('LocalScript', Font)
 
 	-- Переменные
@@ -1971,4 +2141,4 @@ local function CAHBAF_fake_script() -- Font.FontManager
 	ResetButton.MouseButton1Click:Connect(resetFontsToSourceSansBold)
 	
 end
-coroutine.wrap(CAHBAF_fake_script)()
+coroutine.wrap(LEKXNG_fake_script)()
