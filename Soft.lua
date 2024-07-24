@@ -1144,7 +1144,7 @@ TextLabel_27.TextScaled = true
 TextLabel_27.TextSize = 14.000
 TextLabel_27.TextWrapped = true
 
-Exploer.Name = "Exploer"
+Exploer.Name = "Explorer"
 Exploer.Parent = Console
 Exploer.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
 Exploer.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1848,7 +1848,7 @@ local function TYIU_fake_script() -- Back.LocalScript
 	end)
 end
 coroutine.wrap(TYIU_fake_script)()
-local function ZRVK_fake_script() -- Exploer.LocalScript 
+local function ZRVK_fake_script() -- Explorer.LocalScript 
 	local script = Instance.new('LocalScript', Exploer)
 
 	local ClickSound = Instance.new("Sound", script)
