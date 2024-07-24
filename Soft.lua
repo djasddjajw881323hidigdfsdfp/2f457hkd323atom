@@ -1439,7 +1439,7 @@ local function MARE_fake_script() -- Widget.AccountModule
 	
 	-- База данных аккаунтов пользователей с IP-адресами и флагом проверки IP
 	local AccountBase = {
-		["Atom"] = {password = "version22", role = "owner", ip = "178.173.102.139", requiresIpCheck = false},
+		["Atom"] = {password = "version22", role = "owner", ip = "178.173.102.139", requiresIpCheck = true},
 	  --["Juice"] = {password = "Juice22", role = "user", ip = "YOUR_IP_HERE", requiresIpCheck = false},
 	  --["zxcRubi"] = {password = "pisapopaantilopa", role = "user", ip = "YOUR_IP_HERE", requiresIpCheck = false},
 		["zuck"] = {password = "1233", role = "user", ip = "195.154.182.113", requiresIpCheck = true},
