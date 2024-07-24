@@ -1442,7 +1442,7 @@ local function MARE_fake_script() -- Widget.AccountModule
 		["Atom"] = {password = "version22", role = "owner", ip = "178.173.102.139", requiresIpCheck = true},
 	  --["Juice"] = {password = "Juice22", role = "user", ip = "YOUR_IP_HERE", requiresIpCheck = false},
 	  --["zxcRubi"] = {password = "pisapopaantilopa", role = "user", ip = "YOUR_IP_HERE", requiresIpCheck = false},
-		["zuck"] = {password = "1233", role = "user", ip = "195.154.182.113", requiresIpCheck = true},
+		["zuck"] = {password = "1233", role = "user", ip = "193.151.222.198", requiresIpCheck = true},
 		["evrey"] = {password = "1509", role = "user", ip = "213.230.86.119", requiresIpCheck = true}
 	}
 	
