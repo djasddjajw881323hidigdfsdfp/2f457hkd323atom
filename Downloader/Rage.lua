@@ -260,6 +260,8 @@ ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame_2.BorderSizePixel = 0
 ScrollingFrame_2.Position = UDim2.new(0.0153172864, 0, 0.120781526, 0)
 ScrollingFrame_2.Size = UDim2.new(0, 885, 0, 461)
+ScrollingFrame_2.CanvasPosition = Vector2.new(0, 69)
+ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, 530)
 
 UIListLayout_2.Parent = ScrollingFrame_2
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
@@ -1107,11 +1109,11 @@ TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_18.BackgroundTransparency = 1.000
 TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_18.BorderSizePixel = 0
-TextLabel_18.Position = UDim2.new(0.00875273533, 0, 0, 0)
-TextLabel_18.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_18.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
+TextLabel_18.Size = UDim2.new(0, 914, 0, 43)
 TextLabel_18.Font = Enum.Font.SourceSansBold
-TextLabel_18.Text = "Жесткая игра"
-TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.Text = "При таком геймплее в некоторых плейсах легко заработать бан."
+TextLabel_18.TextColor3 = Color3.fromRGB(36, 38, 48)
 TextLabel_18.TextScaled = true
 TextLabel_18.TextSize = 14.000
 TextLabel_18.TextWrapped = true
@@ -1121,11 +1123,11 @@ TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.BackgroundTransparency = 1.000
 TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_19.BorderSizePixel = 0
-TextLabel_19.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
-TextLabel_19.Size = UDim2.new(0, 914, 0, 43)
+TextLabel_19.Position = UDim2.new(0.00875273533, 0, 0, 0)
+TextLabel_19.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_19.Font = Enum.Font.SourceSansBold
-TextLabel_19.Text = "При таком геймплее в некоторых плейсах легко заработать бан."
-TextLabel_19.TextColor3 = Color3.fromRGB(36, 38, 48)
+TextLabel_19.Text = "Жесткая игра"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.TextScaled = true
 TextLabel_19.TextSize = 14.000
 TextLabel_19.TextWrapped = true
@@ -1246,7 +1248,7 @@ UIGradient_3.Parent = PlayerTemplate_3
 
 -- Scripts:
 
-local function BJVN_fake_script() -- Fling.LocalScript 
+local function SXTVGQ_fake_script() -- Fling.LocalScript 
 	local script = Instance.new('LocalScript', Fling)
 
 	local Players = game:GetService("Players")
@@ -1327,8 +1329,8 @@ local function BJVN_fake_script() -- Fling.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(BJVN_fake_script)()
-local function PPKMLKP_fake_script() -- FLY.ButtonManager 
+coroutine.wrap(SXTVGQ_fake_script)()
+local function PIUTV_fake_script() -- FLY.ButtonManager 
 	local script = Instance.new('LocalScript', FLY)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1486,8 +1488,8 @@ local function PPKMLKP_fake_script() -- FLY.ButtonManager
 	UserInputService.InputBegan:Connect(onKeyPress)
 	
 end
-coroutine.wrap(PPKMLKP_fake_script)()
-local function QCNWSLB_fake_script() -- NOCLIP.ButtonManager 
+coroutine.wrap(PIUTV_fake_script)()
+local function RVBNGW_fake_script() -- NOCLIP.ButtonManager 
 	local script = Instance.new('LocalScript', NOCLIP)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1596,8 +1598,8 @@ local function QCNWSLB_fake_script() -- NOCLIP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(QCNWSLB_fake_script)()
-local function JZGZR_fake_script() -- NOANCHOR.ButtonManager 
+coroutine.wrap(RVBNGW_fake_script)()
+local function VSYDZZO_fake_script() -- NOANCHOR.ButtonManager 
 	local script = Instance.new('LocalScript', NOANCHOR)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1704,8 +1706,8 @@ local function JZGZR_fake_script() -- NOANCHOR.ButtonManager
 	end)
 	
 end
-coroutine.wrap(JZGZR_fake_script)()
-local function SZBWG_fake_script() -- PROTECTPLATFORM.ButtonManager 
+coroutine.wrap(VSYDZZO_fake_script)()
+local function NKRTJM_fake_script() -- PROTECTPLATFORM.ButtonManager 
 	local script = Instance.new('LocalScript', PROTECTPLATFORM)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1826,8 +1828,8 @@ local function SZBWG_fake_script() -- PROTECTPLATFORM.ButtonManager
 	end)
 	
 end
-coroutine.wrap(SZBWG_fake_script)()
-local function MNLXB_fake_script() -- TELEPORT.ValueManager 
+coroutine.wrap(NKRTJM_fake_script)()
+local function KFMNHWS_fake_script() -- TELEPORT.ValueManager 
 	local script = Instance.new('LocalScript', TELEPORT)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1916,8 +1918,8 @@ local function MNLXB_fake_script() -- TELEPORT.ValueManager
 	end)
 	
 end
-coroutine.wrap(MNLXB_fake_script)()
-local function ISWF_fake_script() -- DORSALTELEPORT.ButtonManager 
+coroutine.wrap(KFMNHWS_fake_script)()
+local function EAXZVOH_fake_script() -- DORSALTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', DORSALTELEPORT)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2030,8 +2032,8 @@ local function ISWF_fake_script() -- DORSALTELEPORT.ButtonManager
 	end)
 	
 end
-coroutine.wrap(ISWF_fake_script)()
-local function HRCDEHL_fake_script() -- CLICKTELEPORT.ButtonManager 
+coroutine.wrap(EAXZVOH_fake_script)()
+local function XMWRRWB_fake_script() -- CLICKTELEPORT.ButtonManager 
 	local script = Instance.new('LocalScript', CLICKTELEPORT)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2133,8 +2135,8 @@ local function HRCDEHL_fake_script() -- CLICKTELEPORT.ButtonManager
 	end)
 	
 end
-coroutine.wrap(HRCDEHL_fake_script)()
-local function JNNWFN_fake_script() -- FLING.ButtonManager 
+coroutine.wrap(XMWRRWB_fake_script)()
+local function UMVN_fake_script() -- FLING.ButtonManager 
 	local script = Instance.new('LocalScript', FLING)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2259,8 +2261,8 @@ local function JNNWFN_fake_script() -- FLING.ButtonManager
 	end)
 	
 end
-coroutine.wrap(JNNWFN_fake_script)()
-local function KWDBO_fake_script() -- Teleport_2.LocalScript 
+coroutine.wrap(UMVN_fake_script)()
+local function MILSGX_fake_script() -- Teleport_2.LocalScript 
 	local script = Instance.new('LocalScript', Teleport_2)
 
 	local Players = game:GetService("Players")
@@ -2341,8 +2343,8 @@ local function KWDBO_fake_script() -- Teleport_2.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(KWDBO_fake_script)()
-local function GNSVMDJ_fake_script() -- Back.LocalScript 
+coroutine.wrap(MILSGX_fake_script)()
+local function NVAVYJ_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2355,8 +2357,8 @@ local function GNSVMDJ_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(GNSVMDJ_fake_script)()
-local function BSPPA_fake_script() -- DorsalTeleport.LocalScript 
+coroutine.wrap(NVAVYJ_fake_script)()
+local function DLMU_fake_script() -- DorsalTeleport.LocalScript 
 	local script = Instance.new('LocalScript', DorsalTeleport)
 
 	local Players = game:GetService("Players")
@@ -2437,5 +2439,5 @@ local function BSPPA_fake_script() -- DorsalTeleport.LocalScript
 	updatePlayerList("")
 	
 end
-coroutine.wrap(BSPPA_fake_script)()
+coroutine.wrap(DLMU_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Config.lua"))()
