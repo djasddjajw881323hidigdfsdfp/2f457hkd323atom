@@ -1318,7 +1318,7 @@ TextLabel_42.TextScaled = true
 TextLabel_42.TextSize = 14.000
 TextLabel_42.TextWrapped = true
 
-TextLabel_43.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Config
+TextLabel_43.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
 TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_43.BackgroundTransparency = 1.000
 TextLabel_43.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1333,7 +1333,7 @@ TextLabel_43.TextSize = 14.000
 TextLabel_43.TextWrapped = true
 
 Font.Name = "Font"
-Font.Parent = game.StarterGui.AtomKillwave.MainPage.Files.Config
+Font.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Config
 Font.BackgroundColor3 = Color3.fromRGB(19, 20, 25)
 Font.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Font.BorderSizePixel = 0
