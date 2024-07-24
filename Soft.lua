@@ -1176,7 +1176,7 @@ TextLabel_28.TextWrapped = true
 
 -- Scripts:
 
-local function ZKWRZ_fake_script() -- Legit.MiscScript 
+local function PQTUPV_fake_script() -- Legit.MiscScript 
 	local script = Instance.new('LocalScript', Legit)
 
 	local Frame = script.Parent
@@ -1249,8 +1249,8 @@ local function ZKWRZ_fake_script() -- Legit.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(ZKWRZ_fake_script)()
-local function IPSOEAC_fake_script() -- Rage.MiscScript 
+coroutine.wrap(PQTUPV_fake_script)()
+local function WYDXS_fake_script() -- Rage.MiscScript 
 	local script = Instance.new('LocalScript', Rage)
 
 	local Frame = script.Parent
@@ -1323,8 +1323,8 @@ local function IPSOEAC_fake_script() -- Rage.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(IPSOEAC_fake_script)()
-local function IGCGY_fake_script() -- Config.MiscScript 
+coroutine.wrap(WYDXS_fake_script)()
+local function OVAY_fake_script() -- Config.MiscScript 
 	local script = Instance.new('LocalScript', Config)
 
 	local Frame = script.Parent
@@ -1397,8 +1397,8 @@ local function IGCGY_fake_script() -- Config.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(IGCGY_fake_script)()
-local function MIXL_fake_script() -- DevMode.LocalScript 
+coroutine.wrap(OVAY_fake_script)()
+local function NUZNTIO_fake_script() -- DevMode.LocalScript 
 	local script = Instance.new('LocalScript', DevMode)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1412,8 +1412,8 @@ local function MIXL_fake_script() -- DevMode.LocalScript
 		Console.Visible = true
 	end)
 end
-coroutine.wrap(MIXL_fake_script)()
-local function LWHDRI_fake_script() -- Widget.AccountModule 
+coroutine.wrap(NUZNTIO_fake_script)()
+local function MARE_fake_script() -- Widget.AccountModule 
 	local script = Instance.new('LocalScript', Widget)
 
 	local HttpService = game:GetService("HttpService")
@@ -1437,14 +1437,13 @@ local function LWHDRI_fake_script() -- Widget.AccountModule
 	local IncorrectSound = Instance.new("Sound", script)
 	IncorrectSound.SoundId = "rbxassetid://8426701399"
 	
-	-- База данных аккаунтов пользователей с IP-адресами
+	-- База данных аккаунтов пользователей с IP-адресами и флагом проверки IP
 	local AccountBase = {
-		["Atom"] = {password = "version22", role = "owner", ip = "178.173.102.139"},
-		["necto119"] = {password = "Fvbghn98", role = "user", ip = "YOUR_IP_HERE"},
-		["Juice"] = {password = "Juice22", role = "user", ip = "YOUR_IP_HERE"},
-		["zxcRubi"] = {password = "pisapopaantilopa", role = "user", ip = "YOUR_IP_HERE"},
-		["zuck"] = {password = "1233", role = "user", ip = "195.154.182.113"},
-		["evrey"] = {password = "1509", role = "user", ip = "213.230.86.119"}
+		["Atom"] = {password = "version22", role = "owner", ip = "178.173.102.139", requiresIpCheck = false},
+	  --["Juice"] = {password = "Juice22", role = "user", ip = "YOUR_IP_HERE", requiresIpCheck = false},
+	  --["zxcRubi"] = {password = "pisapopaantilopa", role = "user", ip = "YOUR_IP_HERE", requiresIpCheck = false},
+		["zuck"] = {password = "1233", role = "user", ip = "195.154.182.113", requiresIpCheck = true},
+		["evrey"] = {password = "1509", role = "user", ip = "213.230.86.119", requiresIpCheck = true}
 	}
 	
 	local isLoggedIn = false  -- Флаг для отслеживания состояния входа пользователя
@@ -1458,11 +1457,15 @@ local function LWHDRI_fake_script() -- Widget.AccountModule
 	local function CheckCredentials(login, password, ip)
 		local account = AccountBase[login]
 		if account and account.password == password then
-			if account.ip == ip then
-				return account.role
+			if account.requiresIpCheck then
+				if account.ip == ip then
+					return account.role
+				else
+					print("IP mismatch for account: " .. login)
+					return nil
+				end
 			else
-				print("IP mismatch for account: " .. login)
-				return nil
+				return account.role
 			end
 		else
 			return nil
@@ -1491,16 +1494,10 @@ local function LWHDRI_fake_script() -- Widget.AccountModule
 	LoginButton.MouseButton1Click:Connect(function()
 		local login = LoginBox.Text
 		local password = PasswordBox.Text
+		local account = AccountBase[login]
 		
-		local success, ipData = pcall(function()
-			return game:HttpGet("http://ip-api.com/json/")
-		end)
-		
-		if success then
-			local ipInfo = HttpService:JSONDecode(ipData)
-			local ip = ipInfo.query
-			
-			local role = CheckCredentials(login, password, ip)
+		if account and not account.requiresIpCheck then
+			local role = CheckCredentials(login, password, nil)
 			if role then
 				print("Login successful!")
 				CorrectSound:Play()
@@ -1511,21 +1508,40 @@ local function LWHDRI_fake_script() -- Widget.AccountModule
 					Cheat_Page.Visible = true
 				end
 				coroutine.wrap(downloadpath)()
+				IsoginedValue.Value = true
+			else
+				IncorrectSound:Play()
+				print("Login failed: Incorrect login or password.")
+			end
+		else
+			local success, ipData = pcall(function()
+				return game:HttpGet("http://ip-api.com/json/")
+			end)
+			
+			if success then
+				local ipInfo = HttpService:JSONDecode(ipData)
+				local ip = ipInfo.query
 				
-				if role == "user" then
+				local role = CheckCredentials(login, password, ip)
+				if role then
+					print("Login successful!")
+					CorrectSound:Play()
+					isLoggedIn = true  -- Устанавливаем флаг, если вход успешен
+					userRole = role  -- Сохраняем роль пользователя
+					LoginFrame.Visible = false
+					if Cheat_Page then
+						Cheat_Page.Visible = true
+					end
+					coroutine.wrap(downloadpath)()
 					IsoginedValue.Value = true
-				elseif role == "admin" then
-					IsoginedValue.Value = true
-				elseif role == "owner" then
-					IsoginedValue.Value = true
+				else
+					IncorrectSound:Play()
+					print("Login failed: Incorrect login, password or IP.")
 				end
 			else
 				IncorrectSound:Play()
-				print("Login failed: Incorrect login, password or IP.")
+				print("Failed to get IP address.")
 			end
-		else
-			IncorrectSound:Play()
-			print("Failed to get IP address.")
 		end
 		
 		PasswordBox.Text = ""  -- Очищаем поле пароля после попытки входа
@@ -1593,7 +1609,7 @@ local function LWHDRI_fake_script() -- Widget.AccountModule
 			local ip = ipInfo.query
 			
 			for username, account in pairs(AccountBase) do
-				if account.ip == ip then
+				if account.ip == ip and account.requiresIpCheck then
 					local role = account.role
 					print("Quick login successful for " .. username .. "!")
 					CorrectSound:Play()
@@ -1617,8 +1633,8 @@ local function LWHDRI_fake_script() -- Widget.AccountModule
 	QuickLogin()
 	
 end
-coroutine.wrap(LWHDRI_fake_script)()
-local function FLJCBE_fake_script() -- MainPage.Atom.Core 
+coroutine.wrap(MARE_fake_script)()
+local function AWXYRIP_fake_script() -- MainPage.Atom.Core 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -1656,8 +1672,8 @@ local function FLJCBE_fake_script() -- MainPage.Atom.Core
 	end)
 	
 end
-coroutine.wrap(FLJCBE_fake_script)()
-local function XHYVK_fake_script() -- MainPage.Dragging 
+coroutine.wrap(AWXYRIP_fake_script)()
+local function KJZR_fake_script() -- MainPage.Dragging 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1701,8 +1717,8 @@ local function XHYVK_fake_script() -- MainPage.Dragging
 		end
 	end)
 end
-coroutine.wrap(XHYVK_fake_script)()
-local function XRJLMH_fake_script() -- Console.ConsoleManager 
+coroutine.wrap(KJZR_fake_script)()
+local function XMVGANB_fake_script() -- Console.ConsoleManager 
 	local script = Instance.new('LocalScript', Console)
 
 	-- Переменные
@@ -1816,8 +1832,8 @@ local function XRJLMH_fake_script() -- Console.ConsoleManager
 	-- executeCommand("Hello, World!")
 	
 end
-coroutine.wrap(XRJLMH_fake_script)()
-local function ZBHM_fake_script() -- Back.LocalScript 
+coroutine.wrap(XMVGANB_fake_script)()
+local function TYIU_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1831,8 +1847,8 @@ local function ZBHM_fake_script() -- Back.LocalScript
 		Console.Visible = false
 	end)
 end
-coroutine.wrap(ZBHM_fake_script)()
-local function AYYQUVP_fake_script() -- Exploer.LocalScript 
+coroutine.wrap(TYIU_fake_script)()
+local function ZRVK_fake_script() -- Exploer.LocalScript 
 	local script = Instance.new('LocalScript', Exploer)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1843,4 +1859,4 @@ local function AYYQUVP_fake_script() -- Exploer.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Files/Explorer.lua"))()
 	end)
 end
-coroutine.wrap(AYYQUVP_fake_script)()
+coroutine.wrap(ZRVK_fake_script)()
