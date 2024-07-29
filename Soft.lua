@@ -1677,7 +1677,7 @@ TextLabel_47.TextWrapped = true
 
 -- Scripts:
 
-local function OBTEFJ_fake_script() -- Legit.MiscScript 
+local function FDPHU_fake_script() -- Legit.MiscScript 
 	local script = Instance.new('LocalScript', Legit)
 
 	local Frame = script.Parent
@@ -1750,8 +1750,8 @@ local function OBTEFJ_fake_script() -- Legit.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(OBTEFJ_fake_script)()
-local function DTBU_fake_script() -- Rage.MiscScript 
+coroutine.wrap(FDPHU_fake_script)()
+local function ETDI_fake_script() -- Rage.MiscScript 
 	local script = Instance.new('LocalScript', Rage)
 
 	local Frame = script.Parent
@@ -1824,8 +1824,8 @@ local function DTBU_fake_script() -- Rage.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(DTBU_fake_script)()
-local function JWGXM_fake_script() -- Config.MiscScript 
+coroutine.wrap(ETDI_fake_script)()
+local function RMSSTQ_fake_script() -- Config.MiscScript 
 	local script = Instance.new('LocalScript', Config)
 
 	local Frame = script.Parent
@@ -1898,8 +1898,8 @@ local function JWGXM_fake_script() -- Config.MiscScript
 	Frame.MouseEnter:Connect(onMouseEnter)
 	Frame.MouseLeave:Connect(onMouseLeave)
 end
-coroutine.wrap(JWGXM_fake_script)()
-local function VDZDN_fake_script() -- DevMode.LocalScript 
+coroutine.wrap(RMSSTQ_fake_script)()
+local function AYPPD_fake_script() -- DevMode.LocalScript 
 	local script = Instance.new('LocalScript', DevMode)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -1913,8 +1913,8 @@ local function VDZDN_fake_script() -- DevMode.LocalScript
 		Console.Visible = true
 	end)
 end
-coroutine.wrap(VDZDN_fake_script)()
-local function JSNM_fake_script() -- Widget.AccountModule 
+coroutine.wrap(AYPPD_fake_script)()
+local function XBHASM_fake_script() -- Widget.AccountModule 
 	local script = Instance.new('LocalScript', Widget)
 
 	local HttpService = game:GetService("HttpService")
@@ -2136,8 +2136,8 @@ local function JSNM_fake_script() -- Widget.AccountModule
 	QuickLogin()
 	
 end
-coroutine.wrap(JSNM_fake_script)()
-local function LGHA_fake_script() -- MainPage.Atom.Core 
+coroutine.wrap(XBHASM_fake_script)()
+local function NHZTSH_fake_script() -- MainPage.Atom.Core 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -2198,8 +2198,8 @@ local function LGHA_fake_script() -- MainPage.Atom.Core
 	end)
 	
 end
-coroutine.wrap(LGHA_fake_script)()
-local function EQXR_fake_script() -- MainPage.Dragging 
+coroutine.wrap(NHZTSH_fake_script)()
+local function CPRUJWI_fake_script() -- MainPage.Dragging 
 	local script = Instance.new('LocalScript', MainPage)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -2243,8 +2243,8 @@ local function EQXR_fake_script() -- MainPage.Dragging
 		end
 	end)
 end
-coroutine.wrap(EQXR_fake_script)()
-local function VDEW_fake_script() -- Back.LocalScript 
+coroutine.wrap(CPRUJWI_fake_script)()
+local function CTBGJ_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2258,8 +2258,8 @@ local function VDEW_fake_script() -- Back.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(VDEW_fake_script)()
-local function PMNKJHY_fake_script() -- Delete.LocalScript 
+coroutine.wrap(CTBGJ_fake_script)()
+local function DLQETDD_fake_script() -- Delete.LocalScript 
 	local script = Instance.new('LocalScript', Delete)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2270,8 +2270,8 @@ local function PMNKJHY_fake_script() -- Delete.LocalScript
 		script.Parent.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(PMNKJHY_fake_script)()
-local function SVOP_fake_script() -- Legit_2.Scanning 
+coroutine.wrap(DLQETDD_fake_script)()
+local function AJKZQ_fake_script() -- Legit_2.Scanning 
 	local script = Instance.new('LocalScript', Legit_2)
 
 	local LoginedValue = script.Parent.Parent.Parent.Login.Widget.AccountModule:WaitForChild("IsLogined")
@@ -2353,8 +2353,8 @@ local function SVOP_fake_script() -- Legit_2.Scanning
 	end)
 	
 end
-coroutine.wrap(SVOP_fake_script)()
-local function DYQX_fake_script() -- Back_2.LocalScript 
+coroutine.wrap(AJKZQ_fake_script)()
+local function QJTEUU_fake_script() -- Back_2.LocalScript 
 	local script = Instance.new('LocalScript', Back_2)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2368,8 +2368,8 @@ local function DYQX_fake_script() -- Back_2.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(DYQX_fake_script)()
-local function OUXEEY_fake_script() -- Delete_2.LocalScript 
+coroutine.wrap(QJTEUU_fake_script)()
+local function MNVPW_fake_script() -- Delete_2.LocalScript 
 	local script = Instance.new('LocalScript', Delete_2)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2380,8 +2380,8 @@ local function OUXEEY_fake_script() -- Delete_2.LocalScript
 		script.Parent.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(OUXEEY_fake_script)()
-local function TIVDZU_fake_script() -- Rage_2.Scanning 
+coroutine.wrap(MNVPW_fake_script)()
+local function JNCTI_fake_script() -- Rage_2.Scanning 
 	local script = Instance.new('LocalScript', Rage_2)
 
 	local LoginedValue = script.Parent.Parent.Parent.Login.Widget.AccountModule:WaitForChild("IsLogined")
@@ -2463,8 +2463,8 @@ local function TIVDZU_fake_script() -- Rage_2.Scanning
 	end)
 	
 end
-coroutine.wrap(TIVDZU_fake_script)()
-local function TNMHZQ_fake_script() -- Back_3.LocalScript 
+coroutine.wrap(JNCTI_fake_script)()
+local function CGYXQYK_fake_script() -- Back_3.LocalScript 
 	local script = Instance.new('LocalScript', Back_3)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2478,8 +2478,8 @@ local function TNMHZQ_fake_script() -- Back_3.LocalScript
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(TNMHZQ_fake_script)()
-local function RGMRDWG_fake_script() -- Delete_3.LocalScript 
+coroutine.wrap(CGYXQYK_fake_script)()
+local function JGKSZIM_fake_script() -- Delete_3.LocalScript 
 	local script = Instance.new('LocalScript', Delete_3)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2490,8 +2490,8 @@ local function RGMRDWG_fake_script() -- Delete_3.LocalScript
 		script.Parent.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(RGMRDWG_fake_script)()
-local function YGKNBO_fake_script() -- Config_2.Scanning 
+coroutine.wrap(JGKSZIM_fake_script)()
+local function BBSHTF_fake_script() -- Config_2.Scanning 
 	local script = Instance.new('LocalScript', Config_2)
 
 	local LoginedValue = script.Parent.Parent.Parent.Login.Widget.AccountModule:WaitForChild("IsLogined")
@@ -2573,8 +2573,8 @@ local function YGKNBO_fake_script() -- Config_2.Scanning
 	end)
 	
 end
-coroutine.wrap(YGKNBO_fake_script)()
-local function PVWB_fake_script() -- Console.ConsoleManager 
+coroutine.wrap(BBSHTF_fake_script)()
+local function BAJHVM_fake_script() -- Console.ConsoleManager 
 	local script = Instance.new('LocalScript', Console)
 
 	-- Переменные
@@ -2640,10 +2640,10 @@ local function PVWB_fake_script() -- Console.ConsoleManager
 				spawn(blinkWarning)
 				
 				-- Отобразить кнопку "Глянуть предупреждение" и установить обработчик для показа предупреждения
-				newCommand.WarningButton.Visible = true
+				newCommand.ErrorButton.Visible = true
 				local isShowingWarning = false
 				
-				newCommand.WarningButton.MouseButton1Click:Connect(function()
+				newCommand.ErrorButton.MouseButton1Click:Connect(function()
 					if isShowingWarning then
 						newCommand.CommandText.Text = commandText
 						isShowingWarning = false
@@ -2732,8 +2732,8 @@ local function PVWB_fake_script() -- Console.ConsoleManager
 	-- executeCommand("Hello, World!")
 	
 end
-coroutine.wrap(PVWB_fake_script)()
-local function UGVAHGF_fake_script() -- Back_4.LocalScript 
+coroutine.wrap(BAJHVM_fake_script)()
+local function CCYEWR_fake_script() -- Back_4.LocalScript 
 	local script = Instance.new('LocalScript', Back_4)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2747,8 +2747,8 @@ local function UGVAHGF_fake_script() -- Back_4.LocalScript
 		Console.Visible = false
 	end)
 end
-coroutine.wrap(UGVAHGF_fake_script)()
-local function WQHZ_fake_script() -- Explorer.LocalScript 
+coroutine.wrap(CCYEWR_fake_script)()
+local function MQOZ_fake_script() -- Explorer.LocalScript 
 	local script = Instance.new('LocalScript', Explorer)
 
 	local ClickSound = Instance.new("Sound", script)
@@ -2759,4 +2759,4 @@ local function WQHZ_fake_script() -- Explorer.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Files/Explorer.lua"))()
 	end)
 end
-coroutine.wrap(WQHZ_fake_script)()
+coroutine.wrap(MQOZ_fake_script)()
