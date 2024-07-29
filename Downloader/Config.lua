@@ -1169,7 +1169,6 @@ Button.BackgroundTransparency = 1.000
 Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Button.BorderSizePixel = 0
 Button.Size = UDim2.new(0, 100, 0, 50)
-Button.Modal = true
 Button.Font = Enum.Font.SourceSans
 Button.Text = ""
 Button.TextColor3 = Color3.fromRGB(0, 0, 0)
