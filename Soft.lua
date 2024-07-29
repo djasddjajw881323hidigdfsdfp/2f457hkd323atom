@@ -1179,6 +1179,7 @@ Config_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Config_2.BorderSizePixel = 0
 Config_2.Position = UDim2.new(-3.33890355e-08, 0, 0, 0)
 Config_2.Size = UDim2.new(0, 914, 0, 563)
+Config_2.Visible = false
 
 Error_3.Name = "Error"
 Error_3.Parent = Config_2
