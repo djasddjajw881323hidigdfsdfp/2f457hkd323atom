@@ -159,7 +159,7 @@ local TextLabel_47 = Instance.new("TextLabel")
 --Properties:
 
 AtomKillwave.Name = "AtomKillwave"
-AtomKillwave.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AtomKillwave.Parent = game.CoreGui
 AtomKillwave.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 AtomKillwave.ResetOnSpawn = false
 
