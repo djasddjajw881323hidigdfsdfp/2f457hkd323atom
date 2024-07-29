@@ -1,160 +1,690 @@
-local Back = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
+local AIM = Instance.new("Frame")
+local R15 = Instance.new("Frame")
+local Body = Instance.new("Folder")
+local UpperTorso = Instance.new("Frame")
+local Button = Instance.new("TextButton")
+local LeftUpperArm = Instance.new("Frame")
+local Button_2 = Instance.new("TextButton")
+local LeftLowerArm = Instance.new("Frame")
+local Button_3 = Instance.new("TextButton")
+local LeftHand = Instance.new("Frame")
+local Button_4 = Instance.new("TextButton")
+local RightLowerArm = Instance.new("Frame")
+local Button_5 = Instance.new("TextButton")
+local RightUpperArm = Instance.new("Frame")
+local Button_6 = Instance.new("TextButton")
+local RightHand = Instance.new("Frame")
+local Button_7 = Instance.new("TextButton")
+local RightUpperLeg = Instance.new("Frame")
+local Button_8 = Instance.new("TextButton")
+local RightLowerLeg = Instance.new("Frame")
+local Button_9 = Instance.new("TextButton")
+local RightFoot = Instance.new("Frame")
+local Button_10 = Instance.new("TextButton")
+local LeftLowerLeg = Instance.new("Frame")
+local Button_11 = Instance.new("TextButton")
+local LeftFoot = Instance.new("Frame")
+local Button_12 = Instance.new("TextButton")
+local LeftUpperLeg = Instance.new("Frame")
+local Button_13 = Instance.new("TextButton")
+local LowerTorso = Instance.new("Frame")
+local Button_14 = Instance.new("TextButton")
+local Head = Instance.new("Frame")
+local Button_15 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
+local Type = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
+local R6 = Instance.new("Frame")
+local Body_2 = Instance.new("Folder")
+local Torso = Instance.new("Frame")
+local Button_16 = Instance.new("TextButton")
+local LeftArm = Instance.new("Frame")
+local Button_17 = Instance.new("TextButton")
+local RightArm = Instance.new("Frame")
+local Button_18 = Instance.new("TextButton")
+local RightLeg = Instance.new("Frame")
+local Button_19 = Instance.new("TextButton")
+local LeftLeg = Instance.new("Frame")
+local Button_20 = Instance.new("TextButton")
+local Head_2 = Instance.new("Frame")
+local Button_21 = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
+local Type_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
 local Speed = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local TextBox = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
-local Jump = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
-local TextLabel_7 = Instance.new("TextLabel")
-local TextBox_2 = Instance.new("TextBox")
+local TextBox = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local Jump = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local Fov = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
-local TextLabel_9 = Instance.new("TextLabel")
-local TextBox_3 = Instance.new("TextBox")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local Fov = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
-local Animation = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
 local TextLabel_10 = Instance.new("TextLabel")
-local TextLabel_11 = Instance.new("TextLabel")
-local TextBox_4 = Instance.new("TextBox")
+local TextBox_3 = Instance.new("TextBox")
+local UICorner_8 = Instance.new("UICorner")
+local Animation = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
-local NoAfk = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
-local Status = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
-local Disabled = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
-local Enabled = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
-local Button = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
 local TextLabel_12 = Instance.new("TextLabel")
-local TextLabel_13 = Instance.new("TextLabel")
-local AtomAvatar = Instance.new("Frame")
+local TextBox_4 = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local NoAfk = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Status = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Disabled = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local Enabled = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
-local Status_2 = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
-local Disabled_2 = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
-local Enabled_2 = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
-local Button_2 = Instance.new("TextButton")
+local Button_22 = Instance.new("TextButton")
+local TextLabel_13 = Instance.new("TextLabel")
 local TextLabel_14 = Instance.new("TextLabel")
-local TextLabel_15 = Instance.new("TextLabel")
-local AIM = Instance.new("Frame")
+local AtomAvatar = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local Status_2 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local Disabled_2 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local Enabled_2 = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
-local Status_3 = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
-local Disabled_3 = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
-local Enabled_3 = Instance.new("Frame")
-local UICorner_21 = Instance.new("UICorner")
-local Button_3 = Instance.new("TextButton")
+local Button_23 = Instance.new("TextButton")
+local TextLabel_15 = Instance.new("TextLabel")
 local TextLabel_16 = Instance.new("TextLabel")
-local TextLabel_17 = Instance.new("TextLabel")
-local ESP = Instance.new("Frame")
+local AIM_2 = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local Status_3 = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Disabled_3 = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local Enabled_3 = Instance.new("Frame")
 local UICorner_22 = Instance.new("UICorner")
-local Status_4 = Instance.new("Frame")
-local UICorner_23 = Instance.new("UICorner")
-local Disabled_4 = Instance.new("Frame")
-local UICorner_24 = Instance.new("UICorner")
-local Enabled_4 = Instance.new("Frame")
-local UICorner_25 = Instance.new("UICorner")
-local Button_4 = Instance.new("TextButton")
+local Button_24 = Instance.new("TextButton")
+local TextLabel_17 = Instance.new("TextLabel")
 local TextLabel_18 = Instance.new("TextLabel")
-local TextLabel_19 = Instance.new("TextLabel")
-local XRAY = Instance.new("Frame")
+local Customize = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local ESP = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local Status_4 = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local Disabled_4 = Instance.new("Frame")
 local UICorner_26 = Instance.new("UICorner")
-local Status_5 = Instance.new("Frame")
+local Enabled_4 = Instance.new("Frame")
 local UICorner_27 = Instance.new("UICorner")
-local Disabled_5 = Instance.new("Frame")
-local UICorner_28 = Instance.new("UICorner")
-local Enabled_5 = Instance.new("Frame")
-local UICorner_29 = Instance.new("UICorner")
-local Button_5 = Instance.new("TextButton")
+local Button_25 = Instance.new("TextButton")
+local TextLabel_19 = Instance.new("TextLabel")
 local TextLabel_20 = Instance.new("TextLabel")
-local TextLabel_21 = Instance.new("TextLabel")
-local JUMPS = Instance.new("Frame")
+local XRAY = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local Status_5 = Instance.new("Frame")
+local UICorner_29 = Instance.new("UICorner")
+local Disabled_5 = Instance.new("Frame")
 local UICorner_30 = Instance.new("UICorner")
-local Status_6 = Instance.new("Frame")
+local Enabled_5 = Instance.new("Frame")
 local UICorner_31 = Instance.new("UICorner")
-local Disabled_6 = Instance.new("Frame")
-local UICorner_32 = Instance.new("UICorner")
-local Enabled_6 = Instance.new("Frame")
-local UICorner_33 = Instance.new("UICorner")
-local Button_6 = Instance.new("TextButton")
+local Button_26 = Instance.new("TextButton")
+local TextLabel_21 = Instance.new("TextLabel")
 local TextLabel_22 = Instance.new("TextLabel")
+local JUMPS = Instance.new("Frame")
+local UICorner_32 = Instance.new("UICorner")
+local Status_6 = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local Disabled_6 = Instance.new("Frame")
+local UICorner_34 = Instance.new("UICorner")
+local Enabled_6 = Instance.new("Frame")
+local UICorner_35 = Instance.new("UICorner")
+local Button_27 = Instance.new("TextButton")
 local TextLabel_23 = Instance.new("TextLabel")
+local TextLabel_24 = Instance.new("TextLabel")
+local Back = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local TextLabel_25 = Instance.new("TextLabel")
+local TextLabel_26 = Instance.new("TextLabel")
+local TextLabel_27 = Instance.new("TextLabel")
 
 --Properties:
 
-Back.Name = "Back"
-Back.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
-Back.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
-Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Back.BorderSizePixel = 0
-Back.Position = UDim2.new(0.843544841, 0, 0.0106571941, 0)
-Back.Size = UDim2.new(0, 136, 0, 50)
-Back.Font = Enum.Font.SourceSansBold
-Back.Text = ""
-Back.TextColor3 = Color3.fromRGB(255, 255, 255)
-Back.TextSize = 14.000
-Back.TextWrapped = true
+AIM.Name = "AIM"
+AIM.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
+AIM.BackgroundColor3 = Color3.fromRGB(19, 20, 25)
+AIM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AIM.BorderSizePixel = 0
+AIM.Position = UDim2.new(1.0076586, 0, 0, 0)
+AIM.Size = UDim2.new(0, 279, 0, 563)
+AIM.Visible = false
 
-UICorner.CornerRadius = UDim.new(1, 0)
-UICorner.Parent = Back
+R15.Name = "R15"
+R15.Parent = AIM
+R15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R15.BackgroundTransparency = 1.000
+R15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+R15.BorderSizePixel = 0
+R15.Size = UDim2.new(0, 279, 0, 561)
+R15.Visible = false
 
-TextLabel.Parent = Back
+Body.Name = "Body"
+Body.Parent = R15
+
+UpperTorso.Name = "UpperTorso"
+UpperTorso.Parent = Body
+UpperTorso.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+UpperTorso.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UpperTorso.BorderSizePixel = 0
+UpperTorso.Position = UDim2.new(0.275985658, 0, 0.228163987, 0)
+UpperTorso.Size = UDim2.new(0, 124, 0, 123)
+
+Button.Name = "Button"
+Button.Parent = UpperTorso
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.BackgroundTransparency = 1.000
+Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderSizePixel = 0
+Button.Size = UDim2.new(1, 0, 1, 0)
+Button.Font = Enum.Font.SourceSans
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+
+LeftUpperArm.Name = "LeftUpperArm"
+LeftUpperArm.Parent = Body
+LeftUpperArm.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LeftUpperArm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LeftUpperArm.BorderSizePixel = 0
+LeftUpperArm.Position = UDim2.new(0.741935492, 0, 0.228163987, 0)
+LeftUpperArm.Size = UDim2.new(0, 57, 0, 65)
+
+Button_2.Name = "Button"
+Button_2.Parent = LeftUpperArm
+Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.BackgroundTransparency = 1.000
+Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.BorderSizePixel = 0
+Button_2.Size = UDim2.new(1, 0, 1, 0)
+Button_2.Font = Enum.Font.SourceSans
+Button_2.Text = ""
+Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.TextSize = 14.000
+
+LeftLowerArm.Name = "LeftLowerArm"
+LeftLowerArm.Parent = Body
+LeftLowerArm.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LeftLowerArm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LeftLowerArm.BorderSizePixel = 0
+LeftLowerArm.Position = UDim2.new(0.741935492, 0, 0.354723722, 0)
+LeftLowerArm.Size = UDim2.new(0, 57, 0, 65)
+
+Button_3.Name = "Button"
+Button_3.Parent = LeftLowerArm
+Button_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_3.BackgroundTransparency = 1.000
+Button_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.BorderSizePixel = 0
+Button_3.Size = UDim2.new(1, 0, 1, 0)
+Button_3.Font = Enum.Font.SourceSans
+Button_3.Text = ""
+Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.TextSize = 14.000
+
+LeftHand.Name = "LeftHand"
+LeftHand.Parent = Body
+LeftHand.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LeftHand.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LeftHand.BorderSizePixel = 0
+LeftHand.Position = UDim2.new(0.741935492, 0, 0.481283426, 0)
+LeftHand.Size = UDim2.new(0, 57, 0, 9)
+
+Button_4.Name = "Button"
+Button_4.Parent = LeftHand
+Button_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_4.BackgroundTransparency = 1.000
+Button_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_4.BorderSizePixel = 0
+Button_4.Size = UDim2.new(1, 0, 1, 0)
+Button_4.Font = Enum.Font.SourceSans
+Button_4.Text = ""
+Button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_4.TextSize = 14.000
+
+RightLowerArm.Name = "RightLowerArm"
+RightLowerArm.Parent = Body
+RightLowerArm.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+RightLowerArm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RightLowerArm.BorderSizePixel = 0
+RightLowerArm.Position = UDim2.new(0.0501792133, 0, 0.354723722, 0)
+RightLowerArm.Size = UDim2.new(0, 57, 0, 65)
+
+Button_5.Name = "Button"
+Button_5.Parent = RightLowerArm
+Button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_5.BackgroundTransparency = 1.000
+Button_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_5.BorderSizePixel = 0
+Button_5.Size = UDim2.new(1, 0, 1, 0)
+Button_5.Font = Enum.Font.SourceSans
+Button_5.Text = ""
+Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_5.TextSize = 14.000
+
+RightUpperArm.Name = "RightUpperArm"
+RightUpperArm.Parent = Body
+RightUpperArm.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+RightUpperArm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RightUpperArm.BorderSizePixel = 0
+RightUpperArm.Position = UDim2.new(0.0501792133, 0, 0.228163987, 0)
+RightUpperArm.Size = UDim2.new(0, 57, 0, 65)
+
+Button_6.Name = "Button"
+Button_6.Parent = RightUpperArm
+Button_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_6.BackgroundTransparency = 1.000
+Button_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_6.BorderSizePixel = 0
+Button_6.Size = UDim2.new(1, 0, 1, 0)
+Button_6.Font = Enum.Font.SourceSans
+Button_6.Text = ""
+Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_6.TextSize = 14.000
+
+RightHand.Name = "RightHand"
+RightHand.Parent = Body
+RightHand.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+RightHand.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RightHand.BorderSizePixel = 0
+RightHand.Position = UDim2.new(0.0501792133, 0, 0.481283426, 0)
+RightHand.Size = UDim2.new(0, 57, 0, 9)
+
+Button_7.Name = "Button"
+Button_7.Parent = RightHand
+Button_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_7.BackgroundTransparency = 1.000
+Button_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_7.BorderSizePixel = 0
+Button_7.Size = UDim2.new(1, 0, 1, 0)
+Button_7.Font = Enum.Font.SourceSans
+Button_7.Text = ""
+Button_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_7.TextSize = 14.000
+
+RightUpperLeg.Name = "RightUpperLeg"
+RightUpperLeg.Parent = Body
+RightUpperLeg.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+RightUpperLeg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RightUpperLeg.BorderSizePixel = 0
+RightUpperLeg.Position = UDim2.new(0.275985658, 0, 0.508021414, 0)
+RightUpperLeg.Size = UDim2.new(0, 57, 0, 65)
+
+Button_8.Name = "Button"
+Button_8.Parent = RightUpperLeg
+Button_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_8.BackgroundTransparency = 1.000
+Button_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_8.BorderSizePixel = 0
+Button_8.Size = UDim2.new(1, 0, 1, 0)
+Button_8.Font = Enum.Font.SourceSans
+Button_8.Text = ""
+Button_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_8.TextSize = 14.000
+
+RightLowerLeg.Name = "RightLowerLeg"
+RightLowerLeg.Parent = Body
+RightLowerLeg.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+RightLowerLeg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RightLowerLeg.BorderSizePixel = 0
+RightLowerLeg.Position = UDim2.new(0.275985658, 0, 0.634581089, 0)
+RightLowerLeg.Size = UDim2.new(0, 57, 0, 65)
+
+Button_9.Name = "Button"
+Button_9.Parent = RightLowerLeg
+Button_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_9.BackgroundTransparency = 1.000
+Button_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_9.BorderSizePixel = 0
+Button_9.Size = UDim2.new(1, 0, 1, 0)
+Button_9.Font = Enum.Font.SourceSans
+Button_9.Text = ""
+Button_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_9.TextSize = 14.000
+
+RightFoot.Name = "RightFoot"
+RightFoot.Parent = Body
+RightFoot.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+RightFoot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RightFoot.BorderSizePixel = 0
+RightFoot.Position = UDim2.new(0.275985658, 0, 0.761140823, 0)
+RightFoot.Size = UDim2.new(0, 57, 0, 9)
+
+Button_10.Name = "Button"
+Button_10.Parent = RightFoot
+Button_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_10.BackgroundTransparency = 1.000
+Button_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_10.BorderSizePixel = 0
+Button_10.Size = UDim2.new(1, 0, 1, 0)
+Button_10.Font = Enum.Font.SourceSans
+Button_10.Text = ""
+Button_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_10.TextSize = 14.000
+
+LeftLowerLeg.Name = "LeftLowerLeg"
+LeftLowerLeg.Parent = Body
+LeftLowerLeg.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LeftLowerLeg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LeftLowerLeg.BorderSizePixel = 0
+LeftLowerLeg.Position = UDim2.new(0.516129017, 0, 0.634581089, 0)
+LeftLowerLeg.Size = UDim2.new(0, 57, 0, 65)
+
+Button_11.Name = "Button"
+Button_11.Parent = LeftLowerLeg
+Button_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_11.BackgroundTransparency = 1.000
+Button_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_11.BorderSizePixel = 0
+Button_11.Size = UDim2.new(1, 0, 1, 0)
+Button_11.Font = Enum.Font.SourceSans
+Button_11.Text = ""
+Button_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_11.TextSize = 14.000
+
+LeftFoot.Name = "LeftFoot"
+LeftFoot.Parent = Body
+LeftFoot.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LeftFoot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LeftFoot.BorderSizePixel = 0
+LeftFoot.Position = UDim2.new(0.516129017, 0, 0.761140823, 0)
+LeftFoot.Size = UDim2.new(0, 57, 0, 9)
+
+Button_12.Name = "Button"
+Button_12.Parent = LeftFoot
+Button_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_12.BackgroundTransparency = 1.000
+Button_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_12.BorderSizePixel = 0
+Button_12.Size = UDim2.new(1, 0, 1, 0)
+Button_12.Font = Enum.Font.SourceSans
+Button_12.Text = ""
+Button_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_12.TextSize = 14.000
+
+LeftUpperLeg.Name = "LeftUpperLeg"
+LeftUpperLeg.Parent = Body
+LeftUpperLeg.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LeftUpperLeg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LeftUpperLeg.BorderSizePixel = 0
+LeftUpperLeg.Position = UDim2.new(0.516129017, 0, 0.508021414, 0)
+LeftUpperLeg.Size = UDim2.new(0, 57, 0, 65)
+
+Button_13.Name = "Button"
+Button_13.Parent = LeftUpperLeg
+Button_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_13.BackgroundTransparency = 1.000
+Button_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_13.BorderSizePixel = 0
+Button_13.Size = UDim2.new(1, 0, 1, 0)
+Button_13.Font = Enum.Font.SourceSans
+Button_13.Text = ""
+Button_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_13.TextSize = 14.000
+
+LowerTorso.Name = "LowerTorso"
+LowerTorso.Parent = Body
+LowerTorso.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LowerTorso.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LowerTorso.BorderSizePixel = 0
+LowerTorso.Position = UDim2.new(0.275985658, 0, 0.459893048, 0)
+LowerTorso.Size = UDim2.new(0, 124, 0, 21)
+
+Button_14.Name = "Button"
+Button_14.Parent = LowerTorso
+Button_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_14.BackgroundTransparency = 1.000
+Button_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_14.BorderSizePixel = 0
+Button_14.Size = UDim2.new(1, 0, 1, 0)
+Button_14.Font = Enum.Font.SourceSans
+Button_14.Text = ""
+Button_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_14.TextSize = 14.000
+
+Head.Name = "Head"
+Head.Parent = Body
+Head.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Head.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Head.BorderSizePixel = 0
+Head.Position = UDim2.new(0.372759849, 0, 0.0891265571, 0)
+Head.Size = UDim2.new(0, 70, 0, 74)
+
+Button_15.Name = "Button"
+Button_15.Parent = Head
+Button_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_15.BackgroundTransparency = 1.000
+Button_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_15.BorderSizePixel = 0
+Button_15.Size = UDim2.new(1, 0, 1, 0)
+Button_15.Font = Enum.Font.SourceSans
+Button_15.Text = ""
+Button_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_15.TextSize = 14.000
+
+TextLabel.Parent = R15
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
-TextLabel.Size = UDim2.new(0, 108, 0, 33)
+TextLabel.Position = UDim2.new(0.0394265242, 0, 0.0142602492, 0)
+TextLabel.Size = UDim2.new(0, 256, 0, 34)
 TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Назад"
+TextLabel.Text = "Выберите часть тела"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-TextLabel_2.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
+Type.Name = "Type"
+Type.Parent = R15
+Type.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+Type.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Type.BorderSizePixel = 0
+Type.Position = UDim2.new(0.275985658, 0, 0.809953034, 0)
+Type.Size = UDim2.new(0, 124, 0, 33)
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = Type
+
+TextLabel_2.Parent = Type
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.00875273533, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Position = UDim2.new(0.274193555, 0, -0.0606060624, 0)
+TextLabel_2.Size = UDim2.new(0, 57, 0, 33)
 TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "Безпалевная игра"
+TextLabel_2.Text = "R15"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-TextLabel_3.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
+R6.Name = "R6"
+R6.Parent = AIM
+R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R6.BackgroundTransparency = 1.000
+R6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+R6.BorderSizePixel = 0
+R6.Size = UDim2.new(0, 279, 0, 561)
+R6.Visible = false
+
+Body_2.Name = "Body"
+Body_2.Parent = R6
+
+Torso.Name = "Torso"
+Torso.Parent = Body_2
+Torso.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+Torso.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Torso.BorderSizePixel = 0
+Torso.Position = UDim2.new(0.275985658, 0, 0.228163987, 0)
+Torso.Size = UDim2.new(0, 124, 0, 151)
+
+Button_16.Name = "Button"
+Button_16.Parent = Torso
+Button_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_16.BackgroundTransparency = 1.000
+Button_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_16.BorderSizePixel = 0
+Button_16.Size = UDim2.new(1, 0, 1, 0)
+Button_16.Font = Enum.Font.SourceSans
+Button_16.Text = ""
+Button_16.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_16.TextSize = 14.000
+
+LeftArm.Name = "Left Arm"
+LeftArm.Parent = Body_2
+LeftArm.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LeftArm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LeftArm.BorderSizePixel = 0
+LeftArm.Position = UDim2.new(0.741935492, 0, 0.228163987, 0)
+LeftArm.Size = UDim2.new(0, 57, 0, 151)
+
+Button_17.Name = "Button"
+Button_17.Parent = LeftArm
+Button_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_17.BackgroundTransparency = 1.000
+Button_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_17.BorderSizePixel = 0
+Button_17.Size = UDim2.new(1, 0, 1, 0)
+Button_17.Font = Enum.Font.SourceSans
+Button_17.Text = ""
+Button_17.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_17.TextSize = 14.000
+
+RightArm.Name = "Right Arm"
+RightArm.Parent = Body_2
+RightArm.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+RightArm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RightArm.BorderSizePixel = 0
+RightArm.Position = UDim2.new(0.0501792133, 0, 0.228163987, 0)
+RightArm.Size = UDim2.new(0, 57, 0, 151)
+
+Button_18.Name = "Button"
+Button_18.Parent = RightArm
+Button_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_18.BackgroundTransparency = 1.000
+Button_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_18.BorderSizePixel = 0
+Button_18.Size = UDim2.new(1, 0, 1, 0)
+Button_18.Font = Enum.Font.SourceSans
+Button_18.Text = ""
+Button_18.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_18.TextSize = 14.000
+
+RightLeg.Name = "Right Leg"
+RightLeg.Parent = Body_2
+RightLeg.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+RightLeg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RightLeg.BorderSizePixel = 0
+RightLeg.Position = UDim2.new(0.275985658, 0, 0.508021414, 0)
+RightLeg.Size = UDim2.new(0, 57, 0, 151)
+
+Button_19.Name = "Button"
+Button_19.Parent = RightLeg
+Button_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_19.BackgroundTransparency = 1.000
+Button_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_19.BorderSizePixel = 0
+Button_19.Size = UDim2.new(1, 0, 1, 0)
+Button_19.Font = Enum.Font.SourceSans
+Button_19.Text = ""
+Button_19.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_19.TextSize = 14.000
+
+LeftLeg.Name = "Left Leg"
+LeftLeg.Parent = Body_2
+LeftLeg.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+LeftLeg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LeftLeg.BorderSizePixel = 0
+LeftLeg.Position = UDim2.new(0.516129017, 0, 0.508021414, 0)
+LeftLeg.Size = UDim2.new(0, 57, 0, 151)
+
+Button_20.Name = "Button"
+Button_20.Parent = LeftLeg
+Button_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_20.BackgroundTransparency = 1.000
+Button_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_20.BorderSizePixel = 0
+Button_20.Size = UDim2.new(1, 0, 1, 0)
+Button_20.Font = Enum.Font.SourceSans
+Button_20.Text = ""
+Button_20.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_20.TextSize = 14.000
+
+Head_2.Name = "Head"
+Head_2.Parent = Body_2
+Head_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Head_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Head_2.BorderSizePixel = 0
+Head_2.Position = UDim2.new(0.372759849, 0, 0.0891265571, 0)
+Head_2.Size = UDim2.new(0, 70, 0, 74)
+
+Button_21.Name = "Button"
+Button_21.Parent = Head_2
+Button_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_21.BackgroundTransparency = 1.000
+Button_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_21.BorderSizePixel = 0
+Button_21.Size = UDim2.new(1, 0, 1, 0)
+Button_21.Font = Enum.Font.SourceSans
+Button_21.Text = ""
+Button_21.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_21.TextSize = 14.000
+
+TextLabel_3.Parent = R6
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
-TextLabel_3.Size = UDim2.new(0, 914, 0, 43)
+TextLabel_3.Position = UDim2.new(0.0394265242, 0, 0.0142602492, 0)
+TextLabel_3.Size = UDim2.new(0, 256, 0, 34)
 TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Меняйте настройки безпалевной игры очень аккуратно! Можно легко спалиться."
-TextLabel_3.TextColor3 = Color3.fromRGB(36, 38, 48)
+TextLabel_3.Text = "Выберите часть тела"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
+
+Type_2.Name = "Type"
+Type_2.Parent = R6
+Type_2.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+Type_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Type_2.BorderSizePixel = 0
+Type_2.Position = UDim2.new(0.275985658, 0, 0.809953034, 0)
+Type_2.Size = UDim2.new(0, 124, 0, 33)
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = Type_2
+
+TextLabel_4.Parent = Type_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.274193555, 0, -0.0606060624, 0)
+TextLabel_4.Size = UDim2.new(0, 57, 0, 33)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "R6"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
 
 ScrollingFrame.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
 ScrollingFrame.Active = true
@@ -164,7 +694,6 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.0153172864, 0, 0.120781526, 0)
 ScrollingFrame.Size = UDim2.new(0, 885, 0, 461)
-ScrollingFrame.CanvasPosition = Vector2.new(0, 90)
 ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1, 90)
 
 UIListLayout.Parent = ScrollingFrame
@@ -178,35 +707,35 @@ Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Speed.BorderSizePixel = 0
 Speed.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_2.Parent = Speed
-
-TextLabel_4.Parent = Speed
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_4.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_4.Font = Enum.Font.SourceSansBold
-TextLabel_4.Text = "[Скорость игрока]"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
+UICorner_3.Parent = Speed
 
 TextLabel_5.Parent = Speed
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_5.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_5.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_5.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_5.Font = Enum.Font.SourceSansBold
-TextLabel_5.Text = "Вы можете замедлить себя или ускорить."
-TextLabel_5.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_5.Text = "[Скорость игрока]"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Speed
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_6.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Вы можете замедлить себя или ускорить."
+TextLabel_6.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
 
 TextBox.Parent = Speed
 TextBox.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
@@ -223,7 +752,7 @@ TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
-UICorner_3.Parent = TextBox
+UICorner_4.Parent = TextBox
 
 Jump.Name = "Jump"
 Jump.Parent = ScrollingFrame
@@ -232,35 +761,35 @@ Jump.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Jump.BorderSizePixel = 0
 Jump.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_4.Parent = Jump
-
-TextLabel_6.Parent = Jump
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_6.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_6.Font = Enum.Font.SourceSansBold
-TextLabel_6.Text = "[Сила прыжка]"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
+UICorner_5.Parent = Jump
 
 TextLabel_7.Parent = Jump
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.BackgroundTransparency = 1.000
 TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_7.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_7.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_7.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_7.Font = Enum.Font.SourceSansBold
-TextLabel_7.Text = "Вы можете увеличить силу прыжка или уменьшить."
-TextLabel_7.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_7.Text = "[Сила прыжка]"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 14.000
 TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Jump
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_8.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "Вы можете увеличить силу прыжка или уменьшить."
+TextLabel_8.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
 
 TextBox_2.Parent = Jump
 TextBox_2.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
@@ -277,7 +806,7 @@ TextBox_2.TextScaled = true
 TextBox_2.TextSize = 14.000
 TextBox_2.TextWrapped = true
 
-UICorner_5.Parent = TextBox_2
+UICorner_6.Parent = TextBox_2
 
 Fov.Name = "Fov"
 Fov.Parent = ScrollingFrame
@@ -286,35 +815,35 @@ Fov.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Fov.BorderSizePixel = 0
 Fov.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_6.Parent = Fov
-
-TextLabel_8.Parent = Fov
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_8.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_8.Font = Enum.Font.SourceSansBold
-TextLabel_8.Text = "[Поле зрения]"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextScaled = true
-TextLabel_8.TextSize = 14.000
-TextLabel_8.TextWrapped = true
+UICorner_7.Parent = Fov
 
 TextLabel_9.Parent = Fov
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.BackgroundTransparency = 1.000
 TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_9.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_9.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_9.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_9.Font = Enum.Font.SourceSansBold
-TextLabel_9.Text = "Вы можете увеличить поле зрение или уменьшить."
-TextLabel_9.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_9.Text = "[Поле зрения]"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextScaled = true
 TextLabel_9.TextSize = 14.000
 TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = Fov
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_10.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "Вы можете увеличить поле зрение или уменьшить."
+TextLabel_10.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
 
 TextBox_3.Parent = Fov
 TextBox_3.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
@@ -331,7 +860,7 @@ TextBox_3.TextScaled = true
 TextBox_3.TextSize = 14.000
 TextBox_3.TextWrapped = true
 
-UICorner_7.Parent = TextBox_3
+UICorner_8.Parent = TextBox_3
 
 Animation.Name = "Animation"
 Animation.Parent = ScrollingFrame
@@ -340,35 +869,35 @@ Animation.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Animation.BorderSizePixel = 0
 Animation.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_8.Parent = Animation
-
-TextLabel_10.Parent = Animation
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_10.BorderSizePixel = 0
-TextLabel_10.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_10.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_10.Font = Enum.Font.SourceSansBold
-TextLabel_10.Text = "[Анимация]"
-TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.TextScaled = true
-TextLabel_10.TextSize = 14.000
-TextLabel_10.TextWrapped = true
+UICorner_9.Parent = Animation
 
 TextLabel_11.Parent = Animation
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.BackgroundTransparency = 1.000
 TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_11.BorderSizePixel = 0
-TextLabel_11.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_11.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_11.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_11.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_11.Font = Enum.Font.SourceSansBold
-TextLabel_11.Text = "Вы можете воспроизводить анимацию"
-TextLabel_11.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_11.Text = "[Анимация]"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.TextScaled = true
 TextLabel_11.TextSize = 14.000
 TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = Animation
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_12.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_12.Font = Enum.Font.SourceSansBold
+TextLabel_12.Text = "Вы можете воспроизводить анимацию"
+TextLabel_12.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
 
 TextBox_4.Parent = Animation
 TextBox_4.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
@@ -386,7 +915,7 @@ TextBox_4.TextScaled = true
 TextBox_4.TextSize = 14.000
 TextBox_4.TextWrapped = true
 
-UICorner_9.Parent = TextBox_4
+UICorner_10.Parent = TextBox_4
 
 NoAfk.Name = "NoAfk"
 NoAfk.Parent = ScrollingFrame
@@ -395,7 +924,7 @@ NoAfk.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NoAfk.BorderSizePixel = 0
 NoAfk.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_10.Parent = NoAfk
+UICorner_11.Parent = NoAfk
 
 Status.Name = "Status"
 Status.Parent = NoAfk
@@ -405,8 +934,8 @@ Status.BorderSizePixel = 0
 Status.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_11.CornerRadius = UDim.new(1, 0)
-UICorner_11.Parent = Status
+UICorner_12.CornerRadius = UDim.new(1, 0)
+UICorner_12.Parent = Status
 
 Disabled.Name = "Disabled"
 Disabled.Parent = Status
@@ -415,8 +944,8 @@ Disabled.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled.BorderSizePixel = 0
 Disabled.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_12.CornerRadius = UDim.new(1, 0)
-UICorner_12.Parent = Disabled
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = Disabled
 
 Enabled.Name = "Enabled"
 Enabled.Parent = Status
@@ -427,48 +956,48 @@ Enabled.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled.Size = UDim2.new(0, 50, 0, 50)
 Enabled.Visible = false
 
-UICorner_13.CornerRadius = UDim.new(1, 0)
-UICorner_13.Parent = Enabled
+UICorner_14.CornerRadius = UDim.new(1, 0)
+UICorner_14.Parent = Enabled
 
-Button.Name = "Button"
-Button.Parent = Status
-Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button.BackgroundTransparency = 1.000
-Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button.BorderSizePixel = 0
-Button.Size = UDim2.new(0, 100, 0, 50)
-Button.Font = Enum.Font.SourceSans
-Button.Text = ""
-Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button.TextSize = 14.000
-
-TextLabel_12.Parent = NoAfk
-TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.BackgroundTransparency = 1.000
-TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_12.BorderSizePixel = 0
-TextLabel_12.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_12.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_12.Font = Enum.Font.SourceSansBold
-TextLabel_12.Text = "[Анти-Афк]"
-TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.TextScaled = true
-TextLabel_12.TextSize = 14.000
-TextLabel_12.TextWrapped = true
+Button_22.Name = "Button"
+Button_22.Parent = Status
+Button_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_22.BackgroundTransparency = 1.000
+Button_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_22.BorderSizePixel = 0
+Button_22.Size = UDim2.new(0, 100, 0, 50)
+Button_22.Font = Enum.Font.SourceSans
+Button_22.Text = ""
+Button_22.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_22.TextSize = 14.000
 
 TextLabel_13.Parent = NoAfk
 TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_13.BackgroundTransparency = 1.000
 TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_13.BorderSizePixel = 0
-TextLabel_13.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_13.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_13.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_13.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_13.Font = Enum.Font.SourceSansBold
-TextLabel_13.Text = "Вас не будет кикать за простой"
-TextLabel_13.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_13.Text = "[Анти-Афк]"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_13.TextScaled = true
 TextLabel_13.TextSize = 14.000
 TextLabel_13.TextWrapped = true
+
+TextLabel_14.Parent = NoAfk
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_14.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_14.Font = Enum.Font.SourceSansBold
+TextLabel_14.Text = "Вас не будет кикать за простой"
+TextLabel_14.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
 
 AtomAvatar.Name = "AtomAvatar"
 AtomAvatar.Parent = ScrollingFrame
@@ -477,7 +1006,7 @@ AtomAvatar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AtomAvatar.BorderSizePixel = 0
 AtomAvatar.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_14.Parent = AtomAvatar
+UICorner_15.Parent = AtomAvatar
 
 Status_2.Name = "Status"
 Status_2.Parent = AtomAvatar
@@ -487,8 +1016,8 @@ Status_2.BorderSizePixel = 0
 Status_2.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status_2.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_15.CornerRadius = UDim.new(1, 0)
-UICorner_15.Parent = Status_2
+UICorner_16.CornerRadius = UDim.new(1, 0)
+UICorner_16.Parent = Status_2
 
 Disabled_2.Name = "Disabled"
 Disabled_2.Parent = Status_2
@@ -497,8 +1026,8 @@ Disabled_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_2.BorderSizePixel = 0
 Disabled_2.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_16.CornerRadius = UDim.new(1, 0)
-UICorner_16.Parent = Disabled_2
+UICorner_17.CornerRadius = UDim.new(1, 0)
+UICorner_17.Parent = Disabled_2
 
 Enabled_2.Name = "Enabled"
 Enabled_2.Parent = Status_2
@@ -509,68 +1038,68 @@ Enabled_2.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_2.Size = UDim2.new(0, 50, 0, 50)
 Enabled_2.Visible = false
 
-UICorner_17.CornerRadius = UDim.new(1, 0)
-UICorner_17.Parent = Enabled_2
+UICorner_18.CornerRadius = UDim.new(1, 0)
+UICorner_18.Parent = Enabled_2
 
-Button_2.Name = "Button"
-Button_2.Parent = Status_2
-Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_2.BackgroundTransparency = 1.000
-Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_2.BorderSizePixel = 0
-Button_2.Size = UDim2.new(0, 100, 0, 50)
-Button_2.Font = Enum.Font.SourceSans
-Button_2.Text = ""
-Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_2.TextSize = 14.000
-
-TextLabel_14.Parent = AtomAvatar
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_14.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_14.Font = Enum.Font.SourceSansBold
-TextLabel_14.Text = "[Фирменный аватар]"
-TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.TextScaled = true
-TextLabel_14.TextSize = 14.000
-TextLabel_14.TextWrapped = true
+Button_23.Name = "Button"
+Button_23.Parent = Status_2
+Button_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_23.BackgroundTransparency = 1.000
+Button_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_23.BorderSizePixel = 0
+Button_23.Size = UDim2.new(0, 100, 0, 50)
+Button_23.Font = Enum.Font.SourceSans
+Button_23.Text = ""
+Button_23.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_23.TextSize = 14.000
 
 TextLabel_15.Parent = AtomAvatar
 TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_15.BackgroundTransparency = 1.000
 TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_15.BorderSizePixel = 0
-TextLabel_15.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_15.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_15.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_15.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_15.Font = Enum.Font.SourceSansBold
-TextLabel_15.Text = "Вы можете одеть фирменный аватар чита"
-TextLabel_15.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_15.Text = "[Фирменный аватар]"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_15.TextScaled = true
 TextLabel_15.TextSize = 14.000
 TextLabel_15.TextWrapped = true
 
-AIM.Name = "AIM"
-AIM.Parent = ScrollingFrame
-AIM.BackgroundColor3 = Color3.fromRGB(25, 27, 33)
-AIM.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AIM.BorderSizePixel = 0
-AIM.Size = UDim2.new(0, 867, 0, 63)
+TextLabel_16.Parent = AtomAvatar
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_16.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_16.Font = Enum.Font.SourceSansBold
+TextLabel_16.Text = "Вы можете одеть фирменный аватар чита"
+TextLabel_16.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
 
-UICorner_18.Parent = AIM
+AIM_2.Name = "AIM"
+AIM_2.Parent = ScrollingFrame
+AIM_2.BackgroundColor3 = Color3.fromRGB(25, 27, 33)
+AIM_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AIM_2.BorderSizePixel = 0
+AIM_2.Size = UDim2.new(0, 867, 0, 63)
+
+UICorner_19.Parent = AIM_2
 
 Status_3.Name = "Status"
-Status_3.Parent = AIM
+Status_3.Parent = AIM_2
 Status_3.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
 Status_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Status_3.BorderSizePixel = 0
-Status_3.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
+Status_3.Position = UDim2.new(0.773232102, 0, 0.093225874, 0)
 Status_3.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_19.CornerRadius = UDim.new(1, 0)
-UICorner_19.Parent = Status_3
+UICorner_20.CornerRadius = UDim.new(1, 0)
+UICorner_20.Parent = Status_3
 
 Disabled_3.Name = "Disabled"
 Disabled_3.Parent = Status_3
@@ -579,8 +1108,8 @@ Disabled_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_3.BorderSizePixel = 0
 Disabled_3.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_20.CornerRadius = UDim.new(1, 0)
-UICorner_20.Parent = Disabled_3
+UICorner_21.CornerRadius = UDim.new(1, 0)
+UICorner_21.Parent = Disabled_3
 
 Enabled_3.Name = "Enabled"
 Enabled_3.Parent = Status_3
@@ -591,48 +1120,64 @@ Enabled_3.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_3.Size = UDim2.new(0, 50, 0, 50)
 Enabled_3.Visible = false
 
-UICorner_21.CornerRadius = UDim.new(1, 0)
-UICorner_21.Parent = Enabled_3
+UICorner_22.CornerRadius = UDim.new(1, 0)
+UICorner_22.Parent = Enabled_3
 
-Button_3.Name = "Button"
-Button_3.Parent = Status_3
-Button_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_3.BackgroundTransparency = 1.000
-Button_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_3.BorderSizePixel = 0
-Button_3.Size = UDim2.new(0, 100, 0, 50)
-Button_3.Font = Enum.Font.SourceSans
-Button_3.Text = ""
-Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_3.TextSize = 14.000
+Button_24.Name = "Button"
+Button_24.Parent = Status_3
+Button_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_24.BackgroundTransparency = 1.000
+Button_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_24.BorderSizePixel = 0
+Button_24.Size = UDim2.new(0, 100, 0, 50)
+Button_24.Font = Enum.Font.SourceSans
+Button_24.Text = ""
+Button_24.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_24.TextSize = 14.000
 
-TextLabel_16.Parent = AIM
-TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.BackgroundTransparency = 1.000
-TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_16.BorderSizePixel = 0
-TextLabel_16.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_16.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_16.Font = Enum.Font.SourceSansBold
-TextLabel_16.Text = "[Авто-наведение]"
-TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.TextScaled = true
-TextLabel_16.TextSize = 14.000
-TextLabel_16.TextWrapped = true
-
-TextLabel_17.Parent = AIM
+TextLabel_17.Parent = AIM_2
 TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.BackgroundTransparency = 1.000
 TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_17.BorderSizePixel = 0
-TextLabel_17.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_17.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_17.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_17.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_17.Font = Enum.Font.SourceSansBold
-TextLabel_17.Text = "Фокусировка на ближайшего игрока"
-TextLabel_17.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_17.Text = "[Авто-наведение]"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.TextScaled = true
 TextLabel_17.TextSize = 14.000
 TextLabel_17.TextWrapped = true
+
+TextLabel_18.Parent = AIM_2
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_18.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_18.Font = Enum.Font.SourceSansBold
+TextLabel_18.Text = "Фокусировка на ближайшего игрока"
+TextLabel_18.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+Customize.Name = "Customize"
+Customize.Parent = AIM_2
+Customize.BackgroundColor3 = Color3.fromRGB(30, 33, 40)
+Customize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Customize.BorderSizePixel = 0
+Customize.Position = UDim2.new(0.90125978, 0, 0.238095239, 0)
+Customize.Size = UDim2.new(0, 72, 0, 34)
+Customize.Font = Enum.Font.SourceSansBold
+Customize.Text = "Настроить"
+Customize.TextColor3 = Color3.fromRGB(58, 61, 76)
+Customize.TextScaled = true
+Customize.TextSize = 14.000
+Customize.TextWrapped = true
+
+UICorner_23.Parent = Customize
 
 ESP.Name = "ESP"
 ESP.Parent = ScrollingFrame
@@ -641,7 +1186,7 @@ ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ESP.BorderSizePixel = 0
 ESP.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_22.Parent = ESP
+UICorner_24.Parent = ESP
 
 Status_4.Name = "Status"
 Status_4.Parent = ESP
@@ -651,8 +1196,8 @@ Status_4.BorderSizePixel = 0
 Status_4.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status_4.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_23.CornerRadius = UDim.new(1, 0)
-UICorner_23.Parent = Status_4
+UICorner_25.CornerRadius = UDim.new(1, 0)
+UICorner_25.Parent = Status_4
 
 Disabled_4.Name = "Disabled"
 Disabled_4.Parent = Status_4
@@ -661,8 +1206,8 @@ Disabled_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_4.BorderSizePixel = 0
 Disabled_4.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_24.CornerRadius = UDim.new(1, 0)
-UICorner_24.Parent = Disabled_4
+UICorner_26.CornerRadius = UDim.new(1, 0)
+UICorner_26.Parent = Disabled_4
 
 Enabled_4.Name = "Enabled"
 Enabled_4.Parent = Status_4
@@ -673,48 +1218,48 @@ Enabled_4.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_4.Size = UDim2.new(0, 50, 0, 50)
 Enabled_4.Visible = false
 
-UICorner_25.CornerRadius = UDim.new(1, 0)
-UICorner_25.Parent = Enabled_4
+UICorner_27.CornerRadius = UDim.new(1, 0)
+UICorner_27.Parent = Enabled_4
 
-Button_4.Name = "Button"
-Button_4.Parent = Status_4
-Button_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_4.BackgroundTransparency = 1.000
-Button_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_4.BorderSizePixel = 0
-Button_4.Size = UDim2.new(0, 100, 0, 50)
-Button_4.Font = Enum.Font.SourceSans
-Button_4.Text = ""
-Button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_4.TextSize = 14.000
-
-TextLabel_18.Parent = ESP
-TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.BackgroundTransparency = 1.000
-TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_18.BorderSizePixel = 0
-TextLabel_18.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_18.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_18.Font = Enum.Font.SourceSansBold
-TextLabel_18.Text = "[Просмотр игроков]"
-TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.TextScaled = true
-TextLabel_18.TextSize = 14.000
-TextLabel_18.TextWrapped = true
+Button_25.Name = "Button"
+Button_25.Parent = Status_4
+Button_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_25.BackgroundTransparency = 1.000
+Button_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_25.BorderSizePixel = 0
+Button_25.Size = UDim2.new(0, 100, 0, 50)
+Button_25.Font = Enum.Font.SourceSans
+Button_25.Text = ""
+Button_25.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_25.TextSize = 14.000
 
 TextLabel_19.Parent = ESP
 TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.BackgroundTransparency = 1.000
 TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_19.BorderSizePixel = 0
-TextLabel_19.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_19.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_19.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_19.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_19.Font = Enum.Font.SourceSansBold
-TextLabel_19.Text = "Вы будете видеть всех игроков на карте"
-TextLabel_19.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_19.Text = "[Просмотр игроков]"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.TextScaled = true
 TextLabel_19.TextSize = 14.000
 TextLabel_19.TextWrapped = true
+
+TextLabel_20.Parent = ESP
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_20.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_20.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_20.Font = Enum.Font.SourceSansBold
+TextLabel_20.Text = "Вы будете видеть всех игроков на карте"
+TextLabel_20.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
 
 XRAY.Name = "XRAY"
 XRAY.Parent = ScrollingFrame
@@ -723,7 +1268,7 @@ XRAY.BorderColor3 = Color3.fromRGB(0, 0, 0)
 XRAY.BorderSizePixel = 0
 XRAY.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_26.Parent = XRAY
+UICorner_28.Parent = XRAY
 
 Status_5.Name = "Status"
 Status_5.Parent = XRAY
@@ -733,8 +1278,8 @@ Status_5.BorderSizePixel = 0
 Status_5.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status_5.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_27.CornerRadius = UDim.new(1, 0)
-UICorner_27.Parent = Status_5
+UICorner_29.CornerRadius = UDim.new(1, 0)
+UICorner_29.Parent = Status_5
 
 Disabled_5.Name = "Disabled"
 Disabled_5.Parent = Status_5
@@ -743,8 +1288,8 @@ Disabled_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_5.BorderSizePixel = 0
 Disabled_5.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_28.CornerRadius = UDim.new(1, 0)
-UICorner_28.Parent = Disabled_5
+UICorner_30.CornerRadius = UDim.new(1, 0)
+UICorner_30.Parent = Disabled_5
 
 Enabled_5.Name = "Enabled"
 Enabled_5.Parent = Status_5
@@ -755,48 +1300,48 @@ Enabled_5.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_5.Size = UDim2.new(0, 50, 0, 50)
 Enabled_5.Visible = false
 
-UICorner_29.CornerRadius = UDim.new(1, 0)
-UICorner_29.Parent = Enabled_5
+UICorner_31.CornerRadius = UDim.new(1, 0)
+UICorner_31.Parent = Enabled_5
 
-Button_5.Name = "Button"
-Button_5.Parent = Status_5
-Button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_5.BackgroundTransparency = 1.000
-Button_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_5.BorderSizePixel = 0
-Button_5.Size = UDim2.new(0, 100, 0, 50)
-Button_5.Font = Enum.Font.SourceSans
-Button_5.Text = ""
-Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_5.TextSize = 14.000
-
-TextLabel_20.Parent = XRAY
-TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.BackgroundTransparency = 1.000
-TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_20.BorderSizePixel = 0
-TextLabel_20.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_20.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_20.Font = Enum.Font.SourceSansBold
-TextLabel_20.Text = "[Хорошее зрение]"
-TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.TextScaled = true
-TextLabel_20.TextSize = 14.000
-TextLabel_20.TextWrapped = true
+Button_26.Name = "Button"
+Button_26.Parent = Status_5
+Button_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_26.BackgroundTransparency = 1.000
+Button_26.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_26.BorderSizePixel = 0
+Button_26.Size = UDim2.new(0, 100, 0, 50)
+Button_26.Font = Enum.Font.SourceSans
+Button_26.Text = ""
+Button_26.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_26.TextSize = 14.000
 
 TextLabel_21.Parent = XRAY
 TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.BackgroundTransparency = 1.000
 TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_21.BorderSizePixel = 0
-TextLabel_21.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_21.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_21.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_21.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_21.Font = Enum.Font.SourceSansBold
-TextLabel_21.Text = "Весь мир станет для вас прозрачным"
-TextLabel_21.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_21.Text = "[Хорошее зрение]"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.TextScaled = true
 TextLabel_21.TextSize = 14.000
 TextLabel_21.TextWrapped = true
+
+TextLabel_22.Parent = XRAY
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_22.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_22.Font = Enum.Font.SourceSansBold
+TextLabel_22.Text = "Весь мир станет для вас прозрачным"
+TextLabel_22.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
 
 JUMPS.Name = "JUMPS"
 JUMPS.Parent = ScrollingFrame
@@ -805,7 +1350,7 @@ JUMPS.BorderColor3 = Color3.fromRGB(0, 0, 0)
 JUMPS.BorderSizePixel = 0
 JUMPS.Size = UDim2.new(0, 867, 0, 63)
 
-UICorner_30.Parent = JUMPS
+UICorner_32.Parent = JUMPS
 
 Status_6.Name = "Status"
 Status_6.Parent = JUMPS
@@ -815,8 +1360,8 @@ Status_6.BorderSizePixel = 0
 Status_6.Position = UDim2.new(0.843589723, 0, 0.140845075, 0)
 Status_6.Size = UDim2.new(0, 100, 0, 50)
 
-UICorner_31.CornerRadius = UDim.new(1, 0)
-UICorner_31.Parent = Status_6
+UICorner_33.CornerRadius = UDim.new(1, 0)
+UICorner_33.Parent = Status_6
 
 Disabled_6.Name = "Disabled"
 Disabled_6.Parent = Status_6
@@ -825,8 +1370,8 @@ Disabled_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disabled_6.BorderSizePixel = 0
 Disabled_6.Size = UDim2.new(0, 50, 0, 50)
 
-UICorner_32.CornerRadius = UDim.new(1, 0)
-UICorner_32.Parent = Disabled_6
+UICorner_34.CornerRadius = UDim.new(1, 0)
+UICorner_34.Parent = Disabled_6
 
 Enabled_6.Name = "Enabled"
 Enabled_6.Parent = Status_6
@@ -837,66 +1382,188 @@ Enabled_6.Position = UDim2.new(0.5, 0, 0, 0)
 Enabled_6.Size = UDim2.new(0, 50, 0, 50)
 Enabled_6.Visible = false
 
-UICorner_33.CornerRadius = UDim.new(1, 0)
-UICorner_33.Parent = Enabled_6
+UICorner_35.CornerRadius = UDim.new(1, 0)
+UICorner_35.Parent = Enabled_6
 
-Button_6.Name = "Button"
-Button_6.Parent = Status_6
-Button_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Button_6.BackgroundTransparency = 1.000
-Button_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button_6.BorderSizePixel = 0
-Button_6.Size = UDim2.new(0, 100, 0, 50)
-Button_6.Font = Enum.Font.SourceSans
-Button_6.Text = ""
-Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_6.TextSize = 14.000
-
-TextLabel_22.Parent = JUMPS
-TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_22.BackgroundTransparency = 1.000
-TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_22.BorderSizePixel = 0
-TextLabel_22.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
-TextLabel_22.Size = UDim2.new(0, 194, 0, 32)
-TextLabel_22.Font = Enum.Font.SourceSansBold
-TextLabel_22.Text = "[Максимальные прыжки]"
-TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_22.TextScaled = true
-TextLabel_22.TextSize = 14.000
-TextLabel_22.TextWrapped = true
+Button_27.Name = "Button"
+Button_27.Parent = Status_6
+Button_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_27.BackgroundTransparency = 1.000
+Button_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_27.BorderSizePixel = 0
+Button_27.Size = UDim2.new(0, 100, 0, 50)
+Button_27.Font = Enum.Font.SourceSans
+Button_27.Text = ""
+Button_27.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_27.TextSize = 14.000
 
 TextLabel_23.Parent = JUMPS
 TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_23.BackgroundTransparency = 1.000
 TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_23.BorderSizePixel = 0
-TextLabel_23.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
-TextLabel_23.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_23.Position = UDim2.new(0.00922721997, 0, 0.238095239, 0)
+TextLabel_23.Size = UDim2.new(0, 194, 0, 32)
 TextLabel_23.Font = Enum.Font.SourceSansBold
-TextLabel_23.Text = "Прыгайте столько, сколько вам надо"
-TextLabel_23.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_23.Text = "[Максимальные прыжки]"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_23.TextScaled = true
 TextLabel_23.TextSize = 14.000
 TextLabel_23.TextWrapped = true
 
+TextLabel_24.Parent = JUMPS
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_24.BorderSizePixel = 0
+TextLabel_24.Position = UDim2.new(0.246828139, 0, 0.238095239, 0)
+TextLabel_24.Size = UDim2.new(0, 453, 0, 32)
+TextLabel_24.Font = Enum.Font.SourceSansBold
+TextLabel_24.Text = "Прыгайте столько, сколько вам надо"
+TextLabel_24.TextColor3 = Color3.fromRGB(53, 56, 70)
+TextLabel_24.TextScaled = true
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextWrapped = true
+
+Back.Name = "Back"
+Back.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
+Back.BackgroundColor3 = Color3.fromRGB(32, 34, 42)
+Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Back.BorderSizePixel = 0
+Back.Position = UDim2.new(0.843544841, 0, 0.0106571941, 0)
+Back.Size = UDim2.new(0, 136, 0, 50)
+Back.Font = Enum.Font.SourceSansBold
+Back.Text = ""
+Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back.TextSize = 14.000
+Back.TextWrapped = true
+
+UICorner_36.CornerRadius = UDim.new(1, 0)
+UICorner_36.Parent = Back
+
+TextLabel_25.Parent = Back
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_25.BorderSizePixel = 0
+TextLabel_25.Position = UDim2.new(0.102941178, 0, 0.159999996, 0)
+TextLabel_25.Size = UDim2.new(0, 108, 0, 33)
+TextLabel_25.Font = Enum.Font.SourceSansBold
+TextLabel_25.Text = "Назад"
+TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.TextScaled = true
+TextLabel_25.TextSize = 14.000
+TextLabel_25.TextWrapped = true
+
+TextLabel_26.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
+TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.BackgroundTransparency = 1.000
+TextLabel_26.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_26.BorderSizePixel = 0
+TextLabel_26.Position = UDim2.new(-3.33890355e-08, 0, 0.923623443, 0)
+TextLabel_26.Size = UDim2.new(0, 914, 0, 43)
+TextLabel_26.Font = Enum.Font.SourceSansBold
+TextLabel_26.Text = "Меняйте настройки безпалевной игры очень аккуратно! Можно легко спалиться."
+TextLabel_26.TextColor3 = Color3.fromRGB(36, 38, 48)
+TextLabel_26.TextScaled = true
+TextLabel_26.TextSize = 14.000
+TextLabel_26.TextWrapped = true
+
+TextLabel_27.Parent = game.CoreGui.AtomKillwave.MainPage.Files.Legit
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.BackgroundTransparency = 1.000
+TextLabel_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_27.BorderSizePixel = 0
+TextLabel_27.Position = UDim2.new(0.00875273533, 0, 0, 0)
+TextLabel_27.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_27.Font = Enum.Font.SourceSansBold
+TextLabel_27.Text = "Безпалевная игра"
+TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.TextScaled = true
+TextLabel_27.TextSize = 14.000
+TextLabel_27.TextWrapped = true
+
 -- Scripts:
 
-local function BOIFCX_fake_script() -- Back.LocalScript 
-	local script = Instance.new('LocalScript', Back)
+local function HTEAL_fake_script() -- AIM.Manager 
+	local script = Instance.new('LocalScript', AIM)
 
-	local ClickSound = Instance.new("Sound", script)
-	ClickSound.SoundId = "rbxassetid://6324790483"
-	local Button = script.Parent
-	local Cheat_Page = script.Parent.Parent.Parent.Parent.Cheat_Page
-	Button.MouseButton1Click:Connect(function()
-		ClickSound:Play()
-		Cheat_Page.Visible = true
-		script.Parent.Parent.Visible = false
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	
+	local AimBodyTarget = Instance.new("StringValue", script.Parent)
+	AimBodyTarget.Name = "CurrentBodyTarget"
+	
+	local R15Set = script.Parent:WaitForChild("R15")
+	local R6Set = script.Parent:WaitForChild("R6")
+	
+	local SelectSound = Instance.new("Sound", script)
+	SelectSound.SoundId = "rbxassetid://1548304764"
+	
+	local selectedFrame -- Переменная для хранения выбранного фрейма
+	
+	local function determineCharacterType()
+		local humanoid = character:WaitForChild("Humanoid")
+		if humanoid.RigType == Enum.HumanoidRigType.R15 then
+			R15Set.Visible = true
+			R6Set.Visible = false
+		elseif humanoid.RigType == Enum.HumanoidRigType.R6 then
+			R15Set.Visible = false
+			R6Set.Visible = true
+		end
+	end
+	
+	-- Проверка типа персонажа при загрузке
+	determineCharacterType()
+	
+	-- Обработчик изменения персонажа (если игрок ресается или меняет персонажа)
+	player.CharacterAdded:Connect(function(newCharacter)
+		character = newCharacter
+		determineCharacterType()
 	end)
+	
+	-- Функция для установки нового значения AimBodyTarget и воспроизведения звука
+	local function onBodyPartSelected(bodyPart)
+		if selectedFrame then
+			selectedFrame.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+		end
+		
+		selectedFrame = bodyPart
+		selectedFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		
+		AimBodyTarget.Value = bodyPart.Name
+		SelectSound:Play()
+	end
+	
+	-- Обработчики нажатий на кнопки частей тела для R15
+	for _, bodyPart in pairs(R15Set.Body:GetChildren()) do
+		local button = bodyPart:FindFirstChild("Button")
+		if button and button:IsA("TextButton") then
+			button.MouseButton1Click:Connect(function()
+				onBodyPartSelected(bodyPart)
+			end)
+			-- Установка начального цвета для кнопок
+			bodyPart.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+		end
+	end
+	
+	-- Обработчики нажатий на кнопки частей тела для R6 (если есть аналогичная структура)
+	if R6Set:FindFirstChild("Body") then
+		for _, bodyPart in pairs(R6Set.Body:GetChildren()) do
+			local button = bodyPart:FindFirstChild("Button")
+			if button and button:IsA("TextButton") then
+				button.MouseButton1Click:Connect(function()
+					onBodyPartSelected(bodyPart)
+				end)
+				-- Установка начального цвета для кнопок
+				bodyPart.BackgroundColor3 = Color3.fromRGB(24, 29, 44)
+			end
+		end
+	end
+	
 end
-coroutine.wrap(BOIFCX_fake_script)()
-local function RFGZC_fake_script() -- Speed.Manager 
+coroutine.wrap(HTEAL_fake_script)()
+local function MPCJ_fake_script() -- Speed.Manager 
 	local script = Instance.new('LocalScript', Speed)
 
 	local textbox = script.Parent.TextBox
@@ -962,8 +1629,8 @@ local function RFGZC_fake_script() -- Speed.Manager
 	end)
 	
 end
-coroutine.wrap(RFGZC_fake_script)()
-local function THSVGS_fake_script() -- Jump.Manager 
+coroutine.wrap(MPCJ_fake_script)()
+local function ALYNL_fake_script() -- Jump.Manager 
 	local script = Instance.new('LocalScript', Jump)
 
 	local textbox = script.Parent.TextBox
@@ -1030,8 +1697,8 @@ local function THSVGS_fake_script() -- Jump.Manager
 	end)
 	
 end
-coroutine.wrap(THSVGS_fake_script)()
-local function IVEB_fake_script() -- Fov.Manager 
+coroutine.wrap(ALYNL_fake_script)()
+local function DTDHTY_fake_script() -- Fov.Manager 
 	local script = Instance.new('LocalScript', Fov)
 
 	local textbox = script.Parent.TextBox
@@ -1069,8 +1736,8 @@ local function IVEB_fake_script() -- Fov.Manager
 	end)
 	
 end
-coroutine.wrap(IVEB_fake_script)()
-local function TNJAPS_fake_script() -- Animation.Manager 
+coroutine.wrap(DTDHTY_fake_script)()
+local function CKUBR_fake_script() -- Animation.Manager 
 	local script = Instance.new('LocalScript', Animation)
 
 	local textbox = script.Parent.TextBox
@@ -1118,8 +1785,8 @@ local function TNJAPS_fake_script() -- Animation.Manager
 		end
 	end)
 end
-coroutine.wrap(TNJAPS_fake_script)()
-local function WMJLUJS_fake_script() -- NoAfk.ButtonManager 
+coroutine.wrap(CKUBR_fake_script)()
+local function ZFZO_fake_script() -- NoAfk.ButtonManager 
 	local script = Instance.new('LocalScript', NoAfk)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1181,8 +1848,8 @@ local function WMJLUJS_fake_script() -- NoAfk.ButtonManager
 	end)
 	
 end
-coroutine.wrap(WMJLUJS_fake_script)()
-local function VTLZUTH_fake_script() -- AtomAvatar.ButtonManager 
+coroutine.wrap(ZFZO_fake_script)()
+local function FMDWK_fake_script() -- AtomAvatar.ButtonManager 
 	local script = Instance.new('LocalScript', AtomAvatar)
 
 	-- Получение сервисов
@@ -1285,9 +1952,9 @@ local function VTLZUTH_fake_script() -- AtomAvatar.ButtonManager
 	end)
 	
 end
-coroutine.wrap(VTLZUTH_fake_script)()
-local function NRUI_fake_script() -- AIM.ButtonManager 
-	local script = Instance.new('LocalScript', AIM)
+coroutine.wrap(FMDWK_fake_script)()
+local function CGSK_fake_script() -- AIM_2.ButtonManager 
+	local script = Instance.new('LocalScript', AIM_2)
 
 	local UserInputService = game:GetService("UserInputService")
 	local Button = script.Parent.Status.Button
@@ -1300,6 +1967,8 @@ local function NRUI_fake_script() -- AIM.ButtonManager
 	
 	local Click = Instance.new("Sound", script)
 	Click.SoundId = "rbxassetid://6052548458"
+	
+	local AimBodyTarget = script.Parent.Parent.Parent.AIM:WaitForChild("CurrentBodyTarget")
 	
 	-- Function to find the nearest player
 	local function getNearestPlayer()
@@ -1375,17 +2044,39 @@ local function NRUI_fake_script() -- AIM.ButtonManager
 	game:GetService("RunService").RenderStepped:Connect(function()
 		if Activated then -- Проверяем, включена ли функция AIM
 			if Aiming and TargetPlayer then -- Если AIM включен и есть целевой игрок, то наводимся на него
-				if TargetPlayer.Character and TargetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+				if TargetPlayer.Character and TargetPlayer.Character:FindFirstChild(AimBodyTarget.Value) then
+					local targetPart = TargetPlayer.Character[AimBodyTarget.Value]
 					local camera = game.Workspace.CurrentCamera
-					camera.CFrame = CFrame.new(camera.CFrame.Position, TargetPlayer.Character.HumanoidRootPart.Position)
+					camera.CFrame = CFrame.new(camera.CFrame.Position, targetPart.Position)
 				end
 			end
 		end
 	end)
 	
 end
-coroutine.wrap(NRUI_fake_script)()
-local function ADWAXX_fake_script() -- ESP.ButtonManager 
+coroutine.wrap(CGSK_fake_script)()
+local function RJUUG_fake_script() -- Customize.LocalScript 
+	local script = Instance.new('LocalScript', Customize)
+
+	local AIMFrame = script.Parent.Parent.Parent.Parent.AIM
+	local Button = script.Parent
+	local SetOpened = false
+	local Click = Instance.new("Sound", script)
+	Click.SoundId = "rbxassetid://6324790483"
+	
+	Button.MouseButton1Click:Connect(function()
+		Click:Play()
+		if SetOpened == false then
+			SetOpened = true
+			AIMFrame.Visible = true
+		else
+			SetOpened = false
+			AIMFrame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(RJUUG_fake_script)()
+local function HQMVJYL_fake_script() -- ESP.ButtonManager 
 	local script = Instance.new('LocalScript', ESP)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1525,8 +2216,8 @@ local function ADWAXX_fake_script() -- ESP.ButtonManager
 	end)
 	
 end
-coroutine.wrap(ADWAXX_fake_script)()
-local function PRCCU_fake_script() -- XRAY.ButtonManager 
+coroutine.wrap(HQMVJYL_fake_script)()
+local function MCKJS_fake_script() -- XRAY.ButtonManager 
 	local script = Instance.new('LocalScript', XRAY)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1603,8 +2294,8 @@ local function PRCCU_fake_script() -- XRAY.ButtonManager
 	end)
 	
 end
-coroutine.wrap(PRCCU_fake_script)()
-local function LPDAR_fake_script() -- JUMPS.ButtonManager 
+coroutine.wrap(MCKJS_fake_script)()
+local function YMUSBUB_fake_script() -- JUMPS.ButtonManager 
 	local script = Instance.new('LocalScript', JUMPS)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1674,5 +2365,19 @@ local function LPDAR_fake_script() -- JUMPS.ButtonManager
 		end        
 	end)
 end
-coroutine.wrap(LPDAR_fake_script)()
+coroutine.wrap(YMUSBUB_fake_script)()
+local function YSWTPIQ_fake_script() -- Back.LocalScript 
+	local script = Instance.new('LocalScript', Back)
+
+	local ClickSound = Instance.new("Sound", script)
+	ClickSound.SoundId = "rbxassetid://6324790483"
+	local Button = script.Parent
+	local Cheat_Page = script.Parent.Parent.Parent.Parent.Cheat_Page
+	Button.MouseButton1Click:Connect(function()
+		ClickSound:Play()
+		Cheat_Page.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(YSWTPIQ_fake_script)()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djasddjajw881323hidigdfsdfp/2f457hkd323atom/atom/Downloader/Rage.lua"))()
