@@ -1303,7 +1303,7 @@ TextLabel_40.BorderSizePixel = 0
 TextLabel_40.Position = UDim2.new(0.246828139, 0, 0.0880950913, 0)
 TextLabel_40.Size = UDim2.new(0, 453, 0, 32)
 TextLabel_40.Font = Enum.Font.SourceSansBold
-TextLabel_40.Text = "<font color=\"rgb(250, 250, 250)\">[Версия: 2.07]</font> - [Optimium]"
+TextLabel_40.Text = "[Версия: 2.07] - [Optimium]"
 TextLabel_40.TextColor3 = Color3.fromRGB(53, 56, 70)
 TextLabel_40.TextScaled = true
 TextLabel_40.TextSize = 14.000
