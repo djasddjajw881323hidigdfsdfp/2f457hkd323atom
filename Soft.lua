@@ -590,7 +590,6 @@ DevMode.BorderSizePixel = 0
 DevMode.Position = UDim2.new(0.843544841, 0, 0.0106571941, 0)
 DevMode.Size = UDim2.new(0, 136, 0, 50)
 DevMode.Visible = false
-DevMode.Modal = true
 DevMode.Font = Enum.Font.SourceSansBold
 DevMode.Text = ""
 DevMode.TextColor3 = Color3.fromRGB(255, 255, 255)
